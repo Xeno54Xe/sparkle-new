@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5045,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.789,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.789,
+        "positive": 0.8862,
+        "negative": 0.0971,
+        "neutral": 0.0167,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q3 FY '26 was robust, with group revenues growing 10% year-on-year, driven by steady progress across most businesses. The Projects & Manufacturing business reported revenues of Rs 523 billion, up 11% over the previous year. The group level EBITDA margin improved to 10.4% from 9.7% in the prior year, attributed to operational efficiencies. The Projects & Manufacturing portfolio margin increased by 50 basis points to 8.1%. Recurring PAT showed a strong growth of 31% year-on-year, reaching Rs 44 billion, although the reported PAT was down by 4% due to a one-time impact from new Labour Codes legislation. The Net Working Capital to Revenue ratio improved significantly to 8.2%, reflecting a 450 basis points improvement year-on-year."
+    },
+    "forward_guidance": {
+      "score": 0.9258,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9258,
+        "positive": 0.9535,
+        "negative": 0.0277,
+        "neutral": 0.0188,
+        "chunks_scored": 1
+      },
+      "text": "Management retained a positive outlook for the full year, maintaining a 15% revenue growth guidance, despite the 9-month revenue growth being slightly lower at 12%. They expressed confidence in achieving this target due to the expected ramp-up in project execution during Q4. Order inflows for the nine months showed a strong growth of 30% year-on-year, and management expects to exceed the 10% order inflow guidance for FY '26. The margin guidance for the Projects & Manufacturing segment remains at 8.5% for the full year. The prospects pipeline increased by 7% year-on-year, led by CarbonLite Solutions and Precision Engineering & Systems, indicating a healthy outlook."
+    },
+    "risk_language": {
+      "score": -0.9418,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9418,
+        "positive": 0.0182,
+        "negative": 0.9599,
+        "neutral": 0.0219,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including cost overruns in the Hydrocarbons business, which led to a margin decline from 8.3% to 5.9%. Management acknowledged these challenges but noted that the projects are in their final execution phase and margins are expected to remain soft until completion. There was also mention of slow-moving orders, primarily in Water projects, due to right-of-way and clearance issues, but management was not overly concerned. Commodity price volatility was discussed, with management indicating that most price risks are hedged, though some exposure remains, particularly in copper and nickel."
+    },
+    "investor_confidence": {
+      "score": 0.8921,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8921,
+        "positive": 0.9027,
+        "negative": 0.0107,
+        "neutral": 0.0866,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence throughout the call, addressing analyst questions directly and providing detailed explanations of financial metrics and strategic initiatives. They emphasized their competitive positioning in the Middle East and the strength of their order book. The discussion on the prospects pipeline and order book composition demonstrated transparency and a strategic approach to growth. Management's commitment to maintaining margin guidance and their proactive risk management strategies further reinforced their credibility."
+    }
+  },
+  "key_positive_drivers": [
+    "11% revenue growth in Projects & Manufacturing",
+    "31% growth in Recurring PAT",
+    "Improved EBITDA margin to 10.4%",
+    "Significant improvement in Net Working Capital to Revenue ratio",
+    "Strong order inflow growth of 30% year-on-year",
+    "Healthy prospects pipeline increase by 7%"
+  ],
+  "key_negative_drivers": [
+    "Cost overruns in Hydrocarbons business",
+    "Margin decline in Hydrocarbons to 5.9%",
+    "Slow-moving orders in Water projects",
+    "Exposure to commodity price volatility",
+    "4% decline in reported PAT due to one-time impact",
+    "Challenges in project execution phases"
+  ],
+  "notable_phrases": [
+    "revenues grew 10% Y-on-Y",
+    "EBITDA margin improved to 10.4%",
+    "Recurring PAT reported a strong growth of 31%",
+    "order inflows up by 18% on a Y-on-Y basis",
+    "Net Working Capital to Revenue ratio improved to 8.2%",
+    "retaining our guidance of 15% for the full year",
+    "cost overruns in a few competitively priced projects",
+    "most of the price risk we have is naturally hedged"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant revenue and PAT growth, though reported PAT was impacted by a one-time event. Forward guidance remains positive with management confident in achieving full-year targets. Risks were acknowledged, particularly in the Hydrocarbons segment, but were addressed with strategies in place to mitigate them. Investor confidence was bolstered by management's transparency and strategic clarity, despite some challenges in execution and commodity price exposure."
+}

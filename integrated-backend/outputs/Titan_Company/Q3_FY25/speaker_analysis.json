@@ -1,0 +1,153 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could ask questions and reminding them of the call's recording status. The tone was neutral, focusing on logistics and ensuring the smooth operation of the call.",
+      "sentiment_score": 0.0185,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0185,
+        "positive": 0.0385,
+        "negative": 0.02,
+        "neutral": 0.9415,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "C. K. Venkataraman",
+      "role": "Managing Director, Titan Company Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "quarterly performance",
+        "customer engagement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "C. K. Venkataraman opened the call with an optimistic tone, highlighting the strong quarterly performance of Titan Company. He emphasized the company's robust customer relationship management system, which allows for personalized engagement with a large customer base. His remarks set a positive tone for the call, focusing on the company's strengths and readiness to address questions.",
+      "sentiment_score": 0.2571,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2571,
+        "positive": 0.2666,
+        "negative": 0.0096,
+        "neutral": 0.7238,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ajoy Chawla",
+      "role": "CEO, Jewellery Division",
+      "tone": "cautious",
+      "key_topics": [
+        "jewellery margins",
+        "gold and diamond pricing",
+        "growth strategy"
+      ],
+      "direct_answers": [
+        "Aditya Soman's question on jewellery margins",
+        "Avi's question on studded jewellery margin"
+      ],
+      "dodged_or_vague": [
+        "Avi's question on when margins will stabilize"
+      ],
+      "summary": "Ajoy Chawla addressed questions regarding jewellery margins with a cautious tone, acknowledging the challenges posed by fluctuating gold prices. He explained the company's strategy to maximize growth in both gold and studded jewellery, despite the volatility. While he provided direct answers to some questions, he was vague about the timeline for margin stabilization, reflecting the uncertainty in the market.",
+      "sentiment_score": -0.0089,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0089,
+        "positive": 0.1062,
+        "negative": 0.115,
+        "neutral": 0.7788,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Suparna Mitra",
+      "role": "CEO, Watches & Wearables Division",
+      "tone": "confident",
+      "key_topics": [
+        "watch segment growth",
+        "product strategy"
+      ],
+      "direct_answers": [
+        "Aditya Soman's question on Analog watches"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Suparna Mitra spoke with confidence about the growth in the watch segment, highlighting strong performance across both premium and affordable brands. She emphasized the success of the product strategy in driving growth and expressed optimism about future prospects. Her responses were direct and focused on the positive outcomes of the division's strategic initiatives.",
+      "sentiment_score": 0.9017,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9017,
+        "positive": 0.9094,
+        "negative": 0.0077,
+        "neutral": 0.0829,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ambuj Narayan",
+      "role": "CEO, Indian Dresswear Division",
+      "tone": "cautious",
+      "key_topics": [
+        "Taneira growth",
+        "store strategy"
+      ],
+      "direct_answers": [
+        "Abneesh Roy's question on Taneira growth"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ambuj Narayan addressed concerns about the slow growth in Taneira with a cautious tone, explaining the impact of store openings on sales figures. He outlined the division's strategy to focus on metro and Tier-1 cities for future store expansions. His responses were direct, acknowledging the challenges while highlighting areas of growth.",
+      "sentiment_score": 0.2234,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2234,
+        "positive": 0.2813,
+        "negative": 0.0579,
+        "neutral": 0.6609,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis identifies key speakers and their roles, extracts their statements, and assesses their tone. Management speakers like C. K. Venkataraman and Ajoy Chawla provided insights into company performance and strategy, with varying tones reflecting their confidence or caution. Analysts' questions were addressed with varying degrees of directness, highlighting areas of certainty and uncertainty in the company's outlook.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

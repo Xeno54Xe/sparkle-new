@@ -1,0 +1,220 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference introduction",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring a smooth transition between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on procedural aspects of the call. The moderator's role was crucial in keeping the call organized and on schedule.",
+      "sentiment_score": 0.0242,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0242,
+        "positive": 0.0412,
+        "negative": 0.017,
+        "neutral": 0.9418,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Manoj Menon",
+      "role": "ICICI Securities",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Hosting"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Manoj Menon from ICICI Securities opened the call with a brief introduction, expressing pleasure in hosting the Tata Consumer Products management. His tone was neutral, focusing on the formalities of the call. He handed over the proceedings to Nidhi Verma, maintaining a professional demeanor throughout.",
+      "sentiment_score": 0.0704,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0704,
+        "positive": 0.0962,
+        "negative": 0.0258,
+        "neutral": 0.878,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nidhi Verma",
+      "role": "Head of Investor Relations and Corporate Communications, Tata Consumer Products",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Call proceedings"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhi Verma, Head of Investor Relations and Corporate Communications, provided a structured introduction to the earnings call. She outlined the format of the call, indicating that key highlights would be covered by Sunil D'Souza and Ashish Goenka. Her tone was neutral, focusing on procedural clarity and ensuring participants were aware of the disclaimer statement.",
+      "sentiment_score": 0.0673,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0673,
+        "positive": 0.0799,
+        "negative": 0.0126,
+        "neutral": 0.9076,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sunil D’souza",
+      "role": "Managing Director and CEO, Tata Consumer Products",
+      "tone": "Confident",
+      "key_topics": [
+        "Market share",
+        "Revenue growth",
+        "Margin recovery",
+        "Product innovation"
+      ],
+      "direct_answers": [
+        "Mihir Shah's question on tea margins and sales growth",
+        "Arnab Mitra's question on RTD beverage business"
+      ],
+      "dodged_or_vague": [
+        "Vivek M.'s question on market share specifics"
+      ],
+      "summary": "Sunil D’souza, the Managing Director and CEO, presented a confident outlook on the company's performance, highlighting an 18% revenue increase and strong volume growth in the India branded business. He emphasized the importance of maintaining market share over short-term margin gains, indicating a strategic focus on long-term growth. Sunil directly addressed questions on tea margins and RTD beverages, but was less specific on market share details when questioned by Vivek M.",
+      "sentiment_score": 0.2321,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2321,
+        "positive": 0.3527,
+        "negative": 0.1206,
+        "neutral": 0.5267,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Goenka",
+      "role": "Group Chief Financial Officer, Tata Consumer Products",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Margin recovery",
+        "Tax implications"
+      ],
+      "direct_answers": [
+        "Mihir Shah's question on international sales sustainability"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashish Goenka, the Group CFO, provided a detailed financial overview, reporting an 18% consolidated growth and significant margin recovery. He acknowledged challenges in coffee volatility but remained confident about the company's financial trajectory. Ashish directly answered questions regarding the sustainability of international sales growth, maintaining a confident tone throughout his presentation.",
+      "sentiment_score": 0.9422,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9422,
+        "positive": 0.9618,
+        "negative": 0.0195,
+        "neutral": 0.0187,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mihir Shah",
+      "role": "Analyst, Nomura",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Tea business growth",
+        "International sales"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mihir Shah from Nomura posed detailed questions regarding the tea business and international sales. His inquiries were focused on understanding the sustainability of recent growth trends and the impact of price adjustments. Mihir's tone was inquisitive, seeking clarity on future expectations for the company's key segments.",
+      "sentiment_score": 0.1321,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1321,
+        "positive": 0.1848,
+        "negative": 0.0527,
+        "neutral": 0.7625,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Arnab Mitra",
+      "role": "Analyst, Goldman Sachs",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "RTD beverage business",
+        "GST impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Arnab Mitra from Goldman Sachs focused his questions on the RTD beverage business, particularly inquiring about the impact of GST rate changes and the competitive landscape. His tone was inquisitive, aiming to understand the strategic advantages and growth potential in this segment.",
+      "sentiment_score": 0.8002,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8002,
+        "positive": 0.8146,
+        "negative": 0.0144,
+        "neutral": 0.171,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek M.",
+      "role": "Analyst, Jefferies",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Market share",
+        "Salt and tea categories"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vivek M. from Jefferies raised questions about market share dynamics, particularly in the salt and tea categories. He sought to understand the reasons behind flat market share despite growth in volume and value. Vivek's tone was inquisitive, probing for insights into competitive positioning and market trends.",
+      "sentiment_score": -0.62,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.62,
+        "positive": 0.0646,
+        "negative": 0.6846,
+        "neutral": 0.2508,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 8,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or avoided. A narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON structure is then populated with this information, ensuring a comprehensive and structured analysis of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

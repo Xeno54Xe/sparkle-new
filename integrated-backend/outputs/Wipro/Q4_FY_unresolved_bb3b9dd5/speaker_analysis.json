@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Dipak Bohra",
+      "role": "Senior Vice President (Corporate Treasurer & Investor Relations)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Dipak Bohra opened the earnings call with a formal introduction, setting the stage for the presentations by the CEO and CFO. He highlighted the presence of key management personnel and reminded participants of the forward-looking nature of some statements, emphasizing the associated risks and uncertainties. His tone was neutral, focusing on procedural aspects of the call.",
+      "sentiment_score": -0.0409,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0409,
+        "positive": 0.0434,
+        "negative": 0.0842,
+        "neutral": 0.8724,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srini Pallia",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "cautious",
+      "key_topics": [
+        "business performance",
+        "strategic priorities",
+        "macroeconomic environment",
+        "guidance"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on vertical impacts",
+        "Kumar Rakesh's question on guidance"
+      ],
+      "dodged_or_vague": [
+        "Vibhor Singhal's question on specific weaknesses"
+      ],
+      "summary": "Srini Pallia reflected on his first year as CEO, noting progress in large deals and AI-powered solutions. He acknowledged the challenging macroeconomic environment, particularly due to recent tariff announcements, and expressed a cautious outlook. Srini emphasized strategic priorities and provided guidance for the next quarter, highlighting expected sequential growth declines. He answered questions about sector impacts and guidance but was vague about specific weaknesses affecting the quarter.",
+      "sentiment_score": 0.9257,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9257,
+        "positive": 0.9363,
+        "negative": 0.0106,
+        "neutral": 0.0531,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aparna Iyer",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "guidance"
+      ],
+      "direct_answers": [
+        "Manik Taneja's question on margins",
+        "Ankur Rudra's question on client metrics"
+      ],
+      "dodged_or_vague": [
+        "Surendra Goyal's question on sales and marketing spend"
+      ],
+      "summary": "Aparna Iyer provided a detailed financial overview, noting a decline in IT Services revenue but highlighting improvements in operating margins. She expressed caution about the macroeconomic environment's impact on future revenues. Aparna answered questions about margins and client metrics but was less clear on the specifics of sales and marketing spend adjustments. Her tone was cautious, reflecting the challenges ahead.",
+      "sentiment_score": -0.7971,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.7971,
+        "positive": 0.0887,
+        "negative": 0.8858,
+        "neutral": 0.0255,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the earnings call, providing instructions for participants and managing the Q&A session. The tone was neutral, focusing on ensuring the call proceeded smoothly and efficiently. The Moderator did not engage in content discussions but ensured that the logistics were clear to all participants.",
+      "sentiment_score": 0.015,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.015,
+        "positive": 0.0362,
+        "negative": 0.0213,
+        "neutral": 0.9425,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted to capture the essence of each speaker's contribution, focusing on verbatim quotes for accuracy. The tone of each speaker was assessed based on their language and context. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker to encapsulate their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

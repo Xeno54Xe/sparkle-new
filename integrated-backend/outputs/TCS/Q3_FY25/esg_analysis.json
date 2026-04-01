@@ -1,0 +1,72 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 40.5,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 75.0,
+    "key_themes": [
+      "employee development",
+      "diversity and inclusion",
+      "community engagement"
+    ],
+    "notable_excerpts": [
+      "Employees logged over 40 million learning hours year-to-date and acquired 3.8 million competencies.",
+      "Our workforce continues to be very diverse with 152 nationalities represented and with women making 35.3% of the base.",
+      "We are proud to have recognized the exceptional contributions of our associates by awarding over 25,000 well-deserved promotions across levels."
+    ]
+  },
+  "governance": {
+    "score": 60.0,
+    "key_themes": [
+      "capital allocation",
+      "board decisions",
+      "transparency"
+    ],
+    "notable_excerpts": [
+      "The Board has recommended a dividend of ₹76 per share, which includes an interim dividend of ₹10 and a special dividend of ₹66 per share.",
+      "It's a Board decision to announce the special dividend this quarter or decide on the capital allocation policy."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript for TCS Q3 FY25 shows a strong focus on social aspects, particularly in employee development and diversity. Governance is addressed through discussions on capital allocation and board decisions. However, there is a lack of environmental disclosures, resulting in a low overall ESG score.",
+  "strengths": [
+    "Strong employee development initiatives",
+    "Diverse workforce"
+  ],
+  "weaknesses": [
+    "Lack of environmental disclosures"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

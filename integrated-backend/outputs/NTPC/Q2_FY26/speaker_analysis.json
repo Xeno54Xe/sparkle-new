@@ -1,0 +1,89 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Jaikumar Srinivasan",
+      "role": "Director (Finance), NTPC",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "capacity growth",
+        "operational performance",
+        "sustainability initiatives",
+        "future growth"
+      ],
+      "direct_answers": [
+        "Meja Phase 2, all clearances are in place. Only the State Government of UP approval is required. It is a matter of time, expected to take place within two months.",
+        "The excavation contract is already awarded for Unit 1 and 2. And the free issue materials for this nuclear are already being done by NPCIL. The balance package of nuclear island and the TG package is expected to be awarded in this financial year.",
+        "Yes, generally that's the result of an extended monsoon and some curtailment in RE in Rajasthan is there because of that.",
+        "Yes, very much. We are quite geared up. In fact, for FY26, we have a target of 2019 MW on a standalone basis and 7825 MW for JVs and subsidiaries, both totaling to 9844 MW."
+      ],
+      "dodged_or_vague": [
+        "The same can be worked out based on CODs and the debt equity of that.",
+        "No, we don't intend participating in any tariff-based competition."
+      ],
+      "summary": "Jaikumar Srinivasan, as Director (Finance) of NTPC, led the earnings call with a confident tone, emphasizing NTPC's robust financial performance and strategic growth initiatives. He highlighted the company's significant capacity additions and operational achievements, noting a 10% increase in group capacity to 83,893 MW. Srinivasan provided detailed financial metrics, including a profit after tax of ₹4,653 crore for Q2 FY26. He addressed questions on project timelines and regulatory approvals directly, while some responses on future financial projections were less specific. Overall, his narrative underscored NTPC's commitment to sustainable growth and operational excellence.",
+      "sentiment_score": 0.9296,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9296,
+        "positive": 0.9446,
+        "negative": 0.015,
+        "neutral": 0.0404,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bharanidhar Vijayakumar",
+      "role": "Moderator from Avendus Spark",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Bharanidhar Vijayakumar served as the moderator for the NTPC earnings call, maintaining a neutral tone throughout. He facilitated the introduction and conclusion of the call, ensuring a smooth transition between speakers. His role was primarily to manage the flow of the call, and he did not engage in the technical or financial discussions. His contributions were concise and focused on procedural aspects, providing a platform for NTPC's management to present their updates and respond to analyst queries.",
+      "sentiment_score": 0.0886,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0886,
+        "positive": 0.1008,
+        "negative": 0.0121,
+        "neutral": 0.8871,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 2,
+  "chain_of_thought": "The task involves identifying speakers from the transcript, extracting their key statements, and analyzing their tone and responses. Jaikumar Srinivasan, as the primary speaker from NTPC, provided detailed financial and operational updates, displaying a confident tone. He answered several questions directly but was vague on some future projections. Bharanidhar Vijayakumar, as the moderator, maintained a neutral tone, focusing on facilitating the call rather than engaging in content discussions. The JSON structure captures these elements for further analysis by a financial NLP model.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Infosys Q3 FY'26 earnings call, ensuring participants were aware of the call's logistics and the process for asking questions. The tone was neutral and professional, focusing on the smooth operation of the call.",
+      "sentiment_score": 0.0443,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0443,
+        "positive": 0.0587,
+        "negative": 0.0145,
+        "neutral": 0.9268,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Mahindroo",
+      "role": "Management",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Company performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Mahindroo opened the earnings call by welcoming participants and introducing the key speakers. He maintained a neutral tone, focusing on the structure of the call and setting the stage for the management's remarks on company performance.",
+      "sentiment_score": 0.0487,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0487,
+        "positive": 0.0631,
+        "negative": 0.0144,
+        "neutral": 0.9226,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Salil Parekh",
+      "role": "CEO and MD",
+      "tone": "Confident",
+      "key_topics": [
+        "Company performance",
+        "AI initiatives",
+        "Financial guidance"
+      ],
+      "direct_answers": [
+        "Ritu Singh",
+        "Mansee Dave",
+        "Shristi Achar"
+      ],
+      "dodged_or_vague": [
+        "Dipesh Mehta"
+      ],
+      "summary": "Salil Parekh, the CEO, presented a confident overview of Infosys' strong Q3 performance, highlighting revenue growth and significant deals, including a $1.6 billion contract with the NHS. He emphasized the company's advancements in AI, detailing the Topaz AI capabilities and the six emerging AI-led value pools. Parekh was optimistic about Infosys' market positioning and revised the revenue growth guidance upwards. He directly answered questions about demand visibility and AI adoption but was vague on specifics regarding future AI growth metrics.",
+      "sentiment_score": 0.5187,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5187,
+        "positive": 0.5846,
+        "negative": 0.0658,
+        "neutral": 0.3496,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Jayesh Sanghrajka",
+      "role": "CFO",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Margins",
+        "Headcount"
+      ],
+      "direct_answers": [
+        "Ritu Singh",
+        "Shristi Achar"
+      ],
+      "dodged_or_vague": [
+        "Keith Bachman"
+      ],
+      "summary": "Jayesh Sanghrajka, the CFO, provided a cautious yet detailed analysis of Infosys' financial performance, focusing on margin expansion and headcount growth. He explained the factors contributing to the 20 basis point margin increase, including currency benefits and Project Maximus. Sanghrajka highlighted investments in sales and marketing and the impact of lower utilization. He directly addressed questions about margins and headcount but was less specific about future wage hikes and client-specific contract details.",
+      "sentiment_score": 0.9227,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9227,
+        "positive": 0.9397,
+        "negative": 0.017,
+        "neutral": 0.0433,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rishi Basu",
+      "role": "Associate Vice President and Global Head - Corporate Communications",
+      "tone": "Neutral",
+      "key_topics": [
+        "Facilitation",
+        "Question moderation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rishi Basu played a neutral role in facilitating the earnings call, ensuring a smooth transition between speakers and maintaining the one-question rule for media participants. His contribution was primarily logistical, focusing on the orderly conduct of the call.",
+      "sentiment_score": 0.0684,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0684,
+        "positive": 0.0837,
+        "negative": 0.0153,
+        "neutral": 0.901,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dipesh Mehta",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "AI services",
+        "Budget expectations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Salil Parekh"
+      ],
+      "summary": "Dipesh Mehta, an analyst, asked probing questions about Infosys' AI services and future budget expectations. He sought detailed insights into the company's growth opportunities in AI and how these might evolve over the next few years. However, Salil Parekh provided a vague response, indicating that more details would be shared at a future Investor Day.",
+      "sentiment_score": 0.1527,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1527,
+        "positive": 0.1622,
+        "negative": 0.0095,
+        "neutral": 0.8283,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone of each speaker was assessed based on their language and the context of their statements. Management speakers were evaluated on how directly they answered analyst questions, noting any instances of deflection or vagueness. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

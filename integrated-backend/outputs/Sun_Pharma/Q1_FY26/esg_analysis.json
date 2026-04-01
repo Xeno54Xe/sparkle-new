@@ -1,0 +1,61 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 7.0,
+  "esg_label": "Critical",
+  "esg_colour": "#B71C1C",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "governance": {
+    "score": 20.0,
+    "key_themes": [
+      "transparency",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "The discussion today might include certain forward-looking statements and these must be viewed in conjunction with the risks that our business faces.",
+      "Our balance sheet continues to be strong, with a net cash position of $3.1 billion at the consolidated level, which is invested in Board approved securities and is earmarked for future investments."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript for Sun Pharma Q1 FY26 lacks any specific mentions of environmental or social themes. Governance aspects are lightly touched upon with mentions of transparency and risk management, but lack depth and specificity.",
+  "strengths": [],
+  "weaknesses": [
+    "Lack of environmental and social disclosures",
+    "Limited governance details"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

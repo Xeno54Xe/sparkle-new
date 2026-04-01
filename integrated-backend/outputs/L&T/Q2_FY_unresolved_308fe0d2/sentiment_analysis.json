@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.4332,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.447,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.447,
+        "positive": 0.2664,
+        "negative": 0.7134,
+        "neutral": 0.0203,
+        "chunks_scored": 1
+      },
+      "text": "During the quarter, L&T reported a group revenue growth of 10% year-on-year in Q2 FY '26, driven by strong execution momentum in the Energy and Hi-Tech Manufacturing segments, although execution in the Infrastructure Projects segment was subdued. The P&M businesses recorded revenue of Rs 490 billion, marking a 10% growth over the previous year. The Group level EBITDA margin without other income for Q2 FY '26 was 10.0%, slightly down from 10.3% in the previous year, primarily due to margin compression in the IT&TS segment. However, the EBITDA margins in the P&M business portfolio improved from 7.6% in Q2 FY '25 to 7.8% in Q2 FY '26. The Consolidated PAT for Q2 FY '26 was Rs 39 billion, up by 16% compared to the previous year, reflecting improved activity levels and efficient treasury management."
+    },
+    "forward_guidance": {
+      "score": 0.9404,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9404,
+        "positive": 0.9567,
+        "negative": 0.0163,
+        "neutral": 0.0271,
+        "chunks_scored": 1
+      },
+      "text": "L&T maintained its full year revenue growth guidance at 15%, expecting stronger revenue visibility in the second half of the fiscal year due to a ramp-up in execution. The company is confident of achieving its full year EBITDA margin target of 8.5% for the P&M business, with execution momentum expected to pick up in H2. The guidance for working capital for FY '26 remains unchanged at around 12% by March 2026. Management expressed confidence in exceeding the full year FY '26 guidance of 10% growth in group order inflows, supported by a robust prospects pipeline and strategic capacity expansions."
+    },
+    "risk_language": {
+      "score": 0.5911,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.5911,
+        "positive": 0.7368,
+        "negative": 0.1457,
+        "neutral": 0.1175,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged sector-specific challenges and execution issues, particularly in the Infrastructure Projects segment, due to an extended monsoon and payment-related issues in the Water and Effluent Treatment segment. Despite these challenges, the overall revenue guidance remains on track. The company is aware of the competitive pressures and has a strong risk management system in place to evaluate risks related to customer, sector, and geography. Management also noted the southward movement in Energy margins but reiterated that this was accounted for in their guidance."
+    },
+    "investor_confidence": {
+      "score": 0.835,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.835,
+        "positive": 0.8434,
+        "negative": 0.0084,
+        "neutral": 0.1482,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence, emphasizing a strong order book and prospects pipeline. They addressed analyst questions directly, providing detailed explanations on revenue growth, margin expectations, and risk management strategies. The company's strategic partnerships and capacity expansions were highlighted as key drivers for future growth. Management's transparency and detailed responses to questions suggest a high level of credibility and investor confidence."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong execution momentum in Energy and Hi-Tech Manufacturing",
+    "10% growth in P&M business revenue",
+    "Improved EBITDA margins in P&M business",
+    "16% increase in Consolidated PAT",
+    "Robust prospects pipeline",
+    "Strategic partnerships and capacity expansions"
+  ],
+  "key_negative_drivers": [
+    "Subdued execution in Infrastructure Projects",
+    "Margin compression in IT&TS segment",
+    "Extended monsoon affecting execution",
+    "Payment-related issues in Water and Effluent Treatment"
+  ],
+  "notable_phrases": [
+    "strong execution momentum",
+    "subdued during the quarter",
+    "margin compression in our IT&TS segment",
+    "execution momentum expected to pick up",
+    "robust prospects pipeline",
+    "strategic partnerships",
+    "risk management system",
+    "confident of exceeding our full year guidance"
+  ],
+  "chain_of_thought": "L&T's financial performance showed solid revenue growth and improved margins in key segments, though some areas faced execution challenges. Forward guidance was optimistic, with expectations of stronger performance in H2 and maintained growth targets. Risks were acknowledged, particularly in infrastructure execution, but were mitigated by strong risk management practices. Investor confidence was bolstered by management's transparency, strategic initiatives, and detailed responses to analyst inquiries, leading to a cautiously bullish overall tone."
+}

@@ -1,0 +1,72 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 31.5,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 30.0,
+    "key_themes": [
+      "employee attrition",
+      "community activity",
+      "customer assistance"
+    ],
+    "notable_excerpts": [
+      "Employee headcount stood at 65,528 and employee attrition in quarter was 16.9%, a little higher than what it was on a year-on-year basis.",
+      "To assist MSME customers with short-term cash flow issues, we have begun to offer them restructuring options."
+    ]
+  },
+  "governance": {
+    "score": 60.0,
+    "key_themes": [
+      "succession planning",
+      "board oversight",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "Board and upon the recommendation of NRC have noted and accepted the resignation, and we wish to place on record our sincere appreciation for Anup's valuable contribution during his tenure.",
+      "To ensure continuity and to ensure stability of the firm, I've had to come back as in an operating role.",
+      "The Board has asked us to create a succession plan."
+    ]
+  },
+  "chain_of_thought": "The earnings call lacked any environmental disclosures, had moderate social disclosures focusing on employee attrition and customer assistance, and had relatively strong governance disclosures with emphasis on succession planning and board oversight.",
+  "strengths": [
+    "Strong governance focus on succession planning and board oversight."
+  ],
+  "weaknesses": [
+    "Lack of environmental disclosures.",
+    "Limited social disclosures beyond employee attrition and customer assistance."
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

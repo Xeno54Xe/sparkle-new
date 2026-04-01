@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.2578,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.7245,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.7245,
+        "positive": 0.1293,
+        "negative": 0.8539,
+        "neutral": 0.0168,
+        "chunks_scored": 1
+      },
+      "text": "TCS reported a revenue increase of 2.5% year-on-year in constant currency terms for Q4, reaching ₹64,479 crore, translating to a growth of 5.3% in rupee terms and a dollar revenue of $7.47 billion, marking a Y-o-Y growth of 1.4%. The operating margin for Q4 stood at 24.2%, reflecting a sequential decline of 30 basis points, while net margins were at 19%. The company faced a 100 basis points headwind due to tactical interventions and a further 60 basis points from strategic marketing initiatives, but managed to mitigate some of these through improved operating leverage and currency movements, which provided a 40-basis point support. For FY '25, the operating margin was 24.3%, a decline of 30 basis points over the prior year, with net margins at 19% and EPS growth of 5.1% year-on-year. The Board recommended a final dividend of ₹30 per share, bringing the total dividend for the year to ₹126 per share."
+    },
+    "forward_guidance": {
+      "score": 0.924,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.924,
+        "positive": 0.9472,
+        "negative": 0.0232,
+        "neutral": 0.0296,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed cautious optimism for FY '26, despite acknowledging more uncertainty compared to the previous year. They highlighted a strong TCV and pipeline, with a record Q4 TCV of $12.2 billion, including an all-time high North America TCV of $6.8 billion. The company expects to continue momentum into the next fiscal, driven by public sector demand and a strong deal pipeline. However, they noted that client IT budgets remain flat amid geopolitical uncertainties and fluctuating inflation. Management believes that the current uncertainty will be short-lived and that clarity will emerge, allowing for confident investment in technology."
+    },
+    "risk_language": {
+      "score": 0.0906,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.0906,
+        "positive": 0.4686,
+        "negative": 0.378,
+        "neutral": 0.1534,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including delays in decision-making and discretionary spending coming under scrutiny. Management noted the impact of geopolitical uncertainties and fluctuating inflation on client IT budgets. They also mentioned potential headwinds from lower operating leverage due to utilization impacts and the possibility of not benefiting from currency movements as seen in FY '25. The company is closely monitoring these risks and remains committed to adapting and transforming to mitigate potential disruptions."
+    },
+    "investor_confidence": {
+      "score": 0.8993,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8993,
+        "positive": 0.91,
+        "negative": 0.0107,
+        "neutral": 0.0792,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of cautious optimism and confidence, emphasizing their strong TCV and pipeline as key factors for future growth. They addressed analyst questions directly, providing clarity on their strategy and expectations for FY '26. The leadership team highlighted their commitment to staying close to customers and helping them achieve core priorities, leveraging TCS's comprehensive portfolio and innovation capabilities. Despite acknowledging uncertainties, management conveyed a belief in their ability to navigate challenges and capitalize on opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "Record Q4 TCV of $12.2 billion",
+    "Strong North America TCV of $6.8 billion",
+    "Continued momentum in growth markets",
+    "Investments in AI and digital innovation",
+    "Strong cash conversion and free cash flows",
+    "Robust dividend payout"
+  ],
+  "key_negative_drivers": [
+    "Delays in decision-making",
+    "Discretionary spending scrutiny",
+    "Geopolitical uncertainties",
+    "Fluctuating inflation",
+    "Potential lower operating leverage",
+    "Uncertainty in client IT budgets"
+  ],
+  "notable_phrases": [
+    "surpassing the $30 billion revenue milestone",
+    "industry-leading margins",
+    "record Q4 TCV of $12.2 billion",
+    "more uncertainty than last year",
+    "current uncertainty will be short-lived",
+    "strong TCV and pipeline",
+    "delays in decision-making",
+    "discretionary spending under pressure"
+  ],
+  "chain_of_thought": "The financial performance showed modest growth with some headwinds, but strong cash flows and dividends. Forward guidance was cautiously optimistic, with a strong deal pipeline but acknowledged uncertainties. Risk language highlighted geopolitical and economic challenges, but management was proactive in addressing them. Investor confidence was bolstered by management's clarity and strategic focus, despite acknowledging current uncertainties."
+}

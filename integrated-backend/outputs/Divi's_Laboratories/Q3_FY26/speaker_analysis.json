@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "Q&A facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the conference call, ensuring that participants were aware of the listen-only mode and the process for asking questions. They also managed the transition between speakers and ensured the call was recorded for future reference. The tone was neutral, focusing on logistics and smooth operation of the call.",
+      "sentiment_score": 0.0449,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0449,
+        "positive": 0.0594,
+        "negative": 0.0145,
+        "neutral": 0.9262,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. Satish Choudhury",
+      "role": "Company Secretary and Chief Investor Relations Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial results",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "M. Satish Choudhury opened the call by welcoming participants and introducing the management team present. He provided an overview of the financial results and emphasized the presence of forward-looking statements, highlighting the associated risks and uncertainties. His tone was neutral, focusing on procedural and compliance aspects of the call.",
+      "sentiment_score": -0.0054,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0054,
+        "positive": 0.0259,
+        "negative": 0.0313,
+        "neutral": 0.9428,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Kiran S. Divi",
+      "role": "Whole-Time Director and Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "operational progress",
+        "technology advancements",
+        "market strategy"
+      ],
+      "direct_answers": [
+        "They are the same. The 3 molecules, whatever we have informed SEBI on the investment and the 3 molecules in CS that are going to be -- which are validated and going through approvals are the same molecules right now.",
+        "That is a fair way to look at it."
+      ],
+      "dodged_or_vague": [
+        "I'm sorry, I cannot answer this question because we are bound by CDA. I cannot disclose their plans and at what stages any of our customers are.",
+        "I'm sorry, I cannot discuss this."
+      ],
+      "summary": "Dr. Kiran S. Divi provided a comprehensive overview of Divi's Laboratories' operational progress and strategic priorities. He highlighted the company's stable performance in the Generics segment and active engagement in Custom Synthesis projects. He emphasized the company's strengths in EHS performance and compliance, which are crucial for global CDMO opportunities. Dr. Divi also discussed advancements in peptide chemistry and technology platforms, as well as the company's commitment to CSR initiatives. His tone was confident, reflecting a positive outlook on the company's growth and strategic direction.",
+      "sentiment_score": 0.8526,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8526,
+        "positive": 0.8604,
+        "negative": 0.0078,
+        "neutral": 0.1318,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Nilima Prasad Divi",
+      "role": "Whole-Time Director (Commercial)",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "operational reliability",
+        "risk management"
+      ],
+      "direct_answers": [
+        "So based on the forward-looking statements and a few clarifications that Dr. Kiran Divi has provided, we can say that's what we are aiming at and that's what we are trying to go towards."
+      ],
+      "dodged_or_vague": [
+        "Can you slow down the speed of your question and ask again, please?",
+        "We are not hedging. We are evaluating at this point based on the overall scenario in the market."
+      ],
+      "summary": "Nilima Prasad Divi provided an overview of the operational and financial performance, emphasizing the company's focus on disciplined execution and long-term value creation amidst a complex geopolitical environment. She highlighted the stability in raw material pricing and logistics, supported by a diversified vendor base and backward integration. Her tone was cautious, reflecting vigilance towards external developments and their potential impact on input costs. She also discussed the financial impact of regulatory changes and reiterated the company's commitment to operational excellence and prudent capital allocation.",
+      "sentiment_score": 0.671,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.671,
+        "positive": 0.6838,
+        "negative": 0.0128,
+        "neutral": 0.3034,
+        "chunks_scored": 2
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting key statements from the transcript. The tone of each speaker was assessed based on their language and the context of their statements. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or vague responses. A narrative summary was crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

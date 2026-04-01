@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6762,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9398,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9398,
+        "positive": 0.9597,
+        "negative": 0.0198,
+        "neutral": 0.0205,
+        "chunks_scored": 1
+      },
+      "text": "Sun Pharma reported Q2 FY26 sales of INR144,052 million, marking a growth of 8.6% compared to Q2 FY25. The gross margin for the quarter was 79.3%, and EBITDA was INR45,271 million, an increase of 14.9% over the previous year. The EBITDA margin improved to 31.3% from 29.6% in Q2 FY25. Net profit after tax rose by 2.6% to INR31,180 million, with an EPS of INR13 per share. The effective tax rate increased to 24.7% from 15.8% in the previous year. The balance sheet remains strong with a net cash position of $2.9 billion, despite investments in business acquisitions and settlements."
+    },
+    "forward_guidance": {
+      "score": 0.8546,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8546,
+        "positive": 0.8704,
+        "negative": 0.0158,
+        "neutral": 0.1138,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook for the upcoming quarters. They expect cash generation to normalize by the end of the fiscal year, aligning with PBT growth. The company plans to launch UNLOXCYT in the U.S. in the second half of FY26 and file an sBLA for ILUMYA for psoriatic arthritis. R&D spending is expected to remain at the lower end of the 6% to 8% guidance. The company anticipates continued growth in the IL-23 market and expects prescription growth for ILUMYA to persist."
+    },
+    "risk_language": {
+      "score": -0.047,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": -0.047,
+        "positive": 0.44,
+        "negative": 0.487,
+        "neutral": 0.0729,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including increased competition in the generics market and a higher effective tax rate. Management acknowledged a decline in cash flow due to increased working capital and recent acquisitions. There was also mention of potential regulatory risks related to U.S. tariffs on drug imports, though the situation remains uncertain. The company is monitoring its manufacturing footprint in the U.S. and is open to strategic moves. Management was forthright about these challenges, indicating a proactive approach to risk management."
+    },
+    "investor_confidence": {
+      "score": 0.7362,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7362,
+        "positive": 0.7476,
+        "negative": 0.0114,
+        "neutral": 0.2411,
+        "chunks_scored": 1
+      },
+      "text": "Management demonstrated clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations for financial movements. They acknowledged the impact of acquisitions on cash flow and outlined plans for future product launches. The leadership team, including the CFO and CEO, provided comprehensive updates on various business segments, reinforcing their credibility. The call conveyed a sense of confidence in the company's strategic direction and ability to navigate current challenges."
+    }
+  },
+  "key_positive_drivers": [
+    "8.6% sales growth",
+    "14.9% EBITDA increase",
+    "Strong net cash position",
+    "Growth in Innovative Medicines",
+    "ILUMYA commercialization in 35 markets",
+    "Emerging Markets growth"
+  ],
+  "key_negative_drivers": [
+    "Higher effective tax rate",
+    "Increased competition in generics",
+    "Decline in U.S. generics sales",
+    "Cash flow impacted by acquisitions",
+    "Regulatory uncertainty in the U.S.",
+    "Short-term borrowing for acquisition"
+  ],
+  "notable_phrases": [
+    "record a growth of 8.6%",
+    "EBITDA margin percentage for the quarter was at 31.3%",
+    "Net profit after tax for Q2 FY '26 was INR31,180 million",
+    "cash generation to clarify has been good",
+    "expect to see continued growth",
+    "balance sheet continues to be strong",
+    "awaiting FDA decision on UNLOXCYT",
+    "open to considering moves to the U.S."
+  ],
+  "chain_of_thought": "Sun Pharma's financial performance showed solid growth in sales and EBITDA, with a strong balance sheet despite increased tax rates and competition. Forward guidance was cautiously optimistic, with expectations for cash flow normalization and strategic product launches. Risks were acknowledged, particularly in regulatory and competitive areas, but management's transparency and strategic clarity projected confidence. Overall, the tone was cautiously bullish, reflecting both achievements and challenges."
+}

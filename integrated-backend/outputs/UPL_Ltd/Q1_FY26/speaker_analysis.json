@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Anurag Gupta",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference logistics",
+        "management introductions"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anurag Gupta opened the earnings call by welcoming participants and introducing the management team. He provided logistical details about the call and directed the flow of the meeting. His tone was neutral, focusing on procedural aspects rather than financial specifics.",
+      "sentiment_score": 0.0944,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0944,
+        "positive": 0.1056,
+        "negative": 0.0112,
+        "neutral": 0.8833,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bikash Prasad",
+      "role": "Group Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "liquidity",
+        "ratings",
+        "debt management"
+      ],
+      "direct_answers": [
+        "No, just to clarify, last year we did not provide any guidance on cash flow, net debt, or leverage ratio because those metrics were quite comfortable."
+      ],
+      "dodged_or_vague": [
+        "This is too early. As you would have read in the press release, we are now engaging advisors, and various discussions and options will be evaluated."
+      ],
+      "summary": "Bikash Prasad, the Group CFO, provided a comprehensive overview of UPL's financial performance, highlighting strong liquidity and improved ratings. He confidently discussed debt management strategies, including pre-payment of loans and bond redemptions. While he directly addressed some financial metrics, he was vague about future restructuring plans, indicating ongoing evaluations. His tone was confident, reflecting a positive outlook on financial resilience and strategic clarity.",
+      "sentiment_score": 0.5241,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5241,
+        "positive": 0.5424,
+        "negative": 0.0184,
+        "neutral": 0.4392,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Mike Frank",
+      "role": "CEO of Global Crop Protection Business",
+      "tone": "cautious",
+      "key_topics": [
+        "global crop protection market",
+        "financial health",
+        "regional performance"
+      ],
+      "direct_answers": [
+        "Yes. Hello, Saurabh. Thank you for the question. It's Mike here. Look, as we are continuing to experience overcapacity from China, and the pricing that we have seen over the last 18 months is also quite similar."
+      ],
+      "dodged_or_vague": [
+        "So, obviously, we read the same information just yesterday. So, it's early days."
+      ],
+      "summary": "Mike Frank, CEO of the Global Crop Protection Business, provided insights into the global market, noting strong demand but also pressures on farmer margins. He highlighted regional challenges, particularly in Brazil, and expressed cautious optimism about future growth. While he directly addressed some questions about market conditions, he was vague about the implications of competitor exits, indicating it was too early to assess. His tone was cautious, reflecting both challenges and opportunities in the market.",
+      "sentiment_score": 0.9114,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9114,
+        "positive": 0.9406,
+        "negative": 0.0293,
+        "neutral": 0.0301,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bhupen Dubey",
+      "role": "CEO of Seeds Business Advanta",
+      "tone": "neutral",
+      "key_topics": [
+        "seed business performance",
+        "inorganic growth"
+      ],
+      "direct_answers": [
+        "Yes, sure. Thank you for your question. There are two important elements that contributed to this phenomenon."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Bhupen Dubey, CEO of Advanta, discussed the seeds business and its strategic focus on inorganic growth. He acknowledged media reports about potential acquisitions but noted ongoing litigation as a barrier. His responses were direct, providing clarity on business strategy and market conditions. His tone was neutral, focusing on factual updates and strategic considerations.",
+      "sentiment_score": 0.534,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.534,
+        "positive": 0.5456,
+        "negative": 0.0116,
+        "neutral": 0.4428,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies key speakers and their roles, extracts verbatim statements to capture specific language and numbers, assesses each speaker's tone, and evaluates how management addressed analyst questions. This structured approach ensures a comprehensive understanding of the earnings call dynamics and the strategic messages conveyed by each speaker.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

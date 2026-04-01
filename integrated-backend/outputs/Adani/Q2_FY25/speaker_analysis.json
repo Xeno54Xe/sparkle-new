@@ -1,0 +1,156 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Robbie Singh",
+      "role": "CFO, Adani Enterprises",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "capex plans",
+        "data center business",
+        "airport development",
+        "green hydrogen"
+      ],
+      "direct_answers": [
+        "Roughly Rs. 1,000 crore.",
+        "Rs. 300 crore.",
+        "Approximately Rs. 200 crore.",
+        "Yes.",
+        "No, it's pretty steady."
+      ],
+      "dodged_or_vague": [
+        "Broadly, we have a tighter range on the say for the next two years, so I don't want to give a number that could be out materially in terms of focus.",
+        "Not the AI supply chain, but we have two large service businesses within AEL, which is our Adani Digital Labs and our Global Capability Center."
+      ],
+      "summary": "Robbie Singh, the CFO of Adani Enterprises, presented a confident and detailed overview of the company's financial performance and strategic initiatives. He highlighted the record EBITDA and significant growth in the company's emerging core infrastructure businesses. Singh provided specific figures for capex plans across various segments, including New Industries and Airports, and discussed the company's readiness in the data center business, particularly in the AI and GPU spaces. While he answered most questions directly, he was vague about specific future capex numbers and the AI supply chain involvement, indicating a cautious approach to forward-looking statements.",
+      "sentiment_score": 0.5588,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5588,
+        "positive": 0.5688,
+        "negative": 0.0099,
+        "neutral": 0.4213,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Aditya Bhartia",
+      "role": "Moderator, Investec Capital Services",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "moderation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aditya Bhartia served as the moderator for the earnings call, maintaining a neutral tone throughout. He introduced the call, welcomed the participants, and facilitated the transition to the main speakers, ensuring the call proceeded smoothly. Bhartia's role was primarily to manage the flow of the call rather than provide content or analysis.",
+      "sentiment_score": 0.0975,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0975,
+        "positive": 0.1101,
+        "negative": 0.0126,
+        "neutral": 0.8773,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Brett Knoblauch",
+      "role": "Analyst, Cantor Fitzgerald",
+      "tone": "inquisitive",
+      "key_topics": [
+        "data center business",
+        "AI trends"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Brett Knoblauch, an analyst from Cantor Fitzgerald, asked probing questions about Adani's data center business and its alignment with global AI trends. His inquiries were focused on understanding the company's strategic positioning in the high-performance compute data center market and potential interest in the AI supply chain. Knoblauch's questions were direct and aimed at eliciting detailed responses about future business directions.",
+      "sentiment_score": 0.1562,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1562,
+        "positive": 0.1676,
+        "negative": 0.0114,
+        "neutral": 0.8209,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gaurav Birmiwal",
+      "role": "Analyst, Axis Mutual Fund",
+      "tone": "inquisitive",
+      "key_topics": [
+        "solar panels",
+        "turbine sales"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Gaurav Birmiwal from Axis Mutual Fund focused his inquiry on the market outlook for Adani's solar panels and turbine sales. His question was aimed at understanding the demand stability and potential market shifts in these segments. Birmiwal's approach was straightforward, seeking insights into the company's expectations for its manufacturing and export industries.",
+      "sentiment_score": 0.033,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.033,
+        "positive": 0.0475,
+        "negative": 0.0145,
+        "neutral": 0.9379,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gopal N",
+      "role": "Analyst, SBI Life Insurance",
+      "tone": "inquisitive",
+      "key_topics": [
+        "EBITDA moderation",
+        "export market demand"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Gopal N from SBI Life Insurance raised questions about the sequential moderation in segment-wise EBITDA for ANIL and the stability of export market demand. His inquiries were aimed at understanding the factors affecting financial performance and market conditions. Gopal's questions were direct, seeking clarity on financial metrics and market dynamics.",
+      "sentiment_score": 0.0309,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0309,
+        "positive": 0.0749,
+        "negative": 0.0441,
+        "neutral": 0.881,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and responses. For management speakers, attention is given to how they handle analyst questions, noting direct answers and any deflections or vague responses. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. The JSON structure is used to organize this information systematically.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

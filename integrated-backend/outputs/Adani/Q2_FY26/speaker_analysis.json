@@ -1,0 +1,115 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Robbie Singh",
+      "role": "CFO - Adani Enterprises Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "investment phase",
+        "rights issue",
+        "Google contract",
+        "solar module sales"
+      ],
+      "direct_answers": [
+        "Manish Somaiya: Okay. That's helpful. And then how should we think about leverage and rights issue, timing, use of proceeds? If you can just help us understand that, please?",
+        "Mohit Kumar: Yes, good evening, and thank you for the opportunity. My first question is on the capital expenditure, what are the capital expenditures for H1, and what is the target for FY '26, and is it possible to get a broad breakup of the capex target for FY '26 across various businesses?",
+        "Nirav Shah: Yes, good evening, sir. And thanks for the opportunity. So, the first question is on our ANIL business. So, for the second consecutive quarter, sir, we have operated at above 100% utilization. I mean, in the first quarter, we did around 135% utilization in the current quarter. Hello. Hello, sir. Am I audible?"
+      ],
+      "dodged_or_vague": [
+        "Manish Somaiya: Thank you so much. Good afternoon. A couple of questions for the team. First on the Google announcement, can you help us understand, when that comes online, how should we think about revenues and profitability as we sort of build out our models?",
+        "Deval Shah: Hello. Good evening. I have two sorts of questions. First is to Robbie. I just want a little bit more insight on our defence and aero business. I think just a broad overview where we are and where we want to be after five years, just a broad brush on that side of the business?"
+      ],
+      "summary": "Robbie Singh, the CFO of Adani Enterprises, presented a confident overview of the company's financial performance and strategic direction. He highlighted the completion of key assets like the Navi Mumbai airport and Kutch Copper plant, and discussed the company's deep investment phase over the next five years. Singh addressed questions on the Google contract and solar module sales, providing detailed explanations but was somewhat vague on the specifics of the Google contract's financial impact. He was clear about the rights issue and its implications for the company's debt and growth strategy, directly answering questions about leverage and capital expenditure plans.",
+      "sentiment_score": 0.2534,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2534,
+        "positive": 0.2741,
+        "negative": 0.0207,
+        "neutral": 0.7052,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Arun Bansal",
+      "role": "CEO - Adani Airport Holdings Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "airport business performance",
+        "passenger traffic",
+        "tariff revisions",
+        "digital initiatives",
+        "Greenfield Navi Mumbai Airport"
+      ],
+      "direct_answers": [
+        "Deval Shah: And my second question is to Mr. Arun. Regarding that, I understand that, sir, we had some bottleneck with respect to availability of labour in developing our CSD. Is that been resolved or we are still in the process and we are on timeline in developing our CSD plans for Navi Mumbai?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Arun Bansal, CEO of Adani Airport Holdings, conveyed an optimistic outlook on the airport business's performance. He highlighted the strong momentum in both aeronautical and non-aeronautical sectors, driven by tariff revisions and digital initiatives. Bansal emphasized the significant contributions of Adani Airports to India's passenger and cargo traffic, and detailed the financial growth with a 32% increase in revenue and a 51% rise in EBITDA. He was enthusiastic about the upcoming operations of the Greenfield Navi Mumbai Airport and the strategic AI deal with AIONOS, which aims to enhance passenger engagement across airports. Bansal directly addressed a question about labor bottlenecks, confirming that issues had been resolved.",
+      "sentiment_score": 0.8917,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8917,
+        "positive": 0.9002,
+        "negative": 0.0085,
+        "neutral": 0.0913,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call management",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator managed the conference call efficiently, maintaining a neutral tone throughout. They facilitated the flow of the meeting by introducing speakers, guiding the Q&A session, and ensuring that participants were aware of the procedures for asking questions. The moderator also concluded the call by thanking participants and handing over to the management for closing comments. Their role was crucial in maintaining the structure and timing of the call, ensuring a smooth experience for all attendees.",
+      "sentiment_score": 0.0249,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0249,
+        "positive": 0.0421,
+        "negative": 0.0172,
+        "neutral": 0.9407,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The task involves identifying unique speakers from the transcript and analyzing their contributions. Robbie Singh, as the CFO, provided a comprehensive overview of Adani Enterprises' financial performance and strategic initiatives, addressing questions with confidence but occasionally being vague on specifics. Arun Bansal, CEO of Adani Airport Holdings, focused on the airport business's performance, expressing optimism about future prospects and directly answering questions about operational challenges. The moderator facilitated the call, maintaining a neutral tone and ensuring the session ran smoothly. Each speaker's tone and key topics were identified, and their statements were compiled for further analysis.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

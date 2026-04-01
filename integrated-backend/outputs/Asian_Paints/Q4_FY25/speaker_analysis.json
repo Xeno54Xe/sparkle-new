@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Jayalaxmi Gupta",
+      "role": "Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "earnings discussion"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jayalaxmi Gupta opened the earnings call by welcoming participants and introducing the key management team members present, including the MD and CEO, CFO, and AVP Finance. Her role was primarily to facilitate the meeting and ensure a smooth transition to the main speakers. Her tone was neutral, focusing on setting the stage for the detailed discussions to follow.",
+      "sentiment_score": 0.0861,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0861,
+        "positive": 0.0998,
+        "negative": 0.0137,
+        "neutral": 0.8865,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amit Syngle",
+      "role": "MD & CEO",
+      "tone": "cautious",
+      "key_topics": [
+        "core values",
+        "demand conditions",
+        "market strategy",
+        "innovation",
+        "premiumization"
+      ],
+      "direct_answers": [
+        "Abneesh Roy's question on warranty cost escalation",
+        "Jay Doshi's question on EBITDA margin guidance"
+      ],
+      "dodged_or_vague": [
+        "Shirish Pardeshi's question on management team losses"
+      ],
+      "summary": "Amit Syngle, the MD & CEO, provided a comprehensive overview of Asian Paints' performance, emphasizing the company's core values and the challenges faced due to weak demand conditions. He highlighted the disparity between the decorative and industrial segments, noting better performance in the latter. Syngle was cautious in tone, acknowledging the tough market conditions but also pointing out the company's strategic initiatives in innovation and premiumization. He directly addressed questions about warranty costs and EBITDA margin guidance but was less clear on issues related to management team losses.",
+      "sentiment_score": -0.4834,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4834,
+        "positive": 0.2326,
+        "negative": 0.716,
+        "neutral": 0.0514,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "RJ Jeyamurugan",
+      "role": "CFO & Company Secretary",
+      "tone": "neutral",
+      "key_topics": [
+        "financial disclosures",
+        "capex"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "RJ Jeyamurugan, the CFO and Company Secretary, primarily focused on formal financial disclosures and procedural aspects of the earnings call. His tone was neutral, and he did not engage in detailed discussions or answer specific questions during the call. His role was to ensure that the financial information was accurately recorded and communicated.",
+      "sentiment_score": 0.0545,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0545,
+        "positive": 0.0685,
+        "negative": 0.014,
+        "neutral": 0.9176,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Parag Rane",
+      "role": "AVP - Finance",
+      "tone": "neutral",
+      "key_topics": [
+        "volume growth metrics",
+        "capex"
+      ],
+      "direct_answers": [
+        "Manoj Menon's question on volume growth metrics"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Parag Rane, the AVP of Finance, addressed questions related to volume growth metrics and capital expenditure. He maintained a neutral tone, providing clear explanations on why Asian Paints uses tonnage as a metric and outlining expected capex outflows. Rane's responses were straightforward, and he directly answered questions without evasion.",
+      "sentiment_score": 0.1114,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1114,
+        "positive": 0.1337,
+        "negative": 0.0223,
+        "neutral": 0.8439,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies four speakers: Jayalaxmi Gupta, Amit Syngle, RJ Jeyamurugan, and Parag Rane. Each speaker's key statements and tone are extracted from the transcript. Jayalaxmi Gupta's role was introductory, setting the stage for the call. Amit Syngle provided a detailed overview of the company's performance and strategy, with a cautious tone due to market challenges. RJ Jeyamurugan focused on procedural financial disclosures, maintaining a neutral tone. Parag Rane addressed specific financial metrics and capex, also with a neutral tone. The analysis captures direct answers and instances where questions were deflected or answered vaguely, particularly by Amit Syngle.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

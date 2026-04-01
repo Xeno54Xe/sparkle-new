@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.4065,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.4959,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.4959,
+        "positive": 0.7347,
+        "negative": 0.2388,
+        "neutral": 0.0265,
+        "chunks_scored": 1
+      },
+      "text": "Apollo Hospitals reported a consolidated revenue of INR 6,304 crore, marking a 13% year-on-year growth. The consolidated EBITDA was INR 941 crore, an increase of 15% year-on-year, with the Healthcare Services EBITDA at INR 781 crore, showing an 8% growth. The Healthcare Services margin remained robust at 24.6%. Despite seasonal impacts, the company delivered strong growth across all verticals, with Apollo HealthCo and AHLL also showing significant revenue increases. The digital platform, 24/7, added 3 million new users, contributing to a 16% growth in GMV. Losses in the digital vertical decreased from INR 101 crore to INR 71 crore, indicating improved financial performance."
+    },
+    "forward_guidance": {
+      "score": 0.9387,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9387,
+        "positive": 0.9537,
+        "negative": 0.015,
+        "neutral": 0.0313,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving a revenue run rate of INR 25,000 crore with a 7% EBITDA by Q4 FY27. They are optimistic about the breakeven point being reached by Q4, with margins expected to improve to 7% in the next year. The company plans to open six new hospitals by the end of FY27, with expansions in key metros like Bangalore, Hyderabad, and Gurugram. The language used was optimistic, with a clear roadmap for growth and strategic capacity additions. Management highlighted the potential for higher occupancy rates and improved asset utilization."
+    },
+    "risk_language": {
+      "score": -0.3522,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.3522,
+        "positive": 0.2953,
+        "negative": 0.6475,
+        "neutral": 0.0571,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged certain risks, such as the impact of seasonal medical admissions and the reduction in patients from Bangladesh, which affected revenue by 1%. They also mentioned the integration and scheme-related expenses that compressed margins temporarily. The company is investing heavily in new hospital expansions and digital platforms, which could pose financial risks if not managed properly. However, management was forthright about these challenges and expressed confidence in overcoming them through strategic planning and execution."
+    },
+    "investor_confidence": {
+      "score": 0.2329,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.2329,
+        "positive": 0.2475,
+        "negative": 0.0146,
+        "neutral": 0.7378,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, addressing analyst questions directly and providing detailed explanations of their growth strategies. They emphasized their disciplined approach to execution and their commitment to creating long-term value for stakeholders. The presence of senior management, including the Managing Director and Group CFO, added credibility to the call. The language used was transparent, with management openly discussing both achievements and challenges."
+    }
+  },
+  "key_positive_drivers": [
+    "13% year-on-year revenue growth",
+    "15% increase in consolidated EBITDA",
+    "Strong growth across all verticals",
+    "Digital platform user growth",
+    "Optimistic future revenue and EBITDA targets",
+    "Strategic capacity additions"
+  ],
+  "key_negative_drivers": [
+    "Impact of seasonal medical admissions",
+    "Reduction in patients from Bangladesh",
+    "Integration and scheme-related expenses",
+    "Heavy investment in new expansions",
+    "Temporary margin compression"
+  ],
+  "notable_phrases": [
+    "sustained and strong momentum",
+    "broad-based growth and resilient operating metrics",
+    "confident of enhancing our performance",
+    "clear road map for growth",
+    "disciplined approach to execution",
+    "strategic capacity additions",
+    "robust growth in revenue",
+    "integrated health care ecosystem"
+  ],
+  "chain_of_thought": "The financial performance showed strong growth across all verticals, with significant increases in revenue and EBITDA. Forward guidance was optimistic, with management confident in achieving future revenue and EBITDA targets, supported by strategic expansions. Risks were acknowledged, particularly seasonal impacts and integration expenses, but management was forthright and confident in addressing these challenges. Investor confidence was bolstered by management's clarity, transparency, and detailed explanations of their strategies, projecting a cautiously bullish outlook."
+}

@@ -1,0 +1,466 @@
+{
+  "document": {
+    "document_id": "35d670cd0029",
+    "company": "Reliance",
+    "quarter": "Q4",
+    "fiscal_year": "FY25",
+    "filename": "b6203612-be21-4d28-ace9-6496cd3fb8b2.pdf",
+    "relative_path": "Data/Reliance/Earnings_Call/b6203612-be21-4d28-ace9-6496cd3fb8b2.pdf",
+    "file_size_bytes": 487983,
+    "file_checksum": "93cdaa60ff8727edc44fe3929cdba6d5",
+    "discovered_at": "2026-03-17T04:15:51.482288+00:00",
+    "analyzed": false,
+    "analyzed_at": null,
+    "output_directory": null
+  },
+  "analysed_at": "2026-03-17T04:37:09.262127+00:00",
+  "output_directory": "C:\\Users\\Jairam Ayyar\\Documents\\Sparkle_Manual_Earnings_Call\\outputs\\Reliance\\Q4_FY25",
+  "agents": {
+    "esg": {
+      "agent": "esg",
+      "overall_esg_score": 72.2,
+      "esg_label": "Commendable",
+      "esg_colour": "#2E7D32",
+      "environmental": {
+        "score": 85.0,
+        "key_themes": [
+          "renewable energy",
+          "solar power",
+          "green hydrogen",
+          "battery manufacturing",
+          "end-to-end integration"
+        ],
+        "notable_excerpts": [
+          "You mentioned that the solar factory is like 10 gigawatt.",
+          "Now with the commencement of solar production... these factories are huge.",
+          "We have talked a lot about renewable electricity generation.",
+          "We have 2,000 acres of land that we have got. And that is where the green hydrogen ecosystem can come in.",
+          "We are also focused on 30 gigawatts of battery manufacturing."
+        ]
+      },
+      "social": {
+        "score": 60.0,
+        "key_themes": [
+          "community impact",
+          "domestic supply chain",
+          "employment opportunities"
+        ],
+        "notable_excerpts": [
+          "We have over 12,000 options on Shein now and we have been able to create the domestic supply chain.",
+          "The Mahakumbh, which I am sure all of you are familiar with... was the densest data consumption, population conversion that anybody had ever seen globally."
+        ]
+      },
+      "governance": {
+        "score": 70.0,
+        "key_themes": [
+          "transparency",
+          "risk management",
+          "financial performance"
+        ],
+        "notable_excerpts": [
+          "Transcript of the discussion on the Audited Financial Results... is attached.",
+          "We have had robust financial performance, keeping in mind, in spite of the weak macroeconomic situation."
+        ]
+      },
+      "chain_of_thought": "The environmental disclosures are strong, focusing on renewable energy projects and integration. Social aspects are moderately covered, with emphasis on community impact and supply chain. Governance is adequately addressed with transparency in financial reporting.",
+      "strengths": [
+        "Strong focus on renewable energy and integration.",
+        "Transparent financial reporting."
+      ],
+      "weaknesses": [
+        "Limited specific details on social initiatives."
+      ],
+      "red_flags": [],
+      "esg_levels_reference": [
+        {
+          "range": "0–20",
+          "label": "Critical",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "21–40",
+          "label": "Concerning",
+          "colour": "#E65100"
+        },
+        {
+          "range": "41–60",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "61–80",
+          "label": "Commendable",
+          "colour": "#2E7D32"
+        },
+        {
+          "range": "81–100",
+          "label": "Exemplary",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "speaker": {
+      "agent": "speaker",
+      "speakers": [
+        {
+          "name": "Sh V. Srikanth",
+          "role": "CFO, Reliance Industries Limited",
+          "tone": "confident",
+          "key_topics": [
+            "macroeconomic environment",
+            "O2C demand growth",
+            "retail performance",
+            "Jio performance",
+            "financial metrics"
+          ],
+          "direct_answers": [
+            "Probal Sen: That is right, yes we have. Not mentioning the numbers, but obviously this kind of performance also means that it makes sense for us to invest and we will expand that network.",
+            "Probal Sen: Not now, but yes, it is well below ₹ 75,000. Overall, maybe in the ₹ 60 to 65,000. But still, we are just putting that together."
+          ],
+          "dodged_or_vague": [
+            "Sabri Hazarika: It is too early to say that, but yes, we are determined to obviously get it done and try and see whether it is a full year impact, but we will see."
+          ],
+          "summary": "Sh V. Srikanth provided a comprehensive overview of the macroeconomic environment and its impact on Reliance's various business segments. He highlighted the strong demand growth in the Oil to Chemicals (O2C) segment and the mixed performance in retail, noting significant improvements in the latter half of the year. Srikanth emphasized Jio's robust performance, with notable customer additions and ARPU growth, positioning it as the world's largest data company. He confidently addressed questions about network expansion and capex, though he was vague about specific future impacts. Overall, his tone was confident, reflecting a positive outlook on the company's strategic initiatives and financial health.",
+          "sentiment_score": 0.4949,
+          "sentiment_label": "Positive",
+          "sentiment_colour": "#43A047",
+          "finbert_detail": {
+            "score": 0.4949,
+            "positive": 0.5817,
+            "negative": 0.0869,
+            "neutral": 0.3314,
+            "chunks_scored": 2
+          }
+        },
+        {
+          "name": "Sh Anshuman Thakur",
+          "role": "Head of Strategy, Reliance Jio Infocomm Limited",
+          "tone": "optimistic",
+          "key_topics": [
+            "Jio Platforms performance",
+            "5G deployment",
+            "data consumption trends",
+            "digital revenues"
+          ],
+          "direct_answers": [
+            "Deepti Chaturvedi: Yes 45% of the data consumption, data traffic on 5G. And opportunity to give more services, so a combination of things like network slicing, being able to offer some differentiated superior services, enterprise offerings so we see many opportunities there."
+          ],
+          "dodged_or_vague": [
+            "Kunal Vora: No that is too speculative to talk about really. No guidance. Look, we will have to continue to see how the market grows. For us, priorities are market growth. Priority is at this point in time more 5G user base and traction. So that is not a thought currently crossing our minds for sure."
+          ],
+          "summary": "Sh Anshuman Thakur provided an optimistic update on Jio Platforms, highlighting strong revenue and EBITDA growth driven by successful home broadband rollouts and 5G deployment. He emphasized the significant increase in data consumption and the strategic focus on digital revenues, including cloud services and IoT offerings. Thakur confidently addressed questions about 5G monetization opportunities but was evasive regarding potential tariff hikes. His overall tone was optimistic, reflecting confidence in Jio's strategic direction and market position.",
+          "sentiment_score": 0.5868,
+          "sentiment_label": "Positive",
+          "sentiment_colour": "#43A047",
+          "finbert_detail": {
+            "score": 0.5868,
+            "positive": 0.5984,
+            "negative": 0.0116,
+            "neutral": 0.39,
+            "chunks_scored": 2
+          }
+        },
+        {
+          "name": "Sh Dinesh Taluja",
+          "role": "CFO & Corporate Development, Reliance Retail",
+          "tone": "confident",
+          "key_topics": [
+            "retail performance",
+            "store optimization",
+            "fashion and lifestyle"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Sh Dinesh Taluja provided a confident overview of Reliance Retail's performance, highlighting a strong quarter with 16% year-on-year growth. He noted that while the first half of the year was weak, the second half showed significant improvement, with the addition of about 500 stores. Taluja's tone was confident, reflecting a positive outlook on the retail segment's growth trajectory and strategic initiatives.",
+          "sentiment_score": 0.9146,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9146,
+            "positive": 0.9466,
+            "negative": 0.032,
+            "neutral": 0.0213,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Sh Kevin Vaz",
+          "role": "CEO – Entertainment, JioStar",
+          "tone": "neutral",
+          "key_topics": [
+            "media and entertainment",
+            "subscriber growth"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Sh Kevin Vaz provided a brief update on JioStar, emphasizing its position as the largest media and entertainment company in India with 280 million subscribers. He highlighted the impressive statistic of 61 million live concurrency. Vaz's tone was neutral, focusing on the factual growth metrics without delving into strategic insights or future plans.",
+          "sentiment_score": 0.0091,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": 0.0091,
+            "positive": 0.043,
+            "negative": 0.0339,
+            "neutral": 0.9231,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Sh Sanjay Barman Roy",
+          "role": "President – E&P, Reliance Industries Limited",
+          "tone": "cautious",
+          "key_topics": [
+            "oil and gas performance",
+            "production trends"
+          ],
+          "direct_answers": [
+            "Probal Sen: So the fact is there is going to be a natural decline. Now, two things that we have observed is the performance is slightly better than expectations and we have also identified some upsides and we are working on those upsides and we are looking at doing some work over jobs also to augment the production sometime next year."
+          ],
+          "dodged_or_vague": [],
+          "summary": "Sh Sanjay Barman Roy provided a cautious overview of the oil and gas segment, noting it was the strongest year in terms of performance with a significant increase in EBITDA. He highlighted healthy EBITDA margins driven by higher production and stable prices. Roy addressed questions about production trends, acknowledging a natural decline but also identifying potential upsides. His tone was cautious, reflecting awareness of challenges while recognizing opportunities for improvement.",
+          "sentiment_score": 0.9424,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9424,
+            "positive": 0.9585,
+            "negative": 0.0161,
+            "neutral": 0.0255,
+            "chunks_scored": 1
+          }
+        }
+      ],
+      "speaker_count": 5,
+      "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted to capture the essence of each speaker's contribution, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, encapsulating their stance and key messages during the call.",
+      "sentiment_levels_reference": [
+        {
+          "range": "–1.0 to –0.6",
+          "label": "Very Negative",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "–0.6 to –0.2",
+          "label": "Negative",
+          "colour": "#E53935"
+        },
+        {
+          "range": "–0.2 to +0.2",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "+0.2 to +0.6",
+          "label": "Positive",
+          "colour": "#43A047"
+        },
+        {
+          "range": "+0.6 to +1.0",
+          "label": "Very Positive",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "sentiment": {
+      "agent": "sentiment",
+      "overall_sentiment_score": 0.5087,
+      "overall_sentiment_label": "Positive",
+      "overall_sentiment_colour": "#43A047",
+      "overall_tone": "Cautiously Bullish",
+      "dimensions": {
+        "financial_performance": {
+          "score": 0.4235,
+          "label": "Positive",
+          "colour": "#43A047",
+          "finbert": {
+            "score": 0.4235,
+            "positive": 0.7008,
+            "negative": 0.2773,
+            "neutral": 0.0219,
+            "chunks_scored": 1
+          },
+          "text": "Reliance reported a robust financial performance despite a weak macroeconomic environment. The company achieved a consolidated EBITDA of ₹17,000 crore for Q4, marking an 18% year-on-year growth in revenues to ₹33,986 crore. Profit after tax grew by 26% to ₹7,023 crore. The oil and gas business had its strongest year, with EBITDA almost ₹1,000 crore higher than the previous year, driven by higher production and stable prices. However, there was a noted 12% decline in EBITDA for some segments, attributed to a fall in transportation fuel and polymer demand. Despite these challenges, the company maintained healthy EBITDA margins at 84% in the oil and gas sector, supported by cost optimization and operational excellence."
+        },
+        "forward_guidance": {
+          "score": 0.875,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.875,
+            "positive": 0.8934,
+            "negative": 0.0184,
+            "neutral": 0.0882,
+            "chunks_scored": 1
+          },
+          "text": "Management expressed a cautiously optimistic outlook for the next quarter and fiscal year. They highlighted ongoing projects such as the 40 multilateral wells campaign in CBM and the expansion of service centers in the retail segment. The company is focused on capacity additions in new energy and AI-ready data centers, with timelines for reaching 10 gigawatt module cell and polysilicon production. The retail segment is expected to continue its growth trajectory, supported by the early onset of summer boosting AC sales. However, there is caution regarding the impact of regulatory delays on LNG projects, which could affect timelines."
+        },
+        "risk_language": {
+          "score": -0.3111,
+          "label": "Negative",
+          "colour": "#E53935",
+          "finbert": {
+            "score": -0.3111,
+            "positive": 0.3217,
+            "negative": 0.6329,
+            "neutral": 0.0454,
+            "chunks_scored": 1
+          },
+          "text": "The call addressed several risks, including geopolitical conflicts, tariff-related volatility, and competitive pressures from Chinese capacity. Management acknowledged significant pressures on margins due to weak demand and highlighted the natural decline in oil and gas production. They also noted regulatory delays affecting LNG projects and the impact of weaker cracks in the polyester chain. Despite these challenges, management emphasized their efforts in cost optimization and operational excellence to mitigate risks."
+        },
+        "investor_confidence": {
+          "score": 0.9066,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.9066,
+            "positive": 0.9169,
+            "negative": 0.0103,
+            "neutral": 0.0728,
+            "chunks_scored": 1
+          },
+          "text": "Management projected clarity and conviction throughout the call, addressing analyst questions directly and transparently. They highlighted their strategic focus on domestic growth and operational efficiency. The leadership in technology and the successful 5G deployment were emphasized as key strengths. Management's credibility was reinforced by their detailed explanations of financial performance and future plans, including the expansion of new energy and digital services. The call conveyed a sense of confidence in the company's ability to navigate challenges and capitalize on growth opportunities."
+        }
+      },
+      "key_positive_drivers": [
+        "Strong oil and gas performance",
+        "Higher sports revenue from ICC Trophy and IPL",
+        "Successful 5G deployment and customer additions",
+        "Cost optimization and operational excellence",
+        "Growth in retail segment driven by AC sales",
+        "Expansion in new energy and AI-ready data centers"
+      ],
+      "key_negative_drivers": [
+        "Weak macroeconomic environment",
+        "Decline in transportation fuel and polymer demand",
+        "Regulatory delays in LNG projects",
+        "Geopolitical conflicts and tariff-related volatility",
+        "Natural decline in oil and gas production",
+        "Competitive pressures from Chinese capacity"
+      ],
+      "notable_phrases": [
+        "Robust financial performance despite weak macroeconomic situation",
+        "Strongest year in terms of performance from the oil and gas business",
+        "Maintaining our EBITDA margin at 50%",
+        "Cautiously optimistic outlook for the next quarter",
+        "Significant pressures on the margins overall",
+        "Leadership in technology and 5G deployment",
+        "Efforts in cost optimization and operational excellence",
+        "Focus on domestic growth and operational efficiency"
+      ],
+      "chain_of_thought": "The financial performance was strong with significant growth in revenues and profits, driven by the oil and gas sector and cost optimization. Forward guidance was cautiously optimistic, with plans for capacity additions and growth in retail. Risks were acknowledged, including geopolitical and regulatory challenges, but management emphasized mitigation strategies. Investor confidence was bolstered by management's clarity, strategic focus, and successful technology deployment, leading to a cautiously bullish overall tone."
+    },
+    "summary": {
+      "agent": "summary",
+      "executive_summary": "Reliance Industries Limited reported robust financial results for Q4 FY25, with a consolidated revenue of ₹33,986 crore, marking an 18% year-on-year growth. The EBITDA stood at ₹17,000 crore, reflecting a 17% increase, while the profit after tax surged by 26% to ₹7,023 crore. These results exceeded market expectations, driven by strong performances in the Oil to Chemicals (O2C) and Jio Platforms segments, despite a challenging macroeconomic environment characterized by geopolitical tensions and tariff-related volatility.\n\nManagement emphasized strategic initiatives across its business segments, particularly highlighting the successful deployment of 5G technology and the expansion of its retail footprint with the addition of 500 new stores. The company is also focusing on renewable energy, with significant investments in solar power and green hydrogen, aligning with its long-term sustainability goals. The retail segment showed a remarkable recovery in the second half of the year, contributing significantly to the overall growth.\n\nThe overall tone of the earnings call was cautiously bullish, with management displaying confidence in their strategic direction and operational execution. The sentiment analysis indicated a positive outlook, with key executives expressing optimism about future growth prospects, particularly in digital services and renewable energy. However, there were some concerns regarding regulatory delays in LNG projects and the impact of geopolitical conflicts on the macroeconomic environment.\n\nESG themes were prominently discussed, with Reliance achieving a commendable overall ESG score of 72.2. The company demonstrated strong environmental performance, particularly in renewable energy initiatives, although there was a noted lack of specific details on social initiatives. Governance practices were highlighted as transparent, with a focus on risk management and financial performance.",
+      "qa_quality": {
+        "overall_transparency_score": 7.5,
+        "narrative": "During the Q&A session, management provided clear and direct answers to several key questions, particularly regarding the 5G deployment and retail expansion strategies. Sh Anshuman Thakur addressed questions on 5G monetization with detailed insights into network slicing and enterprise offerings, demonstrating a clear strategic vision. However, there were instances where management deflected or provided vague responses, particularly concerning capex specifics and telecom tariff guidance.\n\nFor example, when asked about the capex for specific expansions, Sh V. Srikanth provided a broad range rather than precise figures, indicating some reluctance to disclose detailed financial commitments. Similarly, Sh Anshuman Thakur avoided providing guidance on potential telecom tariff hikes, citing market growth priorities instead. Overall, while the session was informative, there were areas where transparency could have been improved.",
+        "direct_answer_examples": [
+          "Sh Anshuman Thakur provided a detailed explanation of 5G monetization strategies, including network slicing and enterprise offerings."
+        ],
+        "dodged_questions": [
+          {
+            "question": "Is it possible to share the capex for the specific expansions on PX and PTA?",
+            "management_response": "Not now, but yes, it is well below ₹ 75,000. Overall, maybe in the ₹ 60 to 65,000.",
+            "assessment": "Management provided a broad range rather than precise figures, indicating some reluctance to disclose detailed financial commitments."
+          },
+          {
+            "question": "Is an annual telecom tariff hike a possibility now?",
+            "management_response": "No that is too speculative to talk about really. No guidance.",
+            "assessment": "Management avoided providing guidance on potential telecom tariff hikes, citing market growth priorities instead."
+          }
+        ],
+        "vague_response_examples": [
+          "Sh V. Srikanth's response on capex specifics for PX and PTA expansions."
+        ]
+      },
+      "short_term_implications": {
+        "narrative": "In the near term, investors should closely monitor Reliance's progress in 5G monetization and the expansion of its retail footprint. The company has indicated that 45% of data consumption is now on 5G, with opportunities for additional services such as network slicing and enterprise offerings. This could lead to incremental ARPU improvements and revenue growth in the coming quarters.\n\nAdditionally, the retail segment's recovery, with a 16% year-on-year growth and the addition of 500 new stores, suggests a positive trajectory. Investors should watch for continued momentum in this segment, particularly as the company leverages its expanded store network and product offerings. However, regulatory delays in LNG projects and geopolitical tensions remain potential risks that could impact short-term performance.",
+        "key_items": [
+          {
+            "item": "5G monetization and ARPU improvement",
+            "timeframe": "Next few quarters",
+            "impact": "positive"
+          },
+          {
+            "item": "Retail segment expansion and performance",
+            "timeframe": "Next 6-12 months",
+            "impact": "positive"
+          },
+          {
+            "item": "Regulatory delays in LNG projects",
+            "timeframe": "Next 6-12 months",
+            "impact": "negative"
+          }
+        ]
+      },
+      "long_term_implications": {
+        "narrative": "Reliance's long-term strategic trajectory is focused on diversifying its energy portfolio and expanding its digital and retail businesses. The company's significant investments in renewable energy, including solar power and green hydrogen, align with global sustainability trends and position it well for future growth. Management's vision includes leveraging these investments to drive long-term value creation and reduce reliance on traditional energy sources.\n\nIn the digital space, Reliance aims to capitalize on its leadership in 5G technology and expand its digital services offerings. This includes enhancing customer experiences through innovative services and increasing market share in the telecommunications sector. The retail segment is also poised for long-term growth, with plans to further expand its store network and product portfolio, catering to evolving consumer preferences.\n\nOverall, Reliance's strategic initiatives are consistent with long-term value creation, supported by a strong focus on operational excellence and cost optimization. However, the company must navigate potential headwinds, including regulatory challenges and geopolitical risks, to achieve its long-term objectives.",
+        "key_items": [
+          {
+            "item": "Renewable energy investments",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Expansion of digital services and 5G leadership",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Retail segment growth and expansion",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          }
+        ]
+      },
+      "key_risks": {
+        "narrative": "Reliance faces several material risks that could impact its future performance. Regulatory delays in LNG projects pose a high risk, potentially affecting the company's energy segment growth. Geopolitical conflicts and tariff-related volatility present external risks that could disrupt supply chains and impact financial performance. Additionally, the weak macroeconomic environment and declining demand for transportation fuel and polymers are company-specific risks that could pressure margins.\n\nWhile Reliance has demonstrated resilience through operational excellence and cost optimization, these risks require careful management to mitigate potential adverse effects on the company's financial health and strategic objectives.",
+        "risks": [
+          {
+            "risk": "Regulatory delays in LNG projects",
+            "severity": "high",
+            "type": "external"
+          },
+          {
+            "risk": "Geopolitical conflicts and tariff-related volatility",
+            "severity": "medium",
+            "type": "external"
+          },
+          {
+            "risk": "Weak macroeconomic environment",
+            "severity": "medium",
+            "type": "external"
+          },
+          {
+            "risk": "Decline in transportation fuel and polymer demand",
+            "severity": "medium",
+            "type": "company-specific"
+          }
+        ]
+      },
+      "key_opportunities": {
+        "narrative": "Reliance has several compelling growth opportunities that could drive future performance. The successful deployment and monetization of 5G technology present a high potential opportunity, with significant revenue growth expected over the next 12 months. The expansion of the retail segment, with a focus on increasing store count and enhancing product offerings, offers medium potential for growth in the near term.\n\nAdditionally, Reliance's investments in renewable energy, particularly in solar power and green hydrogen, align with global sustainability trends and present a high potential opportunity for long-term growth. These initiatives are expected to contribute significantly to the company's revenue and profitability over the next 1-5 years.",
+        "opportunities": [
+          {
+            "opportunity": "5G technology deployment and monetization",
+            "potential": "high",
+            "timeline": "0-12 months"
+          },
+          {
+            "opportunity": "Retail segment expansion",
+            "potential": "medium",
+            "timeline": "0-12 months"
+          },
+          {
+            "opportunity": "Investments in renewable energy",
+            "potential": "high",
+            "timeline": "1-5 years"
+          }
+        ]
+      },
+      "investment_thesis_signal": "Cautiously Bullish",
+      "investment_thesis_rationale": "Reliance Industries Limited's Q4 FY25 earnings call highlighted strong financial performance and strategic initiatives across its business segments. The company's focus on 5G technology, retail expansion, and renewable energy investments positions it well for future growth. Despite external risks such as regulatory delays and geopolitical tensions, management's confidence and operational excellence provide a solid foundation for long-term value creation. The positive sentiment and commendable ESG performance further support a cautiously bullish investment thesis.",
+      "chain_of_thought": "The earnings call revealed strong financial results and strategic initiatives, with management expressing confidence in future growth. Positive sentiment and ESG performance support a cautiously bullish view, despite external risks."
+    }
+  }
+}

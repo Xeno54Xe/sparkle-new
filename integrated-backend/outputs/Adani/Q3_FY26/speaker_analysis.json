@@ -1,0 +1,160 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Robbie Singh",
+      "role": "Chief Financial Officer, Adani Enterprises Limited",
+      "tone": "confident",
+      "key_topics": [
+        "Adani Solar recognition",
+        "6 GW cell and module capacity",
+        "Airport business growth",
+        "Defense business update",
+        "Capital expenditure and debt"
+      ],
+      "direct_answers": [
+        "The total capex for this project is around INR10,000 crores and it is on schedule completion.",
+        "Yes.",
+        "INR 220 crores, one-off.",
+        "Basically, Ganga Expressway should just double the size of EBITDA of this business.",
+        "It will be taxed at 15%."
+      ],
+      "dodged_or_vague": [
+        "It's a little bit too early at this point.",
+        "We will update on Defense.",
+        "We will provide a lot more detail closer to the event."
+      ],
+      "summary": "Robbie Singh, the CFO of Adani Enterprises, presented a confident outlook during the earnings call. He highlighted the recognition of Adani Solar as a top global manufacturer and detailed the company's strategic investments in various sectors, including a significant capex of INR10,000 crores for solar capacity expansion. Singh addressed questions on the airport business, emphasizing its growth and regulatory asset nature, which mitigates loss risks. While he provided specific figures for capex and tax impacts, he was less forthcoming about the Defense segment and future partnerships, indicating updates would follow in subsequent periods.",
+      "sentiment_score": 0.0312,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0312,
+        "positive": 0.0646,
+        "negative": 0.0334,
+        "neutral": 0.902,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Mohit Kumar",
+      "role": "Moderator, ICICI Securities",
+      "tone": "neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mohit Kumar, serving as the moderator from ICICI Securities, maintained a neutral tone throughout the earnings call. His primary role was to introduce the session, outline the agenda, and facilitate the transition to the management team for their presentations. Kumar efficiently managed the flow of the conference, ensuring that the call proceeded smoothly and that participants were aware of the structure and key speakers involved.",
+      "sentiment_score": 0.0395,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0395,
+        "positive": 0.0542,
+        "negative": 0.0147,
+        "neutral": 0.9311,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Manish Somaiya",
+      "role": "Analyst, Cantor",
+      "tone": "inquisitive",
+      "key_topics": [
+        "Airport business growth",
+        "Legacy business improvements",
+        "Data center partnership with Google"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Manish Somaiya, an analyst from Cantor, adopted an inquisitive tone, probing into the details of Adani's airport business and its growth trajectory. He sought clarity on the slowdown in growth from Q2 to Q3 and inquired about the impact of external factors like the Indigo fiasco. Somaiya also questioned the timeline for improvements in legacy businesses and sought updates on the data center partnership with Google. His questions were aimed at understanding the broader strategic direction and financial structuring of Adani Enterprises.",
+      "sentiment_score": 0.1647,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1647,
+        "positive": 0.1827,
+        "negative": 0.018,
+        "neutral": 0.7993,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Prateek Kumar",
+      "role": "Analyst, Jefferies",
+      "tone": "inquisitive",
+      "key_topics": [
+        "Airport segment EBITDA",
+        "Road segment growth",
+        "Coal to PVC project"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Prateek Kumar, an analyst from Jefferies, focused on the financial specifics of Adani's operations, particularly the airport and road segments. He inquired about the nonrecurring items affecting the airport segment's EBITDA and sought clarity on the expected growth in the road segment with the upcoming Ganga Expressway. Kumar also delved into the coal to PVC project, asking for details on capital employed and project timelines. His questions were aimed at understanding the financial health and future growth prospects of Adani's various business segments.",
+      "sentiment_score": 0.0432,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0432,
+        "positive": 0.0591,
+        "negative": 0.016,
+        "neutral": 0.9249,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mahesh",
+      "role": "Analyst, ICICI Securities",
+      "tone": "inquisitive",
+      "key_topics": [
+        "Defense segment update",
+        "6 GW cell and module line",
+        "Airport business assets"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mahesh, an analyst from ICICI Securities, posed several questions aimed at gaining insights into Adani's Defense segment, the commissioning timeline for the 6 GW cell and module line, and the recent developments in the airport business. He sought specific details on the tax impact of gains booked in the quarter and the assets commissioned in the airport business over the past year. Mahesh's inquiries were focused on understanding the operational and financial implications of Adani's strategic initiatives and investments.",
+      "sentiment_score": 0.0499,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0499,
+        "positive": 0.0703,
+        "negative": 0.0205,
+        "neutral": 0.9092,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their responses and the nature of their statements. For management speakers, attention is given to how they handle analyst questions, noting which are answered directly and which are deflected or given vague responses. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. The JSON structure is then populated with this information, ensuring it adheres to the specified schema.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

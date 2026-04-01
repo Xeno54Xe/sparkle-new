@@ -1,0 +1,180 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Abhishek Jain",
+      "role": "Vice President (Corporate Treasurer & Head of Investor Relations)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "conference structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Jain opened the earnings call by welcoming participants and outlining the structure of the call. He introduced the key speakers and highlighted the presence of forward-looking statements, emphasizing the associated risks and uncertainties. His tone was neutral, focusing on procedural aspects rather than content.",
+      "sentiment_score": 0.0638,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0638,
+        "positive": 0.0757,
+        "negative": 0.0119,
+        "neutral": 0.9123,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srini Pallia",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "AI-first strategy",
+        "quarterly performance",
+        "HARMAN DTS acquisition",
+        "future guidance"
+      ],
+      "direct_answers": [
+        "Kumar Rakesh's question on inorganic strategy",
+        "Nitin Padmanabhan's question on EMR"
+      ],
+      "dodged_or_vague": [
+        "Ravi Menon's question on demand environment"
+      ],
+      "summary": "Srini Pallia presented a confident outlook for Wipro, emphasizing the company's strategic shift towards an AI-first approach. He highlighted the completion of the HARMAN DTS acquisition and its benefits, including enhanced engineering and AI capabilities. Srini provided specific revenue figures and growth projections, demonstrating a strong grasp of the company's financial performance. He directly addressed questions about the company's inorganic strategy and EMR sector challenges, though his response to demand environment queries was less detailed.",
+      "sentiment_score": 0.6721,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6721,
+        "positive": 0.6842,
+        "negative": 0.0121,
+        "neutral": 0.3037,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aparna Iyer",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "guidance",
+        "cash management"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on ramp-ups",
+        "Kawaljeet Saluja's question on cash management"
+      ],
+      "dodged_or_vague": [
+        "Sandeep Shah's question on margin guidance"
+      ],
+      "summary": "Aparna Iyer provided a cautious overview of Wipro's financial performance, highlighting a sequential revenue growth and an increase in operating margins. She discussed the company's cash position and provided revenue guidance for the next quarter. Aparna directly answered questions regarding ramp-ups and cash management strategies, but her response to margin guidance inquiries was less specific, reflecting a cautious approach to future financial projections.",
+      "sentiment_score": 0.9257,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9257,
+        "positive": 0.9444,
+        "negative": 0.0186,
+        "neutral": 0.037,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Saurabh Govil",
+      "role": "Chief Human Resources Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "attrition",
+        "salary hikes"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on salary hikes"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Saurabh Govil's contribution to the call was limited to addressing questions related to human resources, specifically regarding salary hikes and attrition. His tone was neutral, and he provided straightforward answers to the questions posed, without delving into broader HR strategies or challenges.",
+      "sentiment_score": 0.1482,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1482,
+        "positive": 0.1666,
+        "negative": 0.0185,
+        "neutral": 0.8149,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Hari Shetty",
+      "role": "Chief Strategist and Technology Officer",
+      "tone": "neutral",
+      "key_topics": [],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Hari Shetty did not make any notable contributions during the call. His presence was acknowledged, but he did not provide any statements or answers to questions, maintaining a neutral stance throughout the session.",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0,
+        "positive": 0.0,
+        "negative": 0.0,
+        "neutral": 1.0,
+        "chunks_scored": 0
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call management",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring a smooth transition between speakers and managing the Q&A session. The tone was neutral, focusing on logistical aspects and maintaining the flow of the call without engaging in the content of the discussions.",
+      "sentiment_score": 0.0364,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0364,
+        "positive": 0.0519,
+        "negative": 0.0155,
+        "neutral": 0.9326,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone was assessed based on the language used and the context of their statements. For management speakers, their responses to analyst questions were categorized as direct or vague. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

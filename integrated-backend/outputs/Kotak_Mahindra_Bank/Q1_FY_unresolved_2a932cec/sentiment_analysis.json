@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": -0.3786,
+  "overall_sentiment_label": "Negative",
+  "overall_sentiment_colour": "#E53935",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9459,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9459,
+        "positive": 0.019,
+        "negative": 0.9649,
+        "neutral": 0.016,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance of Kotak Mahindra Bank for Q1 FY26 showed mixed results. The bank ended the quarter with a PAT of Rs. 3,282 crore, down by 7% Y-o-Y, largely due to an increase in credit cost, while operating profit is up by 6% Y-o-Y. The NIM for the quarter was 4.65%, Q-o-Q lower by 32 bps, largely on account of reduction in the yield in the floating rate book and a lower share of unsecured advances. Total deposits grew 15% Y-o-Y with current account and fixed rate SA growing at 16% and 9% Y-o-Y, respectively. Gross NPA at 30th June is 1.48% with net NPA 0.34% and a provision coverage ratio at 77%. The bank's capital adequacy remains strong at 23%, with CET-1 at 21.8%."
+    },
+    "forward_guidance": {
+      "score": -0.511,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.511,
+        "positive": 0.2262,
+        "negative": 0.7372,
+        "neutral": 0.0366,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook for the coming quarters. They expect the NIM to stabilize over the year as deposits start getting repriced. The credit cost in the microfinance sector is expected to show a declining trend in the coming quarters. The bank is cautiously stepping back into fresh disbursements given the declining trend in incremental slippages. Management highlighted that the credit cost on the personal loan portfolio has stabilized and they are committed to growing this book. They also mentioned that the credit card portfolio is expected to see a decline in credit costs in the second half of the year."
+    },
+    "risk_language": {
+      "score": 0.0795,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.0795,
+        "positive": 0.3901,
+        "negative": 0.3106,
+        "neutral": 0.2994,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks and challenges faced by the bank. There was a significant focus on the increase in credit costs, particularly in the microfinance sector and stress in the retail commercial vehicle segment. Management noted that the stress in personal loans and credit cards has stabilized. They remain cautious on the retail commercial vehicle segment due to seasonal impacts and macroeconomic conditions. The geopolitical arena and trade tariffs were also mentioned as areas of uncertainty impacting the business. Management was forthright about these challenges, indicating a proactive approach to managing them."
+    },
+    "investor_confidence": {
+      "score": 0.2127,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.2127,
+        "positive": 0.2253,
+        "negative": 0.0127,
+        "neutral": 0.762,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of clarity and transparency throughout the call. They addressed analyst questions directly and provided detailed explanations for the financial performance and future outlook. The management team, including the CEO and CFO, communicated their strategies and the steps being taken to address current challenges. They emphasized their focus on customer-centric strategies and technological investments to drive future growth. The call conveyed a sense of management credibility and commitment to executing their strategic plans."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong capital adequacy at 23%",
+    "Operating profit up by 6% Y-o-Y",
+    "Total deposits grew 15% Y-o-Y",
+    "CASA ratio comfortable at 40.9%",
+    "Stabilization of credit costs in personal loans",
+    "Commitment to technological investments"
+  ],
+  "key_negative_drivers": [
+    "PAT down by 7% Y-o-Y",
+    "NIM decreased to 4.65%",
+    "Increase in credit costs",
+    "Stress in retail commercial vehicle segment",
+    "Lower fees on credit cards",
+    "Seasonal impact in rural segment"
+  ],
+  "notable_phrases": [
+    "PAT of Rs. 3,282 crore, down by 7% Y-o-Y",
+    "NIM for the quarter, 4.65%, Q-o-Q lower by 32 bps",
+    "Gross NPA at 30th June is 1.48%",
+    "Credit costs for current quarter at 93 bps",
+    "Stress in retail commercial vehicle segment",
+    "We expect the NIM to stabilize over the year",
+    "Credit cost in the microfinance sector is expected to show a declining trend",
+    "Commitment to grow this book"
+  ],
+  "chain_of_thought": "The financial performance showed mixed results with a decline in PAT and NIM, but strong capital adequacy and deposit growth. Forward guidance was cautiously optimistic with expectations of stabilizing NIM and declining credit costs in certain segments. Risks were addressed forthrightly, particularly in microfinance and retail commercial vehicles. Management projected confidence and transparency, emphasizing strategic focus and technological investments."
+}

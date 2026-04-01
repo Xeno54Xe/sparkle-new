@@ -1,0 +1,424 @@
+{
+  "document": {
+    "document_id": "dccab0c0ac39",
+    "company": "Apollo Hospitals",
+    "quarter": null,
+    "fiscal_year": null,
+    "filename": "transcript-of-ahel-q3fy26-concall_11feb2026.pdf",
+    "relative_path": "Data/Apollo Hospitals/transcript-of-ahel-q3fy26-concall_11feb2026.pdf",
+    "file_size_bytes": 305982,
+    "file_checksum": "84bdfbde817a99aafa2bda6025d90d91",
+    "discovered_at": "2026-03-19T07:14:06.142929+00:00",
+    "analyzed": false,
+    "analyzed_at": null,
+    "output_directory": null
+  },
+  "analysed_at": "2026-03-19T07:34:46.628405+00:00",
+  "output_directory": "C:\\Users\\Jairam Ayyar\\Documents\\Sparkle_Manual_Earnings_Call\\outputs\\Apollo_Hospitals\\Unknown_Q_Unknown_FY",
+  "agents": {
+    "esg": {
+      "agent": "esg",
+      "overall_esg_score": 50.5,
+      "esg_label": "Neutral",
+      "esg_colour": "#F9A825",
+      "environmental": {
+        "score": 40.0,
+        "key_themes": [
+          "environmental delays",
+          "construction impact"
+        ],
+        "notable_excerpts": [
+          "Gurugram would be more like Q2, because it is still, because of all these issues with the environmental related delays, which we could not complete our construction."
+        ]
+      },
+      "social": {
+        "score": 60.0,
+        "key_themes": [
+          "patient-centric strategy",
+          "clinical differentiation",
+          "community engagement"
+        ],
+        "notable_excerpts": [
+          "These results are a reinforcement of our patient-centric strategy.",
+          "We value this trust and engagement and we will continue to sharpen our clinical differentiation, expand our capabilities across high-acuity specialties."
+        ]
+      },
+      "governance": {
+        "score": 50.0,
+        "key_themes": [
+          "regulatory integration",
+          "transparency",
+          "risk management"
+        ],
+        "notable_excerpts": [
+          "We have also made progress with respect to the regulatory integration process for the composite scheme of Keimed merger and demerger of Apollo HealthCo.",
+          "Before we begin, I would like to mention that some of the statements made in today's discussion may be forward-looking in nature and may involve risks and uncertainties."
+        ]
+      },
+      "chain_of_thought": "The earnings call provided limited information on environmental initiatives, with a mention of delays due to environmental issues. Social aspects were more prominent, focusing on patient-centric strategies and clinical differentiation. Governance was addressed through discussions on regulatory integration and transparency, but lacked depth in specific governance practices.",
+      "strengths": [
+        "Strong patient-centric strategy",
+        "Focus on clinical differentiation"
+      ],
+      "weaknesses": [
+        "Limited environmental disclosures",
+        "Lack of specific governance practices"
+      ],
+      "red_flags": [
+        "Environmental delays impacting construction"
+      ],
+      "esg_levels_reference": [
+        {
+          "range": "0–20",
+          "label": "Critical",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "21–40",
+          "label": "Concerning",
+          "colour": "#E65100"
+        },
+        {
+          "range": "41–60",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "61–80",
+          "label": "Commendable",
+          "colour": "#2E7D32"
+        },
+        {
+          "range": "81–100",
+          "label": "Exemplary",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "speaker": {
+      "agent": "speaker",
+      "speakers": [
+        {
+          "name": "Suneeta Reddy",
+          "role": "Managing Director",
+          "tone": "confident",
+          "key_topics": [
+            "financial performance",
+            "growth strategy",
+            "capacity expansion",
+            "digital business"
+          ],
+          "direct_answers": [
+            "Madhi?"
+          ],
+          "dodged_or_vague": [],
+          "summary": "Suneeta Reddy opened the call with a confident tone, highlighting Apollo Hospitals' strong financial performance despite seasonal challenges. She emphasized the company's double-digit growth across its business verticals and detailed the revenue figures. Reddy also outlined the company's strategic focus on expanding capacity and enhancing profitability in the coming quarters. Her statements reflected a commitment to delivering consistent performance and creating value for stakeholders. She briefly deferred a question to another executive, indicating a collaborative approach to addressing inquiries.",
+          "sentiment_score": 0.9445,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9445,
+            "positive": 0.9596,
+            "negative": 0.0152,
+            "neutral": 0.0252,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "A. Krishnan",
+          "role": "Group CFO",
+          "tone": "cautious",
+          "key_topics": [
+            "cost management",
+            "digital business",
+            "financial guidance"
+          ],
+          "direct_answers": [
+            "So we will come back to you by Q4 one more time, but we continue to believe that INR150 crore is a good number for now."
+          ],
+          "dodged_or_vague": [],
+          "summary": "A. Krishnan, the Group CFO, provided cautious insights into the financial aspects of Apollo Hospitals' operations. He discussed the anticipated cost impacts of new hospital ramp-ups and provided specific figures related to losses from these operations. Krishnan also addressed questions about the digital business, explaining adjustments in GMV due to external factors like GST changes. His responses were detailed and aimed at managing expectations regarding financial guidance and operational costs.",
+          "sentiment_score": 0.3315,
+          "sentiment_label": "Positive",
+          "sentiment_colour": "#43A047",
+          "finbert_detail": {
+            "score": 0.3315,
+            "positive": 0.5837,
+            "negative": 0.2522,
+            "neutral": 0.1642,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Madhivanan Balakrishnan",
+          "role": "CEO of Apollo HealthCo",
+          "tone": "optimistic",
+          "key_topics": [
+            "digital business",
+            "revenue growth",
+            "operating model"
+          ],
+          "direct_answers": [
+            "Yes ma'am. No. So, our revenue projections continue."
+          ],
+          "dodged_or_vague": [],
+          "summary": "Madhivanan Balakrishnan, CEO of Apollo HealthCo, conveyed an optimistic outlook on the digital business. He highlighted significant growth in the pharmacy online segment and improvements in business quality, such as stabilized discounts and increased average order values. Balakrishnan's focus was on building a sustainable operating model, and he provided specific metrics to support his positive assessment. His responses were direct and aimed at reassuring stakeholders about the digital business's trajectory.",
+          "sentiment_score": 0.9237,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9237,
+            "positive": 0.9487,
+            "negative": 0.025,
+            "neutral": 0.0263,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Sanjiv Gupta",
+          "role": "CFO of Apollo HealthCo",
+          "tone": "neutral",
+          "key_topics": [
+            "GMV adjustments",
+            "financial reporting"
+          ],
+          "direct_answers": [
+            "I can take that question. Thanks, Madhi."
+          ],
+          "dodged_or_vague": [],
+          "summary": "Sanjiv Gupta, CFO of Apollo HealthCo, provided a neutral and factual explanation of the adjustments made to the GMV figures. He detailed the impact of GST changes and the cessation of business with Amazon on the financial reporting. Gupta's responses were clear and aimed at ensuring transparency in financial comparisons. His tone was neutral, focusing on delivering precise information without expressing subjective opinions.",
+          "sentiment_score": -0.6485,
+          "sentiment_label": "Very Negative",
+          "sentiment_colour": "#B71C1C",
+          "finbert_detail": {
+            "score": -0.6485,
+            "positive": 0.1064,
+            "negative": 0.7549,
+            "neutral": 0.1387,
+            "chunks_scored": 1
+          }
+        }
+      ],
+      "speaker_count": 4,
+      "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call, including Suneeta Reddy, A. Krishnan, Madhivanan Balakrishnan, and Sanjiv Gupta. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, with Suneeta Reddy being confident, A. Krishnan cautious, Madhivanan Balakrishnan optimistic, and Sanjiv Gupta neutral. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages.",
+      "sentiment_levels_reference": [
+        {
+          "range": "–1.0 to –0.6",
+          "label": "Very Negative",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "–0.6 to –0.2",
+          "label": "Negative",
+          "colour": "#E53935"
+        },
+        {
+          "range": "–0.2 to +0.2",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "+0.2 to +0.6",
+          "label": "Positive",
+          "colour": "#43A047"
+        },
+        {
+          "range": "+0.6 to +1.0",
+          "label": "Very Positive",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "sentiment": {
+      "agent": "sentiment",
+      "overall_sentiment_score": 0.1359,
+      "overall_sentiment_label": "Neutral",
+      "overall_sentiment_colour": "#F9A825",
+      "overall_tone": "Cautiously Bullish",
+      "dimensions": {
+        "financial_performance": {
+          "score": -0.4569,
+          "label": "Negative",
+          "colour": "#E53935",
+          "finbert": {
+            "score": -0.4569,
+            "positive": 0.2539,
+            "negative": 0.7109,
+            "neutral": 0.0352,
+            "chunks_scored": 1
+          },
+          "text": "Apollo Hospitals reported a consolidated PAT of INR502 crore in Q3 FY '26, a growth of 35% year-on-year. Consolidated revenue for 9M FY '26 stood at INR 18,623 crore, growing 15% year-on-year, supported by balanced expansion across all three verticals. Insurance and cash patients together accounted for 83% of inpatient hospital revenues for quarter 3 FY '26. Average revenue per patient was INR 180,917 in Q3 FY '26 compared to INR 173,246 in Q2 FY '26. Apollo HealthCo reported revenues of INR 2,827 crore, 20% year-on-year growth. Consolidated EBITDA for the quarter was at INR 965 crore, registering a robust growth of 27% year-on-year. Losses in the Digital business were at INR 67 crore, but cash losses were at INR 29 crore, the lowest in any quarter by far."
+        },
+        "forward_guidance": {
+          "score": 0.8817,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.8817,
+            "positive": 0.9039,
+            "negative": 0.0222,
+            "neutral": 0.0738,
+            "chunks_scored": 1
+          },
+          "text": "Management expressed confidence in achieving a run rate of INR 25,000 crore in combined revenues with 7% EBITDA. They expect to operationalize roughly half of the new 1,500 beds in the upcoming fiscal year, with the balance coming online early FY '28. The phased commissioning approach is intended to optimize capital deployment and drive occupancy-led operating leverage. Management continues to believe that INR150 crore is a good number for now regarding cost headwinds from new hospital ramp-ups. They anticipate operationalizing Hyderabad, Calcutta, and Bangalore facilities by Q1, with Gurugram by Q2 due to environmental-related delays."
+        },
+        "risk_language": {
+          "score": -0.8591,
+          "label": "Very Negative",
+          "colour": "#B71C1C",
+          "finbert": {
+            "score": -0.8591,
+            "positive": 0.0285,
+            "negative": 0.8876,
+            "neutral": 0.0839,
+            "chunks_scored": 1
+          },
+          "text": "Management acknowledged a mismatch in revenue recognition due to GST changes in the health insurance industry, impacting revenue. There are environmental-related delays affecting the Gurugram facility's construction timeline. The Digital business faced a moderation in revenue growth quarter-on-quarter, attributed to changes in the e-commerce channel and GST impacts. Management is recalibrating revenue recognition in the hospital business and expects to close the loop in Q1 of FY '27. They are also addressing the insurance mismatch that has deferred revenue recognition."
+        },
+        "investor_confidence": {
+          "score": 0.9015,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.9015,
+            "positive": 0.9126,
+            "negative": 0.0111,
+            "neutral": 0.0764,
+            "chunks_scored": 1
+          },
+          "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations for revenue recognition changes and Digital business performance. They emphasized their commitment to a patient-centric strategy and continued investment in in-hospital technologies. Management expressed confidence in achieving their guidance and operational targets, despite acknowledging some challenges. They highlighted the strength and resilience of their payer mix and the scalability of their integrated Healthcare ecosystem. The call concluded with management reiterating their focus on delivering consistent performance and creating enduring value for stakeholders."
+        }
+      },
+      "key_positive_drivers": [
+        "35% year-on-year PAT growth",
+        "15% year-on-year revenue growth",
+        "27% year-on-year EBITDA growth",
+        "20% year-on-year growth in Apollo HealthCo revenues",
+        "Operationalization of new hospital beds",
+        "Strong payer mix with 83% insurance and cash patients"
+      ],
+      "key_negative_drivers": [
+        "Revenue recognition mismatch due to GST changes",
+        "Environmental-related delays in Gurugram facility",
+        "Moderation in Digital business revenue growth",
+        "Deferred revenue recognition in insurance business",
+        "Cost headwinds from new hospital ramp-ups"
+      ],
+      "notable_phrases": [
+        "35% year-on-year PAT growth",
+        "15% year-on-year revenue growth",
+        "27% year-on-year EBITDA growth",
+        "Operationalize roughly half of the new 1,500 beds",
+        "Revenue recognition mismatch due to GST changes",
+        "Environmental-related delays",
+        "Moderation in Digital business revenue growth",
+        "Commitment to a patient-centric strategy"
+      ],
+      "chain_of_thought": "The financial performance was strong with significant year-on-year growth in PAT, revenue, and EBITDA, driven by a robust payer mix and expansion across business verticals. Forward guidance was optimistic, with plans for significant capacity additions and revenue targets, though tempered by some operational delays. Risk language acknowledged challenges in revenue recognition and environmental delays, but management appeared proactive in addressing these issues. Investor confidence signals were positive, with management providing clear guidance and addressing concerns transparently, indicating a cautiously bullish outlook."
+    },
+    "summary": {
+      "agent": "summary",
+      "executive_summary": "Apollo Hospitals reported a robust financial performance in the latest earnings call, with a 35% year-on-year growth in PAT and a 15% increase in revenue. The company achieved a 27% growth in EBITDA, driven by strong performance across its business verticals, including a 20% growth in Apollo HealthCo revenues. However, the financial results were slightly marred by revenue recognition issues due to GST changes and environmental delays affecting the Gurugram facility.\n\nManagement emphasized strategic themes such as clinical differentiation, expansion in high-acuity specialties, and the strengthening of their omnichannel healthcare platform. The company is focused on optimizing asset utilization and expanding its digital business, with a particular emphasis on the pharmacy online segment, which saw a 32% growth in GMV.\n\nThe overall tone of the call was cautiously bullish, with management displaying confidence in their strategic direction despite acknowledging some operational challenges. Suneeta Reddy, the Managing Director, was particularly confident, while the CFO, A. Krishnan, adopted a more cautious tone. Investors were likely reassured by the company's growth trajectory and strategic initiatives, although concerns about environmental and digital business challenges remain.\n\nESG themes were significant, with Apollo Hospitals scoring a neutral 50.5 overall. The company showed strengths in patient-centric strategies and clinical differentiation but faced challenges with environmental disclosures and governance practices. Environmental delays were highlighted as a red flag, impacting construction timelines.",
+      "qa_quality": {
+        "overall_transparency_score": 7.5,
+        "narrative": "During the Q&A session, management handled most questions with clarity and directness, particularly those related to financial performance and strategic initiatives. Suneeta Reddy and Madhivanan Balakrishnan provided detailed responses on growth strategies and digital business performance, respectively. However, there were instances where management deflected or provided vague responses, particularly concerning the digital business's breakeven timeline and environmental delays.\n\nA notable example of a direct answer was provided by Sanjiv Gupta regarding the impact of GST changes and the cessation of business with Amazon on financial reporting. Conversely, when questioned about the digital business's EBITDA breakeven, management deferred a complete answer, suggesting a follow-up in the next quarter. This approach left some uncertainty regarding the timeline for achieving profitability in the digital segment.",
+        "direct_answer_examples": [
+          "Sanjiv Gupta's explanation of the GST changes and Amazon business cessation impact."
+        ],
+        "dodged_questions": [
+          {
+            "question": "What is the timeline for digital business EBITDA breakeven?",
+            "management_response": "We will have a better understanding about all this as we get into AOP. But I think one point clearly that the ESOP cost maximum is getting consumed until this year.",
+            "assessment": "Management deferred a complete answer, suggesting a follow-up in the next quarter."
+          }
+        ],
+        "vague_response_examples": [
+          "Management's response to the environmental delays impacting construction timelines."
+        ]
+      },
+      "short_term_implications": {
+        "narrative": "In the near term, investors should closely monitor Apollo Hospitals' digital business performance, particularly the pharmacy online segment, which is expected to continue its growth trajectory. Management has guided for a 30% GMV growth for the full fiscal year, which will be crucial for maintaining investor confidence.\n\nAdditionally, the company plans to operationalize new hospital capacities, including the Pune facility, which will add significant bed capacity. This expansion is expected to drive revenue growth and improve asset utilization. However, environmental delays in the Gurugram facility remain a risk that could impact short-term operational efficiency.",
+        "key_items": [
+          {
+            "item": "Digital business GMV growth",
+            "timeframe": "Next quarter",
+            "impact": "positive"
+          },
+          {
+            "item": "Operationalization of Pune facility",
+            "timeframe": "Next fiscal year",
+            "impact": "positive"
+          },
+          {
+            "item": "Environmental delays in Gurugram",
+            "timeframe": "Next 6 months",
+            "impact": "negative"
+          }
+        ]
+      },
+      "long_term_implications": {
+        "narrative": "Apollo Hospitals is strategically positioned to capitalize on long-term growth opportunities through its focus on clinical differentiation and expansion in high-acuity specialties. The company's capital allocation priorities include optimizing asset utilization and expanding digital capabilities, which are expected to enhance long-term shareholder value.\n\nThe competitive positioning of Apollo Hospitals is strengthened by its integrated healthcare ecosystem, which is designed to improve access, efficiency, and care outcomes. Management's long-term vision includes achieving a run rate of INR 25,000 crore in combined revenues with 7% EBITDA, which underscores their commitment to sustainable growth.\n\nSector tailwinds, such as increasing demand for healthcare services and digital health solutions, are expected to support Apollo Hospitals' growth trajectory. However, the company must address governance challenges and environmental concerns to fully realize its long-term potential.",
+        "key_items": [
+          {
+            "item": "Expansion in high-acuity specialties",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Digital business expansion",
+            "timeframe": "1-3 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Governance and environmental challenges",
+            "timeframe": "1-5 years",
+            "impact": "negative"
+          }
+        ]
+      },
+      "key_risks": {
+        "narrative": "Apollo Hospitals faces several material risks, including environmental delays impacting construction, which pose a high severity risk to operational timelines. The company also faces governance challenges, with limited disclosures and specific practices, representing a medium severity risk. Additionally, external risks such as regulatory changes, particularly in GST, and macroeconomic factors could impact financial performance, posing a medium severity risk.",
+        "risks": [
+          {
+            "risk": "Environmental delays impacting construction",
+            "severity": "high",
+            "type": "company-specific"
+          },
+          {
+            "risk": "Governance challenges",
+            "severity": "medium",
+            "type": "company-specific"
+          },
+          {
+            "risk": "Regulatory changes (GST)",
+            "severity": "medium",
+            "type": "external"
+          }
+        ]
+      },
+      "key_opportunities": {
+        "narrative": "Apollo Hospitals has several compelling growth opportunities, including the expansion of its digital business, which is expected to achieve a 30% GMV growth in the next fiscal year, representing a high potential opportunity. The operationalization of new hospital capacities, such as the Pune facility, offers medium potential for revenue growth in the next 12 months. Additionally, the company's focus on clinical differentiation and high-acuity specialties presents a medium potential opportunity for long-term growth.",
+        "opportunities": [
+          {
+            "opportunity": "Digital business expansion",
+            "potential": "high",
+            "timeline": "Next fiscal year"
+          },
+          {
+            "opportunity": "Operationalization of Pune facility",
+            "potential": "medium",
+            "timeline": "Next 12 months"
+          },
+          {
+            "opportunity": "Focus on clinical differentiation",
+            "potential": "medium",
+            "timeline": "1-5 years"
+          }
+        ]
+      },
+      "investment_thesis_signal": "Cautiously Bullish",
+      "investment_thesis_rationale": "Apollo Hospitals' strong financial performance and strategic focus on digital expansion and clinical differentiation support a cautiously bullish investment thesis. While management's confidence and the company's growth trajectory are positive indicators, challenges such as environmental delays and governance issues warrant caution. The overall sentiment from the earnings call was cautiously bullish, with management displaying confidence in their strategic direction despite acknowledging some operational challenges.",
+      "chain_of_thought": "The analysis considered the company's strong financial performance, strategic initiatives, and management's tone during the call. The ESG analysis highlighted strengths in patient-centric strategies but also pointed out environmental and governance challenges. The sentiment analysis showed a cautiously bullish tone, with management confident in their growth trajectory. These factors collectively support a cautiously bullish investment thesis, balancing growth opportunities with existing risks."
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Introduction of speakers"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing logistical details and introducing the speakers. They maintained a neutral tone throughout the call, ensuring the smooth transition between different segments and speakers.",
+      "sentiment_score": 0.0466,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0466,
+        "positive": 0.06,
+        "negative": 0.0134,
+        "neutral": 0.9266,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aditya Jhawar",
+      "role": "Host from Investec Capital Services",
+      "tone": "neutral",
+      "key_topics": [
+        "Welcome",
+        "Introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aditya Jhawar, representing Investec Capital Services, opened the call by welcoming participants and thanking Hero MotoCorp's management for the opportunity to host the call. His tone was neutral, and he efficiently handed over the proceedings to Umang Khurana.",
+      "sentiment_score": 0.2148,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2148,
+        "positive": 0.2251,
+        "negative": 0.0103,
+        "neutral": 0.7646,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Khurana",
+      "role": "Head of Investor Relations & Risk",
+      "tone": "neutral",
+      "key_topics": [
+        "Introduction of management",
+        "Leadership changes"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Umang Khurana introduced the key management team members present on the call and highlighted recent leadership changes within Hero MotoCorp. His tone was neutral as he set the stage for the business and financial updates from the management team.",
+      "sentiment_score": 0.0543,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0543,
+        "positive": 0.0706,
+        "negative": 0.0163,
+        "neutral": 0.9131,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Niranjan Gupta",
+      "role": "CEO",
+      "tone": "confident",
+      "key_topics": [
+        "Strategic priorities",
+        "Market share",
+        "Financial performance",
+        "Leadership transition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Niranjan Gupta, the CEO, confidently presented Hero MotoCorp's strategic priorities and financial achievements for Q3 FY25. He highlighted the company's market share gains and robust financial performance, including a significant increase in EBITDA per unit. Gupta also outlined the company's 2030 strategy, emphasizing growth pillars and operational efficiency. He announced his leadership transition, expressing confidence in his successor, Vikram Kasbekar.",
+      "sentiment_score": 0.909,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.909,
+        "positive": 0.9169,
+        "negative": 0.0079,
+        "neutral": 0.0752,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vikram Kasbekar",
+      "role": "Incoming CEO",
+      "tone": "confident",
+      "key_topics": [
+        "Execution strategy",
+        "Product launches",
+        "Leadership transition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vikram Kasbekar, the incoming CEO, expressed confidence in the company's strategic direction and emphasized the importance of execution. He acknowledged the laid-out strategies and highlighted upcoming product launches as key growth drivers. Kasbekar thanked Niranjan Gupta for his leadership and expressed readiness to lead the company forward.",
+      "sentiment_score": 0.7885,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7885,
+        "positive": 0.7958,
+        "negative": 0.0072,
+        "neutral": 0.197,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Anand",
+      "role": "CFO",
+      "tone": "confident",
+      "key_topics": [
+        "Financial performance",
+        "Market share",
+        "Product launches",
+        "Dividend"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vivek Anand, the CFO, confidently reported Hero MotoCorp's strong financial performance for Q3 FY25, highlighting revenue growth, EBITDA, and PAT increases. He detailed the company's market share gains and successful product launches. Anand also announced an interim dividend, reflecting the company's robust cash management and financial health. His tone was optimistic as he discussed the company's strategic investments and future growth prospects.",
+      "sentiment_score": 0.9407,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9407,
+        "positive": 0.9571,
+        "negative": 0.0164,
+        "neutral": 0.0264,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ranjivjit Singh",
+      "role": "Chief Business Officer, India Business",
+      "tone": "optimistic",
+      "key_topics": [
+        "Strategy execution",
+        "Product portfolio",
+        "Market share",
+        "Leadership transition"
+      ],
+      "direct_answers": [
+        "Amyn Pirani"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ranjivjit Singh, the Chief Business Officer for India, expressed optimism about Hero MotoCorp's strategic execution and product portfolio. He highlighted the company's strengthened market position in motorcycles and scooters, as well as the successful development of the power brand strategy. Singh acknowledged his leadership transition, thanking colleagues for their support and expressing confidence in the company's future growth.",
+      "sentiment_score": 0.8703,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8703,
+        "positive": 0.8778,
+        "negative": 0.0076,
+        "neutral": 0.1146,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Swadesh Srivastava",
+      "role": "Chief Business Officer, Emerging Mobility Business Unit",
+      "tone": "confident",
+      "key_topics": [
+        "EV strategy",
+        "Business restructuring",
+        "Innovation"
+      ],
+      "direct_answers": [
+        "Gunjan Prithyani"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Swadesh Srivastava, the Chief Business Officer for the Emerging Mobility Business Unit, confidently discussed Hero MotoCorp's EV strategy and business restructuring. He emphasized the company's commitment to building EV leadership in the near future through aggressive product positioning and innovation. Srivastava highlighted the restructuring of the EMBU to enhance focus and synergy in EV development.",
+      "sentiment_score": 0.549,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.549,
+        "positive": 0.5591,
+        "negative": 0.0101,
+        "neutral": 0.4308,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amyn Pirani",
+      "role": "Analyst from J.P. Morgan",
+      "tone": "neutral",
+      "key_topics": [
+        "Parts revenue growth",
+        "Product launch strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amyn Pirani, an analyst from J.P. Morgan, asked questions regarding the strong growth in parts revenue and the strategy behind the recent product launches. His tone was neutral as he sought clarification on the seasonality of parts revenue growth and the pricing strategy for the new Xoom 160 scooter.",
+      "sentiment_score": 0.8245,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8245,
+        "positive": 0.8776,
+        "negative": 0.0531,
+        "neutral": 0.0693,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gunjan Prithyani",
+      "role": "Analyst from Bank of America",
+      "tone": "neutral",
+      "key_topics": [
+        "EV business restructuring",
+        "Investment strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Gunjan Prithyani, an analyst from Bank of America, inquired about the restructuring of Hero MotoCorp's EV business and its implications for investment strategy. Her tone was neutral as she sought clarification on the rationale behind transitioning the EMBU as a separate entity and its impact on financial reporting.",
+      "sentiment_score": 0.022,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.022,
+        "positive": 0.0689,
+        "negative": 0.0469,
+        "neutral": 0.8842,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 10,
+  "chain_of_thought": "The analysis identifies each speaker's role and extracts their key statements from the transcript. The tone of each speaker is assessed based on their language and context. Management speakers' responses to analyst questions are evaluated for directness or vagueness. A narrative summary is crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

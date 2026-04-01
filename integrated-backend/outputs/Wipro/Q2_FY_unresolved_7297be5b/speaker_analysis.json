@@ -1,0 +1,155 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Abhishek Jain",
+      "role": "Vice President (Corporate Treasurer & Head of Investor Relations)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Jain opened the earnings call by welcoming participants and outlining the agenda, which included presentations from key executives and a Q&A session. He highlighted the presence of forward-looking statements and the associated risks, emphasizing that these are based on current expectations and may differ from actual results. His tone was neutral, focusing on procedural aspects of the call rather than specific business insights.",
+      "sentiment_score": 0.0136,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0136,
+        "positive": 0.0334,
+        "negative": 0.0198,
+        "neutral": 0.9468,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srinivas Pallia",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "IT services revenue",
+        "operating margin",
+        "market performance",
+        "deal wins",
+        "AI initiatives"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on BFSI growth and deal ramp-up"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Srinivas Pallia presented a confident outlook for Wipro, highlighting a sequential growth in IT services revenue and a stable operating margin. He detailed the performance across different markets and sectors, emphasizing strong deal wins and strategic partnerships, particularly in AI and digital transformation. Pallia introduced 'Wipro Intelligence,' a suite of AI-powered solutions, and projected a cautious yet optimistic revenue growth for the next quarter. He directly addressed questions about BFSI growth and deal ramp-up, reinforcing confidence in future performance.",
+      "sentiment_score": 0.7851,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7851,
+        "positive": 0.822,
+        "negative": 0.0368,
+        "neutral": 0.1412,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Aparna Iyer",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "operating margins",
+        "strategic market units",
+        "guidance"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on margins",
+        "Kumar Rakesh's question on growth and margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Aparna Iyer provided a cautious overview of Wipro's financial performance, noting a slight sequential growth in IT services revenue but a year-on-year decline. She explained the impact of a one-off charge on operating margins and emphasized efforts to maintain margins within a narrow band despite investment pressures. Iyer detailed performance across strategic market units and shared key financial metrics, including net income growth and cash flow status. She addressed questions on margins and growth, reiterating the company's guidance and highlighting the expected closure of an acquisition.",
+      "sentiment_score": -0.8658,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.8658,
+        "positive": 0.0422,
+        "negative": 0.908,
+        "neutral": 0.0498,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Nitin Padmanabhan",
+      "role": "Analyst from Investec",
+      "tone": "neutral",
+      "key_topics": [
+        "BFSI growth",
+        "margins"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Padmanabhan, an analyst from Investec, posed questions regarding the conversion of deal wins into revenue, particularly in the BFSI sector, and the outlook for growth in the coming year. He also inquired about the company's margin trajectory, seeking clarity on the impact of transition costs. His questions were direct and aimed at understanding the financial implications of recent strategic moves by Wipro.",
+      "sentiment_score": 0.1408,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1408,
+        "positive": 0.1685,
+        "negative": 0.0277,
+        "neutral": 0.8038,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kumar Rakesh",
+      "role": "Analyst from BNP Paribas",
+      "tone": "neutral",
+      "key_topics": [
+        "growth",
+        "margins"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kumar Rakesh, an analyst from BNP Paribas, focused on Wipro's growth trajectory and margin management. He highlighted the significant deal wins and questioned the company's guidance, which suggested only marginal improvement. Rakesh also sought clarification on the impact of large deals on margins, given previous comments about potential dilution. His inquiries were aimed at understanding the balance between growth initiatives and financial stability.",
+      "sentiment_score": 0.5101,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5101,
+        "positive": 0.556,
+        "negative": 0.0459,
+        "neutral": 0.3981,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted to capture the essence of their contributions, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, their responses to analyst questions are evaluated to determine if they provided direct answers or were evasive. Finally, a narrative summary is crafted for each speaker, encapsulating their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

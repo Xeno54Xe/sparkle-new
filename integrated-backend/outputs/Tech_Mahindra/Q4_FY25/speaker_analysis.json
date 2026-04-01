@@ -1,0 +1,112 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Leah Jena",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Leah Jena served as the moderator for the earnings call, introducing the management team and setting the stage for the presentations. She reminded participants about the format of the call and the nature of forward-looking statements. Leah facilitated the transition to the Q&A session, ensuring a smooth flow of the meeting. Her tone remained neutral throughout, focusing on procedural aspects rather than content.",
+      "sentiment_score": 0.0236,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0236,
+        "positive": 0.0456,
+        "negative": 0.022,
+        "neutral": 0.9324,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mohit Joshi",
+      "role": "CEO & MD",
+      "tone": "confident",
+      "key_topics": [
+        "quarterly performance",
+        "strategic roadmap",
+        "deal wins",
+        "vertical performance"
+      ],
+      "direct_answers": [
+        "Rodd Bourgeois",
+        "Ankur Rudra",
+        "Surendra Goyal",
+        "Yoggesh Agarwal"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mohit Joshi, the CEO and MD of Tech Mahindra, delivered a confident presentation focusing on the company's quarterly performance, strategic roadmap, and significant deal wins. He highlighted the company's revenue growth, strategic decisions to scale down non-core businesses, and the launch of new service lines like TechM Consulting. Mohit addressed questions from analysts directly, providing insights into industry growth expectations and the company's strategic focus areas. His tone was optimistic, emphasizing the company's achievements and future plans.",
+      "sentiment_score": 0.4739,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4739,
+        "positive": 0.6556,
+        "negative": 0.1817,
+        "neutral": 0.1626,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Rohit Anand",
+      "role": "CFO",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "strategic investments"
+      ],
+      "direct_answers": [
+        "Ravi Menon",
+        "Surendra Goyal"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rohit Anand, the CFO of Tech Mahindra, provided detailed insights into the company's financial performance, emphasizing the strategic decision to scale down non-core businesses and its impact on growth. He discussed the company's margin improvements and strategic investments, aligning with the broader company goals. Rohit answered questions from analysts with confidence, reinforcing the company's financial strategies and future outlook. His tone was confident, focusing on financial metrics and strategic alignment.",
+      "sentiment_score": 0.173,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.173,
+        "positive": 0.1942,
+        "negative": 0.0213,
+        "neutral": 0.7845,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the transcript: Leah Jena as the moderator, Mohit Joshi as the CEO & MD, and Rohit Anand as the CFO. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. Leah Jena's role is primarily procedural, introducing the call and facilitating the Q&A session. Mohit Joshi provides a comprehensive overview of the company's performance, strategic initiatives, and future outlook, addressing analyst questions directly. Rohit Anand focuses on financial performance and strategic investments, answering questions with confidence. The tone for each speaker is assessed based on their statements, with Leah being neutral, Mohit confident, and Rohit also confident. The JSON structure captures these insights, providing a detailed speaker-wise analysis for further financial NLP scoring.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Aishwarya Sitharam",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "moderation",
+        "technical assistance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aishwarya Sitharam opened the earnings call by welcoming participants and outlining the structure of the call. She provided instructions for technical assistance and clarified that the chat function would not be used for questions to management. Her tone was neutral, focusing on facilitating the smooth running of the call.",
+      "sentiment_score": 0.0226,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0226,
+        "positive": 0.0399,
+        "negative": 0.0173,
+        "neutral": 0.9427,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Richa Periwal",
+      "role": "Head of Investor Relations, Strategy & Corporate Analytics",
+      "tone": "neutral",
+      "key_topics": [
+        "welcome",
+        "introduction",
+        "call structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Richa Periwal welcomed participants to the earnings call, expressing appreciation for their time and participation. She introduced the leadership team and outlined the agenda for the call, which included financial performance overview by the CFO and strategic insights by the CEO. Her tone was neutral, focusing on setting the stage for the presentations and discussions to follow.",
+      "sentiment_score": 0.1682,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1682,
+        "positive": 0.178,
+        "negative": 0.0098,
+        "neutral": 0.8122,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. V. Narasimham",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "growth",
+        "margins",
+        "expenses"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "M. V. Narasimham provided a detailed overview of the financial performance for Q2FY26, highlighting near double-digit growth despite challenges in the US generics market. He noted the positive impact of the acquired consumer healthcare business on top-line momentum and discussed the EBITDA margin and revenue figures. His tone was neutral, focusing on delivering factual financial data and analysis.",
+      "sentiment_score": 0.9367,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9367,
+        "positive": 0.9562,
+        "negative": 0.0196,
+        "neutral": 0.0242,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Erez Israeli",
+      "role": "Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "strategic priorities",
+        "growth",
+        "pipeline programs",
+        "cost efficiencies"
+      ],
+      "direct_answers": [
+        "Yes, very much so.",
+        "Correct.",
+        "There is another set of tests that allows us to submit the subcutaneous, but it doesn't require additional study."
+      ],
+      "dodged_or_vague": [
+        "I'm certain that we will sell the product. The question is in which market they would come. Can I guarantee that we'll not get the CRL? No, I cannot. I wish."
+      ],
+      "summary": "Erez Israeli expressed confidence in the company's performance, highlighting double-digit growth and steady profitability. He discussed strategic priorities, including expanding in Consumer Healthcare and advancing pipeline programs like Semaglutide and Abatacept. Erez addressed questions directly but was vague about certain regulatory outcomes. His tone was confident, focusing on the company's strategic direction and future growth prospects.",
+      "sentiment_score": 0.9338,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9338,
+        "positive": 0.946,
+        "negative": 0.0122,
+        "neutral": 0.0417,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

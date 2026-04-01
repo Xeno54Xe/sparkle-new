@@ -1,0 +1,158 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Abhishek Sharma",
+      "role": "Vice President and Head of Investor Relations and Strategic Projects",
+      "tone": "neutral",
+      "key_topics": [
+        "organizational update",
+        "financial results",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Sharma opened the earnings call by welcoming participants and outlining the agenda. He provided logistical details about the availability of financial documents and introduced the key management team members who would be speaking. His tone was neutral, focusing on the procedural aspects of the call and setting the stage for the detailed discussions to follow. He also reminded participants about the forward-looking nature of some statements, aligning expectations with the inherent risks in the business.",
+      "sentiment_score": 0.0395,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0395,
+        "positive": 0.0534,
+        "negative": 0.0139,
+        "neutral": 0.9326,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "C. S. Muralidharan",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "sales growth",
+        "EBITDA",
+        "tax rate"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "C. S. Muralidharan provided a detailed overview of Sun Pharma's financial performance for Q4 FY25. He highlighted a 9% growth in sales, a significant increase in EBITDA, and a notable FOREX gain compared to the previous year. His tone was neutral, focusing on delivering factual financial data without embellishment. Muralidharan also discussed the tax rate changes and the proposed dividend, providing a comprehensive financial snapshot to the analysts and investors.",
+      "sentiment_score": -0.5267,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.5267,
+        "positive": 0.2106,
+        "negative": 0.7373,
+        "neutral": 0.052,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dilip Shanghvi",
+      "role": "Chairman & Managing Director",
+      "tone": "cautious",
+      "key_topics": [
+        "acquisitions",
+        "global uncertainty",
+        "strategic growth"
+      ],
+      "direct_answers": [
+        "Anubhav Agarwal's question on large acquisitions"
+      ],
+      "dodged_or_vague": [
+        "Saion Mukherjee's question on Fibromun timeline"
+      ],
+      "summary": "Dilip Shanghvi addressed questions regarding Sun Pharma's acquisition strategy and the impact of global uncertainties. He emphasized the importance of strategic acquisitions that offer synergies and value creation. Shanghvi's tone was cautious, reflecting concerns about currency fluctuations and global market volatility. He provided a direct response to a question about the company's openness to large acquisitions but was vague about specific timelines for product developments, indicating a preference for strategic caution.",
+      "sentiment_score": 0.2269,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2269,
+        "positive": 0.2509,
+        "negative": 0.024,
+        "neutral": 0.7251,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhay Gandhi",
+      "role": "CEO (North America Business)",
+      "tone": "confident",
+      "key_topics": [
+        "US business performance",
+        "product launches",
+        "pricing pressure"
+      ],
+      "direct_answers": [
+        "Neha Manpuria's question on Checkpoint asset timeline"
+      ],
+      "dodged_or_vague": [
+        "Vivek Agarwal's question on pricing"
+      ],
+      "summary": "Abhay Gandhi provided insights into the performance of Sun Pharma's US business, highlighting a 3.6% growth driven by Specialty products. He acknowledged the decline in generics due to increased competition but remained confident about the growth trajectory of key brands. Gandhi's tone was confident, particularly when discussing the strategic focus on Specialty products. He directly answered questions about product timelines but was evasive on pricing specifics, reflecting the complexity of market dynamics.",
+      "sentiment_score": -0.9222,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9222,
+        "positive": 0.0216,
+        "negative": 0.9437,
+        "neutral": 0.0347,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kirti Ganorkar",
+      "role": "CEO (India Business)",
+      "tone": "optimistic",
+      "key_topics": [
+        "India business growth",
+        "market leadership",
+        "new product launches"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kirti Ganorkar shared an optimistic view of Sun Pharma's India business, reporting a robust 13.7% growth in formulation sales. He emphasized the company's market leadership and strategic product launches, including plans for future entries in diabetes and weight management. Ganorkar's tone was optimistic, reflecting confidence in the company's strong market position and growth potential in India. His statements highlighted Sun Pharma's proactive approach to maintaining and expanding its market share.",
+      "sentiment_score": 0.5142,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5142,
+        "positive": 0.5237,
+        "negative": 0.0096,
+        "neutral": 0.4667,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis involved identifying each speaker from the earnings call transcript and extracting their key statements. The tone of each speaker was assessed based on their language and context. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or evasive responses. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

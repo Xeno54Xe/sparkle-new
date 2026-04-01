@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.926,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9379,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9379,
+        "positive": 0.9595,
+        "negative": 0.0216,
+        "neutral": 0.0189,
+        "chunks_scored": 1
+      },
+      "text": "UPL Ltd reported a strong financial performance in Q2 FY26, with revenue growing by 8% year-on-year to ₹12,019 crore, driven by a 7% increase in volume and a favorable 3% exchange impact. The EBITDA surged by 40% to ₹2,205 crore, with margins improving by 410 basis points to 18.3%. Profit before tax (PBT) increased significantly to ₹784 crore, up by over ₹1,200 crore from the previous year. The company also reported a substantial reduction in net finance costs from ₹847 crore to ₹518 crore, aided by debt pre-payment and favorable interest rates. Profit after tax (PAT) improved from a loss of ₹585 crore last year to a profit of ₹612 crore this quarter, with PATMI up by around ₹1,000 crore. The financial results were ahead of expectations, reflecting robust execution and disciplined financial management."
+    },
+    "forward_guidance": {
+      "score": 0.9392,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9392,
+        "positive": 0.9569,
+        "negative": 0.0176,
+        "neutral": 0.0255,
+        "chunks_scored": 1
+      },
+      "text": "UPL Ltd provided an optimistic forward guidance, upgrading its FY26 outlook to a 4% to 8% growth in revenues and a 12% to 16% increase in EBITDA, up from the previous guidance of 10% to 14%. The company expressed confidence in accelerating growth in the second half of the year, driven by strong demand and operational efficiencies. Management highlighted the potential for volume-led growth in the Advanta segment and continued strong performance in the SUPERFORM business. The language used was bullish, with expectations of surpassing the $130 million revenue target from new product launches. The company also plans to continue deleveraging its balance sheet, aiming for a net debt-to-EBITDA ratio between 1.6x to 1.8x."
+    },
+    "risk_language": {
+      "score": 0.8836,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8836,
+        "positive": 0.9131,
+        "negative": 0.0295,
+        "neutral": 0.0573,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks and challenges during the call, including ongoing geopolitical uncertainties, U.S. tariff-related concerns, and lower commodity prices affecting farm income. There was also mention of weather-related challenges impacting the India crop protection business. Despite these headwinds, management was forthright about their impact, noting that these factors have been factored into their financial expectations. The company is also navigating competitive pressures, particularly in the Brazil market, where there is some pricing pressure. However, management expressed confidence in their ability to manage these risks through strategic sourcing and operational efficiencies."
+    },
+    "investor_confidence": {
+      "score": 0.9309,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9309,
+        "positive": 0.9452,
+        "negative": 0.0144,
+        "neutral": 0.0404,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, providing detailed explanations of financial performance and strategic initiatives. Analyst questions were answered directly, with management demonstrating transparency and credibility. The company highlighted improvements in financial reporting quality and earnings quality, which were well-received by the investor community. The recent outlook upgrades by global ratings agencies from 'negative' to 'stable' further endorsed management's strategic clarity and commitment to sustainable value creation. Overall, the tone was one of confidence in the company's ability to deliver strong results and manage challenges effectively."
+    }
+  },
+  "key_positive_drivers": [
+    "8% revenue growth driven by volume increase",
+    "40% EBITDA growth with margin improvement",
+    "Significant reduction in net finance costs",
+    "Upgraded FY26 guidance for revenue and EBITDA growth",
+    "Strong performance in Advanta and SUPERFORM segments",
+    "Improved gearing ratios and balance sheet deleveraging"
+  ],
+  "key_negative_drivers": [
+    "Geopolitical uncertainties and U.S. tariff concerns",
+    "Lower commodity prices affecting farm income",
+    "Weather-related challenges in India crop protection",
+    "Pricing pressure in Brazil market",
+    "Higher working capital requirements"
+  ],
+  "notable_phrases": [
+    "robust execution and disciplined financial management",
+    "confident in accelerating growth",
+    "navigating competitive pressures",
+    "favorable cost position",
+    "strong endorsement of our financial resilience",
+    "strategic clarity and commitment to sustainable value creation",
+    "bullish expectations for new product launches",
+    "remarkable improvement in gearing ratios"
+  ],
+  "chain_of_thought": "The financial performance was strong, with significant growth in revenue, EBITDA, and profit margins, exceeding expectations. Forward guidance was optimistic, with upgraded growth targets and confidence in future performance. Risks were acknowledged, including geopolitical and market challenges, but management expressed confidence in their mitigation strategies. Investor confidence was bolstered by transparent communication, strategic clarity, and recent ratings upgrades, projecting a cautiously bullish outlook."
+}

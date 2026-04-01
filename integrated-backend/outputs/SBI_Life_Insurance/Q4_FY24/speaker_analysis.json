@@ -1,0 +1,137 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Amit Jhingran",
+      "role": "MD and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "product innovation",
+        "market leadership",
+        "growth strategy"
+      ],
+      "direct_answers": [
+        "Update on our financial results can be accessed on our website as well as on the websites of both the stock exchanges.",
+        "Our ability to adapt, innovate and respond to the changing needs of our customers has been key to this journey."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Amit Jhingran, the MD and CEO of SBI Life Insurance, presented the company's financial results with a confident tone, highlighting significant growth in new business premiums and profit after tax. He emphasized the company's adaptability and innovation as key factors in maintaining market leadership. Jhingran outlined a forward-looking strategy focused on customer-centricity and sustainability, supported by strong partnerships and employee commitment. He provided specific financial metrics, reinforcing the company's robust performance and strategic direction.",
+      "sentiment_score": 0.9023,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9023,
+        "positive": 0.9116,
+        "negative": 0.0093,
+        "neutral": 0.0791,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Management",
+      "role": "Management Team",
+      "tone": "neutral",
+      "key_topics": [
+        "product mix",
+        "agency growth",
+        "bancassurance",
+        "financial metrics"
+      ],
+      "direct_answers": [
+        "See, majorly, our credit life portfolio is from the home loan customers that we cover as far under the credit life portfolio.",
+        "On the banca side, I mean, we don't divulge the VoNB margin channel-wise or that way."
+      ],
+      "dodged_or_vague": [
+        "This product mix shift is not based on any single product like the last time.",
+        "Our focus on agency channel during the quarter was making more agents active by way of our traditional and protection product."
+      ],
+      "summary": "The management team of SBI Life Insurance provided insights into the company's product mix and distribution strategies. They discussed the broad-based shift in product offerings and the focus on activating more agents in the agency channel. The team addressed questions about the credit life portfolio and bancassurance growth, providing specific details where possible but avoiding detailed channel-wise financial disclosures. Their tone remained neutral, focusing on explaining strategic decisions and market conditions.",
+      "sentiment_score": 0.2626,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2626,
+        "positive": 0.3784,
+        "negative": 0.1158,
+        "neutral": 0.5058,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Madhukar Ladha",
+      "role": "Analyst from Nuvama Wealth Management",
+      "tone": "neutral",
+      "key_topics": [
+        "policyholders' liability",
+        "individual protection",
+        "persistency"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Madhukar Ladha, an analyst from Nuvama Wealth Management, asked questions regarding the increase in policyholders' liability and its implications, as well as the observed weakness in individual protection and persistency metrics. His inquiries were aimed at understanding the underlying factors affecting these areas. Ladha's tone was neutral, focusing on seeking clarification and additional insights into the company's financial performance and strategic decisions.",
+      "sentiment_score": -0.5997,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.5997,
+        "positive": 0.1499,
+        "negative": 0.7496,
+        "neutral": 0.1005,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Avinash Singh",
+      "role": "Analyst from Emkay Global Financial Services",
+      "tone": "neutral",
+      "key_topics": [
+        "margin improvement",
+        "product mix",
+        "growth outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Avinash Singh from Emkay Global Financial Services commended SBI Life Insurance on their margin improvement and product mix strategy. He inquired about the company's growth outlook, particularly in light of strategic decisions to vacate certain market spaces due to competition. Singh's questions were aimed at understanding how the company plans to navigate future growth, especially in the retail and bancassurance sectors. His tone was neutral, focusing on connecting strategic decisions with future performance expectations.",
+      "sentiment_score": 0.2836,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2836,
+        "positive": 0.3342,
+        "negative": 0.0506,
+        "neutral": 0.6152,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker from the earnings call transcript, including the moderator, management, and analysts. For each speaker, key statements are extracted, focusing on verbatim quotes that include specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or avoided. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. This structured approach ensures a comprehensive understanding of each speaker's role and insights during the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

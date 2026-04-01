@@ -1,0 +1,87 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions for participants and introducing the main speaker, Mr. P. Ramakrishnan. The tone was neutral, focusing on procedural aspects of the call. The moderator ensured the call ran smoothly and transitioned between speakers.",
+      "sentiment_score": 0.0447,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0447,
+        "positive": 0.0594,
+        "negative": 0.0147,
+        "neutral": 0.9259,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "P. Ramakrishnan",
+      "role": "Head of Investor Relations, Larsen & Toubro",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "order book",
+        "strategic initiatives",
+        "guidance"
+      ],
+      "direct_answers": [
+        "Mohit Kumar: Good evening, sir, and thanks for the opportunity. Congratulations on a very good quarter. My first question is on the order inflow in this quarter. I just want a clarification. Have you booked this Ultra Mega order which you announced today? And also another clarification; have you booked the green hydrogen order inflow in the quarter?",
+        "Pulkit Patni: Sir, thank you for taking my question. I have just one book-keeping question. When I look at your presentation, the corporate EBITDA is a very large number this time at Rs.520 crores. Historically, this number has been in the Rs.125 to 150, 160 crores range. Anything exceptional that has included there?",
+        "Sumit Kishore: Thanks for the opportunity. My first question is related to your core business margin guidance. Is there a slight change from the 8.5% guidance that you had given for FY26, an increase of 20 basis points to 8.3% to 8.5% or there is no change?"
+      ],
+      "dodged_or_vague": [
+        "Aditya Bhartia: My last question is on Nabha Power. There have been some media articles about the project likely to be sold to Torrent. So, just wanted to understand if there is anything that you would like to add to that?",
+        "Aditya Mongia: Just trying to get a sense that since offshore is a new area of work, and we know less of the competitive intensity, should we be assuming similar hit rates or how to think through that, and the risks associated with the same, yes, in terms of business risks?"
+      ],
+      "summary": "P. Ramakrishnan, as the Head of Investor Relations, presented a comprehensive overview of L&T's Q1 FY26 performance. He confidently highlighted the company's strong financial performance, including a 33% YoY growth in order inflows and a 25% increase in the order book. He detailed strategic initiatives such as the Green Energy Initiative and the issuance of an ESG Bond. While he directly answered several analyst questions, he was evasive on topics like the potential sale of Nabha Power and competitive risks in offshore projects. Overall, his tone was confident, reflecting a positive outlook for the company.",
+      "sentiment_score": 0.6679,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6679,
+        "positive": 0.7379,
+        "negative": 0.07,
+        "neutral": 0.192,
+        "chunks_scored": 8
+      }
+    }
+  ],
+  "speaker_count": 2,
+  "chain_of_thought": "The task involves identifying speakers from the transcript, extracting their statements, analyzing their tone, and summarizing their contributions. The moderator's role is procedural, introducing the call and managing transitions, with a neutral tone. P. Ramakrishnan, as the main speaker, provides detailed financial and strategic updates, answers questions, and maintains a confident tone. He directly addresses some questions but is evasive on others, particularly regarding strategic uncertainties. The JSON structure captures these elements for further analysis.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

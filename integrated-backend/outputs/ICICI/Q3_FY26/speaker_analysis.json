@@ -1,0 +1,180 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the ICICI Bank Q3-FY2026 earnings call, providing instructions on the call's logistics and introducing the speakers. The tone was neutral, focusing on ensuring the smooth operation of the call. The moderator did not engage in financial discussions or answer questions, serving primarily as a facilitator.",
+      "sentiment_score": 0.0591,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0591,
+        "positive": 0.0712,
+        "negative": 0.0121,
+        "neutral": 0.9167,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Bakhshi",
+      "role": "Managing Director and Chief Executive Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Strategic focus",
+        "Financial performance",
+        "Growth opportunities"
+      ],
+      "direct_answers": [
+        "Mahrukh Adajania's question on standard asset provision and margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Bakhshi, the Managing Director and CEO of ICICI Bank, delivered a confident overview of the bank's strategic focus and financial performance for Q3 FY2026. He emphasized the bank's commitment to a 360-degree customer-centric approach and highlighted growth in profit before tax, deposits, and loan portfolios. Bakhshi also addressed the additional standard asset provision required by the RBI and reassured stakeholders of the bank's strong capital position. He projected optimism about future growth opportunities and the bank's ability to maintain a strong balance sheet and deliver sustainable returns.",
+      "sentiment_score": 0.9122,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9122,
+        "positive": 0.9241,
+        "negative": 0.0119,
+        "neutral": 0.064,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Anindya Banerjee",
+      "role": "Management",
+      "tone": "Cautious",
+      "key_topics": [
+        "Standard asset provisions",
+        "Loan growth",
+        "Credit quality"
+      ],
+      "direct_answers": [
+        "Mahrukh Adajania's question on standard asset provision and margins",
+        "Suresh Ganapathy's question on LCR"
+      ],
+      "dodged_or_vague": [
+        "Param Subramanian's question on CEO's term extension"
+      ],
+      "summary": "Anindya Banerjee, a member of ICICI Bank's management, provided a cautious overview of the bank's response to the RBI's directive for additional standard asset provisions. He detailed the steps being taken to align the agricultural priority sector credit facilities with regulatory expectations. Banerjee also discussed loan growth and credit quality, noting a sequential growth pickup despite challenges. He addressed questions on the bank's liquidity coverage ratio and the impact of regulatory directives, maintaining a cautious tone throughout. While he provided direct answers to some questions, he was vague regarding the implications of the CEO's term extension.",
+      "sentiment_score": 0.0877,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0877,
+        "positive": 0.1612,
+        "negative": 0.0734,
+        "neutral": 0.7654,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Mahrukh Adajania",
+      "role": "Analyst",
+      "tone": "Neutral",
+      "key_topics": [
+        "Standard asset provision",
+        "Margins"
+      ],
+      "direct_answers": [
+        "Anindya Banerjee's response on standard asset provision and margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mahrukh Adajania, an analyst, posed questions regarding the standard asset provision and its impact on ICICI Bank's operating expenses and margins. Her inquiries were focused on understanding the size of the affected portfolio and the compliance issues involved. She also sought clarity on the bank's margin outlook in light of competitive mortgage pricing and potential deposit repricing. Her tone was neutral, aiming to gather detailed insights into the bank's financial strategies and regulatory challenges.",
+      "sentiment_score": 0.0985,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0985,
+        "positive": 0.1646,
+        "negative": 0.066,
+        "neutral": 0.7694,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Suresh Ganapathy",
+      "role": "Analyst",
+      "tone": "Neutral",
+      "key_topics": [
+        "Liquidity Coverage Ratio"
+      ],
+      "direct_answers": [
+        "Anindya Banerjee's response on LCR"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Suresh Ganapathy, an analyst, focused his questions on ICICI Bank's liquidity coverage ratio (LCR) for the quarter and its expected trajectory following new guidelines in April 2026. His inquiries aimed to understand the bank's strategy in maintaining liquidity levels and the potential impact of regulatory changes. The tone was neutral, seeking specific information on the bank's liquidity management practices.",
+      "sentiment_score": -0.0502,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0502,
+        "positive": 0.0572,
+        "negative": 0.1074,
+        "neutral": 0.8354,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Param Subramanian",
+      "role": "Analyst",
+      "tone": "Neutral",
+      "key_topics": [
+        "CEO's term extension",
+        "Yield on advances"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Anindya Banerjee's response on CEO's term extension"
+      ],
+      "summary": "Param Subramanian, an analyst, raised questions about the rationale behind the Board's decision to extend the CEO's term by two years instead of three, probing for insights into potential implications for leadership continuity. He also inquired about the decline in yield on advances, seeking clarification on the factors contributing to this change. While his questions were direct, the response regarding the CEO's term extension was somewhat vague, leaving room for speculation. His tone was neutral, aiming to clarify strategic decisions and financial metrics.",
+      "sentiment_score": 0.0076,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0076,
+        "positive": 0.0913,
+        "negative": 0.0837,
+        "neutral": 0.825,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. The moderator's role is primarily logistical, introducing the call and facilitating the Q&A session. Sandeep Bakhshi, as the CEO, provides a comprehensive overview of the bank's strategic focus and financial performance, maintaining a confident tone. Anindya Banerjee, representing management, addresses specific financial and regulatory issues with a cautious tone, providing detailed responses to some questions while being vague on others. Analysts like Mahrukh Adajania, Suresh Ganapathy, and Param Subramanian pose targeted questions to gather insights into the bank's financial strategies and regulatory challenges, with their tones generally neutral. The JSON structure captures each speaker's key statements, tone, and the nature of their interactions, providing a structured overview of the call's dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "V. R. K. Gupta",
+      "role": "Director (Finance), Bharat Petroleum Corporation Limited",
+      "tone": "confident",
+      "key_topics": [
+        "global growth prospects",
+        "India's growth outlook",
+        "oil demand forecasts",
+        "refinery operations",
+        "marketing performance",
+        "financial highlights"
+      ],
+      "direct_answers": [
+        "One is HSD retail side, our market share during this quarter is 29.59. Compared to previous quarter, slightly it is a reduction side.",
+        "It is Rs. 39,452 crores at group level debt."
+      ],
+      "dodged_or_vague": [
+        "What would be the standard margin? We cannot comment at this point of time because we are not in a daily pricing mode."
+      ],
+      "summary": "V. R. K. Gupta, as the Director of Finance, provided a comprehensive overview of BPCL's financial and operational performance for Q1 FY '26. He highlighted the global and domestic economic conditions, emphasizing the positive growth outlook despite recent US tariff measures. Gupta detailed the company's strategic initiatives in refining, marketing, and new projects, including significant investments in renewable energy and digital transformation. His tone was confident, reflecting a strong grasp of BPCL's financial health and strategic direction. Gupta directly addressed questions about market share and debt levels but was less specific about future margin expectations, indicating some cautiousness in forward-looking statements.",
+      "sentiment_score": 0.7062,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7062,
+        "positive": 0.7225,
+        "negative": 0.0163,
+        "neutral": 0.2612,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Pankaj Kumar",
+      "role": "Executive Director (Corporate Finance), Bharat Petroleum Corporation Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "capital allocation",
+        "EV charging",
+        "biofuels",
+        "hydrogen"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pankaj Kumar, the Executive Director of Corporate Finance, contributed to the call by discussing BPCL's capital allocation strategy, particularly in relation to new energy sectors like EV charging, biofuels, and hydrogen. He reiterated the company's commitment to its announced CAPEX plans and highlighted the strong cash flows from existing operations. Kumar's tone was neutral, focusing on providing factual updates without delving into speculative or forward-looking statements. His responses were concise, aligning with the broader financial strategy outlined by the Director of Finance.",
+      "sentiment_score": 0.8954,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8954,
+        "positive": 0.9065,
+        "negative": 0.011,
+        "neutral": 0.0825,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Chanda Negi",
+      "role": "General Manager (Pricing and Insurance), Bharat Petroleum Corporation Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "pricing",
+        "insurance",
+        "cylinder costs"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Chanda Negi, the General Manager of Pricing and Insurance, provided specific details on the pricing of cylinders, indicating a decrease in costs from Rs. 150 in Q1 to Rs. 30 by September. Her tone was neutral, focusing on delivering precise figures without additional commentary or analysis. Negi's contribution was straightforward, reflecting her role in managing pricing strategies within BPCL.",
+      "sentiment_score": -0.0127,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0127,
+        "positive": 0.025,
+        "negative": 0.0376,
+        "neutral": 0.9374,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Probal Sen",
+      "role": "Analyst, ICICI Securities",
+      "tone": "inquisitive",
+      "key_topics": [
+        "group debt level",
+        "Russian crude procurement",
+        "inventory impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Probal Sen, an analyst from ICICI Securities, actively engaged with the BPCL management by asking detailed questions about the company's financial metrics and operational strategies. His inquiries focused on understanding the group's debt levels, the impact of Russian crude procurement, and inventory strategies. Sen's tone was inquisitive, seeking clarity and specific data to better assess BPCL's financial health and strategic decisions. His questions were direct and aimed at extracting precise information from the management.",
+      "sentiment_score": -0.0057,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0057,
+        "positive": 0.0457,
+        "negative": 0.0515,
+        "neutral": 0.9028,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mayank Maheshwari",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "market share",
+        "competition",
+        "regulatory changes"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mayank Maheshwari, an analyst, focused his questions on BPCL's market share and competitive positioning, particularly in the diesel and jet fuel segments. He sought to understand the impact of regulatory changes on the company's market dynamics. Maheshwari's tone was inquisitive, aiming to gather insights into BPCL's strategic responses to market competition and regulatory shifts. His questions were well-targeted, reflecting a keen interest in the company's operational strategies.",
+      "sentiment_score": 0.0742,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0742,
+        "positive": 0.0909,
+        "negative": 0.0167,
+        "neutral": 0.8925,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The transcript includes multiple speakers from BPCL's management and analysts. Each speaker's role and key contributions were identified, focusing on their statements and the tone they conveyed. Management speakers provided detailed updates on financial and operational performance, while analysts asked probing questions to clarify and understand BPCL's strategies and financial health. The JSON structure captures these elements, ensuring a comprehensive analysis of each speaker's contribution to the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Vaidehi Sharma",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "Q&A session",
+        "closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vaidehi Sharma served as the moderator for the earnings call, guiding the flow of the session and ensuring smooth transitions between speakers. She provided instructions for the Q&A session and reminded participants about the forward-looking nature of some statements. Her tone remained neutral throughout, focusing on facilitating the discussion rather than contributing content. Vaidehi's role was crucial in maintaining the structure and timing of the call, ensuring that all speakers had the opportunity to present their remarks and answer questions.",
+      "sentiment_score": 0.0397,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0397,
+        "positive": 0.0546,
+        "negative": 0.0149,
+        "neutral": 0.9304,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gopal Vittal",
+      "role": "Vice Chairman & Managing Director - Bharti Airtel Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "strategic priorities",
+        "ESG commitments",
+        "5G expansion",
+        "digital businesses"
+      ],
+      "direct_answers": [
+        "Mr. Manish Adukia's question on capex trends",
+        "Mr. Sanjesh Jain's question on site addition and market share"
+      ],
+      "dodged_or_vague": [
+        "Mr. Aditya Suresh's question on partnership economics"
+      ],
+      "summary": "Gopal Vittal delivered a confident and comprehensive overview of Bharti Airtel's performance and strategic priorities. He highlighted the company's progress in ESG commitments, financial performance, and network expansion. Gopal emphasized the company's focus on digital innovation and strategic partnerships, particularly in the 5G and broadband sectors. He directly addressed questions on capex trends and market share but was less specific about partnership economics. His tone was optimistic, reflecting confidence in the company's strategic direction and financial health.",
+      "sentiment_score": 0.8812,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8812,
+        "positive": 0.9206,
+        "negative": 0.0394,
+        "neutral": 0.04,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Soumen Ray",
+      "role": "Chief Financial Officer - India & South Asia – Bharti Airtel Limited & Non-executive Director, Bharti Hexacom Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "margin expansion",
+        "cash generation"
+      ],
+      "direct_answers": [
+        "Mr. Sanjesh Jain's question on site addition"
+      ],
+      "dodged_or_vague": [
+        "Mr. Piyush Choudhary's request for specific numbers"
+      ],
+      "summary": "Soumen Ray provided a confident overview of Bharti Airtel's financial performance, emphasizing margin expansion and cash generation. He was optimistic about the company's financial health and future prospects. Soumen addressed questions on site addition directly but was evasive when asked for specific numbers, preferring to discuss strategic directions instead. His remarks reinforced the company's focus on financial prudence and operational excellence.",
+      "sentiment_score": 0.0318,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0318,
+        "positive": 0.066,
+        "negative": 0.0343,
+        "neutral": 0.8997,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Aditya Suresh",
+      "role": "Analyst - Macquarie",
+      "tone": "neutral",
+      "key_topics": [
+        "partnerships",
+        "ARPU"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aditya Suresh from Macquarie asked insightful questions regarding Bharti Airtel's partnerships and ARPU strategies. His inquiries focused on understanding the economic implications of partnerships like Perplexity and Bajaj Finance, as well as the potential for ARPU expansion without industry-wide tariff increases. Aditya's tone was neutral, seeking clarity and detailed responses from the management. His questions were aimed at uncovering strategic insights and future growth potential for Bharti Airtel.",
+      "sentiment_score": 0.1843,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1843,
+        "positive": 0.198,
+        "negative": 0.0137,
+        "neutral": 0.7882,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Manish Adukia",
+      "role": "Analyst - Goldman Sachs",
+      "tone": "neutral",
+      "key_topics": [
+        "capex",
+        "wireless business"
+      ],
+      "direct_answers": [
+        "Gopal Vittal's response on capex trends"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Manish Adukia from Goldman Sachs focused his questions on Bharti Airtel's capex trends, particularly in the wireless business. He sought to understand the long-term outlook for capex and its implications for technology refresh cycles. Manish's tone was neutral, aiming to gain clarity on the company's investment strategies and future financial planning. His questions were directly addressed by Gopal Vittal, providing insights into the company's capex management and strategic priorities.",
+      "sentiment_score": 0.0136,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0136,
+        "positive": 0.1521,
+        "negative": 0.1386,
+        "neutral": 0.7093,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Sanjesh Jain",
+      "role": "Analyst - ICICI Securities",
+      "tone": "neutral",
+      "key_topics": [
+        "site addition",
+        "market share"
+      ],
+      "direct_answers": [
+        "Gopal Vittal's response on site addition and market share"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sanjesh Jain from ICICI Securities raised questions about Bharti Airtel's site addition trends and their impact on market share. He was interested in understanding whether the benefits from rural expansion and distribution gains would continue. Sanjesh's tone was neutral, seeking to clarify the company's strategic direction in network expansion. His questions were directly addressed by Gopal Vittal, providing insights into the company's growth strategy and market positioning.",
+      "sentiment_score": -0.219,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.219,
+        "positive": 0.2925,
+        "negative": 0.5115,
+        "neutral": 0.1961,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Piyush Choudhary",
+      "role": "Analyst - HSBC",
+      "tone": "neutral",
+      "key_topics": [
+        "Airtel Cloud",
+        "5G expansion",
+        "Airtel Black"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Soumen Ray's response on specific numbers"
+      ],
+      "summary": "Piyush Choudhary from HSBC asked about the potential of Airtel Cloud and software solutions, as well as the adoption of Airtel Black and 5G expansion. He sought insights into contract sizes and capex intensity for Bharti Hexacom. Piyush's tone was neutral, aiming to understand the strategic growth areas for Bharti Airtel. While his questions on Airtel Cloud and 5G were addressed, Soumen Ray was evasive regarding specific numbers, focusing instead on strategic directions.",
+      "sentiment_score": 0.1095,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1095,
+        "positive": 0.12,
+        "negative": 0.0105,
+        "neutral": 0.8695,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis identifies each speaker and their role, extracts key statements, assesses tone, and evaluates how management addressed analyst questions. The JSON structure captures the essence of each speaker's contribution, providing a comprehensive overview of the earnings call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

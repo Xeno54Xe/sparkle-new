@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could engage and reminding them of the recording. They introduced the management team and handed over the proceedings to Mr. Pranav Ambaprasad. The tone was neutral, focusing on logistics and ensuring the call ran smoothly.",
+      "sentiment_score": 0.0385,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0385,
+        "positive": 0.0524,
+        "negative": 0.0139,
+        "neutral": 0.9336,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pranav Ambaprasad",
+      "role": "Management",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Safe harbor statement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pranav Ambaprasad opened the earnings call by introducing the management team and setting the stage for the discussion. He reminded participants of the safe harbor statement, indicating that forward-looking statements would be made. His tone was neutral, focusing on procedural aspects and ensuring participants were aware of the recording and availability of the transcript.",
+      "sentiment_score": 0.0369,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0369,
+        "positive": 0.0524,
+        "negative": 0.0155,
+        "neutral": 0.9321,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Bharti",
+      "role": "Chief Investor Relations Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Market performance",
+        "Exports",
+        "Product launches",
+        "Financial results"
+      ],
+      "direct_answers": [
+        "Pramod Amthe's question on quarterly targets for EVs",
+        "Kapil Singh's question on competitive intensity",
+        "Raghunandan NL's question on retail and dealer inventory",
+        "Amyn Pirani's question on rare earth challenges",
+        "Gunjan Prithyani's question on rural vs urban growth"
+      ],
+      "dodged_or_vague": [
+        "Binay's question on supply chain resilience",
+        "Rishi Vora's question on Grand Vitara volumes"
+      ],
+      "summary": "Rahul Bharti, the Chief Investor Relations Officer, provided a comprehensive overview of Maruti Suzuki's performance and outlook. He confidently addressed various topics, including market performance, exports, and product launches. He was optimistic about the company's position in the European market and the potential for growth in exports. Bharti directly answered questions about quarterly targets for EVs and competitive intensity but was vague on supply chain resilience and specific product details. His tone was confident, reflecting a positive outlook for the company's future.",
+      "sentiment_score": 0.2804,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2804,
+        "positive": 0.299,
+        "negative": 0.0186,
+        "neutral": 0.6825,
+        "chunks_scored": 4
+      }
+    },
+    {
+      "name": "Arnab Roy",
+      "role": "Chief Financial Officer",
+      "tone": "Neutral",
+      "key_topics": [
+        "Financial results",
+        "CAPEX outlook"
+      ],
+      "direct_answers": [
+        "Gunjan Prithyani's question on discount"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Arnab Roy, the Chief Financial Officer, provided detailed insights into Maruti Suzuki's financial performance. He discussed the impact of FOREX and commodities on the company's financials, highlighting a hedging gain that was accounted for in non-operating income. Roy also addressed questions about the company's CAPEX outlook and other income, attributing the latter to efficient treasury operations and favorable market conditions. His tone was neutral, focusing on delivering factual financial data and clarifying any queries related to the financial results.",
+      "sentiment_score": 0.4061,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4061,
+        "positive": 0.4469,
+        "negative": 0.0408,
+        "neutral": 0.5124,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. The moderator and Pranav Ambaprasad set the stage for the call, focusing on logistics and introductions. Rahul Bharti, as the Chief Investor Relations Officer, provides a comprehensive overview of the company's performance and outlook, addressing various questions with confidence and optimism. Arnab Roy, the Chief Financial Officer, focuses on financial results, providing detailed explanations and maintaining a neutral tone. Each speaker's key statements are extracted verbatim to ensure accurate financial NLP scoring, and their tone is assessed based on their responses and overall demeanor during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

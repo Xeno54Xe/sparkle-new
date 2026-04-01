@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6441,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9371,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9371,
+        "positive": 0.9571,
+        "negative": 0.02,
+        "neutral": 0.0229,
+        "chunks_scored": 1
+      },
+      "text": "Eicher Motors reported strong financial performance for Q3 FY26, with revenues reaching INR 7,019 crores, up from INR 5,801 crores last year, marking a significant growth. The EBITDA margin improved to INR 652 crores from INR 517 crores, with a margin percentage increase from 9.2% to 9.5%. Profit after tax (PAT) also rose to INR 338 crores compared to INR 299 crores in the previous year. Management highlighted 'pricing discipline, operating leverage, and cost reductions' as key factors supporting margin growth. The company emphasized its 'profitable growth' and 'all-round growth' across its divisions, including Royal Enfield and VECV, with a consolidated revenue growth of 23% and EBITDA growth of 30%."
+    },
+    "forward_guidance": {
+      "score": 0.9224,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9224,
+        "positive": 0.934,
+        "negative": 0.0115,
+        "neutral": 0.0545,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a 'constructive' medium-term outlook for the commercial vehicle segment, supported by infrastructure development and stable financing. They are 'well poised for resilient growth' with future-ready products and an expanding alternative energy portfolio. The company announced a capacity expansion plan at Royal Enfield, aiming to increase production capacity to 2 million units by FY 27-28, with an investment of INR 958 crores. The language used was optimistic, with phrases like 'very, very optimistic' about continued growth and 'ambition to outgrow the market.' The expansion is expected to be achieved through a brownfield project at the Cheyyar facility."
+    },
+    "risk_language": {
+      "score": -0.4518,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.4518,
+        "positive": 0.1578,
+        "negative": 0.6096,
+        "neutral": 0.2326,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including potential regulatory changes in international markets, such as the U.S. and EMEA trade deals, which could impact tariffs and duties. Management noted the 'speculation of higher taxations' and the need for 'clarity' on steel and aluminum tariffs. They also mentioned 'end market weakness' in some mature markets and political situations affecting marketing campaigns in regions like SAARC. Despite these challenges, management maintained a cautiously optimistic stance, emphasizing the need for 'cautious' market entry strategies."
+    },
+    "investor_confidence": {
+      "score": 0.883,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.883,
+        "positive": 0.8928,
+        "negative": 0.0098,
+        "neutral": 0.0974,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call, addressing analyst questions directly and providing detailed explanations on financial performance and strategic plans. They highlighted their 'consistent performance' and 'commitment to shaping the future of pure motorcycling.' The call included clear communication about capacity expansion plans and investment strategies, reinforcing management's credibility. The discussion on market-specific strategies and the emphasis on brand building further demonstrated management's clarity and conviction in their growth plans."
+    }
+  },
+  "key_positive_drivers": [
+    "Pricing discipline and cost reductions",
+    "Operating leverage",
+    "Strong festive demand",
+    "Capacity expansion plans",
+    "Growth in middle-sized motorcycle segment",
+    "Robust volume growth"
+  ],
+  "key_negative_drivers": [
+    "Speculation of higher taxations in the U.S.",
+    "End market weakness in mature markets",
+    "Political situations in SAARC affecting marketing",
+    "Need for clarity on steel and aluminum tariffs"
+  ],
+  "notable_phrases": [
+    "Profitable growth",
+    "Well poised for resilient growth",
+    "Constructive medium-term outlook",
+    "Very, very optimistic",
+    "Cautiously optimistic",
+    "Commitment to shaping the future",
+    "Consistent performance",
+    "Ambition to outgrow the market"
+  ],
+  "chain_of_thought": "Eicher Motors demonstrated strong financial performance with significant revenue and profit growth, supported by pricing discipline and cost reductions. The company provided optimistic forward guidance with plans for capacity expansion and a focus on future-ready products. While acknowledging risks related to international trade and market conditions, management maintained a cautiously optimistic outlook. Investor confidence was bolstered by clear communication and strategic clarity, indicating a cautiously bullish overall tone."
+}

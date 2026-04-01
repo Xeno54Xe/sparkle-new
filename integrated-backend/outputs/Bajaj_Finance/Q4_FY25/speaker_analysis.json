@@ -1,0 +1,244 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator opened the call by welcoming participants and providing logistical details about the conference. They emphasized that the event was not for press members and outlined the recording and distribution policies. The moderator then handed over the proceedings to Subramanian Iyer from Morgan Stanley.",
+      "sentiment_score": 0.0121,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0121,
+        "positive": 0.0308,
+        "negative": 0.0187,
+        "neutral": 0.9506,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Subramanian Iyer",
+      "role": "Morgan Stanley Host",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Welcome"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Subramanian Iyer from Morgan Stanley introduced the Bajaj Finance Q4 FY25 earnings call, welcoming participants and thanking the Bajaj Finance management team for their participation. He introduced key management figures and handed over the presentation to Rajeev Jain to discuss the financial highlights.",
+      "sentiment_score": 0.1458,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1458,
+        "positive": 0.1565,
+        "negative": 0.0107,
+        "neutral": 0.8328,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rajeev Jain",
+      "role": "Vice Chairman, Bajaj Finance",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial highlights",
+        "AUM growth",
+        "Corporate actions",
+        "ECL provision",
+        "Tax adjustments"
+      ],
+      "direct_answers": [
+        "Chintan Joshi's question on AUM and NIM",
+        "Kunal Shah's question on growth expectations"
+      ],
+      "dodged_or_vague": [
+        "Viral Shah's question on asset quality confidence"
+      ],
+      "summary": "Rajeev Jain, Vice Chairman of Bajaj Finance, delivered a comprehensive overview of the company's Q4 FY25 performance. He highlighted strong AUM growth, a record number of loans booked, and significant customer additions. Rajeev discussed the impact of an additional ECL provision and tax adjustments on financial results, explaining these as one-time events. He announced several corporate actions, including a share split and dividends, reflecting the company's robust financial position. Rajeev confidently addressed questions on growth and financial metrics, although he provided less clarity on asset quality concerns raised by Viral Shah.",
+      "sentiment_score": 0.3793,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3793,
+        "positive": 0.4577,
+        "negative": 0.0784,
+        "neutral": 0.4639,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Anup Saha",
+      "role": "Managing Director, Bajaj Finance",
+      "tone": "Neutral",
+      "key_topics": [
+        "Management transition",
+        "Future outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anup Saha, Managing Director of Bajaj Finance, had a limited speaking role during the call. He briefly acknowledged the transition of management responsibilities, indicating that he would lead future investor calls. His tone remained neutral, and he did not engage in detailed discussions or answer specific questions during this session.",
+      "sentiment_score": 0.1484,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1484,
+        "positive": 0.1625,
+        "negative": 0.014,
+        "neutral": 0.8235,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Jain",
+      "role": "COO and CFO, Bajaj Finance",
+      "tone": "Neutral",
+      "key_topics": [
+        "Financial metrics",
+        "ECL model"
+      ],
+      "direct_answers": [
+        "Abhishek Murarka's question on ECL model history"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Jain, COO and CFO of Bajaj Finance, provided clarification on the ECL model and its implications for future financial results. He addressed Abhishek Murarka's question regarding the historical data used in the ECL model, explaining the complexity and potential for future ECL releases. Sandeep maintained a neutral tone throughout his responses, focusing on technical aspects of financial modeling.",
+      "sentiment_score": 0.482,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.482,
+        "positive": 0.5013,
+        "negative": 0.0193,
+        "neutral": 0.4793,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Chintan Joshi",
+      "role": "Analyst, Autonomous",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "AUM growth",
+        "NIM expectations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Chintan Joshi from Autonomous posed questions regarding AUM growth and NIM expectations for FY26. He expressed interest in understanding the areas where Bajaj Finance anticipates growth challenges and opportunities. Chintan's tone was inquisitive, seeking detailed insights into the company's strategic outlook and financial metrics.",
+      "sentiment_score": 0.0577,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0577,
+        "positive": 0.0764,
+        "negative": 0.0187,
+        "neutral": 0.9048,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kunal Shah",
+      "role": "Analyst, Citigroup",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Growth expectations",
+        "Customer franchise"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kunal Shah from Citigroup questioned the company's growth expectations, noting a shift from previous guidance. He sought clarification on the reasons behind the revised growth targets and the segments expected to drive this growth. Kunal's tone was inquisitive, aiming to understand the strategic adjustments in Bajaj Finance's growth outlook.",
+      "sentiment_score": 0.6817,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6817,
+        "positive": 0.6963,
+        "negative": 0.0146,
+        "neutral": 0.2892,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Viral Shah",
+      "role": "Analyst, IFL Securities",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Asset quality",
+        "ECL release"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Rajeev Jain's response on asset quality confidence"
+      ],
+      "summary": "Viral Shah from IFL Securities raised concerns about asset quality, noting that certain metrics had not improved. He questioned the confidence in future improvements and sought clarity on early trends and potential ECL releases. Viral's tone was inquisitive, pressing for more detailed insights into the company's asset quality outlook.",
+      "sentiment_score": 0.177,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.177,
+        "positive": 0.2029,
+        "negative": 0.026,
+        "neutral": 0.7711,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhishek Murarka",
+      "role": "Analyst, HSBC",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "ECL model",
+        "Credit costs"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Murarka from HSBC inquired about the ECL model refresh, specifically the historical data used and the reasons for additional provisions. He sought to understand the impact of past credit cost years on future modeling. Abhishek's tone was inquisitive, aiming to gain clarity on the technical aspects of the ECL model and its implications.",
+      "sentiment_score": 0.037,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.037,
+        "positive": 0.0645,
+        "negative": 0.0275,
+        "neutral": 0.908,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 9,
+  "chain_of_thought": "The transcript reveals multiple speakers, including the moderator, Morgan Stanley host, Bajaj Finance management, and analysts. Each speaker's role and key topics were identified, with management focusing on financial results and strategic actions, while analysts posed questions on growth, asset quality, and financial models. Management's tone varied from confident to neutral, with some questions answered directly and others deflected. Analysts were inquisitive, seeking detailed insights into Bajaj Finance's performance and outlook.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

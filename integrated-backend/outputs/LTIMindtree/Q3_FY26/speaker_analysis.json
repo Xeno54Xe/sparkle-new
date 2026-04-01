@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Vikas Jadhav",
+      "role": "Head, Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "earnings call introduction",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vikas Jadhav opened the earnings call by welcoming participants and introducing the key speakers, Mr. Venu Lambu and Mr. Vipul Chandra. He set the agenda for the call, which included a performance overview followed by a Q&A session. Vikas also highlighted the potential for forward-looking statements, noting the inherent risks and uncertainties. His tone was neutral, focusing on procedural aspects of the call.",
+      "sentiment_score": -0.0638,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0638,
+        "positive": 0.0395,
+        "negative": 0.1034,
+        "neutral": 0.8571,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Venu Lambu",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "AI strategy",
+        "financial performance",
+        "future growth"
+      ],
+      "direct_answers": [
+        "Sure. Dipesh, thank you. For the question, firstly, I will put the headlines for all these three. So it sort of gives you the color of the outlook coming to be."
+      ],
+      "dodged_or_vague": [
+        "Look, we are, as I said, our aspirations are big, our ambitions are very strong, but you also need to understand that we are living in a bit of a day-to-day variable world, right?"
+      ],
+      "summary": "Venu Lambu presented a confident outlook for LTIMindtree, emphasizing the company's strategic focus on AI and its successful financial performance in Q3 FY2026. He highlighted the company's revenue growth and improved EBIT margins, attributing these to the BlueVerse™ ecosystem and a focus on large deals. Venu expressed optimism about future growth, mentioning strategic repositioning and enhanced competitiveness. While he directly answered some questions, he was vague about specific future projections, citing the variable nature of the business environment.",
+      "sentiment_score": 0.938,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.938,
+        "positive": 0.9524,
+        "negative": 0.0144,
+        "neutral": 0.0332,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vipul Chandra",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "hedging policy"
+      ],
+      "direct_answers": [
+        "So if you look at a wage hike alone per se, the impact could be up to 1% in each quarter, Q4 and Q1."
+      ],
+      "dodged_or_vague": [
+        "Again, that is not the kind of detail that we get into."
+      ],
+      "summary": "Vipul Chandra provided a detailed financial overview, highlighting revenue growth and margin improvements. He noted the impact of the labor code change on margins and discussed the company's hedging policy. Vipul's tone was cautious, reflecting on the challenges of maintaining margins amidst operational changes. While he provided specific answers regarding wage impacts, he avoided detailed disclosures on certain financial reversals, maintaining a focus on broader financial metrics.",
+      "sentiment_score": -0.0229,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0229,
+        "positive": 0.4786,
+        "negative": 0.5016,
+        "neutral": 0.0198,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call facilitation",
+        "question and answer session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring a smooth transition between speakers and managing the Q&A session. The moderator's role was to maintain order and structure during the call, providing instructions for participants on how to engage with the management team. The tone was neutral, focusing on logistical aspects of the call.",
+      "sentiment_score": 0.0147,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0147,
+        "positive": 0.0362,
+        "negative": 0.0215,
+        "neutral": 0.9422,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The task involves identifying each speaker, extracting their key statements, and analyzing their tone and responses. Vikas Jadhav introduced the call and set the agenda, maintaining a neutral tone. Venu Lambu, the CEO, was confident, discussing strategic initiatives and financial performance, while being vague on specific future projections. Vipul Chandra, the CFO, provided a cautious financial overview, offering specific answers on wage impacts but avoiding detailed disclosures on financial reversals. The moderator facilitated the call, maintaining a neutral tone and ensuring smooth transitions between segments.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

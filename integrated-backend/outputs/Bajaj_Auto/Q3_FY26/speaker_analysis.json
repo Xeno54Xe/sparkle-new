@@ -1,0 +1,199 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Neerav",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call coordination",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Neerav served as the moderator for the Bajaj Auto Q3 FY'26 earnings call. His role was to facilitate the call, provide instructions to participants, and manage the Q&A session. He maintained a neutral tone throughout, ensuring the call proceeded smoothly and participants were aware of the procedures.",
+      "sentiment_score": 0.0232,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0232,
+        "positive": 0.0408,
+        "negative": 0.0176,
+        "neutral": 0.9417,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anand Newar",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "New Year wishes"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anand Newar, as the Head of Investor Relations, opened the Bajaj Auto Q3 FY'26 earnings call. He welcomed participants, extended New Year wishes, and introduced the key speakers, Rakesh Sharma and Dinesh Thapar. Anand's role was primarily to set the stage for the call, maintaining a neutral tone throughout.",
+      "sentiment_score": 0.0838,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0838,
+        "positive": 0.0965,
+        "negative": 0.0127,
+        "neutral": 0.8908,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rakesh Sharma",
+      "role": "Executive Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "business performance",
+        "market share",
+        "product launches",
+        "export growth"
+      ],
+      "direct_answers": [
+        "Kapil Singh's question on domestic market growth",
+        "Chandramouli's question on export run rate"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rakesh Sharma, the Executive Director, delivered an optimistic overview of Bajaj Auto's Q3 performance, highlighting record financial results and growth across business units. He emphasized the impact of GST rate cuts and detailed the company's strategic focus on expanding market share in the 125cc and 150cc motorcycle segments. Rakesh also discussed the company's export growth, particularly in Latin America and Nigeria, and the strong performance of the electric vehicle segment. He confidently addressed questions about market growth and export targets, showcasing a forward-looking strategy.",
+      "sentiment_score": 0.8733,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8733,
+        "positive": 0.9049,
+        "negative": 0.0316,
+        "neutral": 0.0635,
+        "chunks_scored": 8
+      }
+    },
+    {
+      "name": "Dinesh Thapar",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "commodity costs",
+        "pricing strategy",
+        "capital infusion"
+      ],
+      "direct_answers": [
+        "Amyn Pirani's question on commodity versus pricing",
+        "Joseph George's question on commodity prices"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Dinesh Thapar, the CFO, provided a confident analysis of Bajaj Auto's financial performance, emphasizing the company's strategic pricing actions and capital management. He highlighted the strong contribution of the EV segment to domestic revenue and explained the final capital infusion into BACL. Dinesh addressed questions on commodity costs and pricing strategies, underscoring the company's diversified approach to maintaining margins. His responses reflected a deep understanding of financial dynamics and a commitment to sustaining growth.",
+      "sentiment_score": 0.0982,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0982,
+        "positive": 0.1199,
+        "negative": 0.0217,
+        "neutral": 0.8584,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kapil Singh",
+      "role": "Analyst from Nomura",
+      "tone": "neutral",
+      "key_topics": [
+        "domestic market growth",
+        "export outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kapil Singh, an analyst from Nomura, posed questions regarding the domestic market growth outlook and the export strategy for Bajaj Auto. He inquired about the impact of GST cuts on market momentum and sought updates on key export markets, particularly Mexico. His questions were direct and aimed at understanding the company's strategic positioning in both domestic and international markets.",
+      "sentiment_score": 0.3137,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3137,
+        "positive": 0.3246,
+        "negative": 0.0109,
+        "neutral": 0.6645,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amyn Pirani",
+      "role": "Analyst from JPMorgan",
+      "tone": "neutral",
+      "key_topics": [
+        "commodity costs",
+        "pricing strategy",
+        "BACL profitability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amyn Pirani from JPMorgan focused on understanding Bajaj Auto's approach to managing commodity costs and pricing strategies. He questioned the company's ability to leverage factors beyond pricing to maintain margins and inquired about the profitability and capital adequacy of BACL. His questions were analytical, seeking to clarify the financial strategies underpinning the company's performance.",
+      "sentiment_score": 0.1797,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1797,
+        "positive": 0.1984,
+        "negative": 0.0187,
+        "neutral": 0.7829,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Joseph George",
+      "role": "Analyst from IIFL Capital",
+      "tone": "neutral",
+      "key_topics": [
+        "commodity prices",
+        "pricing impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Joseph George from IIFL Capital sought clarification on the impact of commodity prices on Bajaj Auto's financials. He inquired about the timing of commodity cost impacts and the company's pricing strategy in response to these fluctuations. His questions were precise, aiming to understand the financial implications of external cost pressures.",
+      "sentiment_score": 0.0008,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0008,
+        "positive": 0.0617,
+        "negative": 0.061,
+        "neutral": 0.8773,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis begins by identifying each speaker in the earnings call, including the moderator, management, and analysts. Each speaker's key statements are extracted, focusing on verbatim quotes that include specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, and for management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. This structured approach ensures a comprehensive understanding of the call's dynamics and the strategic insights shared by each participant.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

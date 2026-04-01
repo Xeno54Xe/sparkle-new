@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1359,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.4569,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.4569,
+        "positive": 0.2539,
+        "negative": 0.7109,
+        "neutral": 0.0352,
+        "chunks_scored": 1
+      },
+      "text": "Apollo Hospitals reported a consolidated PAT of INR502 crore in Q3 FY '26, a growth of 35% year-on-year. Consolidated revenue for 9M FY '26 stood at INR 18,623 crore, growing 15% year-on-year, supported by balanced expansion across all three verticals. Insurance and cash patients together accounted for 83% of inpatient hospital revenues for quarter 3 FY '26. Average revenue per patient was INR 180,917 in Q3 FY '26 compared to INR 173,246 in Q2 FY '26. Apollo HealthCo reported revenues of INR 2,827 crore, 20% year-on-year growth. Consolidated EBITDA for the quarter was at INR 965 crore, registering a robust growth of 27% year-on-year. Losses in the Digital business were at INR 67 crore, but cash losses were at INR 29 crore, the lowest in any quarter by far."
+    },
+    "forward_guidance": {
+      "score": 0.8817,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8817,
+        "positive": 0.9039,
+        "negative": 0.0222,
+        "neutral": 0.0738,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving a run rate of INR 25,000 crore in combined revenues with 7% EBITDA. They expect to operationalize roughly half of the new 1,500 beds in the upcoming fiscal year, with the balance coming online early FY '28. The phased commissioning approach is intended to optimize capital deployment and drive occupancy-led operating leverage. Management continues to believe that INR150 crore is a good number for now regarding cost headwinds from new hospital ramp-ups. They anticipate operationalizing Hyderabad, Calcutta, and Bangalore facilities by Q1, with Gurugram by Q2 due to environmental-related delays."
+    },
+    "risk_language": {
+      "score": -0.8591,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.8591,
+        "positive": 0.0285,
+        "negative": 0.8876,
+        "neutral": 0.0839,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged a mismatch in revenue recognition due to GST changes in the health insurance industry, impacting revenue. There are environmental-related delays affecting the Gurugram facility's construction timeline. The Digital business faced a moderation in revenue growth quarter-on-quarter, attributed to changes in the e-commerce channel and GST impacts. Management is recalibrating revenue recognition in the hospital business and expects to close the loop in Q1 of FY '27. They are also addressing the insurance mismatch that has deferred revenue recognition."
+    },
+    "investor_confidence": {
+      "score": 0.9015,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9015,
+        "positive": 0.9126,
+        "negative": 0.0111,
+        "neutral": 0.0764,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations for revenue recognition changes and Digital business performance. They emphasized their commitment to a patient-centric strategy and continued investment in in-hospital technologies. Management expressed confidence in achieving their guidance and operational targets, despite acknowledging some challenges. They highlighted the strength and resilience of their payer mix and the scalability of their integrated Healthcare ecosystem. The call concluded with management reiterating their focus on delivering consistent performance and creating enduring value for stakeholders."
+    }
+  },
+  "key_positive_drivers": [
+    "35% year-on-year PAT growth",
+    "15% year-on-year revenue growth",
+    "27% year-on-year EBITDA growth",
+    "20% year-on-year growth in Apollo HealthCo revenues",
+    "Operationalization of new hospital beds",
+    "Strong payer mix with 83% insurance and cash patients"
+  ],
+  "key_negative_drivers": [
+    "Revenue recognition mismatch due to GST changes",
+    "Environmental-related delays in Gurugram facility",
+    "Moderation in Digital business revenue growth",
+    "Deferred revenue recognition in insurance business",
+    "Cost headwinds from new hospital ramp-ups"
+  ],
+  "notable_phrases": [
+    "35% year-on-year PAT growth",
+    "15% year-on-year revenue growth",
+    "27% year-on-year EBITDA growth",
+    "Operationalize roughly half of the new 1,500 beds",
+    "Revenue recognition mismatch due to GST changes",
+    "Environmental-related delays",
+    "Moderation in Digital business revenue growth",
+    "Commitment to a patient-centric strategy"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant year-on-year growth in PAT, revenue, and EBITDA, driven by a robust payer mix and expansion across business verticals. Forward guidance was optimistic, with plans for significant capacity additions and revenue targets, though tempered by some operational delays. Risk language acknowledged challenges in revenue recognition and environmental delays, but management appeared proactive in addressing these issues. Investor confidence signals were positive, with management providing clear guidance and addressing concerns transparently, indicating a cautiously bullish outlook."
+}

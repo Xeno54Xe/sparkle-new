@@ -1,0 +1,216 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring that participants were aware of the procedures and logistics. They maintained a neutral tone throughout, focusing on the smooth operation of the call and the transition between speakers. The moderator's role was crucial in managing the flow of the session and ensuring that the Q&A segment was organized.",
+      "sentiment_score": 0.0219,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0219,
+        "positive": 0.0397,
+        "negative": 0.0178,
+        "neutral": 0.9425,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Tushar Pendharkar",
+      "role": "Host",
+      "tone": "Neutral",
+      "key_topics": [
+        "Welcome",
+        "Introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Tushar Pendharkar, as the host, welcomed participants to the earnings call and introduced the management team. His tone was neutral, focusing on setting the stage for the management's presentations and the subsequent Q&A session. His role was primarily introductory, ensuring that the call started smoothly and professionally.",
+      "sentiment_score": 0.7419,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7419,
+        "positive": 0.752,
+        "negative": 0.0101,
+        "neutral": 0.238,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Agarwal",
+      "role": "Head of Investor Relations and ESG",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Transition to CEO"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Agarwal provided a brief introduction to the earnings call, setting the agenda by introducing Ashwani Gupta for the opening remarks. His tone was neutral, focusing on the procedural aspects of the call. He played a key role in transitioning the call to the CEO, ensuring a smooth flow of information.",
+      "sentiment_score": 0.091,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.091,
+        "positive": 0.1037,
+        "negative": 0.0127,
+        "neutral": 0.8836,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashwani Gupta",
+      "role": "Whole-time Director and CEO",
+      "tone": "Confident",
+      "key_topics": [
+        "Company performance",
+        "Growth strategy",
+        "Financial metrics"
+      ],
+      "direct_answers": [
+        "Yes, answer is yes. But the condition is, number one, it should be in line with our business strategy, which is from Southeast Asia to India to Middle East to Africa."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashwani Gupta delivered a confident overview of Adani Ports' performance, highlighting significant growth in revenue, EBITDA, and net profit. He emphasized the company's strategic expansions and acquisitions, including operations in new international locations. Gupta outlined the company's focus on logistics and marine business as key growth pillars, projecting strong future performance. His responses to questions were direct, particularly regarding strategic alignment and business conditions.",
+      "sentiment_score": 0.9416,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9416,
+        "positive": 0.9543,
+        "negative": 0.0128,
+        "neutral": 0.0329,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "D. Muthukumaran",
+      "role": "CFO",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial reporting",
+        "Growth strategy",
+        "Logistics"
+      ],
+      "direct_answers": [
+        "No, it doesn't include. We have clarified it."
+      ],
+      "dodged_or_vague": [],
+      "summary": "D. Muthukumaran focused on the company's financial reporting and strategic growth beyond mere volume metrics. He emphasized the importance of separate business lines and ROC as key indicators of success. His tone was confident, and he provided clear answers to questions about financial guidance and business strategy. Muthukumaran's narrative reinforced the company's commitment to sustainable growth and financial transparency.",
+      "sentiment_score": -0.0339,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0339,
+        "positive": 0.0412,
+        "negative": 0.0751,
+        "neutral": 0.8837,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Divij Taneja",
+      "role": "CEO, Adani Logistics",
+      "tone": "Confident",
+      "key_topics": [
+        "Logistics growth",
+        "Integrated services"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Divij Taneja highlighted the growth and integration of Adani Logistics, emphasizing the shift from custodianship to control over cargo. He confidently discussed the sustainability of logistics growth, supported by technology and integrated services. Taneja's narrative focused on the comprehensive service offerings that enhance customer experience and operational efficiency.",
+      "sentiment_score": 0.5186,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5186,
+        "positive": 0.5296,
+        "negative": 0.011,
+        "neutral": 0.4594,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Alok Deora",
+      "role": "Analyst, Motilal Oswal",
+      "tone": "Neutral",
+      "key_topics": [
+        "EBITDA growth",
+        "Logistics sustainability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Alok Deora posed questions regarding the sustainability of EBITDA growth and the logistics business's performance. His tone was neutral, focusing on understanding the factors behind the financial results and their future implications. Deora's inquiries were aimed at clarifying the company's growth trajectory and the potential for continued success in logistics.",
+      "sentiment_score": 0.597,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.597,
+        "positive": 0.6421,
+        "negative": 0.0451,
+        "neutral": 0.3129,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nidhi Shah",
+      "role": "Analyst, ICICI Securities",
+      "tone": "Neutral",
+      "key_topics": [
+        "Volume guidance",
+        "Commodity transport"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhi Shah focused on understanding the volume guidance and the factors influencing commodity transport. Her tone was neutral, seeking clarity on the reasons behind the reported volumes and the expectations for the next fiscal year. Shah's questions aimed to uncover the underlying dynamics affecting the company's volume metrics.",
+      "sentiment_score": 0.006,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.006,
+        "positive": 0.0455,
+        "negative": 0.0395,
+        "neutral": 0.9149,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 8,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted to capture the essence of each speaker's contribution, focusing on specific language and forward-looking statements. The tone of each speaker was assessed based on their language and the context of their statements. For management speakers, attention was given to how they addressed analyst questions, noting any direct answers or instances of deflection. The narrative summaries were crafted to encapsulate each speaker's stance and key messages, providing a comprehensive overview of their participation in the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8556,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9348,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9348,
+        "positive": 0.9477,
+        "negative": 0.013,
+        "neutral": 0.0393,
+        "chunks_scored": 1
+      },
+      "text": "In Q3 FY26, TCS reported a revenue of ₹67,087 crore, marking a 2.0% sequential growth and a 4.9% year-over-year increase in reported currency. In constant currency, the revenue grew 0.8% sequentially. The operating margin remained stable at 25.2%, despite the impact of wage increases and investments in brand building and partnerships, which each had a negative impact of 50 basis points. The net income margin was at 20%, with an EPS growth of 8.5% year-over-year. The company highlighted strong cash conversion with net cash from operations at US$1.6 billion, which is 130.4% of net income, and free cash flows at US$1.4 billion. TCS's financial resilience is underscored by a robust balance sheet and a commitment to strategic growth investments, particularly in AI services, which now generate US$1.8 billion in annualized revenue, growing at 17.3% quarter-on-quarter in constant currency."
+    },
+    "forward_guidance": {
+      "score": 0.9328,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9328,
+        "positive": 0.945,
+        "negative": 0.0122,
+        "neutral": 0.0428,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in a strong calendar year 2026, driven by 'strong deal momentum' and leadership in AI. The order book is expected to reach US$38-39 billion for the year, indicating a robust pipeline for FY27. TCS aims to inch closer to its aspiration band of 26% to 28% operating margins in the coming quarters, with no major structural headwinds anticipated apart from macroeconomic uncertainties. The company is optimistic about international revenue in Q4 and is taking steps to achieve better revenue than FY25. The language used was optimistic, with a focus on strategic investments and capacity expansions, particularly in AI and digital transformation."
+    },
+    "risk_language": {
+      "score": 0.5897,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.5897,
+        "positive": 0.6442,
+        "negative": 0.0544,
+        "neutral": 0.3014,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged macroeconomic uncertainties as a potential headwind but did not identify any major structural challenges beyond this. The impact of changes in India's wage code and severance-related expenses were noted as exceptional items for the quarter. There was a mention of ongoing geopolitical challenges and evolving data and AI regulations, particularly affecting the Technology Software and Services segment. Despite these, the company remains focused on strategic investments and diversification to manage risks. The tone was measured, with an emphasis on addressing risks through strategic initiatives and maintaining operational efficiency."
+    },
+    "investor_confidence": {
+      "score": 0.8868,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8868,
+        "positive": 0.8967,
+        "negative": 0.0098,
+        "neutral": 0.0935,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction in their strategic direction, particularly in AI and digital transformation. Analyst questions were addressed directly, with detailed explanations provided for financial performance and strategic initiatives. The leadership team emphasized their disciplined execution and strong financial resilience, backed by a robust balance sheet. The company's commitment to returning substantial free cash flow to shareholders and the announcement of interim and special dividends further reinforced investor confidence. Overall, management demonstrated credibility and transparency in their communication."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong deal momentum",
+    "Leadership in AI",
+    "Stable operating margin at 25.2%",
+    "Robust order book expected to reach US$38-39 billion",
+    "AI services generating US$1.8 billion in annualized revenue",
+    "Strong cash conversion with net cash from operations at US$1.6 billion"
+  ],
+  "key_negative_drivers": [
+    "Macroeconomic uncertainties",
+    "Impact of wage increases",
+    "Exceptional items related to severance and legal provisions",
+    "Geopolitical challenges affecting Technology Software and Services",
+    "Evolving data and AI regulations"
+  ],
+  "notable_phrases": [
+    "Strong deal momentum",
+    "Leadership we are gaining in AI",
+    "Confident of a good CY2026",
+    "Stable operating margin of 25.2%",
+    "Order book will help us in growing in FY '27",
+    "Robust balance sheet",
+    "Executing our five-pillar AI strategy",
+    "Inch closer to our 26% to 28% band"
+  ],
+  "chain_of_thought": "The financial performance was strong with stable margins and robust revenue growth, despite some headwinds from wage increases and exceptional items. Forward guidance was optimistic, with confidence in deal momentum and AI leadership driving future growth. Risks were acknowledged, particularly macroeconomic uncertainties and regulatory challenges, but management emphasized strategic initiatives to mitigate these. Investor confidence was bolstered by clear communication, strong cash flow management, and a commitment to shareholder returns, indicating a cautiously bullish outlook."
+}

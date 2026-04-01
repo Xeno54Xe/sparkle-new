@@ -1,0 +1,156 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Richa Periwal",
+      "role": "Head of Investor Relations, Strategy & Corporate Analytics",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference call logistics",
+        "safe harbour statement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Richa Periwal opened the earnings call by welcoming participants and introducing the leadership team. She provided logistical details about the call, including the availability of the results on the company's website and the structure of the call. Richa emphasized the proprietary nature of the call's content and reminded participants of the safe harbour statement. Her tone was neutral, focusing on setting the stage for the presentations by the CFO and CEO.",
+      "sentiment_score": 0.0171,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0171,
+        "positive": 0.035,
+        "negative": 0.0178,
+        "neutral": 0.9472,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "MV Narasimham",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "NRT business integration",
+        "R&D investment"
+      ],
+      "direct_answers": [
+        "Yes, it includes the NRT business’s SG&A.",
+        "Only amortization. No interest."
+      ],
+      "dodged_or_vague": [],
+      "summary": "MV Narasimham provided a detailed overview of the financial performance for Q3FY25, highlighting a 16% YoY growth in consolidated revenues and the integration of the NRT business. He confidently discussed the company's financial metrics, including gross profit margins, SG&A expenses, and R&D investments. MVN addressed questions about the SG&A expenses and amortization directly, indicating a clear understanding of the financials. His tone was confident, reflecting a positive outlook on the company's financial health and strategic investments.",
+      "sentiment_score": 0.3694,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3694,
+        "positive": 0.4544,
+        "negative": 0.085,
+        "neutral": 0.4606,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Erez Israeli",
+      "role": "Chief Executive Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "business performance",
+        "growth strategy",
+        "product launches",
+        "market expansion"
+      ],
+      "direct_answers": [
+        "Yes, we do.",
+        "So, nothing major happened. The products that declined were the famous products that got competition like Icosapent and Suboxone®. Competition entered for some of them 9 months ago, some of them 6 months ago. So, there was certain continuation. This happened also before. Nothing major happened, per se. Against that, most of the growth that compensated for it was primarily market share. It was less about new products and more about market share."
+      ],
+      "dodged_or_vague": [
+        "I don't know exactly how the quarters will be, because this is a decision normally by the customers. It's not that we are planning this way. We are serving the customer in the way they want to be served. But yes, we likely that we will not sell in this level of pricing, let's say, post somewhere September, maybe October of calendar '25."
+      ],
+      "summary": "Erez Israeli presented an optimistic view of Dr. Reddy's performance, emphasizing the company's strategic focus on core generics, consumer healthcare, and biosimilars. He highlighted the successful integration of the NRT business and the launch of new products like Toripalimab and Elobixibat in India. Erez addressed questions about market competition and product performance directly, while some responses about future sales were more cautious. His tone was optimistic, reflecting confidence in the company's growth trajectory and strategic initiatives.",
+      "sentiment_score": 0.8789,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8789,
+        "positive": 0.8876,
+        "negative": 0.0087,
+        "neutral": 0.1037,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Kunal Dhamesha",
+      "role": "Analyst from Macquarie",
+      "tone": "neutral",
+      "key_topics": [
+        "India business performance",
+        "cardiac and gastrointestinal segment"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kunal Dhamesha asked about the performance of Dr. Reddy's India business, specifically inquiring about the growth in the core business and the observed weaknesses in the cardiac and gastrointestinal segments. His questions were straightforward, seeking clarity on whether these issues were temporary or indicative of a larger trend. Kunal's tone was neutral, focusing on understanding the nuances of the company's performance in these segments.",
+      "sentiment_score": 0.0775,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0775,
+        "positive": 0.1576,
+        "negative": 0.0801,
+        "neutral": 0.7623,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Neha Manpuria",
+      "role": "Analyst from Bank of America",
+      "tone": "neutral",
+      "key_topics": [
+        "US business performance",
+        "product competition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Neha Manpuria focused on the performance of Dr. Reddy's US business, particularly the decline in the base business excluding Revlimid®. She sought to understand whether the decline was due to market share loss or unexpected pricing erosion. Her questions were aimed at gaining insights into the competitive landscape and the company's strategic positioning in the US market. Neha's tone was neutral, seeking factual information to assess the company's performance.",
+      "sentiment_score": -0.9149,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9149,
+        "positive": 0.0277,
+        "negative": 0.9425,
+        "neutral": 0.0298,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers from the earnings call transcript, including the moderator, management, and analysts. Each speaker's key statements are extracted, focusing on verbatim quotes that capture specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or given vague responses. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON output is structured to provide a comprehensive speaker-wise analysis, suitable for further financial NLP scoring.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

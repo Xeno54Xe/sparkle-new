@@ -1,0 +1,80 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 65.2,
+  "esg_label": "Commendable",
+  "esg_colour": "#2E7D32",
+  "environmental": {
+    "score": 70.0,
+    "key_themes": [
+      "emission norms",
+      "EV business",
+      "localization program"
+    ],
+    "notable_excerpts": [
+      "There is a fair amount of industry engagement with the government on emission norms.",
+      "Our 25% EV mix target for FY28.",
+      "There is an aggressive localization program that the team is running."
+    ]
+  },
+  "social": {
+    "score": 60.0,
+    "key_themes": [
+      "supply chain",
+      "community impact",
+      "employee training"
+    ],
+    "notable_excerpts": [
+      "No separate supply chain related disruption on EVs compared to ICE.",
+      "Mahindra Finance has announced it will now pivot to growth, focusing on asset quality controls and technology."
+    ]
+  },
+  "governance": {
+    "score": 65.0,
+    "key_themes": [
+      "government engagement",
+      "risk management",
+      "transparency"
+    ],
+    "notable_excerpts": [
+      "Industry engagement with multiple government stakeholders.",
+      "We have a new ECL policy which is more in line with industry."
+    ]
+  },
+  "chain_of_thought": "The earnings call highlighted Mahindra & Mahindra's focus on environmental initiatives, particularly around emission norms and EV targets. Social aspects were less emphasized, with some mention of supply chain stability and a pivot towards growth in Mahindra Finance. Governance was addressed through discussions on government engagement and risk management policies.",
+  "strengths": [
+    "Strong focus on emission norms and EV targets",
+    "Aggressive localization program"
+  ],
+  "weaknesses": [
+    "Limited discussion on social initiatives",
+    "Lack of specific governance metrics"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

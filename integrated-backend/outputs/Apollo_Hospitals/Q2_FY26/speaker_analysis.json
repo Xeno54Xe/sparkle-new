@@ -1,0 +1,182 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Suneeta Reddy",
+      "role": "Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth strategy",
+        "expansion plans",
+        "insurance pricing"
+      ],
+      "direct_answers": [
+        "Yes. I think we are quite confident that we will get back into 30%.",
+        "So, in terms of competition, clearly, the only one that has serious competition is Diagnostics"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Suneeta Reddy opened the call with a confident overview of Apollo Hospitals' financial performance, highlighting a 13% year-on-year growth in revenue and a 15% increase in EBITDA. She emphasized the company's robust growth across all verticals and the resilience of their operating metrics despite seasonal impacts. Reddy was optimistic about the future, discussing the company's strategic expansion plans and their focus on maintaining a balanced growth across their integrated healthcare ecosystem. She directly addressed questions about organic growth and competition, showing confidence in the company's strategies to mitigate challenges and capitalize on new market opportunities.",
+      "sentiment_score": 0.9415,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9415,
+        "positive": 0.9537,
+        "negative": 0.0122,
+        "neutral": 0.0341,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "A. Krishnan",
+      "role": "Group CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "insurance pricing",
+        "expansion plans",
+        "financial projections"
+      ],
+      "direct_answers": [
+        "So, the way we are looking at it is this. Today, if you are looking at, and I will comprehensively handle this slide because there are a couple of questions also which will come up."
+      ],
+      "dodged_or_vague": [],
+      "summary": "A. Krishnan provided a neutral and detailed explanation of the company's insurance pricing strategy, clarifying the biennial nature of contract renewals and how it affects pricing adjustments. He also discussed the timeline and financial implications of the company's expansion plans, indicating that the new hospitals would result in some EBITDA losses but remained within expected limits. Krishnan's responses were clear and factual, focusing on providing a comprehensive understanding of the financial strategies and projections.",
+      "sentiment_score": -0.0019,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0019,
+        "positive": 0.0504,
+        "negative": 0.0522,
+        "neutral": 0.8974,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Madhu Sasidhar",
+      "role": "President and CEO of the Hospitals Division",
+      "tone": "confident",
+      "key_topics": [
+        "digital transformation",
+        "clinical excellence",
+        "operational efficiency"
+      ],
+      "direct_answers": [
+        "So, most of the tariff increases has already been realized previously. Almost all of our improvement in the average revenue per patient has come from an improvement in our case mix."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Madhu Sasidhar expressed confidence in the hospital division's performance, highlighting improvements in revenue quality and case complexity. He emphasized the investments made in recruitment and program development, which are expected to drive organic growth. Sasidhar also discussed the impact of digital transformation on operational efficiency, particularly in reducing variability and improving patient outcomes. His responses were direct and focused on the division's strategic initiatives to enhance clinical excellence and operational efficiency.",
+      "sentiment_score": 0.9375,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9375,
+        "positive": 0.9508,
+        "negative": 0.0134,
+        "neutral": 0.0358,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Madhivanan Balakrishnan",
+      "role": "CEO of Apollo HealthCo",
+      "tone": "cautious",
+      "key_topics": [
+        "Apollo 24/7",
+        "cost management",
+        "digital integration"
+      ],
+      "direct_answers": [
+        "We are on course. There might be one hiccup in the form because we are investing reasonably strongly on the insurance side of the business."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Madhivanan Balakrishnan adopted a cautious tone while discussing the cost structure and future plans for Apollo 24/7. He acknowledged the current cost levels as the new normal but anticipated further synergies from the integration of digital platforms and pharmacy operations. Balakrishnan was transparent about potential challenges, such as investments in the insurance side of the business, but remained optimistic about achieving cost efficiencies and aligning operations across entities.",
+      "sentiment_score": 0.0918,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0918,
+        "positive": 0.1217,
+        "negative": 0.0299,
+        "neutral": 0.8483,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Obul Reddy",
+      "role": "CFO of the Pharmacy Business",
+      "tone": "neutral",
+      "key_topics": [
+        "GST impact",
+        "inventory management"
+      ],
+      "direct_answers": [
+        "That is back to normal."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Obul Reddy provided a neutral and factual account of the impact of GST changes on the pharmacy business, noting a 4% to 4.5% revenue drop due to the tax adjustments. He assured that inventory levels were back to normal following the transition. Reddy's responses were straightforward, focusing on the operational aspects of managing the GST impact and maintaining inventory stability.",
+      "sentiment_score": -0.9515,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9515,
+        "positive": 0.0081,
+        "negative": 0.9596,
+        "neutral": 0.0324,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sanjiv Gupta",
+      "role": "CFO of Apollo HealthCo",
+      "tone": "neutral",
+      "key_topics": [
+        "Keimed margins",
+        "one-time expenses"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sanjiv Gupta addressed concerns about the decline in Keimed's EBITDA margins, attributing it to one-time integration and scheme-related expenses. He reassured that these expenses were not expected to recur in future quarters, indicating a return to normal margin levels. Gupta's tone was neutral, focusing on clarifying the temporary nature of the margin impact.",
+      "sentiment_score": -0.9467,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9467,
+        "positive": 0.0146,
+        "negative": 0.9612,
+        "neutral": 0.0242,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies six unique speakers, including the moderator, management, and analysts. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and responses to questions. Management speakers are evaluated on their directness in answering analyst questions. A narrative summary is provided for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

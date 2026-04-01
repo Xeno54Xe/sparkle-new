@@ -1,0 +1,72 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 47.2,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 60.0,
+    "key_themes": [
+      "employee management",
+      "productivity improvement",
+      "customer service"
+    ],
+    "notable_excerpts": [
+      "Employee headcounts today 64,000 people. Attrition rate came in at 16.8% for the year, marginally higher than last year.",
+      "The company onboarded 44 and a half thousand people from outsourced manpower to a fixed term contract employment model in certain of our businesses. We principally see that this action should lead to improvement in productivity and should also enhance our customer service standards."
+    ]
+  },
+  "governance": {
+    "score": 75.0,
+    "key_themes": [
+      "corporate actions",
+      "board decisions",
+      "financial transparency"
+    ],
+    "notable_excerpts": [
+      "The board of directors today have recommended, subject to shareholder's approval of course, the following corporate actions: one is subdivision of face value shares from two rupees to one rupee.",
+      "The board of directors also recommended four fully-paid bonus shares for every one fully-paid equity share of the company.",
+      "S&P has upgraded the company's standalone outlook to BBB minus positive from BBB minus stable."
+    ]
+  },
+  "chain_of_thought": "The earnings call focused on financial performance and strategic decisions with limited ESG content. Environmental aspects were not mentioned. Social aspects included employee management and productivity improvements. Governance was discussed in terms of corporate actions and financial transparency.",
+  "strengths": [
+    "Strong governance disclosures with detailed corporate actions and financial transparency."
+  ],
+  "weaknesses": [
+    "Lack of environmental disclosures.",
+    "Limited social disclosures beyond employee management."
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

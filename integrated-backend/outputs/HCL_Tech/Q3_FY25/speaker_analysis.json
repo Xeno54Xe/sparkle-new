@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "C. Vijayakumar",
+      "role": "Chief Executive Officer & Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "Q3 performance",
+        "growth in services",
+        "AI and Gen AI",
+        "financial guidance",
+        "client relationships"
+      ],
+      "direct_answers": [
+        "For Services, the organic Q4 ask rate which was (-1.32%) to (+0.6%) to reach the lower end and higher end of the guidance.",
+        "Manufacturing ex-automotive looks good. We see discretionary spend and some of the projects are driven by SAP."
+      ],
+      "dodged_or_vague": [
+        "You should not extrapolate to Q4 because those outcomes are still not clear.",
+        "Our annual guidance is released in April when we close the earlier fiscal, so numerical answer or even a directional answer, you probably will have to wait."
+      ],
+      "summary": "C. Vijayakumar, the CEO and Managing Director, presented a confident outlook on HCL Tech's performance, highlighting a sequential revenue growth of 3.8% and a strong operating margin of 19.5%. He emphasized the company's strategic focus on AI and Gen AI, noting significant wins and a robust pipeline nearing an all-time high. Vijayakumar addressed questions on service growth and manufacturing, providing direct answers but remained cautious about specific future guidance, indicating that more detailed forecasts would be available in April. His tone was optimistic, reflecting confidence in the company's strategic direction and market positioning.",
+      "sentiment_score": 0.9354,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9354,
+        "positive": 0.9502,
+        "negative": 0.0147,
+        "neutral": 0.0351,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shiv Walia",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "M&A impact"
+      ],
+      "direct_answers": [
+        "The Q3 is a seasonally strong quarter for us for software, but the margins this quarter improved because of two factors."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Shiv Walia, the Chief Financial Officer, provided a neutral and factual overview of HCL Tech's financial performance. He explained the improved margins in Q3, attributing them to reduced costs and lower amortization benefits. Walia also addressed the impact of M&A activities, indicating that the integration costs would keep the impact consistent in the next quarter. His responses were clear and direct, focusing on the financial metrics and operational efficiencies achieved during the quarter.",
+      "sentiment_score": 0.8821,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8821,
+        "positive": 0.9247,
+        "negative": 0.0426,
+        "neutral": 0.0327,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nitin Mohta",
+      "role": "Senior Vice President & Head - Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Mohta, the Senior Vice President and Head of Investor Relations, opened the earnings call with a neutral tone, setting the stage for the presentations by the management team. He highlighted the presence of forward-looking statements in the call, cautioning listeners about the inherent risks and uncertainties. Mohta's role was primarily to facilitate the call and ensure that participants were aware of the context and structure of the discussions.",
+      "sentiment_score": -0.0148,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0148,
+        "positive": 0.1387,
+        "negative": 0.1535,
+        "neutral": 0.7078,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call facilitation",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator played a neutral role in facilitating the HCL Tech's Q3 FY25 earnings call. They ensured the smooth progression of the call, reminding participants of the listen-only mode and the opportunity for questions after the presentations. The Moderator's contributions were procedural, focusing on the logistics of the call rather than content.",
+      "sentiment_score": 0.03,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.03,
+        "positive": 0.0466,
+        "negative": 0.0166,
+        "neutral": 0.9368,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "Identified four unique speakers: C. Vijayakumar (CEO & MD), Shiv Walia (CFO), Nitin Mohta (SVP & Head - Investor Relations), and the Moderator. Extracted key statements for each speaker, focusing on specific language, numbers, and forward-looking statements. Analyzed the tone of each speaker based on their statements and interactions. For management speakers, noted which questions were answered directly and which were deflected or vague. Summarized each speaker's contribution to the call, capturing their stance and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1386,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9526,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9526,
+        "positive": 0.0139,
+        "negative": 0.9665,
+        "neutral": 0.0195,
+        "chunks_scored": 1
+      },
+      "text": "The consolidated revenue from operations was reported at Rs.45,152 crores, with an adjusted operating EBITDA of Rs.7,849 crores, reflecting an EBITDA per tonne of Rs.10,701 and a margin of 17.4%. The adjusted EBITDA excluded unrealised forex gains and losses on long-term borrowings, with the reported operating EBITDA standing at Rs.7,115 crores. Despite a decline in steel prices impacting realisations, this was offset by a better product mix and lower operating costs driven by efficiencies and operating leverage. Coking coal costs were down by about USD6, aligning with guidance. The Indian operations delivered a total EBITDA of Rs.7,614 crores, with an EBITDA per tonne of Rs.10,768 and an operating margin of 18.1%. The U.S. operations delivered USD12.2 million of operating EBITDA, which was lower due to a spillover of shipments."
+    },
+    "forward_guidance": {
+      "score": 0.9314,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9314,
+        "positive": 0.9466,
+        "negative": 0.0152,
+        "neutral": 0.0381,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism about the future, expecting domestic demand to be seasonally strong in the second half of FY26, supported by government and private Capex. They outlined a capacity expansion plan aiming for 50 million tonnes by the end of the decade, with ongoing expansions expected to increase capacity from 34.2 million tonnes to 41.9 million tonnes by September 2027. The language used was measured, with a focus on maintaining financial prudence and monitoring leverage ratios closely. The company plans to spend approximately Rs.20,000 crores per year on Capex, funded primarily through internal accruals. Management anticipates steel prices to improve in November and December."
+    },
+    "risk_language": {
+      "score": -0.1462,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": -0.1462,
+        "positive": 0.2463,
+        "negative": 0.3924,
+        "neutral": 0.3613,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the impact of declining steel prices on realisations and the temporary increase in net debt due to inventory buildup ahead of a planned shutdown. They acknowledged the impact of unrealised forex losses amounting to Rs.734 crores on overall profitability. The company is closely monitoring leverage ratios, with a net debt-to-EBITDA ratio of 2.97x, aiming to maintain it below 3x. They also discussed geopolitical challenges and global tariff scenarios as ongoing headwinds. Management was forthright about these challenges, indicating a proactive approach to risk management."
+    },
+    "investor_confidence": {
+      "score": 0.8708,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8708,
+        "positive": 0.8829,
+        "negative": 0.0121,
+        "neutral": 0.1051,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations of their strategies and financial metrics. They emphasized their commitment to maintaining a net debt-to-EBITDA ratio below 3x and outlined their capacity expansion plans clearly. The discussion on Capex funding through internal accruals and the strategic focus on value-added products demonstrated management's credibility. The tone was confident, with management expressing optimism about meeting future demand and maintaining financial discipline."
+    }
+  },
+  "key_positive_drivers": [
+    "Better product mix offsetting price declines",
+    "Lower operating costs due to efficiencies",
+    "Coking coal cost reduction",
+    "Strong domestic demand",
+    "Capacity expansion plans",
+    "Focus on value-added products"
+  ],
+  "key_negative_drivers": [
+    "Decline in steel prices impacting realisations",
+    "Unrealised forex losses",
+    "Temporary increase in net debt",
+    "Geopolitical challenges",
+    "Global tariff scenarios"
+  ],
+  "notable_phrases": [
+    "EBITDA per tonne of Rs.10,701",
+    "Net debt-to-EBITDA ratio of 2.97x",
+    "Expect prices to improve in November and December",
+    "Seasonally strong second half",
+    "Focus on maintaining financial prudence",
+    "Capacity expansion to 50 million tonnes",
+    "Monitoring leverage ratios closely",
+    "Strong operational performance amid uncertainties"
+  ],
+  "chain_of_thought": "The financial performance showed strong EBITDA margins despite price declines, supported by cost efficiencies and a better product mix. Forward guidance was optimistic about demand and capacity expansion, though tempered by a focus on financial prudence. Risks were acknowledged, particularly around forex losses and geopolitical challenges, but management was proactive in addressing them. Investor confidence was bolstered by clear communication and strategic focus on growth and financial discipline."
+}

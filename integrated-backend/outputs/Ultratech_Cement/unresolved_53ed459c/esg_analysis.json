@@ -1,0 +1,76 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 22.2,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 20.0,
+    "key_themes": [
+      "renewable energy",
+      "infrastructure projects"
+    ],
+    "notable_excerpts": [
+      "UltraTech is present in all the metro projects that are taking place in the country.",
+      "Infrastructure like metros, airports, railways, residential complexes, renewable energy, EV projects."
+    ]
+  },
+  "social": {
+    "score": 15.0,
+    "key_themes": [
+      "community",
+      "supply chain"
+    ],
+    "notable_excerpts": [
+      "UltraTech connects with corporate real estate players alike as well as the EPC players.",
+      "UltraTech has existing relationships with the contractors and can leverage on the same."
+    ]
+  },
+  "governance": {
+    "score": 30.0,
+    "key_themes": [
+      "transparency",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "The transcript is being disseminated to the stock exchanges as a good governance practice.",
+      "We must remind you that the discussion in today's call may include certain forward-looking statements and must be therefore viewed in conjunction with the risks that the Company faces."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript for UltraTech Cement shows limited ESG content. Environmental mentions are sparse, with some references to renewable energy and infrastructure projects. Social aspects are briefly touched upon, focusing on community and supply chain relationships. Governance is the most discussed pillar, with emphasis on transparency and risk management. Overall, the ESG disclosures lack depth and specificity.",
+  "strengths": [
+    "Presence in renewable energy and infrastructure projects",
+    "Strong governance practices with transparency"
+  ],
+  "weaknesses": [
+    "Limited environmental and social disclosures",
+    "Lack of specific targets or metrics for ESG initiatives"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

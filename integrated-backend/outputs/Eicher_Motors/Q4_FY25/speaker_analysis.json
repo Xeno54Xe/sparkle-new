@@ -1,0 +1,158 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference call procedures"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions and setting the stage for the earnings discussion. They maintained a neutral tone, ensuring the call proceeded smoothly and participants were aware of the procedures. The moderator's role was crucial in managing the flow of the call and introducing the speakers.",
+      "sentiment_score": 0.0056,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0056,
+        "positive": 0.028,
+        "negative": 0.0225,
+        "neutral": 0.9495,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ram Seshan",
+      "role": "Avendus Spark Host",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Welcome"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ram Seshan, representing Avendus Spark, introduced the earnings call and welcomed participants. He introduced the key members of Eicher Motors' leadership team, setting a professional and neutral tone for the proceedings. His role was primarily to facilitate the transition to the management's opening remarks.",
+      "sentiment_score": 0.0918,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0918,
+        "positive": 0.1037,
+        "negative": 0.0119,
+        "neutral": 0.8844,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "B. Govindarajan",
+      "role": "MD, Eicher Motors and CEO of Royal Enfield",
+      "tone": "Confident",
+      "key_topics": [
+        "Company performance",
+        "Royal Enfield",
+        "Product launches",
+        "Sustainability"
+      ],
+      "direct_answers": [
+        "Gunjan Prithyani's question on marketing interventions"
+      ],
+      "dodged_or_vague": [],
+      "summary": "B. Govindarajan expressed confidence in Eicher Motors' performance, highlighting strong growth and successful product launches. He detailed the company's financial achievements, emphasizing the record revenue and profit figures. Govindarajan also discussed the strategic focus on sustainability and the expansion of Royal Enfield's product lineup. His tone was optimistic and forward-looking, reflecting a positive outlook for the company's future.",
+      "sentiment_score": 0.9309,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9309,
+        "positive": 0.9477,
+        "negative": 0.0167,
+        "neutral": 0.0356,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vinod Aggarwal",
+      "role": "Vice Chairman, Eicher Motors and MD & CEO of VECV",
+      "tone": "Confident",
+      "key_topics": [
+        "VECV performance",
+        "Market share",
+        "Sustainability"
+      ],
+      "direct_answers": [
+        "Amyn Pirani's question on dividend payout"
+      ],
+      "dodged_or_vague": [
+        "Amyn Pirani's question on EBITDA margin guidance"
+      ],
+      "summary": "Vinod Aggarwal confidently reported on VECV's record performance, highlighting significant sales growth and market share gains. He emphasized the company's leadership in the Light & Medium Duty trucks segment and its commitment to sustainability initiatives. Aggarwal's tone was optimistic, reflecting a strong belief in VECV's strategic direction and future prospects. He provided detailed financial metrics, showcasing the company's robust performance.",
+      "sentiment_score": 0.9328,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9328,
+        "positive": 0.9545,
+        "negative": 0.0217,
+        "neutral": 0.0237,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vidhya Srinivasan",
+      "role": "CFO, Eicher Motors",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Margins",
+        "Commodity prices"
+      ],
+      "direct_answers": [
+        "Binay's question on margins and OBD2B costs"
+      ],
+      "dodged_or_vague": [
+        "Kapil Singh's question on commodity pricing changes"
+      ],
+      "summary": "Vidhya Srinivasan provided a cautious analysis of Eicher Motors' financial performance, focusing on margins and cost management. She addressed questions on gross profit and the impact of commodity prices, highlighting the challenges of market volatility. Srinivasan's tone was measured, reflecting a careful approach to financial forecasting and cost control. She provided specific details on model performance and pricing strategies, demonstrating a thorough understanding of the company's financial dynamics.",
+      "sentiment_score": 0.3023,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3023,
+        "positive": 0.3232,
+        "negative": 0.0209,
+        "neutral": 0.6559,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted verbatim to capture the specific language used, which is crucial for financial analysis. The tone of each speaker is assessed based on their language and the context of their statements. Management speakers are further analyzed for their responses to analyst questions, noting any direct answers or evasions. This structured approach ensures a comprehensive understanding of each speaker's contribution and stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

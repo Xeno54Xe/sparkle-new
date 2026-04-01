@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1605,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9115,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9115,
+        "positive": 0.0388,
+        "negative": 0.9503,
+        "neutral": 0.0109,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q3 FY26 showed mixed results. The core operating profit increased by 6.0% year-on-year and 2.5% quarter-on-quarter to 175.13 billion Rupees. However, the profit before tax excluding treasury was 149.57 billion Rupees, slightly down from 152.89 billion Rupees in Q3 of last year. The profit after tax was 113.18 billion Rupees, compared to 117.92 billion Rupees in the previous year. Net interest income increased by 7.7% year-on-year to 219.32 billion Rupees, with a stable net interest margin of 4.30%. Despite these gains, there was a treasury loss of 1.57 billion Rupees, contrasting with a gain of 3.71 billion Rupees in Q3 of the previous year. The consolidated profit after tax was 125.38 billion Rupees, slightly down from 128.83 billion Rupees last year."
+    },
+    "forward_guidance": {
+      "score": 0.8394,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8394,
+        "positive": 0.8489,
+        "negative": 0.0095,
+        "neutral": 0.1416,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the next quarter and fiscal year. They anticipate sustaining the current growth momentum into Q4, with a focus on risk-calibrated profitable growth and market share expansion across key segments. The language used was measured, with an emphasis on maintaining a strong balance sheet and prudent provisioning. They highlighted opportunities to drive growth, particularly in retail and corporate portfolios, and mentioned that the momentum seen in the current quarter is expected to continue. However, there was no specific guidance on project timelines or capacity additions."
+    },
+    "risk_language": {
+      "score": 0.0808,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.0808,
+        "positive": 0.2156,
+        "negative": 0.1348,
+        "neutral": 0.6496,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks and challenges, including regulatory compliance issues and competitive pressures. Management discussed the additional standard asset provision of 12.83 billion Rupees required by the RBI due to non-compliance with agricultural priority sector lending guidelines. They acknowledged the rising cost of PSL compliance and the competitive mortgage pricing environment. The discussion on risks was forthright, with management acknowledging the need to resolve regulatory issues and minimize provisioning impacts. They also mentioned the potential impact of statutory and regulatory changes, economic conditions, and interest rate fluctuations."
+    },
+    "investor_confidence": {
+      "score": 0.83,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.83,
+        "positive": 0.8401,
+        "negative": 0.0102,
+        "neutral": 0.1497,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of clarity and transparency throughout the call. They addressed analyst questions directly, particularly regarding regulatory compliance and margin expectations. The CEO and other executives provided detailed explanations of financial results and strategic initiatives, reinforcing management credibility. The call included acknowledgments of challenges but also highlighted strategic focus areas and growth opportunities, suggesting a balanced approach to managing investor expectations. Overall, the tone conveyed confidence in the bank's ability to navigate current challenges while pursuing growth."
+    }
+  },
+  "key_positive_drivers": [
+    "Core operating profit increased by 6.0% year-on-year",
+    "Net interest income increased by 7.7% year-on-year",
+    "Stable net interest margin of 4.30%",
+    "Retail loan portfolio grew by 7.2% year-on-year",
+    "Strong capital position with CET-1 ratio of 16.46%",
+    "Opportunities for risk-calibrated profitable growth"
+  ],
+  "key_negative_drivers": [
+    "Profit before tax excluding treasury decreased",
+    "Treasury loss of 1.57 billion Rupees",
+    "Additional standard asset provision of 12.83 billion Rupees",
+    "Regulatory compliance issues with agricultural priority sector lending",
+    "Rising cost of PSL compliance",
+    "Competitive pressures in mortgage pricing"
+  ],
+  "notable_phrases": [
+    "Core operating profit increased by 6.0% year-on-year",
+    "Profit before tax excluding treasury was 149.57 billion Rupees",
+    "Treasury loss of 1.57 billion Rupees",
+    "Additional standard asset provision of 12.83 billion Rupees",
+    "Opportunities to drive risk calibrated profitable growth",
+    "Maintaining a strong balance sheet",
+    "Prudent provisioning and healthy levels of capital",
+    "Sustainable and predictable returns to our shareholders"
+  ],
+  "chain_of_thought": "The financial performance showed mixed results with some growth in core operating profit and net interest income, but a decrease in profit before tax excluding treasury and a treasury loss. Forward guidance was cautiously optimistic, focusing on sustaining growth momentum and maintaining a strong balance sheet. Risks were addressed forthrightly, particularly regulatory compliance and competitive pressures. Management projected confidence and transparency, answering questions directly and highlighting strategic growth opportunities."
+}

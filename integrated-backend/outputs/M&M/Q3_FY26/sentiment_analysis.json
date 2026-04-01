@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6479,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9239,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9239,
+        "positive": 0.954,
+        "negative": 0.0301,
+        "neutral": 0.0159,
+        "chunks_scored": 1
+      },
+      "text": "Management highlighted a 'continued strong performance across businesses,' with operating PAT up 66% and reported PAT up 47%. They noted 'volume and margin growth, very strong for both Auto and Farm,' with volume up 23% for both businesses. The Auto segment saw a margin increase of 90 basis points, while Farm margins rose by 240 basis points. Despite some international impairments affecting the Farm segment, domestic performance was up 64%. Mahindra Finance showed a 97% increase in operating performance, although reported figures were down 9% due to a reserve release in the previous year. Overall, consolidated revenue was up 26%, with a 54% increase excluding Labour Code impacts."
+    },
+    "forward_guidance": {
+      "score": 0.9291,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9291,
+        "positive": 0.9408,
+        "negative": 0.0117,
+        "neutral": 0.0475,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism for the future, stating that Mahindra Finance will 'pivot to growth' and expect 'a much faster growth rate.' They plan to add '7,000 additional capacities' in FY27 and are preparing for 'longer-term growth trends' with a projected 9% CAGR. The company is 'feeling optimistic and positive' about the next year, despite acknowledging the high growth base of 24% this year. They anticipate continued strong performance in the Auto and Farm segments, with new product launches and capacity expansions planned."
+    },
+    "risk_language": {
+      "score": -0.4651,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.4651,
+        "positive": 0.08,
+        "negative": 0.5451,
+        "neutral": 0.3749,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including international impairments in the Farm segment and FX exposure in the Hospitality business. They acknowledged the challenges of forecasting growth, stating 'even the ability to forecast next three months is not there.' The company is cautious about regulatory changes, particularly concerning the ICE portfolio and government climate policies. They also mentioned the volatility in Mahindra Finance's asset quality in the past, which they have worked to stabilize."
+    },
+    "investor_confidence": {
+      "score": 0.9253,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9253,
+        "positive": 0.9377,
+        "negative": 0.0124,
+        "neutral": 0.0498,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency, with clear communication about their strategic focus on asset quality, controls, and technology. They addressed analyst questions directly, providing detailed responses about growth strategies and capacity expansions. The leadership team was described as 'very strong,' with new leaders from top banks and NBFCs. The company's consistent delivery and strong results across segments were emphasized, reinforcing management's credibility."
+    }
+  },
+  "key_positive_drivers": [
+    "Operating PAT up 66%",
+    "Volume and margin growth in Auto and Farm",
+    "Mahindra Finance pivot to growth",
+    "7,000 additional capacities planned",
+    "Strong domestic performance in Farm",
+    "SUV volume up 26%"
+  ],
+  "key_negative_drivers": [
+    "International impairments in Farm",
+    "FX exposure in Hospitality",
+    "Challenges in forecasting growth",
+    "Regulatory uncertainties around ICE portfolio",
+    "Past volatility in Mahindra Finance asset quality"
+  ],
+  "notable_phrases": [
+    "continued strong performance across businesses",
+    "pivot to growth",
+    "feeling optimistic and positive",
+    "very strong management team",
+    "ability to forecast next three months is not there",
+    "consistent delivery",
+    "very strong results",
+    "breakthrough performances"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with significant growth in operating profit and volumes, particularly in the Auto and Farm segments. Forward guidance was optimistic, with plans for capacity expansion and a focus on growth in Mahindra Finance. However, management acknowledged risks related to international impairments, FX exposure, and regulatory uncertainties. Investor confidence was bolstered by management's transparency and strategic focus, despite some caution in forecasting future growth."
+}

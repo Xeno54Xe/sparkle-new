@@ -1,0 +1,153 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Vibha Padalkar",
+      "role": "CEO",
+      "tone": "confident",
+      "key_topics": [
+        "macroeconomic context",
+        "business performance",
+        "product mix",
+        "financial metrics",
+        "regulatory updates"
+      ],
+      "direct_answers": [
+        "Yes, so I will take the in-between question of what I was sounding like last quarter. If I recall, I was saying that margins will remain range bound and growth at that time seemed like it's going to be somewhat muted because of the macroeconomic scenario, which I think will probably continue for another quarter as well based visible slowdown in consumption as well as the tariff situation still being up in the air."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vibha Padalkar, the CEO of HDFC Life, presented a confident outlook during the earnings call, emphasizing the company's strong performance in Q1 FY26. She highlighted the company's ability to outpace industry growth, with a 12.5% year-on-year increase in Individual Annualized Premium Equivalent (APE) and a 70 bps increase in market share. Vibha discussed the balanced product mix and the strategic focus on long-term growth, despite macroeconomic uncertainties. She addressed questions about margins and growth, explaining the impact of surrender charges and the expected disappearance of fixed cost absorption's negative impact as the year progresses. Overall, her tone was optimistic, reflecting confidence in HDFC Life's strategic direction and market position.",
+      "sentiment_score": 0.8203,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8203,
+        "positive": 0.846,
+        "negative": 0.0257,
+        "neutral": 0.1283,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Niraj Shah",
+      "role": "Executive Director and CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "product mix",
+        "pricing discipline",
+        "unit-linked products"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Niraj Shah, the Executive Director and CFO, provided insights into HDFC Life's product mix and pricing strategy. He explained the company's commitment to maintaining pricing discipline, particularly in the non-par segment, and noted the steady demand for unit-linked products due to a favorable equity environment. Niraj highlighted the improvements in margins through increased protection levels in unit-linked products and better margin extraction from participating products. His tone was neutral, focusing on the technical aspects of product mix and pricing without expressing strong emotions or forecasts.",
+      "sentiment_score": 0.4315,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4315,
+        "positive": 0.6649,
+        "negative": 0.2334,
+        "neutral": 0.1017,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vineet Arora",
+      "role": "Executive Director and Chief Business Officer",
+      "tone": "confident",
+      "key_topics": [
+        "channel growth",
+        "agency investments",
+        "product mix"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vineet Arora, the Executive Director and Chief Business Officer, expressed confidence in the growth prospects across all distribution channels for HDFC Life. He emphasized the significant investments being made in the agency channel, which are expected to yield faster growth compared to other channels. Vineet acknowledged some volatility in bank partnerships due to competitive pressures but maintained that overall channel growth would remain consistent. His tone was confident, reflecting a positive outlook on the company's strategic initiatives and their expected impact on channel performance.",
+      "sentiment_score": 0.3142,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3142,
+        "positive": 0.3385,
+        "negative": 0.0243,
+        "neutral": 0.6372,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Eshwari Murugan",
+      "role": "Appointed Actuary",
+      "tone": "neutral",
+      "key_topics": [
+        "operating variance",
+        "persistency metrics",
+        "mortality variance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Eshwari Murugan, the Appointed Actuary, provided a detailed explanation of the operating variance and persistency metrics for HDFC Life. She noted a small negative mortality variance but emphasized that it was insignificant relative to the overall embedded value. Eshwari explained the company's evolved approach to factoring experience into assumptions, which has led to reduced variance. She highlighted the positive trend in persistency metrics over the past few years and its incorporation into the embedded value. Her tone was neutral, focusing on technical details and actuarial assessments without expressing strong opinions.",
+      "sentiment_score": 0.1045,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1045,
+        "positive": 0.2223,
+        "negative": 0.1178,
+        "neutral": 0.6599,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Avinash Singh",
+      "role": "Analyst from Emkay Global",
+      "tone": "neutral",
+      "key_topics": [
+        "margins",
+        "product mix",
+        "persistency"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Avinash Singh, an analyst from Emkay Global, asked detailed questions regarding HDFC Life's margins, product mix, and persistency metrics. He acknowledged the commendable performance in maintaining margins despite a shift in product mix and sought clarification on the factors supporting this outcome. Avinash also inquired about the changes in demand for participating products and the reasons behind the marginal deterioration in 13-month persistency. His tone was neutral, focusing on obtaining specific information to understand the company's financial performance better.",
+      "sentiment_score": 0.6332,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6332,
+        "positive": 0.7106,
+        "negative": 0.0773,
+        "neutral": 0.2121,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call, including Vibha Padalkar, Niraj Shah, Vineet Arora, Eshwari Murugan, and Avinash Singh. Each speaker's key statements are extracted, focusing on verbatim quotes that include specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, with Vibha Padalkar and Vineet Arora displaying confidence, Niraj Shah and Eshwari Murugan maintaining a neutral tone, and Avinash Singh also being neutral as he seeks clarification. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or avoided. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON output is structured to provide a comprehensive overview of the earnings call, suitable for further financial NLP analysis.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

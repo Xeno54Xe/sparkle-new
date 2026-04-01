@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "question queue management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring smooth transitions between speakers and managing the question-and-answer session. Their tone remained neutral throughout, focusing on logistics and ensuring participants were aware of the call's structure and recording status. The moderator concluded the session by thanking participants and officially closing the call.",
+      "sentiment_score": 0.0192,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0192,
+        "positive": 0.0395,
+        "negative": 0.0203,
+        "neutral": 0.9402,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ajoy Chawla",
+      "role": "Managing Director, Titan Company Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "quarterly performance",
+        "demand uptick",
+        "team effort",
+        "supply chain"
+      ],
+      "direct_answers": [
+        "Jaykumar Doshi's question on making charges and margins",
+        "Jignanshu Gor's question on discounting and decision-making"
+      ],
+      "dodged_or_vague": [
+        "Manoj Menon's question on industry expansion pace"
+      ],
+      "summary": "Ajoy Chawla, the Managing Director, expressed optimism about Titan's performance, highlighting a strong quarter driven by increased demand and effective team execution. He addressed questions on pricing strategies and market behavior, emphasizing product innovation over discounting. While he provided direct answers to some analyst questions, he was vague about industry-wide predictions, suggesting a wait-and-see approach. Overall, his tone was positive, focusing on the company's strategic strengths and market adaptability.",
+      "sentiment_score": -0.0977,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0977,
+        "positive": 0.1633,
+        "negative": 0.261,
+        "neutral": 0.5758,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Ashok Sonthalia",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "acquisitions",
+        "consolidation",
+        "labour code impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ashok Sonthalia, the CFO, confidently outlined key financial developments, including the acquisition of a 67% stake in Damas and its impact on future financial consolidation. He emphasized the importance of considering consolidated performance metrics and highlighted the accounting of the labour code impact as an exceptional item. His statements were clear and informative, focusing on strategic financial moves and their implications for the company's reporting and performance assessment.",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.202,
+        "positive": 0.2197,
+        "negative": 0.0178,
+        "neutral": 0.7625,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Arun Narayan",
+      "role": "CEO, Jewellery Division",
+      "tone": "cautious",
+      "key_topics": [
+        "jewellery segment performance",
+        "gold price volatility",
+        "consumer behavior"
+      ],
+      "direct_answers": [
+        "Videesha Sheth's question on growth trends and old-gold exchange"
+      ],
+      "dodged_or_vague": [
+        "Manoj Menon's question on consumer behavior and supply chain"
+      ],
+      "summary": "Arun Narayan, CEO of the Jewellery Division, provided a cautious outlook on the jewellery segment, noting the impact of gold price volatility on consumer behavior. He acknowledged a good start to the fourth quarter but refrained from making definitive predictions due to ongoing market fluctuations. While he directly addressed questions about growth trends and old-gold exchange campaigns, he was less specific about broader industry changes, maintaining a cautious tone throughout his responses.",
+      "sentiment_score": 0.0946,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0946,
+        "positive": 0.1747,
+        "negative": 0.0801,
+        "neutral": 0.7452,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: the Moderator, Ajoy Chawla, Ashok Sonthalia, and Arun Narayan. Each speaker's key statements are extracted, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. This structured approach ensures a comprehensive understanding of each speaker's role and perspective during the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

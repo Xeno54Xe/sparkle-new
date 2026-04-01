@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Dr. R.K. Tyagi",
+      "role": "Chairman & Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "achievements of POWERGRID",
+        "project execution",
+        "financial performance",
+        "business outlook",
+        "ESG initiatives"
+      ],
+      "direct_answers": [
+        "Cost and tariff.",
+        "Last year, sorry, last meet, we have given ₹28,000 crores for FY26. We are increasing it to ₹32,000 crores as I told and for FY27, CapEx will be ₹37,000 crores. In FY28, it will be ₹45,000 crores."
+      ],
+      "dodged_or_vague": [
+        "Sometimes it is within that, sometimes it exceeds also. Our cost estimate will be closer to that but sometimes it is higher than that cost."
+      ],
+      "summary": "Dr. R.K. Tyagi presented a confident overview of POWERGRID's achievements and future plans. He highlighted the company's growth, including becoming a ₹3 trillion plus gross fixed asset company and its role as a leading national transmission company. Dr. Tyagi assured stakeholders of exceeding annual guidance and discussed partnerships and projects, including a new Battery Energy Storage project. He emphasized ESG initiatives and provided detailed financial performance metrics. While he answered some questions directly, he was vague on cost estimates, indicating a cautious approach to financial projections.",
+      "sentiment_score": 0.8267,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8267,
+        "positive": 0.8344,
+        "negative": 0.0076,
+        "neutral": 0.158,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Bakul Gala",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Bakul Gala served as the neutral moderator for the meeting, facilitating the introduction of the event and the transition to the Q&A session. He maintained a professional tone, ensuring the smooth flow of the meeting and encouraging participation from the attendees. His role was primarily to manage the logistics of the session rather than provide substantive content or analysis.",
+      "sentiment_score": 0.0827,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0827,
+        "positive": 0.0954,
+        "negative": 0.0126,
+        "neutral": 0.892,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Satyaprakash Dash",
+      "role": "Company Secretary & Compliance Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "welcome"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Satyaprakash Dash provided a neutral and formal welcome to the attendees of the Analysts’ and Institutional Investors’ Meet. His role was to introduce the event and set the stage for the senior management's presentations. He did not engage in detailed discussions or provide analysis, focusing instead on the procedural aspects of the meeting.",
+      "sentiment_score": 0.1873,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1873,
+        "positive": 0.1979,
+        "negative": 0.0106,
+        "neutral": 0.7914,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Burra Vamsi Rama Mohan",
+      "role": "Director (Projects)",
+      "tone": "confident",
+      "key_topics": [
+        "project orders",
+        "market share"
+      ],
+      "direct_answers": [
+        "Orders in hand."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mr. Burra Vamsi Rama Mohan confidently discussed POWERGRID's project orders and market share. He highlighted the company's strong position in both intra-state and interstate projects, maintaining a market share of 50 to 60%. His responses were direct and focused on the company's strategic positioning in the market.",
+      "sentiment_score": 0.5449,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5449,
+        "positive": 0.5579,
+        "negative": 0.013,
+        "neutral": 0.429,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The transcript provided multiple speakers, including management and analysts. Each speaker's role and key statements were identified, focusing on verbatim quotes where possible. The tone of each speaker was assessed based on their language and context. Management speakers were analyzed for their responses to analyst questions, noting direct answers and any vague or deflected responses. A narrative summary was crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

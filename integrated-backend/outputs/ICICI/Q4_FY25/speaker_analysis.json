@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference logistics",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator efficiently managed the logistics of the conference call, ensuring that participants were aware of the procedures for asking questions and the recording of the session. They maintained a neutral tone throughout, focusing on facilitating the smooth flow of the call and ensuring that all participants adhered to the guidelines for the Q&A session.",
+      "sentiment_score": 0.0121,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0121,
+        "positive": 0.0329,
+        "negative": 0.0208,
+        "neutral": 0.9463,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Bakhshi",
+      "role": "Managing Director and CEO",
+      "tone": "Confident",
+      "key_topics": [
+        "Strategic focus",
+        "Profit growth",
+        "Customer-centric approach"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Bakhshi opened the call with a confident overview of ICICI Bank's strategic focus and performance. He emphasized the bank's commitment to a customer-centric approach and highlighted the goal of growing profit before tax excluding treasury. Bakhshi's remarks set a positive tone for the call, underscoring the bank's dedication to delivering consistent returns to shareholders.",
+      "sentiment_score": 0.5252,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5252,
+        "positive": 0.5338,
+        "negative": 0.0086,
+        "neutral": 0.4576,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Batra",
+      "role": "Executive Director",
+      "tone": "Confident",
+      "key_topics": [
+        "Economic environment",
+        "Profit and capital",
+        "Loan and deposit growth",
+        "Asset quality"
+      ],
+      "direct_answers": [
+        "Vishwanath Nair's question on net interest margin",
+        "Kshipra Petkar's question on loan and deposit growth"
+      ],
+      "dodged_or_vague": [
+        "Anupreksha's question on attrition rate"
+      ],
+      "summary": "Sandeep Batra provided a comprehensive overview of ICICI Bank's financial performance, highlighting key metrics such as profit growth, loan and deposit growth, and asset quality. He maintained a confident tone, emphasizing the bank's strategic focus on risk-calibrated growth and customer-centric operations. Batra directly addressed questions on net interest margins and growth expectations, but was less specific on certain operational details like attrition rates. His remarks underscored the bank's commitment to maintaining high governance standards and delivering sustainable shareholder returns.",
+      "sentiment_score": 0.298,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.298,
+        "positive": 0.5443,
+        "negative": 0.2463,
+        "neutral": 0.2094,
+        "chunks_scored": 4
+      }
+    },
+    {
+      "name": "Anindya Banerjee",
+      "role": "Group Chief Financial Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Loan growth",
+        "Credit quality",
+        "Portfolio trends"
+      ],
+      "direct_answers": [
+        "Piran's question on CASA pressure",
+        "Piran's question on vehicle growth slowdown"
+      ],
+      "dodged_or_vague": [
+        "Piran's question on LRD component"
+      ],
+      "summary": "Anindya Banerjee provided detailed insights into ICICI Bank's loan growth and credit quality, highlighting specific growth figures across various loan segments. His tone was cautious, reflecting the need to monitor market conditions and portfolio trends closely. Banerjee addressed questions on CASA pressure and vehicle growth slowdown directly, but was less forthcoming about the specifics of the LRD component in the portfolio. His remarks emphasized the bank's strategic focus on maintaining a balanced and risk-calibrated growth approach.",
+      "sentiment_score": 0.5998,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5998,
+        "positive": 0.6282,
+        "negative": 0.0284,
+        "neutral": 0.3434,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone of each speaker was assessed based on their language and the context of their statements. For management speakers, their responses to analyst questions were evaluated to determine whether they were direct or vague. This structured approach allowed for a comprehensive understanding of each speaker's contribution to the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

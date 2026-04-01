@@ -1,0 +1,62 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 22.2,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 20.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 15.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "governance": {
+    "score": 30.0,
+    "key_themes": [
+      "financial discipline",
+      "debt management"
+    ],
+    "notable_excerpts": [
+      "We continued to maintain excellent financial discipline. Our net debt to EBITDA was at 2.1 versus 2.3 in FY24.",
+      "Gross Debt as of December’2024 is ₹45,650 crores and it was ₹44,060 crores as of September’2024, the last quarter end. Net Debt is ₹38,000 crores, round number, as of December and as of September it is ₹35,200 crores."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript for Adani Ports and SEZ lacked substantial ESG content. There were no mentions of environmental or social initiatives, and governance discussions were limited to financial discipline and debt management.",
+  "strengths": [
+    "Financial discipline and debt management"
+  ],
+  "weaknesses": [
+    "Lack of environmental and social disclosures"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

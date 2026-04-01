@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the NTPC Limited Q3 FY '26 earnings call, ensuring the smooth flow of the session. They provided instructions for participants and introduced the speakers. The moderator maintained a neutral tone throughout the call, focusing on logistics and the structure of the session.",
+      "sentiment_score": 0.0445,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0445,
+        "positive": 0.0591,
+        "negative": 0.0146,
+        "neutral": 0.9263,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mohit Kumar",
+      "role": "ICICI Securities Host",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "welcome"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mohit Kumar, representing ICICI Securities, opened the NTPC earnings call with a formal welcome and introduction of the key speakers. His role was primarily to set the stage for the management's presentation and the subsequent Q&A session. He maintained a neutral tone, focusing on the procedural aspects of the call.",
+      "sentiment_score": 0.0602,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0602,
+        "positive": 0.0717,
+        "negative": 0.0115,
+        "neutral": 0.9168,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jaikumar Srinivasan",
+      "role": "Director Finance, NTPC",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "capacity addition",
+        "operational performance",
+        "future plans"
+      ],
+      "direct_answers": [
+        "Sumit Kishore's question on capacity addition targets",
+        "Nikhil's question on green ammonia project IRR"
+      ],
+      "dodged_or_vague": [
+        "Aniket Mittal's question on IntelliSmart sale process",
+        "Satyadeep Jain's question on state tenders"
+      ],
+      "summary": "Jaikumar Srinivasan, Director Finance at NTPC, delivered a comprehensive overview of the company's financial and operational performance for Q3 FY '26. He confidently highlighted significant capacity additions, financial results, and strategic initiatives, including NTPC's commitment to renewable energy and nuclear power expansion. Srinivasan addressed questions on capacity targets and project IRR directly but was vague on the IntelliSmart sale process and state tender dynamics. His tone was confident, reflecting NTPC's strong performance and strategic positioning in the energy sector.",
+      "sentiment_score": 0.7999,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7999,
+        "positive": 0.8212,
+        "negative": 0.0213,
+        "neutral": 0.1576,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Sarit Maheshwari",
+      "role": "CEO, NTPC Green Energy Limited",
+      "tone": "confident",
+      "key_topics": [
+        "renewable energy",
+        "capacity addition",
+        "project IRR"
+      ],
+      "direct_answers": [
+        "Sumit Kishore's question on NTPC Green targets",
+        "Nikhil's question on green ammonia project IRR"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sarit Maheshwari, CEO of NTPC Green Energy Limited, provided insights into the company's renewable energy capacity addition plans and addressed concerns about project IRR and curtailment issues. He confidently stated that NTPC Green is on track to meet its capacity targets and highlighted the resolution of past curtailment issues. Maheshwari's responses were direct and informative, reflecting a strong command over NTPC Green's strategic initiatives and operational challenges.",
+      "sentiment_score": -0.5357,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.5357,
+        "positive": 0.0803,
+        "negative": 0.6161,
+        "neutral": 0.3036,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying the unique speakers from the transcript: the Moderator, Mohit Kumar, Jaikumar Srinivasan, and Sarit Maheshwari. Each speaker's key statements were extracted, focusing on verbatim quotes where possible to ensure accuracy for financial NLP scoring. The tone of each speaker was assessed based on their language and context. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

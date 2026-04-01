@@ -1,0 +1,205 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, providing instructions for participation and managing the Q&A session. Their tone was neutral, focusing on procedural aspects of the call. They ensured the smooth transition between speakers and managed the flow of questions from analysts.",
+      "sentiment_score": 0.0281,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0281,
+        "positive": 0.0447,
+        "negative": 0.0166,
+        "neutral": 0.9387,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Abhishek Sharma",
+      "role": "Vice President & Head of Investor Relations and Strategic Projects",
+      "tone": "neutral",
+      "key_topics": [
+        "opening remarks",
+        "closing comments"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Dr. Abhishek Sharma opened and closed the earnings call, welcoming participants and providing logistical details about the financial results and press release. He addressed recent media speculation about M&A activities, clarifying that such topics would not be discussed during the call. His tone was neutral, focusing on providing information and ensuring participants knew how to follow up with unanswered questions.",
+      "sentiment_score": 0.0716,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0716,
+        "positive": 0.0944,
+        "negative": 0.0228,
+        "neutral": 0.8828,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dilip Shanghvi",
+      "role": "Chairman",
+      "tone": "cautious",
+      "key_topics": [
+        "M&A strategy",
+        "R&D initiatives"
+      ],
+      "direct_answers": [
+        "M&A strategy",
+        "R&D initiatives"
+      ],
+      "dodged_or_vague": [
+        "specific M&A targets"
+      ],
+      "summary": "Dilip Shanghvi addressed questions regarding Sun Pharma's M&A strategy and R&D initiatives. He emphasized the importance of the US market for innovative medicines and expressed caution regarding M&A activities, highlighting the need for careful consideration of targets and financial implications. He provided updates on R&D, mentioning ongoing studies and future data publications. His tone was cautious, reflecting a careful approach to strategic decisions.",
+      "sentiment_score": 0.1065,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1065,
+        "positive": 0.1187,
+        "negative": 0.0122,
+        "neutral": 0.8691,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayashree Satagopan",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "gross margins"
+      ],
+      "direct_answers": [
+        "financial performance",
+        "gross margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jayashree Satagopan presented the financial results for Q3 FY26, highlighting significant growth in sales and EBITDA. She confidently reported an increase in gross margins due to a better product mix and detailed the milestone income received. Her tone was confident, reflecting strong financial performance and effective management of the company's financial resources.",
+      "sentiment_score": 0.9428,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9428,
+        "positive": 0.9587,
+        "negative": 0.0159,
+        "neutral": 0.0253,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kirti Ganorkar",
+      "role": "Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "innovative medicines",
+        "India business"
+      ],
+      "direct_answers": [
+        "innovative medicines",
+        "India business"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Kirti Ganorkar provided an optimistic update on Sun Pharma's innovative medicines and India business. He reported strong growth in global innovative medicines sales and highlighted Sun Pharma's leading market position in India. His tone was optimistic, reflecting confidence in the company's strategic direction and market performance.",
+      "sentiment_score": 0.9072,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9072,
+        "positive": 0.916,
+        "negative": 0.0087,
+        "neutral": 0.0753,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Richard Ashcroft",
+      "role": "CEO (North America)",
+      "tone": "cautious",
+      "key_topics": [
+        "US business",
+        "product launches"
+      ],
+      "direct_answers": [
+        "US business",
+        "product launches"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Richard Ashcroft discussed the performance of Sun Pharma's US business, noting marginal growth due to competitive pressures in the generic segment. He highlighted the recent launch of Unloxcyt and the focus on educating healthcare professionals. His tone was cautious, acknowledging challenges while emphasizing strategic efforts to support new product launches.",
+      "sentiment_score": 0.9391,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9391,
+        "positive": 0.956,
+        "negative": 0.0169,
+        "neutral": 0.027,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Alok Shanghvi",
+      "role": "Chief Operating Officer",
+      "tone": "confident",
+      "key_topics": [
+        "emerging markets",
+        "formulations revenue"
+      ],
+      "direct_answers": [
+        "emerging markets",
+        "formulations revenue"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Alok Shanghvi provided a confident update on Sun Pharma's performance in emerging markets, reporting significant growth in formulations revenue. He emphasized the broad-based growth across both generic and innovative medicines. His tone was confident, reflecting strong market performance and strategic success in these regions.",
+      "sentiment_score": 0.943,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.943,
+        "positive": 0.9569,
+        "negative": 0.0139,
+        "neutral": 0.0293,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis identifies each speaker and their role in the earnings call. Key statements are extracted to capture the essence of their contributions, focusing on specific language and numbers. The tone of each speaker is assessed based on their statements and interactions during the call. Management speakers are evaluated on their responses to analyst questions, noting any direct answers or evasions. The narrative summaries provide a comprehensive overview of each speaker's contributions, stance, and key messages, ensuring a clear understanding of the call's dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

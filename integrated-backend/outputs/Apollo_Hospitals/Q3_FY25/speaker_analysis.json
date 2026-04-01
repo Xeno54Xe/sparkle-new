@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mayank Vaswani",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mayank Vaswani served as the moderator for the Apollo Hospitals Q3 FY25 earnings call. He introduced the senior management team and outlined the structure of the call, including the disclaimer about forward-looking statements. His tone was neutral, focusing on logistics and ensuring the call proceeded smoothly.",
+      "sentiment_score": 0.0011,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0011,
+        "positive": 0.0302,
+        "negative": 0.029,
+        "neutral": 0.9408,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Suneeta Reddy",
+      "role": "Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth strategy",
+        "market expansion"
+      ],
+      "direct_answers": [
+        "Neha Manpuria's question on hospital expansion and market growth."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Suneeta Reddy, the Managing Director, delivered a confident overview of Apollo Hospitals' strong Q3 FY25 performance, highlighting mid-teen revenue growth across all business segments and a sharp rise in profitability. She emphasized the strategic focus on high-end specialties and market expansion, particularly in international markets. Reddy detailed the financial metrics, including a 14% year-on-year revenue growth and a 24% increase in EBITDA. She also addressed the hospital expansion plans and the strategic initiatives that position Apollo Hospitals for sustainable long-term growth.",
+      "sentiment_score": 0.7324,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7324,
+        "positive": 0.751,
+        "negative": 0.0186,
+        "neutral": 0.2304,
+        "chunks_scored": 4
+      }
+    },
+    {
+      "name": "Madhivanan Balakrishnan",
+      "role": "CEO of Apollo HealthCo Ltd.",
+      "tone": "cautious",
+      "key_topics": [
+        "Apollo 24/7 platform",
+        "insurance foray",
+        "GMV growth"
+      ],
+      "direct_answers": [
+        "Binay Singh's question on GMV growth and insurance foray."
+      ],
+      "dodged_or_vague": [
+        "Exact GMV growth numbers for the insurance segment."
+      ],
+      "summary": "Madhivanan Balakrishnan, CEO of Apollo HealthCo Ltd., provided a cautious outlook on the Apollo 24/7 platform and the company's foray into insurance. He explained the recalibration of their cost structure and the delay in achieving unit economics breakeven due to strategic expansions. Balakrishnan highlighted the approvals received for the insurance business and the expected growth in GMV starting April. He was cautious about providing specific GMV growth numbers, indicating that more detailed figures would be available in the next quarter.",
+      "sentiment_score": 0.5245,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5245,
+        "positive": 0.5367,
+        "negative": 0.0121,
+        "neutral": 0.4512,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "A. Krishnan",
+      "role": "Group CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "financial metrics",
+        "regional performance"
+      ],
+      "direct_answers": [
+        "Neha Manpuria's question on regional performance and Bangladesh impact."
+      ],
+      "dodged_or_vague": [],
+      "summary": "A. Krishnan, the Group CFO, provided a neutral analysis of Apollo Hospitals' financial metrics and regional performance. He explained the impact of reduced patient footfalls from Bangladesh on the Chennai and Tamil Nadu regions, noting a 1.5% revenue impact company-wide. Krishnan highlighted the strong performance in high-end specialties like Oncology and Proton therapy, which offset some of the regional challenges. His responses were direct and focused on providing clarity on financial and operational metrics.",
+      "sentiment_score": 0.8079,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8079,
+        "positive": 0.8296,
+        "negative": 0.0217,
+        "neutral": 0.1487,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The transcript includes multiple speakers, each with distinct roles and contributions. Mayank Vaswani, as the moderator, facilitated the call and introduced the management team. Suneeta Reddy, the Managing Director, provided a comprehensive overview of the company's strong financial performance and strategic initiatives, maintaining a confident tone. Madhivanan Balakrishnan, CEO of Apollo HealthCo Ltd., discussed the Apollo 24/7 platform and insurance foray with a cautious tone, indicating some uncertainty about future GMV growth. A. Krishnan, the Group CFO, offered a neutral analysis of financial metrics and regional performance, addressing specific impacts like the Bangladesh effect on revenue. Each speaker's tone and focus varied based on their role and the topics they addressed.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

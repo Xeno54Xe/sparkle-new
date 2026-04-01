@@ -1,0 +1,151 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring smooth transitions between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on logistics and procedural aspects of the call. The moderator concluded the session by thanking participants and handing over to Ashok Vaswani for closing remarks.",
+      "sentiment_score": 0.0128,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0128,
+        "positive": 0.0355,
+        "negative": 0.0227,
+        "neutral": 0.9418,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashok Vaswani",
+      "role": "Managing Director & CEO",
+      "tone": "confident",
+      "key_topics": [
+        "strategy",
+        "customer-centric approach",
+        "capital management",
+        "growth targets"
+      ],
+      "direct_answers": [
+        "Anand Swaminathan's question on capital management"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashok Vaswani, the CEO, opened and closed the call with a confident tone, outlining the bank's strategic shift from a product-centric to a customer-centric approach. He emphasized the bank's growth targets of 1.5x to 2x nominal GDP growth and addressed capital management strategies, highlighting the importance of maintaining a 'fortress balance sheet'. Vaswani directly answered questions regarding capital management and expressed optimism about the bank's future, despite acknowledging past challenges.",
+      "sentiment_score": 0.4307,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4307,
+        "positive": 0.4444,
+        "negative": 0.0137,
+        "neutral": 0.5419,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Devang Gheewalla",
+      "role": "Group Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "capital adequacy",
+        "credit costs"
+      ],
+      "direct_answers": [
+        "Kunal Shah's question on provisioning coverage"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Devang Gheewalla, the CFO, provided a detailed overview of the financial performance, highlighting key achievements such as the value unlocked from Kotak General Insurance and the successful navigation of the RBI embargo. He maintained a neutral tone, focusing on governance and risk management principles. Gheewalla directly addressed questions on provisioning coverage and credit costs, providing clarity on the bank's financial strategies and outcomes.",
+      "sentiment_score": 0.9337,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9337,
+        "positive": 0.9492,
+        "negative": 0.0155,
+        "neutral": 0.0354,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Piran Engineer",
+      "role": "Analyst from CLSA",
+      "tone": "neutral",
+      "key_topics": [
+        "cost of SA deposits",
+        "operational expenses"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Piran Engineer, an analyst from CLSA, asked follow-up questions regarding the cost of SA deposits and operational expenses. His inquiries were precise and sought to clarify previous discussions, maintaining a neutral tone throughout. Engineer's questions were aimed at understanding the bank's financial adjustments and operational strategies.",
+      "sentiment_score": -0.5206,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.5206,
+        "positive": 0.0364,
+        "negative": 0.557,
+        "neutral": 0.4066,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anand Swaminathan",
+      "role": "Analyst from Bank of America",
+      "tone": "neutral",
+      "key_topics": [
+        "capital management",
+        "unsecured book performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anand Swaminathan, an analyst from Bank of America, posed questions about Kotak's capital management strategy and the performance of its unsecured book. His inquiries were focused on understanding the bank's strategic positioning and future plans, maintaining a neutral tone. Swaminathan sought clarity on how Kotak plans to manage its capital levels and improve its unsecured lending performance compared to peers.",
+      "sentiment_score": 0.2183,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2183,
+        "positive": 0.2487,
+        "negative": 0.0303,
+        "neutral": 0.721,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "1. Identified speakers: Moderator, Ashok Vaswani, Devang Gheewalla, Piran Engineer, Anand Swaminathan. 2. Extracted key statements for each speaker, focusing on verbatim quotes. 3. Assessed tone for each speaker based on their statements and context. 4. For management, noted which analyst questions were answered directly. 5. Summarized each speaker's contribution, stance, and key messages in a narrative format.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

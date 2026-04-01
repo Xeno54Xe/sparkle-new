@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.318,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.1897,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.1897,
+        "positive": 0.5832,
+        "negative": 0.3935,
+        "neutral": 0.0234,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q2 FY26 was mixed, with management highlighting both strengths and challenges. The bank reported a 'good 7.1% credit growth' and 'industry-leading credit growth at SBI scale,' with market share gains in segments like current account, home loans, and auto loans. However, there were significant challenges, such as a '50% drop in treasury profit from 8082 crores to 4011 crores' and a 'fall in recovery and upgradation numbers by 40-45% compared to the last quarter.' The domestic NIMs improved by 7 basis points to 3.09%, driven by repricing of deposits. Despite these challenges, the bank raised Rs 25,000 crores through a QIP, which was oversubscribed four and a half times, indicating strong investor interest."
+    },
+    "forward_guidance": {
+      "score": 0.927,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.927,
+        "positive": 0.9361,
+        "negative": 0.0092,
+        "neutral": 0.0547,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism for the future, expecting 'a much better performance in Quarter 3' and projecting '12% to 14% growth across segments.' The bank's corporate credit pipeline is robust, with '7 lakh crores' in the pipeline, half of which is already sanctioned. They anticipate 'further acceleration in the second half of the year' for segments like Xpress credit and home loans. The language used was cautiously optimistic, with expectations of 'reaching 10% corporate credit growth in the next two quarters.' The bank is also preparing to launch 'YONO 2.0,' which is expected to enhance digital capabilities."
+    },
+    "risk_language": {
+      "score": -0.8783,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.8783,
+        "positive": 0.0354,
+        "negative": 0.9138,
+        "neutral": 0.0508,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks and challenges, including a '50% drop in treasury profit' and 'falling short in recovery and upgradation numbers.' Management acknowledged the impact of 'volatile global commodity markets' and 'potential spillovers from trade disruptions.' There was also mention of 'seasonality in miscellaneous operating expenses' and the impact of 'large payments done by government entities.' Despite these challenges, management remained focused on 'robust risk management' and maintaining 'stable asset quality.' The tone was forthright, acknowledging the challenges while outlining strategies to mitigate them."
+    },
+    "investor_confidence": {
+      "score": 0.7931,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7931,
+        "positive": 0.8042,
+        "negative": 0.0111,
+        "neutral": 0.1847,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call. They addressed analyst questions directly, providing detailed explanations for financial figures and strategic initiatives. The successful Rs 25,000 crores QIP, which was 'oversubscribed four and a half times,' was highlighted as a testament to investor confidence. Management emphasized their commitment to 'rewarding trust with sustainable returns' and outlined strategic anchors such as 'institutionalization at scale' and 'liability franchise strength.' The overall tone was one of clarity and conviction, with management expressing confidence in their strategic direction."
+    }
+  },
+  "key_positive_drivers": [
+    "7.1% credit growth",
+    "Industry-leading credit growth",
+    "7 lakh crores corporate credit pipeline",
+    "Successful Rs 25,000 crores QIP",
+    "Launch of YONO 2.0",
+    "Improved domestic NIMs by 7 basis points"
+  ],
+  "key_negative_drivers": [
+    "50% drop in treasury profit",
+    "Fall in recovery and upgradation numbers",
+    "Seasonality in miscellaneous operating expenses",
+    "Volatile global commodity markets",
+    "Potential spillovers from trade disruptions"
+  ],
+  "notable_phrases": [
+    "Good 7.1% credit growth",
+    "Industry-leading credit growth at SBI scale",
+    "50% drop in treasury profit",
+    "Fall in recovery and upgradation numbers",
+    "Much better performance in Quarter 3",
+    "12% to 14% growth across segments",
+    "Oversubscribed four and a half times",
+    "Robust risk management"
+  ],
+  "chain_of_thought": "The financial performance showed mixed results with strong credit growth but challenges in treasury profits and recoveries. Forward guidance was cautiously optimistic with expectations of improved performance and growth in key segments. Risks were acknowledged, particularly in treasury profits and global market volatility, but management outlined strategies to address them. Investor confidence was bolstered by a successful QIP and clear communication of strategic initiatives, leading to a cautiously bullish overall tone."
+}

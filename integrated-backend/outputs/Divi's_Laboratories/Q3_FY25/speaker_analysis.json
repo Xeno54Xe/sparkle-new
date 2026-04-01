@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring that participants were aware of the logistics and the format of the session. They maintained a neutral tone throughout, focusing on the procedural aspects of the call. The moderator also managed the transition between speakers and the Q&A session, ensuring a smooth flow of the event.",
+      "sentiment_score": 0.0119,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0119,
+        "positive": 0.0342,
+        "negative": 0.0223,
+        "neutral": 0.9435,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. Satish Choudhury",
+      "role": "Company Secretary and Chief Investor Relations Officer",
+      "tone": "Neutral",
+      "key_topics": [
+        "Earnings call introduction",
+        "Financial results announcement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "M. Satish Choudhury opened the earnings call by introducing the management team and outlining the agenda. He provided a neutral overview of the financial results for the quarter and nine months ended December 31, 2024. His role was primarily to set the stage for the detailed presentations by other management members, ensuring that all procedural aspects were covered.",
+      "sentiment_score": 0.0458,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0458,
+        "positive": 0.0598,
+        "negative": 0.014,
+        "neutral": 0.9263,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Kiran S. Divi",
+      "role": "Whole-Time Director and Chief Executive Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Company performance",
+        "Growth strategy",
+        "Custom synthesis",
+        "Generic business"
+      ],
+      "direct_answers": [
+        "Contrast media developments",
+        "Custom synthesis opportunities"
+      ],
+      "dodged_or_vague": [
+        "Milestones for new projects",
+        "Challenges in Europe and US capacity"
+      ],
+      "summary": "Dr. Kiran S. Divi expressed confidence in Divi's Laboratories' performance and growth strategy. He highlighted the company's steady growth in revenue and operations, driven by opportunities in the generic and CDMO segments. Dr. Divi emphasized the dynamic nature of the custom synthesis business and the company's strong customer relationships. While he provided direct answers regarding contrast media developments and custom synthesis opportunities, he was vague about specific milestones for new projects and challenges in expanding capacity in Europe and the US.",
+      "sentiment_score": 0.9273,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9273,
+        "positive": 0.9375,
+        "negative": 0.0102,
+        "neutral": 0.0523,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nilima Prasad Divi",
+      "role": "Whole-Time Director (Commercial)",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Operational efficiency",
+        "Market conditions"
+      ],
+      "direct_answers": [
+        "Y-o-Y growth and margins",
+        "Tariff risks"
+      ],
+      "dodged_or_vague": [
+        "Split of generic to custom synthesis"
+      ],
+      "summary": "Nilima Prasad Divi provided a cautious overview of Divi's Laboratories' financial and operational performance. She highlighted the commencement of operations at the Kakinada facility as a significant milestone in the company's expansion strategy. While she addressed questions about year-on-year growth and potential tariff risks, she was vague about the split between generic and custom synthesis segments. Her cautious tone reflected an awareness of market conditions and the need for strategic planning.",
+      "sentiment_score": 0.9149,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9149,
+        "positive": 0.9244,
+        "negative": 0.0095,
+        "neutral": 0.0661,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: the Moderator, M. Satish Choudhury, Dr. Kiran S. Divi, and Nilima Prasad Divi. Each speaker's key statements are extracted to capture their contributions and tone. The Moderator's role is procedural, while M. Satish Choudhury introduces the call and sets the agenda. Dr. Kiran S. Divi speaks confidently about the company's growth and strategy, providing direct answers to some questions but being vague on others. Nilima Prasad Divi takes a cautious tone, focusing on financial performance and operational efficiency, addressing some questions directly while being vague on others. The JSON structure captures these insights for further analysis.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

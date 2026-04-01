@@ -1,0 +1,152 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring smooth transitions between speakers and managing the question-and-answer session. They maintained a neutral tone throughout, focusing on logistics and ensuring the call proceeded without interruptions. The moderator concluded the call by thanking participants and officially ending the session.",
+      "sentiment_score": 0.0169,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0169,
+        "positive": 0.0382,
+        "negative": 0.0213,
+        "neutral": 0.9404,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "C. K. Venkataraman",
+      "role": "Managing Director, Titan Company Limited",
+      "tone": "confident",
+      "key_topics": [
+        "satisfying quarter",
+        "business performance",
+        "future outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "C. K. Venkataraman opened and closed the earnings call with a confident tone, highlighting a satisfying quarter for Titan Company. He briefly mentioned the positive performance across various segments and subsidiaries, setting a positive tone for the call. His remarks were concise, and he did not directly engage in the Q&A session, leaving detailed responses to other management members.",
+      "sentiment_score": 0.2854,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2854,
+        "positive": 0.2986,
+        "negative": 0.0132,
+        "neutral": 0.6882,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ajoy Chawla",
+      "role": "CEO, Jewellery Division",
+      "tone": "cautious",
+      "key_topics": [
+        "jewellery market share",
+        "growth strategy",
+        "margin guidance"
+      ],
+      "direct_answers": [
+        "Devanshu Bansal",
+        "Avi Mehta"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ajoy Chawla provided a cautious outlook on the jewellery segment, acknowledging the challenges posed by a high base effect and external uncertainties affecting gold prices. He emphasized the company's strategic focus on maintaining market share through competitive pricing and product innovation. Chawla addressed questions about market share dynamics and margin strategies, highlighting a geography-led approach to growth. He assured that Titan is not compromising on growth investments to maintain margins, indicating a balanced approach to market competition.",
+      "sentiment_score": 0.1998,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1998,
+        "positive": 0.2438,
+        "negative": 0.0441,
+        "neutral": 0.7121,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Ashok Sonthalia",
+      "role": "Chief Financial Officer",
+      "tone": "defensive",
+      "key_topics": [
+        "financial performance",
+        "one-time benefits",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "Devanshu Bansal"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashok Sonthalia adopted a defensive tone while explaining the financial performance, particularly the one-time benefits that impacted the quarter's results. He detailed the INR 100 crores benefit split between jewellery and watches, attributing it to inventory valuation and hedging gains. Sonthalia clarified that these benefits are expected to reverse in the upcoming quarters, maintaining the company's margin guidance. His responses were direct, addressing concerns about the sustainability of current margins and the impact of one-time financial adjustments.",
+      "sentiment_score": 0.2249,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2249,
+        "positive": 0.2913,
+        "negative": 0.0664,
+        "neutral": 0.6423,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Suparna Mitra",
+      "role": "CEO, Watches & Wearables Division",
+      "tone": "optimistic",
+      "key_topics": [
+        "watches division performance",
+        "growth sustainability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Suparna Mitra expressed optimism about the performance of the watches division, attributing the success to strategic initiatives in premiumization and mass customization. She highlighted the exceptional growth across various channels, including retail and e-commerce. Mitra conveyed confidence in the sustainability of this growth, although she acknowledged the exceptional nature of the quarter. Her remarks suggested a positive outlook for the upcoming quarters, with a focus on maintaining the momentum built in Q1.",
+      "sentiment_score": 0.8618,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8618,
+        "positive": 0.8752,
+        "negative": 0.0134,
+        "neutral": 0.1114,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis began by identifying each speaker and their respective roles in the earnings call. Key statements were extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their language and context. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

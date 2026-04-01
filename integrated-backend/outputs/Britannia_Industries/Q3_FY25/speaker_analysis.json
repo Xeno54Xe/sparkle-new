@@ -1,0 +1,133 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Rakshit Hargave",
+      "role": "CEO and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "strategic priorities",
+        "brand investment",
+        "market share",
+        "innovation"
+      ],
+      "direct_answers": [
+        "Yes. So Arnab, yes. So let me answer your questions in the sequence that you asked. So yes, against national players, we are holding shares, in fact, over a 2-year period, we've actually gained share over national players."
+      ],
+      "dodged_or_vague": [
+        "So Mihir, we know that the margins that we've had are very good and a lot of factors are at the moment favorable. So you likely said that the commodity prices are stable and maybe on the lower side. So while we won't want to make any future forward-looking commitments."
+      ],
+      "summary": "Rakshit Hargave, in his first call as CEO, presented a confident overview of Britannia's financial performance, highlighting robust growth in revenue and profit. He emphasized strategic priorities such as brand investment, innovation, and combating regional competition. Hargave was optimistic about commodity price stability and the company's ability to leverage its sales and distribution model. While he provided direct answers regarding market share, he was cautious about making forward-looking commitments on margins.",
+      "sentiment_score": 0.0312,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0312,
+        "positive": 0.172,
+        "negative": 0.1408,
+        "neutral": 0.6873,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "N. Venkataraman",
+      "role": "Executive Director and CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "financial results",
+        "commodity prices",
+        "investment strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Mihir, we don't give forward-looking guidance, yes."
+      ],
+      "summary": "N. Venkataraman, the CFO, maintained a neutral tone throughout the call, focusing on the financial results and commodity price trends. He refrained from providing forward-looking guidance but noted favorable conditions for flour prices and a decrease in RPO volatility. Venkataraman's responses were generally factual, with a tendency to avoid speculative statements about future financial performance.",
+      "sentiment_score": 0.0581,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0581,
+        "positive": 0.3839,
+        "negative": 0.3257,
+        "neutral": 0.2904,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vipin Kataria",
+      "role": "Chief Commercial Officer, Sales and Replenishment",
+      "tone": "confident",
+      "key_topics": [
+        "e-commerce",
+        "sales strategy",
+        "market trends"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vipin Kataria, the Chief Commercial Officer, exuded confidence as he discussed the company's sales strategy, particularly in the e-commerce and quick commerce sectors. He highlighted the acceleration in indulgence and impulse categories, attributing it to instant gratification and occasion-led consumption. Kataria's insights were focused on leveraging market trends to enhance Britannia's sales performance.",
+      "sentiment_score": 0.0676,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0676,
+        "positive": 0.0882,
+        "negative": 0.0206,
+        "neutral": 0.8912,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Yash",
+      "role": "Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Yash from the Investor Relations team provided a neutral introduction to the earnings call, outlining the agenda and introducing the key management participants. His role was primarily logistical, ensuring the smooth progression of the call and setting the stage for the management's presentations.",
+      "sentiment_score": 0.0361,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0361,
+        "positive": 0.0546,
+        "negative": 0.0185,
+        "neutral": 0.9269,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

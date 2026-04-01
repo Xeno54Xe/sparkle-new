@@ -1,0 +1,179 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mumuksh Mandlesha",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mumuksh Mandlesha served as the moderator for the Hero MotoCorp earnings call, providing a neutral and professional introduction to the event. He welcomed participants and outlined the logistics of the call, ensuring a smooth transition to the management team. His role was primarily to facilitate the flow of the conference call.",
+      "sentiment_score": 0.3471,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3471,
+        "positive": 0.3577,
+        "negative": 0.0107,
+        "neutral": 0.6316,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Khurana",
+      "role": "Head of Investor Relations & Risk",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction of management team",
+        "call structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Umang Khurana, as the Head of Investor Relations & Risk, introduced the senior management team present on the call and outlined the structure of the conference. His tone was neutral, focusing on ensuring that participants were aware of the agenda and the key speakers who would be addressing the call.",
+      "sentiment_score": 0.0238,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0238,
+        "positive": 0.042,
+        "negative": 0.0182,
+        "neutral": 0.9398,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "V.S. Kasbekar",
+      "role": "Executive Director and Chief Technology Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "company achievements",
+        "economic outlook",
+        "industry performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "V.S. Kasbekar opened the call with an optimistic tone, highlighting Hero MotoCorp's achievement as the world's largest motorcycle and scooter manufacturer for the 25th consecutive year. He acknowledged the challenges posed by geopolitical tensions and commodity price volatility but emphasized the positive economic outlook for India. Kasbekar expressed gratitude to stakeholders and set a positive tone for the company's future prospects.",
+      "sentiment_score": 0.8701,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8701,
+        "positive": 0.8812,
+        "negative": 0.0112,
+        "neutral": 0.1076,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Harshavardhan Chitale",
+      "role": "Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "leadership transition",
+        "growth strategy",
+        "market opportunities"
+      ],
+      "direct_answers": [
+        "Kapil Singh's question on strategy and market share"
+      ],
+      "dodged_or_vague": [
+        "Amyn Pirani's question on exports"
+      ],
+      "summary": "Harshavardhan Chitale, the CEO, conveyed a confident tone as he discussed his recent transition into the leadership role. He emphasized the strong relationships and trust Hero MotoCorp has built across its value chain, which he believes are key to the company's leadership. Chitale outlined the company's growth strategy, focusing on underrepresented categories like scooters and premium motorcycles. He directly addressed questions about strategy but was less specific about export details.",
+      "sentiment_score": 0.3155,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3155,
+        "positive": 0.3259,
+        "negative": 0.0103,
+        "neutral": 0.6638,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Anand",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth metrics",
+        "market share"
+      ],
+      "direct_answers": [
+        "Gunjan's question on F27 growth outlook"
+      ],
+      "dodged_or_vague": [
+        "Kumar Rakesh's question on LEAP savings"
+      ],
+      "summary": "Vivek Anand, the CFO, presented a confident overview of Hero MotoCorp's financial performance, highlighting record quarterly revenue and significant growth in EBITDA and PAT. He discussed the company's strategic focus on cash management and market share expansion. Anand provided direct answers regarding future growth outlook but was less clear on specific cost-saving measures when questioned.",
+      "sentiment_score": 0.9302,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9302,
+        "positive": 0.9454,
+        "negative": 0.0153,
+        "neutral": 0.0393,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kausalya Nandakumar",
+      "role": "EV Business Chief Business Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "EV market performance",
+        "battery-as-a-service"
+      ],
+      "direct_answers": [
+        "Raghunandhan's question on VIDA sales and capacity"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Kausalya Nandakumar expressed optimism about the EV business, particularly the success of the VX2 model. She highlighted the strong market response and the company's efforts to enhance supply capabilities. Nandakumar also discussed the potential of battery-as-a-service to increase EV affordability, providing clear answers to questions about sales and capacity expansion.",
+      "sentiment_score": 0.9272,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9272,
+        "positive": 0.9376,
+        "negative": 0.0103,
+        "neutral": 0.0521,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies each speaker and their role, extracts key statements, and assesses their tone. Management speakers are evaluated on their responses to analyst questions, noting direct answers and any deflections. The narrative summaries capture each speaker's contribution, stance, and key messages, providing a comprehensive overview of the earnings call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

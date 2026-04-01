@@ -1,0 +1,79 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 50.5,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 40.0,
+    "key_themes": [
+      "environmental delays",
+      "construction impact"
+    ],
+    "notable_excerpts": [
+      "Gurugram would be more like Q2, because it is still, because of all these issues with the environmental related delays, which we could not complete our construction."
+    ]
+  },
+  "social": {
+    "score": 60.0,
+    "key_themes": [
+      "patient-centric strategy",
+      "clinical differentiation",
+      "community engagement"
+    ],
+    "notable_excerpts": [
+      "These results are a reinforcement of our patient-centric strategy.",
+      "We value this trust and engagement and we will continue to sharpen our clinical differentiation, expand our capabilities across high-acuity specialties."
+    ]
+  },
+  "governance": {
+    "score": 50.0,
+    "key_themes": [
+      "regulatory integration",
+      "transparency",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "We have also made progress with respect to the regulatory integration process for the composite scheme of Keimed merger and demerger of Apollo HealthCo.",
+      "Before we begin, I would like to mention that some of the statements made in today's discussion may be forward-looking in nature and may involve risks and uncertainties."
+    ]
+  },
+  "chain_of_thought": "The earnings call provided limited information on environmental initiatives, with a mention of delays due to environmental issues. Social aspects were more prominent, focusing on patient-centric strategies and clinical differentiation. Governance was addressed through discussions on regulatory integration and transparency, but lacked depth in specific governance practices.",
+  "strengths": [
+    "Strong patient-centric strategy",
+    "Focus on clinical differentiation"
+  ],
+  "weaknesses": [
+    "Limited environmental disclosures",
+    "Lack of specific governance practices"
+  ],
+  "red_flags": [
+    "Environmental delays impacting construction"
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

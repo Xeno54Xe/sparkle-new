@@ -1,0 +1,92 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mohit Joshi",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "Q1 progress",
+        "revenue growth",
+        "margin expansion",
+        "strategic initiatives",
+        "talent development",
+        "AI strategy"
+      ],
+      "direct_answers": [
+        "Ankur Rudra's question on demand environment and revenue momentum",
+        "Sudheer GV's question on Telecom demand stabilization"
+      ],
+      "dodged_or_vague": [
+        "Sandeep Shah's question on specific growth guidance for FY '26"
+      ],
+      "summary": "Mohit Joshi presented a confident outlook for Tech Mahindra, highlighting progress in Q1 FY26 with a reported revenue of $1,564 million and a 0.4% year-on-year growth. He emphasized the company's strategic focus on leveraging relationships in the Communications vertical and achieving a 44% increase in TCV. Joshi was optimistic about the company's margin trajectory and future revenue momentum, despite acknowledging a dynamic and uncertain environment. He directly addressed questions about demand and Telecom stabilization but was vague about specific growth guidance for FY '26.",
+      "sentiment_score": 0.9332,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9332,
+        "positive": 0.9568,
+        "negative": 0.0235,
+        "neutral": 0.0197,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rohit Anand",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "revenue details",
+        "EBIT growth",
+        "currency impact"
+      ],
+      "direct_answers": [
+        "Ashwin Mehta's question on receivables bump up",
+        "Abhishek Kumar's question on BPM deals in high-tech"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rohit Anand provided a detailed financial overview for Q1 FY26, reporting a revenue of $1,564 million with a 1% sequential growth. He noted a decline in constant currency terms but highlighted a significant EBIT growth of 30% in USD terms. Anand addressed questions on receivables and BPM deals directly, maintaining a neutral tone throughout his presentation. His focus was on explaining the financial metrics and the impact of currency fluctuations on the company's performance.",
+      "sentiment_score": -0.0508,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0508,
+        "positive": 0.45,
+        "negative": 0.5007,
+        "neutral": 0.0493,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 2,
+  "chain_of_thought": "The transcript reveals two primary speakers: Mohit Joshi, the CEO, and Rohit Anand, the CFO. Mohit Joshi's statements focus on strategic progress, revenue growth, and future outlook, with a confident tone. He directly answers questions about demand and Telecom but is vague on specific growth guidance. Rohit Anand provides a financial breakdown, maintaining a neutral tone, and directly addresses questions on financial specifics. The analysis captures their key messages, tone, and response to analyst questions.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could ask questions and reminding them that the call was being recorded. The tone was neutral, focusing on logistics and ensuring the smooth operation of the call.",
+      "sentiment_score": 0.0131,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0131,
+        "positive": 0.0351,
+        "negative": 0.022,
+        "neutral": 0.9429,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srinivasan Vaidyanathan",
+      "role": "Chief Financial Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Liquidity management",
+        "Provisioning"
+      ],
+      "direct_answers": [
+        "Answered questions on liquidity and provisioning processes."
+      ],
+      "dodged_or_vague": [
+        "Did not provide specific guidance on future outlook."
+      ],
+      "summary": "Srinivasan Vaidyanathan, the CFO, provided insights into the bank's financial performance and liquidity management. He maintained a cautious tone, emphasizing controlled operations and productivity. While he answered questions on liquidity and provisioning, he avoided giving specific future guidance. His responses highlighted the bank's strategic focus on investments and maintaining a robust financial position.",
+      "sentiment_score": 0.0556,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0556,
+        "positive": 0.0689,
+        "negative": 0.0132,
+        "neutral": 0.9179,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sashidhar Jagdishan",
+      "role": "Chief Executive Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Macro environment",
+        "Growth outlook",
+        "Credit performance"
+      ],
+      "direct_answers": [
+        "Addressed questions on macroeconomic challenges and growth outlook."
+      ],
+      "dodged_or_vague": [
+        "Did not specify exact growth targets or timelines."
+      ],
+      "summary": "CEO Sashidhar Jagdishan addressed the challenging macroeconomic environment, highlighting issues such as tight liquidity and currency volatility. Despite these challenges, he noted positive signs like increased rural demand and government spending. His tone was cautious, reflecting the uncertainties in the market. While he provided a general outlook on growth, he avoided committing to specific targets or timelines, focusing instead on the bank's strategic positioning and resilience.",
+      "sentiment_score": 0.7836,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7836,
+        "positive": 0.8708,
+        "negative": 0.0872,
+        "neutral": 0.042,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bhavin Lakhpatwala",
+      "role": "Senior Executive Vice President",
+      "tone": "Neutral",
+      "key_topics": [
+        "Customer segments",
+        "Risk management"
+      ],
+      "direct_answers": [
+        "Discussed customer segment strategy and risk management."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Bhavin Lakhpatwala provided insights into the bank's approach to customer segmentation and risk management. His tone was neutral, focusing on the bank's historical comfort with certain segments and the lower risk-weighted density. He explained the bank's strategy in managing risk across different customer segments, indicating a consistent approach to maintaining stability.",
+      "sentiment_score": 0.1436,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1436,
+        "positive": 0.2048,
+        "negative": 0.0612,
+        "neutral": 0.734,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhishek Murarka",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Emerging corporate group",
+        "Loan book growth"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Murarka, an analyst, posed questions regarding the stability and growth prospects of the emerging corporate group's loan book. His tone was inquisitive, seeking qualitative insights into the factors affecting growth, such as risk and profitability. His questions aimed to understand the bank's strategy and outlook for this segment.",
+      "sentiment_score": 0.0861,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0861,
+        "positive": 0.1072,
+        "negative": 0.0211,
+        "neutral": 0.8717,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Suresh Ganapathy",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Credit costs",
+        "Merger synergies"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Suresh Ganapathy, an analyst, inquired about the increase in credit costs and the lack of change in margins and operating expenses post-merger. His tone was inquisitive, seeking detailed explanations for the observed financial metrics. His questions aimed to uncover the underlying factors affecting the bank's financial performance and the expected synergies from the merger.",
+      "sentiment_score": 0.0869,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0869,
+        "positive": 0.1532,
+        "negative": 0.0663,
+        "neutral": 0.7806,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies each speaker and their role, extracts key statements, and assesses their tone. Management speakers are evaluated on their responses to analyst questions, noting any direct answers or vague responses. The narrative summaries capture each speaker's contribution, stance, and key messages, providing a comprehensive overview of the earnings call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

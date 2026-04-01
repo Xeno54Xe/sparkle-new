@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.2698,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.8566,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.8566,
+        "positive": 0.0644,
+        "negative": 0.9209,
+        "neutral": 0.0147,
+        "chunks_scored": 1
+      },
+      "text": "Infosys reported a revenue growth of 6.1% in Rupee terms for FY'25, with a 4.2% increase in constant currency terms. The operating margin for the year improved by 50 basis points to 21.1%, despite a sequential decline of 30 basis points in Q4. The company achieved an 8.3% growth in EPS on a normalized basis. Free cash flow reached a record high of $4.1 billion, representing 129% of net profit, and headcount increased by approximately 6,000 year-on-year. However, Q4 saw a sequential revenue decline of 3.5% due to seasonal weakness and a reduction in third-party costs."
+    },
+    "forward_guidance": {
+      "score": 0.5706,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.5706,
+        "positive": 0.5916,
+        "negative": 0.0211,
+        "neutral": 0.3873,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautious outlook for FY'26, with revenue growth guidance set at 0% to 3% in constant currency terms, reflecting the uncertain environment. Margin guidance was set between 20% and 22%. The company plans to continue its strategic expansion and acquisitions, particularly in AI, cloud, and digital sectors. Despite the uncertainty, Infosys remains committed to executing plans with agility and maintaining a close watch on changes in the economic environment."
+    },
+    "risk_language": {
+      "score": 0.8836,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8836,
+        "positive": 0.9187,
+        "negative": 0.0351,
+        "neutral": 0.0462,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including uncertainties related to tariffs, geopolitical tensions, and economic conditions. Management acknowledged the potential impact of these factors on client budgets and decision-making cycles, particularly in discretionary spending and large deals. There was a focus on cost pressures and consolidation as potential challenges. Despite these headwinds, management expressed confidence in their ability to navigate the uncertain environment."
+    },
+    "investor_confidence": {
+      "score": 0.8946,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8946,
+        "positive": 0.906,
+        "negative": 0.0113,
+        "neutral": 0.0827,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of their guidance assumptions. They emphasized their strategic focus on AI and digital transformation, highlighting their leading position in AI agents. The commitment to hiring 20,000 freshers and maintaining wage increments as planned further demonstrated confidence in their operational capabilities. Overall, management conveyed a sense of preparedness to adapt to changing market conditions."
+    }
+  },
+  "key_positive_drivers": [
+    "Record high free cash flow of $4.1 billion",
+    "Operating margin improvement by 50 basis points",
+    "Strong deal pipeline with $11.6 billion in large deals",
+    "Strategic expansion in AI, cloud, and digital sectors",
+    "Contained attrition rate at 14.1%"
+  ],
+  "key_negative_drivers": [
+    "Sequential revenue decline of 3.5% in Q4",
+    "Uncertain economic environment impacting guidance",
+    "Potential impact of tariffs and geopolitical tensions",
+    "Pressure on discretionary spending and large deals",
+    "Margin pressure from compensation-related costs"
+  ],
+  "notable_phrases": [
+    "Uncertain environment",
+    "Guidance for growth is 0% to 3%",
+    "Operating margin improved 50 basis points",
+    "Record high free cash flow",
+    "Strategic expansion in AI",
+    "Focus on cost takeout and consolidation",
+    "Mega deals pipeline",
+    "Prepared to adapt to changing market conditions"
+  ],
+  "chain_of_thought": "Infosys reported solid financial performance with revenue and margin growth, despite a sequential decline in Q4. The guidance for FY'26 reflects caution due to economic uncertainties, with a focus on strategic expansion in AI and digital sectors. Management addressed risks related to tariffs and geopolitical tensions, while expressing confidence in their ability to adapt. The overall tone of the call was cautiously bullish, with a balanced view of opportunities and challenges."
+}

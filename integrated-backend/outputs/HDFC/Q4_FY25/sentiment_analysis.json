@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.3328,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.6225,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.6225,
+        "positive": 0.1614,
+        "negative": 0.7839,
+        "neutral": 0.0547,
+        "chunks_scored": 1
+      },
+      "text": "Management reported a loan growth of 7.7% for FY '25, which was lower than the previous year, attributing this to industry-wide loan growth decline and unfavorable pricing. The sequential momentum growth for the March quarter '25 was approximately 3.3%, annualizing to about 12% or 13%. The net interest margin (NIM) operated in a narrow band of 3.4 to 3.5, with a core basis of 3.46 in the recent quarter. The cost of funds remained stable at about 4.9%, with a borrowing mix reduction from 21% in December '23 to 14% currently. Asset quality was highlighted as pristine, and the bank's deposits grew faster than the system, supporting a stable financial performance."
+    },
+    "forward_guidance": {
+      "score": 0.9113,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9113,
+        "positive": 0.9265,
+        "negative": 0.0152,
+        "neutral": 0.0583,
+        "chunks_scored": 1
+      },
+      "text": "For FY '26, management expressed a commitment to grow at the market rate, subject to appropriate pricing. They expect GDP growth to be supported by rural spending, consumer demand, and investment activity. The credit deposit ratio is expected to adjust less steeply, supporting loan growth. Management is optimistic about reaping benefits from technological investments over the coming year. They remain cautious about the global macroeconomic outlook due to trade tariffs and inflation volatility but are prepared to adapt to market needs."
+    },
+    "risk_language": {
+      "score": 0.3347,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.3347,
+        "positive": 0.3709,
+        "negative": 0.0362,
+        "neutral": 0.5929,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged the global macroeconomic uncertainty due to trade tariffs and inflation, which could impact growth. They noted competitive pressures in corporate and SME loans, with low pricing from public sector institutions. The call addressed the need to manage the cost of funds amidst customer preference for time deposits. Management was forthright about the challenges but emphasized their strategy to maintain quality and manage risks effectively."
+    },
+    "investor_confidence": {
+      "score": 0.8962,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8962,
+        "positive": 0.9069,
+        "negative": 0.0108,
+        "neutral": 0.0823,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing analyst questions directly. They emphasized their strategic approach to managing margins and growth, highlighting their stable NIM and cost of funds. The leadership transition was discussed positively, with confidence in the depth of management. Management's commitment to technological advancements and maintaining asset quality reinforced their credibility and investor confidence."
+    }
+  },
+  "key_positive_drivers": [
+    "Stable net interest margin",
+    "Faster deposit growth than the system",
+    "Pristine asset quality",
+    "Technological investments",
+    "Commitment to market rate growth"
+  ],
+  "key_negative_drivers": [
+    "Global macroeconomic uncertainty",
+    "Competitive pressures in loan pricing",
+    "Customer preference for time deposits",
+    "Low pricing from public sector institutions"
+  ],
+  "notable_phrases": [
+    "Loan growth in this year that went by, FY '25, will be lower",
+    "Sequential momentum growth was about 3.3%",
+    "NIM operated in a very narrow band, 3.4 to 3.5",
+    "Cost of funds is also very stable at about 4.9",
+    "Asset quality remains pristine",
+    "We remain watchful",
+    "We continue to be optimistic",
+    "We are well placed to grow"
+  ],
+  "chain_of_thought": "The financial performance showed stable margins and asset quality, with slower loan growth due to industry conditions. Forward guidance was optimistic about growth and technological benefits but cautious about global uncertainties. Risk language acknowledged macroeconomic challenges and competitive pressures. Investor confidence was reinforced by management's strategic clarity and commitment to growth and quality."
+}

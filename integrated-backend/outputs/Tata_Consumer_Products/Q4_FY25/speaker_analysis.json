@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Dhiraj Mistry",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference hosting"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Dhiraj Mistry served as the moderator for the earnings call, introducing the session and thanking Tata Consumer Products for the opportunity to host the call. His role was primarily to facilitate the transition to the main speakers, maintaining a neutral tone throughout his brief introduction.",
+      "sentiment_score": 0.3166,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3166,
+        "positive": 0.3272,
+        "negative": 0.0106,
+        "neutral": 0.6622,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nidhi Verma",
+      "role": "Head of Investor Relations and Corporate Communications",
+      "tone": "neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhi Verma opened the call by welcoming participants and introducing the key management team present. She outlined the structure of the call, indicating that the management would present key highlights before opening the floor for questions. Her tone was neutral, focusing on setting the stage for the detailed presentations by the management team.",
+      "sentiment_score": 0.0484,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0484,
+        "positive": 0.0638,
+        "negative": 0.0154,
+        "neutral": 0.9208,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sunil D'Souza",
+      "role": "Managing Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "Revenue growth",
+        "Organic growth",
+        "UVG declaration",
+        "Strategic priorities"
+      ],
+      "direct_answers": [
+        "Sumant Kumar's question on geographic expansion",
+        "Mihir Shah's question on employee costs"
+      ],
+      "dodged_or_vague": [
+        "Sheela Rathi's question on stable state UVG growth"
+      ],
+      "summary": "Sunil D'Souza provided a comprehensive overview of Tata Consumer Products' performance, highlighting a 17% revenue growth and a 12% organic growth. He confidently introduced the new UVG metric to aid in understanding volume growth across their diverse portfolio. Sunil directly addressed questions regarding geographic expansion and employee costs, but was less specific about stable state UVG growth, indicating a need for further analysis. His tone was confident, reflecting a positive outlook on the company's strategic direction and performance.",
+      "sentiment_score": 0.546,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.546,
+        "positive": 0.5716,
+        "negative": 0.0256,
+        "neutral": 0.4028,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Goenka",
+      "role": "Group CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "Financial performance",
+        "EBITDA margins",
+        "Cost impact"
+      ],
+      "direct_answers": [
+        "Latika's question on operating margin"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashish Goenka provided detailed financial insights, noting a strong revenue growth but acknowledging the impact of tea costs on EBITDA margins. He maintained a neutral tone, focusing on the numbers and their implications. Ashish directly answered questions regarding operating margins, providing clarity on the financial adjustments and future expectations.",
+      "sentiment_score": 0.5031,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5031,
+        "positive": 0.7206,
+        "negative": 0.2174,
+        "neutral": 0.062,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted to capture the essence of their contributions, focusing on specific language and numbers for financial analysis. Each speaker's tone was assessed based on their statements and interactions during the call. Management speakers were further analyzed for their responsiveness to analyst questions, noting any direct answers or vague responses. This structured approach ensured a comprehensive understanding of each speaker's stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

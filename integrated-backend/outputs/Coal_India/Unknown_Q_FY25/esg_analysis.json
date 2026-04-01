@@ -1,0 +1,82 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 51.5,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 40.0,
+    "key_themes": [
+      "coal import reduction",
+      "coal gasification",
+      "energy supply"
+    ],
+    "notable_excerpts": [
+      "Today's newspapers, they have reported that from April to February of the last financial year, the imports have reduced by around 10%.",
+      "Shivam Agarwal: Sometime ago you had given the guidance of capex of 80,000 crores previously, I mean, two quarters ago and today's presentation that was released yesterday, in coal gasification, it's coming around 37-38 thousand-odd crores."
+    ]
+  },
+  "social": {
+    "score": 50.0,
+    "key_themes": [
+      "employee management",
+      "community supply",
+      "training"
+    ],
+    "notable_excerpts": [
+      "Mukesh Agrawal: Presently we have around 2.20 lacs employee. On average, 12000 employees are superannuating every year. Against those, we are recruiting some 1000-1500 people through the market and the land acquisition process.",
+      "Yash Patel: So basically, what you mean to say is if there is demand in the e-auction and if you have committed your FSA supplies, you'll be supplying whatever you can up to 40% wherever."
+    ]
+  },
+  "governance": {
+    "score": 60.0,
+    "key_themes": [
+      "risk management",
+      "transparency",
+      "executive remuneration"
+    ],
+    "notable_excerpts": [
+      "Mukesh Agarwal: It will be taken call at the Board at an appropriate time. Let the wage revision should be finalized. Based on that, considering so many factors, Board will take the final call how much cost is to be revised, when it is to be revised.",
+      "Mukesh Agarwal: This is the settled case for which the accounting has been taken place. Others are in the pipeline at a different [inaudible]"
+    ]
+  },
+  "chain_of_thought": "The transcript reveals a focus on reducing coal imports and investing in coal gasification, indicating some environmental considerations. Social aspects are addressed through employee management and community supply commitments. Governance is highlighted by discussions on risk management and transparency, particularly in financial and operational decisions.",
+  "strengths": [
+    "Commitment to reducing coal imports",
+    "Investment in coal gasification",
+    "Employee management strategies"
+  ],
+  "weaknesses": [
+    "Limited discussion on renewable energy",
+    "Lack of specific diversity and inclusion initiatives"
+  ],
+  "red_flags": [
+    "Heavy reliance on coal with limited environmental initiatives"
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

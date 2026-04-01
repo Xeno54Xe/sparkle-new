@@ -1,0 +1,157 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Amitabh Chaudhry",
+      "role": "Managing Director & Chief Executive Officer, Axis Bank",
+      "tone": "confident",
+      "key_topics": [
+        "core-operating performance",
+        "deposit growth",
+        "risk calibration",
+        "balance sheet resilience",
+        "capital position"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amitabh Chaudhry opened the call with a confident overview of Axis Bank's performance, highlighting steady core-operating results and deposit growth surpassing industry averages. He emphasized the bank's focus on profitable, sustainable growth and internal risk calibration. Chaudhry noted the resilience of the balance sheet and a strengthening capital position, with specific improvements in core-operating profit and net interest margin. His tone was optimistic, reflecting confidence in the bank's strategic direction and execution capabilities.",
+      "sentiment_score": 0.941,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.941,
+        "positive": 0.9608,
+        "negative": 0.0198,
+        "neutral": 0.0194,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Puneet Sharma",
+      "role": "Chief Financial Officer, Axis Bank",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "capital and liquidity position",
+        "asset quality",
+        "provisioning policies"
+      ],
+      "direct_answers": [
+        "Chintan Joshi's question on retention of the MEB growth",
+        "Mahrukh Adajania's question on asset quality and provisioning policy"
+      ],
+      "dodged_or_vague": [
+        "Kunal Shah's question on FY '26 deposit growth guidance"
+      ],
+      "summary": "Puneet Sharma provided a detailed breakdown of Axis Bank's financial performance, focusing on operating metrics, capital, and liquidity positions. He maintained a cautious tone, particularly when discussing asset quality and provisioning policies, emphasizing the bank's conservative stance. Sharma directly addressed questions about MEB growth retention and asset quality impacts but avoided giving specific guidance on FY '26 deposit growth. His responses reflected a careful balance between highlighting achievements and managing expectations.",
+      "sentiment_score": 0.8644,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8644,
+        "positive": 0.8738,
+        "negative": 0.0095,
+        "neutral": 0.1167,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rajiv Anand",
+      "role": "Deputy Managing Director, Axis Bank",
+      "tone": "neutral",
+      "key_topics": [
+        "tariffs impact",
+        "risk weighting"
+      ],
+      "direct_answers": [
+        "Harsh Modi's question on tariffs and risk weighting"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rajiv Anand addressed concerns about the potential impact of tariffs on Axis Bank's portfolio, providing a neutral assessment that current impacts are negligible. He explained the bank's comprehensive analysis of tariffs across industries and their exposures. Anand's tone was measured and factual, focusing on the bank's preparedness and ongoing evaluation of external factors. His responses were direct, offering clarity on the bank's risk management strategies.",
+      "sentiment_score": 0.0323,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0323,
+        "positive": 0.066,
+        "negative": 0.0337,
+        "neutral": 0.9003,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Subrat Mohanty",
+      "role": "Executive Director, Axis Bank",
+      "tone": "confident",
+      "key_topics": [
+        "Citi integration",
+        "synergy benefits"
+      ],
+      "direct_answers": [
+        "Anand Swaminathan's question on Citi integration"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Subrat Mohanty confidently discussed the successful integration of Citi customers into Axis Bank's systems, highlighting that the synergy benefits exceeded initial plans. He detailed the structured approach taken over six quarters to achieve these outcomes. Mohanty's tone was optimistic, reflecting satisfaction with the integration process and its positive impact on the bank's operations. His response was direct and provided clear insights into the strategic benefits realized from the merger.",
+      "sentiment_score": 0.1504,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1504,
+        "positive": 0.163,
+        "negative": 0.0125,
+        "neutral": 0.8245,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring a smooth transition between speakers and managing the question-and-answer session. Their role was to maintain the flow of the call and provide logistical information to participants. The tone was neutral and professional, focusing on the procedural aspects of the call.",
+      "sentiment_score": 0.0121,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0121,
+        "positive": 0.0307,
+        "negative": 0.0186,
+        "neutral": 0.9507,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the conference call. Key statements are extracted to capture the essence of their contributions, focusing on specific language and forward-looking statements. The tone of each speaker is assessed based on their language and context. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, encapsulating their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

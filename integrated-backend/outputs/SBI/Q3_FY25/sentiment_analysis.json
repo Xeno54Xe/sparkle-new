@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.281,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.7005,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.7005,
+        "positive": 0.1334,
+        "negative": 0.8339,
+        "neutral": 0.0326,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q3 FY25 was marked by a net profit of Rs. 16,891 crores, up 84% YoY, demonstrating the bank's ability to operate profitably at scale. However, the operating profit decreased substantially from Rs. 29,294 crore in the last quarter to Rs. 23,551 crore, primarily due to losses on trading or revaluation of investments, including a 4000 crore forex loss. Despite this, the bank maintained a strong asset quality with a slippage ratio of 0.39% and a credit cost of 0.24%. The total deposits grew by 9.81% YoY to Rs. 52.29 trillion, with term deposits increasing by 13.47% YoY. The domestic credit growth was robust at 14.06% YoY, driven by significant growth in SME and corporate segments."
+    },
+    "forward_guidance": {
+      "score": 0.9321,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9321,
+        "positive": 0.9466,
+        "negative": 0.0144,
+        "neutral": 0.039,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving a credit growth of 14% to 16% and a deposit growth of 10% for the current fiscal year. They acknowledged a modification in deposit growth guidance from 11%-12% to 10%, citing market conditions. The bank plans to open 500 to 600 branches annually to enhance its presence in new areas. The language used was cautiously optimistic, with a focus on maintaining growth momentum and achieving an RoE over 15% through business cycles. The management also highlighted the potential for double-digit growth in retail personal loans, particularly in the Xpress credit segment, as digital lending processes stabilize."
+    },
+    "risk_language": {
+      "score": 0.1615,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.1615,
+        "positive": 0.2639,
+        "negative": 0.1025,
+        "neutral": 0.6336,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including over-leveraging concerns in the retail segment and the impact of forex losses on profitability. Management was forthright about the challenges, noting a conscious decision to slow down growth in certain areas to mitigate risks. The risk weight increase was attributed to investments, not credit, indicating a strategic decision to capitalize on growth opportunities. The management also discussed the potential impact of interest rate cuts on margins, indicating a proactive approach to managing financial risks. Overall, the tone was one of cautious risk management, with an emphasis on maintaining asset quality and capital adequacy."
+    },
+    "investor_confidence": {
+      "score": 0.8961,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8961,
+        "positive": 0.9062,
+        "negative": 0.0101,
+        "neutral": 0.0837,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial metrics and strategic decisions. They emphasized the bank's strong asset quality and capital adequacy, with a CAR of 13.03% and a CET-1 ratio of 10.99%. The management's commitment to maintaining a stable NIM and controlled operating expenses was evident, reinforcing investor confidence. The call concluded with an invitation for further questions, demonstrating openness and a willingness to engage with stakeholders. Overall, the management's communication was confident and credible, reinforcing trust in the bank's strategic direction."
+    }
+  },
+  "key_positive_drivers": [
+    "Net profit up 84% YoY",
+    "Strong asset quality with low slippage ratio",
+    "Robust domestic credit growth at 14.06% YoY",
+    "Plans to open 500 to 600 branches annually",
+    "Commitment to achieving RoE over 15%"
+  ],
+  "key_negative_drivers": [
+    "Substantial decrease in operating profit",
+    "Forex losses impacting profitability",
+    "Over-leveraging concerns in retail segment",
+    "Modified deposit growth guidance due to market conditions"
+  ],
+  "notable_phrases": [
+    "Net profit increases, so it will",
+    "Credit growth of 14% to 16% stands good",
+    "Forex income drop",
+    "Operating profit has tremendously gone down",
+    "Risk weight actually has increased",
+    "CASA ratio of 39.20%",
+    "Credit cost at 0.24%",
+    "RoA and RoE greater than 1% and 20% respectively"
+  ],
+  "chain_of_thought": "The earnings call reflected a cautiously bullish sentiment. Financial performance showed strong net profit growth but was offset by a decrease in operating profit due to forex losses. Forward guidance was optimistic, with management confident in achieving credit and deposit growth targets, albeit with adjusted expectations. Risk management was a key focus, with management addressing over-leveraging concerns and strategic investment decisions. Investor confidence was reinforced through transparent communication and a commitment to maintaining strong asset quality and capital adequacy."
+}

@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring a smooth transition between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on procedural aspects of the call. The moderator's role was crucial in keeping the call organized and on schedule.",
+      "sentiment_score": 0.0641,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0641,
+        "positive": 0.0767,
+        "negative": 0.0127,
+        "neutral": 0.9106,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Richa Periwal",
+      "role": "Head of Investor Relations",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Richa Periwal opened and closed the earnings call, providing a structured introduction and ensuring participants were aware of the agenda. She maintained a neutral tone, focusing on procedural details and ensuring compliance with legal and regulatory requirements. Her role was pivotal in setting the stage for the management's presentations and the subsequent Q&A session.",
+      "sentiment_score": 0.0295,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0295,
+        "positive": 0.0442,
+        "negative": 0.0147,
+        "neutral": 0.9411,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. V. Narasimham",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Revenue growth",
+        "EBITDA",
+        "R&D investments"
+      ],
+      "direct_answers": [
+        "Explained financial performance and revenue growth",
+        "Clarified gross margin changes"
+      ],
+      "dodged_or_vague": [
+        "Did not provide specific future guidance on cost management"
+      ],
+      "summary": "M. V. Narasimham provided a detailed and confident overview of Dr. Reddy's financial performance, highlighting record-high revenues and significant EBITDA growth. He emphasized the strategic acquisition of the NRT business and its contribution to revenue growth. While he addressed questions on financial metrics directly, he was less specific about future cost management strategies. His presentation underscored the company's strong financial health and strategic direction.",
+      "sentiment_score": 0.9391,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9391,
+        "positive": 0.9545,
+        "negative": 0.0153,
+        "neutral": 0.0302,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Erez Israeli",
+      "role": "Chief Executive Officer",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Business performance",
+        "Strategic growth areas",
+        "Regulatory readiness"
+      ],
+      "direct_answers": [
+        "Discussed strategic growth areas and regulatory readiness"
+      ],
+      "dodged_or_vague": [
+        "Did not specify exact impact of tariffs on future operations"
+      ],
+      "summary": "Erez Israeli conveyed an optimistic outlook for Dr. Reddy's, highlighting robust performance and strategic growth in Consumer Health, Innovation, and Biosimilars. He emphasized the company's readiness for regulatory challenges and its focus on operational efficiencies. While he addressed strategic initiatives and regulatory readiness, he was less specific about the potential impact of tariffs. His presentation reflected confidence in the company's strategic direction and future growth prospects.",
+      "sentiment_score": 0.9419,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9419,
+        "positive": 0.9563,
+        "negative": 0.0144,
+        "neutral": 0.0294,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted to capture the essence of each speaker's contribution, focusing on specific language and numbers for financial analysis. The tone of each speaker was assessed based on their language and presentation style. Management speakers were further analyzed for their responses to analyst questions, noting any direct answers or vague responses. This structured approach provided a comprehensive understanding of each speaker's stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

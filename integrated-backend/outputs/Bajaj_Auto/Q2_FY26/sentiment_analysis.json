@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8474,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9432,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9432,
+        "positive": 0.9589,
+        "negative": 0.0158,
+        "neutral": 0.0253,
+        "chunks_scored": 1
+      },
+      "text": "Bajaj Auto reported a robust financial performance for Q2 FY26, with several all-time highs. The topline reached almost Rs. 15,000 crores, marking a 14% growth, while EBITDA crossed Rs. 3,000 crores, achieving an EBITDA margin of 20.5%. The PAT was close to Rs. 2,500 crores, reflecting a 24% year-on-year increase. The company highlighted that all business units contributed positively, with exports growing by 24% in volume and achieving the highest ever quarterly revenue. The domestic motorcycle segment also saw significant growth, particularly in the 125cc plus segment, driven by premiumization and strong festive demand."
+    },
+    "forward_guidance": {
+      "score": 0.9337,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9337,
+        "positive": 0.9495,
+        "negative": 0.0158,
+        "neutral": 0.0347,
+        "chunks_scored": 1
+      },
+      "text": "Looking ahead, Bajaj Auto expressed optimism about maintaining growth momentum. The company plans to focus on competitive growth in the 125cc plus segment, leveraging GST rate cuts and festive sentiment. They anticipate sustained export momentum with 15%-20% growth and aim to regain momentum in the EV segments as supply chain constraints ease. The company also plans to expand three-wheeler capacity and aggressively grow the KTM and Triumph businesses. Management's language was bullish, emphasizing opportunities to outpace industry growth and capture market share."
+    },
+    "risk_language": {
+      "score": 0.6082,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.6082,
+        "positive": 0.7687,
+        "negative": 0.1605,
+        "neutral": 0.0709,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including supply chain constraints that impacted the EV segment, resulting in a 15% shortfall from plan. They also noted challenges in the domestic motorcycle market, which experienced a rollercoaster performance due to GST rate changes. Despite these challenges, management was proactive in addressing supply issues, particularly in the EV segment, and expressed confidence in overcoming these hurdles. The call did not heavily focus on risks, indicating a more optimistic outlook."
+    },
+    "investor_confidence": {
+      "score": 0.8133,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8133,
+        "positive": 0.8248,
+        "negative": 0.0115,
+        "neutral": 0.1637,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence throughout the call, highlighting strategic initiatives and robust operational performance. Analyst questions were addressed directly, with detailed explanations of growth drivers and market strategies. The company's ability to achieve all-time high financial metrics and its proactive approach to addressing supply chain issues reinforced management's credibility. The tone was transparent and optimistic, with a clear focus on sustaining growth and capturing market opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "Record high topline of Rs. 15,000 crores",
+    "EBITDA margin of 20.5%",
+    "24% growth in export volumes",
+    "Strong performance in the 125cc plus segment",
+    "Double-digit growth in Asia and Africa",
+    "Positive impact of GST rate cuts"
+  ],
+  "key_negative_drivers": [
+    "Supply chain constraints in the EV segment",
+    "15% shortfall from plan in EV production",
+    "Rollercoaster performance in the domestic motorcycle market",
+    "Impact of GST rate changes on market dynamics"
+  ],
+  "notable_phrases": [
+    "All-time high topline",
+    "EBITDA crossed Rs 3,000 crores",
+    "PAT came in close to Rs. 2,500 crores",
+    "Exports of over 550,000 units",
+    "Market share gains in key markets",
+    "Positive trading environment",
+    "Double-digit EBITDA percentage in Q2",
+    "Leadership position in the EV segment"
+  ],
+  "chain_of_thought": "Bajaj Auto's Q2 FY26 performance was strong, with record financial metrics and growth across business units. Management expressed optimism about future growth, focusing on strategic segments and addressing supply chain issues. While acknowledging some risks, the overall tone was positive, with management demonstrating confidence and transparency in their strategic outlook."
+}

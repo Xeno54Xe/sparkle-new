@@ -1,0 +1,112 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Sneha Gavankar",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Earnings Call Introduction",
+        "Q&A Coordination"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sneha Gavankar served as the moderator for the Tata Motors Q2 FY26 earnings call. She introduced the management team and outlined the structure of the call, which included a presentation followed by a Q&A session. Sneha maintained a neutral tone throughout, ensuring the call proceeded smoothly and efficiently. She facilitated the transition between speakers and managed the flow of questions from analysts.",
+      "sentiment_score": 0.0148,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0148,
+        "positive": 0.0333,
+        "negative": 0.0185,
+        "neutral": 0.9482,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "GV Ramanan",
+      "role": "CFO",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial Performance",
+        "Cash Flow",
+        "Demerger Impact",
+        "Iveco Acquisition"
+      ],
+      "direct_answers": [
+        "Kapil Singh's question on non-cyclical business revenue mix",
+        "Gunjan's question on CV segment and consol financials"
+      ],
+      "dodged_or_vague": [],
+      "summary": "GV Ramanan, the CFO of Tata Motors, presented a confident overview of the company's financial performance during the Q2 FY26 earnings call. He highlighted the successful demerger and listing of the commercial vehicle business, as well as the strategic investments in electric mobility and digital logistics. Ramanan addressed questions regarding the revenue mix of non-cyclical businesses and the financial impact of the Iveco acquisition, providing clear and direct answers. His tone was optimistic, emphasizing the company's strong cash flow and robust financial health.",
+      "sentiment_score": 0.7541,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7541,
+        "positive": 0.7629,
+        "negative": 0.0088,
+        "neutral": 0.2284,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Girish Wagh",
+      "role": "MD & CEO",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Market Share",
+        "Product Launches",
+        "Electric Mobility",
+        "Fleet Utilization"
+      ],
+      "direct_answers": [
+        "Amyn Pirani's question on exports",
+        "Jay Kale's question on MHCV replacement demand"
+      ],
+      "dodged_or_vague": [
+        "Kumar Rakesh's question on customer sentiment"
+      ],
+      "summary": "Girish Wagh, the MD & CEO of Tata Motors, conveyed an optimistic outlook during the earnings call. He discussed the company's strong market share recovery and the successful launch of new products, including electric vehicles. Wagh highlighted the growth in fleet utilization and the positive impact of GST rate rationalization on freight rates. He addressed questions about exports and replacement demand directly, while providing a more general response to inquiries about customer sentiment. His focus on electric mobility and digital business initiatives underscored Tata Motors' strategic direction towards sustainable growth.",
+      "sentiment_score": 0.9234,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9234,
+        "positive": 0.9407,
+        "negative": 0.0173,
+        "neutral": 0.0421,
+        "chunks_scored": 2
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "1. Identified speakers: Sneha Gavankar (Moderator), GV Ramanan (CFO), Girish Wagh (MD & CEO). 2. Extracted key statements for each speaker, focusing on financial performance, market strategies, and product launches. 3. Assessed tone based on language and context: Sneha Gavankar (Neutral), GV Ramanan (Confident), Girish Wagh (Optimistic). 4. Noted direct answers and vague responses to analyst questions. 5. Summarized each speaker's contribution, highlighting their focus areas and overall stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

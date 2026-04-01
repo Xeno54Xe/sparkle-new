@@ -1,0 +1,200 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring smooth transitions between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on logistics and procedural aspects of the call. The moderator concluded the session by handing over to the CEO for closing remarks.",
+      "sentiment_score": 0.023,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.023,
+        "positive": 0.0426,
+        "negative": 0.0196,
+        "neutral": 0.9378,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nitin Mohta",
+      "role": "Senior Vice President & Head - Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Mohta opened the earnings call with a formal introduction, setting the stage for the discussion of HCLTech's quarterly performance. He highlighted the presence of key management figures and outlined the structure of the call. Mohta also provided a disclaimer about forward-looking statements, emphasizing the inherent risks and uncertainties. His tone was neutral, focusing on procedural clarity and compliance.",
+      "sentiment_score": 0.0102,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0102,
+        "positive": 0.0359,
+        "negative": 0.0257,
+        "neutral": 0.9384,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "C. Vijayakumar",
+      "role": "Chief Executive Officer & Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "growth trajectory",
+        "AI initiatives",
+        "financial performance",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "Yes, of course.",
+        "Yes. As I said, in modernization and SDLC is where the biggest opportunity is in the enterprises."
+      ],
+      "dodged_or_vague": [
+        "We have to give a range, right? We can't give such a precise range."
+      ],
+      "summary": "C. Vijayakumar, the CEO, exuded confidence as he discussed HCLTech's strong quarterly performance, highlighting revenue growth and strategic AI initiatives. He emphasized the company's ability to capture market opportunities despite a challenging environment and expressed optimism about future growth. Vijayakumar directly answered questions about product revenue and modernization opportunities but was vague when discussing precise guidance ranges. His narrative focused on the company's strategic direction and commitment to innovation.",
+      "sentiment_score": 0.9325,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9325,
+        "positive": 0.9451,
+        "negative": 0.0126,
+        "neutral": 0.0422,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shiv Walia",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial metrics",
+        "restructuring costs",
+        "margin guidance"
+      ],
+      "direct_answers": [
+        "No, your understanding is correct."
+      ],
+      "dodged_or_vague": [
+        "But for the next year, we'll update you in April on what sort of guidance we want to give, but I would not like to call out the margins for next year now."
+      ],
+      "summary": "Shiv Walia, the CFO, provided a cautious overview of HCLTech's financial performance, focusing on margin stability and restructuring costs. He confirmed the limited impact of labor law changes on future margins but avoided giving specific guidance for the next fiscal year. Walia's tone was measured, reflecting a careful approach to financial forecasting and an emphasis on structural health.",
+      "sentiment_score": 0.0502,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0502,
+        "positive": 0.1697,
+        "negative": 0.1195,
+        "neutral": 0.7109,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nitin Padmanabhan",
+      "role": "Analyst",
+      "tone": "neutral",
+      "key_topics": [
+        "product revenue",
+        "company performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Padmanabhan, an analyst, asked concise questions about product revenue, specifically inquiring about Actian's position among HCLTech's top products. His tone was neutral, focusing on obtaining specific information about the company's product performance. Padmanabhan's interaction was brief and to the point, reflecting a straightforward approach to information gathering.",
+      "sentiment_score": 0.2794,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2794,
+        "positive": 0.2892,
+        "negative": 0.0097,
+        "neutral": 0.7011,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhishek Pathak",
+      "role": "Analyst",
+      "tone": "neutral",
+      "key_topics": [
+        "AI implementation",
+        "client conversations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Pathak, an analyst, posed questions regarding the evolution of client conversations around AI implementation and budget constraints. His inquiries were aimed at understanding year-over-year changes and the impact of AI on client strategies. Pathak maintained a neutral tone, seeking detailed insights into HCLTech's client interactions and service line performance.",
+      "sentiment_score": 0.0198,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0198,
+        "positive": 0.0594,
+        "negative": 0.0396,
+        "neutral": 0.901,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Shah",
+      "role": "Analyst",
+      "tone": "neutral",
+      "key_topics": [
+        "ACV growth",
+        "services growth guidance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Shah, an analyst, focused on HCLTech's ACV growth and services growth guidance, acknowledging the company's strong performance. He sought to understand the potential for organic growth in the absence of macroeconomic challenges. Shah's tone was neutral, aiming to clarify the company's strategic outlook without pressing for specific guidance.",
+      "sentiment_score": 0.54,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.54,
+        "positive": 0.5662,
+        "negative": 0.0262,
+        "neutral": 0.4076,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis identifies each speaker's role and extracts key statements to understand their contributions to the earnings call. Management speakers like C. Vijayakumar and Shiv Walia provided insights into the company's performance and strategic direction, with Vijayakumar showing confidence and Walia being more cautious. Analysts like Nitin Padmanabhan, Abhishek Pathak, and Sandeep Shah asked targeted questions to gain clarity on specific aspects of the company's operations and future outlook. The moderator ensured the call proceeded smoothly, maintaining a neutral tone throughout.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

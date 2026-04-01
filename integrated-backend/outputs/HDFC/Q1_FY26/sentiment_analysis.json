@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": -0.0866,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.4208,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.4208,
+        "positive": 0.2736,
+        "negative": 0.6944,
+        "neutral": 0.032,
+        "chunks_scored": 1
+      },
+      "text": "During the earnings call, management discussed the financial performance, highlighting a growth in average deposits at a healthy pace of 16% year-on-year, while the average advances or AUM assets under management growth slowed to about 7% last year. This was in alignment with strategic objectives to bring down the CD ratio from 110% to about 95%. The growth rate on assets under management improved to 8% in the quarter just ended, which is the June quarter, FY26. Management expressed confidence in growing advances at the system growth rate at FY26 and higher than the system in FY27. However, fee income was subdued due to lower third-party distribution fees, which is typically lower in the June quarter compared to March. Despite these challenges, the overall outlook for the full year in terms of distribution remains optimistic."
+    },
+    "forward_guidance": {
+      "score": -0.2959,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.2959,
+        "positive": 0.295,
+        "negative": 0.5909,
+        "neutral": 0.1142,
+        "chunks_scored": 1
+      },
+      "text": "Management provided forward guidance with a cautiously optimistic tone, expecting loan growth to continue improving and remain confident of growing advances at the system growth rate in FY26 and higher in FY27. They mentioned that growth enablers include customer centricity, technology, and people. The onset of the festival season is expected to provide a greater fillip to demand, particularly in the rural segment, where better monsoon conditions are anticipated. The management also noted that interest rates have come down, and fiscal policies have provided relief, which should support consumption demand. However, they were cautious about providing specific outlooks, noting that growth depends on various factors."
+    },
+    "risk_language": {
+      "score": 0.0077,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.0077,
+        "positive": 0.4009,
+        "negative": 0.3932,
+        "neutral": 0.2058,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks and challenges, including subdued growth in the first quarter and the impact of policy rate changes on loans tied to external benchmarks. Management acknowledged the headwind posed by the rate cycle being on a downward trend, which affects margins due to the lead-lag impact between asset and liability repricing. They also discussed the competitive pressures in the mortgage sector and the need to manage the credit deposit ratio. While the management was forthright about these challenges, they expressed confidence in their strategic objectives and the bank's ability to navigate these headwinds."
+    },
+    "investor_confidence": {
+      "score": 0.6344,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.6344,
+        "positive": 0.693,
+        "negative": 0.0586,
+        "neutral": 0.2484,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction during the call, expressing gratitude to employees and shareholders for their support. They highlighted strategic objectives and the bank's readiness to capitalize on growth opportunities. Analyst questions were addressed directly, with detailed explanations provided on margins, growth triggers, and the impact of fiscal and monetary policies. The management's transparency and strategic focus were evident, reinforcing their credibility and commitment to achieving stated goals. However, they were cautious about providing specific guidance due to the dynamic market conditions."
+    }
+  },
+  "key_positive_drivers": [
+    "Healthy deposit growth at 16% year-on-year",
+    "Improved AUM growth to 8% in the June quarter",
+    "Confidence in growing advances at system growth rate",
+    "Positive impact of fiscal policies on consumption demand",
+    "Expected boost from festival season",
+    "Strong demand from rural segments"
+  ],
+  "key_negative_drivers": [
+    "Subdued fee income due to lower third-party distribution fees",
+    "Impact of rate cycle on margins",
+    "Competitive pressures in the mortgage sector",
+    "Slowed growth in average advances",
+    "Challenges in managing credit deposit ratio",
+    "Uncertainty in private capex demand"
+  ],
+  "notable_phrases": [
+    "growth was subdued",
+    "fee income this quarter has been subdued",
+    "expect our loan growth to continue to improve",
+    "remain confident of growing our advances",
+    "substantial headwind in terms of rate cycle",
+    "healthy demand from the rural side",
+    "reasonable amount of impetus",
+    "cautiously optimistic tone"
+  ],
+  "chain_of_thought": "The financial performance showed mixed results with strong deposit growth but subdued fee income. Forward guidance was cautiously optimistic, with expectations of improved loan growth and positive impacts from fiscal policies and the festival season. Risks included the impact of rate cycles on margins and competitive pressures, but management was transparent and confident in addressing these challenges. Overall, the tone was cautiously bullish, reflecting confidence in strategic objectives and growth potential despite current headwinds."
+}

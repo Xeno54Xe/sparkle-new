@@ -1,0 +1,163 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Nehal Shah",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "call logistics",
+        "management introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nehal Shah, serving as the moderator, opened the call by welcoming participants and introducing the management team. She provided logistical details about the call, including the availability of financial documents and the webcast. Nehal emphasized that the company does not provide specific revenue or earnings guidance and highlighted the importance of reviewing forward-looking statements in conjunction with outlined risks. Her tone remained neutral throughout her introduction.",
+      "sentiment_score": 0.0151,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0151,
+        "positive": 0.0329,
+        "negative": 0.0178,
+        "neutral": 0.9494,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "K Krithivasan",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "Q2 performance",
+        "AI transformation",
+        "growth strategy"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan",
+        "Yogesh Aggarwal",
+        "Abhishek Kumar"
+      ],
+      "dodged_or_vague": [
+        "Surendra Goyal"
+      ],
+      "summary": "K Krithivasan, the CEO, confidently discussed TCS's strong Q2 performance amidst macroeconomic challenges, highlighting sequential growth across most verticals and geographies. He emphasized the company's strategic focus on becoming the world's largest AI-led technology services company, detailing their five-pillar strategy for AI transformation. Krithivasan addressed questions directly, particularly on growth momentum and AI initiatives, but was vague when discussing potential impacts on return ratios. His tone was optimistic, reflecting confidence in TCS's strategic direction and growth prospects.",
+      "sentiment_score": 0.9007,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9007,
+        "positive": 0.9112,
+        "negative": 0.0105,
+        "neutral": 0.0783,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Aarthi Subramanian",
+      "role": "Executive Director, President and Chief Operating Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "AI transformation",
+        "internal initiatives",
+        "future business models"
+      ],
+      "direct_answers": [
+        "Ravi Menon",
+        "Gaurav Rateria"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Aarthi Subramanian, the COO, shared an optimistic view on TCS's AI transformation journey, emphasizing the internal initiatives under the tcsAI program. She highlighted the company's efforts to foster an AI-first culture, with significant investments in AI learning and development for employees. Aarthi discussed the scaling of AI initiatives and the positive response from clients, indicating a shift towards outcome-based business models. Her responses to analyst questions were direct, reflecting confidence in the company's strategic direction and AI capabilities.",
+      "sentiment_score": 0.159,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.159,
+        "positive": 0.169,
+        "negative": 0.01,
+        "neutral": 0.821,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "capital allocation"
+      ],
+      "direct_answers": [
+        "Kumar Rakesh",
+        "Surendra Goyal"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Samir Seksaria, the CFO, confidently presented TCS's financial performance, highlighting revenue growth and improved operating margins. He detailed strategic investments in infrastructure and talent development, emphasizing the company's commitment to maintaining strong financial discipline and shareholder returns. Samir addressed questions on margins and capital allocation directly, reinforcing TCS's financial strength and strategic focus on AI-led growth. His tone was confident, reflecting assurance in the company's financial strategies and future prospects.",
+      "sentiment_score": 0.9,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9,
+        "positive": 0.9097,
+        "negative": 0.0097,
+        "neutral": 0.0806,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Sudeep Kunnumal",
+      "role": "Chief Human Resources Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "HR initiatives",
+        "talent development",
+        "workplace practices"
+      ],
+      "direct_answers": [
+        "Surendra Goyal"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sudeep Kunnumal, the CHRO, provided insights into TCS's HR initiatives, focusing on talent development and workplace practices. He discussed the company's approach to managing headcount, emphasizing a careful evaluation process for voluntary and involuntary attrition. Sudeep's tone was neutral, reflecting a balanced view on HR strategies and the company's commitment to developing future-ready talent. His responses were direct, particularly regarding headcount management and attrition.",
+      "sentiment_score": -0.3115,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.3115,
+        "positive": 0.049,
+        "negative": 0.3606,
+        "neutral": 0.5904,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted to capture the essence of each speaker's contribution, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and context of their statements. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, encapsulating their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

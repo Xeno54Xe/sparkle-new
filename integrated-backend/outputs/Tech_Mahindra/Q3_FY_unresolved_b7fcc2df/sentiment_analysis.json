@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6573,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9436,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9436,
+        "positive": 0.9607,
+        "negative": 0.0171,
+        "neutral": 0.0222,
+        "chunks_scored": 1
+      },
+      "text": "Tech Mahindra reported a strong financial performance for Q3 FY26, with revenue growing 2.7% year-on-year and 1.5% quarter-on-quarter on a reported basis. In constant currency terms, revenue increased by 1.3% YoY and 1.7% QoQ. Operating margins expanded by 290 basis points year-on-year to 13.1%, marking the ninth consecutive quarter of margin expansion. The company highlighted a robust year-on-year growth of 40.1% in operating profit in INR terms, reaching Rs.1,892 crores. Despite a forex loss of $2.4 million, the overall financial results reflect disciplined execution and sustained focus on efficiency, with a notable increase in service revenue driven by large-deal execution in European auto."
+    },
+    "forward_guidance": {
+      "score": 0.9394,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9394,
+        "positive": 0.9553,
+        "negative": 0.0159,
+        "neutral": 0.0288,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving a 15% EBIT margin for FY27, indicating a bullish outlook. The company anticipates continued growth in the communications vertical, supported by a large deal win in Europe. BFSI is expected to follow a steady growth trajectory as seasonal factors normalize. The manufacturing vertical is projected to maintain its strong momentum, with significant opportunities in aerospace and industrial segments. Management also highlighted a robust deal pipeline, with total deal wins of $1,096 million for the quarter, reflecting a 48% year-on-year growth on a last 12-month basis."
+    },
+    "risk_language": {
+      "score": -0.39,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.39,
+        "positive": 0.1971,
+        "negative": 0.5871,
+        "neutral": 0.2157,
+        "chunks_scored": 1
+      },
+      "text": "The earnings call addressed several risks, including higher-than-normal furloughs impacting the BFSI segment and potential volatility in the hi-tech sector due to cost pressures. Management acknowledged the impact of forex losses and a mark-to-market loss of $40 million on the hedge book. Despite these challenges, the company remains focused on mitigating risks through disciplined capital allocation and execution. The potential impact of AI on the IT services business was also discussed, with management emphasizing the need to navigate these risks carefully."
+    },
+    "investor_confidence": {
+      "score": 0.8518,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8518,
+        "positive": 0.8619,
+        "negative": 0.0101,
+        "neutral": 0.1281,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, emphasizing the strength of client relationships and the relevance of their capabilities. Analyst questions were addressed directly, with management providing detailed insights into growth strategies and market opportunities. The company's focus on large accounts and strategic client relationships was highlighted as a key driver of confidence. The leadership team was described as 'world-beating,' and the company's ability to exceed peer growth averages was presented as evidence of management credibility."
+    }
+  },
+  "key_positive_drivers": [
+    "Robust deal momentum with highest quarterly deal bookings in five years",
+    "Expansion of operating margins by 290 basis points YoY",
+    "Strong growth in the communications and manufacturing verticals",
+    "Significant year-on-year growth in operating profit",
+    "Focus on AI as a growth pillar"
+  ],
+  "key_negative_drivers": [
+    "Higher-than-normal furloughs impacting BFSI",
+    "Forex losses impacting other income",
+    "Volatility in the hi-tech sector due to cost pressures",
+    "Mark-to-market loss on hedge book"
+  ],
+  "notable_phrases": [
+    "Disciplined execution and sustained focus on efficiency",
+    "Highest quarterly deal bookings in the last five years",
+    "Confidence in achieving a 15% EBIT margin for FY27",
+    "Robust 48% year-on-year growth on an LTM basis",
+    "Navigating digital reinvention with intelligence and speed",
+    "Focus on large accounts and strategic client relationships",
+    "World-beating team in TechM",
+    "Exceeding peer growth averages"
+  ],
+  "chain_of_thought": "The financial performance was strong, with revenue and margins expanding, driven by large deals and disciplined execution. Forward guidance was optimistic, with management confident in achieving strategic goals and highlighting a robust deal pipeline. Risks were acknowledged, particularly in BFSI and hi-tech sectors, but management demonstrated a clear strategy to mitigate these. Investor confidence was reinforced by management's clarity, direct responses to analyst questions, and focus on strategic client relationships, suggesting a cautiously bullish outlook."
+}

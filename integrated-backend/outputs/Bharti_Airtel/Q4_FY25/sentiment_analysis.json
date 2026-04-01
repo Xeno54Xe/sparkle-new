@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5724,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9386,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9386,
+        "positive": 0.9606,
+        "negative": 0.0219,
+        "neutral": 0.0175,
+        "chunks_scored": 1
+      },
+      "text": "Management reported 'another industry leading growth' with revenues and EBITDAaL growth at about 21% and 27% respectively. Margins expanded to 44.2%, reflecting strong operating leverage and efforts on 'war on waste and execution.' The company solidified its revenue market share, with operating free cash generation at a strong 2300 Crores. The balance sheet is robust, with net debt excluding leases at about 3700 Crores and net debt to EBITDAaL around 1. Consolidated revenues for FY2025 were under 173,000 Crores, impacted by Africa currency devaluation, but EBITDA after FLO and lease obligations grew by 21.2% with a margin improvement of 2.3%. India revenue and EBITDAaL excluding Indus Towers grew by 15.3% and 20.2% respectively, with an EBITDAaL margin at 48% despite absorbing full 5G costs."
+    },
+    "forward_guidance": {
+      "score": 0.9237,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9237,
+        "positive": 0.9378,
+        "negative": 0.0141,
+        "neutral": 0.048,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a 'measured' outlook for the next quarter and FY2026, indicating that capex will trend downwards. They plan to continue network expansion with 19,858 network sites and about 44,400 kilometers of fiber deployed. The company is on track with its 5G expansion, having added about 25,000 new sites in FY2025. They are also focusing on expanding their market presence in broadband with continued rollout of fiber home passes and fixed wireless access. Management highlighted the need to 'raise our game even further' in broadband growth and mentioned plans to double data center capacity in the next three years."
+    },
+    "risk_language": {
+      "score": -0.8637,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.8637,
+        "positive": 0.0505,
+        "negative": 0.9142,
+        "neutral": 0.0353,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the impact of Africa currency devaluation on revenues. They were forthright about the challenges in the B2B segment, which saw a decline due to a focus on quality revenues. The company has prepaid high-cost DoT debt, totaling about 42,000 Crores, to strengthen the balance sheet. Management acknowledged the need for tariff restructuring in India, describing the current telecom tariff structure as 'broken.' They also mentioned competitive pressures in the digital business, which requires substantial investment to step up growth."
+    },
+    "investor_confidence": {
+      "score": 0.9322,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9322,
+        "positive": 0.9456,
+        "negative": 0.0135,
+        "neutral": 0.0409,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations on financial performance and strategic priorities. They emphasized disciplined capital spending and operational excellence, which have strengthened the balance sheet. Management's commitment to deleveraging and stepping up dividends was reiterated, showcasing their credibility. They also highlighted their strategic focus on customer experience and digital capabilities, indicating a strong conviction in their growth strategy."
+    }
+  },
+  "key_positive_drivers": [
+    "21% revenue growth",
+    "27% EBITDAaL growth",
+    "Margins expanded to 44.2%",
+    "Strong operating free cash generation",
+    "Robust balance sheet",
+    "5G expansion on track"
+  ],
+  "key_negative_drivers": [
+    "Africa currency devaluation impact",
+    "B2B segment decline",
+    "Need for tariff restructuring",
+    "Competitive pressures in digital business"
+  ],
+  "notable_phrases": [
+    "another industry leading growth",
+    "war on waste and execution",
+    "robust balance sheet",
+    "measured outlook",
+    "tariff structure is broken",
+    "raise our game even further",
+    "disciplined capital spending",
+    "strong operating leverage"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant growth in revenues and EBITDAaL, and margin expansion. Forward guidance was measured, with plans for continued network expansion and capex moderation. Risks were addressed forthrightly, including currency impacts and tariff challenges. Investor confidence was bolstered by management's clarity, transparency, and strategic focus on growth and deleveraging."
+}

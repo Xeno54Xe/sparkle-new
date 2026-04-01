@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Salil Parekh",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "AI offerings",
+        "client trust",
+        "financial growth",
+        "AI leverage"
+      ],
+      "direct_answers": [
+        "Jonathan Lee's question on investment and margins",
+        "Kawaljeet Saluja's question on AI agents"
+      ],
+      "dodged_or_vague": [
+        "Sudheer Guntupalli's question on ERP migration compression"
+      ],
+      "summary": "Salil Parekh presented a confident overview of Infosys' AI capabilities and future growth prospects. He emphasized the company's comprehensive AI offerings and the trust clients place in Infosys for AI projects. Parekh projected strong growth in Financial Services and Energy and Utilities sectors, attributing it to increased AI leverage. He directly addressed questions about investment in AI and the nature of AI agents but provided a less direct response regarding ERP migration timelines. Overall, Parekh conveyed optimism about Infosys' strategic direction and market position.",
+      "sentiment_score": 0.1342,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1342,
+        "positive": 0.1508,
+        "negative": 0.0166,
+        "neutral": 0.8326,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sumit Virmani",
+      "role": "Chief Marketing Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "brand impact",
+        "AI journey",
+        "market share"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sumit Virmani focused on the strategic importance of brand management in Infosys' AI journey. He highlighted how a strong brand can significantly impact revenue, market share, and shareholder value. Virmani's tone was optimistic as he emphasized the role of brand in gaining mindshare and ultimately market share. He did not directly address any analyst questions but provided a comprehensive view of the brand's influence on business outcomes.",
+      "sentiment_score": 0.1985,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1985,
+        "positive": 0.2093,
+        "negative": 0.0109,
+        "neutral": 0.7798,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nandan Nilekani",
+      "role": "Chairman",
+      "tone": "cautious",
+      "key_topics": [
+        "tech transitions",
+        "AI impact",
+        "legacy systems"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nandan Nilekani provided a historical perspective on technological transitions, emphasizing the rapid pace and fundamental nature of the current AI shift. He highlighted the challenges businesses face in adapting to AI, particularly in modernizing legacy systems. Nilekani's tone was cautious, acknowledging both the opportunities and the significant changes required in business operations and talent management. He did not engage in direct Q&A but set the stage for understanding the broader implications of AI on business.",
+      "sentiment_score": 0.038,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.038,
+        "positive": 0.0646,
+        "negative": 0.0266,
+        "neutral": 0.9089,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayesh Sanghrajka",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial strategy",
+        "AI investment",
+        "margin guidance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jayesh Sanghrajka discussed Infosys' financial strategy concerning AI investments and margin management. He outlined the company's commitment to investing in AI capabilities while maintaining margin guidance through cost efficiency programs. Sanghrajka's tone was neutral, focusing on the financial aspects of AI scaling and the company's readiness to support these initiatives. He did not directly address any analyst questions but provided a clear overview of the financial framework supporting Infosys' AI ambitions.",
+      "sentiment_score": 0.3045,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3045,
+        "positive": 0.3148,
+        "negative": 0.0103,
+        "neutral": 0.6749,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies key speakers from the transcript, focusing on their roles and contributions to the earnings call. Each speaker's statements are extracted to capture their key messages and tone. Management speakers are evaluated on their responsiveness to analyst questions, noting any direct answers or evasive responses. The narrative summaries provide a comprehensive view of each speaker's stance and the strategic direction they communicated during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

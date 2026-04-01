@@ -1,0 +1,137 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Himanshu Kapania",
+      "role": "Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "global economic landscape",
+        "tariff policies",
+        "growth trajectories",
+        "Grasim's performance"
+      ],
+      "direct_answers": [
+        "Raashi, I think you are the fourth asking the same question. Let me address this."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Himanshu Kapania opened the call with a confident overview of the global economic landscape, highlighting moderate but uneven global growth and the impact of geopolitical tensions. He emphasized Grasim's strong alignment with India's growth trajectory and its consistent performance, noting 20 consecutive quarters of revenue growth. Kapania's tone was confident as he discussed Grasim's strategic positioning and future prospects. He directly addressed a repeated question from an analyst, showcasing his willingness to engage with inquiries.",
+      "sentiment_score": 0.0166,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0166,
+        "positive": 0.4856,
+        "negative": 0.4691,
+        "neutral": 0.0453,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pavan Jain",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial highlights",
+        "revenue growth",
+        "EBITDA"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pavan Jain provided a neutral and factual overview of Grasim's financial performance, highlighting key metrics such as revenue growth and EBITDA. He discussed the resilience of cellulosic fiber prices and the impact of global demand slowdowns on utilization levels. Jain's tone was neutral, focusing on delivering financial data and insights without expressing strong opinions or forward-looking statements.",
+      "sentiment_score": -0.4393,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4393,
+        "positive": 0.2679,
+        "negative": 0.7072,
+        "neutral": 0.0249,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayant Dhobley",
+      "role": "Business Head, Chemicals, Fashion Yarn and Insulators",
+      "tone": "cautious",
+      "key_topics": [
+        "epoxy margins",
+        "renewable energy",
+        "chlorine pricing"
+      ],
+      "direct_answers": [
+        "Yes, I am not completely sure I understand your math. But the end question that you have was there a degrowth in epoxy profits. That is the question you are leading to. So, I will answer very directly instead of indirectly."
+      ],
+      "dodged_or_vague": [
+        "I would not like to comment on the current state of margins because it's competitively sensitive."
+      ],
+      "summary": "Jayant Dhobley adopted a cautious tone, particularly when discussing sensitive topics like epoxy margins, which he avoided commenting on due to competitive reasons. He provided specific figures regarding renewable energy achievements but was careful in his responses to questions about market dynamics and profitability. Dhobley's approach was to provide direct answers where possible, but he remained guarded on topics that could impact competitive positioning.",
+      "sentiment_score": 0.1091,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1091,
+        "positive": 0.1281,
+        "negative": 0.019,
+        "neutral": 0.8529,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rakshit Hargave",
+      "role": "CEO, Birla Opus",
+      "tone": "confident",
+      "key_topics": [
+        "paint industry growth",
+        "competitive landscape",
+        "distribution strategy"
+      ],
+      "direct_answers": [
+        "So, thank you, Mihir. Let me answer the first question. So, like we have also declared quarter-on-quarter growth is in double digits, and the fact is that the growth for us continues."
+      ],
+      "dodged_or_vague": [
+        "I think too early. It's just been one quarter. There are three more quarters left. We will have just to wait and see. We will play a good game."
+      ],
+      "summary": "Rakshit Hargave spoke with confidence about Birla Opus's position in the paint industry, addressing competitive pressures and the company's strategic focus across different market segments. He provided direct answers regarding growth metrics but was vague about future industry growth projections, citing the early stage of the fiscal year. Hargave emphasized the company's strong market presence and ongoing efforts to expand distribution and dealer networks.",
+      "sentiment_score": 0.6642,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6642,
+        "positive": 0.6842,
+        "negative": 0.02,
+        "neutral": 0.2959,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies key speakers from Grasim Industries' earnings call, focusing on their roles and contributions. Each speaker's statements are extracted to capture specific language and forward-looking insights. The tone of each speaker is assessed based on their engagement with analysts and the nature of their responses. Management speakers are evaluated on their ability to provide direct answers or deflect questions, offering a comprehensive view of their communication style and strategic focus during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

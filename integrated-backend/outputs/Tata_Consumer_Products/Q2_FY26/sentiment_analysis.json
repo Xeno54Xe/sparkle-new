@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7434,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9303,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9303,
+        "positive": 0.9553,
+        "negative": 0.025,
+        "neutral": 0.0197,
+        "chunks_scored": 1
+      },
+      "text": "Tata Consumer Products reported a strong financial performance for Q2 FY26, with revenue up 18% and a significant 14% UVG in the India business. The company achieved a consolidated EBITDA growth of 7% year-on-year, with a margin of 13.6% and a sequential expansion of 70 basis points. The India branded business showed robust double-digit growth in both tea and salt, while the growth business segment grew by 27%. The company maintained its A&P-to-sales ratio in India at 7.4%. Despite a dip in tea market share by 80 basis points, the company emphasized that Nielsen's measurements do not fully capture the e-commerce and quick commerce channels, which now contribute 37% of sales. Overall, the financials indicate a path to margin recovery, with no exceptional items impacting the quarter."
+    },
+    "forward_guidance": {
+      "score": 0.858,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.858,
+        "positive": 0.8661,
+        "negative": 0.0081,
+        "neutral": 0.1258,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook for the coming quarters. They expect tea prices to stabilize, which should aid margin recovery, while coffee prices remain a potential risk. The company anticipates continued strong performance in its growth businesses, aiming for 30% growth in the ready-to-drink segment. They plan to maintain tea margins within the 34% to 36% range and expect volume-driven growth as prices normalize. The company is also focused on expanding its presence in emerging channels and maintaining market share. Overall, the guidance suggests a measured approach with an emphasis on maintaining growth momentum and market share."
+    },
+    "risk_language": {
+      "score": 0.119,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.119,
+        "positive": 0.5166,
+        "negative": 0.3976,
+        "neutral": 0.0858,
+        "chunks_scored": 1
+      },
+      "text": "The earnings call addressed several risks and challenges, particularly the volatility in coffee prices, which could impact margins in the U.S. and non-branded businesses. Management acknowledged the competitive environment in the tea market and the potential for market share loss if margins are prioritized over market presence. They also highlighted the impact of GST disruptions at the end of the quarter, which affected sales in some segments. Despite these challenges, management expressed confidence in their ability to navigate these headwinds, emphasizing their focus on maintaining market share and adjusting pricing strategies as needed."
+    },
+    "investor_confidence": {
+      "score": 0.9155,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9155,
+        "positive": 0.926,
+        "negative": 0.0105,
+        "neutral": 0.0635,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of clarity and confidence during the call, addressing analyst questions directly and providing detailed explanations of their strategies and performance metrics. They emphasized their commitment to maintaining market share and adapting to market conditions, which was well-received by analysts. The company's focus on innovation, with 25 new product launches in Q2, and their strategic approach to managing margins and growth were highlighted as key strengths. Overall, management's transparency and strategic clarity contributed to a positive perception of their credibility and ability to deliver on their growth objectives."
+    }
+  },
+  "key_positive_drivers": [
+    "18% revenue growth",
+    "14% UVG in India business",
+    "27% growth in growth business segment",
+    "Sequential EBITDA margin expansion of 70 bps",
+    "Strong performance in ready-to-drink segment",
+    "25 new product launches in Q2"
+  ],
+  "key_negative_drivers": [
+    "Volatility in coffee prices",
+    "Dip in tea market share by 80 bps",
+    "GST disruptions affecting sales",
+    "Competitive pressures in tea market"
+  ],
+  "notable_phrases": [
+    "Revenue up 18%",
+    "Consolidated EBITDA grew at 7%",
+    "Path to margin recovery",
+    "Maintaining market share is always a better proposition",
+    "Cautiously optimistic outlook",
+    "Volatility in coffee prices",
+    "Focus on innovation",
+    "Maintaining market share and adapting to market conditions"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant revenue and volume growth, indicating a positive trajectory. Forward guidance was cautiously optimistic, with expectations of margin recovery and continued growth in key segments. Risk discussions highlighted challenges such as coffee price volatility and competitive pressures, but management's strategic focus on market share and innovation mitigates these concerns. Investor confidence was bolstered by management's transparency and strategic clarity, contributing to a cautiously bullish overall tone."
+}

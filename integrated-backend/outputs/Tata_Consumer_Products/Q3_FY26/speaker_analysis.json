@@ -1,0 +1,157 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Nidhi Verma",
+      "role": "Head, Investor Relations and Corporate Communications",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference structure",
+        "disclaimer"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhi Verma opened the earnings call by welcoming participants and outlining the structure of the call. She mentioned that the first part of the call would cover the key highlights of the quarter, followed by a Q&A session. She also reminded participants of the disclaimer statement. Her tone was neutral, focusing on procedural aspects of the call.",
+      "sentiment_score": 0.0381,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0381,
+        "positive": 0.0537,
+        "negative": 0.0156,
+        "neutral": 0.9308,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sunil D’Souza",
+      "role": "Managing Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "revenue growth",
+        "market share",
+        "business strategy",
+        "product launches"
+      ],
+      "direct_answers": [
+        "Abneesh Roy's question on Tata Soulfull and Tata Sampann",
+        "Nihal Mahesh Jham's question on Capital Foods and acquisitions"
+      ],
+      "dodged_or_vague": [
+        "Anurag Dayal's question on the exact number of outlets for RTD"
+      ],
+      "summary": "Sunil D’Souza provided a comprehensive overview of Tata Consumer Products' performance, highlighting a 15% revenue growth and strong performance in the India branded business. He emphasized the company's strategic focus on growth businesses, which contributed significantly to revenue. Sunil confidently addressed questions about market share and product differentiation, particularly for Tata Soulfull and Tata Sampann. He acknowledged challenges such as US tariffs but remained optimistic about future growth. His tone was confident, reflecting a positive outlook on the company's strategic direction and financial health.",
+      "sentiment_score": 0.9059,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9059,
+        "positive": 0.9222,
+        "negative": 0.0163,
+        "neutral": 0.0614,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Ashish Goenka",
+      "role": "Group CFO",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "exceptional items"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ashish Goenka presented the financial results, highlighting a significant milestone of crossing Rs. 5,000 crores in consolidated revenue. He detailed the broad-based growth across different business vectors and improvements in margins, attributing them to strategic pricing interventions. Ashish also discussed exceptional items impacting the quarter's financials, including a one-time gain and charges related to asset impairments and labor court decisions. His tone was confident, reflecting a strong grasp of the financial intricacies and a positive outlook on the company's financial health.",
+      "sentiment_score": 0.2529,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2529,
+        "positive": 0.3906,
+        "negative": 0.1377,
+        "neutral": 0.4717,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Abneesh Roy",
+      "role": "Analyst from Nuvama",
+      "tone": "neutral",
+      "key_topics": [
+        "Tata Soulfull",
+        "Tata Sampann"
+      ],
+      "direct_answers": [
+        "Sunil D’Souza's response on Tata Soulfull and Tata Sampann"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Abneesh Roy asked insightful questions about Tata Soulfull and Tata Sampann, focusing on market share and growth differentiation strategies. He acknowledged the challenging market environment and sought clarity on how Tata Consumer Products plans to maintain its competitive edge. His tone was neutral, aiming to gather detailed insights into the company's strategic positioning and growth drivers.",
+      "sentiment_score": 0.1726,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1726,
+        "positive": 0.1834,
+        "negative": 0.0107,
+        "neutral": 0.8059,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nihal Mahesh Jham",
+      "role": "Analyst from HSBC",
+      "tone": "neutral",
+      "key_topics": [
+        "Capital Foods",
+        "acquisitions"
+      ],
+      "direct_answers": [
+        "Sunil D’Souza's response on Capital Foods and acquisitions"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Nihal Mahesh Jham posed questions regarding the growth trajectory of Capital Foods and the company's acquisition strategy. He sought to understand the domestic growth potential of Capital Foods amidst international challenges and inquired about the criteria for future acquisitions. His tone was neutral, focusing on understanding the strategic and operational aspects of Tata Consumer Products' business decisions.",
+      "sentiment_score": 0.045,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.045,
+        "positive": 0.0702,
+        "negative": 0.0252,
+        "neutral": 0.9046,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, the analysis includes which analyst questions were answered directly and which were deflected or given vague responses. A narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON structure is then populated with this information, ensuring it adheres to the specified schema.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Divya Gulati",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Divya Gulati served as the moderator for the earnings call, introducing the key speakers and setting the stage for the presentation and Q&A session. She emphasized the forward-looking nature of some statements, highlighting the associated risks and uncertainties. Her role was primarily to facilitate the flow of the meeting and ensure that the agenda was followed. Her tone remained neutral throughout, focusing on procedural aspects rather than content.",
+      "sentiment_score": -0.0732,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0732,
+        "positive": 0.0367,
+        "negative": 0.1099,
+        "neutral": 0.8534,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anish Shah",
+      "role": "Group CEO & MD",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth strategy",
+        "Mahindra Finance",
+        "Lifespaces",
+        "Logistics"
+      ],
+      "direct_answers": [
+        "Chandramouli's question on real growth"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Anish Shah, the Group CEO & MD, presented a confident overview of Mahindra & Mahindra's strong financial performance for the quarter. He highlighted significant growth in operating and reported PAT, with substantial contributions from the Auto and Farm sectors. Shah emphasized the breakthrough performances of Mahindra Finance, Lifespaces, and Logistics, noting strategic pivots and management improvements. He directly addressed questions about growth metrics, maintaining a focus on the company's robust results and strategic direction.",
+      "sentiment_score": 0.8623,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8623,
+        "positive": 0.8917,
+        "negative": 0.0293,
+        "neutral": 0.079,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rajesh Jejurikar",
+      "role": "ED & CEO, Auto and Farm Sector",
+      "tone": "optimistic",
+      "key_topics": [
+        "SUV and LCV growth",
+        "EV strategy",
+        "capacity expansion"
+      ],
+      "direct_answers": [
+        "Kapil's question on Auto sector outlook"
+      ],
+      "dodged_or_vague": [
+        "Gunjan's question on EV business scale up"
+      ],
+      "summary": "Rajesh Jejurikar, as the ED & CEO of the Auto and Farm Sector, conveyed an optimistic outlook on the company's automotive performance. He reported significant growth in SUV and LCV volumes, attributing part of this success to favorable GST changes. Jejurikar discussed the strong market response to new models like the 7XO and highlighted the company's strategic focus on expanding EV offerings. While he provided detailed insights into current performance and future product launches, he was less specific about long-term EV scale-up plans, indicating a cautious approach to future projections.",
+      "sentiment_score": 0.758,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.758,
+        "positive": 0.776,
+        "negative": 0.018,
+        "neutral": 0.206,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amarjyoti Barua",
+      "role": "Group CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "financial results",
+        "CAPEX",
+        "PLI"
+      ],
+      "direct_answers": [
+        "Gunjan's question on PLI and CAPEX"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Amarjyoti Barua, the Group CFO, provided a cautious overview of the financial results, emphasizing the importance of looking at consolidated figures. He discussed the impact of impairments and the strategic decisions taken by the farm leadership. Barua was forthcoming about the CAPEX plans, indicating that more detailed information would be shared in May. He also addressed questions on the Production Linked Incentive (PLI) scheme, providing specific accrual percentages, and maintained a cautious tone throughout his responses.",
+      "sentiment_score": 0.1069,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1069,
+        "positive": 0.1214,
+        "negative": 0.0145,
+        "neutral": 0.8642,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted to capture their main messages and tone. The tone is assessed based on the language used and the context of their statements. For management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is then crafted for each speaker, highlighting their contributions and stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

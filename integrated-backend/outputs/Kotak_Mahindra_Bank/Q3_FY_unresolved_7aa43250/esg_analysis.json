@@ -1,0 +1,74 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 33.5,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 40.0,
+    "key_themes": [
+      "employee count",
+      "customer focus",
+      "digital transformation"
+    ],
+    "notable_excerpts": [
+      "Our headcount approximately, this is including on rolls is close to about 77,000 people as at 31st December.",
+      "We are digitizing and automating our customer journeys to make it much easier for the customer to do business with us."
+    ]
+  },
+  "governance": {
+    "score": 55.0,
+    "key_themes": [
+      "regulatory compliance",
+      "risk management",
+      "financial performance"
+    ],
+    "notable_excerpts": [
+      "We have been working very closely with the regulator and have made notable progress on core banking resilience, business continuity, cybersecurity and digital payments framework.",
+      "Standalone Bank delivered a stable performance amidst changing macro environment and continuing embargo."
+    ]
+  },
+  "chain_of_thought": "The earnings call lacked any environmental disclosures. Social aspects were lightly touched upon, focusing on employee count and customer-centric digital initiatives. Governance was more detailed, with discussions on regulatory compliance and financial performance, but lacked depth in areas like board independence or executive remuneration.",
+  "strengths": [
+    "Strong focus on digital transformation and customer experience.",
+    "Good regulatory compliance and risk management practices."
+  ],
+  "weaknesses": [
+    "No mention of environmental initiatives or impacts.",
+    "Limited discussion on social aspects beyond employee count and customer focus."
+  ],
+  "red_flags": [
+    "No environmental disclosures, indicating potential lack of focus on sustainability."
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

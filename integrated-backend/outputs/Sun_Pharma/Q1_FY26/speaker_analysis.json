@@ -1,0 +1,185 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, providing instructions for participation and managing the flow of the session. They maintained a neutral tone throughout, ensuring the call proceeded smoothly and concluded appropriately.",
+      "sentiment_score": 0.0248,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0248,
+        "positive": 0.0426,
+        "negative": 0.0178,
+        "neutral": 0.9396,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhishek Sharma",
+      "role": "Vice President and Head of Investor Relations and Strategic Projects",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Sharma opened and closed the earnings call, providing a formal welcome and ensuring participants had access to the necessary financial documents. His tone was neutral, focusing on logistics and expressing appreciation for the participants' time.",
+      "sentiment_score": 0.1532,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1532,
+        "positive": 0.1696,
+        "negative": 0.0164,
+        "neutral": 0.814,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayashree Satagopan",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Margins",
+        "Tax rates"
+      ],
+      "direct_answers": [
+        "What led to a margin of 31.1%?",
+        "What is our guidance for the full year?"
+      ],
+      "dodged_or_vague": [
+        "We normally do not give a margin guidance."
+      ],
+      "summary": "Jayashree Satagopan provided a detailed overview of Sun Pharma's financial performance for Q1 FY26, highlighting significant growth in sales and EBITDA. She confidently discussed the company's strong balance sheet and the impact of exceptional items on net profit. While she provided direct answers to questions about margins, she avoided giving specific future guidance, maintaining a focus on past performance and current financial health.",
+      "sentiment_score": 0.6881,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6881,
+        "positive": 0.7315,
+        "negative": 0.0434,
+        "neutral": 0.2251,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Dilip Shanghvi",
+      "role": "Chairman & Managing Director",
+      "tone": "Confident",
+      "key_topics": [
+        "R&D initiatives",
+        "Global market performance",
+        "Product launches"
+      ],
+      "direct_answers": [
+        "Could you provide some timeline for Ilumya filing?"
+      ],
+      "dodged_or_vague": [
+        "We don't give profit guidance."
+      ],
+      "summary": "Dilip Shanghvi confidently discussed Sun Pharma's strategic focus on R&D and global market performance. He highlighted the company's growth in emerging markets and the success of their innovative medicines. Shanghvi provided insights into the company's R&D investments and future product launches, while avoiding specific profit guidance. His tone was optimistic about the company's strategic direction and market opportunities.",
+      "sentiment_score": 0.43,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.43,
+        "positive": 0.506,
+        "negative": 0.076,
+        "neutral": 0.4181,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Kirti Ganorkar",
+      "role": "CEO (India Business) & MD Designate",
+      "tone": "Confident",
+      "key_topics": [
+        "India business performance",
+        "Market share",
+        "New product launches"
+      ],
+      "direct_answers": [
+        "The majority of the growth is coming from prescription business."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Kirti Ganorkar provided a confident overview of Sun Pharma's strong performance in the Indian market, highlighting significant sales growth and market leadership. He emphasized the company's strategic focus on volume-led growth and new product launches, which have contributed to their leading market position. Ganorkar's tone was optimistic, reflecting confidence in the company's continued success in India.",
+      "sentiment_score": 0.8509,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8509,
+        "positive": 0.8589,
+        "negative": 0.008,
+        "neutral": 0.1331,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Richard Ascroft",
+      "role": "CEO (North America)",
+      "tone": "Confident",
+      "key_topics": [
+        "US business performance",
+        "Product launches",
+        "Market competition"
+      ],
+      "direct_answers": [
+        "We expect to launch in the second half of the fiscal year."
+      ],
+      "dodged_or_vague": [
+        "We don't provide product specific guidance."
+      ],
+      "summary": "Richard Ascroft confidently discussed the performance of Sun Pharma's US business, highlighting growth driven by the innovative medicines portfolio. He emphasized the successful launch of Leqselvi and the resolution of patent litigation, which positions the company well in the US market. Ascroft acknowledged challenges in the generics segment due to competition but remained optimistic about future growth opportunities.",
+      "sentiment_score": 0.9319,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9319,
+        "positive": 0.9459,
+        "negative": 0.0141,
+        "neutral": 0.04,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies six unique speakers: the Moderator, Abhishek Sharma, Jayashree Satagopan, Dilip Shanghvi, Kirti Ganorkar, and Richard Ascroft. Each speaker's key statements are extracted and analyzed for tone and content. Management speakers are assessed for their responses to analyst questions, noting any direct answers or vague responses. The JSON structure captures the essence of each speaker's contribution to the earnings call, providing a comprehensive overview of their roles and messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

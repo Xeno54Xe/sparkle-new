@@ -1,0 +1,153 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Vikas Jadhav",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vikas Jadhav opened the earnings call by introducing the key management team present and setting the agenda for the call. He mentioned the possibility of forward-looking statements and highlighted the inherent risks and uncertainties. His tone was neutral, focusing on procedural aspects of the call.",
+      "sentiment_score": -0.0007,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0007,
+        "positive": 0.0307,
+        "negative": 0.0314,
+        "neutral": 0.9378,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Debashis Chatterjee",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "company performance",
+        "growth",
+        "strategic initiatives"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Debashis Chatterjee provided a comprehensive overview of LTIMindtree's performance for FY’25, highlighting growth in key verticals and strategic initiatives. He acknowledged macroeconomic challenges but expressed confidence in the company's ability to navigate them. Chatterjee emphasized the company's strategic partnerships and robust order inflow, reflecting a confident tone throughout his remarks.",
+      "sentiment_score": 0.0142,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0142,
+        "positive": 0.4977,
+        "negative": 0.4836,
+        "neutral": 0.0187,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Venu Lambu",
+      "role": "Chief Executive Officer, Designate",
+      "tone": "optimistic",
+      "key_topics": [
+        "business outlook",
+        "transformation initiatives",
+        "AI economy"
+      ],
+      "direct_answers": [
+        "Sulabh Govila's question on organizational changes and quick wins",
+        "Abhishek Kumar's question on macro contingencies"
+      ],
+      "dodged_or_vague": [
+        "Manik Taneja's question on specific margin improvement timelines"
+      ],
+      "summary": "Venu Lambu, recently rejoined as CEO Designate, expressed optimism about LTIMindtree's future, focusing on transformation initiatives and the AI economy. He outlined key priorities for FY’26, including sales transformation and operational efficiency. Lambu addressed questions on organizational changes and macro contingencies directly, but was vague on specific timelines for margin improvements.",
+      "sentiment_score": 0.8138,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8138,
+        "positive": 0.8216,
+        "negative": 0.0078,
+        "neutral": 0.1706,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vipul Chandra",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "cash flow"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Manik Taneja's question on specific margin improvement timelines"
+      ],
+      "summary": "Vipul Chandra provided a detailed account of LTIMindtree's financial performance for FY’25, highlighting revenue growth and cash flow metrics. He maintained a neutral tone, focusing on factual reporting of financial data. Chandra avoided giving specific guidance on future margin improvements, reflecting a cautious approach to forward-looking statements.",
+      "sentiment_score": 0.9342,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9342,
+        "positive": 0.9542,
+        "negative": 0.02,
+        "neutral": 0.0259,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, providing instructions for participants and ensuring the call proceeded smoothly. The tone was neutral, focusing on logistical aspects of the call.",
+      "sentiment_score": 0.018,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.018,
+        "positive": 0.0379,
+        "negative": 0.0199,
+        "neutral": 0.9421,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting key statements from the transcript. Each speaker's tone was assessed based on their language and content. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or vague responses. A narrative summary was crafted for each speaker to encapsulate their contributions and stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

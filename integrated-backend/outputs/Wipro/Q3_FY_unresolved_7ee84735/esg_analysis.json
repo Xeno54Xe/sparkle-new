@@ -1,0 +1,83 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 41.0,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 20.0,
+    "key_themes": [
+      "energy",
+      "renewables"
+    ],
+    "notable_excerpts": [
+      "good momentum in energy in both Americas and Europe",
+      "traction on the energy consulting side"
+    ]
+  },
+  "social": {
+    "score": 40.0,
+    "key_themes": [
+      "employees",
+      "community",
+      "training"
+    ],
+    "notable_excerpts": [
+      "salary hikes, we will take a call in the next few weeks",
+      "HARMAN DTS employees joining us",
+      "integration also opens new regions and high-growth industries"
+    ]
+  },
+  "governance": {
+    "score": 60.0,
+    "key_themes": [
+      "board independence",
+      "dividend",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "Board of Directors has declared an interim dividend of INR 6 per share",
+      "milestones reflect a legacy of strong governance, values, and integrity",
+      "guidance for Quarter 4"
+    ]
+  },
+  "chain_of_thought": "The earnings call had limited environmental content, focusing mainly on energy momentum. Social aspects were moderately covered with mentions of employee integration and salary considerations. Governance was the most detailed, with discussions on board decisions, dividends, and strategic guidance.",
+  "strengths": [
+    "Strong governance practices",
+    "Commitment to employee integration"
+  ],
+  "weaknesses": [
+    "Limited environmental disclosures",
+    "Uncertainty in social initiatives"
+  ],
+  "red_flags": [
+    "Potential delays in salary hikes",
+    "Limited specifics on environmental impact"
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

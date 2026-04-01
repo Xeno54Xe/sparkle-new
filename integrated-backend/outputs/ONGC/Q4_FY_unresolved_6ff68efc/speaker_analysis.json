@@ -1,0 +1,110 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Madhuri",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "speaker introductions"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Madhuri served as the moderator for the ONGC Q4 FY'25 earnings call. Her role was to introduce the speakers and manage the logistics of the call, ensuring that participants were aware of the procedures for asking questions and reminding them of the call's recording status. Her tone was neutral, focusing on facilitating the smooth operation of the conference call.",
+      "sentiment_score": 0.0336,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0336,
+        "positive": 0.0479,
+        "negative": 0.0143,
+        "neutral": 0.9378,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Tongaonkar",
+      "role": "Director (Finance), ONGC",
+      "tone": "neutral",
+      "key_topics": [
+        "financial results",
+        "dividend payout",
+        "exploration costs"
+      ],
+      "direct_answers": [
+        "Yes."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vivek Tongaonkar, Director of Finance at ONGC, provided a comprehensive overview of the company's financial performance for Q4 and the fiscal year 2025. He reported a decrease in profit after tax by 12.1% compared to the previous year, attributing this to lower crude oil realization and increased exploration costs. Despite this, ONGC declared a significant dividend payout, reflecting confidence in future performance. Tongaonkar's tone was neutral as he detailed the company's financials, including a notable increase in CapEx and exploration activities. He directly answered a question regarding the consideration of OPaL in the financials.",
+      "sentiment_score": -0.1317,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.1317,
+        "positive": 0.4135,
+        "negative": 0.5452,
+        "neutral": 0.0414,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Arun Kumar Singh",
+      "role": "Chairman & CEO, ONGC Group",
+      "tone": "confident",
+      "key_topics": [
+        "production increase",
+        "exploration and CapEx",
+        "future investments"
+      ],
+      "direct_answers": [
+        "CapEx you mean E&P sector. Right?",
+        "No. It is a new well pricing. KG basin is HPHT.",
+        "Exactly. The design is like that. It requires some naphtha and majority gas."
+      ],
+      "dodged_or_vague": [
+        "So I'll request MD OVL to answer this."
+      ],
+      "summary": "Arun Kumar Singh, Chairman and CEO of ONGC, delivered a confident and comprehensive overview of the company's strategic direction and performance. He highlighted the company's focus on exploration and production (E&P), renewable energy, and refining and petrochemical sectors. Singh emphasized the increase in production and the strategic investments in OPaL and renewable energy, projecting a positive growth trajectory. He addressed questions directly, particularly on CapEx and pricing strategies, while deferring some specifics to other executives. His tone was optimistic, underscoring ONGC's commitment to future growth and sustainability.",
+      "sentiment_score": 0.3748,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3748,
+        "positive": 0.4186,
+        "negative": 0.0438,
+        "neutral": 0.5376,
+        "chunks_scored": 5
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The task involves identifying speakers from the transcript and analyzing their contributions. The moderator, Madhuri, facilitated the call, introducing speakers and managing logistics. Vivek Tongaonkar, as Director of Finance, provided detailed financial results, maintaining a neutral tone. Arun Kumar Singh, the CEO, discussed strategic initiatives and future outlook with confidence, addressing questions directly and deferring some to other executives. The analysis captures each speaker's key messages, tone, and interaction with analysts.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

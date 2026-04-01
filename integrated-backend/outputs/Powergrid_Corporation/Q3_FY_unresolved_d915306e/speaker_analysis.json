@@ -1,0 +1,138 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "R.K. Tyagi",
+      "role": "Chairman & Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "Power Grid achievements",
+        "growth outlook",
+        "project capitalisation",
+        "CapEx",
+        "sustainability",
+        "awards"
+      ],
+      "direct_answers": [
+        "For the Leh-Kaithal project, has the technology been decided whether it will be LCC or VSC? No. From the start itself that we are executing this project at VSC only, not LCC.",
+        "Can you provide HVDC pipeline over the next two years with value worth where we see traction, which where we can add up in our CapEx? We have already two projects in our hand, one is Khavda to Nagpur, which is almost worth ₹35,000 crores."
+      ],
+      "dodged_or_vague": [
+        "What is your outlook on the awarding of projects for FY '26? Do you expect like around ₹1 lakh crores worth of projects were awarded this fiscal year. What is your outlook on FY '26? Do you think it will take a..."
+      ],
+      "summary": "R.K. Tyagi, the Chairman and Managing Director, presented an optimistic outlook for Power Grid Corporation, highlighting significant achievements and future growth prospects. He emphasized the company's strong position as a leading power transmission utility with a robust credit rating and extensive infrastructure. Tyagi detailed the company's recent project wins and financial performance, underscoring a bright future with substantial CapEx plans. He confidently addressed questions about specific projects and technology choices, though he was less specific about future project awards. Overall, his tone was positive, focusing on growth, sustainability, and strategic achievements.",
+      "sentiment_score": 0.2607,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2607,
+        "positive": 0.2703,
+        "negative": 0.0096,
+        "neutral": 0.7201,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "G. Ravisankar",
+      "role": "Director (Finance) & CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "capitalisation",
+        "RTM projects",
+        "O&M expenses"
+      ],
+      "direct_answers": [
+        "O&M? You alluded to the Q3 figure at ₹140 crores, but could we get the nine-month figure as well? You can multiply by 3, it will be in the range of around ₹450 crores.",
+        "What explains the fall in consolidated profit in this quarter despite the rising capitalisation? Is it largely driven by the O&M expenses? Or is there something else or if you can help us understand it better, please? You see, only if you see in Q3 to Q3, there will be a reduction between consol and standalone, that is because the dividends which we have taken from the SPVs is more than the Q3 profits of the consolidation of all SPVs put together."
+      ],
+      "dodged_or_vague": [],
+      "summary": "G. Ravisankar, the Director of Finance and CFO, provided a detailed and neutral overview of Power Grid's financial performance. He explained the financial figures, including the impact of dividends from SPVs on consolidated profits and the expected O&M expenses. Ravisankar addressed questions directly, offering clear explanations about financial metrics and project costs. His responses were factual and focused on providing clarity on financial matters, without delving into speculative or forward-looking statements. His tone remained steady and informative throughout the call.",
+      "sentiment_score": 0.1929,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1929,
+        "positive": 0.2213,
+        "negative": 0.0284,
+        "neutral": 0.7503,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mohit Kumar",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "meeting facilitation",
+        "introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mohit Kumar served as the moderator for the analyst meet, facilitating the session and ensuring a smooth flow of the meeting. He introduced the senior management team and set the stage for the discussion on Power Grid's business and financial results. Kumar maintained a neutral tone, focusing on logistical aspects and transitioning between different segments of the meeting. His role was primarily to manage the proceedings and ensure that the Q&A session was conducted efficiently.",
+      "sentiment_score": 0.1048,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1048,
+        "positive": 0.12,
+        "negative": 0.0152,
+        "neutral": 0.8648,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sumit Kishore",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "capitalisation",
+        "project wins",
+        "financial targets"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sumit Kishore, an analyst, participated actively in the Q&A session, posing detailed questions about Power Grid's capitalisation and project wins. His inquiries were focused on understanding the company's ability to meet its financial targets and the progress of recent projects. Kishore's tone was inquisitive, seeking clarity on specific financial metrics and the implications of recent developments. He aimed to gain a deeper understanding of the company's strategic direction and financial health.",
+      "sentiment_score": 0.357,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.357,
+        "positive": 0.3793,
+        "negative": 0.0223,
+        "neutral": 0.5985,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers from the transcript, including management and analysts. Each speaker's key statements are extracted, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. This structured approach ensures a comprehensive understanding of the earnings call dynamics and the perspectives of different stakeholders.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

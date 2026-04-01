@@ -1,0 +1,111 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Samita Shah",
+      "role": "VP Corporate Finance, Treasury, & Risk Management – Tata Steel Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "safe harbour clause",
+        "call governance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Samita Shah opened the call by welcoming participants and providing an overview of the agenda. She emphasized the availability of a detailed presentation on the company's website and reminded participants about the Safe harbour clause governing the call. Her tone remained neutral throughout, focusing on procedural aspects rather than specific financial details. She concluded the call by thanking participants and expressing anticipation for future engagements.",
+      "sentiment_score": 0.1224,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1224,
+        "positive": 0.1333,
+        "negative": 0.0108,
+        "neutral": 0.8559,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "T. V. Narendran",
+      "role": "CEO & MD - Tata Steel Limited",
+      "tone": "confident",
+      "key_topics": [
+        "global dynamics",
+        "production performance",
+        "geographical performance"
+      ],
+      "direct_answers": [
+        "European steel industry context",
+        "UK market impact"
+      ],
+      "dodged_or_vague": [],
+      "summary": "T. V. Narendran provided a confident overview of Tata Steel's performance amidst challenging global dynamics, highlighting improvements in production and sales across geographies. He noted the impact of Chinese steel exports on global pricing but emphasized Tata Steel's strong quarterly and yearly performance. Narendran detailed the company's production increases in India and strategic sales efforts, underscoring the strength of customer relationships. He directly addressed questions about the European steel industry and the UK market, reflecting a proactive and informed stance.",
+      "sentiment_score": 0.939,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.939,
+        "positive": 0.9596,
+        "negative": 0.0206,
+        "neutral": 0.0198,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Koushik Chatterjee",
+      "role": "ED & CFO – Tata Steel Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "cost transformation",
+        "macroeconomic uncertainty"
+      ],
+      "direct_answers": [
+        "cost and price guidance",
+        "decarbonisation efforts"
+      ],
+      "dodged_or_vague": [
+        "leverage targets"
+      ],
+      "summary": "Koushik Chatterjee provided a cautious overview of Tata Steel's financial performance, emphasizing the impact of global macroeconomic uncertainties. He detailed the company's revenue and EBITDA figures, highlighting the success of the cost transformation program. Chatterjee addressed questions on cost and price guidance and decarbonisation efforts, but was less specific on leverage targets. His cautious tone reflected the challenges posed by external economic factors, while maintaining a focus on strategic financial management.",
+      "sentiment_score": 0.006,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.006,
+        "positive": 0.062,
+        "negative": 0.0559,
+        "neutral": 0.8821,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers from the transcript: Samita Shah, T. V. Narendran, and Koushik Chatterjee. Each speaker's key statements are extracted, focusing on verbatim quotes that include specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and context. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or avoided. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

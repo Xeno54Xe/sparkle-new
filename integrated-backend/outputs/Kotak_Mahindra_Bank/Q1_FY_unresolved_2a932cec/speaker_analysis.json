@@ -1,0 +1,140 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ashok Vaswani",
+      "role": "Managing Director & CEO",
+      "tone": "cautious",
+      "key_topics": [
+        "economic growth",
+        "repo rate cuts",
+        "credit cost",
+        "customer strategy",
+        "SME growth",
+        "retail unsecured book"
+      ],
+      "direct_answers": [
+        "We expect MFI to peak. We expect MFI to drop off.",
+        "MFI as an overall book, as an overall of total assets will not be more than 3% or 4% of our total asset book."
+      ],
+      "dodged_or_vague": [
+        "We are not going to get to 15% overnight, but it's kind of building it up."
+      ],
+      "summary": "Ashok Vaswani opened the call with a cautious tone, highlighting the benign economic growth and the RBI's efforts to stimulate the economy through repo rate cuts. He noted that despite these efforts, demand for bank credit has not picked up significantly. Vaswani emphasized the bank's healthy growth in net advances and deposits, while acknowledging the impact of repo rate cuts on NIM. He expressed cautious optimism about the declining trend in MFI credit costs and outlined the bank's strategic focus on customer-centric growth, particularly in the SME segment. He also discussed the bank's aspirations for its retail unsecured book, indicating a long-term goal of reaching 15%.",
+      "sentiment_score": 0.8861,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8861,
+        "positive": 0.9284,
+        "negative": 0.0423,
+        "neutral": 0.0293,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Devang Gheewalla",
+      "role": "Group Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "NIM reduction",
+        "credit cost",
+        "operating profit",
+        "consolidated performance",
+        "subsidiary performance"
+      ],
+      "direct_answers": [
+        "Broadly 3 months."
+      ],
+      "dodged_or_vague": [
+        "So, I think there are three primary reasons, as I explained in my opening remark."
+      ],
+      "summary": "Devang Gheewalla provided a detailed analysis of the bank's financial performance, maintaining a neutral tone throughout. He explained the reduction in NIM due to repo rate cuts and highlighted the impact of MFI sector stress on credit costs. Gheewalla noted the bank's balance sheet growth and the reduction in unsecured advances as part of tightened underwriting norms. He also discussed the bank's capital adequacy and the performance of its subsidiaries, emphasizing the overall health of the bank's financial position. His responses to questions were generally direct, though some explanations were broad and lacked specific details.",
+      "sentiment_score": -0.8585,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.8585,
+        "positive": 0.0593,
+        "negative": 0.9177,
+        "neutral": 0.023,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nilesh Shah",
+      "role": "Managing Director, Kotak Mahindra Asset Management Company Limited",
+      "tone": "confident",
+      "key_topics": [
+        "asset management growth",
+        "client flows",
+        "equity market stability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nilesh Shah spoke with confidence about the growth in the asset management segment, highlighting an 8% quarter-on-quarter increase in total assets under management. He attributed this growth to higher client flows, particularly on the debt side, and noted the stability in the equity market. Shah's remarks were focused on the positive performance of the asset management business, reflecting a strong position in the market. His statements were clear and direct, without any indication of evasion or vagueness.",
+      "sentiment_score": 0.9259,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9259,
+        "positive": 0.9457,
+        "negative": 0.0199,
+        "neutral": 0.0344,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shanti Ekambaram",
+      "role": "Deputy Managing Director",
+      "tone": "neutral",
+      "key_topics": [
+        "net advances growth",
+        "customer assets",
+        "deposits growth"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Shanti Ekambaram provided a concise update on the bank's growth in net advances, customer assets, and deposits. Her tone was neutral, focusing on the year-on-year and quarter-on-quarter growth metrics. Ekambaram's statements were straightforward, reflecting the bank's steady performance in these areas. She did not engage in any direct Q&A during the call, and her remarks were limited to providing factual updates.",
+      "sentiment_score": 0.9311,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9311,
+        "positive": 0.9455,
+        "negative": 0.0144,
+        "neutral": 0.0402,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and context. For management speakers, their responses to analyst questions are evaluated to determine if they were direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. This structured approach ensures a comprehensive understanding of the earnings call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

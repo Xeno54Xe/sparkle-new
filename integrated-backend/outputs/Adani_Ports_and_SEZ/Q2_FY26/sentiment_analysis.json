@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8556,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9381,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9381,
+        "positive": 0.9584,
+        "negative": 0.0203,
+        "neutral": 0.0213,
+        "chunks_scored": 1
+      },
+      "text": "Adani Ports and SEZ reported a strong financial performance in Q2 FY26, with revenue reaching INR 9,167 crores, up 30%, and EBITDA at INR 5,550 crores, growing 27%. The net profit was INR 3,120 crores, marking a 29% increase. The company highlighted a significant improvement in return on capital employed (ROCE), which increased to 16% in H1 FY26 from 15% in FY25. Domestic Ports revenue grew by 15% to INR 6,351 crores, driven by an 8% cargo increase and a record high 28% market share. The EBITDA margin for Domestic Ports reached 74.2%, attributed to operational efficiency initiatives. International Ports revenue hit a lifetime high of INR 1,077 crores, with a notable EBITDA margin improvement of 969 points during the quarter."
+    },
+    "forward_guidance": {
+      "score": 0.916,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.916,
+        "positive": 0.9261,
+        "negative": 0.0101,
+        "neutral": 0.0639,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving their long-term targets, with plans to increase capacity from 633 million metric tons to between 1.1 to 1.2 billion metric tons over the next five years. They are investing INR 45,000 to INR 50,000 crores in capacity expansions at various ports, including Vizhinjam Phase-2 and Dhamra. The company aims to maintain a trajectory of growth, with expectations of trade growing between 5.5% to 6%. Management is particularly bullish on container growth, with new capacity at Mundra expected to drive future growth. The language used was optimistic, with a focus on strategic investments and capacity expansions."
+    },
+    "risk_language": {
+      "score": 0.5659,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.5659,
+        "positive": 0.6945,
+        "negative": 0.1287,
+        "neutral": 0.1768,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including geopolitical impacts on trade and the challenges faced by Mundra due to Operation Sindoor. Management acknowledged the impact of global trade policies and the country's economic conditions on their operations. They also discussed the potential temporary impact on margins due to capacity expansions. The company is aware of the need to manage debt, with a current net debt to EBITDA ratio of 1.8x, and aims to maintain it below 2.5x. Management was forthright about these challenges but expressed confidence in their ability to manage them."
+    },
+    "investor_confidence": {
+      "score": 0.9311,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9311,
+        "positive": 0.9445,
+        "negative": 0.0134,
+        "neutral": 0.042,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, emphasizing their strategic focus on profitable and capital-efficient growth. They highlighted their strengthening balance sheet, with Fitch Ratings upgrading their outlook to 'Stable'. Analyst questions were answered directly, with detailed explanations provided for financial performance and future plans. The management team demonstrated credibility by outlining clear strategies for capacity expansion and market share growth. Their commitment to sustainability and recognition by ESG rating agencies further reinforced investor confidence."
+    }
+  },
+  "key_positive_drivers": [
+    "30% increase in revenue",
+    "27% growth in EBITDA",
+    "Record high market share in Domestic Ports",
+    "Significant improvement in ROCE",
+    "Bullish on container growth",
+    "Fitch Ratings upgraded outlook to 'Stable'"
+  ],
+  "key_negative_drivers": [
+    "Geopolitical impacts on trade",
+    "Challenges at Mundra due to Operation Sindoor",
+    "Potential temporary impact on margins from capacity expansions",
+    "Dependency on imported coal affecting Mundra"
+  ],
+  "notable_phrases": [
+    "record quarter",
+    "significant improvement in return on capital employed",
+    "bullish on container growth",
+    "capacity expansion at various ports",
+    "Fitch Ratings upgraded outlook to 'Stable'",
+    "geopolitical impacts on trade",
+    "Operation Sindoor challenges",
+    "profitable and capital-efficient growth"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant growth in revenue, EBITDA, and net profit, alongside improvements in ROCE. Forward guidance was optimistic, focusing on capacity expansions and bullish container growth. Risks were acknowledged, particularly geopolitical impacts and challenges at Mundra, but management expressed confidence in managing these. Investor confidence was reinforced by strategic clarity, a stable outlook from Fitch, and a focus on sustainability."
+}

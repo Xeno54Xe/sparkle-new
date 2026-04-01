@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7965,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9295,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9295,
+        "positive": 0.9523,
+        "negative": 0.0228,
+        "neutral": 0.0249,
+        "chunks_scored": 1
+      },
+      "text": "Divi's Laboratories reported a consolidated total income of ₹2,529 crores for Q1 FY26, compared to ₹2,197 crores in the previous year, indicating a strong performance. Profit before tax increased to ₹733 crores from ₹604 crores, and profit after tax rose to ₹545 crores from ₹430 crores year-over-year. On a standalone basis, total income was ₹2,476 crores, with a profit before tax of ₹747 crores and a profit after tax of ₹557 crores. The company maintained a material consumption rate of about 40% of sales revenue, consistent with the previous year. The financial results were described as a 'good set of numbers,' reflecting robust growth despite 'persistent pricing pressures.'"
+    },
+    "forward_guidance": {
+      "score": 0.9152,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9152,
+        "positive": 0.9246,
+        "negative": 0.0094,
+        "neutral": 0.066,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the future, highlighting ongoing capex programs and strategic projects. They anticipate a total capital expenditure of ₹2,000 crores for the financial year, aimed at expanding capacity and upgrading technologies. The company is executing three major capex programs backed by long-term supply commitments, which 'further strengthen our forward visibility.' The newly commissioned Solid Phase Peptide Synthesis capacity has attracted strong interest, and several projects are expected to transition to commercial scale within 12 to 24 months. Despite geopolitical uncertainties, the company remains committed to sustainable growth and operational resilience."
+    },
+    "risk_language": {
+      "score": 0.3245,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.3245,
+        "positive": 0.5726,
+        "negative": 0.2481,
+        "neutral": 0.1793,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including 'geopolitical uncertainties' and 'persistent pricing pressures' that could impact global trade flows. Management acknowledged the challenges posed by evolving market dynamics and regulatory developments. They emphasized the importance of maintaining 'prudent buffer stock' to ensure supply continuity amidst global uncertainties. The company is also aware of the competitive pressures in the API segment, which has seen a 'flat year-over-year' performance. Despite these challenges, management remains focused on strategic clarity and disciplined execution to mitigate risks."
+    },
+    "investor_confidence": {
+      "score": 0.8909,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8909,
+        "positive": 0.9014,
+        "negative": 0.0105,
+        "neutral": 0.0881,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call, emphasizing their 'enduring strength' and 'operational resilience.' They highlighted their 'innovation-led strategy' and commitment to 'sustainable inclusive growth.' Analyst questions were addressed directly, with management providing detailed explanations about their strategic initiatives and financial performance. The company's strong track record and long-standing customer relationships were underscored as key factors in maintaining investor confidence. The call conveyed a sense of strategic clarity and disciplined execution, reinforcing management's credibility."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong financial performance with increased profits",
+    "Robust and competitive position in the global market",
+    "Successful backward integration model",
+    "Significant interest in new Solid Phase Peptide Synthesis capacity",
+    "Execution of major capex programs with long-term commitments"
+  ],
+  "key_negative_drivers": [
+    "Persistent pricing pressures",
+    "Flat performance in the API segment",
+    "Geopolitical uncertainties affecting global trade",
+    "Competitive pressures in the market"
+  ],
+  "notable_phrases": [
+    "good set of numbers",
+    "persistent pricing pressures",
+    "enduring strength",
+    "operational resilience",
+    "innovation-led strategy",
+    "sustainable inclusive growth",
+    "prudent buffer stock",
+    "strategic clarity"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant year-over-year growth in income and profits, despite challenges like pricing pressures. Forward guidance was cautiously optimistic, with strategic investments and capex programs indicating future growth potential. Risks were acknowledged, particularly geopolitical uncertainties and competitive pressures, but management's strategic clarity and disciplined execution were emphasized. Investor confidence was bolstered by management's transparency and the company's strong track record, leading to a cautiously bullish overall tone."
+}

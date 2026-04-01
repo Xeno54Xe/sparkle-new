@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Nehal Shah",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "earnings call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nehal Shah served as the moderator for the TCS earnings call, providing a neutral and informative introduction. She outlined the logistics of the call, including the availability of financial documents and the presence of the leadership team. Her role was primarily to facilitate the call and ensure that participants were aware of the resources available to them.",
+      "sentiment_score": 0.0535,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0535,
+        "positive": 0.066,
+        "negative": 0.0125,
+        "neutral": 0.9214,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "K Krithivasan",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "quarterly performance",
+        "demand trends",
+        "AI and GenAI",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "Abhishek Kumar's question on furloughs",
+        "Manik Taneja's question on deal tenure"
+      ],
+      "dodged_or_vague": [
+        "Rishi Jhunjhunwala's question on capital allocation method"
+      ],
+      "summary": "K Krithivasan, the CEO and Managing Director, delivered a confident overview of TCS's quarterly performance, highlighting a 4.5% revenue growth and a strong TCV of $10.2 billion. He emphasized the growth in AI and GenAI services and discussed the strategic focus on cost optimization and business transformation. Krithivasan addressed questions about furloughs and deal tenure directly but was less specific on capital allocation methods. His tone was optimistic about future growth, particularly in AI-driven projects.",
+      "sentiment_score": 0.7483,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7483,
+        "positive": 0.7577,
+        "negative": 0.0093,
+        "neutral": 0.233,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "segmental performance",
+        "capital allocation"
+      ],
+      "direct_answers": [
+        "Rishi Jhunjhunwala's question on dividends"
+      ],
+      "dodged_or_vague": [
+        "Rishi Jhunjhunwala's question on capital allocation method"
+      ],
+      "summary": "Samir Seksaria, the CFO, provided a detailed account of TCS's financial performance, reporting a 5.6% revenue growth and a 24.5% operating margin. He discussed the company's capital allocation strategy, including a recommended dividend of ₹76 per share. Seksaria answered questions about dividends directly but was less forthcoming about the specifics of the capital allocation method. His tone was neutral, focusing on factual financial data.",
+      "sentiment_score": 0.931,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.931,
+        "positive": 0.9509,
+        "negative": 0.0199,
+        "neutral": 0.0292,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Milind Lakkad",
+      "role": "Chief HR Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "workforce diversity",
+        "promotions",
+        "talent pipeline"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Milind Lakkad, the Chief HR Officer, spoke optimistically about TCS's workforce, highlighting its diversity and the significant number of promotions awarded. He emphasized the company's commitment to talent development and the strategic investments in skill development. Lakkad's remarks were forward-looking, focusing on the company's preparedness to meet future client needs through a robust talent pipeline.",
+      "sentiment_score": 0.9108,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9108,
+        "positive": 0.9249,
+        "negative": 0.014,
+        "neutral": 0.0611,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The transcript reveals four main speakers: Nehal Shah as the moderator, K Krithivasan as the CEO, Samir Seksaria as the CFO, and Milind Lakkad as the CHRO. Each speaker's statements were analyzed for tone and content. Krithivasan's confident tone and focus on AI and future growth were noted, while Seksaria's neutral tone centered on financial specifics. Lakkad's optimistic tone highlighted workforce achievements. Direct answers and vague responses were identified, particularly in the Q&A session, to assess how management handled analyst inquiries.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

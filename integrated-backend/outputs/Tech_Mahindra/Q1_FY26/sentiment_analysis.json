@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.4783,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.2074,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.2074,
+        "positive": 0.5929,
+        "negative": 0.3854,
+        "neutral": 0.0217,
+        "chunks_scored": 1
+      },
+      "text": "Tech Mahindra reported revenues of $1,564 million for Q1 FY26, reflecting a 0.4% growth year-on-year and a 1.0% decline on a constant currency basis. The EBIT margin improved to 11.1% from 10.5% last quarter, marking the seventh consecutive quarter of margin expansion. Profit after tax increased by 30% year-on-year to $133 million, with a PAT margin of 8.5%, expanding by 200 basis points. The return on capital employed stood at 23.8%. Despite headwinds such as higher visa costs and lower utilization, savings from Project Fortius and operational efficiencies contributed positively. However, revenue in constant currency terms declined by 1.4% sequentially and 1% year-on-year."
+    },
+    "forward_guidance": {
+      "score": 0.9361,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9361,
+        "positive": 0.9537,
+        "negative": 0.0176,
+        "neutral": 0.0288,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving margin improvement targets for FY27, despite acknowledging a dynamic and uncertain environment. They highlighted a strategy to leverage relationships with global communications service providers and invest in digital platforms and API monetization. The company expects large-deal wins to start accruing to revenue from Q2 onwards, provided no fresh surprises occur. The outlook for FY26 is expected to be better than FY25, with a focus on narrowing the growth gap with peers and achieving industry-average growth by FY27."
+    },
+    "risk_language": {
+      "score": -0.2086,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.2086,
+        "positive": 0.2457,
+        "negative": 0.4543,
+        "neutral": 0.3,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including the dynamic and uncertain environment, seasonality in the Comviva business, and challenges in the Automotive sector. They also noted the impact of higher visa costs and lower utilization on margins. The company is dealing with ongoing restructuring in the semiconductor industry and discretionary spend reductions in the Automotive segment. Despite these challenges, management remains focused on cost efficiency and quality of revenue mix. They emphasized the importance of prudent contracting and pricing strategies to mitigate risks."
+    },
+    "investor_confidence": {
+      "score": 0.8848,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8848,
+        "positive": 0.8953,
+        "negative": 0.0105,
+        "neutral": 0.0942,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence in their strategic direction, emphasizing the progress made in margin expansion and cost efficiencies. They addressed analyst questions directly, providing detailed explanations of their strategies and expectations. The leadership team highlighted their commitment to building a high-performance organization and the importance of their formidable team in driving transformation. The company's recognition in the FTSE4Good Index and other awards underscored their credibility and commitment to governance and ESG standards."
+    }
+  },
+  "key_positive_drivers": [
+    "Seventh consecutive quarter of margin expansion",
+    "30% year-on-year increase in profit after tax",
+    "44% growth in total deal wins on an LTM basis",
+    "Strong performance in Communications, Retail, and BFSI verticals",
+    "Savings from Project Fortius and operational efficiencies"
+  ],
+  "key_negative_drivers": [
+    "Decline in revenue on a constant currency basis",
+    "Higher visa costs and lower utilization",
+    "Challenges in the Automotive sector",
+    "Ongoing restructuring in the semiconductor industry",
+    "Dynamic and uncertain environment"
+  ],
+  "notable_phrases": [
+    "Seventh consecutive quarter of margin expansion",
+    "Dynamic and uncertain environment",
+    "Narrowing the growth gap with peers",
+    "Prudent contracting and pricing strategies",
+    "Focus on cost efficiency and quality of revenue mix",
+    "Commitment to building a high-performance organization",
+    "Recognition in the FTSE4Good Index",
+    "Confident in our ability to build revenue momentum"
+  ],
+  "chain_of_thought": "Tech Mahindra's financial performance showed positive margin expansion and profit growth, but faced revenue challenges in constant currency terms. Forward guidance was cautiously optimistic, with expectations of improved performance in FY26 and strategic investments in key areas. Risk discussions acknowledged several headwinds, but management emphasized cost efficiency and prudent strategies. Investor confidence was bolstered by management's clarity, strategic focus, and recognition in governance and ESG standards."
+}

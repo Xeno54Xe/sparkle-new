@@ -1,0 +1,130 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "call management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could engage and reminding them of the call's recording status. They maintained a neutral tone, focusing on logistics and ensuring a smooth transition to the management speakers.",
+      "sentiment_score": 0.0463,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0463,
+        "positive": 0.0594,
+        "negative": 0.0131,
+        "neutral": 0.9275,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srinivasan Vaidyanathan",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "NPL recoveries",
+        "capital management"
+      ],
+      "direct_answers": [
+        "Mahrukh Adajania's question on NPL recoveries",
+        "Mahrukh Adajania's question on margins",
+        "Chintan's question on capital management"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Srinivasan Vaidyanathan, the CFO, provided detailed insights into the bank's financial performance, focusing on NPL recoveries and capital management. He confidently addressed questions about the bank's strategic objectives, including loan growth and capital ratios. Vaidyanathan explained the impact of interest rate changes on yields and costs, projecting optimism about future financial stability. His responses were direct and informative, reflecting a deep understanding of the bank's financial dynamics.",
+      "sentiment_score": 0.3758,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3758,
+        "positive": 0.4358,
+        "negative": 0.06,
+        "neutral": 0.5043,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Sashidhar Jagdishan",
+      "role": "CEO and Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "economic outlook",
+        "loan growth",
+        "technology investments"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sashidhar Jagdishan, the CEO and Managing Director, opened the call with an optimistic overview of the economic and banking environment. He highlighted the strengthening domestic economy and the bank's strategic focus on loan growth and market share gains. Jagdishan emphasized the bank's disciplined pricing and investment in technology to enhance customer experience and operational efficiency. His tone was optimistic, projecting confidence in the bank's future performance and stability.",
+      "sentiment_score": 0.7905,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7905,
+        "positive": 0.8082,
+        "negative": 0.0177,
+        "neutral": 0.174,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Kaizad Bharucha",
+      "role": "Deputy Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "market opportunities",
+        "regulatory guidelines"
+      ],
+      "direct_answers": [
+        "Ravi Purohit's question on market opportunities"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Kaizad Bharucha, the Deputy Managing Director, addressed questions regarding market opportunities and regulatory guidelines. He expressed confidence in the bank's ability to capitalize on new market avenues, particularly those previously financed offshore. Bharucha's responses were direct and assured, reflecting a strategic focus on leveraging the bank's strong balance sheet to explore emerging opportunities.",
+      "sentiment_score": 0.2049,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2049,
+        "positive": 0.2141,
+        "negative": 0.0091,
+        "neutral": 0.7768,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: the Moderator, Srinivasan Vaidyanathan (CFO), Sashidhar Jagdishan (CEO and MD), and Kaizad Bharucha (Deputy MD). Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

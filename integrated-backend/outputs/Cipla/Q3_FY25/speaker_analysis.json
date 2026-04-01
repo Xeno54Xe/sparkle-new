@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Cipla Q3 FY25 earnings call, ensuring smooth transitions between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on logistics and procedural aspects of the call. The moderator concluded the session by thanking participants and officially ending the call.",
+      "sentiment_score": 0.035,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.035,
+        "positive": 0.0505,
+        "negative": 0.0155,
+        "neutral": 0.9341,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Diksha Maheshwari",
+      "role": "Head, Investor Relations Team",
+      "tone": "Neutral",
+      "key_topics": [
+        "Forward-looking statements",
+        "Investor presentation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Diksha Maheshwari opened the earnings call by welcoming participants and highlighting the inclusion of forward-looking statements in the discussion. She emphasized the risks and uncertainties associated with these statements and clarified that Cipla is not obligated to update them publicly. Her tone was neutral, focusing on setting the stage for the management's presentations. She also mentioned the availability of the investor presentation on the company's website.",
+      "sentiment_score": 0.0038,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0038,
+        "positive": 0.0466,
+        "negative": 0.0427,
+        "neutral": 0.9107,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Vohra",
+      "role": "MD & Global CEO",
+      "tone": "Confident",
+      "key_topics": [
+        "90th anniversary",
+        "Innovation",
+        "US market strategy",
+        "Regulatory updates"
+      ],
+      "direct_answers": [
+        "Revlimid is sequentially more or less the same.",
+        "On Abraxane, we have a definite launch at least by the end of this next year and a few months after approval."
+      ],
+      "dodged_or_vague": [
+        "I think we can't comment specifically because I think we have to let the policy framework of the new administration set in."
+      ],
+      "summary": "Umang Vohra, the MD & Global CEO, expressed confidence and optimism as he highlighted Cipla's 90th anniversary and its commitment to innovation and equitable healthcare access. He detailed the company's strategic investments in US facilities, emphasizing the potential growth from key assets like generic Advair and Abraxane. Vohra addressed questions about US revenue trajectory and regulatory delays with direct answers but was evasive regarding potential US tariff impacts, citing the need for more information. His overall tone was confident, focusing on strategic growth and resilience.",
+      "sentiment_score": 0.8288,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8288,
+        "positive": 0.836,
+        "negative": 0.0072,
+        "neutral": 0.1568,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Adukia",
+      "role": "CFO",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "EBITDA margins",
+        "R&D investment"
+      ],
+      "direct_answers": [
+        "We're guiding to 27%, 28% ETR for the full year."
+      ],
+      "dodged_or_vague": [
+        "Specific numbers, we avoid the guidance because as by the contract we can't share those numbers."
+      ],
+      "summary": "Ashish Adukia, the CFO, confidently presented Cipla's financial performance, highlighting record quarterly revenue and EBITDA margins. He detailed the growth across various markets and emphasized the company's strategic investments in R&D and field force expansion. Adukia provided clear guidance on the expected effective tax rate but was vague about specific revenue numbers due to contractual obligations. His tone was confident, focusing on the company's strong financial position and growth prospects.",
+      "sentiment_score": 0.7427,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7427,
+        "positive": 0.7629,
+        "negative": 0.0202,
+        "neutral": 0.2169,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying the unique speakers from the transcript: the Moderator, Diksha Maheshwari, Umang Vohra, and Ashish Adukia. Each speaker's key statements were extracted, focusing on verbatim quotes that included specific language, numbers, and forward-looking statements. The tone for each speaker was assessed based on their statements and interaction style. For management speakers, direct answers and vague responses to analyst questions were noted. Finally, a narrative summary was crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

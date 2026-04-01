@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1447,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bearish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.1851,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.1851,
+        "positive": 0.5445,
+        "negative": 0.3594,
+        "neutral": 0.096,
+        "chunks_scored": 1
+      },
+      "text": "Our IT Services revenue for Quarter 4 was $2.6 billion reflecting a sequential decline of 0.8% and 1.2% on a year-on-year basis. The order booking for Quarter 4 was at $4.0 billion, which is a growth of 13.4% sequentially and 10.5% on year-on-year basis. Our operating margins came in at 17.5%, which is flat sequentially and 110 basis point expansion on a year-on-year basis. For the full year IT Services revenues were $10.51 billion reflecting year-on-year degrowth of 2.3%. Our operating margin was at 17.1%, an expansion of almost 1% as compared to FY24. Net income grew 6% quarter on quarter in Q4 and 19% for the full year. EPS for the full year was at INR 12.6, a growth of 20% year on year. Free cash flow as a percentage of net income was at 118%, with gross cash including investments at $6.4 billion."
+    },
+    "forward_guidance": {
+      "score": 0.3112,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.3112,
+        "positive": 0.4303,
+        "negative": 0.1191,
+        "neutral": 0.4506,
+        "chunks_scored": 1
+      },
+      "text": "Given the uncertainty in the environment, we expect clients to take a more measured approach going forward, especially on large transformation programs and discretionary spending. We are guiding for a sequential growth of minus 3.5% to minus 1.5% in constant currency terms. As we enter FY ‘26, we are faced with headwinds on account of an uncertain macroeconomic environment that is putting a downward pressure on our revenues. Our endeavour would be to maintain these margins in a narrow band in the coming quarters. The guidance for quarter one is based on the best visibility, both in terms of revenue and what we have seen currently. However, the upper end of the guidance is if we see the improvement in the demand situation from where we are today."
+    },
+    "risk_language": {
+      "score": -0.946,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.946,
+        "positive": 0.0156,
+        "negative": 0.9616,
+        "neutral": 0.0228,
+        "chunks_scored": 1
+      },
+      "text": "The global industry environment remained uncertain for most of the year and the recent tariff announcements have only added to that. We are faced with headwinds on account of an uncertain macroeconomic environment that is putting a downward pressure on our revenues. There are two headwinds: a weak revenue environment and deals that are cost takeout and vendor consolidation, which come with pricing pressure. The weakness in Europe is likely to continue into Q1. The macroeconomic environment will impact sectors including consumer and manufacturing, where we are seeing some softness."
+    },
+    "investor_confidence": {
+      "score": 0.925,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.925,
+        "positive": 0.9351,
+        "negative": 0.0102,
+        "neutral": 0.0547,
+        "chunks_scored": 1
+      },
+      "text": "Our execution rigor with speed has been acknowledged by clients, reflected in the clear improvement in our Client Satisfaction Scores. We have continued to invest in our people, skilling them for the new AI wave. Our clients have responded well to our consulting-led AI-Powered Industry and Cross-Industry Solutions. We continue to focus on our large accounts in our core markets and priority sectors. Management addressed questions directly, providing clarity on the guidance and the factors influencing it. The pipeline is strong, and there is deal momentum, particularly in large deals."
+    }
+  },
+  "key_positive_drivers": [
+    "Order booking growth of 13.4% sequentially",
+    "Operating margin expansion of 110 basis points year-on-year",
+    "Net income growth of 19% for the full year",
+    "Strong pipeline and deal momentum",
+    "Improvement in Client Satisfaction Scores"
+  ],
+  "key_negative_drivers": [
+    "Sequential revenue decline of 0.8%",
+    "Year-on-year revenue degrowth of 2.3%",
+    "Weakness in Europe likely to continue",
+    "Pricing pressure from cost takeout and vendor consolidation deals",
+    "Uncertain macroeconomic environment"
+  ],
+  "notable_phrases": [
+    "Sequential decline of 0.8%",
+    "Order booking growth of 13.4%",
+    "Operating margins at 17.5%",
+    "Guiding for a sequential growth of minus 3.5% to minus 1.5%",
+    "Faced with headwinds on account of an uncertain macroeconomic environment",
+    "Weakness in Europe is likely to continue",
+    "Improvement in Client Satisfaction Scores",
+    "Strong pipeline and deal momentum"
+  ],
+  "chain_of_thought": "The financial performance showed a decline in revenues but an improvement in margins and net income. Forward guidance was cautious due to macroeconomic uncertainties and expected revenue declines. Risk language highlighted headwinds from the economic environment and specific regional weaknesses. Investor confidence signals were mixed, with management showing clarity and a strong pipeline but acknowledging challenges."
+}

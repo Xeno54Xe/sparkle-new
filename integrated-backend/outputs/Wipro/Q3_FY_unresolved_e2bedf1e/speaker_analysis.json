@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Abhishek Jain",
+      "role": "Vice President (Corporate Treasurer & Head of Investor Relations)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Jain opened the earnings call by welcoming participants and outlining the agenda, which included presentations from key executives. He highlighted the presence of forward-looking statements in the call, emphasizing the associated risks and uncertainties. His tone was neutral, focusing on procedural aspects and setting the stage for the detailed discussions to follow.",
+      "sentiment_score": 0.0557,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0557,
+        "positive": 0.0678,
+        "negative": 0.0121,
+        "neutral": 0.9202,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srini Pallia",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "AI-first strategy",
+        "quarterly performance",
+        "HARMAN DTS acquisition",
+        "future guidance"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on EMR growth"
+      ],
+      "dodged_or_vague": [
+        "Vibhor Singhal's question on Consumer vertical outlook"
+      ],
+      "summary": "Srini Pallia provided a confident overview of Wipro's strategic positioning in an AI-first world, emphasizing the influence of AI on client operations. He reported on the company's quarterly performance, highlighting revenue growth and the impact of the HARMAN DTS acquisition. Srini projected a cautious yet optimistic revenue growth for the next quarter. While he directly addressed questions about the EMR sector, he was less specific about the outlook for the Consumer vertical, indicating some uncertainty.",
+      "sentiment_score": 0.6576,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6576,
+        "positive": 0.6742,
+        "negative": 0.0166,
+        "neutral": 0.3092,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aparna Iyer",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "operating margins",
+        "HARMAN DTS impact"
+      ],
+      "direct_answers": [
+        "Kawaljeet Saluja's question on mega deals"
+      ],
+      "dodged_or_vague": [
+        "Vibhor Singhal's question on Q4 headwinds"
+      ],
+      "summary": "Aparna Iyer presented a cautious financial overview, detailing revenue growth and operating margin improvements. She noted the impact of the HARMAN DTS acquisition on future margins and provided guidance for the next quarter. Aparna addressed questions about mega deals but was less clear on the specifics of Q4 headwinds, reflecting a cautious approach to future uncertainties.",
+      "sentiment_score": 0.9163,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9163,
+        "positive": 0.9294,
+        "negative": 0.013,
+        "neutral": 0.0576,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Saurabh Govil",
+      "role": "Chief Human Resources Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "salary hikes"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on salary hikes"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Saurabh Govil provided a brief update on the status of salary hikes, indicating that a decision would be made in the coming weeks. His tone was neutral, focusing on the procedural aspect of the decision-making process. He directly answered questions regarding the timing of salary hikes, showing transparency in HR-related matters.",
+      "sentiment_score": 0.0432,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0432,
+        "positive": 0.0675,
+        "negative": 0.0243,
+        "neutral": 0.9082,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis involved identifying each speaker and their role, extracting key statements, and assessing their tone based on the content and context of their remarks. Management speakers were evaluated on their responsiveness to analyst questions, noting instances of direct answers versus vague or deflected responses. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

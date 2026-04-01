@@ -1,0 +1,180 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the TCS earnings conference call, providing logistical information and ensuring the call proceeded smoothly. They reminded participants of the listen-only mode and the process for asking questions. The Moderator concluded the call by thanking the management and participants, maintaining a neutral and professional tone throughout.",
+      "sentiment_score": 0.0153,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0153,
+        "positive": 0.0393,
+        "negative": 0.024,
+        "neutral": 0.9367,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nehal Shah",
+      "role": "Head of Investor Relations",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Company performance overview"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nehal Shah, as the Head of Investor Relations, opened the call by welcoming participants and introducing the management team. She provided an overview of the call's structure and emphasized the availability of financial documents on the company's website. Nehal maintained a neutral tone, ensuring that participants were aware of the company's policy on forward-looking statements and the associated risks.",
+      "sentiment_score": 0.0136,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0136,
+        "positive": 0.0318,
+        "negative": 0.0182,
+        "neutral": 0.95,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "K Krithivasan",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Company performance",
+        "Growth momentum",
+        "AI strategy"
+      ],
+      "direct_answers": [
+        "Nitin Padmanabhan's question on North America, BSNL, Credit card"
+      ],
+      "dodged_or_vague": [
+        "Keith Bachman's question on contract flexibility"
+      ],
+      "summary": "K Krithivasan, the CEO and Managing Director, presented an optimistic view of TCS's performance, highlighting continued growth momentum and strategic investments in AI. He detailed the company's revenue growth, market performance, and significant deals, emphasizing the ambition to become the largest AI-led technology services company. Krithivasan directly addressed questions about market performance but was less specific about contract flexibility, maintaining a positive outlook for the future.",
+      "sentiment_score": 0.9163,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9163,
+        "positive": 0.926,
+        "negative": 0.0098,
+        "neutral": 0.0642,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Margins",
+        "Cash flow"
+      ],
+      "direct_answers": [
+        "Ravi Menon's question on SG&A expenses"
+      ],
+      "dodged_or_vague": [
+        "Kumar Rakesh's question on SG&A expense breakdown"
+      ],
+      "summary": "Samir Seksaria, the CFO, confidently discussed TCS's financial performance, focusing on revenue growth, stable margins, and strong cash flow. He highlighted the company's disciplined execution and financial resilience, supported by a robust balance sheet. Samir addressed questions on SG&A expenses directly but avoided detailed breakdowns, emphasizing the company's strategic investments and commitment to shareholder returns.",
+      "sentiment_score": 0.4104,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4104,
+        "positive": 0.4355,
+        "negative": 0.0251,
+        "neutral": 0.5395,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Aarthi Subramanian",
+      "role": "Executive Director, President and Chief Operating Officer",
+      "tone": "Optimistic",
+      "key_topics": [
+        "AI strategy",
+        "Analyst Day",
+        "Service line growth"
+      ],
+      "direct_answers": [
+        "Dhanshree's question on AI pipeline growth"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Aarthi Subramanian, the COO, expressed optimism about TCS's AI strategy and service line growth. She detailed the outcomes of the Analyst Day and the company's comprehensive AI strategy, highlighting significant growth in AI revenue. Aarthi directly answered questions about the AI pipeline, emphasizing the positive momentum and strategic initiatives like AI Innovation Days and Rapid Builds that are enhancing customer engagement.",
+      "sentiment_score": 0.8838,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8838,
+        "positive": 0.892,
+        "negative": 0.0082,
+        "neutral": 0.0999,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sudeep Kunnumal",
+      "role": "Chief Human Resources Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Talent transformation",
+        "AI skills development",
+        "Workforce statistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sudeep Kunnumal, the CHRO, confidently discussed TCS's talent transformation efforts, focusing on the development of AI skills and workforce statistics. He highlighted the company's investments in building a high-performance workforce and the significant increase in employees with AI skills. Sudeep emphasized the importance of associates in driving TCS's transformation into an AI-first enterprise, showcasing the company's commitment to innovation and sustainable value delivery.",
+      "sentiment_score": 0.9197,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9197,
+        "positive": 0.9303,
+        "negative": 0.0106,
+        "neutral": 0.0591,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies six unique speakers: the Moderator, Nehal Shah, K Krithivasan, Samir Seksaria, Aarthi Subramanian, and Sudeep Kunnumal. Each speaker's key statements are extracted to capture their contributions to the call. The tone of each speaker is assessed based on their language and content. Management speakers' responses to analyst questions are evaluated for directness or vagueness. A narrative summary for each speaker is crafted to encapsulate their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

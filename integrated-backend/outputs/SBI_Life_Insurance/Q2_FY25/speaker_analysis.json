@@ -1,0 +1,155 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Amit Jhingran",
+      "role": "Managing Director and Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "GST reform",
+        "product mix",
+        "growth strategy",
+        "protection segment"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amit Jhingran opened the call with a confident tone, highlighting the company's strong performance in Q2 FY '26. He emphasized the positive impact of the government's GST reform on the life insurance sector and detailed the strategic shift in product mix that led to robust growth in both individual and group protection segments. Jhingran introduced new products that have been well-received, underscoring the company's commitment to meeting customer needs. He concluded by expressing confidence in the company's strategy and its ability to deliver sustainable growth and value.",
+      "sentiment_score": 0.9306,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9306,
+        "positive": 0.9431,
+        "negative": 0.0125,
+        "neutral": 0.0444,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Management",
+      "role": "Management Team",
+      "tone": "neutral",
+      "key_topics": [
+        "product mix",
+        "growth strategy",
+        "GST impact",
+        "protection segment",
+        "financial performance"
+      ],
+      "direct_answers": [
+        "Yes. So, what we're saying that the product mix will remain there. We'll continue to get on the profile mix, and that will more or less offset the impact on GST."
+      ],
+      "dodged_or_vague": [
+        "Hypothetical. Let's see how going forward, right?"
+      ],
+      "summary": "The management team, speaking collectively, maintained a neutral tone throughout the call. They addressed questions on the product mix and growth strategy, confirming that the current mix would offset GST impacts. They emphasized the focus on the protection segment, noting its success and higher growth compared to the overall company growth. However, they were vague when asked about hypothetical future scenarios, choosing not to commit to specific outcomes. Overall, the management provided clarity on current strategies while avoiding speculative commitments.",
+      "sentiment_score": 0.8366,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8366,
+        "positive": 0.8452,
+        "negative": 0.0086,
+        "neutral": 0.1461,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference proceedings"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, maintaining a neutral tone and ensuring the proceedings ran smoothly. They provided instructions for participants and concluded the call, thanking everyone for their participation. The moderator's role was primarily administrative, focusing on the logistics of the call rather than content.",
+      "sentiment_score": 0.0152,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0152,
+        "positive": 0.0388,
+        "negative": 0.0236,
+        "neutral": 0.9376,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shreya Shivani",
+      "role": "Analyst",
+      "tone": "neutral",
+      "key_topics": [
+        "bancassurance channel",
+        "expense ratio",
+        "product impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Shreya Shivani, an analyst, asked detailed questions about the bancassurance channel, expense ratios, and the impact of GST on products. Her inquiries were precise, seeking clarity on the distribution mix and financial metrics. She congratulated the management on their performance, indicating a neutral tone focused on understanding the financial nuances and strategic implications of recent changes.",
+      "sentiment_score": 0.0369,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0369,
+        "positive": 0.0663,
+        "negative": 0.0293,
+        "neutral": 0.9044,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sanketh Godha",
+      "role": "Analyst",
+      "tone": "neutral",
+      "key_topics": [
+        "product mix",
+        "growth impact",
+        "margin expectations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sanketh Godha, another analyst, focused on clarifying the impact of the product mix on margins and growth. He sought confirmation on specific figures related to margin expectations and highlighted the growth contributions from different channels. His tone was neutral, aiming to verify and understand the financial implications of the company's strategies.",
+      "sentiment_score": 0.0715,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0715,
+        "positive": 0.1429,
+        "negative": 0.0714,
+        "neutral": 0.7857,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted to capture their main contributions and focus areas. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, attention is given to how they handle analyst questions, noting any direct answers or evasive responses. Each speaker's narrative summary encapsulates their overall stance and key messages, providing a comprehensive view of their participation in the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

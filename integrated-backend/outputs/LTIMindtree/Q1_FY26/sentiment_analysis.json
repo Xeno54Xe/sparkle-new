@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5436,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9203,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9203,
+        "positive": 0.9491,
+        "negative": 0.0288,
+        "neutral": 0.022,
+        "chunks_scored": 1
+      },
+      "text": "Our Q1 revenue stood at $1.15 billion, reflecting a growth of 2% quarter on quarter and 5.2% year on year in dollar terms. Corresponding constant currency growth was 0.8% quarter on quarter and 4.4% year on year. Our EBIT margin expanded by 50 basis points sequentially to 14.3% in Q1 FY26. This increase was primarily driven by our Fit4Future initiatives which resulted in an approximately 1% improvement, although seasonal visa costs and Forex impact partially offset the increase. Profit after tax (PAT) for the quarter stood at Rs.1,255 Crores as compared to Rs.1,129 Crores in the previous quarter which is an increase of 11.2% quarter on quarter. The higher sequential increase in PAT versus EBIT was on account of higher exchange gain in other income. The quarter's effective tax rate was 27.3% compared to 26.2% in Q4. This was due to a one-off tax impact on the repatriation of some capital from one of the subsidiaries."
+    },
+    "forward_guidance": {
+      "score": 0.9164,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9164,
+        "positive": 0.9259,
+        "negative": 0.0095,
+        "neutral": 0.0646,
+        "chunks_scored": 1
+      },
+      "text": "We are reasonably confident of continuing this margin expansion movement as we go into Q2. Our aspiration of $10 billion revenue by 2030-2031 remains unchanged, and we are working towards that aspiration. We have seen increased momentum on large deals and even going into Q2, we hope to announce a few more and continue to build the pipeline for the rest of the year. Our strategic pivot towards becoming an AI-centric organization is well underway, and we continue to expand our capabilities to remain relevant for our clients. The Fit4Future program has been instrumental in re-baselining our cost and improving agility, enabling us to streamline processes and operate more efficiently."
+    },
+    "risk_language": {
+      "score": -0.9575,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9575,
+        "positive": 0.0126,
+        "negative": 0.97,
+        "neutral": 0.0174,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed broader macro concerns, acknowledging that the environment is what it is, and the focus is on staying close to customers and bringing in new capabilities. There was mention of seasonal visa costs and Forex impact partially offsetting margin improvements. The effective tax rate increased due to a one-off tax impact on the repatriation of some capital from one of the subsidiaries. The operating cash flow (OCF) to PAT ratio decreased to 82.3% from 88.4% in Q4, and the Free-cash flow (FCF) to PAT ratio stood at 60.7% compared to 67.7% in Q4. Management did not provide specific guidance for the full year, citing the fast-changing macroeconomic environment."
+    },
+    "investor_confidence": {
+      "score": 0.9205,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9205,
+        "positive": 0.933,
+        "negative": 0.0125,
+        "neutral": 0.0546,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction, emphasizing the strategic initiatives like the Fit4Future program and the pivot towards AI-centric operations. Analyst questions were addressed directly, with management expressing confidence in continuing margin expansion and growth momentum into Q2. The call highlighted several strategic wins and recognitions, reinforcing management credibility. The aspiration to reach $10 billion revenue by 2030-2031 was reiterated, showing long-term strategic vision. The call concluded with a positive note on the company's transformation journey and profitable growth."
+    }
+  },
+  "key_positive_drivers": [
+    "Fit4Future initiatives driving margin expansion",
+    "Sequential growth in revenue and PAT",
+    "Increased momentum on large deals",
+    "Strategic pivot towards AI-centric organization",
+    "Robust pipeline with several large opportunities",
+    "Recognition in industry awards and partnerships"
+  ],
+  "key_negative_drivers": [
+    "Seasonal visa costs and Forex impact",
+    "Increased effective tax rate due to one-off impact",
+    "Decreased OCF to PAT and FCF to PAT ratios",
+    "Broader macroeconomic concerns"
+  ],
+  "notable_phrases": [
+    "reasonably confident of continuing this margin expansion",
+    "aspiration of $10 billion revenue by 2030-2031",
+    "Fit4Future program has been instrumental",
+    "broader macro concern",
+    "environment is what it is",
+    "focus on staying close to customers",
+    "strategic pivot towards becoming an AI-centric organization",
+    "robust strategy and disciplined execution"
+  ],
+  "chain_of_thought": "The financial performance showed positive growth in revenue and margins, driven by strategic initiatives, although some costs offset gains. Forward guidance was optimistic about continuing growth and strategic aspirations, with a focus on AI and large deals. Risks were acknowledged, particularly macroeconomic concerns and specific cost impacts, but management remained focused on strategic execution. Investor confidence was bolstered by management's clarity, strategic vision, and response to analyst questions, projecting a cautiously bullish outlook."
+}

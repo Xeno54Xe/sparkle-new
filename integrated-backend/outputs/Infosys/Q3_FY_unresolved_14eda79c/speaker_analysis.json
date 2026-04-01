@@ -1,0 +1,159 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session",
+        "Closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Infosys Q3 FY'25 earnings call, ensuring the smooth transition between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on procedural aspects of the call. The moderator concluded the session by thanking participants and officially closing the conference.",
+      "sentiment_score": 0.0246,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0246,
+        "positive": 0.0432,
+        "negative": 0.0186,
+        "neutral": 0.9383,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Mahindroo",
+      "role": "Management",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Performance overview"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Mahindroo opened the Infosys Q3 FY'25 earnings call, introducing the key speakers and outlining the agenda. His tone was neutral, focusing on welcoming participants and setting the stage for the discussion on the company's performance. He did not engage in the Q&A session, serving primarily as a facilitator.",
+      "sentiment_score": 0.0361,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0361,
+        "positive": 0.0525,
+        "negative": 0.0164,
+        "neutral": 0.9311,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Salil Parekh",
+      "role": "CEO and MD",
+      "tone": "Confident",
+      "key_topics": [
+        "Revenue growth",
+        "Geographical performance",
+        "Generative AI",
+        "Guidance"
+      ],
+      "direct_answers": [
+        "Ritu Singh",
+        "Ankur Rudra",
+        "Veena Mani"
+      ],
+      "dodged_or_vague": [
+        "Jonathan Lee"
+      ],
+      "summary": "Salil Parekh, CEO and MD of Infosys, presented a confident outlook during the Q3 FY'25 earnings call. He highlighted the company's revenue growth of 1.7% quarter-on-quarter and 6.1% year-on-year, with significant contributions from Europe and India. Parekh emphasized the company's strong performance in large deals and free cash flow, leading to an upward revision of revenue growth guidance to 4.5%-5%. He addressed several analyst questions directly, particularly on revenue growth and market conditions, while providing less specific answers on future financial year expectations.",
+      "sentiment_score": 0.8866,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8866,
+        "positive": 0.9051,
+        "negative": 0.0185,
+        "neutral": 0.0764,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayesh Sanghrajka",
+      "role": "CFO",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Cost management",
+        "Hiring"
+      ],
+      "direct_answers": [
+        "Bryan Bergin",
+        "Ankur Rudra"
+      ],
+      "dodged_or_vague": [
+        "Sonal Choudhary"
+      ],
+      "summary": "Jayesh Sanghrajka, CFO of Infosys, provided a cautious overview of the company's financial performance and cost management strategies. He discussed the margin improvement program and the challenges in predicting sustained growth. Sanghrajka addressed questions on utilization rates and hiring, emphasizing a cautious approach to maintaining operational efficiency. He was less specific when discussing future financial impacts, reflecting a careful stance on forward-looking statements.",
+      "sentiment_score": 0.2545,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2545,
+        "positive": 0.2743,
+        "negative": 0.0198,
+        "neutral": 0.7059,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rishi Basu",
+      "role": "India Head - Corporate Communications",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rishi Basu, as the India Head of Corporate Communications, played a neutral role in facilitating the Infosys Q3 FY'25 earnings call. He introduced the session and managed the transition to the CEO's remarks. His contributions were procedural, focusing on the smooth operation of the call rather than engaging in content discussions.",
+      "sentiment_score": 0.0829,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0829,
+        "positive": 0.0968,
+        "negative": 0.0139,
+        "neutral": 0.8893,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The task involves identifying each speaker in the earnings call and analyzing their contributions. The moderator and management team, including the CEO and CFO, are the primary speakers. Analysts also participate by asking questions. Each speaker's key statements are extracted to capture their tone and focus areas. Management responses to analyst questions are categorized as direct or vague. The analysis provides a comprehensive view of each speaker's role and the overall tone of the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Infosys Q4 FY25 earnings call, providing logistical details and ensuring the call proceeded smoothly. They maintained a neutral tone throughout, focusing on the procedural aspects of the call. The moderator concluded the session by thanking participants and signaling the end of the call.",
+      "sentiment_score": 0.0227,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0227,
+        "positive": 0.0458,
+        "negative": 0.0231,
+        "neutral": 0.9311,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Mahindroo",
+      "role": "Management",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Earnings call structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Mahindroo opened the Infosys earnings call, introducing the key speakers and outlining the structure of the call. He maintained a neutral tone, focusing on procedural details and reminding participants about the nature of forward-looking statements. His role was primarily to set the stage for the management's presentations and the subsequent Q&A session.",
+      "sentiment_score": 0.0304,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0304,
+        "positive": 0.0455,
+        "negative": 0.0151,
+        "neutral": 0.9394,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Salil Parekh",
+      "role": "CEO and MD",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "AI and digital transformation",
+        "Guidance for FY26"
+      ],
+      "direct_answers": [
+        "Ritu Singh",
+        "Haripriya Sureban",
+        "Chandra Srikanth"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Salil Parekh, CEO and MD of Infosys, delivered a confident overview of the company's strong financial performance in FY25, highlighting a 4.2% growth in constant currency terms and a 21.1% operating margin. He emphasized the company's strategic focus on AI and digital transformation, noting the development of over 200 AI agents. Parekh outlined strategic expansions in the U.S., Australia, and Japan, and provided guidance for FY26, projecting growth between 0% to 3% amid an uncertain environment. He addressed questions directly, maintaining a confident tone throughout.",
+      "sentiment_score": 0.7455,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7455,
+        "positive": 0.754,
+        "negative": 0.0085,
+        "neutral": 0.2376,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayesh Sanghrajka",
+      "role": "CFO",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial guidance",
+        "Margin improvement",
+        "Market uncertainties"
+      ],
+      "direct_answers": [
+        "Ritu Singh",
+        "Haripriya Sureban",
+        "Chandra Srikanth"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jayesh Sanghrajka, CFO of Infosys, provided a cautious outlook on the company's financial guidance, highlighting the uncertainties in the macroeconomic environment. He discussed the company's margin improvement efforts, noting a 50 basis point increase despite various headwinds. Sanghrajka explained the multiple models used to develop the guidance, reflecting different scenarios of market conditions. He addressed questions directly, maintaining a cautious tone while emphasizing the company's strategic focus on margin expansion and market share growth.",
+      "sentiment_score": 0.9179,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9179,
+        "positive": 0.9301,
+        "negative": 0.0123,
+        "neutral": 0.0576,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rishi Basu",
+      "role": "India Head - Corporate Communications",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rishi Basu, as the India Head of Corporate Communications, facilitated the Infosys earnings call, ensuring a smooth transition between speakers and managing the Q&A session. He maintained a neutral tone, focusing on logistical aspects and ensuring that each media house had the opportunity to ask questions. His role was primarily supportive, setting the stage for the management's presentations and interactions with the media.",
+      "sentiment_score": 0.0846,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0846,
+        "positive": 0.1017,
+        "negative": 0.0171,
+        "neutral": 0.8813,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The task involves identifying each speaker in the earnings call and analyzing their contributions. The moderator and Sandeep Mahindroo provided logistical and introductory remarks, maintaining a neutral tone. Salil Parekh, the CEO, delivered a confident overview of Infosys' strong financial performance and strategic focus on AI and digital transformation, addressing questions directly. Jayesh Sanghrajka, the CFO, offered a cautious outlook on financial guidance, emphasizing margin improvement efforts and addressing uncertainties in the macroeconomic environment. Rishi Basu facilitated the call, ensuring smooth transitions and managing the Q&A session. Each speaker's tone and key topics were identified, and their statements were compiled for further analysis.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

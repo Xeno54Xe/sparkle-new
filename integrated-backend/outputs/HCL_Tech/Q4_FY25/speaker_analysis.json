@@ -1,0 +1,196 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the conference call, ensuring that the session ran smoothly and participants were informed about the logistics. They maintained a neutral tone throughout, focusing on the procedural aspects of the call. The Moderator also managed the transition between speakers and concluded the Q&A session due to time constraints.",
+      "sentiment_score": 0.0095,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0095,
+        "positive": 0.0392,
+        "negative": 0.0297,
+        "neutral": 0.9311,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nitin Mohta",
+      "role": "Senior Vice President & Head - Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Mohta opened the earnings call with a formal introduction, welcoming participants and outlining the agenda. He highlighted the presence of key management figures and set the stage for the discussion on company performance. Mohta also provided a disclaimer regarding forward-looking statements, emphasizing the inherent risks and uncertainties. His tone was neutral, focusing on procedural clarity and compliance.",
+      "sentiment_score": 0.0103,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0103,
+        "positive": 0.0357,
+        "negative": 0.0254,
+        "neutral": 0.939,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "C. Vijayakumar",
+      "role": "Chief Executive Officer & Managing Director",
+      "tone": "cautiously optimistic",
+      "key_topics": [
+        "business performance",
+        "growth strategy",
+        "market conditions",
+        "guidance"
+      ],
+      "direct_answers": [
+        "Yes, it's good. And we are very happy to report that our year-on-year booking in ER&D has grown 75%.",
+        "Yes, I mean, obviously, so far we haven't seen any impact, but I mean, I think we are all reasonably certain that the environment will deteriorate.",
+        "Yes, I think that deal deferral was not directly related to the tariff. It was based on general environment."
+      ],
+      "dodged_or_vague": [
+        "It is very difficult to kind of respond to that. I mean, what you are saying is logically right, but I don't have a strong view on that."
+      ],
+      "summary": "C. Vijayakumar, the CEO and MD of HCLTech, presented a cautiously optimistic outlook for the company, highlighting resilience and growth despite global economic uncertainties. He emphasized the company's strong performance in FY25, with a consolidated revenue of $13.84 billion and a growth of 4.7% in constant currency. Vijayakumar discussed the strategic focus on AI and digital transformation, noting significant achievements in AI deployments and partnerships. While he directly addressed questions about ER&D growth and market conditions, he was vague on certain speculative queries, reflecting a cautious approach to future uncertainties.",
+      "sentiment_score": 0.7224,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7224,
+        "positive": 0.7873,
+        "negative": 0.0648,
+        "neutral": 0.1479,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Shiv Walia",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "geographic revenue mix"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Shiv Walia, the CFO of HCLTech, participated in the earnings call to provide financial insights and support the discussion on the company's performance. His tone was neutral, focusing on delivering factual financial data. Walia's role was primarily supportive, as he did not engage in direct Q&A but was present to elaborate on financial specifics if needed.",
+      "sentiment_score": 0.6267,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6267,
+        "positive": 0.6397,
+        "negative": 0.013,
+        "neutral": 0.3473,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ravi Menon",
+      "role": "Analyst at Macquarie",
+      "tone": "inquisitive",
+      "key_topics": [
+        "North America performance",
+        "guidance caution"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ravi Menon, an analyst from Macquarie, engaged with the management by asking pointed questions about HCLTech's performance in North America and the cautious guidance provided. His inquiries were focused on understanding the underlying factors affecting regional performance and the rationale behind the cautious outlook. Menon's tone was inquisitive, seeking clarity on specific financial metrics and strategic decisions.",
+      "sentiment_score": -0.4446,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4446,
+        "positive": 0.1579,
+        "negative": 0.6025,
+        "neutral": 0.2395,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhishek Pathak",
+      "role": "Analyst at Motilal Oswal Financial Services Limited",
+      "tone": "inquisitive",
+      "key_topics": [
+        "guidance clarification",
+        "AI-driven cost takeout"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Pathak from Motilal Oswal Financial Services Limited sought clarification on HCLTech's guidance, particularly regarding potential upside risks if large deals close successfully. He also explored the potential for AI-driven cost takeout and the readiness of organizations to scale AI enterprise-wide. Pathak's questions were detailed and aimed at understanding the strategic implications of AI on future spending and growth.",
+      "sentiment_score": 0.0152,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0152,
+        "positive": 0.0651,
+        "negative": 0.0498,
+        "neutral": 0.8851,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Yogesh Aggarwal",
+      "role": "Analyst at HSBC Securities",
+      "tone": "inquisitive",
+      "key_topics": [
+        "quarterly performance",
+        "guidance range"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Yogesh Aggarwal from HSBC Securities asked about the quarterly performance, specifically whether March was weaker compared to January and February. He also inquired about the guidance range, noting that the company was closer to the lower end of its organic constant currency terms. Aggarwal's questions were aimed at understanding the nuances of quarterly fluctuations and the factors influencing the guidance.",
+      "sentiment_score": -0.835,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.835,
+        "positive": 0.0332,
+        "negative": 0.8682,
+        "neutral": 0.0986,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. The Moderator and Nitin Mohta set the stage for the call, with Mohta providing a disclaimer about forward-looking statements. C. Vijayakumar, the CEO, delivered the main presentation, discussing the company's performance, strategic initiatives, and future outlook. His tone was cautiously optimistic, reflecting confidence in the company's resilience while acknowledging market uncertainties. Analysts like Ravi Menon, Abhishek Pathak, and Yogesh Aggarwal asked probing questions to clarify guidance and performance metrics, with their tone being inquisitive. The CFO, Shiv Walia, played a supportive role, ready to provide financial details if needed. Each speaker's contribution is summarized, capturing their key messages and tone.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

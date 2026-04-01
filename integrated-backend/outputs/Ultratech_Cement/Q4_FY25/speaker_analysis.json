@@ -1,0 +1,164 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Atul Daga",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "capacity expansion",
+        "market growth",
+        "cost efficiency",
+        "acquisitions",
+        "financial performance"
+      ],
+      "direct_answers": [
+        "0.5x.",
+        "$37 to $40 is freight.",
+        "1.53 million tons.",
+        "Yes, they won't have too much of spending.",
+        "INR112 per ton.",
+        "Anywhere between 40 million tons to 50 million tons and our 16.8 million tons is guaranteed."
+      ],
+      "dodged_or_vague": [
+        "I don't know how China-U.S. trade will behave, how much pet coke will China consume. This will -- this is too difficult to quantify, Ritesh.",
+        "No, too difficult, yes, it's 28th of the month. But all I had said was, yes, we have generally seen an improving trend.",
+        "I'll ask a judge and come back to you, Ritesh.",
+        "Then I have to give you a forecast.",
+        "I think I would have asked you that question. You know the prices on the ground better than we do."
+      ],
+      "summary": "Atul Daga, the CFO of UltraTech Cement, presented a confident outlook during the Q4 FY25 earnings call. He highlighted the company's significant capacity expansion, with UltraTech adding 57% of the new capacity in the Indian cement industry. Daga emphasized the company's strategic acquisitions and their positive impact on volume growth, noting a 10% increase compared to the industry's 4%. He discussed the company's financial performance, including a target to achieve an EBITDA per metric ton of INR500 by FY26. While he provided direct answers to some financial metrics, he was evasive on certain forecasts and market trends, reflecting a cautious approach to uncertain external factors.",
+      "sentiment_score": 0.7811,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7811,
+        "positive": 0.8295,
+        "negative": 0.0484,
+        "neutral": 0.1221,
+        "chunks_scored": 5
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call management",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the UltraTech Cement Q4 FY25 earnings call, maintaining a neutral tone throughout. They reminded participants of the forward-looking nature of the discussion and the associated risks, ensuring that the audience was aware of the context. The moderator managed the flow of the call, transitioning smoothly between speakers and facilitating the Q&A session. Their role was crucial in maintaining the structure and order of the call, allowing for an efficient exchange of information.",
+      "sentiment_score": 0.0148,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0148,
+        "positive": 0.0328,
+        "negative": 0.018,
+        "neutral": 0.9492,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ritesh Shah",
+      "role": "Analyst from Investec",
+      "tone": "inquisitive",
+      "key_topics": [
+        "leverage",
+        "freight costs",
+        "pricing trends",
+        "acquisitions"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ritesh Shah, an analyst from Investec, engaged in the earnings call with a series of probing questions aimed at understanding UltraTech's financial strategies and market positioning. He inquired about the company's leverage comfort level, freight cost breakdown, and pricing trends in the South. Shah also sought clarity on the company's acquisition strategies and potential challenges related to lease expiries. His questions were direct and aimed at extracting detailed insights, reflecting an inquisitive tone throughout the interaction.",
+      "sentiment_score": 0.052,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.052,
+        "positive": 0.075,
+        "negative": 0.023,
+        "neutral": 0.902,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Prateek Kumar",
+      "role": "Analyst from Jefferies",
+      "tone": "curious",
+      "key_topics": [
+        "volume growth",
+        "pricing",
+        "market challenges"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Prateek Kumar from Jefferies participated in the call with a focus on understanding UltraTech's market outlook and pricing strategies. He congratulated the company on its results and questioned the short-term challenges mentioned in the press release, seeking clarity on volume growth expectations amidst external factors like heat waves. Kumar also inquired about current pricing trends compared to the previous quarter, demonstrating a curious approach to understanding the company's market dynamics and future projections.",
+      "sentiment_score": 0.1105,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1105,
+        "positive": 0.1359,
+        "negative": 0.0254,
+        "neutral": 0.8388,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Indrajit Agarwal",
+      "role": "Analyst from CLSA",
+      "tone": "analytical",
+      "key_topics": [
+        "volume growth",
+        "profitability trajectory",
+        "brand transition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Indrajit Agarwal from CLSA approached the call with an analytical mindset, focusing on UltraTech's growth metrics and strategic initiatives. He questioned the nature of the reported 10% volume growth, seeking to distinguish between organic and acquisition-driven growth. Agarwal also explored the profitability trajectory for India Cements, probing into the specific levers that would drive future profitability. Additionally, he inquired about the brand transition strategy for Kesoram, reflecting a comprehensive understanding of the company's operational strategies.",
+      "sentiment_score": 0.1095,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1095,
+        "positive": 0.1214,
+        "negative": 0.0118,
+        "neutral": 0.8668,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Atul Daga, as the CFO, provides detailed insights into UltraTech's financial performance, capacity expansion, and strategic acquisitions, maintaining a confident tone. The moderator facilitates the call, ensuring a smooth transition between speakers. Analysts like Ritesh Shah, Prateek Kumar, and Indrajit Agarwal engage with targeted questions, each focusing on different aspects of the company's operations and market strategies. Shah's questions are probing and seek detailed financial insights, Kumar's inquiries focus on market dynamics and pricing, while Agarwal's questions are analytical, exploring growth metrics and strategic initiatives. Each speaker's contribution is summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

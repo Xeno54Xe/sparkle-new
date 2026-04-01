@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7731,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9421,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9421,
+        "positive": 0.9616,
+        "negative": 0.0195,
+        "neutral": 0.019,
+        "chunks_scored": 1
+      },
+      "text": "Management reported a strong financial performance for Q2 FY26, with net sales growing by 5.8% and gross margins expanding by 270bps to 43.7%. PBDIT increased by 21%, with a margin of 18.5%, higher by 230bps. The consolidated level showed similar strength, with net sales up by 6.4% and PBDIT growth of 21.3%. The gross margins at 43.1% were higher by 250bps. Despite a weaker Q1, H1 net sales grew by 2%, and PBDIT margins were at 19%, 70bps higher. The profitability story was described as 'good,' driven by material cost deflation and a favorable product mix."
+    },
+    "forward_guidance": {
+      "score": 0.9306,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9306,
+        "positive": 0.9498,
+        "negative": 0.0192,
+        "neutral": 0.031,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook, anticipating mid-single-digit value growth for the full year, with volumes expected to be higher. They emphasized a focus on innovation, brand saliency, and regionalization strategies. The competitive intensity is expected to remain, but management is banking on continued momentum in industrial and international business. They also noted that raw material prices are expected to remain benign, although some volatility due to geopolitical uncertainty is acknowledged."
+    },
+    "risk_language": {
+      "score": 0.2832,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.2832,
+        "positive": 0.5911,
+        "negative": 0.3079,
+        "neutral": 0.101,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including competitive pressures and potential volatility in raw material prices due to geopolitical uncertainty. Management acknowledged the industry's modest growth of 3.5-4% in Q2, impacted by monsoons and a short festive window. They expressed a conservative stance on the overall environment for the next three to six months. Despite these challenges, management highlighted their focus on innovation and differentiation to mitigate risks."
+    },
+    "investor_confidence": {
+      "score": 0.7732,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7732,
+        "positive": 0.7839,
+        "negative": 0.0107,
+        "neutral": 0.2054,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency, with clear communication of financial results and strategic initiatives. Analyst questions were addressed directly, with detailed explanations of growth strategies and market conditions. The commitment to shareholder returns was underscored by the declaration of an interim dividend. Management's credibility was reinforced by their proactive approach to innovation and market expansion."
+    }
+  },
+  "key_positive_drivers": [
+    "Net sales growth of 5.8%",
+    "Gross margins expanded by 270bps",
+    "PBDIT growth of 21%",
+    "Strong performance in international markets",
+    "Material cost deflation",
+    "Successful brand and product innovations"
+  ],
+  "key_negative_drivers": [
+    "Modest industry growth of 3.5-4%",
+    "Impact of monsoons and short festive window",
+    "Competitive pressures",
+    "Potential volatility in raw material prices",
+    "Conservative outlook for next six months"
+  ],
+  "notable_phrases": [
+    "strong performance from the standalone perspective",
+    "profitability story has been good",
+    "competitive intensity will remain",
+    "raw material prices will remain benign",
+    "conservative in terms of seeing how the overall environment kind of augurs out",
+    "momentum in industrial and international business should continue",
+    "commitment in terms of return to the shareholders",
+    "strong growth from both the Q2 and the H1 level"
+  ],
+  "chain_of_thought": "The financial performance was strong, with significant growth in sales and margins, driven by cost efficiencies and product mix. Forward guidance was cautiously optimistic, with expectations of mid-single-digit growth and continued focus on innovation and market strategies. Risks were acknowledged, particularly competitive pressures and potential raw material price volatility, but management's proactive strategies were highlighted. Investor confidence was bolstered by clear communication and strategic initiatives, despite a conservative outlook for the near term."
+}

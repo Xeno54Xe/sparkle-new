@@ -1,0 +1,137 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Divya Gulati",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Divya Gulati served as the moderator for the earnings call, providing a structured introduction to the session and outlining the agenda. She emphasized the presence of key management figures and reminded participants about the forward-looking nature of some statements. Her tone remained neutral throughout, focusing on facilitating the flow of the meeting and ensuring that the procedural aspects were clear to all attendees.",
+      "sentiment_score": 0.0069,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0069,
+        "positive": 0.0382,
+        "negative": 0.0313,
+        "neutral": 0.9304,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Anish Shah",
+      "role": "Group CEO & MD",
+      "tone": "confident",
+      "key_topics": [
+        "strong results",
+        "market share",
+        "margins",
+        "strategic benefits",
+        "growth trajectory"
+      ],
+      "direct_answers": [
+        "Binay Singh's question on market share and execution"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Dr. Anish Shah delivered a confident overview of Mahindra & Mahindra's strong quarterly performance, highlighting significant growth in SUV volumes and market share. He emphasized the company's strategic focus on execution over market share, noting a 20% growth in SUV volumes and improvements in both auto and farm margins. Dr. Shah also addressed the strategic benefits and write-offs related to category B businesses, such as MAM-Mitsubishi and Sampo, underscoring the company's pivot to prevent profit drains. His responses were direct, particularly when addressing questions about market share and execution.",
+      "sentiment_score": 0.9145,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9145,
+        "positive": 0.9299,
+        "negative": 0.0154,
+        "neutral": 0.0547,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Rajesh Jejurikar",
+      "role": "ED and CEO, Auto and Farm Sector",
+      "tone": "optimistic",
+      "key_topics": [
+        "product differentiation",
+        "market share",
+        "EV strategy",
+        "customer feedback"
+      ],
+      "direct_answers": [
+        "Kapil Singh's question on EV margins and cost capitalization"
+      ],
+      "dodged_or_vague": [
+        "Nitij Mangal's question on XUV 700 lifecycle details"
+      ],
+      "summary": "Mr. Rajesh Jejurikar presented an optimistic view of Mahindra & Mahindra's product differentiation strategy, particularly in the EV segment. He highlighted the company's focus on creating aspirational value at accessible prices and discussed the strong market presence of their vehicles. Jejurikar addressed questions on EV margins and cost capitalization directly, but provided limited details on the lifecycle of the XUV 700, indicating a more cautious approach. His narrative emphasized the company's commitment to innovation and customer feedback integration.",
+      "sentiment_score": 0.074,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.074,
+        "positive": 0.0944,
+        "negative": 0.0204,
+        "neutral": 0.8852,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Amarjyoti Barua",
+      "role": "Group CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "cash generation",
+        "investment strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Pramod Kumar's question on PLI timelines"
+      ],
+      "summary": "Mr. Amarjyoti Barua maintained a neutral tone while discussing Mahindra & Mahindra's financial performance and cash generation capabilities. He highlighted the company's strong cash position and its strategic investments in growth businesses. Barua was cautious in his responses, particularly regarding sensitive financial quantifications and government approvals, indicating a focus on maintaining financial prudence and strategic foresight.",
+      "sentiment_score": 0.0233,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0233,
+        "positive": 0.0494,
+        "negative": 0.0262,
+        "neutral": 0.9244,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted verbatim to capture the specific language used, which is crucial for financial NLP scoring. Each speaker's tone is assessed based on their language and the context of their statements. For management speakers, their responses to analyst questions are categorized as direct or vague, providing insight into their communication style and strategic focus. The narrative summaries encapsulate each speaker's contribution, highlighting their stance and key messages, ensuring a comprehensive understanding of the call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

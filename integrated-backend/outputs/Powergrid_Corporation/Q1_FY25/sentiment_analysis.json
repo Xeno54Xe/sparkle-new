@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1164,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.0687,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.0687,
+        "positive": 0.0886,
+        "negative": 0.0198,
+        "neutral": 0.8916,
+        "chunks_scored": 1
+      },
+      "text": "In financials, we have already shared – Total income in Q1, it is ₹11,444 Crore, EBITDA about ₹9,500 Crore. Profit After Tax is about ₹3,600 Crore. Our Net Worth has increased to about ₹96,000 Crore and Gross Fixed Assets about ₹2,92,000 Crore. Our Debt Equity is 58:42 - 58% loan and 42% equity. These are financial parameters. Transmission charges, consultancy services, telecom, other income put together, it is 11,444 Crore, EBITDA 9,527 Crore and Profit After Tax as shown earlier, 3,631 Crore. On standalone basis, income is ₹11,257 Crore and EBITDA ₹9,623 Crore, Profit After Tax is 3,653 Crore. If we see other financial parameters, the Gross Fixed Assets are about ₹2,92,000 Crore, Capital work in progress including advance is about ₹41,000 Crore, we have debt of about ₹1,30,000 Crore, Net Worth of about ₹96,000 Crore, Earnings per share ₹3.9 for Q1. Book value per share is ₹103 per share, Debt/equity 58:42. Return on Net Worth is 3.76% for Q1."
+    },
+    "forward_guidance": {
+      "score": 0.042,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.042,
+        "positive": 0.0559,
+        "negative": 0.0139,
+        "neutral": 0.9302,
+        "chunks_scored": 1
+      },
+      "text": "Our Capex plan is ₹28,000 Crore and which includes RTM of about ₹3,500 Crore, TBCB about ₹19,000 Crore and other projects ₹5,300 Crore. Next year, about FY27, we will have CAPEX plan of about ₹35,000 Crore and in one year after next year, that means FY28, will be about ₹45,000 Crore. So, these are our pipelines for CAPEX. In Sustainability and CSR, you see from here that we have published first Sustainability Report in 2009. We commissioned world's first 400 kV shunt reactor with Natural Ester Oil in 2021-22. We have about ₹1,48,000 Crore projects in hand which includes TBCB of about ₹99,000 Crore, RTM projects we have about ₹9,000 Crore, new RTM about ₹37,000 Crore and others about ₹2,600 Crore. So, put together we have projects in hand about ₹1,48,000 Crore."
+    },
+    "risk_language": {
+      "score": 0.0148,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.0148,
+        "positive": 0.0845,
+        "negative": 0.0696,
+        "neutral": 0.8459,
+        "chunks_scored": 1
+      },
+      "text": "Like whenever we are coming out with any bid, we are hardly getting 2 manufacturers or 2 suppliers for each tender and because everybody's hands are full and whatever cost they are asking, we have to give that cost. So, it is a very big challenge, and it is going to be a very big risk for every one of us. But what we are doing, we are procuring transformers and major components well in advance without when a project is also not in our hand, we are procuring the critical equipment well in advance. Let us agree that RoW is a very big problem in India and making a transmission line is very very challenging. But we are taking required actions for ensuring that RoW issues are resolved. But it is a challenge for all the transmission system developers."
+    },
+    "investor_confidence": {
+      "score": 0.4012,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.4012,
+        "positive": 0.409,
+        "negative": 0.0078,
+        "neutral": 0.5831,
+        "chunks_scored": 1
+      },
+      "text": "As we move ahead, we remain committed to our goals and core values of transparency, reliability and sustainable growth. We look forward to having more such interactions that help us to learn, improve and strengthen our bond with our stakeholders. Thank you once again and wishing you a good day ahead. Thank you very much. Our domestic and international credit rating is very good, it is at par with the sovereign rating. We have 5 functional directors - 2 Government Nominee Directors, 3 Independent Directors including one-woman Independent Director, Smt. Sajal Jha. We have a huge transmission asset base, about 1,80,000 circuit kilometer, 1,500 transmission lines, 5,71,000 MVA, transformation capacity and 286 substations. Our system availability is 99.84%."
+    }
+  },
+  "key_positive_drivers": [
+    "Total income in Q1 is ₹11,444 Crore",
+    "EBITDA about ₹9,500 Crore",
+    "Profit After Tax is about ₹3,600 Crore",
+    "Net Worth has increased to about ₹96,000 Crore",
+    "Capex plan is ₹28,000 Crore",
+    "Projects in hand about ₹1,48,000 Crore"
+  ],
+  "key_negative_drivers": [
+    "CSR expenditure increased by ₹70 Crore",
+    "Loss from EESL joint venture",
+    "Right of Way (RoW) issues",
+    "Limited suppliers for tenders",
+    "Increased operating expenses",
+    "Challenges in transformer procurement"
+  ],
+  "notable_phrases": [
+    "Total income in Q1, it is ₹11,444 Crore",
+    "EBITDA about ₹9,500 Crore",
+    "Profit After Tax is about ₹3,600 Crore",
+    "Debt Equity is 58:42",
+    "Capex plan is ₹28,000 Crore",
+    "Projects in hand about ₹1,48,000 Crore",
+    "RoW is a very big problem in India",
+    "We remain committed to our goals and core values of transparency"
+  ],
+  "chain_of_thought": "The financial performance shows strong income and profit figures, but there are concerns about increased CSR expenditure and losses from joint ventures. Forward guidance is optimistic with significant Capex plans and a robust project pipeline. However, risks such as Right of Way issues and limited suppliers pose challenges. Investor confidence is bolstered by strong credit ratings and a commitment to transparency, but the cautious tone reflects the acknowledgment of operational challenges."
+}

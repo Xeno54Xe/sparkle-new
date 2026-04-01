@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8587,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9452,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9452,
+        "positive": 0.961,
+        "negative": 0.0159,
+        "neutral": 0.0231,
+        "chunks_scored": 1
+      },
+      "text": "Management reported a strong financial performance for Q3 FY26, with net sales growth of 2.9% despite a shorter festive season. Volume growth was robust at approximately 8%, and gross margins reached a high of 44.9%, up 200 bps. PBDIT growth was close to 8%, with PBDIT margins at 21.4%, a 100 bps increase year-over-year. PAT before exceptional items grew by 6.6%. On a consolidated level, top-line growth was 4% year-over-year, with gross margins at 44.3%, up 200 bps. PBDIT growth was 9%, with margins at 20.1%, up 90 bps. PAT before minority interest and exceptional items showed a strong growth of 7.7%. Overall, the quarter reflected strong financial results, with significant improvements in margins and profitability."
+    },
+    "forward_guidance": {
+      "score": 0.8971,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8971,
+        "positive": 0.9058,
+        "negative": 0.0088,
+        "neutral": 0.0854,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a desire to maintain growth momentum into Q4, with a focus on monitoring demand closely. They aim to keep volume growth in the 8-10% range, acknowledging competitive intensity and the potential for channel filling. The industrial and B2B segments are expected to grow strongly, potentially outpacing retail. International business, excluding Bangladesh, is anticipated to perform well. Management plans to maintain guidance within an 18-20% band, emphasizing investments in technology and marketing. The language used was measured, with a focus on sustaining current growth levels amidst competitive pressures."
+    },
+    "risk_language": {
+      "score": 0.7385,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7385,
+        "positive": 0.7574,
+        "negative": 0.0189,
+        "neutral": 0.2237,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including geopolitical uncertainties and competitive pressures. They noted the amalgamation of competitors in the market and the need to watch the environment carefully due to changing consumption patterns. The company is aware of the cyclicity in the industry and the potential impact of external factors on demand. Despite these challenges, management emphasized their strong cost model and strategic initiatives to mitigate risks. The discussion of risks was forthright, with a clear acknowledgment of the challenges ahead."
+    },
+    "investor_confidence": {
+      "score": 0.7915,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7915,
+        "positive": 0.8016,
+        "negative": 0.0101,
+        "neutral": 0.1883,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of their strategies. They highlighted their strong brand partnerships and innovative initiatives as evidence of their market leadership. The discussion included clear plans for future growth and investments, reinforcing management's credibility. The tone was one of clarity and conviction, with management demonstrating a strong understanding of their market position and future opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong volume growth of 8%",
+    "High gross margins at 44.9%",
+    "PBDIT margin improvement to 21.4%",
+    "Robust international business performance",
+    "Successful brand partnerships",
+    "Innovative service offerings"
+  ],
+  "key_negative_drivers": [
+    "Shorter festive season impacting sales",
+    "Prolonged monsoon affecting Q3",
+    "Competitive intensity in the market",
+    "Geopolitical uncertainties",
+    "Changing consumption patterns",
+    "Potential impact of channel filling"
+  ],
+  "notable_phrases": [
+    "Gross margins reached a high of 44.9%",
+    "Volume growth was robust at approximately 8%",
+    "Maintain growth momentum into Q4",
+    "Competitive intensity is bound to remain",
+    "Geopolitical uncertainty in terms of how the world is kind of sitting",
+    "We are keeping a very strong watch in terms of how demand is coming out",
+    "We have a strong cost model",
+    "Maintain the guidance between that 18 and 20% band"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant margin improvements and robust volume growth. Forward guidance was measured, focusing on maintaining growth amidst competitive pressures. Risks were acknowledged, including geopolitical uncertainties and market competition. Investor confidence was reinforced through clear communication and strategic initiatives, projecting a cautiously bullish outlook."
+}

@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "C. Vijayakumar",
+      "role": "Chief Executive Officer & Managing Director",
+      "tone": "cautious",
+      "key_topics": [
+        "margin drop",
+        "long-term alignment",
+        "AI investments",
+        "revenue growth",
+        "client engagements"
+      ],
+      "direct_answers": [
+        "We are very clear. We are not setting, structurally, the margin bar lower. I think it will continue to be 19%-20%.",
+        "We have seen some macros play out differently in different verticals."
+      ],
+      "dodged_or_vague": [
+        "Sorry, we didn’t understand the question. There was some noise on the line."
+      ],
+      "summary": "C. Vijayakumar, the CEO and MD of HCLTech, addressed the earnings call with a cautious tone, acknowledging the reasons for the margin drop and emphasizing the company's long-term alignment over short-term metrics. He highlighted the strong revenue momentum and the commitment to improving margins by the end of the year. Vijayakumar discussed the adjusted EBIT guidance of 17% to 18% and the planned restructuring program to address market demands in the AI era. He expressed optimism about meeting revised guidance, supported by revenue growth and positive booking expectations.",
+      "sentiment_score": 0.9142,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9142,
+        "positive": 0.9406,
+        "negative": 0.0264,
+        "neutral": 0.0329,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shiv Walia",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "EBIT",
+        "net income",
+        "investments"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Shiv Walia, the CFO of HCLTech, provided a neutral overview of the company's financial performance, reporting an EBIT of $578 million and a net income of $440 million. He explained the short-term profitability challenges due to seasonal impacts and emphasized the company's commitment to maintaining investments in sales, Gen AI, and people capacity to secure long-term growth. Walia's statements were factual and focused on the financial metrics and strategic investments.",
+      "sentiment_score": -0.6105,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.6105,
+        "positive": 0.1326,
+        "negative": 0.743,
+        "neutral": 0.1244,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nitin Mohta",
+      "role": "Senior Vice President & Head - Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "forward-looking statements",
+        "conference call introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Mohta, the Head of Investor Relations, opened the earnings call with a neutral tone, welcoming participants and setting the stage for the discussion. He highlighted that the call would include forward-looking statements subject to various risks and uncertainties. Mohta's role was primarily to facilitate the call and ensure that participants were aware of the nature of the statements being made.",
+      "sentiment_score": 0.0021,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0021,
+        "positive": 0.0995,
+        "negative": 0.0974,
+        "neutral": 0.8032,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference facilitation",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the earnings call with a neutral tone, ensuring the smooth progression of the conference. They reminded participants of the listen-only mode and the opportunity for questions after the presentation. The Moderator's role was crucial in managing the flow of the call and transitioning between speakers and the Q&A session.",
+      "sentiment_score": 0.0456,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0456,
+        "positive": 0.0592,
+        "negative": 0.0136,
+        "neutral": 0.9271,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "Identified four unique speakers: C. Vijayakumar, Shiv Walia, Nitin Mohta, and the Moderator. Extracted key statements from each speaker, focusing on specific language, numbers, and forward-looking statements. Assessed the tone of each speaker based on their statements and context. For management speakers, noted which questions were answered directly and which were deflected or vague. Constructed narrative summaries for each speaker to capture their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

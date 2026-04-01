@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.3419,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.8637,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.8637,
+        "positive": 0.0609,
+        "negative": 0.9246,
+        "neutral": 0.0145,
+        "chunks_scored": 1
+      },
+      "text": "Kotak Mahindra Bank reported a Q2 FY'26 consolidated profit of Rs. 4,468 crore, with the Bank and other lending entities contributing 81% to this figure. The Bank's balance sheet grew 13% year-on-year, crossing Rs. 7 lakh crores, with net advances growing at 16% year-on-year, mainly in secured business. Total deposits grew by 15% year-on-year, with current account and fixed rate savings account growing at 26% and 10% respectively. The CASA ratio improved to 42.3%, and the Bank maintained a healthy CD ratio at 87.5%. The NIM for Q2 was at 4.54%, down by 11 bps on a Q-o-Q basis, primarily due to the full impact of the 50-bps repo cut and changes in the asset mix. Credit costs decreased from 93 to 79 basis points sequentially, aligning with expectations, and the gross NPA ratio reduced to 1.39%."
+    },
+    "forward_guidance": {
+      "score": 0.8795,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8795,
+        "positive": 0.9269,
+        "negative": 0.0474,
+        "neutral": 0.0258,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the coming quarters, expecting the benefit of repricing of deposits to reflect in the NIM over the next two quarters, assuming no further rate cuts. They anticipate a downward trajectory on credit costs for both MFI and credit cards, while remaining cautious in the retail CV segment. The Bank plans to gradually build back its retail unsecured business. The focus remains on leveraging automation and digitization to drive efficiency and scale, with continued investment in technology and branch expansion. The management also highlighted the potential for gradual improvement in margins with ongoing repricing of deposits and CRR benefits."
+    },
+    "risk_language": {
+      "score": 0.8019,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8019,
+        "positive": 0.8787,
+        "negative": 0.0769,
+        "neutral": 0.0444,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks and challenges, including the impact of economic and political conditions, volatility in interest rates, and new regulations. Management acknowledged the stress in the retail CV segment and the cautious stance required. They also discussed the potential impact of GST regulation changes on the insurance business. The management was forthright about the challenges in the capital market subsidiaries, which showed lower volume flows compared to the previous year. Despite these challenges, the Bank's capital adequacy remained strong, providing a buffer against potential headwinds."
+    },
+    "investor_confidence": {
+      "score": 0.8839,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8839,
+        "positive": 0.8944,
+        "negative": 0.0105,
+        "neutral": 0.0951,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial performance and strategic initiatives. They emphasized the Bank's strong capital position and the strategic use of excess capital for potential inorganic opportunities. The management's commitment to maintaining a healthy balance sheet and focusing on risk prudence and profitability was evident. The call conveyed a sense of confidence in the Bank's ability to navigate current challenges and capitalize on growth opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "Healthy growth in net advances and deposits",
+    "Improvement in CASA ratio",
+    "Decrease in credit costs",
+    "Strong capital adequacy",
+    "Continued investment in technology and branch expansion"
+  ],
+  "key_negative_drivers": [
+    "Impact of repo rate cut on NIM",
+    "Stress in retail CV segment",
+    "Lower volume flows in capital market subsidiaries",
+    "Impact of GST regulation changes on insurance business"
+  ],
+  "notable_phrases": [
+    "Consolidated profit of Rs. 4,468 crore",
+    "NIM is healthy at 4.54%",
+    "Credit costs have come down from 93 to 79 basis points",
+    "CASA ratio improved to 42.3%",
+    "Cautious in the retail CV segment",
+    "Gradually build back our retail unsecured business",
+    "Strong capital adequacy at 22.1%",
+    "Focus on leveraging automation and digitization"
+  ],
+  "chain_of_thought": "The financial performance showed strong growth in net advances and deposits, with a slight decline in NIM due to external factors. Forward guidance was cautiously optimistic, with expectations of improved margins and credit costs. Risk discussions were forthright, acknowledging economic and regulatory challenges. Investor confidence was bolstered by management's transparency and strategic focus on capital adequacy and growth opportunities."
+}

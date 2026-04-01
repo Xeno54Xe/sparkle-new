@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8174,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.938,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.938,
+        "positive": 0.9559,
+        "negative": 0.0179,
+        "neutral": 0.0262,
+        "chunks_scored": 1
+      },
+      "text": "Our IT services revenue for Quarter 3 was $2.63 billion reflecting a sequential growth of 0.1% and degrowth of 0.7% on a year-on-year basis. This takes us slightly above the upper end of our guidance. We ended the quarter with a TCV of $3.5 billion in bookings. Our operating margins came in at 17.5%, an expansion of 0.7% quarter-on-quarter and 1.5% year-on-year. This is a 12-quarter high. Our Capco business continues to see improved demand. Order book grew by 9% year-on-year and revenue grew 11% year-on-year. Our EPS or net income grew 24% year-on-year and 5% sequentially. This was led on the back of the margin expansion and therefore the EBIT growth, better treasury returns and a stable ETR of 24%."
+    },
+    "forward_guidance": {
+      "score": 0.9348,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9348,
+        "positive": 0.948,
+        "negative": 0.0132,
+        "neutral": 0.0387,
+        "chunks_scored": 1
+      },
+      "text": "For the next quarter, we are guiding for a sequential growth of (-1%) to (+1%) in constant currency terms. Our guidance for Q4 is (-1%) to (+1%) and therefore the dollar terms will be $2.602 billion to $2.655 billion. We guide based on the visibility we have closer to the midpoint and then we guide in a range. The fact that in the last two quarters, we are able to come above the midpoint is because of both a stronger execution in Quarter 2 also, the demand environment is improving. We are seeing a gradual recovery happening and the sectors that I talked to you about just now, BFSI and Healthcare, clearly are doing well."
+    },
+    "risk_language": {
+      "score": 0.3713,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.3713,
+        "positive": 0.6056,
+        "negative": 0.2343,
+        "neutral": 0.1601,
+        "chunks_scored": 1
+      },
+      "text": "2024 was marked by macroeconomic challenges. 2025 looks more hopeful and resilient. Our clients are cautiously optimistic, and discretionary spending is slowly coming back. While cost optimization remains key, we expect significant growth in AI spending. The uncertainties and risk factors are explained in our detailed filings with SEC. Wipro does not undertake any obligation to update the forward-looking statements to reflect events and circumstances after the date of filing. Europe and APMEA remained soft for us, with Europe degrowing 2.7% sequentially and 4.6% on a year-on-year basis."
+    },
+    "investor_confidence": {
+      "score": 0.9066,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9066,
+        "positive": 0.9145,
+        "negative": 0.0079,
+        "neutral": 0.0775,
+        "chunks_scored": 1
+      },
+      "text": "Thanks for taking my question and Congrats on a solid performance, especially in the margins front. Our current large deal pipeline is robust, and we are seeing good traction across geographies. We remain committed to investing and scaling our large accounts demonstrating client centricity by driving greater value, increasing wallet share and expanding into new lines of business. We have made good progress in our consulting-led, AI-powered, industry and cross-industry solutions. We continue to focus on our large accounts in our core markets and priority sectors."
+    }
+  },
+  "key_positive_drivers": [
+    "Operating margins at a 12-quarter high",
+    "EPS grew 24% year-on-year",
+    "Capco business demand improved",
+    "Sequential growth in top account",
+    "Large deal pipeline robust",
+    "AI-powered industry solutions success"
+  ],
+  "key_negative_drivers": [
+    "Revenue degrowth year-on-year",
+    "Europe and APMEA remained soft",
+    "Guidance includes potential negative growth",
+    "Macroeconomic challenges in 2024"
+  ],
+  "notable_phrases": [
+    "Operating margins came in at 17.5%",
+    "Sequential growth of (-1%) to (+1%)",
+    "Macroeconomic challenges",
+    "Clients are cautiously optimistic",
+    "Large deal pipeline is robust",
+    "Capco business continues to see improved demand",
+    "EPS or net income grew 24% year-on-year",
+    "Europe and APMEA remained soft"
+  ],
+  "chain_of_thought": "The financial performance showed strong margins and EPS growth, but revenue was slightly down year-on-year. Forward guidance was cautious with a potential for flat or slight growth, reflecting a measured outlook. Risk language acknowledged past macroeconomic challenges and current regional softness, but also highlighted optimism for 2025. Investor confidence was bolstered by robust deal pipelines and strategic focus on large accounts and AI solutions."
+}

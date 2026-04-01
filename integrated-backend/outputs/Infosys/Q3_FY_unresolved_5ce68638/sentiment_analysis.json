@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5077,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9408,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9408,
+        "positive": 0.9581,
+        "negative": 0.0173,
+        "neutral": 0.0246,
+        "chunks_scored": 1
+      },
+      "text": "Infosys reported a revenue of $5.1 billion for Q3, marking a 0.6% sequential increase and a 1.7% year-on-year growth in constant currency terms. Despite seasonal weakness, the company achieved strong revenue growth, with a reduction in third-party costs contributing positively. Operating margins, including the impact of changes in labor codes, stood at 18.4%, but adjusted margins were higher at 21.2%. The company highlighted a robust free cash flow generation of $965 million, which is 113% of adjusted net profit. Large deal TCV was strong at $4.8 billion, with 57% net new deals, indicating healthy deal momentum. The adjusted EPS in rupee terms for the nine months of FY'26 grew at a double-digit rate of 11.5%."
+    },
+    "forward_guidance": {
+      "score": 0.7442,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7442,
+        "positive": 0.8387,
+        "negative": 0.0944,
+        "neutral": 0.0669,
+        "chunks_scored": 1
+      },
+      "text": "Infosys revised its revenue growth guidance for the financial year to 3% to 3.5% in constant currency, reflecting confidence in its deal pipeline and AI capabilities. The operating margin guidance remains at 20% to 22%. Management expressed optimism about the next financial year, particularly in Financial Services and Energy, Utilities, Resources, and Services sectors, driven by AI partnerships and large deal wins. The company plans to continue investing in talent, with a focus on AI and digital transformation, and expects better outcomes in FY'27. However, they acknowledged some uncertainty at the lower end of the guidance due to macroeconomic factors."
+    },
+    "risk_language": {
+      "score": -0.9201,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9201,
+        "positive": 0.0218,
+        "negative": 0.9419,
+        "neutral": 0.0363,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the impact of changes in labor codes in India, which affected operating profit and margins. There was a sequential decline in revenue contribution from top clients, raising concerns about client concentration risks. The company also mentioned the potential headwinds from regulatory changes, such as the H-1B visa issues, which could impact their workforce strategy. Despite these challenges, Infosys remains focused on cost optimization and efficiency improvements through AI and digital initiatives. The company is also monitoring discretionary spending trends across various sectors."
+    },
+    "investor_confidence": {
+      "score": 0.9312,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9312,
+        "positive": 0.9453,
+        "negative": 0.0141,
+        "neutral": 0.0406,
+        "chunks_scored": 1
+      },
+      "text": "Infosys management projected clarity and confidence during the earnings call, with a strong emphasis on their AI capabilities and large deal wins. Analyst questions were addressed directly, with detailed explanations of margin dynamics and future growth prospects. The company's commitment to transparency was evident in their discussion of headcount increases and investment in future capacity. Management's credibility was reinforced by their consistent execution and strategic focus on AI-led transformation. The call concluded with a positive outlook for the next quarter and beyond, supported by a healthy deal pipeline and strategic partnerships."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong revenue growth despite seasonality",
+    "Robust large deal TCV of $4.8 billion",
+    "Healthy free cash flow generation",
+    "Increased revenue guidance to 3%-3.5%",
+    "AI partnerships with major clients",
+    "Improved attrition rates"
+  ],
+  "key_negative_drivers": [
+    "Impact of labor code changes on margins",
+    "Sequential decline in top client revenue contribution",
+    "Regulatory challenges with H-1B visas",
+    "Uncertainty in macroeconomic environment",
+    "Lower utilization rates",
+    "Pressure on discretionary spending in some sectors"
+  ],
+  "notable_phrases": [
+    "disciplined execution",
+    "strong revenue growth despite seasonality",
+    "robust large deal TCV",
+    "razor-sharp focus",
+    "healthy deal pipeline",
+    "AI partner of choice",
+    "building capacity for future",
+    "confidence in demand environment"
+  ],
+  "chain_of_thought": "Infosys demonstrated strong financial performance with revenue growth and robust deal wins, despite some margin pressures due to labor code changes. The company revised its revenue guidance upwards, reflecting confidence in its strategic initiatives and AI capabilities. Management addressed risks related to regulatory changes and client concentration but remained optimistic about future growth. The overall tone of the call was cautiously bullish, with a focus on strategic investments and maintaining transparency with investors."
+}

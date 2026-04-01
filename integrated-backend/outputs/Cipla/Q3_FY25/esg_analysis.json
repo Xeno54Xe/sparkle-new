@@ -1,0 +1,81 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 37.5,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 20.0,
+    "key_themes": [
+      "manufacturing network",
+      "US facilities",
+      "CAPEX"
+    ],
+    "notable_excerpts": [
+      "Over the past three years, we have been derisking our manufacturing network and products to our US facilities. Between fiscal year '20 to year-to-date fiscal year '25, we have spent almost $100 million of CAPEX in these facilities."
+    ]
+  },
+  "social": {
+    "score": 40.0,
+    "key_themes": [
+      "equitable access",
+      "employee expansion",
+      "community health"
+    ],
+    "notable_excerpts": [
+      "We are fully committed to do our best in providing healthcare with a focus on equitable access so that no one should be denied of medication.",
+      "From FY'23 to nine months FY'25 we have added 1,800 plus feet on ground.",
+      "During this quarter, we launched CipAir, an AI powered mobile application to simplify asthma screening in India."
+    ]
+  },
+  "governance": {
+    "score": 50.0,
+    "key_themes": [
+      "regulatory compliance",
+      "FDA inspections",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "As highlighted in the beginning, our Goa facility has been cleared by the US FDA with a VAI Classification.",
+      "During this quarter, the USFDA also inspected our manufacturing facility located in Virgonagar, Bengaluru and issued eight 483 observations."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript reveals limited environmental disclosures, focusing mainly on CAPEX in US facilities. Social aspects are moderately covered, with emphasis on equitable access to healthcare and employee expansion. Governance is addressed through regulatory compliance and FDA inspections, but lacks depth in other governance areas.",
+  "strengths": [
+    "Commitment to equitable healthcare access",
+    "Expansion of employee base"
+  ],
+  "weaknesses": [
+    "Limited environmental initiatives",
+    "Lack of detailed governance practices"
+  ],
+  "red_flags": [
+    "Multiple FDA observations indicating compliance issues"
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Diksha Maheshwari",
+      "role": "Head, Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "forward-looking statements",
+        "risks and uncertainties",
+        "investor presentation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Diksha Maheshwari opened the call by highlighting the presence of forward-looking statements and the associated risks and uncertainties. She emphasized that these statements are based on current management expectations and that Cipla does not commit to updating them publicly. Her tone was neutral, focusing on setting the stage for the call and ensuring that participants were aware of the investor presentation available on the company's website.",
+      "sentiment_score": -0.0936,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0936,
+        "positive": 0.0277,
+        "negative": 0.1214,
+        "neutral": 0.8509,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Vohra",
+      "role": "Global MD and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "quarterly revenue",
+        "EBITDA margin",
+        "One-India business",
+        "U.S. market",
+        "R&D investments"
+      ],
+      "direct_answers": [
+        "Yes, both for our own portfolio as well as for partnerships with people who have their portfolios as well. Yes. The answer is yes."
+      ],
+      "dodged_or_vague": [
+        "Can we come back to you in the next quarter on this? Because I think there will be a budgeting"
+      ],
+      "summary": "Umang Vohra, the Global MD and CEO, exuded confidence as he discussed Cipla's record quarterly revenue and robust EBITDA margin. He introduced Achin Gupta as the incoming CEO, highlighting his strategic and operational leadership. Umang emphasized the company's diversified portfolio and growth across key markets. He directly answered questions about expanding the biosimilars portfolio but was vague about future EBITDA margin guidance, indicating a need for further analysis in the next quarter.",
+      "sentiment_score": 0.8682,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8682,
+        "positive": 0.8753,
+        "negative": 0.0071,
+        "neutral": 0.1176,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Achin Gupta",
+      "role": "Global COO",
+      "tone": "optimistic",
+      "key_topics": [
+        "company strategy",
+        "leadership transition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Achin Gupta, the Global COO, was optimistic about the future strategy of Cipla. He is set to take over as CEO and MD, and his statements reflected a forward-looking approach, focusing on strategic areas for growth. Although he did not provide specific answers during the call, his presence and upcoming leadership role suggest a commitment to continuing Cipla's growth trajectory.",
+      "sentiment_score": 0.2713,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2713,
+        "positive": 0.2828,
+        "negative": 0.0114,
+        "neutral": 0.7058,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Adukia",
+      "role": "Global CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "R&D investments",
+        "EBITDA margin guidance"
+      ],
+      "direct_answers": [
+        "No, it's not because of what you mentioned, that is one of the reasons why you will have -- so see, in the first half of the year, you had the benefit of Revlimid also sitting out there, which will not be there in the second half."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashish Adukia, the Global CFO, provided a cautious overview of Cipla's financial performance. He discussed the increase in R&D spending and revised EBITDA margin guidance, reflecting a careful approach to financial management. Ashish directly addressed questions about the impact of Revlimid on financials, indicating a clear understanding of the company's fiscal dynamics. His tone suggested a focus on maintaining financial stability amid changing market conditions.",
+      "sentiment_score": 0.1229,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1229,
+        "positive": 0.1659,
+        "negative": 0.043,
+        "neutral": 0.7911,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies four key speakers: Diksha Maheshwari, Umang Vohra, Achin Gupta, and Ashish Adukia. Each speaker's role and tone are assessed based on their statements during the earnings call. Diksha Maheshwari's role was to set the stage for the call with a neutral tone, focusing on forward-looking statements. Umang Vohra, with a confident tone, highlighted Cipla's strong financial performance and strategic leadership transition. Achin Gupta, optimistic about future strategies, did not provide specific answers but indicated a focus on growth. Ashish Adukia, with a cautious tone, detailed financial performance and revised guidance, addressing questions about R&D spending and EBITDA margins. The JSON captures each speaker's contributions, tone, and key messages, providing a comprehensive analysis of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}
