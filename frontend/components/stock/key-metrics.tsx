@@ -7,7 +7,7 @@ interface KeyMetricsProps {
   stock: Stock
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "${process.env.NEXT_PUBLIC_API_URL}"
 
 function formatNum(num: number | null | undefined): string {
   if (!num || num === 0) return "N/A"

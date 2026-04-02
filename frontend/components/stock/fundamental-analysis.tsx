@@ -12,7 +12,7 @@ interface FundamentalAnalysisProps {
   symbol: string
 }
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+const API = process.env.NEXT_PUBLIC_API_URL || "${process.env.NEXT_PUBLIC_API_URL}"
 
 // Auto-generate description text based on metric heading, value, and label
 function generateMetricPhrase(heading: string, value: number, label: string, symbol: string): string {

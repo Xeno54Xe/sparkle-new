@@ -48,7 +48,7 @@ export function Sidebar() {
             RS
             <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-background bg-primary shadow-[0_0_5px_rgba(16,185,129,0.8)]" />
           </div>
-          {!collapsed && <div className="flex flex-col text-left"><span className="text-sm font-semibold text-foreground">Rishit</span><span className="text-xs text-primary/80 font-medium">Premium Plan</span></div>}
+          {!collapsed && <div className="flex flex-col text-left"><span className="text-sm font-semibold text-foreground">Vansh</span><span className="text-xs text-primary/80 font-medium">Premium Plan</span></div>}
         </div>
       </div>
     </aside>

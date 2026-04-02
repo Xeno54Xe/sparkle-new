@@ -5,7 +5,7 @@ import { Activity, TrendingUp, TrendingDown, Target, BarChart2, Zap, AlertTriang
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 interface TechnicalAnalysisProps { symbol: string }
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+const API = process.env.NEXT_PUBLIC_API_URL || "${process.env.NEXT_PUBLIC_API_URL}"
 
 function calcVerdict(d: any) {
   const p = d.price || 0

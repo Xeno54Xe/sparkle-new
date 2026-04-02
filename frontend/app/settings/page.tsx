@@ -20,7 +20,7 @@ export default function SettingsPage() {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {[
-              { icon: User, title: "Profile", desc: "Manage your account details", items: [{ l: "Name", v: "Rishit" }, { l: "Email", v: "rishit@sparkleai.com" }, { l: "Plan", v: "Free" }] },
+              { icon: User, title: "Profile", desc: "Manage your account details", items: [{ l: "Name", v: "Vansh" }, { l: "Email", v: "vansh@sparkleai.com" }, { l: "Plan", v: "Free" }] },
               { icon: Bell, title: "Notifications", desc: "Configure alert preferences", items: [{ l: "Price Alerts", v: "Enabled" }, { l: "Signal Alerts", v: "Enabled" }, { l: "Report Ready", v: "Enabled" }] },
               { icon: Palette, title: "Appearance", desc: "Customize the interface", items: [{ l: "Theme", v: "Dark" }, { l: "Font Size", v: "Default" }, { l: "Compact Mode", v: "Off" }] },
               { icon: Shield, title: "Privacy", desc: "Data and privacy settings", items: [{ l: "Data Sharing", v: "Minimal" }, { l: "Analytics", v: "Enabled" }, { l: "Two-Factor Auth", v: "Disabled" }] },
