@@ -10,7 +10,7 @@ const navItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: "/" },
   { icon: Search, label: "Search", href: "/search" },
   { icon: Star, label: "Watchlist", href: "/watchlist" },
-  { icon: LineChart, label: "Analysis", href: "/analysis" },
+  //{ icon: LineChart, label: "Analysis", href: "/analysis" },
   { icon: FileText, label: "Reports", href: "/reports" },
   { icon: Settings, label: "Settings", href: "/settings" },
 ]
