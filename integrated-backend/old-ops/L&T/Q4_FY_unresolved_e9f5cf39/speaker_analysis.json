@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "P. Ramakrishnan",
+      "role": "Head, Investor Relations",
+      "tone": "cautious",
+      "key_topics": [
+        "earnings highlights",
+        "macroeconomic landscape",
+        "order inflows",
+        "financial performance",
+        "forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "P. Ramakrishnan opened the earnings call by welcoming participants and introducing key management figures. He provided an overview of the company's financial performance for FY '25, highlighting strong order inflows and revenue growth. Ramakrishnan emphasized the complex macroeconomic environment, noting geopolitical tensions and supply chain disruptions. He issued a disclaimer about forward-looking statements, cautioning that actual results may differ due to uncertainties. His tone was cautious, reflecting the challenges posed by the global economic landscape.",
+      "sentiment_score": 0.4292,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4292,
+        "positive": 0.4923,
+        "negative": 0.0631,
+        "neutral": 0.4446,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "R. Shankar Raman",
+      "role": "President, Whole-Time Director And Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "Middle East operations",
+        "order book",
+        "margin guidance",
+        "risk management"
+      ],
+      "direct_answers": [
+        "In the Middle East, yes, in fact, the deployment takes many shapes.",
+        "That is right. So at the moment now we're trying to see where we can invest to grow our returns."
+      ],
+      "dodged_or_vague": [
+        "Any time we give guidance or margin there's always a risk of not meeting as much as there is a possibility of meeting."
+      ],
+      "summary": "R. Shankar Raman addressed questions regarding the company's operations in the Middle East, explaining the various strategies for workforce deployment and subcontracting. He discussed the company's investment strategies and the status of divestments, particularly mentioning the Hyderabad Metro. Raman provided insights into the hydrocarbon business's substantial order book and addressed margin guidance, acknowledging potential risks but expressing confidence in meeting targets. His tone was confident, reflecting a strong grasp of the company's strategic direction and risk management practices.",
+      "sentiment_score": -0.0762,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0762,
+        "positive": 0.0919,
+        "negative": 0.1681,
+        "neutral": 0.7401,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Subramanian Sarma",
+      "role": "Deputy Managing Director and President",
+      "tone": "optimistic",
+      "key_topics": [
+        "margin management",
+        "technology use",
+        "project execution"
+      ],
+      "direct_answers": [
+        "Let me take this question. I think, as RSR explained, the margin accrual will depend on the facing of the project."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Subramanian Sarma provided insights into the company's approach to managing margins, emphasizing the role of project phasing and recent large project awards. He highlighted the company's focus on leveraging technology to reduce costs, indicating an ongoing journey of improvement. Sarma's tone was optimistic, reflecting confidence in the company's strategic initiatives and the potential for technological advancements to enhance efficiency and profitability.",
+      "sentiment_score": 0.22,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.22,
+        "positive": 0.2412,
+        "negative": 0.0212,
+        "neutral": 0.7376,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference proceedings",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the conference call, providing instructions to participants and ensuring the smooth transition between speakers. The moderator maintained a neutral tone, focusing on logistical aspects of the call and ensuring that participants were aware of how to engage with the proceedings. The role was primarily supportive, enabling the management team to deliver their presentations and address questions effectively.",
+      "sentiment_score": 0.0432,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0432,
+        "positive": 0.0585,
+        "negative": 0.0152,
+        "neutral": 0.9263,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: P. Ramakrishnan, R. Shankar Raman, Subramanian Sarma, and the Moderator. Each speaker's key statements are extracted, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and context. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or given vague responses. A narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON structure is used to organize this information systematically, ensuring clarity and coherence in the analysis.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

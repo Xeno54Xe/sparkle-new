@@ -1,0 +1,114 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Gopal Vittal",
+      "role": "Vice Chairman & Managing Director, Bharti Airtel Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "strategic priorities",
+        "ESG initiatives",
+        "5G expansion",
+        "broadband growth",
+        "tariff structure"
+      ],
+      "direct_answers": [
+        "Aliasgar Shakir's question on tariff architecture and capital allocation",
+        "Sanjesh Jain's question on data center capacity"
+      ],
+      "dodged_or_vague": [
+        "Ankur Rudra's question on capex specifics"
+      ],
+      "summary": "Gopal Vittal opened the earnings call with a confident overview of Bharti Airtel's strong financial performance for Q4 FY2025, highlighting a 21.2% growth in EBITDA and strategic priorities such as ESG initiatives and 5G expansion. He emphasized the company's disciplined capital spending and operational excellence, which have strengthened their balance sheet. Vittal addressed questions on tariff architecture and capital allocation directly, but provided a more general response to inquiries about capex specifics. His tone remained confident throughout, underscoring the company's strategic focus and execution capabilities.",
+      "sentiment_score": 0.7576,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7576,
+        "positive": 0.7715,
+        "negative": 0.0139,
+        "neutral": 0.2146,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Soumen Ray",
+      "role": "Chief Financial Officer - India & South Asia - Bharti Airtel Limited & Non-executive Director, Bharti Hexacom Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "cost management",
+        "capex trajectory"
+      ],
+      "direct_answers": [
+        "Sanjesh Jain's question on opex and capex trends"
+      ],
+      "dodged_or_vague": [
+        "Vivekanand Subbaraman's question on capex to revenue benchmark"
+      ],
+      "summary": "Soumen Ray provided a cautious overview of Bharti Airtel's financial performance, noting solid revenue and EBITDAaL growth. He emphasized the company's focus on cost management and prudent cash usage to support growth and dividends. Ray directly answered questions about opex and capex trends, but was less specific when addressing inquiries about capex to revenue benchmarks. His tone reflected a careful balance between acknowledging achievements and managing future financial challenges.",
+      "sentiment_score": 0.8411,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8411,
+        "positive": 0.85,
+        "negative": 0.0089,
+        "neutral": 0.1412,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vaidehi Sharma",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "webinar logistics",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vaidehi Sharma served as the neutral moderator for the earnings webinar, ensuring the smooth flow of the session and managing the Q&A segment. She provided clear instructions to participants on how to join the Q&A queue and reminded them of the forward-looking nature of the discussions. Her role was primarily logistical, facilitating the interaction between the management team and the analysts.",
+      "sentiment_score": 0.0243,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0243,
+        "positive": 0.0405,
+        "negative": 0.0162,
+        "neutral": 0.9433,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: Gopal Vittal, Soumen Ray, and Vaidehi Sharma. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. Gopal Vittal's tone is assessed as confident, with direct answers to some questions and vague responses to others. Soumen Ray's tone is cautious, providing detailed financial insights but avoiding specifics on certain benchmarks. Vaidehi Sharma's role as moderator is neutral, focusing on logistics and session management. The narrative summaries capture each speaker's contribution, stance, and key messages, providing a comprehensive overview of the call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

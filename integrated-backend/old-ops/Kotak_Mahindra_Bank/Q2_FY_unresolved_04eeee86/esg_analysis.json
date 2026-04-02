@@ -1,0 +1,71 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 35.0,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 40.0,
+    "key_themes": [
+      "employee efficiency",
+      "automation",
+      "community impact"
+    ],
+    "notable_excerpts": [
+      "We are seeing a sizable reduction in the payroll cost with the headcount remaining more or less flat. So, that is the benefit on efficiency and the automation which we have got.",
+      "Collection efficiency faced some pressure due to extended monsoon, but is expected to recover as rural cash flows improve."
+    ]
+  },
+  "governance": {
+    "score": 60.0,
+    "key_themes": [
+      "risk management",
+      "capital adequacy",
+      "transparency"
+    ],
+    "notable_excerpts": [
+      "The way we think about capital is the first call for the thing to wear off over the next few quarters.",
+      "Our capital adequacy at the group level remains healthy at 22.8%, of which CET-1 itself is 21.8%."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript lacked any environmental disclosures. Social aspects were lightly touched upon, focusing on employee efficiency and community impact due to monsoon. Governance was discussed in terms of risk management and capital adequacy, showing a moderate level of transparency.",
+  "strengths": [
+    "Strong capital adequacy and risk management practices."
+  ],
+  "weaknesses": [
+    "Lack of environmental disclosures.",
+    "Limited social impact details."
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

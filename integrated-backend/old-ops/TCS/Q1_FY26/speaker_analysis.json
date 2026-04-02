@@ -1,0 +1,156 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Nehal Shah",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "management overview",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nehal Shah served as the moderator for the TCS earnings call, introducing the management team and outlining the structure of the call. She emphasized that the company does not provide specific revenue or earnings guidance and highlighted the availability of financial documents on the company's website. Her tone was neutral, focusing on procedural aspects and ensuring the call's smooth progression.",
+      "sentiment_score": 0.0172,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0172,
+        "positive": 0.0345,
+        "negative": 0.0172,
+        "neutral": 0.9483,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "K Krithivasan",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "cautious",
+      "key_topics": [
+        "revenue decline",
+        "operating margin",
+        "client relationships",
+        "demand trends"
+      ],
+      "direct_answers": [
+        "BFSI North America and BFSI UK have a marginal growth."
+      ],
+      "dodged_or_vague": [
+        "We don’t give any specific guidance, but on the international revenue part, we are more optimistic in the coming quarter."
+      ],
+      "summary": "K Krithivasan, the CEO, provided a cautious overview of TCS's performance, noting a 3.1% decline in revenue due to global disruptions and decision-making delays. Despite these challenges, he highlighted a robust contract value of $9.4 billion and expressed confidence in the company's long-term demand and business model. Krithivasan addressed questions about specific sectors like BFSI, providing direct answers about regional growth but remained vague on future guidance, reflecting a cautious tone throughout his remarks.",
+      "sentiment_score": -0.9548,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9548,
+        "positive": 0.0141,
+        "negative": 0.9689,
+        "neutral": 0.0169,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aarthi Subramanian",
+      "role": "Executive Director, President and Chief Operating Officer",
+      "tone": "confident",
+      "key_topics": [
+        "service offerings",
+        "AI and Data",
+        "customer impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aarthi Subramanian, in her first earnings call as COO, confidently discussed TCS's service offerings, particularly in AI and Data. She highlighted the shift from pilot projects to production-grade rollouts, emphasizing the strategic importance of AI-led transformations and data-platform modernization. Her remarks conveyed optimism about the maturing AI market and TCS's role in driving customer impact through innovative solutions.",
+      "sentiment_score": 0.221,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.221,
+        "positive": 0.2307,
+        "negative": 0.0098,
+        "neutral": 0.7595,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "operating margin",
+        "cash flow"
+      ],
+      "direct_answers": [
+        "We would want to drive revenue growth, but we will look at optimization because there is capacity, which is built up into the system."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Samir Seksaria, the CFO, provided a detailed financial overview, noting a slight revenue decline in constant currency terms but highlighting a stable operating margin of 24.5%. He discussed the impact of demand contraction on utilization and the strategic investments made for long-term growth. Seksaria's tone was neutral, focusing on financial metrics such as cash flow and accounts receivable, and he provided direct answers regarding revenue growth strategies.",
+      "sentiment_score": -0.4298,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4298,
+        "positive": 0.2706,
+        "negative": 0.7004,
+        "neutral": 0.029,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Milind Lakkad",
+      "role": "Chief Human Resources Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "workforce management",
+        "attrition",
+        "employee investment"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Milind Lakkad, the CHRO, provided an optimistic update on workforce management, highlighting TCS's commitment to honoring job offers and recalibrating hiring based on demand. He emphasized significant investments in employee skill development, particularly in AI, with 114,000 employees now possessing advanced AI skills. Despite a slight increase in attrition, Lakkad's focus on employee investment and transformation leadership conveyed a positive outlook for TCS's human resources strategy.",
+      "sentiment_score": 0.918,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.918,
+        "positive": 0.9283,
+        "negative": 0.0104,
+        "neutral": 0.0613,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis identifies five unique speakers: Nehal Shah (Moderator), K Krithivasan (CEO), Aarthi Subramanian (COO), Samir Seksaria (CFO), and Milind Lakkad (CHRO). Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their remarks, with management speakers' responses to analyst questions evaluated for directness or vagueness. The narrative summaries capture each speaker's contribution, stance, and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

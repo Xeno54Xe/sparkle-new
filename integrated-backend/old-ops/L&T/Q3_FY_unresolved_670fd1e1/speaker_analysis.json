@@ -1,0 +1,112 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, providing instructions on how participants could ask questions and reminding them of the call's recording status. The tone was neutral, focusing on logistics and ensuring the call proceeded smoothly.",
+      "sentiment_score": 0.0114,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0114,
+        "positive": 0.0341,
+        "negative": 0.0227,
+        "neutral": 0.9432,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "P. Ramakrishnan",
+      "role": "Head, Investor Relations",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "order inflows",
+        "EBITDA margin",
+        "future guidance"
+      ],
+      "direct_answers": [
+        "Mohit Kumar's question on order placement",
+        "Bharanidhar Vijayakumar's question on fixed price orders"
+      ],
+      "dodged_or_vague": [
+        "Aditya Bhartia's question on submarine tender"
+      ],
+      "summary": "P. Ramakrishnan, as the Head of Investor Relations, provided a comprehensive overview of L&T's financial performance for Q3 FY '25. He highlighted the company's record order inflows and robust revenue growth, attributing these to strong execution momentum. Ramakrishnan expressed confidence in surpassing the company's guidance for order inflows and revenue growth for the year. He directly addressed questions regarding order placements and fixed price orders but was evasive on the submarine tender due to non-disclosure agreements. His tone was confident, reflecting a positive outlook for the company's future performance.",
+      "sentiment_score": 0.3764,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3764,
+        "positive": 0.6291,
+        "negative": 0.2527,
+        "neutral": 0.1182,
+        "chunks_scored": 8
+      }
+    },
+    {
+      "name": "Subramanian Sarma",
+      "role": "Whole-Time Director and President of the Energy Division",
+      "tone": "cautious",
+      "key_topics": [
+        "Middle East market",
+        "energy transition",
+        "project execution"
+      ],
+      "direct_answers": [
+        "Amit Mahawar's question on Middle East competition"
+      ],
+      "dodged_or_vague": [
+        "Aditya Bhartia's question on submarine tender"
+      ],
+      "summary": "Subramanian Sarma, as the Whole-Time Director and President of the Energy Division, discussed L&T's strategic approach to new market opportunities, particularly in the Middle East. He acknowledged the competitive landscape but expressed confidence in L&T's ability to secure projects. Sarma was cautious about providing specific details on future plans, indicating that strategies are still evolving. He directly addressed questions about competition in the Middle East but was evasive regarding the submarine tender due to confidentiality agreements. His tone was cautious, reflecting a careful approach to navigating new market challenges.",
+      "sentiment_score": 0.1914,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1914,
+        "positive": 0.2056,
+        "negative": 0.0141,
+        "neutral": 0.7803,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis began by identifying the unique speakers in the earnings call: the Moderator, P. Ramakrishnan, and Subramanian Sarma. Each speaker's key statements were extracted, focusing on verbatim quotes that included specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their language and responses to questions. For management speakers, their responses to analyst questions were categorized as direct or dodged/vague. Finally, a narrative summary was crafted for each speaker, capturing their contribution to the call, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

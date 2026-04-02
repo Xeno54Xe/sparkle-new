@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference introduction",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the NTPC Limited Q3 FY25 earnings conference call, ensuring the smooth transition between speakers and managing the question-and-answer session. They maintained a neutral tone throughout, focusing on procedural aspects of the call. The moderator's role was crucial in maintaining the structure and flow of the conference.",
+      "sentiment_score": 0.0399,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0399,
+        "positive": 0.0542,
+        "negative": 0.0143,
+        "neutral": 0.9315,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Apoorva Bahadur",
+      "role": "IIFL Capital Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "speaker handover"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Apoorva Bahadur from IIFL Capital Limited introduced the NTPC management team and handed over the proceedings to them. His tone was neutral, focusing on the formal introduction of the speakers. His role was primarily to set the stage for the management's presentation.",
+      "sentiment_score": 0.0885,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0885,
+        "positive": 0.099,
+        "negative": 0.0105,
+        "neutral": 0.8905,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jaikumar Srinivasan",
+      "role": "Director (Finance), NTPC",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "operational highlights",
+        "capacity expansion",
+        "green energy initiatives"
+      ],
+      "direct_answers": [
+        "financial results",
+        "operational highlights",
+        "capacity expansion"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jaikumar Srinivasan, Director (Finance) of NTPC, presented the financial and operational highlights for Q3 FY25. He confidently reported on the company's robust performance and strategic initiatives, including the successful listing of NTPC Green Energy Limited. His statements emphasized NTPC's commitment to renewable energy and capacity expansion, reflecting a forward-looking and optimistic outlook for the company's growth and sustainability efforts.",
+      "sentiment_score": 0.9177,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9177,
+        "positive": 0.929,
+        "negative": 0.0113,
+        "neutral": 0.0597,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Management",
+      "role": "NTPC Management",
+      "tone": "cautious",
+      "key_topics": [
+        "capacity addition",
+        "project timelines",
+        "financial guidance"
+      ],
+      "direct_answers": [
+        "capacity addition",
+        "project timelines"
+      ],
+      "dodged_or_vague": [
+        "price discovery",
+        "fresh awards for NEEPCO and THDC"
+      ],
+      "summary": "The NTPC management team, including various directors, provided detailed updates on capacity additions and project timelines. They maintained a cautious tone, particularly when discussing price discovery and new project awards, indicating a careful approach to financial and operational disclosures. While they answered questions about ongoing projects and capacity expansions, they were less forthcoming about specific financial considerations and future project awards, reflecting a strategic focus on current operations and cautious optimism about future developments.",
+      "sentiment_score": 0.0277,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0277,
+        "positive": 0.0487,
+        "negative": 0.0209,
+        "neutral": 0.9304,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The transcript includes multiple speakers, primarily from NTPC's management team, with a moderator and an introduction by Apoorva Bahadur. Each speaker's role and tone were identified based on their statements. The management's responses were analyzed for directness and vagueness, particularly in financial and operational contexts. The JSON structure captures the essence of each speaker's contribution, tone, and key messages, providing a comprehensive overview of the earnings call proceedings.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 22.8,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "governance": {
+    "score": 65.0,
+    "key_themes": [
+      "capital planning",
+      "risk management",
+      "regulatory compliance"
+    ],
+    "notable_excerpts": [
+      "We need to provide capital or allocate capital for unknown and unforeseeable risk as well.",
+      "We do have a capital planning process, where obviously the threshold levels are far higher than the regulatory prescriptions.",
+      "The recent draft proposal seem to suggest a meaningful reduction in risk weighted assets."
+    ]
+  },
+  "chain_of_thought": "The earnings call primarily focused on governance aspects, particularly capital planning and risk management. There were no mentions of environmental or social topics.",
+  "strengths": [
+    "Strong focus on capital planning and risk management."
+  ],
+  "weaknesses": [
+    "Lack of discussion on environmental and social issues."
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mr. C.S. Setty",
+      "role": "Chairman, State Bank of India",
+      "tone": "confident",
+      "key_topics": [
+        "Q3 FY26 performance",
+        "global and domestic economic environment",
+        "strategic initiatives",
+        "credit growth",
+        "NIM outlook",
+        "digital transformation"
+      ],
+      "direct_answers": [
+        "If your question is in terms of how do we manage the yield movement. So, our internal view is that the yields probably will range from 6.55 to 6.75.",
+        "We are sticking to that 3% guidance."
+      ],
+      "dodged_or_vague": [
+        "Anything unanswered remain?"
+      ],
+      "summary": "Mr. C.S. Setty opened the call with a confident overview of SBI's Q3 FY26 performance, emphasizing the bank's strong fundamentals and strategic initiatives. He highlighted the robust credit growth and the bank's alignment with long-term national goals. Setty was optimistic about the economic environment despite global uncertainties and reiterated the bank's focus on digital transformation and efficiency. He provided direct answers to questions about yield management and NIM guidance but was less specific when asked if anything remained unanswered. Overall, his tone was confident and forward-looking.",
+      "sentiment_score": 0.9439,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9439,
+        "positive": 0.9584,
+        "negative": 0.0146,
+        "neutral": 0.027,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Pawan Kumar",
+      "role": "General Manager (Performance, Planning and Review), State Bank of India",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Pawan Kumar played a neutral role as the moderator of the call, welcoming participants and facilitating the Q&A session. He ensured that the session ran smoothly by instructing participants on how to ask questions and maintaining the flow of the discussion. His contributions were primarily logistical, and he did not provide any substantive financial insights or forward-looking statements.",
+      "sentiment_score": 0.1076,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1076,
+        "positive": 0.1198,
+        "negative": 0.0122,
+        "neutral": 0.868,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Ashok Ajmera",
+      "role": "Chairman, Ajcon Global",
+      "tone": "optimistic",
+      "key_topics": [
+        "profitability",
+        "credit growth",
+        "provisions"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Ashok Ajmera expressed optimism about SBI's performance, praising the bank for its strong profitability and asset quality. He acknowledged the exceptional profit from the sale of Yes Bank shares in the previous quarter but noted that the current quarter's profit was equally impressive. Ajmera's tone was positive, and he seemed confident in the bank's continued success. His questions focused on understanding the drivers behind the profitability and credit growth.",
+      "sentiment_score": 0.9259,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9259,
+        "positive": 0.9462,
+        "negative": 0.0202,
+        "neutral": 0.0336,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Ankit Bihani",
+      "role": "Nomura",
+      "tone": "neutral",
+      "key_topics": [
+        "LCR"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Ankit Bihani from Nomura had a brief interaction during the call, focusing on the Liquidity Coverage Ratio (LCR). His tone was neutral, and he did not provide any additional commentary or questions beyond confirming the LCR figure. His participation was limited to seeking clarification on a specific metric.",
+      "sentiment_score": -0.0074,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0074,
+        "positive": 0.0338,
+        "negative": 0.0412,
+        "neutral": 0.9249,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted to capture the essence of their contributions, focusing on verbatim quotes where possible. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, attention is given to how they handle analyst questions, noting any direct answers or instances where they deflect or provide vague responses. Each speaker's narrative summary encapsulates their overall stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

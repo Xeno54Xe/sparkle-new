@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6834,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9416,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9416,
+        "positive": 0.958,
+        "negative": 0.0164,
+        "neutral": 0.0256,
+        "chunks_scored": 1
+      },
+      "text": "In Q2 FY26, TCS reported a revenue growth of 0.8% sequentially in constant currency, with an operating margin of 25.2% and a net margin of 19.6%. The company achieved a sequential improvement of 70 basis points in operating margin, excluding one-time severance charges. Revenue in reported currency grew 3.7% sequentially and 2.4% year-on-year. TCS highlighted strong growth momentum across most verticals and geographies, with a total contract value (TCV) of $10 billion, marking a sequential increase of 6.5% and a year-on-year growth of 16%. The company emphasized its industry-leading margins and robust cash flows, with net cash from operations at $1.5 billion, representing 110.1% of net income."
+    },
+    "forward_guidance": {
+      "score": 0.9356,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9356,
+        "positive": 0.9469,
+        "negative": 0.0113,
+        "neutral": 0.0418,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism for FY26, expecting international revenue growth to surpass the previous fiscal year, driven by a strong demand pipeline and robust sales momentum. The company plans to expand its pan-India footprint by about 50,000 seats over the next 2 to 3 years. TCS is committed to becoming the world’s largest AI-led technology services company, with significant investments in AI transformation and ecosystem partnerships. Despite macroeconomic uncertainties, the company remains confident in sustaining or improving growth momentum, supported by its AI-infused solutions and strategic investments."
+    },
+    "risk_language": {
+      "score": -0.3134,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.3134,
+        "positive": 0.3004,
+        "negative": 0.6138,
+        "neutral": 0.0858,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including macroeconomic challenges and tight control over discretionary budgets by clients. Management acknowledged the impact of economic and demand volatility, with clients consolidating vendors to achieve transformation objectives. The company is aware of the potential headwinds from project deferrals and pauses, although the situation has improved compared to the previous quarter. TCS is also mindful of the ongoing severance charges, which will continue throughout the year, impacting margins. Despite these challenges, the company remains focused on leveraging its AI capabilities to mitigate risks."
+    },
+    "investor_confidence": {
+      "score": 0.9147,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9147,
+        "positive": 0.9258,
+        "negative": 0.0111,
+        "neutral": 0.0631,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction in their strategic vision, emphasizing their commitment to becoming an AI-led technology services company. They provided detailed responses to analyst questions, particularly regarding growth prospects and AI investments. The leadership team highlighted their financial discipline, robust cash flows, and consistent shareholder payouts, reinforcing their credibility. The announcement of a significant mega deal with Tryg Insurance further underscored their confidence in securing large-scale engagements. Overall, management conveyed a transparent and confident outlook for the company's future."
+    }
+  },
+  "key_positive_drivers": [
+    "Sequential improvement in operating margin",
+    "Strong growth momentum across verticals",
+    "Significant mega deal win with Tryg Insurance",
+    "Robust sales momentum and demand pipeline",
+    "Commitment to AI-led transformation",
+    "Expansion of pan-India footprint"
+  ],
+  "key_negative_drivers": [
+    "Macroeconomic challenges",
+    "Tight control over discretionary budgets",
+    "Ongoing severance charges impacting margins",
+    "Project deferrals and pauses",
+    "Economic and demand volatility"
+  ],
+  "notable_phrases": [
+    "industry leading margins",
+    "strongest ability to absorb market fluctuations",
+    "robust sales momentum",
+    "significant mega deal win",
+    "AI-led technology services Company",
+    "economic and demand volatility",
+    "tight control over discretionary budgets",
+    "commitment to maintaining a healthy financial position"
+  ],
+  "chain_of_thought": "TCS reported solid financial performance with sequential revenue and margin growth, driven by strong sales momentum and strategic investments in AI. Management expressed optimism for future growth, despite acknowledging macroeconomic challenges and project deferrals. They conveyed confidence in their strategic vision and financial discipline, projecting a cautiously bullish outlook for the company's future."
+}

@@ -1,0 +1,201 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could ask questions and reminding them that the call was being recorded. The moderator maintained a neutral tone throughout the call, ensuring the smooth transition between speakers and managing the flow of the session.",
+      "sentiment_score": 0.0407,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0407,
+        "positive": 0.0552,
+        "negative": 0.0145,
+        "neutral": 0.9302,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pranav Ambaprasad",
+      "role": "Maruti Suzuki Representative",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Safe harbor statement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pranav Ambaprasad introduced the management team and set the stage for the earnings call. He reminded participants of the safe harbor statement regarding forward-looking statements and informed them about the recording of the call. His tone was neutral, focusing on procedural aspects and ensuring a smooth transition to the main speakers.",
+      "sentiment_score": 0.045,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.045,
+        "positive": 0.0588,
+        "negative": 0.0138,
+        "neutral": 0.9274,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Bharti",
+      "role": "Chief Investor Relations Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Industry performance",
+        "Company performance",
+        "Future outlook",
+        "Hybrid and EV strategy"
+      ],
+      "direct_answers": [
+        "Raghunandan NL's question on safeguard duties, FTAs, and CAFE norms",
+        "Pramod Kumar's question on profitability"
+      ],
+      "dodged_or_vague": [
+        "Gunjan Prithyani's question on e VITARA timelines"
+      ],
+      "summary": "Rahul Bharti, the Chief Investor Relations Officer, provided a comprehensive overview of Maruti Suzuki's performance and future outlook. He highlighted significant milestones, including record production and sales figures, and discussed the company's strategic focus on hybrid and electric vehicles. His tone was confident, emphasizing the company's achievements and future plans. He directly answered questions on safeguard duties, FTAs, and CAFE norms, but was vague on specific timelines for the e VITARA launch. Overall, he projected a positive outlook for the company, focusing on growth and innovation.",
+      "sentiment_score": 0.2748,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2748,
+        "positive": 0.5041,
+        "negative": 0.2293,
+        "neutral": 0.2667,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Arnab Roy",
+      "role": "Chief Financial Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Expense management",
+        "Commodity impact"
+      ],
+      "direct_answers": [
+        "Raghunandan NL's question on other expenses and commodity impact"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Arnab Roy, the Chief Financial Officer, provided detailed insights into the financial performance of Maruti Suzuki, focusing on the impact of various expenses and commodity prices. His tone was cautious, acknowledging both positive and negative factors affecting the company's margins. He explained the reasons behind the lumpiness in expenses and the impact of steel prices on commodities. Arnab directly addressed questions regarding expense management and commodity impacts, providing a balanced view of the financial challenges and opportunities.",
+      "sentiment_score": -0.1186,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.1186,
+        "positive": 0.1029,
+        "negative": 0.2216,
+        "neutral": 0.6755,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Raghunandan NL",
+      "role": "Analyst from Nuvama Research",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "EBIT impact",
+        "Commodity prices",
+        "Safeguard duties"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Raghunandan NL, an analyst from Nuvama Research, asked probing questions about the financial impacts on Maruti Suzuki, focusing on EBIT, commodity prices, and safeguard duties. His tone was inquisitive, seeking clarity on the sustainability of expense impacts and the company's strategic responses to industry challenges. He also inquired about the potential for hybrid vehicle launches, indicating interest in the company's future product strategy.",
+      "sentiment_score": 0.1248,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1248,
+        "positive": 0.1415,
+        "negative": 0.0167,
+        "neutral": 0.8417,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pramod Kumar",
+      "role": "Analyst from UBS Securities",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Profitability",
+        "Margins"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pramod Kumar, an analyst from UBS Securities, focused on the profitability and margin trends of Maruti Suzuki. His questions were aimed at understanding the reasons behind the decline in EBITDA and EBIT per vehicle despite high sales volumes. Pramod's tone was inquisitive, seeking detailed explanations on how the company plans to manage margins in the face of new plant expenses and seasonal variations.",
+      "sentiment_score": -0.7685,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.7685,
+        "positive": 0.0355,
+        "negative": 0.804,
+        "neutral": 0.1604,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gunjan Prithyani",
+      "role": "Analyst from Bank of America",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "e VITARA timelines",
+        "Margin queries"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "e VITARA timelines"
+      ],
+      "summary": "Gunjan Prithyani, an analyst from Bank of America, asked questions regarding the financial impact of plant-related costs and sought clarity on the timelines for the e VITARA launch. Her tone was inquisitive, aiming to understand the full extent of cost impacts and the strategic rollout of new products. While her question on plant costs was addressed, the response to her inquiry about e VITARA timelines was vague, indicating a lack of specific details at this time.",
+      "sentiment_score": 0.031,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.031,
+        "positive": 0.0599,
+        "negative": 0.0289,
+        "neutral": 0.9111,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted verbatim to capture the specific language used, which is crucial for financial analysis. The tone of each speaker is assessed based on their statements and interactions during the call. Management speakers are further analyzed for their responses to analyst questions, noting which were answered directly and which were deflected or vague. This structured approach ensures a comprehensive understanding of each speaker's contribution and stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

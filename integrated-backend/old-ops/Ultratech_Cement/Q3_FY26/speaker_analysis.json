@@ -1,0 +1,157 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Atul Daga",
+      "role": "Business Head and CFO",
+      "tone": "confident",
+      "key_topics": [
+        "demand",
+        "capacity expansion",
+        "pricing",
+        "cost management",
+        "future growth"
+      ],
+      "direct_answers": [
+        "So, we should have approximately 8 to 9 million tons more coming in this quarter. And the balance,12 million tons in fiscal '27 and then balance remaining will be in '28.",
+        "Sure. We'll send it.",
+        "No, that is the average cost of power. So, capex on the power, which has gone from INR7.1 crores to INR6.5 crores. Look, fuel efficiency is the only reason which I could think of, nothing more.",
+        "To your second question, we will do much better than what we did this quarter. I don't want to get into any specific number."
+      ],
+      "dodged_or_vague": [
+        "You tell me where the dollar will be in fourth quarter. So it's very difficult, but I think we are managing our middle line very well.",
+        "So you're asking 2 things in the same question. First, you are saying it is difficult to quantify and then you are saying quantify. So please have mercy. No, it's very difficult and it's not logical."
+      ],
+      "summary": "Atul Daga, the Business Head and CFO of UltraTech Cement, led the earnings call with a confident tone, emphasizing the strong demand driven by government infrastructure projects. He highlighted the company's strategic initiatives, including capacity expansion and cost management, to maintain growth faster than the industry. Daga provided specific guidance on capacity additions and addressed questions on pricing and cost management, though he was evasive on some future cost predictions. His narrative was optimistic about the company's future, underscoring UltraTech's pivotal role in India's development.",
+      "sentiment_score": 0.5281,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5281,
+        "positive": 0.5801,
+        "negative": 0.052,
+        "neutral": 0.3679,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference proceedings",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the UltraTech Cement Q3 FY '26 earnings call, maintaining a neutral tone throughout. They provided standard procedural information, including the structure of the call and instructions for participants. The moderator ensured the smooth transition of the call to Atul Daga and managed the question-and-answer session efficiently, contributing to the orderly conduct of the conference.",
+      "sentiment_score": 0.0198,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0198,
+        "positive": 0.0374,
+        "negative": 0.0176,
+        "neutral": 0.9449,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pulkit",
+      "role": "Analyst from Goldman Sachs",
+      "tone": "neutral",
+      "key_topics": [
+        "capacity addition",
+        "financial performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pulkit from Goldman Sachs participated in the call with a neutral tone, acknowledging the company's strong performance and humorously comparing Atul Daga's remarks to a budget speech. He sought specific guidance on capacity additions for the upcoming quarters and fiscal years, which was directly addressed by Atul Daga. Pulkit's questions were focused on understanding the company's future capacity expansion plans.",
+      "sentiment_score": 0.1758,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1758,
+        "positive": 0.1942,
+        "negative": 0.0184,
+        "neutral": 0.7874,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amit Murarka",
+      "role": "Analyst from Axis Capital",
+      "tone": "neutral",
+      "key_topics": [
+        "pricing",
+        "industry capacity",
+        "India Cements performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amit Murarka from Axis Capital engaged in the call with a neutral tone, congratulating UltraTech on its impressive results. He inquired about the industry's pricing strategy amidst significant capacity additions and sought clarity on the performance and future expectations for India Cements. Amit's questions were aimed at understanding the company's strategic positioning in a competitive market environment.",
+      "sentiment_score": 0.1902,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1902,
+        "positive": 0.205,
+        "negative": 0.0148,
+        "neutral": 0.7802,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jashandeep Singh Chadha",
+      "role": "Analyst from Nomura",
+      "tone": "neutral",
+      "key_topics": [
+        "project details",
+        "rural demand",
+        "cost impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jashandeep Singh Chadha from Nomura participated in the call with a neutral tone, commending the detailed project information provided by UltraTech. He focused on understanding the recovery and future expectations of rural demand, as well as the impact of increasing input costs. Jashandeep's inquiries were aimed at gaining insights into the company's market outlook and cost management strategies.",
+      "sentiment_score": 0.1429,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1429,
+        "positive": 0.1745,
+        "negative": 0.0316,
+        "neutral": 0.7939,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Atul Daga, as the Business Head and CFO, provides comprehensive insights into the company's performance and future plans, maintaining a confident tone. The moderator facilitates the call neutrally, ensuring smooth proceedings. Analysts like Pulkit, Amit Murarka, and Jashandeep Singh Chadha engage with specific questions about capacity, pricing, and demand, each maintaining a neutral tone. The analysis captures key statements and evaluates the tone and response style of each speaker, providing a detailed narrative summary for each participant.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Suneeta Reddy",
+      "role": "Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth strategy",
+        "capacity expansion",
+        "digital business"
+      ],
+      "direct_answers": [
+        "Madhi?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Suneeta Reddy opened the call with a confident tone, highlighting Apollo Hospitals' strong financial performance despite seasonal challenges. She emphasized the company's double-digit growth across its business verticals and detailed the revenue figures. Reddy also outlined the company's strategic focus on expanding capacity and enhancing profitability in the coming quarters. Her statements reflected a commitment to delivering consistent performance and creating value for stakeholders. She briefly deferred a question to another executive, indicating a collaborative approach to addressing inquiries.",
+      "sentiment_score": 0.9445,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9445,
+        "positive": 0.9596,
+        "negative": 0.0152,
+        "neutral": 0.0252,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "A. Krishnan",
+      "role": "Group CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "cost management",
+        "digital business",
+        "financial guidance"
+      ],
+      "direct_answers": [
+        "So we will come back to you by Q4 one more time, but we continue to believe that INR150 crore is a good number for now."
+      ],
+      "dodged_or_vague": [],
+      "summary": "A. Krishnan, the Group CFO, provided cautious insights into the financial aspects of Apollo Hospitals' operations. He discussed the anticipated cost impacts of new hospital ramp-ups and provided specific figures related to losses from these operations. Krishnan also addressed questions about the digital business, explaining adjustments in GMV due to external factors like GST changes. His responses were detailed and aimed at managing expectations regarding financial guidance and operational costs.",
+      "sentiment_score": 0.3315,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3315,
+        "positive": 0.5837,
+        "negative": 0.2522,
+        "neutral": 0.1642,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Madhivanan Balakrishnan",
+      "role": "CEO of Apollo HealthCo",
+      "tone": "optimistic",
+      "key_topics": [
+        "digital business",
+        "revenue growth",
+        "operating model"
+      ],
+      "direct_answers": [
+        "Yes ma'am. No. So, our revenue projections continue."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Madhivanan Balakrishnan, CEO of Apollo HealthCo, conveyed an optimistic outlook on the digital business. He highlighted significant growth in the pharmacy online segment and improvements in business quality, such as stabilized discounts and increased average order values. Balakrishnan's focus was on building a sustainable operating model, and he provided specific metrics to support his positive assessment. His responses were direct and aimed at reassuring stakeholders about the digital business's trajectory.",
+      "sentiment_score": 0.9237,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9237,
+        "positive": 0.9487,
+        "negative": 0.025,
+        "neutral": 0.0263,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sanjiv Gupta",
+      "role": "CFO of Apollo HealthCo",
+      "tone": "neutral",
+      "key_topics": [
+        "GMV adjustments",
+        "financial reporting"
+      ],
+      "direct_answers": [
+        "I can take that question. Thanks, Madhi."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sanjiv Gupta, CFO of Apollo HealthCo, provided a neutral and factual explanation of the adjustments made to the GMV figures. He detailed the impact of GST changes and the cessation of business with Amazon on the financial reporting. Gupta's responses were clear and aimed at ensuring transparency in financial comparisons. His tone was neutral, focusing on delivering precise information without expressing subjective opinions.",
+      "sentiment_score": -0.6485,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.6485,
+        "positive": 0.1064,
+        "negative": 0.7549,
+        "neutral": 0.1387,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call, including Suneeta Reddy, A. Krishnan, Madhivanan Balakrishnan, and Sanjiv Gupta. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, with Suneeta Reddy being confident, A. Krishnan cautious, Madhivanan Balakrishnan optimistic, and Sanjiv Gupta neutral. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "question and answer session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the UltraTech Cement Q1 FY '26 earnings call, ensuring the call proceeded smoothly and participants were informed about the logistics. They announced the transition to the Q&A session, maintaining a neutral and professional tone throughout.",
+      "sentiment_score": 0.0342,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0342,
+        "positive": 0.05,
+        "negative": 0.0157,
+        "neutral": 0.9343,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Atul Daga",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "demand",
+        "government projects",
+        "India Cements integration",
+        "pricing",
+        "capex"
+      ],
+      "direct_answers": [
+        "Ritesh Shah",
+        "Rahul Gupta",
+        "Raashi Chopra",
+        "Amit Murarka"
+      ],
+      "dodged_or_vague": [
+        "Raashi Chopra",
+        "Prateek Kumar"
+      ],
+      "summary": "Atul Daga, the CFO of UltraTech Cement, presented a confident outlook during the earnings call. He highlighted steady market demand, government infrastructure projects, and strategic investments in new capacities and green technologies. Daga emphasized the integration of India Cements and Kesoram, projecting significant improvements in operating costs and EBITDA by FY '28. He addressed pricing trends, noting favorable conditions despite monsoons, and outlined future growth plans, including brownfield expansions. While he provided direct answers to several analysts, he was vague on specific volume breakdowns and some financial details.",
+      "sentiment_score": 0.6757,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6757,
+        "positive": 0.7302,
+        "negative": 0.0545,
+        "neutral": 0.2154,
+        "chunks_scored": 5
+      }
+    },
+    {
+      "name": "Kailash Jhanwar",
+      "role": "Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "South market demand",
+        "pricing",
+        "growth strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kailash Jhanwar, the Managing Director, contributed an optimistic perspective on the call, particularly regarding the South Indian market. He noted that the region's prices had been low, impacting the industry negatively, but anticipated improvement due to infrastructure projects and political changes. Jhanwar emphasized the company's integrated approach to optimization across products, costs, and markets. He supported Atul Daga's statements on growth strategies and the potential for the South market to perform well.",
+      "sentiment_score": 0.0977,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0977,
+        "positive": 0.1328,
+        "negative": 0.0351,
+        "neutral": 0.8321,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Gupta",
+      "role": "Analyst, Morgan Stanley",
+      "tone": "neutral",
+      "key_topics": [
+        "India Cements performance",
+        "South market pricing"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Gupta, an analyst from Morgan Stanley, asked questions focusing on the performance of India Cements and the pricing dynamics in the South market. He acknowledged the improvement in India Cements' numbers and inquired about the potential for exceeding guidance targets. Gupta also sought insights into the sustainability of price hikes in the South, given past weak pricing. His tone was neutral, and he expressed satisfaction with the responses received.",
+      "sentiment_score": 0.8091,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8091,
+        "positive": 0.8375,
+        "negative": 0.0284,
+        "neutral": 0.1341,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Raashi Chopra",
+      "role": "Analyst, Citigroup",
+      "tone": "neutral",
+      "key_topics": [
+        "realization",
+        "capex",
+        "building products"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Raashi Chopra, an analyst from Citigroup, focused her questions on financial metrics such as realization increases, capex, and building products revenue. She sought clarification on whether the reported realization figures included Kesoram and requested specific financial data. Her tone was neutral, and she appeared satisfied with the information provided, although some details were deferred for later clarification.",
+      "sentiment_score": 0.0358,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0358,
+        "positive": 0.0562,
+        "negative": 0.0204,
+        "neutral": 0.9234,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amit Murarka",
+      "role": "Analyst, Axis Capital",
+      "tone": "neutral",
+      "key_topics": [
+        "brownfield expansions",
+        "growth strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amit Murarka, an analyst from Axis Capital, inquired about UltraTech's brownfield expansion plans and the timeline for reaching 212 million tons of capacity. He sought details on the scope for further expansions and the company's growth strategy. His tone was neutral, and he received a comprehensive response outlining the company's future plans and commitment to supporting industry growth.",
+      "sentiment_score": 0.0773,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0773,
+        "positive": 0.0907,
+        "negative": 0.0133,
+        "neutral": 0.896,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis begins by identifying each speaker in the earnings call, including the moderator, management, and analysts. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their language and interaction during the call. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or given vague responses. A narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON output is structured to provide a comprehensive view of the call's dynamics and content.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

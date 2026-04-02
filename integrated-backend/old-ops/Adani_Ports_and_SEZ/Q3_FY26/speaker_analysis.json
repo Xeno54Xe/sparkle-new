@@ -1,0 +1,155 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ashwani Gupta",
+      "role": "Whole-Time Director and Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "exceptional performance",
+        "sustainability",
+        "investment strategy",
+        "FY29 guidance"
+      ],
+      "direct_answers": [
+        "I don't think we are revising the guidance on the 5 years because 5 year is always a guidance, which guides us to execute the business on a day-to-day basis and deliver and communicate the results on quarter-on-quarter."
+      ],
+      "dodged_or_vague": [
+        "It is difficult to say, but yes, it is contributing. It's difficult to say how much."
+      ],
+      "summary": "Ashwani Gupta exuded confidence throughout the call, emphasizing APSEZ's exceptional performance and sustainable growth strategy. He highlighted the company's strong financial metrics and its commitment to sustainability, positioning APSEZ as a leader in sustainable transportation. Gupta was clear about not revising the five-year guidance, maintaining that it serves as a strategic framework. However, he was vague when asked about specific contributions from new projects, indicating some uncertainty in precise future impacts.",
+      "sentiment_score": 0.6842,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6842,
+        "positive": 0.6949,
+        "negative": 0.0107,
+        "neutral": 0.2945,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "D. Muthukumaran",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "investment strategy",
+        "margins",
+        "debt management"
+      ],
+      "direct_answers": [
+        "The answer is yes, Pulkit, but can you be a little far away from your handset or whatever you're talking from because it's a little too jarring, right? We can't hear you clearly."
+      ],
+      "dodged_or_vague": [
+        "No. So there isn't actually any particular sort of reason. These are just quarterly and seasonal things. And if you see here as a whole, it will actually stack up."
+      ],
+      "summary": "D. Muthukumaran provided a detailed analysis of APSEZ's financial performance, focusing on revenue and EBITDA growth. He explained the impact of price increases and forex benefits on the company's financials. Muthukumaran was straightforward in addressing questions about financial metrics but was less specific when discussing seasonal variations in expenses. His tone remained neutral, reflecting a focus on factual reporting rather than strategic vision.",
+      "sentiment_score": 0.0629,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0629,
+        "positive": 0.1149,
+        "negative": 0.052,
+        "neutral": 0.8331,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Agarwal",
+      "role": "Head of Investor Relations and ESG",
+      "tone": "neutral",
+      "key_topics": [
+        "investor relations",
+        "ESG initiatives"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Agarwal played a facilitative role in the earnings call, introducing the management team and setting the stage for the discussion. His tone was neutral, focusing on welcoming participants and ensuring the smooth flow of the call. Agarwal did not engage in detailed discussions or provide specific answers, as his role was primarily to manage investor relations and ESG communications.",
+      "sentiment_score": 0.0538,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0538,
+        "positive": 0.0673,
+        "negative": 0.0135,
+        "neutral": 0.9191,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Divij Taneja",
+      "role": "CEO Logistics business",
+      "tone": "neutral",
+      "key_topics": [
+        "logistics strategy",
+        "DFC impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Divij Taneja discussed the logistics strategy, emphasizing the integrated approach from port to factory. He addressed the impact of the Dedicated Freight Corridor (DFC) on logistics operations, indicating that it would not significantly alter current strategies. Taneja's tone was neutral, focusing on operational details rather than broader strategic insights.",
+      "sentiment_score": 0.1338,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1338,
+        "positive": 0.1543,
+        "negative": 0.0205,
+        "neutral": 0.8252,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the call, ensuring that it proceeded smoothly and that participants had the opportunity to ask questions. The tone was neutral, focusing on logistical aspects of the call rather than content.",
+      "sentiment_score": 0.0742,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0742,
+        "positive": 0.0859,
+        "negative": 0.0118,
+        "neutral": 0.9023,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "Identified five unique speakers: Ashwani Gupta, D. Muthukumaran, Rahul Agarwal, Divij Taneja, and the Moderator. Extracted key statements for each speaker, focusing on verbatim quotes where possible. Analyzed the tone of each speaker based on their statements and interactions. Noted which questions were answered directly and which were deflected or avoided by management speakers. Summarized each speaker's contribution to the call, capturing their stance and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

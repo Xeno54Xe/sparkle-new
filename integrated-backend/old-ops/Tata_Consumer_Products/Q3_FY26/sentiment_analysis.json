@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6514,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9433,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9433,
+        "positive": 0.9577,
+        "negative": 0.0144,
+        "neutral": 0.0278,
+        "chunks_scored": 1
+      },
+      "text": "Tata Consumer Products reported a strong financial performance for Q3 FY26, with consolidated revenue crossing Rs. 5,000 crores, marking a 15% growth. The EBITDA grew by 26%, approximately twice the revenue growth, and margins expanded by 60 basis points quarter-on-quarter and 120 basis points year-on-year to 14.2%. The company highlighted a broad-based growth across its business vectors, with India, international, and non-branded segments all delivering double-digit growth. The India branded business posted a 15% underlying volume growth, with Salt and Tata Sampann showing particularly strong performances at 14% and 45% growth, respectively. The innovation pipeline remains robust, contributing 4.8% to sales, close to the target of 5%."
+    },
+    "forward_guidance": {
+      "score": 0.9311,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9311,
+        "positive": 0.9427,
+        "negative": 0.0115,
+        "neutral": 0.0458,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in maintaining growth momentum, with expectations to exit Q4 with an EBITDA margin in the ballpark of 14.5%-15%. The company is targeting a longer-term EBITDA margin of 17% as it continues to drive premiumization and improve margins in base categories. The growth businesses are expected to contribute significantly, with a target of 30% growth, and the company is rolling out a new go-to-market model nationally to support this. Management remains bullish on the potential of new product launches and the expansion of the Ready-to-Drink segment. However, they acknowledged the need to remain agile in response to market conditions, particularly in pricing strategies for tea and coffee."
+    },
+    "risk_language": {
+      "score": -0.4467,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.4467,
+        "positive": 0.2511,
+        "negative": 0.6978,
+        "neutral": 0.0511,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including the impact of US tariffs on Capital Foods, which constitutes 20% of its international business. Management noted the moderation in tea prices and the stabilization of coffee prices, albeit at higher levels, as factors affecting margins. The international business margins remain impacted by US coffee, despite some pricing interventions. There was also mention of a contraction in non-branded margins due to the absence of inventory and fair valuation gains seen in the base period. Management was forthright about these challenges, indicating a proactive approach to managing these risks."
+    },
+    "investor_confidence": {
+      "score": 0.8921,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8921,
+        "positive": 0.9032,
+        "negative": 0.0111,
+        "neutral": 0.0857,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, addressing analyst questions directly and providing detailed explanations of their strategies. They emphasized the company's ability to juggle multiple growth initiatives and highlighted the successful execution of their go-to-market strategy. The call conveyed a sense of transparency, with management openly discussing both achievements and challenges. The commitment to innovation and strategic growth initiatives, such as the expansion of the growth businesses and new product launches, reinforced management's credibility and confidence in their long-term vision."
+    }
+  },
+  "key_positive_drivers": [
+    "15% revenue growth",
+    "26% EBITDA growth",
+    "45% growth in Tata Sampann",
+    "Strong innovation pipeline",
+    "Successful go-to-market strategy rollout",
+    "Expansion of Ready-to-Drink segment"
+  ],
+  "key_negative_drivers": [
+    "Impact of US tariffs on Capital Foods",
+    "Moderation in tea prices",
+    "Stabilization of coffee prices at higher levels",
+    "International margins impacted by US coffee",
+    "Contraction in non-branded margins"
+  ],
+  "notable_phrases": [
+    "EBITDA has grown roughly 2x of revenue",
+    "Margins expanded 60 bps quarter-on-quarter",
+    "Innovation to sales is roughly 4.8%",
+    "We remain agile and ready to take pricing as and when needed",
+    "Growth businesses now account for 30% of our India business",
+    "We are rolling it out nationally",
+    "We remain bullish on Sampann",
+    "We have managed that so far"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant revenue and EBITDA growth, driven by broad-based business expansion and a robust innovation pipeline. Forward guidance was optimistic, with management targeting improved margins and continued growth in key segments. Risks were acknowledged, particularly in international markets and commodity pricing, but management demonstrated a proactive approach to addressing these challenges. Investor confidence was bolstered by management's transparency, strategic clarity, and successful execution of growth initiatives, leading to a cautiously bullish overall tone."
+}

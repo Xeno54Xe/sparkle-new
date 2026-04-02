@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.0528,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9536,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9536,
+        "positive": 0.0151,
+        "negative": 0.9687,
+        "neutral": 0.0162,
+        "chunks_scored": 1
+      },
+      "text": "The company reported a profit after tax of INR 35,610 crores for FY 2025, a decrease of 12.1% from INR 40,526 crores in FY 2024. Sales revenue slightly declined to INR 137,361 crore from INR 137,774 crores, attributed to lower per barrel realization of crude oil. Operating expenditure increased marginally by 2.8% to INR 27,478 crore. Despite the profit decline, the company maintained a dividend payout ratio of 43.3%, with a total payout of INR 15,411 crore, the highest ever. The decrease in profit was mainly due to an increase in exploration cost write-offs, which rose by INR 4,257 crore. However, the company achieved a reserve replacement ratio of 1.35, marking the 19th consecutive year of achieving a ratio above one."
+    },
+    "forward_guidance": {
+      "score": 0.9118,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9118,
+        "positive": 0.9216,
+        "negative": 0.0099,
+        "neutral": 0.0685,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in future growth, highlighting a 25% increase in capital expenditure aimed at exploration and production. They anticipate an increase in gas production once the KG 98/2 project is completed, with expectations of an additional 5 mmscmd in the last quarter of 2025-26. The company is also optimistic about the impact of their partnership with BP on oil production in the Western Offshore. Additionally, ONGC plans to expand its renewable energy capacity to 10 gigawatts by 2030, having already reached 2.5 gigawatts. The language used was cautiously optimistic, with a focus on strategic investments and capacity expansions."
+    },
+    "risk_language": {
+      "score": -0.1468,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": -0.1468,
+        "positive": 0.3238,
+        "negative": 0.4706,
+        "neutral": 0.2057,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including the impact of exploratory well write-offs on profits and the challenges of maintaining production levels in mature fields. Management acknowledged the delay in the KG 98/2 project due to weather conditions but remained hopeful for completion. They also discussed geopolitical risks related to their operations in Syria and Sakhalin, noting potential upsides if sanctions are lifted. The company is aware of competitive pressures in the LNG market and the need for strategic investments in their fleet to mitigate vessel shortages."
+    },
+    "investor_confidence": {
+      "score": 0.4737,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.4737,
+        "positive": 0.5084,
+        "negative": 0.0347,
+        "neutral": 0.4569,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency, addressing analyst questions directly and providing detailed explanations of their strategic initiatives. They emphasized their commitment to maintaining dividend levels despite profit declines and highlighted their achievements in cost control and production increases. The leadership team conveyed a clear vision for future growth, supported by strategic partnerships and investments in both conventional and renewable energy sectors. The tone was one of cautious optimism, with a focus on long-term sustainability and shareholder value."
+    }
+  },
+  "key_positive_drivers": [
+    "25% increase in capital expenditure for exploration",
+    "Maintained dividend payout despite profit decline",
+    "Increase in oil production at standalone level",
+    "Expansion in renewable energy capacity to 2.5 gigawatts",
+    "Strategic partnership with BP for Western Offshore production",
+    "Cost control measures leading to flat operating expenses"
+  ],
+  "key_negative_drivers": [
+    "12.1% decline in profit after tax",
+    "Increase in exploration cost write-offs",
+    "Delay in KG 98/2 project completion",
+    "Lower per barrel realization of crude oil",
+    "Geopolitical risks in Syria and Sakhalin",
+    "Competitive pressures in LNG market"
+  ],
+  "notable_phrases": [
+    "Profit after tax amounting to INR 35,610 crores",
+    "Sales revenue partly because of lower per barrel realization",
+    "Capital expenditure itself is now 25% up",
+    "We have kept dividend at same level",
+    "We are very confident that we will have our growth story intact",
+    "Exploration in our business is something like investment",
+    "We expect Mozambique to be delivering its gas in the next three years",
+    "We are thinking of investing big in this vessel business too"
+  ],
+  "chain_of_thought": "The financial performance showed a decline in profit due to increased exploration costs, but management maintained dividends, indicating confidence. Forward guidance was cautiously optimistic, with plans for increased production and renewable energy expansion. Risks were acknowledged, particularly in exploration write-offs and geopolitical issues, but management was forthright about mitigation strategies. Investor confidence was bolstered by clear communication and strategic focus on long-term growth, despite current challenges."
+}

@@ -1,0 +1,110 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mr. Pawan Kumar",
+      "role": "General Manager (Performance, Planning and Review), State Bank of India",
+      "tone": "neutral",
+      "key_topics": [
+        "welcome",
+        "Q1FY26 results",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Pawan Kumar opened the call by welcoming all participants and introducing the key management present. He set the stage for the presentation of the Q1FY26 results and the subsequent Q&A session. His tone was neutral, focusing on procedural aspects and ensuring a smooth transition to the Chairman's remarks. He also read out the Safe Harbor statement, emphasizing the forward-looking nature of some statements. His role was primarily to facilitate the meeting and ensure all formalities were observed.",
+      "sentiment_score": 0.0212,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0212,
+        "positive": 0.0412,
+        "negative": 0.0199,
+        "neutral": 0.9389,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Mr. C S Setty",
+      "role": "Chairman, State Bank of India",
+      "tone": "confident",
+      "key_topics": [
+        "Q1FY26 performance",
+        "strategic initiatives",
+        "macroeconomic environment",
+        "credit growth",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "credit growth",
+        "macroeconomic environment",
+        "future outlook"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mr. C S Setty confidently presented the Q1FY26 results, highlighting SBI's strong performance amidst a challenging macroeconomic environment. He emphasized the bank's strategic initiatives, including maintaining a significant market share and focusing on sustainable growth. Setty was optimistic about future credit expansion, driven by retail loans and government projects. He addressed questions on credit growth and the macroeconomic environment directly, showcasing a clear understanding of the bank's position and future strategies. His tone was confident, reflecting the bank's robust performance and strategic direction.",
+      "sentiment_score": 0.9305,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9305,
+        "positive": 0.9433,
+        "negative": 0.0128,
+        "neutral": 0.0438,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Mr. Ashok Ajmera",
+      "role": "Chairman, Ajcon Global",
+      "tone": "cautious",
+      "key_topics": [
+        "credit growth",
+        "slippages",
+        "other income",
+        "operating expenses"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Ashok Ajmera expressed a cautious tone, acknowledging the commendable profit figures while raising concerns about the slower credit growth and increased slippages. He questioned the management on the conditions of the sanctioned pipeline and the reasons behind the drop in other income and operating expenses. Ajmera's inquiries were detailed and pointed, reflecting a deep interest in understanding the underlying factors affecting the bank's performance. His approach was analytical, seeking clarity on specific financial metrics and their implications for future performance.",
+      "sentiment_score": -0.8952,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.8952,
+        "positive": 0.0292,
+        "negative": 0.9244,
+        "neutral": 0.0464,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The transcript reveals three main speakers: Mr. Pawan Kumar, Mr. C S Setty, and Mr. Ashok Ajmera. Mr. Pawan Kumar's role was primarily procedural, setting the stage for the presentation and Q&A session. His tone was neutral, focusing on welcoming participants and ensuring the meeting's smooth progression. Mr. C S Setty, the Chairman, delivered a confident presentation of the Q1FY26 results, emphasizing SBI's strong performance and strategic initiatives. He addressed questions on credit growth and macroeconomic conditions directly, maintaining an optimistic outlook for future growth. Mr. Ashok Ajmera, representing Ajcon Global, adopted a cautious tone, acknowledging the positive profit figures but raising concerns about credit growth, slippages, and other income. His questions were detailed and sought to understand the factors affecting the bank's performance. Each speaker's contribution was distinct, with management focusing on performance and strategy, while the analyst sought clarity on financial metrics and future implications.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

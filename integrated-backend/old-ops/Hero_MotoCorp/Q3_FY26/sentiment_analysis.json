@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.9277,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9418,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9418,
+        "positive": 0.9596,
+        "negative": 0.0178,
+        "neutral": 0.0226,
+        "chunks_scored": 1
+      },
+      "text": "Hero MotoCorp reported its highest ever quarterly revenue of INR12,328 crores, reflecting a year-on-year growth of 21%. EBITDA stood at INR1,810 crores, a growth of 23%, and reported PAT of INR1,349 crores, a growth of 12% year-on-year. However, normalized PAT stood at INR1,489 crores, a growth of 20% year-on-year. The revenue for the 9 months amounted to INR34,034 crores, with a year-on-year growth of 10%, and EBITDA at INR5,015 crores, a growth of 13%. The ICE business EBITDA margin expanded by 100 bps year-on-year to 17%, driven by pricing, LEAP savings, and operating leverage. The overall EBITDA margins improved by 20 basis points to 14.7%, despite investments in the EV business of approximately INR208 crores. The average selling price increased by 4.2% year-on-year and 1.3% quarter-on-quarter."
+    },
+    "forward_guidance": {
+      "score": 0.9351,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9351,
+        "positive": 0.9493,
+        "negative": 0.0142,
+        "neutral": 0.0365,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in continuing the positive demand trend into the next quarter, with expectations of strong growth in Q4. They highlighted the focus on expanding market share in categories like scooters, premium motorcycles, and EVs, as well as global markets. The company is also looking at capacity expansions, with a marked increase expected by FY27. The language used was optimistic, with phrases like 'good momentum' and 'positive demand trend' indicating a bullish outlook. They also mentioned the potential for market share expansion in underrepresented categories."
+    },
+    "risk_language": {
+      "score": 0.8976,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8976,
+        "positive": 0.923,
+        "negative": 0.0254,
+        "neutral": 0.0516,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including geopolitical tensions, volatility in commodity prices, and shifting trade policies. Management acknowledged these challenges but emphasized their ability to navigate them effectively. They mentioned the need for a robust and resilient supply chain to handle potential disruptions. The company has taken cognizance of the new labour code, making a provision of INR119 crores as an exceptional item. Despite these challenges, management appeared forthright and confident in their ability to manage risks."
+    },
+    "investor_confidence": {
+      "score": 0.9258,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9258,
+        "positive": 0.9392,
+        "negative": 0.0134,
+        "neutral": 0.0475,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction, with detailed action plans on growth pillars already showing early results. They emphasized their strong financial performance and cash management, with operating cash generated in 9 months standing at INR7,045 crores. Analyst questions were addressed directly, although some details were deferred for offline discussions. The leadership transition was highlighted positively, with new CEO Harshavardhan Chitale expressing confidence in the company's strategic direction. Overall, management demonstrated credibility and transparency."
+    }
+  },
+  "key_positive_drivers": [
+    "Highest ever quarterly revenue",
+    "Strong customer acceptance of new launches",
+    "Market share expansion in key segments",
+    "Improved EBITDA margins",
+    "Strong cash management",
+    "Positive demand trend expected to continue"
+  ],
+  "key_negative_drivers": [
+    "Geopolitical tensions",
+    "Volatility in commodity prices",
+    "Shifting trade policies",
+    "New labour code provision"
+  ],
+  "notable_phrases": [
+    "highest ever quarterly revenue",
+    "strong customer acceptance",
+    "market share expansion",
+    "positive demand trend",
+    "robust and resilient supply chain",
+    "early results out of each growth pillar",
+    "strong financial performance",
+    "confidence in strategic direction"
+  ],
+  "chain_of_thought": "The financial performance was strong, with record revenues and improved margins, indicating a positive outcome. Forward guidance was optimistic, focusing on growth and market share expansion, though tempered by external risks. Risk language acknowledged geopolitical and economic challenges, but management appeared confident in their mitigation strategies. Investor confidence was bolstered by clear communication and strategic focus, despite some deferred details."
+}

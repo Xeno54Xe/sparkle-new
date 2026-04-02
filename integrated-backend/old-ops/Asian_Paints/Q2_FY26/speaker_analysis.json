@@ -1,0 +1,248 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Lakshya Sharma",
+      "role": "AGM - Finance",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "welcome",
+        "management team"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Lakshya Sharma opened the earnings call by welcoming participants and introducing the senior management team. His role was primarily to facilitate the call and ensure a smooth transition to the main speakers. His tone was neutral, focusing on setting the stage for the detailed discussions to follow.",
+      "sentiment_score": 0.1449,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1449,
+        "positive": 0.1582,
+        "negative": 0.0133,
+        "neutral": 0.8284,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amit Syngle",
+      "role": "MD & CEO",
+      "tone": "confident",
+      "key_topics": [
+        "core purpose",
+        "initiatives",
+        "growth strategy",
+        "regionalization",
+        "B2B business",
+        "backward integration",
+        "financial performance"
+      ],
+      "direct_answers": [
+        "Tejas Shah: So, as I said, the important thing is that, when you look at the overall segments, there is a certain kind of balance you will have to really look at because it is a large product range today, and each segment has a",
+        "Abneesh Roy: So, thanks Abneesh. In terms of some of those incisive questions, in terms of what you placed, I think when we look at from the point of view of the whole area of additional grammage, the whole area of free, which kind of comes along with paint, we think it's something which is an area which has been tried and, you know, worked upon by various players earlier as well. It's something which is nothing new. It also basically reduces the turnover of the retailers from what they will be able to sell. And it is very difficult to keep focused in"
+      ],
+      "dodged_or_vague": [
+        "Latika Chopra: From a point of view, overall margins, you know, at the standalone level, in Q2 we are at 18.5% at standalone level and at consolidated level, we are closer to 18%. Today, we are making some very meaningful investments in our marketing efforts, we are also looking at investing in technology a lot, we are looking at bringing in more innovation which we are adding in the market and are able to reach out to the consumer far more",
+        "Mihir Shah: When we look at the next six months, we've already spoken about where we are looking at the overall year going. We are looking at mid-single-digit value growth for the full year. And as we kind of go-ahead volumes would be higher since we are now batting across the range of products right from undercoats to the economy to the mid-range and to the top end products. And therefore, we would anticipate that the gap between the volume and the value would remain in that zone of about 4-5%. So, I think if we are able to hit, mid-single-digit value growth, we would come closer to a higher digit value growth at the end of the year. So, I think that is the endeavor."
+      ],
+      "summary": "Amit Syngle, the MD & CEO, delivered a comprehensive overview of Asian Paints' strategic initiatives and performance for Q2 and H1FY26. He emphasized the company's core purpose of delivering joy and highlighted various internal initiatives aimed at accelerating growth, such as brand spending, innovation, service economy, regionalization, and B2B expansion. Syngle confidently discussed the company's backward integration projects and financial performance, noting a 10.9% volume growth in Q2FY26. While he provided direct answers to some analyst questions, he was vague about future margin expectations and the sustainability of volume-value growth gaps. Overall, his tone was confident, focusing on the company's strategic direction and achievements.",
+      "sentiment_score": 0.4077,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4077,
+        "positive": 0.4228,
+        "negative": 0.0151,
+        "neutral": 0.5622,
+        "chunks_scored": 8
+      }
+    },
+    {
+      "name": "Tejas Shah",
+      "role": "Analyst at Avendus Spark",
+      "tone": "neutral",
+      "key_topics": [
+        "volume growth",
+        "value growth",
+        "rebates"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Tejas Shah from Avendus Spark asked about the translation from volume growth to value growth, specifically inquiring about the impact of rebates and the industry's tracking on this front. His tone was neutral, focusing on understanding the financial dynamics affecting Asian Paints' performance. He did not receive a direct answer to his question, as Amit Syngle provided a broader response about segment balance without addressing the rebate intensity directly.",
+      "sentiment_score": -0.8543,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.8543,
+        "positive": 0.0231,
+        "negative": 0.8774,
+        "neutral": 0.0995,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abneesh Roy",
+      "role": "Analyst at Nuvama",
+      "tone": "neutral",
+      "key_topics": [
+        "competition",
+        "gross margins",
+        "distribution"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abneesh Roy from Nuvama inquired about competition, specifically regarding gross margins and the impact of competitors offering free grammage. He also asked about distribution losses due to new players. His tone was neutral, seeking clarity on how Asian Paints is navigating competitive pressures. Amit Syngle addressed the question by acknowledging the competitive tactics but did not provide specific details on the company's strategic response.",
+      "sentiment_score": 0.5291,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5291,
+        "positive": 0.5829,
+        "negative": 0.0538,
+        "neutral": 0.3633,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Latika Chopra",
+      "role": "Analyst at JP Morgan",
+      "tone": "neutral",
+      "key_topics": [
+        "margins",
+        "consumer financing",
+        "industry trends"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Latika Chopra from JP Morgan asked about Asian Paints' margin expectations and the potential impact of consumer financing on demand. Her tone was neutral, focusing on understanding the company's financial outlook and industry trends. Amit Syngle provided a broad response about investments and innovation but did not directly address the margin band or consumer financing potential.",
+      "sentiment_score": 0.0936,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0936,
+        "positive": 0.1151,
+        "negative": 0.0215,
+        "neutral": 0.8633,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Manoj Menon",
+      "role": "Analyst at ICICI Securities",
+      "tone": "neutral",
+      "key_topics": [
+        "dealer actions",
+        "regional mix"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Manoj Menon from ICICI Securities appreciated the increased disclosures and inquired about specific actions taken with dealers and changes in regional mix. His tone was neutral, seeking detailed insights into operational strategies. Amit Syngle's response focused on broader strategic initiatives without providing specific details on dealer actions or regional mix changes.",
+      "sentiment_score": 0.0307,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0307,
+        "positive": 0.052,
+        "negative": 0.0213,
+        "neutral": 0.9268,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mihir Shah",
+      "role": "Analyst at Nomura",
+      "tone": "neutral",
+      "key_topics": [
+        "volume growth",
+        "festive demand",
+        "dealer restocking"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mihir Shah from Nomura asked about the factors contributing to volume growth, specifically the impact of festive demand and dealer restocking. His tone was neutral, aiming to understand the sustainability of the growth figures. Amit Syngle provided a general outlook on future growth but did not directly address the specifics of festive demand or dealer restocking.",
+      "sentiment_score": 0.8813,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8813,
+        "positive": 0.9144,
+        "negative": 0.0331,
+        "neutral": 0.0525,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Avi Mehta",
+      "role": "Analyst at Macquarie",
+      "tone": "neutral",
+      "key_topics": [
+        "full year growth outlook",
+        "industry growth"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Avi Mehta from Macquarie inquired about the full-year growth outlook for volume and value, as well as the potential for double-digit growth in the industry. His tone was neutral, seeking a forecast on future performance. Amit Syngle provided a general response about mid-single-digit value growth but did not offer specific insights into achieving double-digit growth.",
+      "sentiment_score": 0.1341,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1341,
+        "positive": 0.1462,
+        "negative": 0.0121,
+        "neutral": 0.8418,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Maheshwari",
+      "role": "Analyst at Jefferies",
+      "tone": "neutral",
+      "key_topics": [
+        "volume growth",
+        "consumer sentiment"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vivek Maheshwari from Jefferies asked about the drivers of volume growth, specifically the role of consumer sentiment versus internal efforts. His tone was neutral, aiming to clarify the factors behind the reported growth. Amit Syngle acknowledged the role of internal initiatives but did not clearly delineate the impact of consumer sentiment.",
+      "sentiment_score": 0.13,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.13,
+        "positive": 0.1534,
+        "negative": 0.0233,
+        "neutral": 0.8233,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 9,
+  "chain_of_thought": "The analysis identifies each speaker and their role in the earnings call. For management, key statements are extracted to capture their strategic focus and responses to analyst questions. Analysts' questions are noted for their focus on financial metrics and strategic initiatives. The tone of each speaker is assessed based on their statements, with management generally confident and analysts neutral. Management's responses are evaluated for directness, noting where they provided clear answers or were vague. This structured approach ensures a comprehensive understanding of the call dynamics and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

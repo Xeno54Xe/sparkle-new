@@ -1,0 +1,154 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring a smooth transition between speakers and managing the question-and-answer session. They maintained a neutral tone throughout, focusing on procedural aspects of the call. The moderator's role was crucial in keeping the call organized and on schedule.",
+      "sentiment_score": 0.0401,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0401,
+        "positive": 0.0544,
+        "negative": 0.0143,
+        "neutral": 0.9313,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Varatharajan",
+      "role": "Host from Antique Stock Broking Limited",
+      "tone": "Neutral",
+      "key_topics": [
+        "Welcome",
+        "Introduction of management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Varatharajan, representing Antique Stock Broking Limited, opened the call by welcoming participants and introducing the BPCL management team. His tone was neutral, focusing on setting the stage for the earnings discussion. He efficiently handed over the proceedings to Rahul Agrawal for further disclosures.",
+      "sentiment_score": 0.0853,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0853,
+        "positive": 0.0988,
+        "negative": 0.0135,
+        "neutral": 0.8878,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Agrawal",
+      "role": "Chief Manager, Pricing and Insurance",
+      "tone": "Cautious",
+      "key_topics": [
+        "Risk disclosure",
+        "Quarterly results"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Agrawal provided an initial disclosure, emphasizing the inherent risks and uncertainties in the statements to be made during the call. His tone was cautious, aiming to manage expectations and focus the discussion on the quarterly results. He set the context for the call, ensuring that participants were aware of the limitations of forward-looking statements.",
+      "sentiment_score": 0.008,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.008,
+        "positive": 0.0362,
+        "negative": 0.0282,
+        "neutral": 0.9355,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "V.R.K. Gupta",
+      "role": "Director Finance",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Market outlook",
+        "Capex plans"
+      ],
+      "direct_answers": [
+        "Probal Sen's question on Russian crude sourcing",
+        "Probal Sen's question on Bina Petrochemical project"
+      ],
+      "dodged_or_vague": [
+        "Probal Sen's question on the exact impact of Russian crude absence"
+      ],
+      "summary": "V.R.K. Gupta, the Director of Finance, delivered a comprehensive overview of BPCL's financial performance and strategic initiatives. His tone was confident as he discussed the company's robust market position, expansion plans, and financial health. Gupta addressed questions directly, particularly on the Russian crude sourcing and the Bina Petrochemical project, although he was somewhat vague about the precise impact of the absence of Russian crude. He highlighted BPCL's achievements and future plans, reinforcing the company's commitment to growth and shareholder value.",
+      "sentiment_score": 0.668,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.668,
+        "positive": 0.701,
+        "negative": 0.033,
+        "neutral": 0.266,
+        "chunks_scored": 4
+      }
+    },
+    {
+      "name": "Probal Sen",
+      "role": "Analyst from ICICI Securities",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Russian crude sourcing",
+        "Bina Petrochemical project",
+        "Staff cost increase"
+      ],
+      "direct_answers": [
+        "V.R.K. Gupta's response on Russian crude sourcing",
+        "V.R.K. Gupta's response on Bina Petrochemical project"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Probal Sen, an analyst from ICICI Securities, posed several detailed questions regarding BPCL's sourcing of Russian crude, the Bina Petrochemical project, and a notable increase in staff costs. His tone was inquisitive, seeking clarity on the company's strategies and financial implications. Sen's questions were addressed directly by V.R.K. Gupta, providing insights into BPCL's risk mitigation strategies and capital expenditure plans. His engagement highlighted key areas of interest for investors and analysts.",
+      "sentiment_score": 0.0205,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0205,
+        "positive": 0.0853,
+        "negative": 0.0648,
+        "neutral": 0.8499,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The transcript reveals multiple speakers, including the moderator, host, management, and analysts. Each speaker's role and tone were identified, with management providing detailed financial and strategic insights, while analysts sought clarity on specific issues. The JSON structure captures verbatim statements for financial analysis, categorizes tones, and summarizes each speaker's contribution to the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

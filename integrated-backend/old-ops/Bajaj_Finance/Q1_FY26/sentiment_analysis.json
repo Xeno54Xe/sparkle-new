@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.4961,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9422,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9422,
+        "positive": 0.9593,
+        "negative": 0.0171,
+        "neutral": 0.0235,
+        "chunks_scored": 1
+      },
+      "text": "Management reported a strong start to the year with AUM growth of 25% and a record 13.5 million loans booked, adding 4.7 million new customers. The customer franchise now stands at 106.5 million. Net total income grew by 21%, and NIM grew by 22%. However, credit costs remained elevated, with loan losses growing by 26% to 2.02% of average AUF. The GNPA and NNPA stood at 1.03% and 0.5%, respectively. Despite these challenges, profitability metrics such as ROA and ROE were highlighted, with ROE at 19%. The company also noted a strong capital adequacy with Tier 1 capital at 21.19%."
+    },
+    "forward_guidance": {
+      "score": 0.9101,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9101,
+        "positive": 0.9219,
+        "negative": 0.0119,
+        "neutral": 0.0662,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook, indicating that FY '26 will be a defining year for their FinAI transformation strategy. They expect the cost of funds to come in at 760 to 765 basis points, with a higher reliance on NCD, ECB, and bank borrowings. The company is targeting a return to pre-COVID levels for early vintage metrics and expects a gradual improvement. However, they acknowledged that the MSME and auto finance businesses will grow more slowly this year. The overall guidance for fee income growth is set at 13% to 15% for the current year."
+    },
+    "risk_language": {
+      "score": -0.9491,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9491,
+        "positive": 0.0179,
+        "negative": 0.967,
+        "neutral": 0.0151,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including elevated credit costs and consumer leverage as a significant concern. The MSME business has shown strains, with Stage 2 assets increasing by INR 324 crores, primarily due to MSME customers. Management is offering restructuring options to mitigate short-term cash flow issues. The company is also experiencing intense competitive activity in the mortgage business, leading to pressure on volumes and attrition. Additionally, political risk in Karnataka has led to a 40%-50% cut in business in the region."
+    },
+    "investor_confidence": {
+      "score": 0.6511,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.6511,
+        "positive": 0.6655,
+        "negative": 0.0143,
+        "neutral": 0.3202,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing both positive outcomes and challenges directly. They acknowledged the elevated credit costs and the need for restructuring in certain segments. Analyst questions were answered directly, with management providing detailed explanations of their strategies and outlook. The decision to continue with the current leadership until March '28 was communicated clearly to ensure stability. Overall, management demonstrated credibility by acknowledging the challenges and outlining their strategic responses."
+    }
+  },
+  "key_positive_drivers": [
+    "AUM growth of 25%",
+    "Record 13.5 million loans booked",
+    "4.7 million new customers added",
+    "Strong capital adequacy with Tier 1 capital at 21.19%",
+    "FinAI transformation strategy",
+    "Improvement in cost of funds"
+  ],
+  "key_negative_drivers": [
+    "Elevated credit costs",
+    "Strains in MSME business",
+    "Intense competitive activity in mortgage business",
+    "Political risk in Karnataka",
+    "Higher reliance on NCD, ECB, and bank borrowings",
+    "Consumer leverage concerns"
+  ],
+  "notable_phrases": [
+    "A good start to the year",
+    "Credit costs still remained elevated",
+    "MSME business has shown some strains",
+    "Intense competitive activity",
+    "FinAI capabilities have started to go live",
+    "Higher reliance on NCD, ECB, and bank borrowings",
+    "Consumer leverage continues to remain an area of concern",
+    "Political risk, which we don't know how to navigate"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with significant AUM growth and customer acquisition, but also acknowledged elevated credit costs and challenges in specific business segments like MSME and auto finance. Forward guidance was cautiously optimistic, with strategic initiatives like FinAI expected to drive future growth. Risks were addressed openly, including competitive pressures and political risks. Management demonstrated transparency and credibility, providing detailed responses to analyst queries and outlining their strategic approach to current challenges."
+}

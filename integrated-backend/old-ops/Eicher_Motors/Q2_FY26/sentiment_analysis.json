@@ -1,0 +1,84 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7702,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9361,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9361,
+        "positive": 0.9559,
+        "negative": 0.0198,
+        "neutral": 0.0243,
+        "chunks_scored": 1
+      },
+      "text": "Eicher Motors reported its best-ever revenue at INR6,172 crores, marking a 45% growth over INR4,263 crores from Q2 of last year. The EBITDA also reached a record high at INR1,512 crores, up 39% from INR1,088 crores in the previous year. The PAT was the highest ever at INR1,369 crores, which includes INR135 crores of EML share of profits from VECV, up 25% from INR1,100 crores last year. The strong performance was attributed to all-around growth across Royal Enfield and VECV, with Royal Enfield selling 3,27,067 motorcycles, a significant increase from 2,25,317 in Q2 FY '25. VECV also recorded its highest-ever second quarter sales of 21,901 units, a 5.4% growth over the previous year."
+    },
+    "forward_guidance": {
+      "score": 0.9316,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9316,
+        "positive": 0.9511,
+        "negative": 0.0195,
+        "neutral": 0.0294,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism about future growth, particularly highlighting the festive season's robust demand and record bookings. They mentioned maximizing production capacity and the introduction of new product refreshes to meet demand. The company is preparing for next year's growth with capacity expansions, including a new module investment that will kick in from the first quarter of the coming year. Despite not providing specific forward guidance percentages, management indicated that demand and inquiry levels are holding up well, suggesting a bullish outlook for continued growth."
+    },
+    "risk_language": {
+      "score": 0.1545,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.1545,
+        "positive": 0.4853,
+        "negative": 0.3308,
+        "neutral": 0.1839,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including inflation pressure and commodity cost impacts, particularly from precious metals and aluminum alloys, which affected margins by 40 basis points. They also noted competitive pressures in the market and the need for continuous investment in capacity and product development. The discussion included potential challenges in the electric vehicle market, such as charging infrastructure and payload limitations for long-haul trucks. Despite these challenges, management emphasized ongoing efforts to mitigate risks through value engineering and strategic investments."
+    },
+    "investor_confidence": {
+      "score": 0.8949,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8949,
+        "positive": 0.9068,
+        "negative": 0.0119,
+        "neutral": 0.0813,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call, addressing analyst questions directly and providing detailed financials for VECV. They highlighted the company's strong governance and ethical leadership, evidenced by awards for corporate governance and sustainability. The management team was forthcoming about their strategies for capacity expansion and market growth, reinforcing their credibility. The call concluded with management expressing gratitude and optimism for future engagements, indicating a strong relationship with investors."
+    }
+  },
+  "key_positive_drivers": [
+    "Record revenue and EBITDA growth",
+    "Strong festive season demand",
+    "Capacity expansion plans",
+    "Robust market share in midsize motorcycles",
+    "Successful product refreshes"
+  ],
+  "key_negative_drivers": [
+    "Inflation and commodity cost pressures",
+    "Competitive market environment",
+    "Challenges in electric vehicle market penetration"
+  ],
+  "notable_phrases": [
+    "best ever revenue",
+    "highest ever EBITDA",
+    "robust demand",
+    "record bookings",
+    "inflation pressure",
+    "commodity cost impacts",
+    "capacity expansion",
+    "bullish that our growth rate continues"
+  ],
+  "chain_of_thought": "The financial performance was strong with record revenues and EBITDA, driven by robust demand and strategic product refreshes. Forward guidance was optimistic, with plans for capacity expansion and continued market growth. However, management acknowledged risks related to inflation, commodity costs, and competitive pressures. Investor confidence was reinforced by management's transparency and strategic clarity, though caution was noted due to external challenges."
+}

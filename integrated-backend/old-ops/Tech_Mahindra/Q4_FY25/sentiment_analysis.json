@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.4418,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.2478,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.2478,
+        "positive": 0.3585,
+        "negative": 0.6064,
+        "neutral": 0.0351,
+        "chunks_scored": 1
+      },
+      "text": "Tech Mahindra reported a revenue of $6,264 million for FY25, with a modest growth of 0.3 percent on a constant currency basis. The operating profit for the full year was $607 million, marking a significant 60 percent year-on-year increase. Margins expanded by 360 basis points to 9.7 percent, attributed to operational efficiencies and savings from Project Fortius. The BFSI vertical grew by 5.2 percent, while Retail saw a 4.5 percent increase, driven by volume expansion and new client acquisitions. However, Manufacturing declined by 1 percent, and Communications faced a 4.2 percent downturn. The company's deal wins for the year totaled $2.7 billion, a 42.5 percent increase year-on-year, indicating strong performance in securing new business."
+    },
+    "forward_guidance": {
+      "score": 0.9293,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9293,
+        "positive": 0.9404,
+        "negative": 0.011,
+        "neutral": 0.0486,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the future, emphasizing the continuation of Project Fortius to drive margin improvements over the next two years. They highlighted the strategic roadmap towards FY27, aiming for revenue growth and margin expansion. The company plans to focus on profitable growth and maintaining a $600-800 million range for large deals, acknowledging the lumpiness of such deals. Despite macroeconomic headwinds, Tech Mahindra remains committed to its long-term goals, including a target to surpass the peer average growth by FY27. The launch of TechM Consulting and AI offerings are expected to bolster future growth."
+    },
+    "risk_language": {
+      "score": 0.2684,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.2684,
+        "positive": 0.3943,
+        "negative": 0.1259,
+        "neutral": 0.4798,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including macroeconomic headwinds impacting the hi-tech and manufacturing sectors. Management acknowledged the softness in certain sectors, particularly in the US, and the challenges posed by discretionary spending cuts in the auto industry. They also noted the impact of delays in customer renewal decisions and the cautious outlook for the hi-tech vertical. Despite these challenges, management emphasized their diversified portfolio and strategic initiatives to mitigate risks. The company remains vigilant in monitoring industry growth rates and adjusting plans accordingly."
+    },
+    "investor_confidence": {
+      "score": 0.9182,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9182,
+        "positive": 0.9308,
+        "negative": 0.0126,
+        "neutral": 0.0566,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call, providing detailed updates on financial performance and strategic initiatives. They addressed analyst questions directly, acknowledging both achievements and challenges. The leadership team emphasized their commitment to the strategic roadmap and long-term goals, reinforcing their credibility. The positive reception of their three-year plan by the market was highlighted as a confidence booster. The launch of new service lines and leadership hires were presented as steps to strengthen the company's position and drive future growth."
+    }
+  },
+  "key_positive_drivers": [
+    "60 percent year-on-year growth in operating profit",
+    "360 basis points margin expansion",
+    "42.5 percent increase in deal wins",
+    "Launch of TechM Consulting",
+    "Expansion of AI offerings",
+    "Operational efficiencies from Project Fortius"
+  ],
+  "key_negative_drivers": [
+    "Macroeconomic headwinds in hi-tech and manufacturing",
+    "Softness in US sectors",
+    "Delays in customer renewal decisions",
+    "Discretionary spending cuts in auto industry",
+    "Decline in Communications vertical",
+    "Flat revenue growth"
+  ],
+  "notable_phrases": [
+    "stabilize the organization",
+    "key milestone in our transformation journey",
+    "linear improvement in margin",
+    "deal wins growth with the quality",
+    "macro headwinds that you all know of",
+    "focus on achieving profitable growth",
+    "cautious outlook for the hi-tech vertical",
+    "commitment to the strategic roadmap"
+  ],
+  "chain_of_thought": "Tech Mahindra's earnings call reflected a cautiously bullish sentiment. Financial performance showed strong profit growth and margin expansion, though revenue growth was modest. Forward guidance was optimistic, with plans for continued margin improvements and strategic initiatives like TechM Consulting. Risks were acknowledged, particularly macroeconomic headwinds and sector-specific challenges. Management projected confidence and transparency, reinforcing their credibility and commitment to long-term goals."
+}

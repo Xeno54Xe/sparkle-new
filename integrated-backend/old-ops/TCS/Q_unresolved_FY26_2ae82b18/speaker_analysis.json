@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Kawaljeet Saluja",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "moderation",
+        "questions on strategy and investment"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kawaljeet Saluja served as the moderator for the session, introducing the panelists and guiding the discussion. He maintained a neutral tone throughout, focusing on facilitating the conversation and ensuring that the discussion remained on topic. His questions were aimed at drawing out detailed responses from the TCS management team regarding their AI Data Center Investment and Opportunity. He effectively managed the flow of the session, ensuring that all relevant topics were covered.",
+      "sentiment_score": 0.03,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.03,
+        "positive": 0.0468,
+        "negative": 0.0168,
+        "neutral": 0.9364,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "AI data center investment",
+        "capital allocation",
+        "financial strategy"
+      ],
+      "direct_answers": [
+        "Why data center? What prompted TCS to get into building co-location data centers, and what are the adjacencies that you have with the core services business?",
+        "What are your thoughts on the ROE and ROCE profile of this kind of a business? Does it, let's say, can it generate returns which are comfortably above the cost of capital?"
+      ],
+      "dodged_or_vague": [
+        "What do you think should be the optimal, debt-equity structure in these kinds of businesses?"
+      ],
+      "summary": "Samir Seksaria, the CFO of TCS, presented a confident outlook on the company's AI data center investment strategy. He emphasized the strategic alignment of the data center initiative with TCS's broader goal of becoming the world's largest AI-led technology services company. Samir highlighted the financial strength of TCS, noting their strong balance sheet and capital allocation strategy, which includes returning substantial free cash flows to shareholders. He addressed questions about the financial implications of the investment, indicating that it would be phased and funded through a mix of debt and equity. While he provided detailed answers to most questions, he was less specific about the optimal debt-equity structure for the investment.",
+      "sentiment_score": 0.1753,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1753,
+        "positive": 0.1917,
+        "negative": 0.0164,
+        "neutral": 0.7919,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Mangesh Sathe",
+      "role": "Chief Strategy Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "market strategy",
+        "global expansion",
+        "AI data center"
+      ],
+      "direct_answers": [
+        "What is your GTM and cross-selling strategy in the business?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mangesh Sathe, the Chief Strategy Officer, conveyed an optimistic tone regarding TCS's strategic positioning in the global data center market. He emphasized the potential for TCS to leverage its expertise in data centers to expand its services globally, particularly in the US and Europe. Mangesh highlighted the company's strong relationships with hyperscalers and AI companies, positioning TCS as a key partner in shaping the future of AI infrastructure. He was clear in his responses, particularly regarding the go-to-market strategy, and expressed confidence in TCS's ability to meet future demands and expand its capabilities.",
+      "sentiment_score": 0.2884,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2884,
+        "positive": 0.2989,
+        "negative": 0.0105,
+        "neutral": 0.6906,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Deepesh Kiran Nanda",
+      "role": "Subject Matter Expert",
+      "tone": "informative",
+      "key_topics": [
+        "technical specifications",
+        "AI data center infrastructure",
+        "market demand"
+      ],
+      "direct_answers": [
+        "What are the specifications of the planned data center that you have in mind? Would this be, let's say, Tier 3 or Tier 4 data centers?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Deepesh Kiran Nanda, a subject matter expert, provided detailed and informative insights into the technical aspects of TCS's AI data center plans. He focused on the high rack density and liquid cooling systems that will be implemented to support AI workloads. Deepesh highlighted the growing demand for AI infrastructure, both globally and in India, and explained how TCS plans to meet this demand with its data center offerings. His responses were clear and detailed, reflecting a deep understanding of the technical requirements and market dynamics.",
+      "sentiment_score": 0.0859,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0859,
+        "positive": 0.1252,
+        "negative": 0.0393,
+        "neutral": 0.8355,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the transcript: Kawaljeet Saluja as the moderator, Samir Seksaria as the CFO, Mangesh Sathe as the Chief Strategy Officer, and Deepesh Kiran Nanda as a Subject Matter Expert. Each speaker's key statements are extracted, focusing on verbatim quotes that include specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, with Samir Seksaria being confident, Mangesh Sathe optimistic, Deepesh Kiran Nanda informative, and Kawaljeet Saluja neutral. For management speakers, the analysis notes which questions were answered directly and which were deflected or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON output is structured to reflect this detailed analysis, providing a comprehensive overview of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

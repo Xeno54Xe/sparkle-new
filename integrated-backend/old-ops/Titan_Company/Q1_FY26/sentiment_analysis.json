@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7283,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9182,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9182,
+        "positive": 0.9493,
+        "negative": 0.0311,
+        "neutral": 0.0196,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q1 FY26 was described as 'very satisfying' across businesses, markets, and subsidiaries. Management highlighted a robust margin performance despite some one-off impacts. Specifically, there was a 50 bps one-off in the jewellery segment and a 400 bps benefit from inventory revaluation in the watches segment, which are expected to reverse in the coming quarters. The company reported a margin range of 11% to 11.5%, with management stating that they are 'trying to work on' maintaining this range. The jewellery segment faced a higher base effect due to last year's custom duty reduction, but the company has leveraged ticket size growth and a repeat customer base to achieve good results, even with high gold prices."
+    },
+    "forward_guidance": {
+      "score": 0.904,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.904,
+        "positive": 0.9128,
+        "negative": 0.0088,
+        "neutral": 0.0784,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a 'wait and watch' approach for the rest of FY26, acknowledging significant uncertainties due to external factors impacting gold prices. They maintained a guidance range of 11% to 11.5% for margins, indicating that they do not expect to operate at the upper or lower end of this range. The company is focused on sustaining market share and has not constrained growth by maintaining high margins. They are actively expanding retail capacity and investing in marketing, suggesting a measured but optimistic outlook. The international business, particularly in the GCC and U.S., is expected to grow significantly, potentially reaching 6% of company sales."
+    },
+    "risk_language": {
+      "score": 0.094,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.094,
+        "positive": 0.3098,
+        "negative": 0.2159,
+        "neutral": 0.4743,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including market volatility, particularly in gold prices, and the impact of one-off financial adjustments that are expected to reverse in future quarters. Management was forthright about these challenges, noting the 'significant uncertainties' due to external factors. They also discussed competitive pressures in the jewellery market, with multiple national and regional players. The company is taking actions to tackle pressures in the jewellery division and is aware of the potential impact of these reversals on future financial performance."
+    },
+    "investor_confidence": {
+      "score": 0.8143,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8143,
+        "positive": 0.8248,
+        "negative": 0.0104,
+        "neutral": 0.1648,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, directly addressing analyst questions and providing detailed explanations of financial impacts and strategic decisions. They emphasized their commitment to not holding back on growth investments, such as retail expansion and marketing. The call included multiple acknowledgments of the company's strategic positioning and market share gains, reinforcing management's credibility. The detailed discussion of financial adjustments and future expectations demonstrated a high level of transparency and confidence in their strategic direction."
+    }
+  },
+  "key_positive_drivers": [
+    "Robust margin performance despite one-offs",
+    "Sustained market share in jewellery",
+    "Expansion of retail capacity",
+    "Growth in international business",
+    "Leverage of ticket size growth",
+    "Repeat customer base"
+  ],
+  "key_negative_drivers": [
+    "Significant uncertainties due to external factors",
+    "Reversal of one-off financial benefits",
+    "High gold prices impacting margins",
+    "Competitive pressures in jewellery market",
+    "Volatility in market affecting hedging"
+  ],
+  "notable_phrases": [
+    "Very satisfying quarter",
+    "Wait and watch",
+    "Significant uncertainties",
+    "Sustained market share",
+    "Robust margin performance",
+    "Trying to work on",
+    "Not holding back on growth",
+    "High level of transparency"
+  ],
+  "chain_of_thought": "The call reflected a cautiously optimistic outlook, with management highlighting strong financial performance and strategic growth initiatives. Despite acknowledging significant uncertainties and competitive pressures, they maintained a positive stance on market share and future growth, particularly in international markets. The detailed discussion of financial adjustments and strategic investments demonstrated confidence and transparency, contributing to a cautiously bullish overall tone."
+}

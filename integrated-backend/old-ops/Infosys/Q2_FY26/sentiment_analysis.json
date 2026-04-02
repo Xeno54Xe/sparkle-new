@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.9008,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9412,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9412,
+        "positive": 0.9582,
+        "negative": 0.0169,
+        "neutral": 0.0249,
+        "chunks_scored": 1
+      },
+      "text": "Infosys reported a strong financial performance in Q2 FY26, with revenues crossing $5 billion, marking a 2.2% sequential growth and a 2.9% year-on-year increase in constant currency terms. The operating margin expanded by 20 basis points sequentially to 21%, supported by a 60 basis point tailwind from currency movement. The company achieved a large deal total contract value (TCV) of $3.1 billion, with 67% net new work, and announced a mega deal worth $1.6 billion. Earnings per share (EPS) in rupee terms grew by 13% year-on-year to Rs. 17.6. Free cash flow was robust at $1.1 billion, representing 131% of net profit, bolstered by tax refunds."
+    },
+    "forward_guidance": {
+      "score": 0.8653,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8653,
+        "positive": 0.9221,
+        "negative": 0.0568,
+        "neutral": 0.0211,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook, tightening the revenue growth guidance for the full year to 2% to 3% in constant currency terms, up from the previous 1% to 3%. The operating margin guidance remains at 20% to 22% for the full year. Despite acknowledging an uncertain environment, they expressed confidence in the lower end of the guidance due to strong performance in Q2. The company highlighted good traction in Manufacturing and Financial Services, while noting constraints in Retail. They anticipate a slower second half of the year, which is typical, but remain confident in their pipeline and ongoing investments in AI and digital capabilities."
+    },
+    "risk_language": {
+      "score": 0.8715,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8715,
+        "positive": 0.8815,
+        "negative": 0.0101,
+        "neutral": 0.1084,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including macroeconomic uncertainty, regulatory challenges, and competitive pressures. Management acknowledged the uncertain environment, particularly in Retail, and the potential impact of geopolitical tensions and tariff risks. They also mentioned the ongoing DOJ investigation related to H-1B visas, but provided limited details. Despite these challenges, Infosys emphasized their strategic investments in AI and digital transformation to mitigate risks and drive growth. The company is also focused on cost optimization and efficiency improvements to offset potential headwinds."
+    },
+    "investor_confidence": {
+      "score": 0.923,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.923,
+        "positive": 0.9362,
+        "negative": 0.0132,
+        "neutral": 0.0506,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of clarity and confidence, with CEO Salil Parekh and CFO Jayesh Sanghrajka addressing analyst questions directly and transparently. They emphasized the company's strong performance and strategic initiatives, such as Project Maximus and AI deployment, to reassure investors. The decision to tighten guidance reflects their confidence in navigating the uncertain environment. Infosys highlighted their robust deal pipeline and ongoing investments in talent and technology as key drivers of future growth. Overall, the management's communication was clear and consistent, reinforcing their credibility with the investor community."
+    }
+  },
+  "key_positive_drivers": [
+    "Revenue growth of 2.2% sequentially",
+    "Operating margin expansion to 21%",
+    "Large deal TCV of $3.1 billion",
+    "EPS growth of 13% year-on-year",
+    "Strong free cash flow of $1.1 billion",
+    "Mega deal worth $1.6 billion announced"
+  ],
+  "key_negative_drivers": [
+    "Uncertain macroeconomic environment",
+    "Constraints in Retail sector",
+    "DOJ investigation on H-1B visas",
+    "Geopolitical tensions and tariff risks",
+    "Seasonal softness expected in H2",
+    "Competitive pressures in the market"
+  ],
+  "notable_phrases": [
+    "Revenues crossed $5 billion",
+    "Operating margin expanded by 20 basis points",
+    "Large deal TCV was at $3.1 billion",
+    "EPS in rupee terms grew by 13%",
+    "Free cash flow stood at $1.1 billion",
+    "Environment still remains uncertain",
+    "Guidance tightened to 2% to 3%",
+    "Strong focus on deploying AI"
+  ],
+  "chain_of_thought": "Infosys delivered strong financial results with revenue and margin growth, supported by large deal wins and robust cash flow. Management provided cautiously optimistic guidance, tightening the range due to strong Q2 performance, despite acknowledging macroeconomic uncertainties and sector-specific challenges. Risks were addressed, including regulatory issues and competitive pressures, but strategic investments in AI and digital transformation were highlighted as mitigants. Investor confidence was reinforced through clear communication and transparency, with management emphasizing their strategic initiatives and robust pipeline."
+}

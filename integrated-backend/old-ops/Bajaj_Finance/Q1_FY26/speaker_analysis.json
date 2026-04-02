@@ -1,0 +1,111 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Rajeev Jain",
+      "role": "Vice Chairman and Managing Director",
+      "tone": "cautious",
+      "key_topics": [
+        "AUM growth",
+        "credit costs",
+        "leadership transition",
+        "MSME challenges",
+        "FinAI transformation"
+      ],
+      "direct_answers": [
+        "Viral, the only point I would like to make is that every incident must have learnings and a course correction plan.",
+        "I would think about one more quarter, Abhishek, before we give you a very clear view. Right now, I would hold between 23-24%."
+      ],
+      "dodged_or_vague": [
+        "I don't want any ambiguity on this. It is till March'28. Closer to that, we'll take a view on what is the succession planning."
+      ],
+      "summary": "Rajeev Jain provided a comprehensive overview of Bajaj Finance's performance, highlighting a strong start to the year with significant AUM growth and customer acquisition. He expressed caution regarding elevated credit costs and challenges in the MSME sector, indicating a slower growth trajectory for these segments. Jain addressed the leadership transition, emphasizing continuity and clarity until March 2028. His tone was cautious, reflecting on the need for strategic adjustments and careful planning for future growth.",
+      "sentiment_score": 0.1299,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1299,
+        "positive": 0.2417,
+        "negative": 0.1118,
+        "neutral": 0.6465,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Jain",
+      "role": "Chief Operating Officer and Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "cost of funds",
+        "credit costs",
+        "NIM compression"
+      ],
+      "direct_answers": [
+        "Yes. You're right on Chintan. I think the liquidity buffers were deployed more in terms of mutual funds in the last quarter."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Jain provided detailed insights into Bajaj Finance's financial performance, focusing on the impact of market conditions on net interest margins and cost of funds. He explained the strategic decision to invest in mutual funds, which led to a slight compression in margins. Jain maintained a neutral tone, offering clear explanations on financial metrics and the company's approach to managing liquidity and credit costs. His responses were direct and informative, contributing to a comprehensive understanding of the financial outlook.",
+      "sentiment_score": 0.2394,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2394,
+        "positive": 0.3782,
+        "negative": 0.1388,
+        "neutral": 0.4829,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ajit Kumar",
+      "role": "Moderator from JM Financial",
+      "tone": "neutral",
+      "key_topics": [
+        "conference facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ajit Kumar served as the moderator for the earnings call, facilitating the discussion and ensuring a smooth transition between speakers. His role was primarily to introduce the call and manage the flow of the session. Kumar maintained a neutral tone, focusing on logistical aspects and expressing gratitude to the management for the opportunity to host the call.",
+      "sentiment_score": 0.3579,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3579,
+        "positive": 0.3684,
+        "negative": 0.0105,
+        "neutral": 0.6211,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis began by identifying the unique speakers in the transcript: Rajeev Jain, Sandeep Jain, and Ajit Kumar. Each speaker's key statements were extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their statements and interactions. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

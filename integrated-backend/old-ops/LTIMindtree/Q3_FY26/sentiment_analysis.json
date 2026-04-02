@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6073,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9379,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9379,
+        "positive": 0.9563,
+        "negative": 0.0184,
+        "neutral": 0.0253,
+        "chunks_scored": 1
+      },
+      "text": "LTIMindtree reported Q3 FY2026 revenue of USD 1,208 million, reflecting a growth of 2.4% quarter-on-quarter and 6.1% year-on-year in dollar terms. The constant currency growth was 2.4% quarter-on-quarter and 5.2% year-on-year. Revenue in INR was 10,781 crores, a growth of 3.7% quarter-on-quarter and 11.6% year-on-year. Operating EBIT margin expanded by 20 basis points sequentially to 16.1%, driven by the Margin Improvement Program and a positive forex tailwind, though offset by lower workdays and furloughs. Adjusted profit after tax grew 1.5% quarter-on-quarter and 29% year-on-year, standing at Rs.1,401 crores. The PAT, after accounting for the labor code impact, was Rs.959 crores. The effective tax rate remained unchanged at 26.5%."
+    },
+    "forward_guidance": {
+      "score": 0.9371,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9371,
+        "positive": 0.9537,
+        "negative": 0.0166,
+        "neutral": 0.0297,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed an ambitious outlook for the future, with aspirations for double-digit growth entering next year. They highlighted ongoing efforts to sustain growth through deal momentum and AI-led offerings. The order inflow for the quarter was USD 1.7 billion, up 6.4% quarter-on-quarter, indicating strong deal closures. However, there was caution regarding the sustainability of growth due to market dynamics and fewer working days in the next quarter. The company plans to continue its strategic initiatives, including the Fit4Future and New Horizons programs, to drive transformation and growth."
+    },
+    "risk_language": {
+      "score": -0.702,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.702,
+        "positive": 0.1342,
+        "negative": 0.8362,
+        "neutral": 0.0296,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including the impact of the new labor code, which had a one-time cost of Rs.590 crores. Management acknowledged the cyclical nature of certain verticals like healthcare and public sector, which could affect performance. There was also mention of the decline in the top five client bucket, attributed to clients' productivity journeys. Management was forthright about these challenges but emphasized ongoing efforts to balance the portfolio and improve margins. The potential impact of wage hikes was noted, with plans to mitigate through operational efficiencies."
+    },
+    "investor_confidence": {
+      "score": 0.9262,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9262,
+        "positive": 0.9391,
+        "negative": 0.0129,
+        "neutral": 0.0481,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and clarity, emphasizing their strategic initiatives and growth aspirations. They addressed analyst questions directly, providing detailed explanations about the productivity journey and margin improvement efforts. The company's recognition in various industry awards and partnerships, such as being a Microsoft Fabric and Real-Time Intelligence SI Partner, bolstered their credibility. Despite acknowledging challenges, management maintained a positive outlook, reinforcing their commitment to growth and transformation."
+    }
+  },
+  "key_positive_drivers": [
+    "Revenue growth of 2.4% quarter-on-quarter",
+    "EBIT margin expansion by 20 basis points",
+    "Order inflow of USD 1.7 billion, up 6.4% quarter-on-quarter",
+    "Strong deal momentum and AI-led offerings",
+    "Recognition in industry awards and partnerships",
+    "Fit4Future and New Horizons programs driving transformation"
+  ],
+  "key_negative_drivers": [
+    "Impact of new labor code costing Rs.590 crores",
+    "Decline in top five client bucket",
+    "Cyclical impact in healthcare and public sector verticals",
+    "Potential impact of wage hikes",
+    "Fewer working days in the next quarter",
+    "Market dynamics affecting growth sustainability"
+  ],
+  "notable_phrases": [
+    "Revenue growth has stabilized",
+    "Margin Improvement Program",
+    "Ambitious thought process and aspiration",
+    "No risk of our business being part of vendor consolidation",
+    "Fit4Future has delivered on its stated objectives",
+    "AI strategy continues to drive transformational outcomes",
+    "Order inflow stood at USD 1.7 billion",
+    "PAT grew 29% year-on-year before adjusting for the labor code impact"
+  ],
+  "chain_of_thought": "The financial performance showed stable growth with improvements in revenue and margins, though impacted by a one-time labor code cost. Forward guidance was ambitious, with plans for double-digit growth and strong order inflows, but tempered by market uncertainties and fewer working days. Risks were acknowledged, particularly around client productivity journeys and cyclical verticals, but management was proactive in addressing these. Investor confidence was bolstered by strategic initiatives and industry recognition, though challenges were not dismissed."
+}

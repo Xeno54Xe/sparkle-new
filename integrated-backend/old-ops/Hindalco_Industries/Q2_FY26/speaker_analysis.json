@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Subir Sen",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "presentation overview"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Subir Sen opened the earnings call by welcoming participants and outlining the agenda. He highlighted that the presentation would cover key financial highlights and comparative analyses for the second quarter of FY26. He also noted that some statements might be forward-looking and are covered by safe harbor provisions. Subir introduced the management team present on the call and informed participants about the availability of an audio replay post-call.",
+      "sentiment_score": 0.0373,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0373,
+        "positive": 0.0503,
+        "negative": 0.0131,
+        "neutral": 0.9366,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Satish Pai",
+      "role": "Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "safety",
+        "sustainability",
+        "financial performance",
+        "market outlook"
+      ],
+      "direct_answers": [
+        "Indrajit Agarwal's question on MJP premium market",
+        "Somaiah V's question on India business EBITDA per ton increase"
+      ],
+      "dodged_or_vague": [
+        "Satyadeep Jain's question on doubling down of aluminium smelter"
+      ],
+      "summary": "Satish Pai provided a comprehensive overview of Hindalco's performance, emphasizing safety, sustainability, and financial metrics. He highlighted the company's achievements in recycling and renewable energy, and discussed the broader economic environment, noting India's resilience amid global challenges. Pai confidently addressed questions about market dynamics and future strategies, although he was somewhat vague on the rationale behind certain strategic decisions. His tone was optimistic, reflecting confidence in Hindalco's integrated business model and future growth prospects.",
+      "sentiment_score": 0.4561,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4561,
+        "positive": 0.7041,
+        "negative": 0.248,
+        "neutral": 0.0479,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Steve Fisher",
+      "role": "President and CEO, Novelis",
+      "tone": "confident",
+      "key_topics": [
+        "beverage can sheet market",
+        "U.S. demand",
+        "Bay Minette project"
+      ],
+      "direct_answers": [
+        "Indrajit Agarwal's question on beverage can sheet market in U.S."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Steve Fisher addressed the demand for beverage can sheets in the U.S., highlighting strong growth prospects. He provided specific growth rates and confidently discussed the market's strength, particularly in the U.S. His tone was optimistic, reflecting confidence in Novelis' position to capitalize on these market opportunities. Fisher's responses were direct and informative, providing clarity on Novelis' strategic focus in the U.S. market.",
+      "sentiment_score": 0.8928,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8928,
+        "positive": 0.9009,
+        "negative": 0.0081,
+        "neutral": 0.091,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dev Ahuja",
+      "role": "Chief Financial Officer, Novelis",
+      "tone": "confident",
+      "key_topics": [
+        "Midwest Premium",
+        "scrap availability",
+        "cost structure"
+      ],
+      "direct_answers": [
+        "Somaiah V's question on sourcing contracts tied to LME or Midwest Premium"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Dev Ahuja discussed the financial dynamics related to the Midwest Premium and scrap availability, emphasizing the positive outlook despite some regional challenges. He confidently explained the benefits yet to be realized from rising premiums and addressed the impact of extraneous events on business performance. Ahuja's responses were clear and detailed, providing insights into Novelis' financial strategies and market conditions.",
+      "sentiment_score": 0.4029,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4029,
+        "positive": 0.4921,
+        "negative": 0.0892,
+        "neutral": 0.4188,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted to capture their main points and tone. For management speakers, specific analyst questions are noted to determine whether they were answered directly or deflected. Each speaker's contribution is summarized to provide a narrative of their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

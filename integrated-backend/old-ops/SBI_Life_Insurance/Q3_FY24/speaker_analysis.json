@@ -1,0 +1,84 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Amit Jhingran",
+      "role": "Managing Director & CEO",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "growth",
+        "product mix",
+        "distribution channels",
+        "profitability"
+      ],
+      "direct_answers": [
+        "We are building a strong base by improving the agency and banca productivity levels.",
+        "By leveraging customer insights and industry trends, we have created solutions that provide enhanced coverage, greater flexibility and more tailored options."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Amit Jhingran, the Managing Director & CEO of SBI Life Insurance, presented the company's Q3 FY25 results with a confident tone. He highlighted the company's ability to sustain momentum and achieve growth despite a high benchmark set in the previous year. Key financial metrics such as new business premium, profit after tax, and value of new business were discussed, showcasing significant growth. Jhingran emphasized the company's strategic focus on improving agency and banca productivity and leveraging customer insights to enhance product offerings. His statements reflected a strong belief in the company's resilience and adaptability in a competitive market.",
+      "sentiment_score": 0.9257,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9257,
+        "positive": 0.9393,
+        "negative": 0.0136,
+        "neutral": 0.0471,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "question and answer session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the SBI Life Insurance Q3 FY25 earnings conference call, maintaining a neutral tone throughout. They provided logistical information about the call, including instructions for participants and the process for the question and answer session. The moderator ensured a smooth transition to the presentation by Amit Jhingran, the Managing Director & CEO, and managed the flow of the call efficiently.",
+      "sentiment_score": 0.0486,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0486,
+        "positive": 0.0621,
+        "negative": 0.0135,
+        "neutral": 0.9244,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 2,
+  "chain_of_thought": "The task involves identifying unique speakers from the earnings call transcript and analyzing their contributions. The speakers identified are Amit Jhingran, the Managing Director & CEO, and the Moderator. For Amit Jhingran, key statements were extracted that highlight the company's financial performance and strategic initiatives. His tone was assessed as confident based on his positive remarks about growth and resilience. The Moderator's role was primarily logistical, maintaining a neutral tone. The JSON structure captures each speaker's role, tone, key topics, verbatim statements, and a narrative summary of their contributions.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

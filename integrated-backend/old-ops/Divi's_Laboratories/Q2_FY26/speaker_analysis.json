@@ -1,0 +1,198 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring the session ran smoothly and participants were aware of the procedures. They maintained a neutral tone throughout, focusing on logistics and the structure of the call. The moderator also managed the transition to the Q&A session, ensuring that participants knew how to engage with the speakers.",
+      "sentiment_score": 0.0121,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0121,
+        "positive": 0.0342,
+        "negative": 0.0221,
+        "neutral": 0.9437,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. Satish Choudhury",
+      "role": "Company Secretary and Chief Investor Relations Officer",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Financial results",
+        "Forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "M. Satish Choudhury opened the call by introducing the management team and outlining the agenda. He provided a neutral overview of the financial results and emphasized the forward-looking nature of the statements to be discussed. His role was primarily to set the stage for the detailed presentations by other management members and to ensure compliance with regulatory and procedural norms.",
+      "sentiment_score": -0.0149,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0149,
+        "positive": 0.0231,
+        "negative": 0.038,
+        "neutral": 0.9389,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Kiran S. Divi",
+      "role": "Whole-Time Director and Chief Executive Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Business performance",
+        "Operational updates",
+        "Strategic initiatives"
+      ],
+      "direct_answers": [
+        "Amay's question on API generic side"
+      ],
+      "dodged_or_vague": [
+        "Amay's question on volumes linked to patent expiry"
+      ],
+      "summary": "Dr. Kiran S. Divi presented a confident overview of Divi's Laboratories' performance, highlighting resilience in navigating global trade dynamics and maintaining consistent volumes despite pricing pressures. He emphasized the company's strategic initiatives, including backward integration and investments in custom synthesis and peptide synthesis. Dr. Divi also addressed community initiatives, underscoring the company's commitment to social progress. While he provided direct answers to some questions, he avoided specifics on volumes linked to patent expiries due to confidentiality constraints.",
+      "sentiment_score": 0.8569,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8569,
+        "positive": 0.8643,
+        "negative": 0.0074,
+        "neutral": 0.1284,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Nilima Prasad Divi",
+      "role": "Whole-Time Director (Commercial)",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Supply chain",
+        "Capex guidance"
+      ],
+      "direct_answers": [
+        "Kunal Dhamesha's question on capex guidance"
+      ],
+      "dodged_or_vague": [
+        "Ranvir Singh's question on CMS segment changes"
+      ],
+      "summary": "Nilima Prasad Divi provided a cautious overview of Divi's Laboratories' financial performance, highlighting the impact of global trade shifts and geopolitical developments on supply chains. She emphasized the company's strategic planning and operational stability, noting stable raw material prices and the benefits of backward integration. Nilima addressed questions on capex guidance directly but was vague on specifics regarding changes in the CMS segment. Her cautious tone reflected the complexities of the current global environment and the company's strategic responses.",
+      "sentiment_score": 0.6492,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6492,
+        "positive": 0.6659,
+        "negative": 0.0167,
+        "neutral": 0.3174,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Amay",
+      "role": "Analyst from JM Financial",
+      "tone": "Neutral",
+      "key_topics": [
+        "Custom synthesis project",
+        "API generic side"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amay, an analyst from JM Financial, posed questions regarding Divi's Laboratories' custom synthesis projects and the API generic segment. He sought clarity on the impact of patent expiries on volumes and the potential for revival in the generic segment amidst pricing pressures. Amay also inquired about the competitive edge in pricing for custom synthesis projects. His questions were neutral, focusing on understanding the company's strategic positioning and market dynamics.",
+      "sentiment_score": -0.471,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.471,
+        "positive": 0.0926,
+        "negative": 0.5636,
+        "neutral": 0.3437,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ranvir Singh",
+      "role": "Analyst from Nuvama Wealth",
+      "tone": "Neutral",
+      "key_topics": [
+        "CMS segment",
+        "Unit 3"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ranvir Singh, an analyst from Nuvama Wealth, asked for clarity on changes within the CMS segment and the status of product shifts to Unit 3. His questions were aimed at understanding the revenue mix and capacity utilization across Divi's Laboratories' units. Ranvir's tone was neutral, seeking detailed insights into the company's operational adjustments and strategic initiatives.",
+      "sentiment_score": 0.004,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.004,
+        "positive": 0.0597,
+        "negative": 0.0557,
+        "neutral": 0.8846,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kunal Dhamesha",
+      "role": "Analyst from Macquarie",
+      "tone": "Neutral",
+      "key_topics": [
+        "Capex guidance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kunal Dhamesha, an analyst from Macquarie, focused on the capex guidance for FY26, questioning whether the company would exceed its initial guidance given the significant spending in the first half. His inquiries were neutral, aimed at understanding the company's investment strategy and potential adjustments to its financial plans for the remainder of the fiscal year.",
+      "sentiment_score": 0.14,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.14,
+        "positive": 0.1763,
+        "negative": 0.0363,
+        "neutral": 0.7874,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis involved identifying each speaker and their role in the earnings call. Key statements were extracted to capture the essence of their contributions, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their language and responses to questions. For management speakers, attention was given to how they addressed analyst questions, noting any direct answers or instances where they deflected or provided vague responses. This structured approach ensured a comprehensive understanding of each speaker's stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Manoj Menon",
+      "role": "Moderator, ICICI Securities",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference proceedings"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Manoj Menon served as the moderator for the earnings call, representing ICICI Securities. His role was primarily to introduce the call and hand over proceedings to the management of Tata Consumer Products. His tone was neutral, focusing on facilitating the smooth transition of the call to the company's representatives.",
+      "sentiment_score": 0.0444,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0444,
+        "positive": 0.0583,
+        "negative": 0.0139,
+        "neutral": 0.9279,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nidhi Verma",
+      "role": "Head of Investor Relations and Corporate Communications",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhi Verma, as the Head of Investor Relations, provided a structured introduction to the earnings call. She outlined the agenda, introduced the management team, and ensured that participants were aware of the available materials and disclaimer. Her tone was neutral, focusing on setting the stage for the detailed presentations and Q&A session.",
+      "sentiment_score": 0.0569,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0569,
+        "positive": 0.0726,
+        "negative": 0.0156,
+        "neutral": 0.9118,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sunil D'Souza",
+      "role": "Managing Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth strategy",
+        "market conditions"
+      ],
+      "direct_answers": [
+        "Jay Doshi's question on tea commodity price trends and outlook",
+        "Mihir Shah's question on NourishCo price cuts and volume growth"
+      ],
+      "dodged_or_vague": [
+        "Vivek M.'s question on Nielsen panel changes"
+      ],
+      "summary": "Sunil D'Souza, the CEO, presented a confident overview of Tata Consumer Products' performance, highlighting a 10% growth and addressing challenges such as weather impacts and supply chain issues. He emphasized the company's strategic focus on innovation and distribution expansion, while also discussing the impact of commodity prices on margins. Sunil directly addressed questions about tea price trends and NourishCo's pricing strategy, but was less specific about changes in Nielsen's market share data.",
+      "sentiment_score": -0.0027,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0027,
+        "positive": 0.4756,
+        "negative": 0.4783,
+        "neutral": 0.0462,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Ashish Goenka",
+      "role": "Group Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial results",
+        "profitability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ashish Goenka, the CFO, provided a neutral and factual summary of the financial results, noting a 10% growth at the consolidated level and a 15% increase in net profit. He attributed the decline in EBIT to tea costs and coffee price contractions. Ashish highlighted the absence of exceptional items and the positive impact of repaying the bridge loan on profitability. His contribution was primarily to confirm and elaborate on the financial figures presented by the CEO.",
+      "sentiment_score": -0.4588,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4588,
+        "positive": 0.2446,
+        "negative": 0.7034,
+        "neutral": 0.052,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jay Doshi",
+      "role": "Analyst, Kotak",
+      "tone": "inquisitive",
+      "key_topics": [
+        "tea commodity prices",
+        "non-branded business margins"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jay Doshi, an analyst from Kotak, posed detailed questions regarding the trends in tea commodity prices and their impact on margins, as well as the fluctuations in non-branded business margins due to coffee prices. His inquiries were aimed at understanding the company's confidence in margin normalization and the potential for margin improvement in the coming quarters. Jay's tone was inquisitive, seeking clarity on the financial outlook and competitive dynamics.",
+      "sentiment_score": 0.0793,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0793,
+        "positive": 0.3029,
+        "negative": 0.2236,
+        "neutral": 0.4735,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mihir Shah",
+      "role": "Analyst, Nomura",
+      "tone": "inquisitive",
+      "key_topics": [
+        "NourishCo pricing strategy",
+        "volume growth expectations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mihir Shah from Nomura focused his questions on the NourishCo business, specifically regarding the sustainability of the 16% price cut and its impact on volume growth. He sought to understand whether the company expects significant volume growth to offset the price reduction. Mihir's tone was inquisitive, aiming to gain insights into the company's pricing strategy and growth expectations for NourishCo.",
+      "sentiment_score": 0.1089,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1089,
+        "positive": 0.1316,
+        "negative": 0.0227,
+        "neutral": 0.8456,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek M.",
+      "role": "Analyst, Jefferies",
+      "tone": "inquisitive",
+      "key_topics": [
+        "Nielsen panel changes",
+        "market share",
+        "build vs buy strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vivek M. from Jefferies raised questions about the changes in Nielsen's market share panel and its implications, as well as the company's strategic approach to growth through building versus buying. He sought clarification on how these changes might affect the company's market share reporting and strategic decisions. Vivek's tone was inquisitive, aiming to understand the broader strategic implications of these factors.",
+      "sentiment_score": 0.0118,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0118,
+        "positive": 0.0512,
+        "negative": 0.0393,
+        "neutral": 0.9095,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted to capture the essence of their contributions, focusing on specific language and numbers that are relevant for financial analysis. The tone of each speaker is assessed based on their language and the context of their statements. For management speakers, particular attention is paid to how they respond to analyst questions, noting whether they provide direct answers or deflect. Each speaker's narrative summary encapsulates their main points and the overall stance they conveyed during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.0333,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9581,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9581,
+        "positive": 0.0125,
+        "negative": 0.9705,
+        "neutral": 0.017,
+        "chunks_scored": 1
+      },
+      "text": "During Q1FY’26, Maruti Suzuki India reported net sales of Rs.366.2 billion, an increase from Rs.338.7 billion in the same period the previous year. The net profit for the quarter was Rs.37.1 billion compared to Rs.36.5 billion in Q1FY’25. Sequentially, the overall sales volume declined by 12.7%, but net sales declined at a slower pace by 5.7% due to a favorable mix. The operating profit margin, EBIT, decreased to 8.3% of net sales from 8.7% in Q4FY’25, influenced by adverse factors such as unfavorable operating leverage by 60 basis points, steel commodity costs by 40 basis points, and higher employee costs by 50 basis points. These were partially offset by a favorable mix and lower advertisement expenses."
+    },
+    "forward_guidance": {
+      "score": 0.8848,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8848,
+        "positive": 0.8935,
+        "negative": 0.0087,
+        "neutral": 0.0978,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism for the upcoming quarters, particularly with the festive season approaching, which they hope will be better than the current financial year. They are confident about the guidance of 2% to 3% industry growth and expect to outperform. The company plans to launch two SUVs this financial year, one of which is electric, reflecting a strategic focus on the growing SUV market, which now constitutes 55% of the market. The CAPEX outlook for the fiscal year is close to 10,000 crores, with a current tracking rate of about 25% for Q1."
+    },
+    "risk_language": {
+      "score": -0.6286,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.6286,
+        "positive": 0.0891,
+        "negative": 0.7177,
+        "neutral": 0.1932,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including challenges related to rare earth materials, which affect both EVs and ICE vehicles. Management acknowledged the issue and stated that engineers are working to mitigate it. Additionally, there are concerns about regulatory pressures, competitive pressures, and the impact of CAFE norms. The company is also dealing with the overheads and depreciation from the new Kharkhoda plant, which is impacting margins. Despite these challenges, management remains proactive in addressing these risks."
+    },
+    "investor_confidence": {
+      "score": 0.9049,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9049,
+        "positive": 0.9149,
+        "negative": 0.0101,
+        "neutral": 0.075,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial results and strategic plans. They acknowledged the challenges but also highlighted their efforts to mitigate risks and capitalize on market opportunities. The discussion on exports, which grew by 37.4%, and the strategic focus on SUVs and EVs, demonstrated management's confidence in their growth strategy. The tone was generally positive, with a focus on long-term growth and market leadership."
+    }
+  },
+  "key_positive_drivers": [
+    "Net sales increase to Rs.366.2 billion",
+    "Favorable sales mix",
+    "Strong export growth of 37.4%",
+    "Upcoming SUV launches",
+    "Optimism for festive season demand",
+    "Efficient treasury operations"
+  ],
+  "key_negative_drivers": [
+    "Decline in operating profit margin",
+    "Challenges with rare earth materials",
+    "Higher employee costs",
+    "Impact of new plant overheads",
+    "Regulatory and competitive pressures",
+    "Sluggish domestic demand"
+  ],
+  "notable_phrases": [
+    "Net sales of Rs.366.2 billion",
+    "Operating profit margin, EBIT, has come down to 8.3%",
+    "SUVs are about 55% of the market today",
+    "Robust 37.4% growth in exports",
+    "Managing the situation if and when there is an impact",
+    "CAPEX outlook of about close to 10,000 crores",
+    "Optimism towards the festive season",
+    "We are managing the situation"
+  ],
+  "chain_of_thought": "The financial performance showed growth in net sales and profit, but a decline in operating margins due to various adverse factors. Forward guidance was optimistic, with expectations of industry growth and strategic SUV launches. Risks were acknowledged, particularly around rare earth materials and regulatory pressures, but management is actively addressing them. Investor confidence was bolstered by management's transparency and strategic focus on growth areas like exports and SUVs."
+}

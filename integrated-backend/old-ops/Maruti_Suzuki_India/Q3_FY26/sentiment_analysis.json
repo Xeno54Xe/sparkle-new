@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": -0.034,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9292,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9292,
+        "positive": 0.0252,
+        "negative": 0.9545,
+        "neutral": 0.0203,
+        "chunks_scored": 1
+      },
+      "text": "During quarter 3 of the financial year '26, Maruti Suzuki registered its highest-ever quarterly Net Sales of about INR 475 billion, up from about INR 368 billion in the same period of the previous year. The Net Profit for the quarter stood at about INR 38 billion compared to about INR 36.5 billion in quarter 3 of the previous year. Sequentially, the overall sales volume grew by 21.2%, and the net sales grew by 18.4%. However, the operating profit margin, EBIT, reduced to 8.1% of net sales, compared to 8.4% in quarter 2 of financial year '26. Several unfavourable factors impacted margins, including adverse commodity prices of about 60 basis points, adverse impact due to Rare Earth Element supply issues of about 20 basis points, and a one-time provision on account of the New Labour Codes leading to higher employee costs of about 125 basis points. These were partially offset by favourable operating leverage of about 190 basis points and a favourable product mix of about 120 basis points."
+    },
+    "forward_guidance": {
+      "score": 0.894,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.894,
+        "positive": 0.9086,
+        "negative": 0.0146,
+        "neutral": 0.0768,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism about future capacity expansions, with the second plant at Kharkhoda expected to be operational by April '26, and a fourth line at the Gujarat facility soon after. Each plant will have a capacity of 250,000 vehicles annually. The company is also planning a second greenfield manufacturing facility in Gujarat. While management did not provide specific forward-looking financial guidance, they noted a healthy order book of around 175,000 vehicles and a low network inventory of just about 3 to 4 days. They mentioned that the demand is robust across all segments, and they are working to meet this demand. However, they acknowledged the need to assess the sustainable level of demand after the current euphoria subsides."
+    },
+    "risk_language": {
+      "score": -0.9106,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9106,
+        "positive": 0.0266,
+        "negative": 0.9372,
+        "neutral": 0.0362,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including adverse commodity prices, rare earth element supply issues, and unfavourable foreign exchange movements. They noted a 60 basis point impact from commodity prices and a 20 basis point impact from rare earth supply issues. Additionally, there was a 15 basis point impact from unfavourable foreign exchange movements. The company also faced a one-time provision on account of the New Labour Codes, leading to higher employee costs of about 125 basis points. Management was forthright about these challenges, acknowledging the headwinds and the need for careful assessment of future demand sustainability."
+    },
+    "investor_confidence": {
+      "score": 0.7936,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7936,
+        "positive": 0.8058,
+        "negative": 0.0122,
+        "neutral": 0.1819,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial results and future plans. They were open about the challenges faced, such as commodity price pressures and supply issues, and discussed mitigation strategies. The announcement of capacity expansions and a robust order book were positive signals. However, they refrained from giving specific forward-looking financial guidance, instead providing factors for analysts to consider in their models. Overall, management demonstrated credibility and a commitment to meeting market demand."
+    }
+  },
+  "key_positive_drivers": [
+    "Highest-ever quarterly Net Sales",
+    "Robust sales volume growth",
+    "Favourable operating leverage",
+    "Capacity expansion plans",
+    "Healthy order book",
+    "Low network inventory"
+  ],
+  "key_negative_drivers": [
+    "Adverse commodity prices",
+    "Rare Earth Element supply issues",
+    "Unfavourable foreign exchange movements",
+    "One-time provision on New Labour Codes",
+    "Reduced operating profit margin"
+  ],
+  "notable_phrases": [
+    "highest-ever quarterly Net Sales",
+    "operating profit margin reduced to 8.1%",
+    "adverse commodity prices of about 60 basis points",
+    "healthy order book of around 175,000 vehicles",
+    "demand is robust across all segments",
+    "capacity expansion plans",
+    "favourable operating leverage of about 190 basis points",
+    "one-time provision on account of the New Labour Codes"
+  ],
+  "chain_of_thought": "The financial performance showed strong sales growth but was tempered by margin pressures from commodity prices and other costs. Forward guidance was optimistic with capacity expansions but cautious about demand sustainability. Risks were acknowledged openly, with management addressing commodity and supply challenges. Investor confidence was supported by transparency and detailed explanations, though specific forward guidance was not provided."
+}

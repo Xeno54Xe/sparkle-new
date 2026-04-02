@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.9266,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.945,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.945,
+        "positive": 0.961,
+        "negative": 0.0161,
+        "neutral": 0.0229,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q4 FY25 was marked by a net profit of ₹70,901 crores, up 16.08% YoY, demonstrating the bank's ability to operate profitably at scale. The domestic advances grew by 11.56% YoY, with significant growth in SME at 16.86%, agriculture at 14.29%, and retail personal segments at 11.4%. The asset quality remained strong with a slippage ratio of 0.55% and a credit cost of 0.38%. The net NPA ratio improved by 10 bps YoY, and the PCR was at 74.42%. The bank's capital adequacy ratio stood at 14.25%, with a CET 1 ratio of 10.81%, well above regulatory requirements. Despite a competitive market environment, the bank's total deposits grew by 9.48% YoY to ₹53.82 trillion, with term deposits growing by 11.48% YoY."
+    },
+    "forward_guidance": {
+      "score": 0.9329,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9329,
+        "positive": 0.9455,
+        "negative": 0.0126,
+        "neutral": 0.0419,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook for the future, with a focus on maintaining a RoE over 15% through business cycles. They highlighted the potential for raising equity capital up to ₹25,000 crores, contingent upon business needs and market conditions. The bank aims to reduce its cost-to-income ratio by increasing income and leveraging digital banking advancements. While no specific guidance was given on treasury operations, management expressed confidence in the bank's ability to sustain growth, supported by a strong pipeline and strategic initiatives. The bank's focus remains on strengthening its liability franchise and improving underwriting standards."
+    },
+    "risk_language": {
+      "score": 0.9015,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9015,
+        "positive": 0.9185,
+        "negative": 0.017,
+        "neutral": 0.0645,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including global economic uncertainties and trade tensions that could impact India's growth. Management acknowledged the dampening global economic outlook and its potential effects on external demand. They also discussed the impact of unanticipated prepayments and the need to manage costs proactively. Despite these challenges, the bank's asset quality remained robust, with a well-provided NPA book and a strong capital position. Management was forthright about the challenges but emphasized their strategic focus on maintaining financial resilience."
+    },
+    "investor_confidence": {
+      "score": 0.9149,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9149,
+        "positive": 0.9278,
+        "negative": 0.0129,
+        "neutral": 0.0594,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial results. They emphasized the bank's long-term strengths and commitment to delivering sustainable value to stakeholders. The call highlighted the bank's strategic initiatives and operational achievements, reinforcing management's credibility. While some areas for improvement were acknowledged, the overall tone was one of confidence in the bank's ability to navigate challenges and capitalize on growth opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "Net profit up 16.08% YoY",
+    "Strong domestic advances growth",
+    "Improved asset quality metrics",
+    "Robust capital adequacy ratio",
+    "Significant growth in SME and agriculture segments"
+  ],
+  "key_negative_drivers": [
+    "Global economic uncertainties",
+    "Impact of unanticipated prepayments",
+    "Competitive market environment",
+    "Potential external demand impact"
+  ],
+  "notable_phrases": [
+    "Net profit for the year was ₹70,901 crores, up 16.08% YoY",
+    "Domestic advances have grown by 11.56% YoY",
+    "Asset quality of the Bank has continued to remain strong",
+    "We have sufficient headroom to take care of business growth requirements",
+    "Focus on increasing income while reducing cost-to-income ratio",
+    "Potential to raise equity capital up to ₹25,000 crores",
+    "Dampening global economic outlook could impact India's growth",
+    "Commitment to delivering sustainable value to stakeholders"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant profit growth and robust asset quality. Forward guidance was cautiously optimistic, focusing on strategic growth and capital management. Risks were acknowledged, particularly global economic uncertainties, but management emphasized resilience. Investor confidence was reinforced through transparency and strategic clarity, projecting a cautiously bullish outlook."
+}

@@ -1,0 +1,155 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference logistics",
+        "Introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions and introducing the speakers. The tone was neutral, focusing on logistics and ensuring the call proceeded smoothly. There were no questions directed at the moderator, and their role was primarily to manage the flow of the call.",
+      "sentiment_score": 0.0506,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0506,
+        "positive": 0.0642,
+        "negative": 0.0136,
+        "neutral": 0.9222,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Mahindroo",
+      "role": "Financial Controller & Head of Investor Relations",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Mahindroo opened the earnings call, introducing the key speakers and setting the stage for the presentation. He emphasized the nature of forward-looking statements, ensuring compliance with regulatory requirements. His tone was neutral, focusing on procedural aspects and transitioning the call to the CEO.",
+      "sentiment_score": 0.0235,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0235,
+        "positive": 0.0404,
+        "negative": 0.0169,
+        "neutral": 0.9428,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Salil Parekh",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "Confident",
+      "key_topics": [
+        "Revenue growth",
+        "Large deals",
+        "Enterprise AI",
+        "Guidance"
+      ],
+      "direct_answers": [
+        "Ritu Singh",
+        "Haripriya Suresh",
+        "Beena Parmar"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Salil Parekh presented a confident outlook, highlighting strong revenue growth and significant large deals. He emphasized Infosys' leadership in enterprise AI and the company's strategic positioning. Parekh directly addressed questions about guidance and market conditions, maintaining a positive tone about future prospects. His responses were clear and detailed, reflecting confidence in the company's trajectory.",
+      "sentiment_score": 0.9283,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9283,
+        "positive": 0.9401,
+        "negative": 0.0118,
+        "neutral": 0.0481,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayesh Sanghrajka",
+      "role": "Chief Financial Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Guidance",
+        "Macroeconomic environment",
+        "Margins"
+      ],
+      "direct_answers": [
+        "Ankur Rudra",
+        "Ritu Singh",
+        "Haripriya Suresh"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jayesh Sanghrajka provided a cautious outlook, acknowledging the strong quarterly performance but highlighting ongoing macroeconomic uncertainties. He explained the rationale behind the revised guidance, emphasizing both the positive deal wins and the persistent challenges such as tariffs and geopolitical issues. Sanghrajka's tone was measured, reflecting a balanced view of optimism tempered by external risks.",
+      "sentiment_score": 0.9004,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9004,
+        "positive": 0.9309,
+        "negative": 0.0305,
+        "neutral": 0.0386,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rishi Basu",
+      "role": "Associate Vice President and Global Head - Corporate Communications",
+      "tone": "Neutral",
+      "key_topics": [
+        "Media interaction",
+        "Conference facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rishi Basu managed the media interaction segment of the call, ensuring a structured and orderly process. His role was to facilitate the transition between speakers and maintain the flow of the conference. The tone was neutral, focusing on logistics and ensuring all media representatives had the opportunity to participate.",
+      "sentiment_score": 0.0878,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0878,
+        "positive": 0.1007,
+        "negative": 0.0129,
+        "neutral": 0.8864,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. The moderator and Rishi Basu facilitated the call, maintaining a neutral tone. Sandeep Mahindroo introduced the call and highlighted forward-looking statements. Salil Parekh, the CEO, delivered a confident message about the company's strong performance and strategic initiatives, directly answering questions about growth and guidance. Jayesh Sanghrajka, the CFO, provided a cautious perspective, acknowledging uncertainties while explaining the guidance adjustments. Each speaker's key statements were extracted to form a comprehensive understanding of their contributions and tone during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

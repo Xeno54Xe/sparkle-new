@@ -1,0 +1,139 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mr. C S Setty",
+      "role": "Chairman, State Bank of India",
+      "tone": "confident",
+      "key_topics": [
+        "FY25 performance",
+        "strategic initiatives",
+        "global and domestic economic scenario",
+        "credit growth",
+        "asset quality",
+        "capital adequacy",
+        "digital banking",
+        "subsidiaries performance",
+        "RoA and RoE",
+        "equity capital raising"
+      ],
+      "direct_answers": [
+        "Let me first answer the wage cost. I think Q4 we take a lot of provisions. The PLI and many things which are added to the staff expense are not in the earlier quarters. It will appear only in the fourth quarter.",
+        "Our transfer to NARCL was never guided by, you know, what is happening on the provisions."
+      ],
+      "dodged_or_vague": [
+        "Nitin, you know our stance, we don't comment on the individual accounts. So, I refrain in terms of the impact, but I can tell you that we are studying the order."
+      ],
+      "summary": "Mr. C S Setty, the Chairman of SBI, presented a confident overview of the bank's FY25 performance, emphasizing continuity, consistency, and profitability. He highlighted the bank's strong credit growth, asset quality, and capital adequacy, noting a net profit increase of 16.08% YoY. Setty discussed the strategic initiatives undertaken, including digital banking advancements and the performance of subsidiaries. He addressed questions on wage costs and NARCL transfers directly, while avoiding specifics on individual accounts. Overall, Setty projected a positive outlook for SBI, supported by robust financial metrics and strategic planning.",
+      "sentiment_score": 0.8944,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8944,
+        "positive": 0.9033,
+        "negative": 0.0088,
+        "neutral": 0.0879,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Ashwini Kumar Tewari",
+      "role": "Managing Director (Corporate Banking & Subsidiaries), State Bank of India",
+      "tone": "neutral",
+      "key_topics": [
+        "corporate book",
+        "prepayments",
+        "disbursements",
+        "pipeline"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Ashwini Kumar Tewari, Managing Director of Corporate Banking & Subsidiaries, provided insights into the corporate banking segment, explaining the impact of large prepayments by central PSUs on the corporate book. He noted that despite these prepayments, the growth rate was strong until Q3, and he expects consistent growth moving forward due to a robust pipeline. Tewari's tone was neutral, focusing on factual explanations without delving into speculative or forward-looking statements. His contribution was primarily informative, aligning with the overall strategic narrative presented by the Chairman.",
+      "sentiment_score": 0.5475,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5475,
+        "positive": 0.6269,
+        "negative": 0.0794,
+        "neutral": 0.2937,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Pawan Kumar",
+      "role": "General Manager (Performance, Planning and Review), State Bank of India",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Pawan Kumar, General Manager of Performance, Planning, and Review, played a facilitative role during the earnings call. He welcomed participants and set the stage for the Q&A session, ensuring a structured and organized interaction. His tone was neutral, focusing on logistics and procedural aspects rather than substantive financial content. Kumar's contribution was essential for maintaining the flow of the meeting, allowing management and analysts to engage effectively.",
+      "sentiment_score": 0.1029,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1029,
+        "positive": 0.1151,
+        "negative": 0.0122,
+        "neutral": 0.8726,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Ashok Ajmera",
+      "role": "Chairman, Ajcon Global",
+      "tone": "optimistic",
+      "key_topics": [
+        "operating profit",
+        "credit growth",
+        "net profit",
+        "segment results"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Ashok Ajmera, Chairman of Ajcon Global, expressed optimism and congratulated SBI on achieving significant operating profit figures. He acknowledged the bank's growth despite challenges in deposits and credit. Ajmera raised questions about credit growth targets, net profit perceptions, and segment result variations, seeking clarity on these issues. His tone was supportive and positive, reflecting confidence in SBI's performance and strategic direction.",
+      "sentiment_score": 0.9106,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9106,
+        "positive": 0.9201,
+        "negative": 0.0095,
+        "neutral": 0.0705,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies key speakers from the SBI earnings call, including management and analysts. Each speaker's key statements are extracted, focusing on specific language and numbers for financial analysis. The tone of each speaker is assessed, with management providing confident and neutral responses, while analysts express optimism and seek clarity. Management's direct answers and deflections are noted, highlighting their engagement with analyst questions. The narrative summaries capture each speaker's contribution, stance, and key messages, providing a comprehensive overview of the call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

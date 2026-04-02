@@ -1,0 +1,133 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ayush Agarwal",
+      "role": "Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "Earnings Call Introduction",
+        "Financial Results Discussion"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ayush Agarwal opened the earnings call by welcoming participants and introducing the key management team present. He provided a brief overview of the agenda, focusing on the financial results for Q2 FY25-26. His tone was neutral, and he did not engage in any Q&A, serving primarily as a facilitator for the call.",
+      "sentiment_score": 0.0422,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0422,
+        "positive": 0.0551,
+        "negative": 0.0129,
+        "neutral": 0.932,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Varun Berry",
+      "role": "Executive Vice Chairman, Managing Director & CEO",
+      "tone": "confident",
+      "key_topics": [
+        "Business Overview",
+        "GST Impact",
+        "Market Share",
+        "Commodity Prices",
+        "Strategic Priorities",
+        "Financial Results"
+      ],
+      "direct_answers": [
+        "Market share gains due to GST compliance",
+        "Impact of GST on business",
+        "Role transition with new CEO"
+      ],
+      "dodged_or_vague": [
+        "Specific impact of modern trade competition"
+      ],
+      "summary": "Varun Berry provided a comprehensive overview of Britannia's performance, highlighting a 4.1% growth in top-line and 23.1% in bottom-line. He discussed the temporary impact of GST rate changes and expressed confidence in future growth driven by volume-led strategies. Berry addressed market share dynamics, noting competition from regional players but maintained a confident tone about Britannia's strategic positioning. He directly answered questions about market share gains and the role transition with the incoming CEO, while being somewhat vague about the impact of modern trade competition.",
+      "sentiment_score": 0.5623,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5623,
+        "positive": 0.7203,
+        "negative": 0.1581,
+        "neutral": 0.1216,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Abneesh Roy",
+      "role": "Analyst, Nuvama Capital",
+      "tone": "inquisitive",
+      "key_topics": [
+        "Market Share",
+        "GST Impact",
+        "CEO Transition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abneesh Roy posed several probing questions to Varun Berry, focusing on the drivers of Britannia's anticipated top-line growth, specifically the impact of GST compliance and product strategies like the Tiger relaunch. He also inquired about the competitive landscape in modern trade and sought clarity on the transition of roles with the incoming CEO. Roy's questions were detailed and aimed at understanding the strategic direction and competitive positioning of Britannia.",
+      "sentiment_score": 0.1737,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1737,
+        "positive": 0.1878,
+        "negative": 0.0141,
+        "neutral": 0.7981,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Avi Mehta",
+      "role": "Analyst, Macquarie Capital",
+      "tone": "inquisitive",
+      "key_topics": [
+        "Demand Environment",
+        "GST Impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Avi Mehta asked about the underlying demand environment and the impact of GST on Britannia's operations. His questions were aimed at understanding the timeline for normalization post-GST changes and the broader demand trends affecting the company.",
+      "sentiment_score": 0.0129,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0129,
+        "positive": 0.0421,
+        "negative": 0.0292,
+        "neutral": 0.9287,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies key speakers from the earnings call, focusing on their roles and contributions. Varun Berry, as the CEO, provided detailed insights into the company's performance and strategic direction, addressing questions with confidence. Analysts like Abneesh Roy and Avi Mehta asked probing questions to understand the impact of GST and competitive strategies. The JSON captures the essence of each speaker's contribution, tone, and interaction during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

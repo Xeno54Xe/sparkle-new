@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the UltraTech Cement Q2 FY '26 earnings call, ensuring smooth logistics and managing the question and answer session. They maintained a neutral tone throughout, focusing on providing instructions and transitioning between speakers. The moderator's role was crucial in maintaining the structure and flow of the call.",
+      "sentiment_score": 0.0215,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0215,
+        "positive": 0.0396,
+        "negative": 0.0181,
+        "neutral": 0.9423,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Atul Daga",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "demand",
+        "pricing",
+        "expansion plans",
+        "cost management",
+        "brand transition"
+      ],
+      "direct_answers": [
+        "No, there is nothing like that, but prices will go up if there is pressure on cost, if there is a huge amount of demand or if there's a shortage of material, then prices go up.",
+        "So I would say quarter-on-quarter, Central was the most impacted.",
+        "So, maintenance will come down. At least ballpark INR100 will come down."
+      ],
+      "dodged_or_vague": [
+        "I don't have a number immediately, Prateek, take it offline. I don't want to give an ad hoc answer. We can discuss on Monday."
+      ],
+      "summary": "Atul Daga, the CFO of UltraTech Cement, presented a confident overview of the company's performance and strategic direction. He highlighted significant growth in sales volumes and brand strength, attributing success to strategic expansions and brand transitions. Daga was optimistic about future growth, citing ongoing expansion plans and cost management strategies. He directly addressed questions about pricing and regional impacts but deflected when specific future projections were requested, indicating a preference for offline discussions for detailed figures.",
+      "sentiment_score": 0.7324,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7324,
+        "positive": 0.7413,
+        "negative": 0.0089,
+        "neutral": 0.2498,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pathanjali Srinivasan",
+      "role": "Analyst from Sundaram Mutual Fund",
+      "tone": "optimistic",
+      "key_topics": [
+        "pricing actions",
+        "regional impacts",
+        "margin profiles"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pathanjali Srinivasan, an analyst from Sundaram Mutual Fund, expressed optimism and confidence in UltraTech Cement's performance and transparency. He inquired about pricing actions post-GST, regional impacts on pricing, and margin profiles between regular and premium cement. His questions were aimed at understanding the strategic pricing and market positioning of UltraTech Cement, reflecting a positive outlook on the company's future prospects.",
+      "sentiment_score": -0.0659,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0659,
+        "positive": 0.1046,
+        "negative": 0.1705,
+        "neutral": 0.7249,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Indrajit Agarwal",
+      "role": "Analyst from CLSA",
+      "tone": "inquisitive",
+      "key_topics": [
+        "capex efficiency",
+        "industry demand"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Indrajit Agarwal from CLSA posed insightful questions regarding UltraTech Cement's capex efficiency and the broader industry demand outlook. He acknowledged the company's cost-saving measures and sought to understand their impact on pricing strategies in the medium term. Agarwal's inquiries were focused on gauging the sustainability of growth and the competitive landscape, reflecting a keen interest in the company's strategic positioning.",
+      "sentiment_score": 0.2131,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2131,
+        "positive": 0.2253,
+        "negative": 0.0122,
+        "neutral": 0.7626,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. The moderator's role is primarily logistical, ensuring the call runs smoothly. Atul Daga, as CFO, provides detailed insights into the company's performance, growth strategies, and cost management, displaying confidence in UltraTech's future. Analysts like Pathanjali Srinivasan and Indrajit Agarwal ask targeted questions to understand pricing strategies and industry demand, reflecting their interest in the company's strategic direction and market positioning. Each speaker's tone and key topics are assessed to provide a comprehensive understanding of their contributions to the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

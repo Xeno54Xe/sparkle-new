@@ -1,0 +1,156 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Vikas Jadhav",
+      "role": "Head, Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "Earnings call introduction",
+        "Forward-looking statements"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vikas Jadhav opened the earnings call by introducing the key management team and setting the agenda for the session. He highlighted the possibility of forward-looking statements and the inherent risks and uncertainties associated with them. His tone was neutral, focusing on procedural aspects of the call.",
+      "sentiment_score": -0.0044,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0044,
+        "positive": 0.0337,
+        "negative": 0.038,
+        "neutral": 0.9283,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Venu Lambu",
+      "role": "Chief Executive Officer & Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "Q1 FY26 performance",
+        "Strategic initiatives",
+        "AI focus",
+        "Client engagement"
+      ],
+      "direct_answers": [
+        "Top five client bucket growth",
+        "Large deal traction"
+      ],
+      "dodged_or_vague": [
+        "Full year guidance"
+      ],
+      "summary": "Venu Lambu, in his first quarter as CEO, expressed confidence in LTIMindtree's strategic direction and performance. He highlighted significant revenue growth and strategic wins, including a major deal with a global agribusiness leader. Venu emphasized the company's pivot towards AI and the launch of the BlueVerse ecosystem. He answered questions about client growth and large deal traction directly but avoided giving full-year guidance, citing market uncertainties.",
+      "sentiment_score": 0.9385,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9385,
+        "positive": 0.9518,
+        "negative": 0.0132,
+        "neutral": 0.035,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vipul Chandra",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "Financial performance",
+        "EBIT margins",
+        "Cash flow"
+      ],
+      "direct_answers": [
+        "HLS vertical margins",
+        "SG&A expenses"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vipul Chandra provided a detailed overview of LTIMindtree's financial performance, highlighting revenue growth and improved EBIT margins. He discussed the increase in profit after tax and the effective tax rate. Vipul confidently addressed questions regarding specific vertical margins and SG&A expenses, providing clear financial insights.",
+      "sentiment_score": -0.2737,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.2737,
+        "positive": 0.3531,
+        "negative": 0.6268,
+        "neutral": 0.0201,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nachiket Deshpande",
+      "role": "President, Global AI Services, Strategic Deals & Partnerships",
+      "tone": "optimistic",
+      "key_topics": [
+        "Large deals",
+        "Strategic partnerships"
+      ],
+      "direct_answers": [
+        "Large deal pipeline"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Nachiket Deshpande expressed optimism about the momentum in large deals and strategic partnerships. He highlighted the increased activity and structured approach in handling large deals, which has improved the company's win rate. Nachiket directly addressed questions about the large deal pipeline, reinforcing the company's strategic focus on expanding its market presence.",
+      "sentiment_score": 0.7079,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7079,
+        "positive": 0.7191,
+        "negative": 0.0111,
+        "neutral": 0.2698,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "Call facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring a smooth transition between speakers and managing the Q&A session. The tone was neutral, focusing on procedural aspects and ensuring participants were aware of the call's structure and recording.",
+      "sentiment_score": 0.0083,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0083,
+        "positive": 0.0291,
+        "negative": 0.0208,
+        "neutral": 0.9501,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting key statements from the transcript. The tone was assessed based on the language and context of their statements. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or evasions. A narrative summary was crafted for each speaker, capturing their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

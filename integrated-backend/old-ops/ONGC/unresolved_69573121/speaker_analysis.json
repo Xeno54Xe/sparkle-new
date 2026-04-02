@@ -1,0 +1,131 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Prakash Joshi",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "welcome",
+        "introduction",
+        "event logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Prakash Joshi served as the moderator for the ONGC Investors’ and Analysts’ Meet, providing a formal welcome to attendees and introducing the event. He outlined the purpose of the meeting, which was held after the adoption of accounts for nine months due to recent significant developments. Joshi introduced key figures from ONGC and its subsidiaries, setting the stage for the presentations and discussions to follow. His tone was neutral and focused on logistics and introductions.",
+      "sentiment_score": 0.0908,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0908,
+        "positive": 0.1063,
+        "negative": 0.0155,
+        "neutral": 0.8782,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Tongaonkar",
+      "role": "Director (Finance)",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "production trends",
+        "dividends",
+        "renewable energy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vivek Tongaonkar, Director (Finance), delivered a confident address focusing on ONGC's financial results and strategic initiatives. He highlighted the reversal of declining production trends in crude oil and natural gas, attributing this to a focused approach and strategic investments. Tongaonkar emphasized ONGC's commitment to renewable energy and the removal of SAED, which is expected to enhance the company's financial capabilities. He also shared accolades received by ONGC for financial reporting, reinforcing the company's commitment to transparency and excellence.",
+      "sentiment_score": 0.6299,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6299,
+        "positive": 0.7725,
+        "negative": 0.1426,
+        "neutral": 0.0848,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Arun Kumar Singh",
+      "role": "Chairman and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "OPaL",
+        "strategic initiatives",
+        "production enhancement"
+      ],
+      "direct_answers": [
+        "Probal Sen"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Arun Kumar Singh, Chairman and CEO of ONGC, addressed questions regarding OPaL, emphasizing its strategic importance as a forward integration for ONGC. He confidently explained the role of OPaL in ONGC's broader strategy, highlighting the integration of gas and naphtha as key inputs. Singh's responses were direct and aimed at clarifying the strategic initiatives related to OPaL, showcasing his confidence in the company's direction and integration efforts.",
+      "sentiment_score": 0.0475,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0475,
+        "positive": 0.0632,
+        "negative": 0.0156,
+        "neutral": 0.9212,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pankaj Kumar",
+      "role": "Director (Production)",
+      "tone": "cautious",
+      "key_topics": [
+        "production updates",
+        "KG 98/2",
+        "new well gas"
+      ],
+      "direct_answers": [
+        "Vikash Jain"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Pankaj Kumar, Director (Production), provided cautious insights into ONGC's production updates, particularly regarding the KG 98/2 field and new well gas. He clarified the process of defining and identifying new gas, explaining the ongoing drilling activities and servicing of existing wells. Kumar's responses were detailed and aimed at providing clarity on production metrics, reflecting a cautious yet informative tone in addressing analyst queries.",
+      "sentiment_score": 0.0267,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0267,
+        "positive": 0.0683,
+        "negative": 0.0417,
+        "neutral": 0.89,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted verbatim to capture specific language and forward-looking statements. Each speaker's tone is assessed based on their statements and interactions. For management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, highlighting their contributions and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

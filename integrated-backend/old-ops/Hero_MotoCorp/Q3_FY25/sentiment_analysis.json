@@ -1,0 +1,84 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5353,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9407,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9407,
+        "positive": 0.9543,
+        "negative": 0.0136,
+        "neutral": 0.0321,
+        "chunks_scored": 1
+      },
+      "text": "Our quarterly results have once again displayed execution on our strategic priorities. In Q3, we gained market share in 95% of our portfolio with 125cc, EV, and GB leading the pack. Our bottom-line profits were up 12% and the YTD nine months recorded highest ever revenue and profits once again. Our EBITDA per unit remarkably has crossed now ₹10,000 per unit, driven by premiumization, mix, and judicious pricing. The company recorded quarterly revenue of ₹10,211 crores, growth of 5%. EBITDA stood at ₹1,476 crores, which is a growth of 8% and PAT at ₹1,203 crores, which is a growth of 12%. The EBITDA margins during the quarter for ICE business stood at 16%, driven by mix improvement, lower material cost, and LEAP savings."
+    },
+    "forward_guidance": {
+      "score": 0.8787,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8787,
+        "positive": 0.8861,
+        "negative": 0.0074,
+        "neutral": 0.1065,
+        "chunks_scored": 1
+      },
+      "text": "Looking at our first nine months performance and how this quarter has started, we believe in double-digit revenue growth for the year. We have a very clear strategy for 2030 called our House of Strategy, which includes 'Grow the Core', 'Win in Premium', 'Build EV Leadership', and 'Diversify Revenue Streams'. Product launches in premium, scooters, and EV will support our growth. We remain consistent in our commitment towards investing behind the premium and EV portfolio. We expect to grow ahead of the industry with the continuity of demand and recovery in the broader two-wheeler markets."
+    },
+    "risk_language": {
+      "score": -0.8914,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.8914,
+        "positive": 0.0458,
+        "negative": 0.9372,
+        "neutral": 0.0171,
+        "chunks_scored": 1
+      },
+      "text": "There was a mention of higher marketing and advertisement spends on power brands during the festive season, which led to a contraction in ICE margins by 50 basis points. Concerns were raised about delinquencies and asset quality deteriorating with some NBFCs on two-wheeler lending. However, management noted that there hasn't been a pullback on the willingness to lend, although there is a slight uptick in delinquencies. The company is also navigating the transition of the EMBU as a separate entity, which may impact how EV sales are accounted for."
+    },
+    "investor_confidence": {
+      "score": 0.8387,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8387,
+        "positive": 0.8508,
+        "negative": 0.0122,
+        "neutral": 0.137,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction in their strategic priorities and execution. Analyst questions were addressed directly, with management providing detailed responses on financial performance and strategic initiatives. The leadership transition was communicated transparently, with confidence in the new management's ability to execute the strategy. The company declared an interim dividend of ₹100 per share, signaling confidence in cash flow and financial stability. The call concluded with management expressing gratitude for investor support and confidence in future growth."
+    }
+  },
+  "key_positive_drivers": [
+    "Market share gain in 95% of portfolio",
+    "Highest ever revenue and profits YTD",
+    "EBITDA per unit crossed ₹10,000",
+    "Double-digit revenue growth guidance",
+    "Strong parts, accessories, and merchandise revenue"
+  ],
+  "key_negative_drivers": [
+    "ICE margin contraction due to festive spends",
+    "Concerns about NBFC delinquencies",
+    "Transition of EMBU as a separate entity"
+  ],
+  "notable_phrases": [
+    "execution on our strategic priorities",
+    "bottom-line profits were up 12%",
+    "EBITDA per unit remarkably has crossed now ₹10,000",
+    "double-digit revenue growth",
+    "clear strategy for 2030",
+    "no pullback on the willingness to lend",
+    "interim dividend of ₹100 per share",
+    "confidence in future growth"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant market share gains and record profits, but there were concerns about margin contraction and NBFC delinquencies. Forward guidance was optimistic with expectations of double-digit growth and a clear strategic plan. Risk language was present but management was forthright about challenges. Investor confidence was bolstered by transparent communication and strategic clarity."
+}

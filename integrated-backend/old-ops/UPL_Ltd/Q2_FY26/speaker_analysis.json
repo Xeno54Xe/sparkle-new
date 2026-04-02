@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference call procedures"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the UPL Limited Q2 FY26 earnings call, providing instructions on the call's format and procedures. They maintained a neutral tone, ensuring participants were aware of the listen-only mode and the process for asking questions. The moderator also introduced Anurag Gupta to begin the management's presentation.",
+      "sentiment_score": 0.0499,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0499,
+        "positive": 0.063,
+        "negative": 0.0131,
+        "neutral": 0.9239,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anurag Gupta",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "management team",
+        "corporate updates"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anurag Gupta, as the Head of Investor Relations, opened the call by welcoming participants and introducing the management team. He provided a neutral overview of the available financial documents and introduced Ravi Cherukuri as the new CEO for the UPL SAS platform. Gupta acknowledged the contributions of Ashish Dobhal, the former CEO of UPL SAS, highlighting the leadership transition within the company.",
+      "sentiment_score": 0.1604,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1604,
+        "positive": 0.1708,
+        "negative": 0.0103,
+        "neutral": 0.8189,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bikash Prasad",
+      "role": "Group Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "corporate updates",
+        "outlook"
+      ],
+      "direct_answers": [
+        "Ankur Periwal's question on losses from associates",
+        "Somaiah V.'s question on Brazil market share"
+      ],
+      "dodged_or_vague": [
+        "Imtiaz's question on potential liquidity event"
+      ],
+      "summary": "Bikash Prasad, the Group CFO, presented a comprehensive overview of UPL's financial performance for Q2 FY26. He expressed confidence in the company's robust execution and financial management, highlighting significant revenue growth and improved margins. Prasad provided detailed updates on corporate realignment, rights issue, and outlook upgrades, emphasizing UPL's strategic focus and operational efficiency. He directly addressed questions about losses from associates and market share in Brazil, while providing a vague response to a question about potential liquidity events.",
+      "sentiment_score": 0.9154,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9154,
+        "positive": 0.9459,
+        "negative": 0.0305,
+        "neutral": 0.0236,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Mike Frank",
+      "role": "CEO of Global Crop Protection Business",
+      "tone": "confident",
+      "key_topics": [
+        "market landscape",
+        "Q2 performance",
+        "pricing and inventory"
+      ],
+      "direct_answers": [
+        "Saurabh Jain's question on ECL in Brazil",
+        "Siddharth Gadekar's question on EBITDA guidance"
+      ],
+      "dodged_or_vague": [
+        "Tarang Agrawal's question on steady-state contribution margins"
+      ],
+      "summary": "Mike Frank, CEO of Global Crop Protection Business, provided a confident overview of the market landscape and UPL's strategic positioning. He highlighted the stabilization of the global crop protection market and UPL's competitive advantage due to fresh inventory and a broad portfolio. Frank emphasized the company's strong Q2 performance, driven by robust volumes in North and Latin America. He directly addressed questions on expected credit loss in Brazil and EBITDA guidance, while offering a less precise response to a question about steady-state contribution margins.",
+      "sentiment_score": 0.9404,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9404,
+        "positive": 0.9577,
+        "negative": 0.0173,
+        "neutral": 0.025,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "1. Identified speakers: Moderator, Anurag Gupta, Bikash Prasad, Mike Frank. 2. Extracted key statements for each speaker, focusing on financial performance, market insights, and strategic updates. 3. Assessed tone based on language and context: Moderator (neutral), Anurag Gupta (neutral), Bikash Prasad (confident), Mike Frank (confident). 4. Noted direct answers and vague responses for management speakers. 5. Constructed narrative summaries capturing each speaker's contributions and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

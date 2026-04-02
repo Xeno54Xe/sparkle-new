@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6913,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9164,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9164,
+        "positive": 0.9496,
+        "negative": 0.0333,
+        "neutral": 0.0171,
+        "chunks_scored": 1
+      },
+      "text": "Infosys reported a strong financial performance for Q1 FY26, with revenues growing 2.6% sequentially and 3.8% year-on-year in constant currency terms. The growth was broad-based across large industry groups and geographies, with Europe showing a particularly strong performance at 12.3% year-on-year growth, over three times the company average. Operating margins were resilient at 20.8%, despite a 20 basis point sequential decline due to compensation increases and higher variable pay. EPS in rupee terms grew by 8.6% and in dollar terms by 5.8% year-on-year. Free cash flow was robust at $884 million, representing 109% of net profit, marking the fifth consecutive quarter of free cash flow exceeding net profit."
+    },
+    "forward_guidance": {
+      "score": 0.932,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.932,
+        "positive": 0.9549,
+        "negative": 0.0228,
+        "neutral": 0.0223,
+        "chunks_scored": 1
+      },
+      "text": "Infosys revised its FY26 revenue guidance to 1% to 3% in constant currency terms, up from the previous 0% to 3%, reflecting a cautious optimism. The operating margin guidance remains unchanged at 20% to 22%. Management expressed confidence in a stronger H1 compared to H2 due to normal seasonality. Despite the uncertain business environment, the company expects continued strong demand for AI and consolidation services. The guidance reflects a balance between heightened uncertainty at the lower end and a stable environment at the upper end, with management prepared to reassess as the year progresses."
+    },
+    "risk_language": {
+      "score": -0.2547,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.2547,
+        "positive": 0.3151,
+        "negative": 0.5698,
+        "neutral": 0.115,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including a 'business environment [that] remains uncertain' due to unresolved tariffs and geopolitical tensions. Clients are cautious with discretionary spending, leading to delayed decision-making. The company faces headwinds from compensation increases, currency movements, and sales investments, partially offset by pricing benefits and cost reductions. The geopolitical situation and tariff issues remain unchanged, contributing to a cautious outlook. Despite these challenges, Infosys continues to focus on cost efficiency and productivity improvements through AI and automation."
+    },
+    "investor_confidence": {
+      "score": 0.9388,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9388,
+        "positive": 0.9558,
+        "negative": 0.017,
+        "neutral": 0.0271,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency during the call, addressing analyst questions directly and providing detailed explanations of financial metrics and strategic initiatives. The decision to revise the lower end of the revenue guidance upwards was based on strong Q1 performance and robust deal wins, which management believes provide better confidence. The company emphasized its leadership in enterprise AI and its role in client consolidations, highlighting its differentiated performance. Management's commitment to maintaining strong operating margins and cash flow further reinforced investor confidence."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong revenue growth in Europe",
+    "Robust free cash flow exceeding net profit",
+    "Leadership in enterprise AI",
+    "Successful client consolidations",
+    "Resilient operating margins",
+    "Strong large deal wins"
+  ],
+  "key_negative_drivers": [
+    "Uncertain business environment",
+    "Cautious client discretionary spending",
+    "Geopolitical tensions",
+    "Tariff issues",
+    "Compensation and currency headwinds",
+    "Delayed decision-making by clients"
+  ],
+  "notable_phrases": [
+    "Growth was strong and broad-based",
+    "Operating margins were at 20.8%",
+    "Business environment remains uncertain",
+    "Clients continue to be cautious",
+    "Revised our FY26 revenue guidance",
+    "Leadership in enterprise AI",
+    "Robust large deal wins",
+    "Free cash flows of $884 mn"
+  ],
+  "chain_of_thought": "Infosys demonstrated strong financial performance with broad-based growth and resilient margins despite some headwinds. The company revised its revenue guidance upwards, reflecting cautious optimism amid an uncertain environment. Management addressed risks transparently, acknowledging geopolitical and tariff challenges while emphasizing cost efficiency and AI-driven productivity. Investor confidence was bolstered by clear communication and strategic focus on AI and client consolidations, leading to a cautiously bullish overall tone."
+}

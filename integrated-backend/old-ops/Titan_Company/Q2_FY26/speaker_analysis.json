@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "C.K. Venkataraman",
+      "role": "Managing Director, Titan Company Limited",
+      "tone": "confident",
+      "key_topics": [
+        "growth",
+        "business performance",
+        "strategic levers"
+      ],
+      "direct_answers": [
+        "Yes, please."
+      ],
+      "dodged_or_vague": [],
+      "summary": "C.K. Venkataraman opened the call with a confident tone, highlighting the satisfying growth across Titan's businesses and markets in Q2 FY '26. He emphasized the strategic use of multiple levers for business growth, indicating a well-optimized approach to achieving desired outcomes. Venkataraman's responses were direct, and he maintained a positive outlook on the company's performance and strategic direction.",
+      "sentiment_score": 0.1397,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1397,
+        "positive": 0.152,
+        "negative": 0.0123,
+        "neutral": 0.8357,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ajoy Chawla",
+      "role": "CEO, Jewellery Division",
+      "tone": "cautious",
+      "key_topics": [
+        "gold prices",
+        "buyer growth",
+        "exchange offers"
+      ],
+      "direct_answers": [
+        "Good morning Manoj, Ajoy here.",
+        "I -- no, I don't have any such -- I can't confirm your hypothesis because I'm not sure if we are seeing that kind of natural movement."
+      ],
+      "dodged_or_vague": [
+        "I don't have a revenue per square foot kind of comparison from before and after. But maybe we'll get back to you on that."
+      ],
+      "summary": "Ajoy Chawla provided insights into consumer behavior amidst rising gold prices, noting a cautious optimism as consumers adjusted to higher prices. He highlighted the success of the 18-carat jewellery and powerful exchange offers as strategic moves to stimulate buyer growth. Chawla's tone was cautious, reflecting the challenges in buyer growth, but he remained optimistic about future strategies. He provided direct answers but was vague on specific metrics, indicating areas for further analysis.",
+      "sentiment_score": 0.2414,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2414,
+        "positive": 0.4024,
+        "negative": 0.1609,
+        "neutral": 0.4367,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashok Sonthalia",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "revenue growth",
+        "margin pressure",
+        "hedging"
+      ],
+      "direct_answers": [
+        "Yes. So directionally, yes, so the EBIT will keep in line with revenue."
+      ],
+      "dodged_or_vague": [
+        "Indirectly, you are asking whether revenue growth guidance we are changing. So I don't think we are -- we..."
+      ],
+      "summary": "Ashok Sonthalia addressed questions on revenue growth and margin pressures with a neutral tone, indicating that while EBIT is expected to align with revenue, margin pressures remain a concern. He provided a consistent outlook, emphasizing stability despite potential minor fluctuations. Sonthalia's responses were generally direct, though he avoided committing to specific changes in revenue growth guidance.",
+      "sentiment_score": 0.1213,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1213,
+        "positive": 0.1798,
+        "negative": 0.0585,
+        "neutral": 0.7618,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference proceedings"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring smooth proceedings and providing instructions for participants. The tone was neutral, focusing on logistical aspects of the call without engaging in the content of the discussions. The moderator's role was crucial in maintaining the structure and flow of the earnings call.",
+      "sentiment_score": 0.0123,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0123,
+        "positive": 0.0345,
+        "negative": 0.0223,
+        "neutral": 0.9432,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying each speaker and their roles. Key statements were extracted to capture the essence of their contributions, focusing on specific language and forward-looking statements. The tone of each speaker was assessed based on their language and context. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker, highlighting their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

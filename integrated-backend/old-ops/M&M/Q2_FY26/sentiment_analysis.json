@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7794,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9205,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9205,
+        "positive": 0.9508,
+        "negative": 0.0303,
+        "neutral": 0.0188,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q2 FY26 was described as 'very strong,' with a 23% year-to-date growth in revenue and a 31% year-to-date growth in profitability, excluding one-offs. The consolidated profit was up 28%, with a 22% year-over-year increase in revenue. The auto and farm sectors saw a 28% increase in profit, with tractor volumes strong at 32% and auto volumes slightly lower at 13% due to a GST transition. Mahindra Finance reported a 45% operating profit growth, and Tech Mahindra's profits were up 35%, excluding a one-off gain from a land sale. The EBITDA for Mahindra Electric was Rs.173 crores, reflecting a strong performance in the electric vehicle segment."
+    },
+    "forward_guidance": {
+      "score": 0.8942,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8942,
+        "positive": 0.9026,
+        "negative": 0.0085,
+        "neutral": 0.0889,
+        "chunks_scored": 1
+      },
+      "text": "The forward guidance was cautiously optimistic, with expectations for industry growth moving from 5%-7% to 10%-12%. Management expressed confidence in achieving a steady margin expansion and highlighted the potential for growth in the electric vehicle segment. The company plans to focus on category creation and driving electric vehicle penetration, with multiple localization actions in place. There are no immediate plans for further rights issues, but capital investments will continue as needed. The management emphasized the importance of executing growth plans and maintaining a strong order book."
+    },
+    "risk_language": {
+      "score": 0.2838,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.2838,
+        "positive": 0.4194,
+        "negative": 0.1355,
+        "neutral": 0.4451,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the impact of GST transitions on auto deliveries and geopolitical headwinds affecting the holiday club business in Finland. They acknowledged the need to manage customer expectations and comply with CAFE norms. The company is cautious about potential regulatory changes and competitive pressures, particularly in the electric vehicle market. Management also mentioned the need to monitor hedging costs due to rising precious metal prices. Overall, they were forthright about these challenges and emphasized their strategies for mitigation."
+    },
+    "investor_confidence": {
+      "score": 0.8912,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8912,
+        "positive": 0.9031,
+        "negative": 0.0119,
+        "neutral": 0.085,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial results. They emphasized the quality of numbers and the meaningful contributions from all business segments. The management team expressed confidence in their strategic direction, particularly in the electric vehicle and real estate sectors. They highlighted strong execution across businesses and maintained credibility by acknowledging both successes and areas needing improvement. The call conveyed a sense of strong leadership and commitment to delivering on growth plans."
+    }
+  },
+  "key_positive_drivers": [
+    "23% year-to-date growth in revenue",
+    "31% year-to-date growth in profitability",
+    "45% operating profit growth for Mahindra Finance",
+    "35% profit increase for Tech Mahindra",
+    "Strong electric vehicle performance",
+    "Steady margin expansion"
+  ],
+  "key_negative_drivers": [
+    "Impact of GST transition on auto deliveries",
+    "Geopolitical headwinds in Finland",
+    "Potential regulatory changes",
+    "Rising hedging costs due to precious metal prices"
+  ],
+  "notable_phrases": [
+    "very strong performance",
+    "delighted to announce results",
+    "steady margin expansion",
+    "cautiously optimistic",
+    "forthright about challenges",
+    "strong execution across businesses",
+    "meaningful contributions from all segments",
+    "commitment to delivering on growth plans"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with significant growth in revenue and profitability, driven by key sectors like finance and technology. Forward guidance was optimistic, focusing on growth in the electric vehicle market and strategic investments. Management was transparent about risks, including regulatory and geopolitical challenges, and demonstrated confidence in their strategies. Overall, the tone was cautiously bullish, reflecting confidence in future growth while acknowledging potential headwinds."
+}

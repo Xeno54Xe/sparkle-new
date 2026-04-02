@@ -1,0 +1,150 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference introduction",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring a smooth transition between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on logistical aspects of the call. The moderator's role was crucial in keeping the call organized and on schedule.",
+      "sentiment_score": 0.0195,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0195,
+        "positive": 0.0386,
+        "negative": 0.0191,
+        "neutral": 0.9424,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aniruddha Joshi",
+      "role": "ICICI Securities",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Handing over to Nidhi Verma"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aniruddha Joshi from ICICI Securities opened the conference call, welcoming participants and introducing the session. He maintained a neutral tone and promptly handed over the proceedings to Nidhi Verma, ensuring a smooth start to the call.",
+      "sentiment_score": 0.2549,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2549,
+        "positive": 0.2651,
+        "negative": 0.0102,
+        "neutral": 0.7246,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nidhi Verma",
+      "role": "Head of Investor Relations and Corporate Communications",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Closing comments"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhi Verma played a key role in introducing the management team and setting the agenda for the call. She maintained a neutral tone, focusing on logistics and ensuring that the call proceeded smoothly. Her closing comments acknowledged the time constraints and invited further questions, demonstrating a commitment to transparency and engagement.",
+      "sentiment_score": 0.0759,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0759,
+        "positive": 0.0898,
+        "negative": 0.014,
+        "neutral": 0.8962,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sunil D'Souza",
+      "role": "Managing Director and CEO",
+      "tone": "Confident",
+      "key_topics": [
+        "Quarterly performance",
+        "Growth strategies",
+        "Market conditions"
+      ],
+      "direct_answers": [
+        "Mihir Shah's question on urban growth trends",
+        "Sheela Rathi's question on e-commerce and modern trade"
+      ],
+      "dodged_or_vague": [
+        "Percy's question on future EBITDA margins"
+      ],
+      "summary": "Sunil D'Souza provided a comprehensive overview of Tata Consumer Products' quarterly performance, highlighting strong top-line growth and strategic initiatives. His confident tone underscored the company's resilience in the face of market pressures, particularly in the tea segment. He directly addressed questions about urban growth trends and e-commerce strategies, but was less specific about future EBITDA margins, reflecting the uncertainties in commodity pricing.",
+      "sentiment_score": 0.7784,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7784,
+        "positive": 0.841,
+        "negative": 0.0626,
+        "neutral": 0.0965,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Goenka",
+      "role": "Group CFO",
+      "tone": "Neutral",
+      "key_topics": [
+        "Financial performance",
+        "EBITDA margins"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ashish Goenka provided a detailed analysis of the financial performance, focusing on consolidated growth and EBITDA margins. His neutral tone conveyed factual information about the impact of high tea costs on margins, while highlighting areas of strong performance, such as international and non-branded businesses. His contribution was crucial in contextualizing the financial results within the broader market dynamics.",
+      "sentiment_score": 0.9258,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9258,
+        "positive": 0.9545,
+        "negative": 0.0287,
+        "neutral": 0.0168,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis identifies each speaker's role and extracts their key statements to understand their contributions and tone. The moderator and Aniruddha Joshi facilitated the call, maintaining a neutral tone. Nidhi Verma introduced the management team and concluded the call, also in a neutral tone. Sunil D'Souza, the CEO, provided a confident overview of the company's performance and strategies, directly answering some questions while being vague on others due to market uncertainties. Ashish Goenka, the CFO, offered a neutral, detailed financial analysis, focusing on growth and margin impacts. Each speaker's narrative captures their stance and key messages, providing a comprehensive view of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6375,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.4799,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.4799,
+        "positive": 0.7291,
+        "negative": 0.2492,
+        "neutral": 0.0217,
+        "chunks_scored": 1
+      },
+      "text": "ICICI Bank reported a solid financial performance for Q2 FY26, with profit before tax excluding treasury growing by 9.1% year-on-year to 161.64 billion Rupees. The core operating profit increased by 6.5% year-on-year to 170.78 billion Rupees, while the profit after tax rose by 5.2% year-on-year to 123.59 billion Rupees. Average deposits grew by 9.1% year-on-year, and the domestic loan portfolio expanded by 10.6% year-on-year. The net interest margin was 4.30% this quarter, slightly down from 4.34% in the previous quarter. Despite a slight decline in the net interest margin, the bank maintained a strong capital position with a CET-1 ratio of 16.35%."
+    },
+    "forward_guidance": {
+      "score": 0.9277,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9277,
+        "positive": 0.9386,
+        "negative": 0.0108,
+        "neutral": 0.0506,
+        "chunks_scored": 1
+      },
+      "text": "Looking ahead, ICICI Bank expressed optimism about driving risk-calibrated profitable growth and expanding market share across key segments. Management highlighted a focus on maintaining a strong balance sheet and prudent provisioning while delivering sustainable returns. They expect margins to remain range-bound and are positive on growth, particularly in retail portfolios and business banking. The bank is gearing up its distribution and allocating resources to growth segments, indicating a cautiously bullish outlook for the future."
+    },
+    "risk_language": {
+      "score": 0.7746,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7746,
+        "positive": 0.8053,
+        "negative": 0.0307,
+        "neutral": 0.164,
+        "chunks_scored": 1
+      },
+      "text": "The earnings call addressed several risks, including statutory and regulatory changes, economic conditions, and potential increases in nonperforming loans. Management acknowledged the uncertainties that could impact future results, such as changes in interest rates and foreign exchange rates. Despite these risks, the bank maintains a strong provisioning coverage ratio and holds contingency provisions of 131.00 billion Rupees. Management was forthright about these challenges, emphasizing their focus on maintaining a strong balance sheet and prudent risk management."
+    },
+    "investor_confidence": {
+      "score": 0.3014,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.3014,
+        "positive": 0.3232,
+        "negative": 0.0218,
+        "neutral": 0.655,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed insights into financial performance and future strategies. They emphasized the bank's strong capital position and commitment to sustainable growth. The discussion on capital adequacy and growth opportunities reflected management's credibility and confidence in their strategic direction. Overall, the tone was one of cautious optimism, with a focus on leveraging capital for growth while maintaining a strong balance sheet."
+    }
+  },
+  "key_positive_drivers": [
+    "Profit before tax excluding treasury grew by 9.1%",
+    "Core operating profit increased by 6.5%",
+    "Domestic loan portfolio grew by 10.6%",
+    "Strong capital position with CET-1 ratio of 16.35%",
+    "Positive growth outlook in retail and business banking"
+  ],
+  "key_negative_drivers": [
+    "Slight decline in net interest margin",
+    "Potential regulatory and economic risks",
+    "Increase in nonperforming loans"
+  ],
+  "notable_phrases": [
+    "Margins have done better than expectations",
+    "Risk calibrated profitable growth",
+    "Maintaining a strong balance sheet",
+    "Prudent provisioning",
+    "Sustainable and predictable returns",
+    "Focus on simplicity and operational resilience",
+    "Healthy funding profile",
+    "Range-bound margins"
+  ],
+  "chain_of_thought": "ICICI Bank's financial performance was strong, with growth in profit before tax and core operating profit. The bank's forward guidance was optimistic, focusing on growth opportunities and maintaining a strong balance sheet. Management addressed risks transparently, acknowledging potential regulatory and economic challenges. Investor confidence was bolstered by management's clarity and strategic focus, resulting in a cautiously bullish overall tone."
+}

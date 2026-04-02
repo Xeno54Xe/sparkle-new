@@ -1,0 +1,399 @@
+{
+  "doc_meta": {
+    "doc_id": "bdd29451faf8",
+    "stock": "Adani Enterprises",
+    "doc_type": "ec",
+    "period": "MAY25",
+    "quarter": null,
+    "fiscal_year": "FY26",
+    "filename": "MAY25.pdf",
+    "file_path": "data/Adani Enterprises/EC/MAY25.pdf"
+  },
+  "doc_type": "ec",
+  "sections": {
+    "financial_metrics": {
+      "section": "financial_metrics",
+      "score": 95.2,
+      "label": "Strong Beat",
+      "revenue": {
+        "scope": "FY25",
+        "label": "Moderate Growth",
+        "analysis": "Adani Enterprises reported a 2% increase in income, reaching INR 1,00,365 crores for FY25 [p.2]. The incubating portfolio's income surged by 42% to INR 34,546 crores [p.2]. The wind turbines segment generated revenue of INR 1,188 crores in Q4 FY25 [p.5]."
+      },
+      "ebitda": {
+        "scope": "FY25",
+        "label": "Strong Growth",
+        "analysis": "EBITDA for FY25 increased by 26% to INR 16,722 crores [p.2]. The incubating portfolio's EBITDA rose by 68% to INR 10,025 crores [p.2]. The wind turbines segment achieved an EBITDA of INR 274 crores in Q4 FY25 [p.5]."
+      },
+      "profitability": {
+        "scope": "FY25",
+        "label": "Improved",
+        "analysis": "Profit before tax (PBT) increased by 16% to INR 6,533 crores for FY25 [p.2]. Additionally, there was a realized gain of INR 3,946 crores from a 13.5% stake sale of Adani Wilmar [p.2]. The incubating portfolio's PBT rose by 87% to INR 4,996 crores [p.2]."
+      },
+      "cash_flow": {
+        "scope": "FY25",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "capex": {
+        "scope": "FY25",
+        "label": "High Investment",
+        "analysis": "Adani Enterprises incurred a capex of just over INR 31,500 crores in FY25 and plans to increase it to over INR 36,000 crores in FY26 [p.6]. Major investments include INR 10,500 crores for airports, INR 6,200 crores for roads, and INR 5,500 crores for the green hydrogen ecosystem [p.7]."
+      },
+      "debt": {
+        "scope": "FY25",
+        "label": "Elevated",
+        "analysis": "The external debt stood at approximately INR 18,000 crores, with 70% attributed to airports and roads, and 20% to the copper business [p.5]. Interest expenses remained elevated due to forex depreciation and internal investments [p.5]."
+      },
+      "working_capital": {
+        "scope": "FY25",
+        "label": "Elevated",
+        "analysis": "Working capital for the copper segment rose by 50%, from INR 1,000 crores to INR 1,500 crores [p.6]. Overall, the working capital debt was lower compared to the previous year as of March 31, 2024 [p.6]."
+      },
+      "operational_kpis": {
+        "scope": "FY25",
+        "label": "Strong Performance",
+        "analysis": "The mining services business dispatched 43.3 MMT, a 40% increase, with revenue up 60% to INR 3,787 crores and EBITDA up 100% to INR 1,688 crores [p.3]. The integrated resource management business handled 56.5 MMT, generating an EBITDA of INR 3,585 crores [p.3]."
+      },
+      "guidance": {
+        "scope": "FY26",
+        "label": "Positive Outlook",
+        "analysis": "Adani Enterprises expects the EBITDA from airports to be closer to INR 4,500 - 5,000 crores in the coming quarters [p.5]. The company plans to report more granular details from September 30th [p.5]. The mining services business is expected to reach 60 million tons over the next 18 months [p.4]."
+      },
+      "qualitative_analysis": "Adani Enterprises' results for FY25 were in line with expectations, showing moderate revenue growth and strong EBITDA performance. The incubating portfolio significantly contributed to the overall results. The elevated debt and working capital levels are areas to monitor, but they are attributed to strategic investments in infrastructure and emerging businesses.",
+      "analyst_flags": [
+        "Elevated debt levels",
+        "High capex plans",
+        "Strong incubating portfolio performance"
+      ],
+      "sentiment_narrative": "Management expressed confidence in the company's performance, highlighting the 'great results' and 'strong execution capabilities' [p.2]. They noted the 'highest ever results' from emerging core infra businesses and emphasized the 'growth momentum' [p.2]. The CFO mentioned that the numbers are 'hugely conservative' and within expected ranges [p.4]. The company is focused on 'timely completion of projects' and 'capacity building' [p.2]. Despite elevated debt levels, management reassured that it is 'fully accounted for' and tied to strategic investments [p.5].",
+      "raw_scores": {
+        "positive_prob": 0.9406,
+        "negative_prob": 0.0161,
+        "neutral_prob": 0.0432
+      },
+      "title": "Financial Metrics"
+    },
+    "risk_intelligence": {
+      "section": "risk_intelligence",
+      "score": 95.9,
+      "label": "Well Managed",
+      "overall_risk_environment": "ELEVATED",
+      "risks": [
+        {
+          "risk_id": "R2",
+          "category": "Credit/Leverage",
+          "scope": "Year-end debt position",
+          "label": "High Risk",
+          "risk_score": 16,
+          "severity": "HIGH",
+          "analysis": "The company's working capital has been elevated, resulting in an increase in debt position at year-end [p.5]. Management explained that a significant portion of the debt is related to airports and roads, with copper accounting for another 20% [p.5]. While the capital is fully accounted for, the elevated debt levels pose a risk, especially if operational results do not meet expectations."
+        },
+        {
+          "risk_id": "R3",
+          "category": "Execution/Operational",
+          "scope": "Copper plant ramp-up",
+          "label": "Moderate Risk",
+          "risk_score": 10,
+          "severity": "MODERATE",
+          "analysis": "The ramp-up of the copper plant is causing an inventory buildup, which management expects to resolve over the next 180 days [p.5]. While management does not view this as alarming, the operational execution risk remains if the ramp-up does not proceed as planned. The company has not disclosed specific contingency plans if the ramp-up faces delays."
+        },
+        {
+          "risk_id": "R1",
+          "category": "Currency/FX",
+          "scope": "FY25 financial results",
+          "label": "Moderate Risk",
+          "risk_score": 9,
+          "severity": "MODERATE",
+          "analysis": "The company has experienced elevated interest expenses due to forex depreciation, which has impacted the profit before tax (PBT) for the quarter [p.5]. Management acknowledged the FX volatility as a factor affecting financial results, noting that it primarily impacts the profit and loss statement rather than cash flow. No specific hedging strategies were disclosed to mitigate this risk."
+        }
+      ],
+      "risks_emphasised": [
+        "Elevated working capital",
+        "Forex depreciation impact",
+        "Copper plant ramp-up"
+      ],
+      "risks_downplayed": [
+        "Debt levels related to new projects",
+        "Interest expense volatility"
+      ],
+      "undisclosed_risks": [
+        "Potential delays in copper plant ramp-up",
+        "Lack of hedging strategies for FX volatility"
+      ],
+      "risk_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Overall, the risk communication during the earnings call was moderately transparent. Management acknowledged key risks such as elevated working capital and forex volatility but did not provide detailed mitigation strategies, particularly for FX risks. The discussion on debt levels was somewhat downplayed, with management focusing on the accounting rather than the potential financial strain. The call lacked specific contingency plans for operational risks, such as the copper plant ramp-up."
+      },
+      "sentiment_narrative": "Management communicated a cautiously optimistic outlook, highlighting strong financial performance and growth in core infrastructure businesses. They acknowledged certain financial pressures, such as elevated working capital and forex impacts, but emphasized these as manageable within the broader growth strategy. The tone suggested confidence in overcoming operational challenges, particularly with the copper plant ramp-up, although specific mitigants were not detailed. Overall, the sentiment was positive, focusing on strategic growth and execution capabilities.",
+      "raw_scores": {
+        "positive_prob": 0.9511,
+        "negative_prob": 0.0177,
+        "neutral_prob": 0.0312
+      },
+      "title": "Risk Intelligence"
+    },
+    "esg": {
+      "section": "esg",
+      "score": 81.0,
+      "label": "Excellent",
+      "environmental": {
+        "available": true,
+        "score": 81.0,
+        "label": "Excellent",
+        "scope": "Green hydrogen and renewable energy initiatives",
+        "analysis": "Adani Enterprises has made significant strides in its environmental initiatives, particularly in the green hydrogen ecosystem, where EBITDA increased by 108% to INR 4,776 crores [p.3]. The company has expanded its wind turbine business capacity to 2.25 GW from 1.5 GW, and plans to produce about 450 sets over three years, including 5.2 MW turbines, which are unique in the domestic market [p.3, p.7]. Additionally, the CDP-CC upgraded AEL's rating to A- for 2024, placing it in the 'Leadership Category' for its commitment to reducing GHG emissions [p.3]. These disclosures are comprehensive, with clear metrics and third-party verification, indicating a strong commitment to environmental sustainability.",
+        "greenwashing_flags": []
+      },
+      "social": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "governance": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "disclosure_framework": "CDP",
+      "third_party_verified": true,
+      "sentiment_narrative": "Adani Enterprises has demonstrated a strong commitment to environmental sustainability, particularly through its green hydrogen and renewable energy initiatives. The company's environmental disclosures are detailed and supported by third-party verification, as evidenced by the CDP-CC's upgrade to an A- rating. However, the earnings call lacked any social or governance disclosures, which limits the overall ESG assessment. The focus on environmental metrics and targets suggests a strategic emphasis on sustainability, but the absence of social and governance information may indicate areas for improvement in comprehensive ESG reporting.",
+      "raw_scores": {
+        "positive_prob": 0.4383,
+        "negative_prob": 0.0208,
+        "neutral_prob": 0.5409
+      },
+      "title": "ESG Analysis"
+    },
+    "speaker_sentiment": {
+      "section": "speaker_sentiment",
+      "score": 95.8,
+      "label": "Very Bullish",
+      "speakers": [
+        {
+          "name": "Robbie Singh",
+          "role": "Management",
+          "company": "Adani Enterprises Limited",
+          "scope": "Financial performance",
+          "tone": "Confident",
+          "analysis": "Robbie Singh opened with confidence, highlighting a 2% increase in income to INR 1,00,365 crores and a 26% rise in EBITDA to INR 16,722 crores for FY25 [p.2]. He emphasized the company's strong execution capabilities, validated by improved credit ratings from CARE and ICRA [p.2]. Singh was assertive about the company's conservative financial estimates, particularly in response to concerns about the copper smelter's profitability [p.4]. He also noted that all airports have achieved EBITDA break-even, reinforcing the company's robust financial health [p.5].",
+          "score": 96.1,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.9548,
+            "negative_prob": 0.0225,
+            "neutral_prob": 0.0227
+          }
+        },
+        {
+          "name": "Mohit Kumar",
+          "role": "Analyst",
+          "company": "ICICI Securities",
+          "scope": "General inquiries",
+          "tone": "Neutral",
+          "analysis": "Mohit Kumar asked about the impact of the Adani Wilmar sale on taxes, which Robbie Singh confirmed would result in a tax increase of roughly INR 650 crores [p.3]. Kumar also inquired about the solar cell and module line expansion, to which Singh responded that the line should be ready by FY26 end to FY27 [p.3]. Kumar's questions were straightforward, seeking clarification on financial impacts and future plans.",
+          "score": 53.6,
+          "label": "Neutral",
+          "raw_scores": {
+            "positive_prob": 0.1478,
+            "negative_prob": 0.0261,
+            "neutral_prob": 0.8261
+          }
+        },
+        {
+          "name": "Nirav Shah",
+          "role": "Analyst",
+          "company": "GeeCee Holdings",
+          "scope": "Copper smelter and airport business",
+          "tone": "Neutral",
+          "analysis": "Nirav Shah congratulated the management on their performance and asked about the copper smelter's ramp-up and segmental reporting [p.4]. Singh assured that segmental results would be reported by Q4 and that the ramp-up was on track [p.4]. Shah also probed into the airport business's EBITDA distribution, to which Singh provided detailed insights, noting that all airports have achieved EBITDA break-even [p.5].",
+          "score": 91.9,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.8925,
+            "negative_prob": 0.0141,
+            "neutral_prob": 0.0935
+          }
+        },
+        {
+          "name": "Prateek Kumar",
+          "role": "Analyst",
+          "company": "Jefferies",
+          "scope": "Mining and airport business",
+          "tone": "Neutral",
+          "analysis": "Prateek Kumar sought guidance on mining volumes and the airport business's sequential EBITDA decline [p.6, p.8]. Singh explained that the mining volumes were expected to remain flat and attributed the airport EBITDA decline to the non-aero business's seasonal nature [p.6, p.8]. Kumar's questions were focused on understanding operational metrics and their implications.",
+          "score": 6.8,
+          "label": "Very Bearish",
+          "raw_scores": {
+            "positive_prob": 0.0148,
+            "negative_prob": 0.9121,
+            "neutral_prob": 0.0731
+          }
+        }
+      ],
+      "management_tone_summary": "The management, led by Robbie Singh, communicated with a confident tone, emphasizing strong financial performance and strategic execution. Singh consistently highlighted the company's conservative financial planning and robust operational achievements.",
+      "analyst_pressure_points": [
+        "Copper smelter ramp-up",
+        "Airport business profitability",
+        "Impact of Adani Wilmar sale",
+        "Solar cell and module expansion"
+      ],
+      "notable_exchanges": [
+        "Nirav Shah's inquiry about the copper smelter's profitability was met with Singh's assurance of conservative financial estimates [p.4].",
+        "Prateek Kumar's question on the airport business's EBITDA decline was addressed by Singh, citing seasonal non-aero business factors [p.8]."
+      ],
+      "overall_sentiment_shift": "The sentiment remained stable and confident throughout the call, with management effectively addressing analyst concerns.",
+      "sentiment_narrative": "Throughout the earnings call, the management of Adani Enterprises, led by CFO Robbie Singh, maintained a confident and assertive tone. Singh highlighted the company's financial achievements, including a 26% increase in EBITDA and improved credit ratings, as evidence of strong execution capabilities. He addressed concerns about the copper smelter and airport business with detailed explanations, reinforcing the company's strategic direction and financial health. Analysts' inquiries were met with comprehensive responses, underscoring the management's preparedness and transparency. Overall, the sentiment was positive, with no significant shifts during the call.",
+      "raw_scores": {
+        "positive_prob": 0.9492,
+        "negative_prob": 0.018,
+        "neutral_prob": 0.0329
+      },
+      "title": "Speaker Sentiment"
+    },
+    "qa_transparency": {
+      "section": "qa_transparency",
+      "score": 46.8,
+      "label": "Mixed",
+      "qa_pairs": [
+        {
+          "question_id": "Q1",
+          "analyst": "Nirav Shah, GeeCee Holdings",
+          "topic": "Operations",
+          "label": "Partial Response",
+          "analysis": "Nirav Shah asked about the ramp-up schedule for the copper smelter and challenges in ore sourcing, as well as when segmental results would be reported separately [p.4]. Robbie Singh responded that segmental results would likely be reported around Q4 but did not provide specific details on the ramp-up or sourcing challenges. The response was partially informative, lacking detailed operational insights."
+        },
+        {
+          "question_id": "Q2",
+          "analyst": "Mohit Kumar, ICICI Securities",
+          "topic": "Debt/Capital",
+          "label": "Direct Response",
+          "analysis": "Mohit Kumar inquired about the tax impact from the Adani Wilmar sale [p.3]. Robbie Singh confirmed a tax increase of roughly INR 650 crores but noted no impact on reported numbers due to net reporting of one-off items. The response was clear and backed by specific figures."
+        },
+        {
+          "question_id": "Q3",
+          "analyst": "Mohit Kumar, ICICI Securities",
+          "topic": "Strategy",
+          "label": "Partial Response",
+          "analysis": "Mohit Kumar asked about the expansion plans for solar cell and module lines and wafer production [p.3]. Robbie Singh stated the cell and module line would be ready by FY26-FY27 but did not provide a clear plan for wafer expansion. The response was partially informative, lacking comprehensive strategic details."
+        },
+        {
+          "question_id": "Q4",
+          "analyst": "Prateek Kumar, Jefferies",
+          "topic": "Operations",
+          "label": "Partial Response",
+          "analysis": "Prateek Kumar asked about the decline in airport business EBITDA and the timing of Terminal 1 demolition [p.8]. Robbie Singh explained the decline was due to non-aero business seasonality and mentioned the demolition would not be rushed, but did not provide specific timelines. The response was partially informative, with some operational context but lacking precise timing details."
+        },
+        {
+          "question_id": "Q5",
+          "analyst": "Prateek Kumar, Jefferies",
+          "topic": "Guidance",
+          "label": "Deflected",
+          "analysis": "Prateek Kumar sought guidance on total traffic expectations for FY27 when both airports are commissioned [p.9]. Robbie Singh did not provide specific guidance, only stating that demand in Mumbai is high. The response was deflective, lacking specific forward-looking numbers."
+        }
+      ],
+      "deflected_topics": [
+        "Traffic guidance for airports",
+        "Copper smelter ramp-up specifics"
+      ],
+      "repeated_phrases": [
+        "we will provide that number post",
+        "we are not providing that guidance"
+      ],
+      "forward_guidance_quality": "Vague",
+      "data_backed_responses": "2 of 5",
+      "qualitative_assessment": "Management provided specific figures in some areas, such as tax impacts and capex, but often lacked detailed forward guidance, particularly in operational and strategic areas. Responses were sometimes vague, with a tendency to defer specific guidance to future updates.",
+      "sentiment_narrative": "Management's communication style was generally polite and appreciative of the analysts' questions. However, there was a noticeable pattern of deflecting specific forward-looking guidance, particularly regarding operational timelines and traffic expectations. While some responses were data-backed, others relied on general statements about market conditions or strategic intentions without detailed substantiation. Overall, the tone was professional but occasionally evasive on key future-oriented topics.",
+      "raw_scores": {
+        "positive_prob": 0.0628,
+        "negative_prob": 0.1677,
+        "neutral_prob": 0.7695
+      },
+      "title": "Q&A Transparency"
+    },
+    "overall_sentiment": {
+      "section": "overall_sentiment",
+      "score": 96.4,
+      "label": "Very Bullish",
+      "management_confidence": "High",
+      "earnings_quality": "Beat",
+      "guidance_tone": "Maintained",
+      "market_signal": "Bullish",
+      "tone_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Management projected strong confidence with a 26% increase in EBITDA to INR 16,722 crores and a 16% rise in PBT to INR 6,533 crores [p.2]. The incubating portfolio showed remarkable growth, with income up by 42% and EBITDA up by 68% [p.2]. The successful sale of a 13.5% stake in Adani Wilmar added a realized gain of INR 3,946 crores, further boosting the financial results [p.2]. Despite elevated working capital and interest expenses, the company maintained a positive outlook, supported by improved credit ratings to AA- by CARE and ICRA [p.2]. Overall, the tone was bullish, driven by strong financial performance and strategic growth in core infrastructure businesses."
+      },
+      "topics_gaining_momentum": [
+        "Emerging core infra businesses",
+        "Wind turbine segment",
+        "Airport business"
+      ],
+      "topics_losing_momentum": [
+        "Working capital management",
+        "Interest expenses"
+      ],
+      "key_surprises": [
+        "The incubating portfolio's EBITDA surpassed AEL's consolidated EBITDA for FY23, indicating significant growth [p.2]."
+      ],
+      "qualitative_synthesis": "The earnings call for Adani Enterprises was marked by high management confidence and a bullish market signal. The company reported strong financial results with significant growth in EBITDA and PBT, driven by the performance of its emerging core infrastructure businesses. Despite challenges in working capital and interest expenses, the overall guidance was maintained, reflecting a stable outlook. Investors can view the results as a positive indicator of the company's strategic direction and execution capabilities.",
+      "sentiment_narrative": "Management expressed high confidence in the company's performance, highlighting a 26% increase in EBITDA to INR 16,722 crores and a 16% rise in PBT to INR 6,533 crores [p.2]. The incubating portfolio's income rose by 42% to INR 34,546 crores, with EBITDA up 68% to INR 10,025 crores, surpassing AEL's consolidated results for FY23 [p.2]. The sale of a 13.5% stake in Adani Wilmar contributed a realized gain of INR 3,946 crores [p.2]. Despite elevated working capital and interest expenses, the company's improved credit ratings to AA- by CARE and ICRA underscored its strong execution capabilities [p.2]. The tone was bullish, with management emphasizing the growth momentum in core infrastructure businesses and the strategic expansion in the wind turbine and airport segments.",
+      "raw_scores": {
+        "positive_prob": 0.9582,
+        "negative_prob": 0.0191,
+        "neutral_prob": 0.0227
+      },
+      "title": "Overall Sentiment"
+    },
+    "investment_synthesis": {
+      "section": "investment_synthesis",
+      "score": 75,
+      "label": "Buy",
+      "recommendation": "Buy",
+      "conviction": "Medium",
+      "thesis": {
+        "scope": "Based on Q4 FY25 results",
+        "analysis": "Adani Enterprises Limited (AEL) has demonstrated robust growth across its emerging core infrastructure businesses, with income and EBITDA up by 2% and 26% respectively for FY25 [p.2]. The company's incubation model has proven successful, with incubating business income up 42% and EBITDA up 68% [p.2]. AEL's strong execution capabilities are further validated by improved credit ratings from CARE and ICRA to AA- [p.2]. Despite elevated debt levels, the company is well-positioned to capitalize on its strategic investments in solar, wind, and mining services [p.5]."
+      },
+      "bull_case": {
+        "scope": "Key upside drivers",
+        "analysis": "AEL's incubating businesses have outperformed, with income up 42% and EBITDA up 68%, surpassing consolidated results for FY23 [p.2]. The company's green hydrogen ecosystem saw EBITDA increase by 108% [p.3]. The airport business achieved a 43% EBITDA growth, with all airports reaching EBITDA break-even [p.5]. AEL's commitment to ESG is recognized with a CDP-CC rating upgrade to A- [p.3]. The solar business is expanding with a new 6 GW cell and module line [p.3]."
+      },
+      "bear_case": {
+        "scope": "Key risks",
+        "analysis": "AEL faces elevated debt levels, with 70% of external debt attributed to airports and roads, and 20% to copper [p.5]. Interest expenses remain high due to forex volatility and inventory buildup [p.5]. The copper plant ramp-up may face challenges, although ore supply is not currently an issue [p.4]. The solar export market uncertainty could impact future sales, although current contracts mitigate this risk [p.3]."
+      },
+      "catalysts": {
+        "near_term": "The ramp-up of the copper smelter is expected to reach full capacity by Q3 FY26, which could enhance profitability [p.4]. The completion of the 6 GW solar cell and module line by FY26 end could drive revenue growth [p.3].",
+        "medium_term": "The expansion of the wind turbine business to 2.25 GW and the ongoing development of the 10 GW solar ecosystem will be key growth drivers over the next 6-18 months [p.3]. The stabilization and potential expansion of the Navi Mumbai airport could further boost the infrastructure segment [p.9]."
+      },
+      "key_watchpoints": [
+        "Copper smelter ramp-up progress",
+        "Debt levels and interest expense trends",
+        "Solar business expansion and contract execution",
+        "Airport business performance and expansion",
+        "ESG rating and sustainability initiatives"
+      ],
+      "valuation_context": "Not discussed in this call.",
+      "scorecard": {
+        "earnings_quality": 4,
+        "management_quality": 4,
+        "strategy_clarity": 4,
+        "risk_management": 3,
+        "esg_commitment": 5
+      },
+      "sentiment_narrative": "Management expressed confidence in AEL's growth trajectory, highlighting the successful incubation model and strong execution capabilities [p.2]. They emphasized the strategic importance of the solar and wind expansions, as well as the copper smelter ramp-up [p.3, p.4]. Despite acknowledging elevated debt levels, management reassured that these are tied to strategic investments with expected returns [p.5]. The commitment to ESG was underscored by the recent CDP-CC rating upgrade [p.3]. Overall, the tone was optimistic, focusing on long-term growth and sustainability.",
+      "raw_scores": {
+        "positive_prob": 0.93,
+        "negative_prob": 0.0124,
+        "neutral_prob": 0.0576
+      },
+      "title": "Investment Synthesis"
+    }
+  }
+}

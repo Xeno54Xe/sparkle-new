@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.7665,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9428,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9428,
+        "positive": 0.9587,
+        "negative": 0.0159,
+        "neutral": 0.0254,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q3 FY26 was robust, with the bank declaring the highest-ever quarterly net profit of Rs. 21,028 crore, reflecting a 24.49% year-on-year increase. This was driven by higher operating profitability and lower credit costs at 0.29%. Operating profit rose by 39.54% year-on-year to Rs. 32,862 crores. Net interest income increased by 9% year-on-year to Rs. 45,190 crores, with the domestic NIM standing at 3.12%. Total business crossed Rs. 103 trillion, with a healthy deposit growth of 9.02% year-on-year and a credit growth of 15.14% year-on-year. The asset quality was strong, with gross NPAs at 1.57% and net NPAs at 0.39%, demonstrating disciplined credit practices and sustained recoveries."
+    },
+    "forward_guidance": {
+      "score": 0.8375,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8375,
+        "positive": 0.8836,
+        "negative": 0.0461,
+        "neutral": 0.0703,
+        "chunks_scored": 1
+      },
+      "text": "Management revised the credit growth guidance upwards from 12-14% to 13-15% for the current quarter, indicating confidence in continued growth. They expressed optimism about maintaining double-digit corporate credit growth into Q4. The bank's forward guidance for NIM remains at 3% through the cycles, with expectations of sustaining ROA above 1%. The language used was measured, with a focus on aligning with government initiatives and capitalizing on positive economic developments. The bank plans to provide full-year guidance in Q1, suggesting a cautious approach to long-term forecasting."
+    },
+    "risk_language": {
+      "score": 0.4042,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.4042,
+        "positive": 0.4453,
+        "negative": 0.0411,
+        "neutral": 0.5136,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including geopolitical tensions and global market volatility, but management emphasized the bank's strong capital, liquidity, and asset quality. They mentioned proactive provisions for potential untoward incidents and highlighted the ability to manage the balance sheet effectively. The management was forthright about challenges, such as the competitive market environment and the need to adapt to structural shifts in the financial system. They also discussed the impact of regulatory changes and the importance of maintaining a disciplined approach to credit practices."
+    },
+    "investor_confidence": {
+      "score": 0.7579,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7579,
+        "positive": 0.7681,
+        "negative": 0.0102,
+        "neutral": 0.2217,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction, with a strong emphasis on sustainable value creation and alignment with long-term strategic goals. Analyst questions were addressed directly, with detailed explanations provided for financial performance and strategic initiatives. The management team demonstrated credibility by highlighting consistent performance across cycles and a focus on efficiency and return metrics. The call conveyed a sense of transparency, with management openly discussing both achievements and challenges."
+    }
+  },
+  "key_positive_drivers": [
+    "Highest-ever quarterly net profit",
+    "Revised credit growth guidance upwards",
+    "Strong asset quality with low NPAs",
+    "Robust operating profit growth",
+    "Healthy deposit and credit growth",
+    "Alignment with government initiatives"
+  ],
+  "key_negative_drivers": [
+    "Geopolitical tensions",
+    "Global market volatility",
+    "Competitive market environment",
+    "Need for proactive provisions",
+    "Structural shifts in financial system"
+  ],
+  "notable_phrases": [
+    "highest-ever quarterly net profit",
+    "revising our credit growth estimate",
+    "strong macroeconomic fundamentals",
+    "robust capital, liquidity, asset quality",
+    "proactive provisions for untoward incidents",
+    "sustainable value for all stakeholders",
+    "disciplined credit practices",
+    "alignment with government initiatives"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with record profits and robust growth metrics, leading to an upward revision in credit growth guidance. Management expressed confidence in sustaining growth while acknowledging external risks like geopolitical tensions. They demonstrated transparency and credibility, addressing analyst queries directly and emphasizing strategic alignment with government initiatives. The overall tone was cautiously bullish, reflecting optimism tempered by awareness of potential challenges."
+}

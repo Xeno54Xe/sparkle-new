@@ -1,0 +1,401 @@
+{
+  "doc_meta": {
+    "doc_id": "87960251823b",
+    "stock": "Tata Motors Passenger Vehicles",
+    "doc_type": "ec",
+    "period": "FEB26",
+    "quarter": null,
+    "fiscal_year": "FY26",
+    "filename": "FEB26.pdf",
+    "file_path": "data/Tata Motors Passenger Vehicles/EC/FEB26.pdf"
+  },
+  "doc_type": "ec",
+  "sections": {
+    "financial_metrics": {
+      "section": "financial_metrics",
+      "score": 96.1,
+      "label": "Strong Beat",
+      "revenue": {
+        "scope": "Q3 FY26",
+        "label": "Strong Growth",
+        "analysis": "Revenue for Tata Motors Passenger Vehicles saw a 24% topline growth in Q3 FY26, driven by record offtake volumes of 170,000 units [p.5]. The consolidated revenue for the group was approximately Rs. 70,000 Cr, which was a 26% decline year-on-year, primarily due to the impact of the cyber incident at JLR [p.3]."
+      },
+      "ebitda": {
+        "scope": "Q3 FY26",
+        "label": "Margin Pressure",
+        "analysis": "EBITDA margin for the quarter stood at 7%, reflecting a 1% gain on a quarter-on-quarter basis [p.5]. However, the EBIT margin was negative 4.7% for the quarter, showing a slight improvement quarter-on-quarter [p.3]."
+      },
+      "profitability": {
+        "scope": "Q3 FY26",
+        "label": "Flat Performance",
+        "analysis": "Profit before exceptional items and tax was Rs. 300 Cr, flat on a year-on-year basis [p.5]. The loss before tax for the quarter before exceptionals was approximately Rs. 3,100 Cr, excluding exceptional items totaling Rs. 1,600 Cr [p.3]."
+      },
+      "cash_flow": {
+        "scope": "Q3 FY26",
+        "label": "Negative Flow",
+        "analysis": "Free cash flow for the domestic business was approximately Rs. 300 Cr, despite adverse cash profit after tax less investment spend by about Rs. 200 Cr [p.7]. However, the FCF for the quarter was negative ~Rs. 18,000 Cr, largely due to adverse working capital movement and operating profits at JLR [p.3]."
+      },
+      "capex": {
+        "scope": "Year-to-date FY26",
+        "label": "Steady Investment",
+        "analysis": "Total investment spending year-to-date is about Rs. 3,800 Cr, with Capex investments at about Rs. 3,100 Cr. The company expects to end the year with Capex between Rs. 4,200 Cr to Rs. 4,300 Cr [p.7]."
+      },
+      "debt": {
+        "scope": "Q3 FY26",
+        "label": "Increased Leverage",
+        "analysis": "Consolidated net debt for the group stands at approximately Rs. 39,000 Cr. The India business is cash positive at approximately Rs. 5,000 Cr, while JLR is at net debt of approximately Rs. 39,000 Cr [p.3]."
+      },
+      "working_capital": {
+        "scope": "Q3 FY26",
+        "label": "Negative Cycle",
+        "analysis": "Working capital was significantly negative due to inventory build-up and lower volume quarter, with cumulative year-to-date working capital at approximately GBP 1.25 billion negative [p.4]."
+      },
+      "operational_kpis": {
+        "scope": "Q3 FY26",
+        "label": "Record Volumes",
+        "analysis": "The company recorded its best-ever quarterly performance with a wholesale of approximately 171,000 units and retails crossing 2 lakh for the first time [p.6]."
+      },
+      "guidance": {
+        "scope": "FY26 Outlook",
+        "label": "Challenging Environment",
+        "analysis": "The company expects to end the year with Capex between Rs. 4,200 Cr to Rs. 4,300 Cr [p.7]. Management acknowledges a challenging environment due to U.S. tariffs and cyber incidents, with plans to adjust the business model and provide further guidance in June [p.4]."
+      },
+      "qualitative_analysis": "The financial performance was mixed, with strong revenue growth in the domestic market offset by challenges at JLR due to a cyber incident. The domestic segment drove performance with record volumes, while JLR faced significant headwinds. The negative free cash flow and increased net debt are red flags, indicating financial strain.",
+      "analyst_flags": [
+        "Negative free cash flow of ~Rs. 18,000 Cr",
+        "Increased net debt to ~Rs. 39,000 Cr",
+        "Impact of cyber incident on JLR"
+      ],
+      "sentiment_narrative": "Management expressed confidence in the domestic market, highlighting a 'very strong growth year-on-year' in the electric vehicle business with volumes increasing from 16,000 to 24,000 per quarter [p.5]. They acknowledged the 'challenging last couple of quarters' due to external factors like U.S. tariffs and a cyber incident [p.7]. Despite these challenges, they are 'looking for a positive end to this year' [p.5]. The company is 'proud' of the Defender's performance in the Dakar Rally, showcasing the brand's resilience [p.3]. However, they recognize the need to 'adjust our business model' in response to the rapidly changing environment [p.4].",
+      "raw_scores": {
+        "positive_prob": 0.9521,
+        "negative_prob": 0.0132,
+        "neutral_prob": 0.0347
+      },
+      "title": "Financial Metrics"
+    },
+    "risk_intelligence": {
+      "section": "risk_intelligence",
+      "score": 94.5,
+      "label": "Well Managed",
+      "overall_risk_environment": "ELEVATED",
+      "risks": [
+        {
+          "risk_id": "R1",
+          "category": "Execution/Operational",
+          "scope": "Q3 FY26 operations",
+          "label": "High Risk",
+          "risk_score": 16,
+          "severity": "HIGH",
+          "analysis": "The cyber incident significantly disrupted production, costing around 50,000 units and leading to a substantial cash burn in Q3 [p.3, p.4]. Management acknowledged the impact and indicated that operations have returned to full pace, aiming to recover in Q4. However, the incident's financial impact was severe, with negative EBIT and operating cash flow [p.3]."
+        },
+        {
+          "risk_id": "R4",
+          "category": "Credit/Leverage",
+          "scope": "FY26 financial health",
+          "label": "High Risk",
+          "risk_score": 15,
+          "severity": "HIGH",
+          "analysis": "JLR's debt has increased significantly, with a net debt position of ~GBP 39,000 Cr, and the company does not expect to return to a net cash position in the next two to three quarters [p.9]. Management plans to address this in future guidance but acknowledges the embedded nature of the debt [p.9]."
+        },
+        {
+          "risk_id": "R3",
+          "category": "Commodity/Input Cost",
+          "scope": "FY26 operations",
+          "label": "Moderate Risk",
+          "risk_score": 10,
+          "severity": "MODERATE",
+          "analysis": "Material costs have been pressured by increased warranty bookings and buybacks, with VME rising to 7.7% in Q3 [p.4]. Management expects these costs to peak soon but acknowledges ongoing pressure from competitive market conditions [p.13]."
+        },
+        {
+          "risk_id": "R2",
+          "category": "Currency/FX",
+          "scope": "FY26 financial performance",
+          "label": "Moderate Risk",
+          "risk_score": 9,
+          "severity": "MODERATE",
+          "analysis": "The weakening of the dollar has adversely affected the sterling value of revenues, contributing to financial challenges [p.4]. Management has not disclosed specific hedging strategies beyond short-term protections, leaving potential exposure if trends become structural [p.4]."
+        }
+      ],
+      "risks_emphasised": [
+        "Cyber incident impact",
+        "Currency fluctuations",
+        "Commodity cost pressures"
+      ],
+      "risks_downplayed": [
+        "Debt levels",
+        "Warranty and VME costs"
+      ],
+      "undisclosed_risks": [
+        "Long-term currency exposure",
+        "Sustainability of cost control measures"
+      ],
+      "risk_overview": {
+        "scope": "Full earnings call",
+        "analysis": "The earnings call highlighted several significant risks, particularly the operational disruptions from the cyber incident and currency fluctuations. While management acknowledged these issues, the communication around debt levels and long-term cost management strategies was less comprehensive. The overall risk environment is elevated, with multiple factors potentially impacting future performance."
+      },
+      "sentiment_narrative": "Management communicated a cautiously optimistic outlook, acknowledging the challenges posed by the cyber incident and currency fluctuations. They emphasized efforts to normalize operations and recover financial performance in Q4. However, there was less focus on addressing the high debt levels and the sustainability of cost control measures, suggesting a need for more comprehensive risk management strategies moving forward.",
+      "raw_scores": {
+        "positive_prob": 0.9325,
+        "negative_prob": 0.022,
+        "neutral_prob": 0.0456
+      },
+      "title": "Risk Intelligence"
+    },
+    "esg": {
+      "section": "esg",
+      "score": 21.4,
+      "label": "Poor",
+      "environmental": {
+        "available": true,
+        "score": 61.0,
+        "label": "Good",
+        "scope": "Electric vehicle growth and emissions regulations",
+        "analysis": "Tata Motors has shown significant progress in its electric vehicle (EV) segment, with a year-on-year growth of about 50%, increasing volumes from 16,000 to 24,000 units per quarter [p.5]. The penetration of EV and CNG vehicles has reached 43% in FY26, indicating a strong shift towards more sustainable vehicle options [p.5]. However, there are concerns about the sustainability of EV demand due to adverse total cost of ownership (TCO) changes following GST rate cuts, though demand remains stable [p.5]. Emissions regulations outside the U.S. are becoming increasingly stringent, impacting the company's operations [p.4]. Overall, Tata Motors is making strides in environmental sustainability, but the lack of specific targets and timelines for emissions reduction could be improved.",
+        "greenwashing_flags": [
+          "Sustainability of EV demand despite adverse TCO changes"
+        ]
+      },
+      "social": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "governance": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "disclosure_framework": "None mentioned",
+      "third_party_verified": false,
+      "sentiment_narrative": "The earnings call highlights Tata Motors' commitment to expanding its electric vehicle offerings, which is a positive step towards environmental sustainability. However, the communication lacks depth in social and governance aspects, with no specific disclosures or targets mentioned. The environmental disclosures focus on growth metrics rather than comprehensive sustainability strategies, which could be perceived as a gap in their ESG communication. The absence of a mentioned disclosure framework and third-party verification further limits the credibility and transparency of their ESG commitments. Overall, while there is a clear focus on environmental progress, the lack of holistic ESG communication suggests room for improvement in future disclosures.",
+      "raw_scores": {
+        "positive_prob": 0.2399,
+        "negative_prob": 0.3145,
+        "neutral_prob": 0.4456
+      },
+      "title": "ESG Analysis"
+    },
+    "speaker_sentiment": {
+      "section": "speaker_sentiment",
+      "score": 6.3,
+      "label": "Very Bearish",
+      "speakers": [
+        {
+          "name": "Shailesh Chandra",
+          "role": "Management",
+          "company": "Tata Motors Passenger Vehicles Limited",
+          "scope": "Financial performance",
+          "tone": "Confident",
+          "analysis": "Shailesh Chandra highlighted the successful launch of new models like the Sierra and the Punch, which received a phenomenal response [p.2]. He emphasized the milestone of crossing 2.5 lakh EVs on the road, showcasing the company's progress in the electric vehicle segment [p.2]. His confident tone was driven by these achievements and the positive market reception. There was no significant pushback from analysts during his segment.",
+          "score": 95.5,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.945,
+            "negative_prob": 0.016,
+            "neutral_prob": 0.039
+          }
+        },
+        {
+          "name": "P.B. Balaji",
+          "role": "Management",
+          "company": "Jaguar Land Rover",
+          "scope": "Financial performance",
+          "tone": "Cautious",
+          "analysis": "P.B. Balaji discussed the EBIT bridge and the impact of currency fluctuations, indicating a cautious approach to financial management [p.8]. He acknowledged the challenges posed by operational disruptions and the need to understand the detailed financial sheets for clarity. His tone was cautious due to the complexities involved in managing these financial elements. Analysts questioned the company's ability to return to a net cash position, reflecting concerns about financial stability [p.8].",
+          "score": 5.0,
+          "label": "Very Bearish",
+          "raw_scores": {
+            "positive_prob": 0.0177,
+            "negative_prob": 0.9382,
+            "neutral_prob": 0.044
+          }
+        },
+        {
+          "name": "Dhiman Gupta",
+          "role": "Management",
+          "company": "Tata Motors Passenger Vehicles Limited",
+          "scope": "Financial performance",
+          "tone": "Neutral",
+          "analysis": "Dhiman Gupta provided an overview of the financial performance, noting the impact of the cyber incident on production and revenue [p.2]. He reported a negative EBIT margin of 4.7% and a loss before tax of approximately Rs. 3,100 Cr [p.2]. His tone was neutral, focusing on presenting the facts without embellishment. Analysts did not press him significantly, as his role was more about delivering the financial summary.",
+          "score": 12.7,
+          "label": "Very Bearish",
+          "raw_scores": {
+            "positive_prob": 0.0136,
+            "negative_prob": 0.8245,
+            "neutral_prob": 0.1619
+          }
+        },
+        {
+          "name": "Richard Molyneux",
+          "role": "Management",
+          "company": "Jaguar Land Rover",
+          "scope": "Financial performance",
+          "tone": "Defensive",
+          "analysis": "Richard Molyneux explained the financial impact of the cyber event, which cost around 50,000 units of production, and the subsequent cash burn [p.5]. He defended the company's position by detailing the timing effects on gross margins and the challenges in the Chinese market [p.8]. His defensive tone was driven by the need to justify the financial setbacks and reassure stakeholders of future recovery. Analysts questioned the sharp improvement in gross margins despite high VME, indicating skepticism about the financial outlook [p.8].",
+          "score": 6.1,
+          "label": "Very Bearish",
+          "raw_scores": {
+            "positive_prob": 0.035,
+            "negative_prob": 0.9297,
+            "neutral_prob": 0.0353
+          }
+        }
+      ],
+      "management_tone_summary": "Overall, the management communication style was a mix of confidence and caution. While Shailesh Chandra was confident about product launches and market reception, P.B. Balaji and Richard Molyneux were more cautious and defensive due to financial challenges and operational disruptions.",
+      "analyst_pressure_points": [
+        "Financial stability and net cash position",
+        "Gross margin improvements",
+        "Impact of operational disruptions"
+      ],
+      "notable_exchanges": [
+        "Analysts questioned Richard Molyneux on the sharp improvement in gross margins despite high VME, indicating skepticism about the financial outlook."
+      ],
+      "overall_sentiment_shift": "The sentiment worsened through the call as financial challenges and operational disruptions were discussed in detail, leading to increased analyst scrutiny.",
+      "sentiment_narrative": "The earnings call began with a confident tone from Shailesh Chandra, who highlighted successful product launches and milestones in the electric vehicle segment. However, as the discussion shifted to financial performance, the tone became more cautious and defensive. P.B. Balaji and Richard Molyneux faced questions about financial stability and the impact of operational disruptions, which led to a more defensive posture. Analysts expressed concerns about the company's ability to return to a net cash position and the sharp improvement in gross margins. Overall, the sentiment shifted from initial optimism to a more cautious outlook as financial challenges were scrutinized.",
+      "raw_scores": {
+        "positive_prob": 0.0307,
+        "negative_prob": 0.9241,
+        "neutral_prob": 0.0452
+      },
+      "title": "Speaker Sentiment"
+    },
+    "qa_transparency": {
+      "section": "qa_transparency",
+      "score": 46.7,
+      "label": "Mixed",
+      "qa_pairs": [
+        {
+          "question_id": "Q1",
+          "analyst": "Kapil",
+          "topic": "Margins",
+          "label": "Partial Response",
+          "analysis": "Kapil asked about the expected improvement in margins from Q4 FY26, specifically regarding the impact of the Sierra launch and a price hike in January [p.14]. Shailesh Chandra responded that a price increase would be taken in February, but did not specify the extent. He mentioned that Sierra has enhanced margins and that VME has decreased, suggesting better margins in Q4. The response was partially transparent as it lacked specific figures for the price hike."
+        },
+        {
+          "question_id": "Q2",
+          "analyst": "Kapil",
+          "topic": "Strategy",
+          "label": "Partial Response",
+          "analysis": "Kapil inquired about changes in first-time buyers for Tata Motors post-GST cut and which car segments they prefer [p.14]. Shailesh Chandra acknowledged an increase in first-time buyers but did not provide specific data, suggesting the Investor Relations team could provide more details. He identified subcompact and compact SUVs as popular segments. The response was partially transparent, offering some insights but lacking precise data."
+        },
+        {
+          "question_id": "Q3",
+          "analyst": "Rakesh",
+          "topic": "Strategy",
+          "label": "Partial Response",
+          "analysis": "Rakesh asked about the Freelander rollout plan and its markets outside China [p.14]. Richard Molyneux confirmed production would start for China and eventually expand globally, managed by a joint venture with Chery. He declined to comment on royalty arrangements. The response was partially transparent, providing rollout plans but withholding financial details."
+        },
+        {
+          "question_id": "Q4",
+          "analyst": "Unnamed",
+          "topic": "Margins",
+          "label": "Partial Response",
+          "analysis": "An unnamed analyst asked about the EBIT margin guidance post-cyber-attack and competitive intensity from Chinese OEMs [p.14]. Richard Molyneux suggested margins would be at the lower end of the 5% to 7% range due to adverse factors like foreign exchange and VME. He acknowledged competition from Chinese OEMs but emphasized JLR's brand strength. The response was partially transparent, providing a range but lacking precise future guidance."
+        }
+      ],
+      "deflected_topics": [
+        "Royalty arrangements",
+        "Specific price hike percentages",
+        "First-time buyer data"
+      ],
+      "repeated_phrases": [
+        "we don't comment on speculative reports",
+        "we will provide more details at the Investor Day"
+      ],
+      "forward_guidance_quality": "Vague",
+      "data_backed_responses": "2 of 4",
+      "qualitative_assessment": "Management provided some specific figures, such as VME percentages and market segment growth, but often withheld precise data, particularly regarding future guidance and financial arrangements. Responses were generally partial, offering some insights but lacking comprehensive transparency. The frequent deferral to the upcoming Investor Day suggests a strategy to delay detailed disclosures.",
+      "sentiment_narrative": "Management's communication style was cautious, often acknowledging challenges while emphasizing brand strength and strategic adjustments. They showed a willingness to discuss competitive pressures and market dynamics but avoided committing to specific future figures. The tone was generally optimistic about overcoming current challenges, with a focus on upcoming product launches and strategic initiatives. However, there was a noticeable reluctance to provide detailed financial guidance or comment on speculative matters.",
+      "raw_scores": {
+        "positive_prob": 0.0712,
+        "negative_prob": 0.176,
+        "neutral_prob": 0.7527
+      },
+      "title": "Q&A Transparency"
+    },
+    "overall_sentiment": {
+      "section": "overall_sentiment",
+      "score": 93.1,
+      "label": "Very Bullish",
+      "management_confidence": "Mixed",
+      "earnings_quality": "Mixed",
+      "guidance_tone": "Maintained",
+      "market_signal": "Cautiously Bearish",
+      "tone_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Management expressed mixed confidence, acknowledging both challenges and opportunities. The domestic business showed a strong rebound in market share post-GST cuts, with a 10% market share gain since Q1 FY26 [p.5]. However, the company faced significant headwinds, including a cyber incident and U.S. tariffs, which impacted JLR's production and financial performance [p.7]. Despite these challenges, the company maintained its guidance of greater than 0% EBIT and negative free cash flow between GBP 2.2 billion and GBP 2.5 billion [p.5]. The electric vehicle segment showed strong growth, with a 50% year-on-year increase in volumes [p.5]. Overall, the tone was cautiously bearish due to ongoing operational disruptions and financial pressures."
+      },
+      "topics_gaining_momentum": [
+        "Electric vehicles",
+        "Market share recovery"
+      ],
+      "topics_losing_momentum": [
+        "JLR production",
+        "Financial performance"
+      ],
+      "key_surprises": [
+        "The cyber incident significantly impacted JLR's production, costing around 50,000 units [p.12]."
+      ],
+      "qualitative_synthesis": "The earnings call highlighted a mixed outlook for Tata Motors. While the domestic market showed signs of recovery and the electric vehicle segment experienced robust growth, significant challenges remain. The cyber incident and U.S. tariffs have adversely affected JLR's production and financial performance. Management maintained guidance but acknowledged more risks than opportunities in the current environment. Investors should be cautious, given the operational and financial headwinds facing the company.",
+      "sentiment_narrative": "Management noted a challenging environment with more risks than opportunities, yet they maintained guidance for greater than 0% EBIT [p.5]. The domestic business rebounded strongly post-GST cuts, gaining 10% market share since Q1 FY26 [p.5]. However, JLR faced significant disruptions due to a cyber incident and U.S. tariffs, impacting production and financial results [p.7]. Despite these setbacks, the electric vehicle segment showed a 50% year-on-year growth in volumes [p.5]. The company plans to leverage strong demand recovery in India and accelerate cost reduction programs to improve profitability [p.7]. Overall, while there are positive developments, the tone remains cautiously bearish due to ongoing challenges.",
+      "raw_scores": {
+        "positive_prob": 0.9261,
+        "negative_prob": 0.0557,
+        "neutral_prob": 0.0182
+      },
+      "title": "Overall Sentiment"
+    },
+    "investment_synthesis": {
+      "section": "investment_synthesis",
+      "score": 50,
+      "label": "Hold",
+      "recommendation": "Hold",
+      "conviction": "Medium",
+      "thesis": {
+        "scope": "Based on Q3 FY26 results",
+        "analysis": "Tata Motors Passenger Vehicles is facing significant challenges, including a substantial impact from a cyber incident that led to a production loss of 50,000 units at JLR, resulting in a negative EBIT of 6.8% for the quarter [p.2]. The company's consolidated revenue was down 26% year-on-year, and the free cash flow was negative due to adverse working capital movements and operating losses at JLR [p.2]. Despite these challenges, the domestic business showed resilience with strong market share recovery post-GST cuts and successful new product launches [p.5]. The company's strategic focus on brand development and profitable models in China could provide long-term growth opportunities [p.5]."
+      },
+      "bull_case": {
+        "scope": "Key upside drivers",
+        "analysis": "The domestic business has shown strong recovery in market share following GST cuts, indicating robust demand for Tata's offerings [p.5]. New product launches, such as the Sierra and Punch, have received phenomenal responses, which could drive future growth [p.2]. The company's strategic focus on brand development and leveraging profitable imported models in China could enhance long-term profitability [p.5]. Additionally, the successful debut of the Defender in the Dakar Rally highlights the strength and resilience of the JLR brand [p.2]."
+      },
+      "bear_case": {
+        "scope": "Key risks",
+        "analysis": "The cyber incident at JLR has significantly impacted production and financial performance, with a negative EBIT of 6.8% and a substantial cash burn in Q3 [p.2]. The company's debt levels have increased, and it is not expected to return to a net cash position in the next two to three quarters [p.9]. The luxury segment in China is facing structural challenges, which could affect JLR's performance in this key market [p.5]. Additionally, the competitive intensity from local brands in the luxury car segment poses a risk to market share [p.8]."
+      },
+      "catalysts": {
+        "near_term": "The normalization of production post-cyber incident and the ramp-up of new product launches like the Range Rover Electric could improve financial performance in the next two quarters.",
+        "medium_term": "Strategic initiatives in China and the continued success of new product launches in the domestic market could drive growth over the next 6-18 months."
+      },
+      "key_watchpoints": [
+        "Production normalization post-cyber incident",
+        "Market share recovery in China",
+        "Debt reduction progress",
+        "Impact of new product launches",
+        "Competitive dynamics in the luxury segment"
+      ],
+      "valuation_context": "Not discussed in this call.",
+      "scorecard": {
+        "earnings_quality": 2,
+        "management_quality": 3,
+        "strategy_clarity": 3,
+        "risk_management": 2,
+        "esg_commitment": 3
+      },
+      "sentiment_narrative": "Management acknowledged the significant impact of the cyber incident on JLR's production and financials, emphasizing the need to adjust the business model in response to rapidly changing environments [p.4]. They highlighted the strong market response to new product launches in the domestic market, which could drive future growth [p.2]. The strategic focus on brand development and profitable models in China was reiterated as a long-term growth driver [p.5]. However, management also noted the increased debt levels and the challenges in returning to a net cash position in the near term [p.9]. Overall, while there are significant challenges, management remains focused on leveraging strategic opportunities to drive future growth.",
+      "raw_scores": {
+        "positive_prob": 0.934,
+        "negative_prob": 0.018,
+        "neutral_prob": 0.048
+      },
+      "title": "Investment Synthesis"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8833,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9094,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9094,
+        "positive": 0.9325,
+        "negative": 0.0232,
+        "neutral": 0.0443,
+        "chunks_scored": 1
+      },
+      "text": "We have achieved a consolidated total income of ₹2,860 crores for the current quarter, representing a 17% increase from ₹2,444 crores in the corresponding quarter of previous financial year. Profit before tax for the quarter stands at ₹912 crores compared to ₹722 crores in Q2FY2025. Profit after tax for the quarter is ₹689 crores as against ₹510 crores in Q2FY2025. Material consumption for the quarter is about 39.5% of the sales revenue, consistent with our recent trend. Exports for the quarter accounts for 90% of the total sales revenue with exports to Europe and United States contributing a combined 74%. The product mix for the quarter is 44% generics and 56% custom synthesis. We recorded a forex gain of ₹63 crores for the quarter. On a constant currency basis, revenue growth for the second quarter has been 10.79%."
+    },
+    "forward_guidance": {
+      "score": 0.8437,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8437,
+        "positive": 0.8508,
+        "negative": 0.0071,
+        "neutral": 0.142,
+        "chunks_scored": 1
+      },
+      "text": "We are currently executing three major capex programs backed by long-term supply commitments. These investments are focused on implementing new technologies, expanding capacities and advancing key strategic projects. We continue to see high engagement levels with a steady flow of RFPs and site visits from global innovators. A few of them are expected to move into commercial manufacturing over the next 1 to 2 years. We have inaugurated our peptide center of excellence where multiple projects of various customers are undergoing development. As these programs advance through regulatory milestones, we are prepared to further scale up investments to meet their demand. Our nutraceutical segment continues to evolve as a key growth driver."
+    },
+    "risk_language": {
+      "score": 0.9188,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9188,
+        "positive": 0.9289,
+        "negative": 0.0102,
+        "neutral": 0.0609,
+        "chunks_scored": 1
+      },
+      "text": "Our established operating practices have supported continuity of supply, fulfillment of customer requirements and adherence to our long-term objectives in pharmaceutical intermediates and active pharmaceutical ingredients sector. We continue to monitor macroeconomic factors, including the effect of U.S. tariffs on suppliers from China and sanctions related to Russia, which may influence costs for certain raw materials, intermediates and solvents. As a precautionary step, we have maintained appropriate inventory levels, expanded our sourcing options across regions and progressed vendor qualifications where necessary. Our backward integration program, particularly through the Unit 3 facility in Kakinada, has supported supply security and cost management."
+    },
+    "investor_confidence": {
+      "score": 0.8678,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8678,
+        "positive": 0.876,
+        "negative": 0.0082,
+        "neutral": 0.1158,
+        "chunks_scored": 1
+      },
+      "text": "We truly value the continued trust and interest you have placed in us, and I hope you and your families are doing well and in good health. Our performance this quarter reflects the strength of our ability and adaptability to respond quickly to evolving market conditions. We are actively engaged with several big pharmas at various stages in their Phase I, Phase II and Phase III programs. Our education programs continue to reach thousands of students and we remain committed to inclusive development through targeted interventions in nutrition, infrastructure and scholarships. We are also deepening our efforts in providing safe drinking water and have already reached 8 lakh people, reflecting our belief that business success must go hand-in-hand with social progress."
+    }
+  },
+  "key_positive_drivers": [
+    "17% increase in total income",
+    "Profit before tax increased to ₹912 crores",
+    "High engagement levels with global innovators",
+    "Strong momentum in peptide synthesis",
+    "Nutraceutical segment as a key growth driver",
+    "Forex gain of ₹63 crores"
+  ],
+  "key_negative_drivers": [
+    "Ongoing pricing pressures in generics",
+    "Macroeconomic factors affecting costs",
+    "Confidentiality constraints on specific product guidance"
+  ],
+  "notable_phrases": [
+    "continued to navigate global trade dynamics with resilience",
+    "delivered value across all business segments",
+    "prepared to further scale up investments",
+    "backward integration program has supported supply security",
+    "reflecting our belief that business success must go hand-in-hand with social progress",
+    "our performance this quarter reflects the strength of our ability and adaptability"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant revenue and profit growth, driven by custom synthesis and a favorable product mix. Forward guidance was optimistic, with ongoing capex programs and strategic projects indicating future growth potential. Risk management was proactive, addressing macroeconomic challenges and supply chain stability. Investor confidence was reinforced by management's adaptability and commitment to social responsibility, though some caution was noted due to pricing pressures and confidentiality constraints."
+}

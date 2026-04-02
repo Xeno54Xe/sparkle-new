@@ -1,0 +1,186 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Gopal Vittal",
+      "role": "Vice Chairman & Managing Director - Bharti Airtel Limited",
+      "tone": "confident",
+      "key_topics": [
+        "telecom tower transfer to Indus Towers",
+        "ESG initiatives",
+        "financial performance",
+        "5G expansion",
+        "broadband growth",
+        "Airtel Business and digital services"
+      ],
+      "direct_answers": [
+        "Manish Adukia's question on capex and Airtel Business expansion",
+        "Aditya Suresh's question on postpaid opportunities"
+      ],
+      "dodged_or_vague": [
+        "Vivekanand Subbaraman's question on Airtel IQ and CPaaS business impact"
+      ],
+      "summary": "Gopal Vittal provided a comprehensive overview of Bharti Airtel's strategic initiatives and financial performance. He confidently announced the transfer of telecom towers to Indus Towers, emphasizing the efficiency and value this move would bring. Vittal highlighted the company's ESG efforts, including network expansion and carbon footprint reduction through solarization and AI. He reported strong financial results, with significant revenue growth and improved EBITDA margins. Vittal addressed questions on capex and postpaid opportunities directly, while his response to the impact on Airtel IQ and CPaaS was less clear.",
+      "sentiment_score": 0.9191,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9191,
+        "positive": 0.9306,
+        "negative": 0.0115,
+        "neutral": 0.0578,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Soumen Ray",
+      "role": "Chief Financial Officer - India & South Asia – Bharti Airtel Limited & Director, Bharti Hexacom Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "capex guidance",
+        "FWA rollout",
+        "dividend payout"
+      ],
+      "direct_answers": [
+        "Vivekanand Subbaraman's question on capex guidance related to FWA"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Soumen Ray provided insights into Bharti Hexacom's financial performance and future capex plans. He cautiously discussed the potential for increased capex due to the FWA rollout, noting that while there might be a marginal increase, it would not be significantly different. Ray also touched on the promising net debt to EBITDA ratio and the potential for dividend payouts. His responses were generally direct, particularly regarding capex guidance related to FWA.",
+      "sentiment_score": 0.3599,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3599,
+        "positive": 0.3922,
+        "negative": 0.0323,
+        "neutral": 0.5755,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vaidehi Sharma",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vaidehi Sharma efficiently managed the webinar, ensuring a smooth transition between speakers and facilitating the Q&A session. She provided clear instructions to participants on how to join the Q&A queue and reminded them of the forward-looking nature of the discussions. Her role was primarily to moderate the session, maintaining a neutral tone throughout.",
+      "sentiment_score": 0.0256,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0256,
+        "positive": 0.0416,
+        "negative": 0.016,
+        "neutral": 0.9424,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aditya Suresh",
+      "role": "Analyst - Macquarie",
+      "tone": "optimistic",
+      "key_topics": [
+        "postpaid opportunities",
+        "strategy execution"
+      ],
+      "direct_answers": [
+        "Gopal Vittal's response on postpaid opportunities"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Aditya Suresh from Macquarie expressed optimism about Bharti Airtel's strategic execution and sought further clarification on postpaid opportunities. He congratulated Gopal Vittal on the company's strong strategy execution and asked insightful questions about the dimensions of postpaid opportunities, focusing on subscriber count and pricing structure. His questions were directly addressed by Gopal Vittal.",
+      "sentiment_score": 0.0623,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0623,
+        "positive": 0.0816,
+        "negative": 0.0193,
+        "neutral": 0.8991,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Manish Adukia",
+      "role": "Analyst - Goldman Sachs",
+      "tone": "inquisitive",
+      "key_topics": [
+        "capex trends",
+        "Airtel Business expansion",
+        "free cash flow"
+      ],
+      "direct_answers": [
+        "Gopal Vittal's response on capex trends and Airtel Business expansion"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Manish Adukia from Goldman Sachs posed detailed questions about Bharti Airtel's capex trends and future investments, particularly in the context of Airtel Business and cloud expansion. He inquired about the potential for elevated capex in certain business areas and sought clarity on the theoretical limits of mobile broadband expansion. Gopal Vittal addressed his questions directly, providing insights into the company's capex strategy.",
+      "sentiment_score": 0.0205,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0205,
+        "positive": 0.1519,
+        "negative": 0.1315,
+        "neutral": 0.7166,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivekanand Subbaraman",
+      "role": "Analyst - Ambit",
+      "tone": "probing",
+      "key_topics": [
+        "enterprise revenue",
+        "EBITDA trajectory",
+        "exceptional charge"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "Gopal Vittal's response on Airtel IQ and CPaaS business impact"
+      ],
+      "summary": "Vivekanand Subbaraman from Ambit asked probing questions about Bharti Airtel's enterprise revenue and EBITDA trajectory, particularly concerning the impact on Airtel IQ and CPaaS business. He sought clarification on the potential effects of exiting low-margin businesses on these segments. Gopal Vittal's response was somewhat evasive, not fully addressing the concerns raised about the EBITDA impact.",
+      "sentiment_score": 0.0343,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0343,
+        "positive": 0.0603,
+        "negative": 0.0261,
+        "neutral": 0.9136,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or avoided. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. The JSON structure is then populated with this information, ensuring it adheres to the specified schema.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Parthiv Jhonsa",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "thanks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Parthiv Jhonsa served as the moderator for the Coal India Analyst Meet 2025. He introduced the management team and expressed gratitude to the attendees. His role was primarily to facilitate the transition to the management's presentation, maintaining a neutral tone throughout his brief remarks.",
+      "sentiment_score": 0.1456,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1456,
+        "positive": 0.159,
+        "negative": 0.0134,
+        "neutral": 0.8276,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bijay Prakash Dubey",
+      "role": "Company Secretary",
+      "tone": "neutral",
+      "key_topics": [
+        "meeting logistics",
+        "presentation availability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Bijay Prakash Dubey, the Company Secretary, provided logistical details about the meeting, including the absence of the Chairman and the availability of the presentation online. He maintained a neutral tone, focusing on procedural aspects and ensuring participants were informed about the session's structure and recording.",
+      "sentiment_score": -0.0303,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0303,
+        "positive": 0.0279,
+        "negative": 0.0582,
+        "neutral": 0.9138,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mukesh Agarwal",
+      "role": "Director (Finance)",
+      "tone": "cautious",
+      "key_topics": [
+        "employee numbers",
+        "manpower cost",
+        "wage revision",
+        "capex"
+      ],
+      "direct_answers": [
+        "employee numbers and recruitment",
+        "manpower cost reduction and future increase",
+        "capex details"
+      ],
+      "dodged_or_vague": [
+        "specifics on non-executive wage revision impact"
+      ],
+      "summary": "Mukesh Agarwal, Director of Finance, discussed employee numbers and the impact of superannuation on manpower costs. He provided cautious insights into future wage revisions and their implications on costs. Agarwal also detailed capex spending, indicating a comprehensive approach to financial planning. His responses were generally direct, though he was less specific about the impact of non-executive wage revisions.",
+      "sentiment_score": 0.0268,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0268,
+        "positive": 0.0662,
+        "negative": 0.0395,
+        "neutral": 0.8943,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mukesh Choudhary",
+      "role": "Director (Marketing)",
+      "tone": "confident",
+      "key_topics": [
+        "volume growth",
+        "e-auction premiums",
+        "market demand"
+      ],
+      "direct_answers": [
+        "volume growth issues",
+        "e-auction premium trends"
+      ],
+      "dodged_or_vague": [
+        "specific future volume targets"
+      ],
+      "summary": "Mukesh Choudhary, Director of Marketing, addressed issues related to volume growth, attributing slippages to environmental and regulatory challenges. He confidently discussed e-auction premiums, providing historical context and current expectations. Choudhary was optimistic about meeting demand despite production challenges, though he was less specific about future volume targets.",
+      "sentiment_score": 0.3969,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3969,
+        "positive": 0.4698,
+        "negative": 0.0729,
+        "neutral": 0.4573,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Jyoti Singh",
+      "role": "Analyst from LIC MF",
+      "tone": "inquisitive",
+      "key_topics": [
+        "volume growth",
+        "e-auction premiums",
+        "market share"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jyoti Singh, an analyst from LIC MF, posed several questions regarding volume growth, e-auction premiums, and Coal India's market share. Her inquiries were focused on understanding the reasons behind flat volumes and the company's strategy to maintain market share amidst increasing imports and captive mining. Singh's tone was inquisitive, seeking clarity on future projections and strategic initiatives.",
+      "sentiment_score": 0.09,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.09,
+        "positive": 0.109,
+        "negative": 0.0189,
+        "neutral": 0.8721,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Yash Patel",
+      "role": "Analyst from ICICI Prudential Mutual Fund",
+      "tone": "inquisitive",
+      "key_topics": [
+        "e-auction strategy",
+        "Shakti scheme"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Yash Patel, an analyst from ICICI Prudential Mutual Fund, asked about Coal India's e-auction strategy and the implications of the new Shakti scheme. His questions aimed to understand the company's approach to market dynamics and government policies. Patel's tone was inquisitive, seeking detailed explanations on strategic decisions and policy impacts.",
+      "sentiment_score": 0.0244,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0244,
+        "positive": 0.0435,
+        "negative": 0.0192,
+        "neutral": 0.9373,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Arjit Dutta",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "volume growth",
+        "bridge linkage",
+        "stripping ratio"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Arjit Dutta, an analyst, focused on operational details such as volume growth, bridge linkage, and stripping ratio. His questions were aimed at understanding the operational efficiencies and challenges faced by Coal India. Dutta's tone was inquisitive, seeking specific data points to assess the company's operational strategies.",
+      "sentiment_score": 0.0506,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0506,
+        "positive": 0.0707,
+        "negative": 0.0201,
+        "neutral": 0.9093,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted for each speaker, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their language and the context of their statements. For management speakers, the analysis noted which questions were answered directly and which were deflected or avoided. Finally, a narrative summary was crafted for each speaker, capturing their contribution to the call, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

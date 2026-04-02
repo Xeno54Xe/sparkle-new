@@ -1,0 +1,159 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Anurag Gupta",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "strategic direction",
+        "interaction with business leaders",
+        "information sharing"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anurag Gupta opened the Capital Markets Day by welcoming attendees and setting the stage for the presentations. He emphasized the importance of understanding UPL's strategic direction and highlighted the opportunity for interaction with business leaders. His tone was neutral, focusing on the logistics and structure of the event. Anurag did not engage in the Q&A session, so there were no direct answers or evasions to analyze.",
+      "sentiment_score": 0.1812,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1812,
+        "positive": 0.191,
+        "negative": 0.0097,
+        "neutral": 0.7993,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jai Shroff",
+      "role": "Chairman and Group CEO",
+      "tone": "optimistic",
+      "key_topics": [
+        "financial performance",
+        "global presence",
+        "innovation",
+        "ESG"
+      ],
+      "direct_answers": [
+        "Saurabh Jain: You said the first half is going to be subdued. Can you share more insights? Do you expect to be on the lower side of the revenue guidance, or it can be even worse than that?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jai Shroff, the Chairman and Group CEO, delivered an optimistic overview of UPL's performance and strategic direction. He highlighted the company's resilience, global presence, and innovation capabilities, emphasizing their strong financial results with 8% revenue growth and 47% EBITDA growth. Jai underscored UPL's commitment to sustainability and ESG, noting their leadership in these areas. He directly answered questions about revenue guidance, maintaining a cautious yet positive outlook. His narrative was forward-looking, focusing on continued growth and leadership in the industry.",
+      "sentiment_score": 0.8145,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8145,
+        "positive": 0.824,
+        "negative": 0.0095,
+        "neutral": 0.1666,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Anand Vora",
+      "role": "Global CFO",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "guidance",
+        "working capital",
+        "debt reduction"
+      ],
+      "direct_answers": [
+        "Saurabh Jain: Can you share more insights? Do you expect to be on the lower side of the revenue guidance, or it can be even worse than that?"
+      ],
+      "dodged_or_vague": [
+        "Tarang Agrawal: How confident are you to really maintain the working capital numbers that you've come through as on 31st March 25?"
+      ],
+      "summary": "Anand Vora, the Global CFO, presented a confident overview of UPL's financial performance, highlighting significant improvements in revenue, EBITDA, and working capital. He detailed the company's successful capital transactions and debt reduction efforts. Anand's tone was confident as he shared guidance for the upcoming year, acknowledging potential challenges due to geopolitical factors. He directly addressed questions about revenue guidance but was somewhat vague regarding the maintenance of working capital numbers. Overall, Anand emphasized UPL's financial resilience and strategic positioning for future growth.",
+      "sentiment_score": 0.7954,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7954,
+        "positive": 0.8732,
+        "negative": 0.0778,
+        "neutral": 0.049,
+        "chunks_scored": 5
+      }
+    },
+    {
+      "name": "Mike Frank",
+      "role": "CEO of UPL Corporation",
+      "tone": "cautious",
+      "key_topics": [
+        "regional growth",
+        "market conditions",
+        "pricing"
+      ],
+      "direct_answers": [
+        "Somaiah Valliyappan: Is there any pricing-led benefit we are making in?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mike Frank, CEO of UPL Corporation, provided a cautious outlook on regional growth and market conditions. He highlighted strong performance in Latin America and North America, while acknowledging challenges in Argentina. Mike discussed the impact of pricing changes in the crop protection space, noting that prices have generally decreased over the past 18 months. He directly answered questions about pricing benefits, maintaining a cautious tone throughout his remarks. Mike's analysis was grounded in industry context, reflecting both achievements and challenges faced by UPL.",
+      "sentiment_score": -0.7454,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.7454,
+        "positive": 0.0989,
+        "negative": 0.8443,
+        "neutral": 0.0568,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Dobhal",
+      "role": "CEO of UPL SAS",
+      "tone": "confident",
+      "key_topics": [
+        "business transformation",
+        "resilience",
+        "future growth"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ashish Dobhal, CEO of UPL SAS, expressed confidence in the transformation and resilience of the India business. He described the past year as pivotal, highlighting the company's recovery and rebuilding efforts. Ashish emphasized the financial strength, commercial sharpness, and operational efficiency achieved, positioning UPL SAS as 'future-ready'. His remarks were forward-looking, focusing on both quantitative and qualitative growth ambitions. Ashish did not engage in the Q&A session, so there were no direct answers or evasions to analyze.",
+      "sentiment_score": 0.5225,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5225,
+        "positive": 0.5344,
+        "negative": 0.0119,
+        "neutral": 0.4538,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted verbatim to capture specific language, numbers, and forward-looking statements. Each speaker's tone is assessed based on their remarks, and for management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, highlighting their contributions, stance, and key messages. This structured approach ensures a comprehensive understanding of the earnings call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

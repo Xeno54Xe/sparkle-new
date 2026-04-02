@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.0618,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9467,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9467,
+        "positive": 0.0149,
+        "negative": 0.9615,
+        "neutral": 0.0236,
+        "chunks_scored": 1
+      },
+      "text": "Our IT services revenue for Q1 sequentially declined by 2% in constant currency, which is well within our guidance range. On a year-on-year basis, the revenue declined by 2.3% in constant currency terms. Our operating margin for Q1 was at 17.3%, an expansion of 80 basis points on a year-on-year basis. Americas 1 grew 0.2% sequentially and grew 5.8% on a year-on-year basis. Europe declined 6.4% sequentially and 11.6% on a year-on-year basis. BFSI declined 3.8% sequentially and also declined 3.5% on year-on-year terms. Healthcare grew 0.5% sequentially and has grown 3.5% year-on-year. Our net income grew 10.9% on a year-on-year basis in this quarter."
+    },
+    "forward_guidance": {
+      "score": 0.9392,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9392,
+        "positive": 0.9562,
+        "negative": 0.017,
+        "neutral": 0.0269,
+        "chunks_scored": 1
+      },
+      "text": "We are guiding for a sequential growth of minus 1% to plus 1% in constant currency terms. While we are cautious given the macro environment, our strong order book, healthy pipeline, and focus on consulting-led AI-powered solutions give us confidence in delivering long-term value to our stakeholders. Returning to profitable growth remains our priority. We expect revenues from our IT services revenue business to be in the range of $2.56 billion to $2.612 billion. The second half of the year is expected to be stronger than the first half."
+    },
+    "risk_language": {
+      "score": -0.563,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.563,
+        "positive": 0.1922,
+        "negative": 0.7552,
+        "neutral": 0.0526,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed significant macro uncertainty, which kept overall demand muted. Many of our large deal wins are in the nature of cost takeout or vendor consolidation, which typically come with upfront investments and will cause pressure on the cost. Europe continued to face headwinds and clients remain focused on maintaining their competitiveness in this environment. There are pressures that are going to get created, and we will have to offset them through better operational rigor. The discretionary spend environment seems to have stabilized, but the market in Europe is definitely uncertain."
+    },
+    "investor_confidence": {
+      "score": 0.883,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.883,
+        "positive": 0.8922,
+        "negative": 0.0092,
+        "neutral": 0.0986,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction, emphasizing a strong order book and healthy pipeline. Analyst questions were answered directly, with management providing detailed explanations of financial metrics and strategic priorities. The focus on consulting-led AI-powered solutions and the strategic deals won in Quarter 1 were highlighted as evidence of management's credibility. Management expressed confidence in delivering long-term value to stakeholders and emphasized the priority of returning to profitable growth."
+    }
+  },
+  "key_positive_drivers": [
+    "Operating margin expansion of 80 basis points year-on-year",
+    "Strong deal momentum in Americas",
+    "Bookings worth $5 billion in total contract value, a growth of 51% year-on-year",
+    "Large deal bookings reached $2.7 billion, up 131% year-on-year",
+    "Net income grew 10.9% year-on-year",
+    "Focus on consulting-led AI-powered solutions"
+  ],
+  "key_negative_drivers": [
+    "Sequential revenue decline of 2% in constant currency",
+    "Europe declined 6.4% sequentially and 11.6% year-on-year",
+    "BFSI declined 3.8% sequentially",
+    "Upfront investments causing cost pressure",
+    "Significant macro uncertainty affecting demand",
+    "Discretionary spend environment stabilization"
+  ],
+  "notable_phrases": [
+    "Sequentially declined by 2% in constant currency",
+    "Operating margin was at 17.3%",
+    "Strong order book, healthy pipeline",
+    "Returning to profitable growth remains our priority",
+    "Significant macro uncertainty",
+    "Focus on consulting-led AI-powered solutions",
+    "Bookings worth $5 billion in total contract value",
+    "Net income grew 10.9% year-on-year"
+  ],
+  "chain_of_thought": "The financial performance showed a decline in revenue but an improvement in operating margin, indicating mixed results. Forward guidance was cautiously optimistic, with expectations of slight growth and a focus on long-term value. Risk language highlighted macroeconomic uncertainties and cost pressures from large deals. Investor confidence was bolstered by management's clear communication and strategic focus on AI solutions, despite acknowledging challenges."
+}

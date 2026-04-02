@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Varun Berry",
+      "role": "Executive Vice Chairman, Managing Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "GDP trends",
+        "Private Consumption Expenditure",
+        "turnover and profit growth",
+        "distribution and marketing",
+        "cost efficiencies",
+        "sustainability",
+        "competitive intensity"
+      ],
+      "direct_answers": [
+        "Okay. So Abneesh, we -- because we are so widespread, it's not one event which really makes a difference to our overall sales. We did well in the Kumbh, but it's too small to impact our overall sales for the country and for the globe as well. So we've seen some recovery and which is the good trend and which gets me to your second question, which is on the outlook. I'm reasonably optimistic on the recovery happening. I don't think it's going to happen -- It's not going to be a hockey stick. But I do think that there is -- we have seen gradual recovery, and I do think that this trend is going to continue into the next year as well."
+      ],
+      "dodged_or_vague": [
+        "No, no, that's not the point.",
+        "Yes. So it's a statutory requirement that a position of CEO has to be filled. So that's where it is."
+      ],
+      "summary": "Varun Berry presented a confident outlook on Britannia's performance, highlighting GDP and consumption expenditure trends as positive indicators for recovery in the FMCG sector. He detailed the company's financial performance, noting a 9% growth in turnover and a 4% increase in profit after tax for the quarter. Berry emphasized strategic pillars such as distribution, marketing, and cost efficiencies, and expressed optimism about gradual recovery in the market. He directly addressed questions about sales impact from events like Kumbh Mela and provided a cautious yet optimistic outlook for future growth. However, he was vague about succession planning and CEO appointment specifics.",
+      "sentiment_score": 0.838,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.838,
+        "positive": 0.8634,
+        "negative": 0.0254,
+        "neutral": 0.1113,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "N. Venkataraman",
+      "role": "Executive Director and CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "cost efficiency",
+        "fiscal incentives",
+        "buying efficiencies"
+      ],
+      "direct_answers": [
+        "Yes. So as far as cost efficiency for the year is concerned, the framework largely is the same. What we have done is to have gone deeper. So some of the areas where we managed to get some additional benefits in '24-25 has been the areas of fiscal incentives because as you know, the Maharashtra facility was recognized as an ultra-mega project. And therefore, the incentives applicable to the ultra-mega projects came through in '24-25 for us."
+      ],
+      "dodged_or_vague": [],
+      "summary": "N. Venkataraman provided insights into Britannia's cost efficiency strategies, emphasizing the role of fiscal incentives and buying efficiencies in achieving additional benefits for the year. He explained that the Maharashtra facility's recognition as an ultra-mega project allowed the company to capitalize on specific incentives. Venkataraman's tone was neutral, focusing on factual reporting of cost management strategies without delving into speculative or forward-looking statements. His responses were direct and informative, providing clarity on the company's cost efficiency framework.",
+      "sentiment_score": 0.5509,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5509,
+        "positive": 0.568,
+        "negative": 0.017,
+        "neutral": 0.415,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ayush Agarwal",
+      "role": "Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "earnings call introduction",
+        "safe harbor statement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ayush Agarwal, representing Investor Relations, opened the earnings call with a neutral tone, providing a structured introduction to the session. He listed the key management personnel present and directed attention to the Safe Harbor Statement, ensuring compliance and setting the stage for the detailed presentations. Agarwal's role was primarily facilitative, ensuring the call proceeded smoothly and that participants were aware of the resources available, such as the analyst deck on the website.",
+      "sentiment_score": 0.0304,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0304,
+        "positive": 0.0459,
+        "negative": 0.0155,
+        "neutral": 0.9386,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call management",
+        "question and answer session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator maintained a neutral tone throughout the call, efficiently managing the flow of the conference. They ensured that participants were aware of the listen-only mode and the procedure for asking questions, thereby facilitating a smooth and orderly session. The Moderator's role was crucial in maintaining the structure of the call, ensuring that it adhered to the planned agenda and that all participants were informed of the recording status.",
+      "sentiment_score": 0.0562,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0562,
+        "positive": 0.0688,
+        "negative": 0.0126,
+        "neutral": 0.9186,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Varun Berry, as the CEO, provided a comprehensive overview of the company's performance and strategic direction, displaying confidence in the company's growth prospects. N. Venkataraman focused on cost efficiency strategies, providing detailed insights into fiscal incentives and cost management. Ayush Agarwal facilitated the call, ensuring participants were informed and the session proceeded smoothly. The Moderator managed the call's logistics, maintaining a neutral tone and ensuring the session adhered to the agenda. Each speaker's tone and key topics were identified, and their statements were analyzed for directness and clarity, particularly in response to analyst questions.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

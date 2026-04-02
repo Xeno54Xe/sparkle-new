@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Diksha Maheshwari",
+      "role": "Head, Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "forward-looking statements",
+        "risks and uncertainties",
+        "investor presentation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Diksha Maheshwari opened the call by highlighting the presence of forward-looking statements and the associated risks and uncertainties. She emphasized that these statements are based on current expectations and that Cipla is not obligated to update them. Her tone was neutral, focusing on procedural aspects and ensuring that participants had access to the investor presentation.",
+      "sentiment_score": -0.0057,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0057,
+        "positive": 0.0358,
+        "negative": 0.0414,
+        "neutral": 0.9228,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Vohra",
+      "role": "MD and Global CEO",
+      "tone": "confident",
+      "key_topics": [
+        "strong performance",
+        "leadership transition",
+        "market position"
+      ],
+      "direct_answers": [
+        "guidance revision due to Lanreotide"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Umang Vohra expressed confidence in Cipla's strong performance over the past five years, highlighting enhanced profitability and a solid market position. He announced his transition of leadership to Achin Gupta, indicating a strategic shift for the company's future growth. Vohra directly addressed the need to revise guidance due to Lanreotide supply issues, maintaining a confident tone throughout his statements.",
+      "sentiment_score": 0.7379,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7379,
+        "positive": 0.7467,
+        "negative": 0.0088,
+        "neutral": 0.2445,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Achin Gupta",
+      "role": "MD and Global CEO Designate",
+      "tone": "optimistic",
+      "key_topics": [
+        "quarterly performance",
+        "strategic agreements",
+        "product launches"
+      ],
+      "direct_answers": [
+        "peptide launches and regulatory assets"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Achin Gupta conveyed an optimistic outlook, focusing on Cipla's strong quarterly performance and strategic initiatives. He highlighted the company's diversified portfolio and significant revenue achievements despite challenges with generic Revlimid sales. Gupta discussed strategic agreements with Pfizer and the acquisition of Inzpera Health Sciences, emphasizing growth in key therapeutic areas. He provided direct answers regarding upcoming peptide launches and regulatory assets, maintaining a forward-looking perspective.",
+      "sentiment_score": 0.9308,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9308,
+        "positive": 0.955,
+        "negative": 0.0242,
+        "neutral": 0.0208,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashish Adukia",
+      "role": "Global CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "EBITDA margin",
+        "R&D investments"
+      ],
+      "direct_answers": [
+        "impact of Rs. 275 crores exceptional item"
+      ],
+      "dodged_or_vague": [
+        "future margin guidance"
+      ],
+      "summary": "Ashish Adukia presented a cautious tone while discussing Cipla's financial performance. He detailed the flat revenue growth and the decline in EBITDA margin due to lower Revlimid revenues. Adukia explained the increase in expenses as a result of strategic R&D investments and preparation for new product launches. He provided direct answers regarding the Rs. 275 crores exceptional item but was vague about future margin guidance, indicating a need for further planning.",
+      "sentiment_score": -0.3423,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.3423,
+        "positive": 0.2897,
+        "negative": 0.632,
+        "neutral": 0.0783,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies four key speakers: Diksha Maheshwari, Umang Vohra, Achin Gupta, and Ashish Adukia. Each speaker's statements are extracted and analyzed for tone and content. Management speakers, particularly Umang Vohra and Achin Gupta, provided direct answers to specific questions, while Ashish Adukia was cautious and somewhat vague about future guidance. The JSON structure captures each speaker's role, tone, key topics, verbatim statements, and a narrative summary of their contributions to the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

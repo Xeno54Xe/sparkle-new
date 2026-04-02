@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5219,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9107,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9107,
+        "positive": 0.9474,
+        "negative": 0.0367,
+        "neutral": 0.0159,
+        "chunks_scored": 1
+      },
+      "text": "Management reported a 24% growth in assets under management (AUM) to INR 462,261 crores, driven by secular growth across businesses. The company added 4.13 million new customers in Q2, with expectations to add 16 to 17 million new customers in FY '26. The cost of funds improved by 27 basis points in Q2, coming in at 7.52%, and the net interest margin (NIM) remained flat, in line with Q1. Operating efficiencies improved, with opex to NTI reducing to 32.6% from 33.2% in the previous year. However, credit costs remained elevated, with a full-year expectation at the upper end of the 1.85% to 1.95% range. The company has taken a 'risk-first approach' to ensure portfolio resilience, particularly in the MSME segment, which is expected to grow by only 10-12% this fiscal year."
+    },
+    "forward_guidance": {
+      "score": 0.6698,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.6698,
+        "positive": 0.7949,
+        "negative": 0.1251,
+        "neutral": 0.0801,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a revised guidance for AUM growth, now expecting it to be in the region of 22-23% for the full year, down from the earlier 24-25% due to risk actions in the MSME business. The cost of funds for FY '26 is expected to be between 7.5% to 7.55%. The company is adopting a 'prudent and balanced stance' on growth, with a focus on delivering cost efficiencies. Management expressed excitement about the FinAI transformation, which is expected to reflect in cost and productivity benefits over the next 12-18 months. The company is also planning significant expansion, with 900 more branches by March '27 and a focus on new business lines like gold loans and car loans."
+    },
+    "risk_language": {
+      "score": -0.6042,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.6042,
+        "positive": 0.1687,
+        "negative": 0.7729,
+        "neutral": 0.0584,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, particularly in the MSME segment, where the company has cut business by 25% due to 'incipient stress' and expects only 10-12% growth. Credit costs are elevated, with a full-year expectation at the upper end of the 1.85% to 1.95% range. Management noted that the GNPA and NNPA figures increased sequentially due to seasonal factors. The company is phasing out its captive 2-wheeler and 3-wheeler finance business, which contributes to 1.5% of AUM but accounts for 9% of loan losses. Management emphasized a 'risk-first' approach and is taking significant risk actions to ensure long-term sustainability."
+    },
+    "investor_confidence": {
+      "score": 0.843,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.843,
+        "positive": 0.8516,
+        "negative": 0.0085,
+        "neutral": 0.1399,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed guidance on growth and risk management. They emphasized their 'risk-first' approach and the proactive steps taken to manage MSME-related issues. The company is focused on leveraging technology and AI to create long-term shareholder value, with management spending 12-15% of their time on the FinAI transformation. The call conveyed a sense of confidence in the company's ability to manage risks and deliver sustainable growth, with management expressing excitement about future prospects."
+    }
+  },
+  "key_positive_drivers": [
+    "24% growth in AUM",
+    "4.13 million new customers added in Q2",
+    "Improvement in cost of funds by 27 basis points",
+    "Operating efficiencies with reduced opex to NTI",
+    "Excitement about FinAI transformation"
+  ],
+  "key_negative_drivers": [
+    "Elevated credit costs",
+    "Reduced AUM growth guidance to 22-23%",
+    "MSME segment under watch with only 10-12% growth expected",
+    "Sequential increase in GNPA and NNPA"
+  ],
+  "notable_phrases": [
+    "risk-first approach",
+    "prudent and balanced stance",
+    "excited about the FinAI transformation",
+    "elevated credit costs",
+    "significant risk actions",
+    "proactive steps to manage MSME-related issues",
+    "focus on delivering cost efficiencies",
+    "sustainable growth"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with significant AUM growth and customer acquisition, but also acknowledged elevated credit costs and reduced growth guidance due to MSME risks. Management expressed confidence in their risk management strategies and future growth prospects, particularly with the FinAI transformation, indicating a cautiously bullish outlook."
+}

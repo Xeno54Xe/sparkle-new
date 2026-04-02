@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8185,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9437,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9437,
+        "positive": 0.9612,
+        "negative": 0.0175,
+        "neutral": 0.0213,
+        "chunks_scored": 1
+      },
+      "text": "Hero MotoCorp reported strong financial performance for Q4 FY25, achieving the highest-ever revenue from operations and PAT. Revenue stood at ₹40,756 crores, up 9%, with EBITDA of ₹5,868 crores, up 12%, and PAT of ₹4,610 crores, a growth of 16%. The ICE EBITDA margin improved by 90 bps to 16.2%, driven by mix improvements, price, and cost savings. The overall EBITDA margin, after accounting for investments in the EV business, improved by 40 basis points to 14.4%. The company declared a final dividend of ₹65 per equity share, contributing to a total dividend payout of ₹165 per share for the financial year. Management highlighted strong cash from operations and maintained market leadership with sales of 5.9 million vehicles."
+    },
+    "forward_guidance": {
+      "score": 0.9252,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9252,
+        "positive": 0.9345,
+        "negative": 0.0092,
+        "neutral": 0.0563,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a positive outlook for the next quarter and FY26, emphasizing priorities such as growing volumes, scaling up the business, and increasing market share. They expect the industry to grow in mid- to high single digits, driven by factors like a better monsoon and increased government spending in rural areas. The company plans to continue investing in premium, scooters, and EV portfolios, with a focus on improving profitability through BOM cost reduction and PLI benefit realization. The EV business is expected to grow, with a target to scale up and achieve profitability. Management is confident in outpacing industry growth with new product launches and strategic investments."
+    },
+    "risk_language": {
+      "score": 0.4284,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.4284,
+        "positive": 0.6985,
+        "negative": 0.27,
+        "neutral": 0.0315,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks and challenges, including the ongoing global turmoil due to border situations and trade tensions. They addressed the impact of investments in the EV business on margins, noting a negative EBITDA for the EV segment but an improvement from previous years. The company temporarily halted production at several facilities for supply chain alignment and maintenance, but expects normalization soon. Financing conditions were mentioned as becoming tighter, but management remains optimistic about innovation in financing schemes. They also discussed the potential impact of rising EV and export mix on margins, but expressed confidence in their strategic investments."
+    },
+    "investor_confidence": {
+      "score": 0.861,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.861,
+        "positive": 0.871,
+        "negative": 0.01,
+        "neutral": 0.119,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial performance and strategic initiatives. They emphasized disciplined fiscal management and strategic execution as drivers of their strong performance. The leadership transition was addressed, with assurance that the acting CEO is fully on the job. Management's confidence in their strategy and market position was evident, with a focus on executing their plans to gain market share and improve profitability. The call conveyed a sense of credibility and commitment to long-term growth."
+    }
+  },
+  "key_positive_drivers": [
+    "Highest-ever revenue and PAT",
+    "Improved ICE EBITDA margin",
+    "Strong cash from operations",
+    "Market leadership in 100cc category",
+    "Growth in 125cc segment",
+    "Positive outlook for rural growth"
+  ],
+  "key_negative_drivers": [
+    "Global turmoil and trade tensions",
+    "Negative EBITDA for EV segment",
+    "Temporary production halt",
+    "Tighter financing conditions",
+    "Impact of rising EV and export mix on margins"
+  ],
+  "notable_phrases": [
+    "highest-ever revenue from operations",
+    "EBITDA margin stands at 14.2%",
+    "grow volumes, scale up the business",
+    "priority is very clearly to grow market share",
+    "temporary production halt",
+    "financing is becoming tighter",
+    "disciplined fiscal management",
+    "strong financial performance"
+  ],
+  "chain_of_thought": "The financial performance was strong with record revenues and improved margins, but investments in EVs impacted overall margins. Forward guidance was optimistic, focusing on growth and market share expansion, with strategic investments in EVs and premium segments. Risks were acknowledged, including global tensions and financing challenges, but management expressed confidence in their strategies. Investor confidence was bolstered by management's transparency and strategic clarity, despite some operational challenges."
+}

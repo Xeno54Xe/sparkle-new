@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8723,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9415,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9415,
+        "positive": 0.9615,
+        "negative": 0.02,
+        "neutral": 0.0185,
+        "chunks_scored": 1
+      },
+      "text": "UPL Ltd reported a strong financial performance in Q3 FY26, with revenue reaching INR12,269 crores, marking a 12% growth compared to the previous year. This growth was driven by an 8% increase in volumes, despite facing pricing pressure. The contribution margin expanded to around 43%, supported by an improved product mix, higher capacity utilization, and lower input costs. EBITDA grew by 13% to INR2,434 crores, maintaining impressive margins from the previous year. Profit before tax (PBT) saw a significant 90% increase to INR671 crores, driven by EBITDA growth, reduced net finance costs, and lower losses from associates and joint ventures."
+    },
+    "forward_guidance": {
+      "score": 0.9425,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9425,
+        "positive": 0.9584,
+        "negative": 0.0159,
+        "neutral": 0.0258,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving the full-year FY26 guidance of 4% to 8% revenue growth and 12% to 16% EBITDA growth. The outlook for Q4 is strong, with expectations of growth across all regions, supported by in-season demand and new product launches. The company is maintaining its guidance and anticipates a strong volume-led quarter. Management highlighted the continued focus on cash generation and maintaining a robust balance sheet, with net debt-to-EBITDA expected to improve to between 1.6x and 1.8x."
+    },
+    "risk_language": {
+      "score": 0.8154,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8154,
+        "positive": 0.8931,
+        "negative": 0.0777,
+        "neutral": 0.0292,
+        "chunks_scored": 1
+      },
+      "text": "The earnings call addressed several risks, including geopolitical uncertainties, shifting trade dynamics, tariff-driven volatility, and pricing pressure. Management acknowledged the challenging market conditions but emphasized the resilience of the global crop protection and seeds demand. There was a mention of higher expected credit loss provisioning impacting results. Despite these challenges, management remained optimistic about the company's ability to navigate these headwinds through disciplined execution and financial management."
+    },
+    "investor_confidence": {
+      "score": 0.7202,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7202,
+        "positive": 0.7312,
+        "negative": 0.011,
+        "neutral": 0.2579,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence throughout the call, emphasizing their commitment to delivering strong full-year results. They were transparent about the financial performance and strategic initiatives, including the filing of DRHP for the Advanta IPO. Analyst questions were addressed directly, with management providing detailed explanations and guidance. The company's focus on governance, sustainability, and financial discipline was highlighted as key factors in building investor confidence."
+    }
+  },
+  "key_positive_drivers": [
+    "12% revenue growth",
+    "43% contribution margin expansion",
+    "13% EBITDA growth",
+    "90% increase in PBT",
+    "Strong performance in Latin America and Europe",
+    "Successful new product launches"
+  ],
+  "key_negative_drivers": [
+    "Pricing pressure",
+    "Geopolitical uncertainties",
+    "Tariff-driven volatility",
+    "Higher expected credit loss provisioning"
+  ],
+  "notable_phrases": [
+    "record quarter",
+    "strong performance delivered",
+    "confidence in achieving our full year guidance",
+    "robust grower consumption",
+    "benign interest rate environment",
+    "resilient performance till date",
+    "continued operational headwinds",
+    "strong volume-led quarter"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant growth in revenue, EBITDA, and PBT, driven by improved margins and cost management. Forward guidance was optimistic, with expectations of continued growth and strong Q4 performance. Risks were acknowledged, particularly geopolitical and pricing pressures, but management expressed confidence in their ability to manage these challenges. Investor confidence was reinforced through transparent communication and a focus on governance and sustainability."
+}

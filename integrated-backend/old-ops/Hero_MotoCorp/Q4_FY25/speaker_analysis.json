@@ -1,0 +1,155 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Umang Khurana",
+      "role": "Chief Risk Officer and Head, Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "Investor Day postponement",
+        "Call introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Umang Khurana opened the call by addressing the postponement of the Investor Day, citing respect and prudence as reasons. He introduced the management team and set the stage for the earnings call. His tone was neutral, focusing on procedural aspects rather than financial specifics.",
+      "sentiment_score": -0.0995,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0995,
+        "positive": 0.0417,
+        "negative": 0.1412,
+        "neutral": 0.8171,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vikram Kasbekar",
+      "role": "Acting Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "Quarterly performance",
+        "Market leadership",
+        "Economic outlook",
+        "Product launches"
+      ],
+      "direct_answers": [
+        "Yes, yes, please. Ashu, please take that."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vikram Kasbekar expressed confidence in Hero MotoCorp's strong quarterly performance and market leadership. He highlighted the company's highest-ever top line and bottom line achievements and discussed the positive economic outlook, including expectations for industry growth. His tone was confident, and he directly addressed questions about market share and product strategy.",
+      "sentiment_score": 0.931,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.931,
+        "positive": 0.9443,
+        "negative": 0.0133,
+        "neutral": 0.0424,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Anand",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "Financial performance",
+        "Revenue and EBITDA",
+        "Market leadership",
+        "Investment strategy"
+      ],
+      "direct_answers": [
+        "So Pramod – so Mr. Kasbekar he is the acting CEO and he is fully on the job. So he's the one who is currently driving the business. And we'll come back to you as we have more to share."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vivek Anand confidently reported Hero MotoCorp's strong financial performance, highlighting significant revenue and EBITDA growth. He detailed the company's strategic investments, particularly in the EV sector, and maintained a positive outlook on market leadership. His responses were direct, particularly when addressing questions about leadership and financial strategy.",
+      "sentiment_score": 0.9336,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9336,
+        "positive": 0.9474,
+        "negative": 0.0139,
+        "neutral": 0.0387,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashutosh Varma",
+      "role": "Chief Business Officer – India BU",
+      "tone": "optimistic",
+      "key_topics": [
+        "Market share growth",
+        "Product launches",
+        "Channel inventory"
+      ],
+      "direct_answers": [
+        "Hi Chandra, if I got the question right, you're wanting to know a little bit more"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashutosh Varma was optimistic about Hero MotoCorp's market share growth, particularly in the 125cc segment. He emphasized the success of the Xtreme brand and expressed confidence in future product launches. His tone was positive, and he provided clear answers to questions about market strategy and inventory management.",
+      "sentiment_score": 0.8533,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8533,
+        "positive": 0.8631,
+        "negative": 0.0097,
+        "neutral": 0.1272,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ram Kuppuswamy",
+      "role": "Chief Operating Officer",
+      "tone": "defensive",
+      "key_topics": [
+        "Product quality",
+        "Brand value"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ram Kuppuswamy defended Hero MotoCorp's product quality and brand value, emphasizing the company's commitment to high standards. He addressed concerns about quality issues by reiterating the company's focus on delivering value and maintaining quality levels. His tone was defensive, aiming to reassure stakeholders about the company's product integrity.",
+      "sentiment_score": -0.5716,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.5716,
+        "positive": 0.171,
+        "negative": 0.7426,
+        "neutral": 0.0863,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis identifies each speaker and their role in the earnings call. Key statements are extracted to capture the essence of their contributions, focusing on financial performance, market strategy, and product quality. The tone of each speaker is assessed based on their language and responses to questions. Management speakers are evaluated on their ability to directly answer analyst questions, with notes on any deflections or vague responses. This structured approach ensures a comprehensive understanding of the call's dynamics and the company's strategic direction.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

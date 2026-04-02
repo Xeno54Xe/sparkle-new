@@ -1,0 +1,153 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference procedures"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could engage and reminding them of the call's recording status. The tone was neutral and procedural, focusing on ensuring the call ran smoothly and participants were aware of the process.",
+      "sentiment_score": 0.0539,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0539,
+        "positive": 0.0668,
+        "negative": 0.0129,
+        "neutral": 0.9203,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anurag Gupta",
+      "role": "Head of Investor Relations",
+      "tone": "Confident",
+      "key_topics": [
+        "Introduction",
+        "Management team",
+        "Closing remarks"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anurag Gupta opened and closed the earnings call, expressing gratitude to participants and introducing the management team. He confidently directed the flow of the call, ensuring that all necessary documents were available to participants. His closing remarks invited further queries, indicating openness and transparency.",
+      "sentiment_score": 0.0485,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0485,
+        "positive": 0.0629,
+        "negative": 0.0145,
+        "neutral": 0.9226,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bikash Prasad",
+      "role": "Group Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Debt reduction",
+        "Outlook"
+      ],
+      "direct_answers": [
+        "Answered questions on debt reduction and financial outlook."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Bikash Prasad provided a comprehensive overview of UPL's financial performance, highlighting record achievements and strategic execution. His confident tone underscored the company's strong financial discipline and governance. He addressed questions directly related to debt reduction and financial outlook, reinforcing the company's commitment to transparency and strategic growth.",
+      "sentiment_score": 0.9111,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9111,
+        "positive": 0.9213,
+        "negative": 0.0101,
+        "neutral": 0.0686,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mike Frank",
+      "role": "CEO of Global Crop Protection",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Regional growth",
+        "Product launches",
+        "Market momentum"
+      ],
+      "direct_answers": [
+        "Answered questions on regional growth and market momentum."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mike Frank expressed optimism about UPL's growth prospects, particularly in the fourth quarter. He highlighted strong regional momentum and the company's readiness to meet market demands. His responses to questions were direct, focusing on maintaining guidance and emphasizing the importance of both top and bottom-line growth. His tone was positive, reflecting confidence in UPL's strategic positioning.",
+      "sentiment_score": 0.3857,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3857,
+        "positive": 0.4014,
+        "negative": 0.0158,
+        "neutral": 0.5828,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Raj Tiwari",
+      "role": "CEO of SUPERFORM",
+      "tone": "Cautious",
+      "key_topics": [
+        "Revenue decline",
+        "Cost management"
+      ],
+      "direct_answers": [
+        "Answered questions on revenue decline and cost management."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Raj Tiwari addressed concerns about revenue decline in the SUPERFORM segment, explaining the impact of cost corrections and product discontinuations. His tone was cautious, reflecting the challenges faced but also indicating a normalization in the upcoming quarter. He provided clear explanations, focusing on cost management and future revenue growth expectations.",
+      "sentiment_score": -0.8969,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.8969,
+        "positive": 0.0221,
+        "negative": 0.9189,
+        "neutral": 0.059,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone for each speaker was assessed based on their language and the context of their statements. Management speakers were evaluated on their responses to analyst questions, noting whether they provided direct answers or were vague. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

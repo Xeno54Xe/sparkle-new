@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5138,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.5655,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.5655,
+        "positive": 0.7717,
+        "negative": 0.2062,
+        "neutral": 0.0221,
+        "chunks_scored": 1
+      },
+      "text": "Axis Bank reported a strong financial performance for Q4FY25, with core-operating profit up 11% year-over-year (YOY) and 5% quarter-over-quarter (QOQ). The net interest margin (NIM) improved by 4 basis points (bps) QOQ to 3.97%. Total deposits grew by 7% QOQ and 10% YOY, indicating robust deposit growth. The bank's fee income increased by 12% YOY and 16% QOQ, with a granular fee composition of 94% of total fees. The cost to assets ratio declined by 2 bps QOQ and 9 bps YOY to 2.46%. Profit after tax (PAT) rose by 13% QOQ to Rs. 7,117 crore. The gross non-performing asset (GNPA) ratio decreased by 18 bps QOQ to 1.28%, reflecting improved asset quality."
+    },
+    "forward_guidance": {
+      "score": 0.9123,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9123,
+        "positive": 0.9217,
+        "negative": 0.0094,
+        "neutral": 0.0689,
+        "chunks_scored": 1
+      },
+      "text": "Management did not provide specific guidance for FY26, stating, 'we do not have guidance to offer for FY '26.' However, they expressed confidence in the bank's ability to manage margins and profitability, noting that 'the platform is there for both growth and profitability.' The bank plans to continue focusing on deposit growth and asset quality, with expectations of 'growth and profitability should start moving in the right direction.' The bank's capital position remains strong, with a CET 1 ratio of 14.67%, and management emphasized that 'the Bank does not need equity capital for either pillar.'"
+    },
+    "risk_language": {
+      "score": -0.5758,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.5758,
+        "positive": 0.1927,
+        "negative": 0.7684,
+        "neutral": 0.0389,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the impact of regulatory changes and competitive pressures. They noted that 'provisioning policies remain the tightest in the industry' and have 'tweaked how we classify assets at the margin.' The bank's net credit cost declined by 30 bps QOQ to 0.50%, indicating effective risk management. However, management acknowledged potential challenges, stating, 'this change in classification at the margin could impact FY '26 slippages over FY '25.' The bank holds prudent provisions aggregating to Rs 5,012 crore, providing a capital cushion of ~37 bps."
+    },
+    "investor_confidence": {
+      "score": 0.9283,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9283,
+        "positive": 0.9402,
+        "negative": 0.0119,
+        "neutral": 0.048,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly. They emphasized the bank's strong capital position and prudent risk management practices. The bank's focus on 'profitable and sustainable growth' and 'calibrate risk internally across portfolios' was highlighted. Management's confidence in the bank's strategy was evident, with statements like 'we continue to make good progress towards building a stronger, consistent, and sustainable franchise.' The bank's strategic initiatives, such as the aircraft financing deal, were presented as evidence of innovation and competitive advantage."
+    }
+  },
+  "key_positive_drivers": [
+    "Core-operating profit up 11% YOY",
+    "NIM improved to 3.97%",
+    "Total deposits grew 10% YOY",
+    "Fee income increased 12% YOY",
+    "PAT increased 13% QOQ",
+    "GNPA ratio decreased to 1.28%"
+  ],
+  "key_negative_drivers": [
+    "Potential impact on FY '26 slippages",
+    "No specific guidance for FY '26",
+    "Regulatory changes affecting asset classification",
+    "Competitive pressures in the market"
+  ],
+  "notable_phrases": [
+    "Core-operating profit was up 11% YOY",
+    "NIM at 3.97%, improved 4 bps QoQ",
+    "Total deposit growth picked up 7% QOQ",
+    "Fee to average assets improved",
+    "Consolidated ROA and RoE stood at 1.88% and 17.11%",
+    "The Bank is well capitalized with a CET 1 ratio of 14.67%",
+    "We do not have guidance to offer for FY '26",
+    "Growth and profitability should start moving in the right direction"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant growth in profits, margins, and asset quality improvements. Forward guidance was cautious, with no specific numbers provided for FY26, but management expressed confidence in future growth and profitability. Risk management was highlighted as a strength, with tight provisioning policies and a strong capital cushion. Investor confidence was bolstered by management's transparency and strategic initiatives, although some uncertainty remains regarding future slippages and regulatory impacts."
+}

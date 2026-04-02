@@ -1,0 +1,152 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Varatharajan Sivasankara",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Varatharajan Sivasankara served as the moderator for the BPCL Q4 FY '25 earnings call. He provided a neutral and professional introduction to the conference, outlining the structure and reminding participants of the listen-only mode. His role was primarily to facilitate the smooth running of the call and ensure that participants were aware of how to engage with the session.",
+      "sentiment_score": 0.0252,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0252,
+        "positive": 0.0413,
+        "negative": 0.0161,
+        "neutral": 0.9426,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Agrawal",
+      "role": "Chief Manager, Pricing and Insurance",
+      "tone": "neutral",
+      "key_topics": [
+        "statutory announcement",
+        "risks and uncertainties"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Agrawal opened the BPCL earnings call with a statutory announcement, emphasizing the presence of risks and uncertainties in the statements to be made. His tone was neutral, focusing on setting the stage for the discussion by acknowledging potential variances in outcomes due to external factors. His role was primarily to ensure compliance and transparency at the start of the call.",
+      "sentiment_score": 0.0322,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0322,
+        "positive": 0.0675,
+        "negative": 0.0353,
+        "neutral": 0.8972,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "V.R.K. Gupta",
+      "role": "Director Finance",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "market share",
+        "refining margins",
+        "project updates"
+      ],
+      "direct_answers": [
+        "Yes. In terms of market share, on a short term we have lost a little bit market share in the last couple of quarters.",
+        "Yes. From the refining side, we don't generally calculate what will be the inventory gains because our average inventory is less than 1 month only."
+      ],
+      "dodged_or_vague": [
+        "Let me clarify for FY '23, '24. The profits are high mainly because of the spreads."
+      ],
+      "summary": "V.R.K. Gupta, as Director Finance, provided a comprehensive overview of BPCL's financial performance and strategic outlook. His tone was cautious, reflecting on global economic uncertainties and their potential impact on BPCL. He addressed questions on market share and refining margins directly, but his responses on future profitability were more guarded, indicating a cautious approach to forecasting. Gupta also highlighted ongoing projects and their expected timelines, providing a detailed picture of BPCL's operational and financial strategies.",
+      "sentiment_score": -0.9218,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9218,
+        "positive": 0.0277,
+        "negative": 0.9495,
+        "neutral": 0.0227,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Probal Sen",
+      "role": "Analyst, ICICI Securities",
+      "tone": "inquisitive",
+      "key_topics": [
+        "refining performance",
+        "Russian crude",
+        "expansion projects"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Probal Sen from ICICI Securities posed detailed questions regarding BPCL's refining performance and the impact of Russian crude on their operations. His inquiries were focused on understanding the specifics of BPCL's financial results and strategic decisions, particularly concerning inventory gains and crude sourcing. Sen's tone was inquisitive, seeking clarity on the company's operational metrics and future plans.",
+      "sentiment_score": 0.0439,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0439,
+        "positive": 0.0931,
+        "negative": 0.0492,
+        "neutral": 0.8576,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mayank Maheshwari",
+      "role": "Analyst, Morgan Stanley",
+      "tone": "inquisitive",
+      "key_topics": [
+        "fuel marketing",
+        "market share strategy"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mayank Maheshwari from Morgan Stanley focused his questions on BPCL's market share in the fuel marketing sector. He was particularly interested in understanding the company's strategic approach to regaining or stabilizing market share in the coming years. His tone was inquisitive, aiming to gain insights into BPCL's competitive positioning and future market strategies.",
+      "sentiment_score": -0.8327,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.8327,
+        "positive": 0.0203,
+        "negative": 0.853,
+        "neutral": 0.1267,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted to capture their main contributions and tone. Management speakers, particularly V.R.K. Gupta, are analyzed for their responses to analyst questions, noting where they provide direct answers and where they are more evasive or vague. Analysts' questions are noted for their focus on specific financial and strategic aspects of BPCL's operations. The JSON structure captures this detailed analysis, providing a comprehensive overview of each speaker's role and contributions to the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Tech Mahindra Q3 FY’25 earnings call, introducing the key speakers and outlining the call's logistics. They maintained a neutral tone, ensuring the call proceeded smoothly and participants were informed about the process for asking questions. The moderator's role was primarily to manage the flow of the call and hand over to the main speakers.",
+      "sentiment_score": 0.0238,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0238,
+        "positive": 0.0399,
+        "negative": 0.0161,
+        "neutral": 0.9439,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mohit Joshi",
+      "role": "CEO & Managing Director",
+      "tone": "Confident",
+      "key_topics": [
+        "Strategic narrative",
+        "Revenue and growth",
+        "Transformation journey",
+        "Deal wins",
+        "Market outlook"
+      ],
+      "direct_answers": [
+        "Rod Bourgeois' question on transformation journey",
+        "Sudheer Guntupalli's question on demand outlook"
+      ],
+      "dodged_or_vague": [
+        "Vibhor Singhal's question on Pininfarina business"
+      ],
+      "summary": "Mohit Joshi, the CEO and Managing Director of Tech Mahindra, delivered a confident overview of the company's strategic direction and performance. He emphasized the company's focus on 'Scale at Speed' and highlighted the progress made towards achieving long-term goals, including a 15% EBIT margin by FY27. Joshi reported a revenue of $1.567 billion for Q3 FY25, noting growth in key sectors and regions despite currency headwinds. He addressed questions directly about the transformation journey and demand outlook but was less specific about challenges in the Pininfarina business. Overall, Joshi conveyed optimism about the company's trajectory and strategic initiatives.",
+      "sentiment_score": 0.8933,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8933,
+        "positive": 0.9233,
+        "negative": 0.03,
+        "neutral": 0.0467,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Rohit Anand",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Revenue growth",
+        "EBIT margins",
+        "Cost optimization"
+      ],
+      "direct_answers": [
+        "Sandeep Shah's question on margin progress"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rohit Anand, the CFO of Tech Mahindra, provided a detailed and confident analysis of the company's financial performance for Q3 FY25. He reported a revenue of $1.567 billion, highlighting growth in the BFSI and healthcare sectors despite cross-currency headwinds. Anand noted a 10.2% EBIT margin, attributing the improvement to cost optimization and pricing excellence. He directly addressed questions regarding margin progress, emphasizing the company's strategic focus on achieving a 15% EBIT margin by FY27. Anand's presentation underscored the company's financial resilience and strategic financial management.",
+      "sentiment_score": -0.9152,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9152,
+        "positive": 0.0302,
+        "negative": 0.9455,
+        "neutral": 0.0243,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: the Moderator, Mohit Joshi (CEO & Managing Director), and Rohit Anand (CFO). Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and responses to questions. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or given vague responses. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

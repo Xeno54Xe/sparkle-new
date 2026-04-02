@@ -1,0 +1,161 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ramandeep Singh Sahni",
+      "role": "Chief Financial Officer, Bajaj Finserv Limited",
+      "tone": "confident",
+      "key_topics": [
+        "consolidated results",
+        "insurance operations",
+        "emerging companies",
+        "acquisition of Allianz stake",
+        "financial performance",
+        "labor code impact",
+        "ECL provision"
+      ],
+      "direct_answers": [
+        "Nischint Chawathe's question on motor OD loss ratio"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ramandeep Singh Sahni opened the call with a confident overview of Bajaj Finserv's Q3 FY '26 results, focusing on consolidated outcomes and insurance operations. He highlighted the acquisition of Allianz's stake in their insurance subsidiaries, which increased Bajaj Group's equity stake to 97%. He detailed the financial performance, noting a 24% increase in total income and a 32% rise in profit after tax before certain provisions. Sahni's tone was confident, and he directly addressed questions about the motor OD loss ratio, indicating a strong grasp of the company's financial health and strategic direction.",
+      "sentiment_score": 0.7719,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7719,
+        "positive": 0.7847,
+        "negative": 0.0129,
+        "neutral": 0.2024,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Avais Karmali",
+      "role": "Chief Financial Officer, Bajaj General Insurance Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "motor OD loss ratio",
+        "industry pricing pressure",
+        "sustainable growth"
+      ],
+      "direct_answers": [
+        "Nischint Chawathe's question on motor OD loss ratio"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Avais Karmali addressed concerns about the elevated motor OD loss ratio, explaining it as an industry-wide issue influenced by pricing pressures and GST impacts. He emphasized that these challenges are being actively managed and expressed a cautious yet optimistic outlook on achieving sustainable growth. Karmali's responses were direct, providing clarity on the company's strategic approach to navigating current industry conditions.",
+      "sentiment_score": 0.2691,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2691,
+        "positive": 0.2848,
+        "negative": 0.0157,
+        "neutral": 0.6994,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Tarun Chugh",
+      "role": "Managing Director and Chief Executive Officer, Bajaj Life Insurance Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "VNB margins",
+        "GST impact",
+        "product mix",
+        "agency strategy"
+      ],
+      "direct_answers": [
+        "Shobhit Sharma's question on product mix and channel strategy"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Tarun Chugh conveyed an optimistic outlook for Bajaj Life Insurance, highlighting significant improvements in VNB margins despite the GST impact. He acknowledged the concerns around GST but reassured stakeholders of a positive trajectory in margins. Chugh was transparent about the company's strategic focus on agency and product mix, directly addressing analyst questions with confidence in the company's growth strategy.",
+      "sentiment_score": 0.8085,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8085,
+        "positive": 0.8826,
+        "negative": 0.0742,
+        "neutral": 0.0432,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vipin Bansal",
+      "role": "Chief Financial Officer, Bajaj Life Insurance Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "product mix stability",
+        "retail protection growth",
+        "channel strategy"
+      ],
+      "direct_answers": [
+        "Shobhit Sharma's question on product mix and channel strategy"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vipin Bansal provided a neutral and factual overview of Bajaj Life Insurance's product mix and channel strategy. He emphasized the stability of the product mix over recent quarters and noted that the diversification has reached a desired level. Bansal's responses were clear and direct, offering a steady perspective on the company's strategic positioning in the market.",
+      "sentiment_score": 0.6018,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6018,
+        "positive": 0.6247,
+        "negative": 0.0229,
+        "neutral": 0.3523,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call facilitation",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring a smooth transition between speakers and managing the Q&A session. The tone was neutral, focusing on logistical aspects of the call and providing instructions to participants. The moderator's role was crucial in maintaining the flow of the discussion and ensuring that all speakers had the opportunity to present their insights.",
+      "sentiment_score": 0.0203,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0203,
+        "positive": 0.0395,
+        "negative": 0.0192,
+        "neutral": 0.9412,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each unique speaker from the transcript, including management and analysts. Key statements are extracted for each speaker, focusing on verbatim quotes that capture specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, with management speakers further analyzed for their responses to analyst questions, noting whether they answered directly or provided vague responses. A narrative summary is crafted for each speaker, highlighting their contributions, stance, and key messages during the call. The JSON structure is then populated with this information, ensuring a comprehensive and structured analysis of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

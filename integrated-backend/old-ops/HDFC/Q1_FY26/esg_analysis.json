@@ -1,0 +1,72 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 40.5,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 65.0,
+    "key_themes": [
+      "employee growth",
+      "community engagement",
+      "customer experience"
+    ],
+    "notable_excerpts": [
+      "We will have employees, we will grow our resources, but it will be more and more in the front end.",
+      "I would like to express my gratitude to all our employees for their hard work and performance in a very challenging environment.",
+      "We are seeing some amount of healthy demand from the rural side."
+    ]
+  },
+  "governance": {
+    "score": 70.0,
+    "key_themes": [
+      "board announcements",
+      "strategic guidance",
+      "financial transparency"
+    ],
+    "notable_excerpts": [
+      "Earlier today, the Board also announced an interim dividend of INR 5 per share, and they also recommended to shareholders the first ever bonus share issue in the ratio of 1:1.",
+      "Gratitude to our shareholders who have supported us in all our times, and to the Board for their leadership support and their strategic guidance."
+    ]
+  },
+  "chain_of_thought": "The earnings call lacked any environmental disclosures, which resulted in a score of 0 for the environmental pillar. The social pillar had moderate mentions of employee growth and community engagement, leading to a score of 65. Governance was discussed with a focus on board decisions and financial transparency, resulting in a score of 70. The overall ESG score is calculated based on the weighted contributions of each pillar.",
+  "strengths": [
+    "Strong governance practices with board transparency",
+    "Focus on employee growth and community engagement"
+  ],
+  "weaknesses": [
+    "Lack of environmental disclosures"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

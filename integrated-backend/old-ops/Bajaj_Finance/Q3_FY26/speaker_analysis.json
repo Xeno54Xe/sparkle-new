@@ -1,0 +1,154 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Subramanian Iyer",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "moderation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Subramanian Iyer served as the moderator for the Bajaj Finance Q3 FY'26 earnings call. He introduced the event, welcomed participants, and handed over the proceedings to Rajeev Jain for his opening remarks. His tone was neutral, focusing on facilitating the call and ensuring a smooth transition between speakers.",
+      "sentiment_score": 0.1106,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1106,
+        "positive": 0.1234,
+        "negative": 0.0128,
+        "neutral": 0.8638,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rajeev Jain",
+      "role": "Vice Chairman and Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "core performance",
+        "AUM growth",
+        "provisioning framework",
+        "AI implementation"
+      ],
+      "direct_answers": [
+        "What were the main deltas for you, both positive and negatives as you did your LRS and -- to the last year?",
+        "Can you comment with regards to your growth outlook more for FY '27?"
+      ],
+      "dodged_or_vague": [
+        "We'll provide FY '27 guidance along with Q4 results, which is normally what we do every year."
+      ],
+      "summary": "Rajeev Jain, Vice Chairman and Managing Director of Bajaj Finance, provided a comprehensive overview of the company's Q3 FY'26 performance. He highlighted strong core performance metrics, including AUM growth of INR 23,622 crores and a core profit growth of 23%. Jain emphasized the proactive and voluntary strengthening of the provisioning framework to enhance balance sheet resilience. He also discussed the company's AI implementation, which is beginning to significantly impact business operations. Jain's tone was optimistic, reflecting confidence in the company's strategic direction and future growth prospects.",
+      "sentiment_score": 0.2229,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2229,
+        "positive": 0.337,
+        "negative": 0.1141,
+        "neutral": 0.5489,
+        "chunks_scored": 7
+      }
+    },
+    {
+      "name": "Sandeep Jain",
+      "role": "COO and CFO",
+      "tone": "confident",
+      "key_topics": [
+        "provisioning",
+        "capital allocation",
+        "earnings accountability"
+      ],
+      "direct_answers": [
+        "Can we expect that rather than that accreting to your net worth, it will predominantly be utilized for further improving the value chain?"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Jain, COO and CFO of Bajaj Finance, reinforced the company's strategic decisions regarding provisioning and capital allocation. He confidently explained the rationale behind the permanent changes to the provisioning framework, emphasizing the importance of maintaining a robust balance sheet. Jain also highlighted the accountability measures for senior management, reflecting a commitment to transparency and performance. His tone was confident, underscoring the company's proactive approach to financial management and strategic planning.",
+      "sentiment_score": 0.0949,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0949,
+        "positive": 0.1123,
+        "negative": 0.0174,
+        "neutral": 0.8704,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Chintan Joshi",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "ECL provisioning",
+        "LRS"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Chintan Joshi, an analyst, posed probing questions regarding the company's ECL provisioning and the differences in LGD across stages. His inquiries were aimed at understanding the implications of these differences on future credit cycles. Joshi's tone was inquisitive, reflecting a deep interest in the technical aspects of Bajaj Finance's financial strategies and their potential impact on the company's future performance.",
+      "sentiment_score": 0.0284,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0284,
+        "positive": 0.0664,
+        "negative": 0.038,
+        "neutral": 0.8956,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Viral Shah",
+      "role": "Analyst",
+      "tone": "curious",
+      "key_topics": [
+        "ECL provisioning",
+        "growth outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Viral Shah, an analyst, sought clarity on the structural changes in Bajaj Finance's ECL provisioning and their implications for future credit costs. He also inquired about the company's growth outlook for FY '27. Shah's tone was curious, indicating a keen interest in understanding the strategic adjustments and their potential impact on the company's financial trajectory.",
+      "sentiment_score": 0.1135,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1135,
+        "positive": 0.1396,
+        "negative": 0.0262,
+        "neutral": 0.8342,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: Subramanian Iyer (Moderator), Rajeev Jain (Vice Chairman and Managing Director), Sandeep Jain (COO and CFO), Chintan Joshi (Analyst), and Viral Shah (Analyst). Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, the analysis notes which analyst questions were answered directly and which were deflected or avoided. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON output is structured to provide a comprehensive overview of the speaker-wise analysis, suitable for further financial NLP scoring.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

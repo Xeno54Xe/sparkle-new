@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Diksha Maheshwari",
+      "role": "Head, Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "forward-looking statements",
+        "risks and uncertainties",
+        "investor presentation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Diksha Maheshwari opened the earnings call with a formal welcome and highlighted the presence of forward-looking statements in the discussion. She emphasized the risks and uncertainties associated with these statements and clarified that Cipla is not obligated to update them publicly. Her tone was neutral, focusing on procedural aspects and ensuring that participants had access to the investor presentation.",
+      "sentiment_score": -0.0068,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0068,
+        "positive": 0.0404,
+        "negative": 0.0472,
+        "neutral": 0.9124,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Vohra",
+      "role": "Global MD and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "U.S. market",
+        "product launches",
+        "growth strategy"
+      ],
+      "direct_answers": [
+        "Yes, we do expect a reinspection. General time lines are within the 2-year period.",
+        "Yes, we have done double filings for most of our products from a risk management perspective on the respiratory side."
+      ],
+      "dodged_or_vague": [
+        "It's a little indeterminate. And it depends on when Revlimid -- the impact of Revlimid and how it comes off."
+      ],
+      "summary": "Umang Vohra, the Global MD and CEO, presented a confident overview of Cipla's performance and strategic direction. He highlighted the company's strong financial results, including a steady revenue of INR6,957 crores and an EBITDA margin of 25.6%. Vohra emphasized Cipla's commitment to the respiratory market and detailed several product launches and strategic initiatives aimed at sustaining growth. He addressed questions about the U.S. market, indicating confidence in the company's pipeline and future launches, while also acknowledging challenges such as price erosion. His responses were generally direct, though he was vague about specific future impacts of certain products.",
+      "sentiment_score": 0.7218,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7218,
+        "positive": 0.7674,
+        "negative": 0.0457,
+        "neutral": 0.1869,
+        "chunks_scored": 5
+      }
+    },
+    {
+      "name": "Ashish Adukia",
+      "role": "Global CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "EBITDA margin",
+        "R&D investments"
+      ],
+      "direct_answers": [
+        "Yes, no, Krishnendu, let me clarify. What I meant was that we are maximizing our capacity out there and able to supply all of it."
+      ],
+      "dodged_or_vague": [
+        "A little early for us to give guidance for next year."
+      ],
+      "summary": "Ashish Adukia, the Global CFO, provided a cautious yet detailed overview of Cipla's financial performance. He highlighted the company's revenue growth and strong EBITDA margin, attributing these to a diversified business model and strategic execution. Adukia discussed the increase in expenses due to R&D investments and employee increments, emphasizing the company's commitment to innovation. While he provided clear answers to some questions, he was cautious about giving specific future guidance, reflecting a prudent approach to financial forecasting.",
+      "sentiment_score": 0.9179,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9179,
+        "positive": 0.9302,
+        "negative": 0.0123,
+        "neutral": 0.0575,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference proceedings",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring a smooth transition between speakers and managing the Q&A session. The tone was neutral, focusing on procedural aspects and ensuring that participants were aware of the call's structure and how to engage with it. The moderator's role was crucial in maintaining the flow of the conference and ensuring that all logistical aspects were handled efficiently.",
+      "sentiment_score": 0.0274,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0274,
+        "positive": 0.0437,
+        "negative": 0.0163,
+        "neutral": 0.94,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The task involves identifying unique speakers from the transcript and analyzing their contributions. Each speaker's key statements are extracted, focusing on verbatim quotes for accuracy in financial analysis. The tone of each speaker is assessed based on their language and context. For management speakers, responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, capturing their stance and key messages. The JSON structure is used to organize this information systematically.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

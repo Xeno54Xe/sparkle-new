@@ -1,0 +1,405 @@
+{
+  "doc_meta": {
+    "doc_id": "a286f8ff72d7",
+    "stock": "HDFC Life Insurance Company",
+    "doc_type": "ec",
+    "period": "JAN26",
+    "quarter": null,
+    "fiscal_year": "FY26",
+    "filename": "JAN26.pdf",
+    "file_path": "data/HDFC Life Insurance Company/EC/JAN26.pdf"
+  },
+  "doc_type": "ec",
+  "sections": {
+    "financial_metrics": {
+      "section": "financial_metrics",
+      "score": 95.9,
+      "label": "Strong Beat",
+      "revenue": {
+        "scope": "9M FY26",
+        "label": "Strong Growth",
+        "analysis": "Individual APE grew 11% year-on-year, translating into a healthy two-year CAGR of 17% [p.3]. Retail protection delivered strong year-on-year growth of 42% for the nine months ended FY26 and 70% in Quarter 3, significantly outpacing overall company growth [p.3]. The overall market share based on individual WRP expanded by around 20 basis points to 10.9% for the nine-month period [p.3]."
+      },
+      "ebitda": {
+        "scope": "9M FY26",
+        "label": "Margin Expansion",
+        "analysis": "Margins expanded by 110 basis points, ending at 24.4%, translating into VNB growth of 7% year-on-year and a two-year CAGR of 11% for nine-month FY26 [p.4]. On an adjusted basis, VNB growth, excluding the impact of GST and surrender regulation change, would have been 13% for 9M FY26 and 11% for Q3 FY26 [p.4]."
+      },
+      "profitability": {
+        "scope": "9M FY26",
+        "label": "Moderate Growth",
+        "analysis": "Profit after tax grew by 7% to Rs. 1,414 crores [p.5]. Excluding one-time Labor Code impact, underlying PAT growth for both nine months and quarter would have been 15% [p.5]. Embedded value stood at Rs. 61,565 crores, with an operating return on embedded value of 15.6% on a rolling 12-month basis [p.5]."
+      },
+      "cash_flow": {
+        "scope": "Not Available",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "capex": {
+        "scope": "Not Available",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "debt": {
+        "scope": "Q3 FY26",
+        "label": "Stable",
+        "analysis": "The solvency ratio remained strong at 180%, supported by the Rs. 749 crores of subordinated debt raised in Q3 [p.5]. In light of the expected implementation of the risk-based solvency regime over the coming quarters, no requirement for further capital to support organic growth is anticipated [p.5]."
+      },
+      "working_capital": {
+        "scope": "Not Available",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "operational_kpis": {
+        "scope": "9M FY26",
+        "label": "Strong Performance",
+        "analysis": "Retail sum assured grew 33% over the nine-month period and 55% in Q3 [p.4]. The 13-month persistency ratio moderated by 200 basis points, while the 61st month persistency remained strong at 63%, improving by 200 basis points year-on-year [p.5]."
+      },
+      "guidance": {
+        "scope": "FY27",
+        "label": "Positive Outlook",
+        "analysis": "The near-term outlook remains constructive, with expectations for Q4 to build on the momentum seen in the last quarter. Growth in FY27 is expected to be supported by continued strength in protection and sustained demand across savings segments [p.6]."
+      },
+      "qualitative_analysis": "The financial performance was in line with expectations, with strong growth in individual APE and retail protection segments driving overall performance. The company managed to expand margins despite regulatory impacts, demonstrating resilience. No significant red flags were noted, although the impact of regulatory changes like GST and Labor Codes was acknowledged.",
+      "analyst_flags": [
+        "Strong growth in retail protection segment",
+        "Margin expansion despite regulatory impacts",
+        "Stable solvency ratio with no immediate capital needs"
+      ],
+      "sentiment_narrative": "Management expressed confidence in the company's ability to adapt to changing conditions, stating, 'We have consistently demonstrated the ability to recalibrate the business in response to changing external conditions' [p.5]. The GST exemption was highlighted as a 'meaningful catalyst' for growth in the protection segment [p.1]. The company aims to 'largely neutralize the impact' of GST over the next couple of quarters [p.4]. The outlook for Q4 and FY27 remains 'constructive,' with expectations for continued strength in protection and savings segments [p.6]. Overall, the tone was optimistic, with a focus on disciplined execution and responsible scaling.",
+      "raw_scores": {
+        "positive_prob": 0.9491,
+        "negative_prob": 0.0131,
+        "neutral_prob": 0.0378
+      },
+      "title": "Financial Metrics"
+    },
+    "risk_intelligence": {
+      "section": "risk_intelligence",
+      "score": 94.2,
+      "label": "Well Managed",
+      "overall_risk_environment": "MODERATE",
+      "risks": [
+        {
+          "risk_id": "R1",
+          "category": "Regulatory/Policy",
+          "scope": "Q3 FY26 operations",
+          "label": "High Risk",
+          "risk_score": 16,
+          "severity": "HIGH",
+          "analysis": "The company faced a one-time impact from changes under the new Labor Codes, affecting both embedded value and profit after tax by Rs. 98 crores [p.4]. Management acknowledged this impact and indicated that it has been reflected in the embedded value for services rendered up to December 31, 2025. They have consistently demonstrated the ability to recalibrate the business in response to such changes, which is a mitigating factor [p.5]."
+        },
+        {
+          "risk_id": "R3",
+          "category": "Execution/Operational",
+          "scope": "Q3 FY26 margins",
+          "label": "Moderate Risk",
+          "risk_score": 10,
+          "severity": "MODERATE",
+          "analysis": "The 13-month persistency ratio moderated by 200 basis points, indicating stress in certain profiles [p.5]. Management noted that this is largely cohort-specific and does not reflect a deterioration in overall portfolio quality. Mitigating steps have already been taken, suggesting a moderate level of operational risk [p.5]."
+        },
+        {
+          "risk_id": "R2",
+          "category": "Regulatory/Policy",
+          "scope": "FY26 operations",
+          "label": "Moderate Risk",
+          "risk_score": 9,
+          "severity": "MODERATE",
+          "analysis": "The new GST rollout from Q2 onwards impacted the company's financial metrics, with a contained impact of less than 200 basis points in Q3, lower than the initial estimate of 300 basis points [p.4]. Management is on track to neutralize this impact over the next couple of quarters, indicating proactive measures to mitigate this risk [p.5]."
+        }
+      ],
+      "risks_emphasised": [
+        "Regulatory changes impact",
+        "GST impact on margins",
+        "Persistency ratio moderation"
+      ],
+      "risks_downplayed": [
+        "Competitive pricing pressures",
+        "Non-par product performance"
+      ],
+      "undisclosed_risks": [
+        "Potential impact of risk-based solvency regime",
+        "Long-term effects of competitive intensity"
+      ],
+      "risk_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Overall, the risk communication was transparent regarding regulatory impacts such as the Labor Code and GST changes. Management provided clear insights into the measures being taken to mitigate these risks. However, competitive pressures and the potential long-term impact of the risk-based solvency regime were not fully addressed, indicating areas where risk communication could be improved."
+      },
+      "sentiment_narrative": "Management communicated a cautiously optimistic outlook, emphasizing their ability to adapt to regulatory changes and maintain robust financial performance. They acknowledged the impact of recent policy changes but expressed confidence in mitigating these effects over time. The tone was constructive, focusing on strategic initiatives and long-term growth prospects, while downplaying competitive pressures and potential future regulatory challenges.",
+      "raw_scores": {
+        "positive_prob": 0.9281,
+        "negative_prob": 0.019,
+        "neutral_prob": 0.0529
+      },
+      "title": "Risk Intelligence"
+    },
+    "esg": {
+      "section": "esg",
+      "score": 47.5,
+      "label": "Average",
+      "environmental": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "social": {
+        "available": true,
+        "score": 45.0,
+        "label": "Average",
+        "scope": "Employee impact and customer acquisition",
+        "analysis": "The company discussed the impact of the new Labor Codes, which amounted to Rs. 98 crores, affecting both embedded value and profit after tax [p.4]. This was described as a one-time impact, with no further material effects expected [p.6]. Additionally, HDFC Life highlighted strong customer acquisition, with over 70% of customers being first-time buyers of their policies during the period [p.3]. The company also noted increased traction from previously underinsured segments, including self-employed profiles, indicating a widening relevance of protection across customer cohorts [p.4]. However, the discussion lacked specific targets or timelines for social initiatives, resulting in a moderate score.",
+        "greenwashing_flags": []
+      },
+      "governance": {
+        "available": true,
+        "score": 50.0,
+        "label": "Average",
+        "scope": "Regulatory compliance and strategic priorities",
+        "analysis": "HDFC Life demonstrated its ability to recalibrate business strategies in response to regulatory changes, such as GST and the new Labor Codes, which impacted financial metrics [p.5]. The company maintained a strong solvency ratio of 180%, supported by Rs. 749 crores of subordinated debt raised in Q3 [p.5]. The governance discussion focused on strategic priorities and maintaining a balanced product mix, but lacked detailed governance metrics or third-party verification, limiting the depth of disclosure.",
+        "greenwashing_flags": []
+      },
+      "disclosure_framework": "None mentioned",
+      "third_party_verified": false,
+      "sentiment_narrative": "HDFC Life's earnings call provided some insights into their social and governance practices, particularly in adapting to regulatory changes and expanding customer acquisition. However, the absence of environmental disclosures and the lack of specific targets or third-party verification in social and governance areas suggest room for improvement in ESG communication. The company emphasized its strategic flexibility and strong solvency position, but more comprehensive ESG metrics and timelines would enhance transparency and stakeholder confidence. Overall, the communication was moderately informative but could benefit from greater specificity and external validation.",
+      "raw_scores": {
+        "positive_prob": 0.942,
+        "negative_prob": 0.0097,
+        "neutral_prob": 0.0483
+      },
+      "title": "ESG Analysis"
+    },
+    "speaker_sentiment": {
+      "section": "speaker_sentiment",
+      "score": 95.5,
+      "label": "Very Bullish",
+      "speakers": [
+        {
+          "name": "Vibha Padalkar",
+          "role": "Management",
+          "company": "HDFC Life Insurance Company",
+          "scope": "Financial performance",
+          "tone": "Confident",
+          "analysis": "Vibha Padalkar opened the call with confidence, highlighting HDFC Life's growth outpacing the industry at 11% on individual WRP compared to the industry's 10% [p.3]. She emphasized the company's ability to adapt to regulatory changes, such as the GST and Labor Code, which impacted margins but were mitigated effectively [p.4]. Despite these challenges, she reported a 7% growth in profit after tax and a strong solvency ratio of 180% [p.4]. Her tone was driven by the company's robust financial metrics and strategic adaptability, even when faced with regulatory pressures.",
+          "score": 96.0,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.952,
+            "negative_prob": 0.0177,
+            "neutral_prob": 0.0302
+          }
+        },
+        {
+          "name": "Niraj Shah",
+          "role": "Management",
+          "company": "HDFC Life Insurance Company",
+          "scope": "Financial performance",
+          "tone": "Neutral",
+          "analysis": "Niraj Shah provided additional context on the company's strategic initiatives, noting that the full impact of recent distributor negotiations would be seen in future quarters [p.17]. His tone was neutral, focusing on the execution of strategies and the expected outcomes without overemphasizing immediate results. This approach suggests a cautious optimism about the company's future performance.",
+          "score": 45.0,
+          "label": "Neutral",
+          "raw_scores": {
+            "positive_prob": 0.0839,
+            "negative_prob": 0.235,
+            "neutral_prob": 0.6811
+          }
+        },
+        {
+          "name": "Prayesh Jain",
+          "role": "Analyst",
+          "company": "Unknown",
+          "scope": "Growth comparison",
+          "tone": "Cautious",
+          "analysis": "Prayesh Jain questioned the company's growth relative to peers, noting that HDFC Life's individual business growth was lower than some competitors [p.12]. His cautious tone was driven by concerns about the company's ability to match or exceed industry growth rates in the future. This line of questioning indicates pressure on management to justify their growth strategy and competitive positioning.",
+          "score": 5.9,
+          "label": "Very Bearish",
+          "raw_scores": {
+            "positive_prob": 0.0239,
+            "negative_prob": 0.9273,
+            "neutral_prob": 0.0488
+          }
+        },
+        {
+          "name": "Avinash Singh",
+          "role": "Analyst",
+          "company": "Emkay Global",
+          "scope": "Product mix and interest rates",
+          "tone": "Inquisitive",
+          "analysis": "Avinash Singh inquired about the company's product mix in the context of changing bond yields and interest rates [p.6]. His questions were probing, seeking clarity on how HDFC Life plans to leverage the current interest rate environment to offer competitive products. This reflects a focus on understanding the company's strategic response to macroeconomic factors.",
+          "score": 56.2,
+          "label": "Neutral",
+          "raw_scores": {
+            "positive_prob": 0.2141,
+            "negative_prob": 0.0112,
+            "neutral_prob": 0.7748
+          }
+        },
+        {
+          "name": "Himanshu Taluja",
+          "role": "Analyst",
+          "company": "Unknown",
+          "scope": "Product mix and margins",
+          "tone": "Inquisitive",
+          "analysis": "Himanshu Taluja asked about changes in product mix towards protection and credit life, and improvements in ULIP segment margins [p.17]. His inquiries were aimed at understanding the drivers behind the company's margin improvements and product strategy. This indicates a focus on the sustainability of these improvements in the face of market changes.",
+          "score": 72.2,
+          "label": "Bullish",
+          "raw_scores": {
+            "positive_prob": 0.5733,
+            "negative_prob": 0.0149,
+            "neutral_prob": 0.4118
+          }
+        }
+      ],
+      "management_tone_summary": "Overall, the management communicated with a confident and strategic tone, emphasizing adaptability to regulatory changes and strong financial performance metrics. They highlighted growth achievements and strategic initiatives aimed at sustaining momentum.",
+      "analyst_pressure_points": [
+        "Growth comparison with peers",
+        "Product mix strategy",
+        "Impact of regulatory changes on margins"
+      ],
+      "notable_exchanges": [
+        "Prayesh Jain's questioning of growth relative to peers prompted a detailed response from Vibha Padalkar about cyclical growth patterns and margin focus [p.12]."
+      ],
+      "overall_sentiment_shift": "Sentiment remained stable throughout the call, with management maintaining a confident tone despite analyst inquiries.",
+      "sentiment_narrative": "The dominant tone from management was one of confidence, driven by strong financial performance and strategic adaptability. Despite facing regulatory challenges such as the GST and Labor Code changes, HDFC Life demonstrated resilience by effectively mitigating impacts on margins and maintaining a robust solvency ratio. Management emphasized their strategic focus on product innovation and market expansion, particularly in protection-led solutions, which have shown significant growth. Analysts probed on growth comparisons and product mix strategies, but management's responses underscored their commitment to sustaining growth and profitability. Overall, the call reflected a stable and optimistic outlook for HDFC Life's future performance.",
+      "raw_scores": {
+        "positive_prob": 0.9441,
+        "negative_prob": 0.0135,
+        "neutral_prob": 0.0424
+      },
+      "title": "Speaker Sentiment"
+    },
+    "qa_transparency": {
+      "section": "qa_transparency",
+      "score": 43.1,
+      "label": "Mixed",
+      "qa_pairs": [
+        {
+          "question_id": "Q1",
+          "analyst": "Dipanjan Ghosh, Citigroup",
+          "topic": "Operations",
+          "label": "Partial Response",
+          "analysis": "Dipanjan Ghosh asked about the product-level persistency, particularly the non-par bucket, and the channels driving this issue [p.13]. Management acknowledged the issue but did not provide specific details on the channels or product categories responsible, instead offering a general statement about tactical participation [p.11]. This represents a partial response as it lacks specific data."
+        },
+        {
+          "question_id": "Q2",
+          "analyst": "Rehan Syed, Trinetra Asset Managers",
+          "topic": "Strategy",
+          "label": "Deflected",
+          "analysis": "Rehan Syed inquired about the structured versus temporary demand for retail protection post-GST and the steady-state target mix for protection [p.8]. Management did not provide specific targets, stating they do not take a target as such and want all products and channels to grow well [p.8]. This deflection avoids providing a clear strategic target."
+        },
+        {
+          "question_id": "Q3",
+          "analyst": "Vinod Rajamani, Nirmal Bang",
+          "topic": "Strategy",
+          "label": "Direct Response",
+          "analysis": "Vinod Rajamani asked about the sum assured multiple for ULIPs and aspirations for Tier 3 and Tier 4 markets [p.19]. Management provided specific figures for the sum assured multiple and discussed their strategy for agency growth in these markets [p.19]. This response was direct and included specific data."
+        },
+        {
+          "question_id": "Q4",
+          "analyst": "Sanketh Godha, Avendus Spark",
+          "topic": "Operations",
+          "label": "Direct Response",
+          "analysis": "Sanketh Godha asked about the deviation in persistency variance and whether it is transient or requires an assumption change [p.20]. Management explained the transient nature of the impact and clarified it was due to products sold before surrender norms, providing a clear and direct response [p.20]."
+        }
+      ],
+      "deflected_topics": [
+        "Product-level persistency specifics",
+        "Steady-state target mix for protection"
+      ],
+      "repeated_phrases": [
+        "we don't really take a target as such",
+        "we are fairly agnostic to how customers buy protection"
+      ],
+      "forward_guidance_quality": "Vague",
+      "data_backed_responses": "2 of 4",
+      "qualitative_assessment": "Management provided specific data in some areas, such as sum assured multiples and persistency impacts, but often avoided giving detailed guidance or specific targets, particularly in strategic areas. Responses were sometimes vague, lacking in-depth analysis or future projections.",
+      "sentiment_narrative": "Management's communication style was cautious, often avoiding specific commitments or targets. They provided some clarity on operational metrics but were less forthcoming on strategic directions and future guidance. The use of boilerplate phrases suggests a preference for maintaining flexibility rather than committing to specific outcomes. Overall, the tone was measured, focusing on past performance and current strategies without extensive forward-looking statements.",
+      "raw_scores": {
+        "positive_prob": 0.056,
+        "negative_prob": 0.264,
+        "neutral_prob": 0.68
+      },
+      "title": "Q&A Transparency"
+    },
+    "overall_sentiment": {
+      "section": "overall_sentiment",
+      "score": 57.6,
+      "label": "Neutral",
+      "management_confidence": "Moderate",
+      "earnings_quality": "Mixed",
+      "guidance_tone": "Maintained",
+      "market_signal": "Cautiously Bullish",
+      "tone_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Management expressed moderate confidence, highlighting a 17% two-year CAGR in Individual APE and a 20 basis point increase in market share [p.3]. However, growth in the individual business lagged behind peers, raising concerns about competitive positioning [p.12]. The GST change provided a tailwind, particularly for the protection segment, which grew 42% year-on-year [p.3, p.4]. Despite these positives, the company faced a one-time impact from new Labor Codes, affecting both embedded value and profit after tax [p.4]. Overall, the tone was cautiously bullish, with management maintaining guidance and expressing optimism about future growth driven by strategic investments and product innovation [p.11]."
+      },
+      "topics_gaining_momentum": [
+        "Protection segment",
+        "ULIP business",
+        "Customer acquisition"
+      ],
+      "topics_losing_momentum": [
+        "Individual business growth",
+        "Persistency ratios"
+      ],
+      "key_surprises": [
+        "The GST impact was less severe than initially estimated, contained to less than 200 basis points [p.4]."
+      ],
+      "qualitative_synthesis": "The earnings call signaled cautious optimism for HDFC Life, with management focusing on strategic growth areas like the protection segment and ULIPs. While the company showed resilience in adapting to regulatory changes, challenges remain in matching peer growth rates and improving persistency ratios. Investors should note the mixed earnings quality, tempered by external impacts like the Labor Codes, but also recognize the potential for sustained growth through strategic initiatives and market tailwinds.",
+      "sentiment_narrative": "Management highlighted a 17% two-year CAGR in Individual APE and a 20 basis point increase in market share, indicating a solid performance [p.3]. The GST change was a significant catalyst, particularly for the protection segment, which saw a 42% year-on-year growth [p.3, p.4]. However, the individual business growth lagged behind peers, which management acknowledged as a concern [p.12]. The one-time impact from new Labor Codes affected both embedded value and profit after tax, but the GST impact was less severe than initially estimated, contained to less than 200 basis points [p.4]. Management remains optimistic about future growth, driven by strategic investments and product innovation, maintaining a cautiously bullish outlook [p.11].",
+      "raw_scores": {
+        "positive_prob": 0.5574,
+        "negative_prob": 0.4021,
+        "neutral_prob": 0.0406
+      },
+      "title": "Overall Sentiment"
+    },
+    "investment_synthesis": {
+      "section": "investment_synthesis",
+      "score": 75,
+      "label": "Buy",
+      "recommendation": "Buy",
+      "conviction": "Medium",
+      "thesis": {
+        "scope": "Based on Q3 FY26 results",
+        "analysis": "HDFC Life Insurance Company has demonstrated robust growth in its protection segment, with a 42% year-on-year increase for the nine months ended FY26 and a 70% increase in Q3, significantly outpacing overall company growth [p.3]. The company's strategic focus on innovative product offerings, such as Click 2 Protect Supreme, has supported category expansion and aligns with evolving customer needs [p.4]. Despite challenges from regulatory changes like the new GST rollout and Labor Codes, HDFC Life has managed to protect its margins and maintain a strong solvency ratio of 180% [p.4, p.3]. The company's ability to adapt to external conditions and its focus on disciplined execution suggest a positive outlook for sustained growth [p.6]."
+      },
+      "bull_case": {
+        "scope": "Key upside drivers",
+        "analysis": "HDFC Life's protection segment has shown remarkable growth, with a 42% increase over nine months and 70% in Q3, driven by first-time buyers and higher sum assured covers [p.3]. The launch of innovative products like Click 2 Protect Supreme has expanded the category and reflects the company's ability to meet customer needs [p.4]. The company's margins expanded by 110 basis points, and the solvency ratio remains strong at 180%, indicating financial resilience [p.3]. The GST impact was less severe than anticipated, and the company is on track to neutralize it over the next few quarters [p.3]."
+      },
+      "bear_case": {
+        "scope": "Key risks",
+        "analysis": "HDFC Life faces challenges from regulatory changes, including the new GST rollout and Labor Codes, which have impacted embedded value and profit after tax [p.4]. The 13-month persistency ratio has moderated by 200 basis points, indicating potential stress in certain customer profiles [p.3]. The company's growth in individual business has been lower than some peers, raising concerns about its ability to match industry growth rates [p.12]. Intense competition and aggressive pricing in the market could pressure margins and affect future profitability [p.7]."
+      },
+      "catalysts": {
+        "near_term": "The continued rollout of innovative products and the company's ability to mitigate the GST impact could drive positive sentiment in the next 1-2 quarters. The expected implementation of the risk-based solvency regime may also provide clarity and stability.",
+        "medium_term": "Over the next 6-18 months, sustained growth in the protection segment and successful adaptation to regulatory changes will be key drivers. The company's focus on disciplined execution and market expansion could enhance its competitive position."
+      },
+      "key_watchpoints": [
+        "Protection segment growth",
+        "Impact of regulatory changes",
+        "Persistency ratio trends",
+        "Solvency ratio stability",
+        "Competitive pricing dynamics"
+      ],
+      "valuation_context": "Not discussed in this call.",
+      "scorecard": {
+        "earnings_quality": 4,
+        "management_quality": 4,
+        "strategy_clarity": 4,
+        "risk_management": 3,
+        "esg_commitment": 3
+      },
+      "sentiment_narrative": "Management expressed confidence in the company's ability to sustain growth, highlighting the strong performance of the protection segment and the successful launch of new products like Click 2 Protect Supreme [p.4]. They acknowledged the challenges posed by regulatory changes but emphasized their strategy to mitigate these impacts and protect margins [p.3]. The team remains optimistic about the future, focusing on disciplined execution and market expansion [p.6]. Despite some cyclicality in growth compared to peers, management is confident in their long-term strategy and market positioning [p.12].",
+      "raw_scores": {
+        "positive_prob": 0.9431,
+        "negative_prob": 0.0138,
+        "neutral_prob": 0.0431
+      },
+      "title": "Investment Synthesis"
+    }
+  }
+}

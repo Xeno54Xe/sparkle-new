@@ -1,0 +1,138 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Vaidehi Sharma",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "webinar introduction",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vaidehi Sharma served as the moderator for the Bharti Airtel and Bharti Hexacom earnings webinar. She provided a structured introduction to the session, outlining the agenda and reminding participants about the forward-looking nature of the statements. Vaidehi efficiently managed the Q&A session, guiding participants on how to join the queue and interact with the management team. Her tone remained neutral and professional throughout the webinar.",
+      "sentiment_score": 0.0232,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0232,
+        "positive": 0.0396,
+        "negative": 0.0164,
+        "neutral": 0.944,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Soumen Ray",
+      "role": "Group Chief Financial Officer, Bharti Airtel Limited and Director, Bharti Hexacom Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "investment strategy",
+        "balance sheet strength"
+      ],
+      "direct_answers": [
+        "financial performance",
+        "investment strategy"
+      ],
+      "dodged_or_vague": [
+        "capex guidance"
+      ],
+      "summary": "Soumen Ray provided a comprehensive overview of Bharti Airtel's financial performance for the quarter, highlighting strong revenue growth across India and Africa. He emphasized the company's strategic investments in growth areas and the strength of their balance sheet. Soumen confidently addressed questions related to financial performance and investment strategy but avoided providing specific capex guidance. His tone was confident, reflecting the company's solid performance and strategic direction.",
+      "sentiment_score": 0.9326,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9326,
+        "positive": 0.9452,
+        "negative": 0.0126,
+        "neutral": 0.0421,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gopal Vittal",
+      "role": "Executive Vice Chairman, Bharti Airtel Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "AGR dues",
+        "B2B market",
+        "creative avenues for growth"
+      ],
+      "direct_answers": [
+        "B2B market",
+        "creative avenues for growth"
+      ],
+      "dodged_or_vague": [
+        "specific plans for AGR dues"
+      ],
+      "summary": "Gopal Vittal addressed key issues such as the AGR dues and the B2B market landscape. He expressed a cautious tone regarding the AGR dues, indicating that the company is awaiting a response from the DoT before deciding on further actions. Gopal highlighted the concentration in the B2B market and the need for creative strategies to drive ARPU growth. While he provided insights into the company's strategic focus, he was vague about specific plans concerning the AGR dues.",
+      "sentiment_score": 0.0499,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0499,
+        "positive": 0.0691,
+        "negative": 0.0192,
+        "neutral": 0.9117,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shashwat Sharma",
+      "role": "Managing Director & CEO (Airtel India), Bharti Airtel Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "ESG initiatives",
+        "5G expansion",
+        "broadband growth"
+      ],
+      "direct_answers": [
+        "ESG initiatives",
+        "5G expansion"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Shashwat Sharma provided an optimistic update on Bharti Airtel's ESG initiatives and business performance. He highlighted the company's progress in solarizing sites and its commitment to digital inclusion through educational initiatives. Shashwat also discussed the expansion of 5G coverage and broadband growth, emphasizing the strategic priorities that are driving the company's success. His tone was optimistic, reflecting confidence in the company's direction and achievements.",
+      "sentiment_score": 0.6946,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6946,
+        "positive": 0.7036,
+        "negative": 0.0091,
+        "neutral": 0.2873,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. The JSON structure is then populated with this information, ensuring it adheres to the specified schema.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

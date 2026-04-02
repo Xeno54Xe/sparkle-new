@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Anish Shah",
+      "role": "Group CEO & MD, Mahindra & Mahindra Limited",
+      "tone": "confident",
+      "key_topics": [
+        "tribute to Mr. Manoharan",
+        "strong quarterly results",
+        "profit and ROE growth",
+        "market share expansion",
+        "Tech Mahindra and Mahindra Finance performance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anish Shah opened the call with a tribute to Mr. Manoharan, highlighting his contributions to the company. He then confidently presented the strong quarterly results, noting a 24% increase in consolidated profit after tax and a record ROE of 20.6%. Shah emphasized the significant market share expansion in the SUV segment and strong margins in both the Auto and Farm sectors. He also highlighted the progress in Tech Mahindra and Mahindra Finance, underscoring their contributions to the group's overall performance.",
+      "sentiment_score": 0.9216,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9216,
+        "positive": 0.9323,
+        "negative": 0.0107,
+        "neutral": 0.057,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rajesh Jejurikar",
+      "role": "Executive Director, Auto and Farm Sectors, Mahindra & Mahindra Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "Farm Equipment business growth",
+        "Auto sector performance",
+        "Electric SUV penetration",
+        "CAFE norms",
+        "EV business ramp-up"
+      ],
+      "direct_answers": [
+        "Kapil from Nomura's question on SUV growth guidance",
+        "Gunjan from Bank of America's question on EV ramp-up"
+      ],
+      "dodged_or_vague": [
+        "Swaraj's question on Rare Earths"
+      ],
+      "summary": "Rajesh Jejurikar provided an optimistic overview of the Farm Equipment and Auto sectors, highlighting a 10% growth in tractor volumes and a 22% increase in SUV volumes. He discussed the penetration of Electric SUVs, which has reached 8%, and addressed questions on CAFE norms and the ramp-up of the EV business. Jejurikar directly answered questions about SUV growth guidance and EV ramp-up, while providing a vague response to a question about Rare Earths. His focus was on the continued strong performance and strategic initiatives in the Auto and Farm sectors.",
+      "sentiment_score": 0.4817,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4817,
+        "positive": 0.496,
+        "negative": 0.0143,
+        "neutral": 0.4897,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amarjyoti Barua",
+      "role": "Group CFO, Mahindra & Mahindra Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "financial highlights",
+        "impact of Mr. Manoharan's passing",
+        "consolidated growth figures"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amarjyoti Barua began by acknowledging the impact of Mr. Manoharan's passing on the finance team, noting his guidance and influence. He provided a neutral summary of the financial highlights for the quarter, emphasizing the 31% growth in the Auto sector, 12% in Farm, and 16% in Financial Services. Barua's contribution was focused on presenting the consolidated growth figures and the overall financial performance of the company.",
+      "sentiment_score": 0.0525,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0525,
+        "positive": 0.0841,
+        "negative": 0.0316,
+        "neutral": 0.8843,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Swati Khandelwal",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "question moderation",
+        "session closure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Swati Khandelwal served as the moderator for the earnings call, facilitating the Q&A session and ensuring a smooth flow of questions from analysts. She maintained a neutral tone throughout the session and concluded the call by thanking participants and acknowledging the repetition of some questions. Her role was primarily to manage the logistics of the call and ensure that all questions were addressed.",
+      "sentiment_score": 0.0439,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0439,
+        "positive": 0.0629,
+        "negative": 0.019,
+        "neutral": 0.9181,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: Anish Shah, Rajesh Jejurikar, Amarjyoti Barua, and Swati Khandelwal. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. Anish Shah's tone is confident as he discusses strong quarterly results and market share expansion. Rajesh Jejurikar is optimistic, highlighting growth in the Farm Equipment and Auto sectors and addressing questions on EV ramp-up. Amarjyoti Barua maintains a neutral tone, summarizing financial highlights and acknowledging Mr. Manoharan's impact. Swati Khandelwal, as the moderator, keeps a neutral tone while managing the Q&A session. The JSON structure captures each speaker's contribution, tone, and key messages, providing a comprehensive analysis of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

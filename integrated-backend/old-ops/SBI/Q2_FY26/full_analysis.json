@@ -1,0 +1,404 @@
+{
+  "document": {
+    "document_id": "2b13a5a29348",
+    "company": "SBI",
+    "quarter": "Q2",
+    "fiscal_year": "FY26",
+    "filename": "ad15487a-d1a9-4e33-90e9-624255749750.pdf",
+    "relative_path": "Data/SBI/ad15487a-d1a9-4e33-90e9-624255749750.pdf",
+    "file_size_bytes": 729949,
+    "file_checksum": "769e7850fd4fbe0e1b31a363d49a0c2e",
+    "discovered_at": "2026-03-19T07:14:45.584389+00:00",
+    "analyzed": false,
+    "analyzed_at": null,
+    "output_directory": null
+  },
+  "analysed_at": "2026-03-19T15:02:53.996613+00:00",
+  "output_directory": "C:\\Users\\Jairam Ayyar\\Documents\\Sparkle_Manual_Earnings_Call\\outputs\\SBI\\Q2_FY26",
+  "agents": {
+    "esg": {
+      "agent": "esg",
+      "overall_esg_score": 75.2,
+      "esg_label": "Commendable",
+      "esg_colour": "#2E7D32",
+      "environmental": {
+        "score": 70.0,
+        "key_themes": [
+          "renewable energy",
+          "solar integration",
+          "hydrogen"
+        ],
+        "notable_excerpts": [
+          "SBI CAPS have come out with a lot of reports on solar, hydrogen.",
+          "Power, renewable energy, commercial real estate and a bit of iron and steel."
+        ]
+      },
+      "social": {
+        "score": 75.0,
+        "key_themes": [
+          "employee training",
+          "community engagement",
+          "digitalization"
+        ],
+        "notable_excerpts": [
+          "Project SARAL aims to reduce the drudgery at our branches.",
+          "We have one of the largest physical training systems in the country.",
+          "We are using AI extensively to offer what they are looking for and they can build their own training module."
+        ]
+      },
+      "governance": {
+        "score": 80.0,
+        "key_themes": [
+          "risk management",
+          "transparency",
+          "stakeholder engagement"
+        ],
+        "notable_excerpts": [
+          "Fairness to all our stakeholders remains at the crux of the bank's culture.",
+          "We balance customers, employees, investors and society.",
+          "Institutionalization at scale SBI runs on codified processes in credit, risk, collections, treasury, technology and procurement."
+        ]
+      },
+      "chain_of_thought": "The transcript highlights SBI's focus on renewable energy projects, employee training initiatives, and strong governance practices. Environmental efforts are centered around solar and hydrogen projects. Social aspects emphasize employee training and digitalization. Governance is robust with a focus on risk management and stakeholder engagement.",
+      "strengths": [
+        "Strong governance practices",
+        "Comprehensive employee training programs",
+        "Focus on renewable energy"
+      ],
+      "weaknesses": [
+        "Limited specific data on emissions or waste management"
+      ],
+      "red_flags": [],
+      "esg_levels_reference": [
+        {
+          "range": "0–20",
+          "label": "Critical",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "21–40",
+          "label": "Concerning",
+          "colour": "#E65100"
+        },
+        {
+          "range": "41–60",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "61–80",
+          "label": "Commendable",
+          "colour": "#2E7D32"
+        },
+        {
+          "range": "81–100",
+          "label": "Exemplary",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "speaker": {
+      "agent": "speaker",
+      "speakers": [
+        {
+          "name": "Mr. C.S. Setty",
+          "role": "Chairman, State Bank of India",
+          "tone": "confident",
+          "key_topics": [
+            "global and domestic economic scenario",
+            "bank's performance in Q2 FY26",
+            "strategic initiatives",
+            "capital raise",
+            "future outlook"
+          ],
+          "direct_answers": [
+            "G Secs, yes.",
+            "We are not waiting because we have done the QIP.",
+            "The 12% to 14% guidance is across the segments, not necessarily Home Loans."
+          ],
+          "dodged_or_vague": [
+            "I gave a little longer answer so that again this question on ECL does not come."
+          ],
+          "summary": "Mr. C.S. Setty, the Chairman of SBI, delivered a confident and comprehensive overview of the bank's performance and strategic direction. He emphasized the bank's strong performance in Q2 FY26, highlighting industry-leading credit growth and improved NIMs. Setty discussed the global and domestic economic outlook, projecting cautious optimism for India's growth. He also detailed the bank's successful capital raise of Rs 25,000 crores and outlined strategic anchors such as brand trust and liability franchise strength. Setty's responses to analyst questions were mostly direct, though he occasionally provided extended answers to preempt further queries.",
+          "sentiment_score": 0.9333,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9333,
+            "positive": 0.9494,
+            "negative": 0.0161,
+            "neutral": 0.0345,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Mr. Pawan Kumar",
+          "role": "General Manager (Performance, Planning and Review), State Bank of India",
+          "tone": "neutral",
+          "key_topics": [
+            "introduction",
+            "welcome remarks",
+            "safe harbour statement"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Mr. Pawan Kumar, as the General Manager of Performance, Planning and Review, opened the call with a neutral tone, welcoming participants and setting the stage for the presentation of the Q2 FY26 results. He provided a standard safe harbour statement, indicating that some statements may be forward-looking and subject to change. His role was primarily to facilitate the proceedings and ensure a smooth transition to the Chairman's remarks.",
+          "sentiment_score": 0.0895,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": 0.0895,
+            "positive": 0.1024,
+            "negative": 0.0129,
+            "neutral": 0.8847,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Mr. Ashok Ajmera",
+          "role": "Chairman, Ajcon Global",
+          "tone": "optimistic",
+          "key_topics": [
+            "bank valuation",
+            "operating profit",
+            "market cap comparison"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Mr. Ashok Ajmera, Chairman of Ajcon Global, expressed optimism about SBI's performance and valuation. He congratulated the bank on reaching a business size of 100 trillion and compared its market cap with peers, suggesting that SBI deserves higher valuations. Ajmera highlighted the bank's low GNPA and net NPA ratios and questioned the disparity in price-to-earnings ratios. His remarks were supportive and aimed at reinforcing confidence in SBI's market position and future prospects.",
+          "sentiment_score": 0.1268,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": 0.1268,
+            "positive": 0.1467,
+            "negative": 0.0199,
+            "neutral": 0.8335,
+            "chunks_scored": 1
+          }
+        }
+      ],
+      "speaker_count": 3,
+      "chain_of_thought": "The transcript reveals three main speakers: Mr. C.S. Setty, Mr. Pawan Kumar, and Mr. Ashok Ajmera. Mr. Setty, as the Chairman, provided a detailed overview of SBI's performance and strategic direction, maintaining a confident tone throughout. He addressed several analyst questions directly, though he occasionally gave extended answers to preempt further queries. Mr. Pawan Kumar facilitated the call, delivering introductory and procedural remarks with a neutral tone. Mr. Ashok Ajmera, an analyst, expressed optimism about SBI's valuation and performance, comparing it favorably with peers and suggesting it deserves higher market valuations. Each speaker's contribution was distinct, with management focusing on performance and strategy, while the analyst highlighted valuation and market comparisons.",
+      "sentiment_levels_reference": [
+        {
+          "range": "–1.0 to –0.6",
+          "label": "Very Negative",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "–0.6 to –0.2",
+          "label": "Negative",
+          "colour": "#E53935"
+        },
+        {
+          "range": "–0.2 to +0.2",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "+0.2 to +0.6",
+          "label": "Positive",
+          "colour": "#43A047"
+        },
+        {
+          "range": "+0.6 to +1.0",
+          "label": "Very Positive",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "sentiment": {
+      "agent": "sentiment",
+      "overall_sentiment_score": 0.318,
+      "overall_sentiment_label": "Positive",
+      "overall_sentiment_colour": "#43A047",
+      "overall_tone": "Cautiously Bullish",
+      "dimensions": {
+        "financial_performance": {
+          "score": 0.1897,
+          "label": "Neutral",
+          "colour": "#F9A825",
+          "finbert": {
+            "score": 0.1897,
+            "positive": 0.5832,
+            "negative": 0.3935,
+            "neutral": 0.0234,
+            "chunks_scored": 1
+          },
+          "text": "The financial performance for Q2 FY26 was mixed, with management highlighting both strengths and challenges. The bank reported a 'good 7.1% credit growth' and 'industry-leading credit growth at SBI scale,' with market share gains in segments like current account, home loans, and auto loans. However, there were significant challenges, such as a '50% drop in treasury profit from 8082 crores to 4011 crores' and a 'fall in recovery and upgradation numbers by 40-45% compared to the last quarter.' The domestic NIMs improved by 7 basis points to 3.09%, driven by repricing of deposits. Despite these challenges, the bank raised Rs 25,000 crores through a QIP, which was oversubscribed four and a half times, indicating strong investor interest."
+        },
+        "forward_guidance": {
+          "score": 0.927,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.927,
+            "positive": 0.9361,
+            "negative": 0.0092,
+            "neutral": 0.0547,
+            "chunks_scored": 1
+          },
+          "text": "Management expressed optimism for the future, expecting 'a much better performance in Quarter 3' and projecting '12% to 14% growth across segments.' The bank's corporate credit pipeline is robust, with '7 lakh crores' in the pipeline, half of which is already sanctioned. They anticipate 'further acceleration in the second half of the year' for segments like Xpress credit and home loans. The language used was cautiously optimistic, with expectations of 'reaching 10% corporate credit growth in the next two quarters.' The bank is also preparing to launch 'YONO 2.0,' which is expected to enhance digital capabilities."
+        },
+        "risk_language": {
+          "score": -0.8783,
+          "label": "Very Negative",
+          "colour": "#B71C1C",
+          "finbert": {
+            "score": -0.8783,
+            "positive": 0.0354,
+            "negative": 0.9138,
+            "neutral": 0.0508,
+            "chunks_scored": 1
+          },
+          "text": "The call addressed several risks and challenges, including a '50% drop in treasury profit' and 'falling short in recovery and upgradation numbers.' Management acknowledged the impact of 'volatile global commodity markets' and 'potential spillovers from trade disruptions.' There was also mention of 'seasonality in miscellaneous operating expenses' and the impact of 'large payments done by government entities.' Despite these challenges, management remained focused on 'robust risk management' and maintaining 'stable asset quality.' The tone was forthright, acknowledging the challenges while outlining strategies to mitigate them."
+        },
+        "investor_confidence": {
+          "score": 0.7931,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.7931,
+            "positive": 0.8042,
+            "negative": 0.0111,
+            "neutral": 0.1847,
+            "chunks_scored": 1
+          },
+          "text": "Management projected confidence and transparency throughout the call. They addressed analyst questions directly, providing detailed explanations for financial figures and strategic initiatives. The successful Rs 25,000 crores QIP, which was 'oversubscribed four and a half times,' was highlighted as a testament to investor confidence. Management emphasized their commitment to 'rewarding trust with sustainable returns' and outlined strategic anchors such as 'institutionalization at scale' and 'liability franchise strength.' The overall tone was one of clarity and conviction, with management expressing confidence in their strategic direction."
+        }
+      },
+      "key_positive_drivers": [
+        "7.1% credit growth",
+        "Industry-leading credit growth",
+        "7 lakh crores corporate credit pipeline",
+        "Successful Rs 25,000 crores QIP",
+        "Launch of YONO 2.0",
+        "Improved domestic NIMs by 7 basis points"
+      ],
+      "key_negative_drivers": [
+        "50% drop in treasury profit",
+        "Fall in recovery and upgradation numbers",
+        "Seasonality in miscellaneous operating expenses",
+        "Volatile global commodity markets",
+        "Potential spillovers from trade disruptions"
+      ],
+      "notable_phrases": [
+        "Good 7.1% credit growth",
+        "Industry-leading credit growth at SBI scale",
+        "50% drop in treasury profit",
+        "Fall in recovery and upgradation numbers",
+        "Much better performance in Quarter 3",
+        "12% to 14% growth across segments",
+        "Oversubscribed four and a half times",
+        "Robust risk management"
+      ],
+      "chain_of_thought": "The financial performance showed mixed results with strong credit growth but challenges in treasury profits and recoveries. Forward guidance was cautiously optimistic with expectations of improved performance and growth in key segments. Risks were acknowledged, particularly in treasury profits and global market volatility, but management outlined strategies to address them. Investor confidence was bolstered by a successful QIP and clear communication of strategic initiatives, leading to a cautiously bullish overall tone."
+    },
+    "summary": {
+      "agent": "summary",
+      "executive_summary": "State Bank of India (SBI) reported its Q2 FY26 financial results, showcasing a robust performance with a 7.1% credit growth, which is industry-leading. The bank's net interest margins (NIMs) improved by 7 basis points quarter-on-quarter to 3.09%, driven by the repricing of deposits. However, the bank faced a 50% drop in treasury profits, which was a significant negative driver. Despite this, the successful Rs 25,000 crores qualified institutional placement (QIP) and a strong corporate credit pipeline of Rs 7 lakh crores were highlighted as positive indicators.\n\nManagement emphasized strategic themes such as the expansion of the liability franchise, disciplined growth with a focus on return on risk-weighted assets (RORWA), and the launch of Project SARAL aimed at revamping operational processes. The bank is also preparing to launch YONO 2.0, enhancing its digital banking capabilities. The strategic focus remains on leveraging SBI's scale and brand trust to drive growth in chosen segments like home loans and auto loans.\n\nThe overall tone of the call was cautiously bullish, with Chairman Mr. C.S. Setty exuding confidence in the bank's strategic direction and operational resilience. While the sentiment was generally positive, there were concerns about the drop in treasury profits and the seasonality in operating expenses. Investors were likely reassured by the bank's strong governance practices and strategic initiatives, although some concerns about global market volatility and recovery numbers persist.\n\nESG themes were significant in the call, with SBI receiving a commendable overall ESG score of 75.2. The bank's governance score was particularly strong at 80.0, reflecting its commitment to transparency and stakeholder engagement. However, there were noted weaknesses in specific data on emissions and waste management, which could be areas for improvement in the future.",
+      "qa_quality": {
+        "overall_transparency_score": 7.5,
+        "narrative": "During the Q&A session, management handled most questions with clarity and directness, particularly those related to the bank's strategic initiatives and financial performance. For instance, Mr. C.S. Setty provided detailed responses on the impact of the YES Bank stake sale and the bank's NIM trajectory. However, there were instances where management deflected or provided vague responses, particularly concerning the specifics of the treasury profit drop and the detailed impact of the ECL guidelines.\n\nManagement was somewhat evasive when discussing the specifics of the treasury profit decline, attributing it to broader market conditions without delving into detailed internal factors. Additionally, while the bank's strategic direction was well-articulated, some responses regarding the timeline and outcomes of Project SARAL were less precise, leaving analysts seeking more concrete details.\n\nOverall, the transparency score reflects a generally open communication style, with room for improvement in addressing more challenging or complex questions with greater specificity.",
+        "direct_answer_examples": [
+          "The impact of the YES Bank stake sale on Return on Assets was clarified as still above 1%, even without considering the profit from the sale.",
+          "The LCR of the bank was confirmed to be 143.8%, up from 139% as of June 30."
+        ],
+        "dodged_questions": [
+          {
+            "question": "What is the detailed impact of the treasury profit drop?",
+            "management_response": "The treasury profit drop was attributed to broader market conditions and the absence of OMO operations.",
+            "assessment": "The response lacked specific internal factors contributing to the profit decline, leaving analysts with an incomplete picture."
+          }
+        ],
+        "vague_response_examples": [
+          "The outcomes and timelines for Project SARAL were not clearly defined, with management indicating that details would be shared at a later stage."
+        ]
+      },
+      "short_term_implications": {
+        "narrative": "In the near term, investors should closely monitor SBI's credit growth trajectory, particularly the conversion of its Rs 7 lakh crores corporate credit pipeline into actual disbursements. The bank's guidance suggests a continuation of strong credit demand, which could positively impact earnings if executed effectively. Additionally, the successful Rs 25,000 crores QIP provides a solid capital base to support growth initiatives.\n\nHowever, the drop in treasury profits and the seasonality in operating expenses are areas of concern that could weigh on short-term financial performance. Investors should also be aware of the potential impact of volatile global commodity markets, which could affect the bank's treasury operations and overall profitability. The upcoming launch of YONO 2.0 is a potential catalyst that could enhance customer engagement and digital banking capabilities, providing a competitive edge in the retail banking segment.",
+        "key_items": [
+          {
+            "item": "Conversion of Rs 7 lakh crores corporate credit pipeline",
+            "timeframe": "Next 6-12 months",
+            "impact": "positive"
+          },
+          {
+            "item": "Launch of YONO 2.0",
+            "timeframe": "Next 6 months",
+            "impact": "positive"
+          },
+          {
+            "item": "Treasury profit performance",
+            "timeframe": "Next 2 quarters",
+            "impact": "negative"
+          }
+        ]
+      },
+      "long_term_implications": {
+        "narrative": "Over the long term, SBI's strategic trajectory appears focused on leveraging its scale and brand trust to drive sustainable growth. The bank's capital allocation priorities emphasize high return on risk-weighted assets (RORWA) businesses, which should support superior return on equity (ROE) over time. Management's commitment to expanding the liability franchise and maintaining pricing discipline is expected to underpin long-term profitability.\n\nSBI's competitive positioning is bolstered by its strong governance practices and focus on digital transformation, as evidenced by the upcoming YONO 2.0 launch. Sector tailwinds, such as the growing demand for credit in India and the bank's leadership in segments like home loans and auto loans, provide a favorable backdrop for growth. However, potential headwinds include regulatory changes and global economic volatility, which could impact the bank's operations and financial performance.\n\nManagement's long-term vision aligns with creating value for all stakeholders, balancing growth with risk management and operational efficiency. The bank's focus on technology and process re-engineering through initiatives like Project SARAL is expected to enhance operational resilience and customer satisfaction, supporting long-term value creation.",
+        "key_items": [
+          {
+            "item": "Expansion of liability franchise",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Digital transformation initiatives",
+            "timeframe": "1-3 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Regulatory changes",
+            "timeframe": "1-5 years",
+            "impact": "negative"
+          }
+        ]
+      },
+      "key_risks": {
+        "narrative": "SBI faces several material risks that could impact its future performance. A significant company-specific risk is the execution of its large corporate credit pipeline, which requires effective management to convert into actual disbursements. Additionally, the bank's reliance on treasury operations poses a risk, particularly given the recent 50% drop in treasury profits.\n\nExternally, volatile global commodity markets and potential regulatory changes present risks that could affect the bank's financial performance and strategic initiatives. The macroeconomic environment, including interest rate fluctuations and global economic conditions, also poses a risk to the bank's operations and profitability.",
+        "risks": [
+          {
+            "risk": "Execution of corporate credit pipeline",
+            "severity": "medium",
+            "type": "company-specific"
+          },
+          {
+            "risk": "Volatile global commodity markets",
+            "severity": "high",
+            "type": "external"
+          },
+          {
+            "risk": "Regulatory changes",
+            "severity": "medium",
+            "type": "external"
+          }
+        ]
+      },
+      "key_opportunities": {
+        "narrative": "SBI has several compelling growth opportunities that could drive future performance. The bank's strong corporate credit pipeline of Rs 7 lakh crores presents a high potential opportunity for revenue growth as these projects are converted into disbursements over the next 12-24 months. The launch of YONO 2.0 is another significant opportunity, expected to enhance digital engagement and customer satisfaction, potentially leading to increased market share in retail banking.\n\nAdditionally, the bank's focus on expanding its liability franchise and leveraging its brand trust provides a medium-term opportunity to strengthen its competitive positioning and drive sustainable growth. The ongoing digital transformation initiatives, including Project SARAL, are expected to improve operational efficiency and customer experience, supporting long-term value creation.",
+        "opportunities": [
+          {
+            "opportunity": "Corporate credit pipeline conversion",
+            "potential": "high",
+            "timeline": "12-24 months"
+          },
+          {
+            "opportunity": "Launch of YONO 2.0",
+            "potential": "medium",
+            "timeline": "6-12 months"
+          },
+          {
+            "opportunity": "Expansion of liability franchise",
+            "potential": "medium",
+            "timeline": "1-3 years"
+          }
+        ]
+      },
+      "investment_thesis_signal": "Cautiously Bullish",
+      "investment_thesis_rationale": "SBI's Q2 FY26 earnings call highlighted a strong strategic direction and robust operational performance, with industry-leading credit growth and improved NIMs. The bank's focus on digital transformation and expanding its liability franchise positions it well for sustainable growth. However, risks such as volatile global markets and regulatory changes warrant a cautious approach. The overall sentiment was cautiously bullish, supported by strong governance practices and strategic initiatives, making SBI a compelling investment with some caution due to external uncertainties.",
+      "chain_of_thought": "The analysis considered SBI's financial performance, strategic initiatives, and management's tone during the earnings call. The strong credit growth and successful QIP were positive indicators, while the drop in treasury profits and global market volatility were noted as risks. The ESG score and governance practices further supported a cautiously bullish outlook, balancing growth opportunities with potential risks."
+    }
+  }
+}

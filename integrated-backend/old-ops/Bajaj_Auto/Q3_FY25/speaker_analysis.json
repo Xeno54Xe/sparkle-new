@@ -1,0 +1,135 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Neerav",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference coordination",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Neerav served as the moderator for the Bajaj Auto Q3 FY25 earnings call. His role was to facilitate the conference, ensuring that the call proceeded smoothly and that participants were aware of the process for asking questions. Neerav maintained a neutral tone throughout, focusing on logistical details and ensuring the call was recorded for future reference.",
+      "sentiment_score": 0.0217,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0217,
+        "positive": 0.0394,
+        "negative": 0.0177,
+        "neutral": 0.9428,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anand Newar",
+      "role": "Head, Investor Relations",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anand Newar, as the Head of Investor Relations, introduced the key speakers and outlined the structure of the call. His tone was neutral, focusing on setting the stage for the detailed presentations by the management team. Anand's role was primarily to facilitate the transition between speakers and ensure the call's agenda was clear to all participants.",
+      "sentiment_score": 0.0645,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0645,
+        "positive": 0.0765,
+        "negative": 0.0119,
+        "neutral": 0.9116,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rakesh Sharma",
+      "role": "Executive Director",
+      "tone": "Confident",
+      "key_topics": [
+        "Business performance",
+        "Market share",
+        "Product portfolio",
+        "Exports",
+        "Electric vehicles"
+      ],
+      "direct_answers": [
+        "Chandramouli's question on export growth timeframe and markets",
+        "Pramod Kumar's question on market share thinking"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rakesh Sharma, the Executive Director, delivered a confident overview of Bajaj Auto's Q3 FY25 performance. He highlighted significant achievements, including record volumes, revenue, and market share in the electric vehicle segment. Rakesh emphasized the company's strategic focus on expanding its product portfolio and maintaining strong export growth, particularly in Latin America. He directly addressed questions regarding export growth and market share strategies, showcasing a clear vision for the company's future trajectory.",
+      "sentiment_score": 0.9174,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9174,
+        "positive": 0.9273,
+        "negative": 0.0099,
+        "neutral": 0.0628,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dinesh Thapar",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Green energy portfolio",
+        "Export business",
+        "Cost management"
+      ],
+      "direct_answers": [
+        "Pramod Kumar's question on cost management and expenses",
+        "Jinesh Gandhi's question on PLI incentives"
+      ],
+      "dodged_or_vague": [
+        "Raghunandhan L.'s question on KTM investments"
+      ],
+      "summary": "Dinesh Thapar, the CFO, provided a confident analysis of Bajaj Auto's financial performance for Q3 FY25. He highlighted the strong contribution of the green energy portfolio to the company's domestic business and the robust recovery in exports. Dinesh addressed questions on cost management and PLI incentives directly, demonstrating a clear understanding of the financial intricacies. However, he was cautious in discussing potential investments in KTM, indicating that it was premature to comment on ongoing M&A processes.",
+      "sentiment_score": 0.9266,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9266,
+        "positive": 0.9378,
+        "negative": 0.0112,
+        "neutral": 0.0509,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying the unique speakers in the earnings call: Neerav (Moderator), Anand Newar (Head of Investor Relations), Rakesh Sharma (Executive Director), and Dinesh Thapar (Chief Financial Officer). Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interaction with analysts. For management speakers, their responses to analyst questions are categorized as direct or vague. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

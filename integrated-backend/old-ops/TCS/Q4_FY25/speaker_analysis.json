@@ -1,0 +1,202 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the TCS earnings call, providing instructions on how participants could engage and reminding them of the call's recording status. The tone was neutral, focusing on logistics and ensuring the call proceeded smoothly.",
+      "sentiment_score": 0.0134,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0134,
+        "positive": 0.035,
+        "negative": 0.0216,
+        "neutral": 0.9434,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nehal Shah",
+      "role": "Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "financial results",
+        "call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nehal Shah introduced the earnings call, providing an overview of the agenda and resources available to participants. The tone was neutral, focusing on ensuring participants had access to necessary information and setting the stage for the management's presentations.",
+      "sentiment_score": 0.0308,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0308,
+        "positive": 0.0453,
+        "negative": 0.0145,
+        "neutral": 0.9403,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "K Krithivasan",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "future outlook",
+        "AI and digital innovation"
+      ],
+      "direct_answers": [
+        "Ankur Rudra's question on AI for IT and AI for Business"
+      ],
+      "dodged_or_vague": [
+        "Vibhor Singhal's question on hi-tech segment"
+      ],
+      "summary": "K Krithivasan expressed confidence in TCS's financial performance, highlighting the achievement of surpassing the $30 billion revenue milestone and maintaining strong margins. He emphasized the company's strategic focus on AI and digital innovation as key growth drivers. Krithivasan answered questions about AI deployment directly but was less specific about the hi-tech segment's performance. His tone was confident, projecting a positive outlook for the company's future.",
+      "sentiment_score": 0.9286,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9286,
+        "positive": 0.94,
+        "negative": 0.0114,
+        "neutral": 0.0486,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "investments"
+      ],
+      "direct_answers": [
+        "Yogesh Aggarwal's question on tactical investments"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Samir Seksaria provided a detailed analysis of TCS's financial performance, focusing on the impact of tactical interventions on margins. He explained the reasons behind the margin decline and highlighted the company's strategic investments in its workforce. Seksaria's tone was cautious, acknowledging the challenges while emphasizing the company's efforts to maintain financial stability.",
+      "sentiment_score": -0.805,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.805,
+        "positive": 0.0802,
+        "negative": 0.8852,
+        "neutral": 0.0347,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Milind Lakkad",
+      "role": "Chief HR Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "talent development",
+        "hiring strategy",
+        "AI skills"
+      ],
+      "direct_answers": [
+        "Gaurav Rateria's question on talent strategy for AI"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Milind Lakkad discussed TCS's talent development initiatives, emphasizing the company's focus on AI skills and strategic hiring. He highlighted the success of TCS's learning ecosystem and the company's commitment to developing a future-ready workforce. Lakkad's tone was optimistic, reflecting confidence in TCS's ability to attract and develop top talent.",
+      "sentiment_score": 0.4632,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4632,
+        "positive": 0.4728,
+        "negative": 0.0096,
+        "neutral": 0.5176,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Yogesh Aggarwal",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "tactical investments",
+        "margins"
+      ],
+      "direct_answers": [
+        "Samir Seksaria's response on tactical investments"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Yogesh Aggarwal asked probing questions about TCS's financial strategies, particularly regarding tactical investments and their impact on margins. His tone was inquisitive, seeking clarity on the company's decision-making processes and future financial planning.",
+      "sentiment_score": -0.329,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.329,
+        "positive": 0.0351,
+        "negative": 0.3641,
+        "neutral": 0.6009,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ankur Rudra",
+      "role": "Analyst",
+      "tone": "curious",
+      "key_topics": [
+        "AI strategy",
+        "business opportunities"
+      ],
+      "direct_answers": [
+        "K Krithivasan's response on AI for IT and AI for Business"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ankur Rudra focused on TCS's AI strategy, asking detailed questions about the potential impact of AI on existing projects and new business opportunities. His tone was curious, aiming to understand the strategic implications of AI deployment within TCS.",
+      "sentiment_score": -0.3628,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.3628,
+        "positive": 0.0314,
+        "negative": 0.3942,
+        "neutral": 0.5745,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis identifies each speaker's role and extracts their key statements. Management speakers are assessed for their tone and how directly they answer analyst questions. Analysts' questions are noted for their focus and the responses they receive. The JSON structure captures the essence of each speaker's contribution to the call, providing a comprehensive overview of the discussion and the strategic directions highlighted by TCS's leadership.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

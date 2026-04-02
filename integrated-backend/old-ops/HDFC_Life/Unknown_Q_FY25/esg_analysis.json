@@ -1,0 +1,74 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 47.5,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 10.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 60.0,
+    "key_themes": [
+      "community recognition",
+      "workplace diversity",
+      "employee safety",
+      "data security"
+    ],
+    "notable_excerpts": [
+      "We were recognised as India’s Top 50 Best Workplaces for Women by Great Place to Work.",
+      "We have also obtained an injunction from Mumbai High Court. This is to prevent the circulation of leaked customer data."
+    ]
+  },
+  "governance": {
+    "score": 70.0,
+    "key_themes": [
+      "risk management",
+      "regulatory compliance",
+      "transparency"
+    ],
+    "notable_excerpts": [
+      "We are committed to adapting to the evolving market and regulatory landscape with agility and resilience.",
+      "We have largely closed our discussions with all our distributors and rolled out a combination of measures, including deferred commission payout, claw-back of commission and reduction of commission."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript for HDFC Life lacked significant environmental disclosures, resulting in a low score for the environmental pillar. The social pillar was moderately addressed, with mentions of workplace diversity and data security measures. Governance was the strongest pillar, with discussions on risk management and regulatory compliance, leading to a higher score.",
+  "strengths": [
+    "Recognition for workplace diversity",
+    "Strong governance practices"
+  ],
+  "weaknesses": [
+    "Lack of environmental disclosures"
+  ],
+  "red_flags": [
+    "Recent data breach incident"
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

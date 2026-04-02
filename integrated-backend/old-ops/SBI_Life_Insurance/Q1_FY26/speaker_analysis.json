@@ -1,0 +1,130 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Amit Jhingran",
+      "role": "Managing Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "growth strategy",
+        "product mix",
+        "distribution channels",
+        "digital transformation"
+      ],
+      "direct_answers": [
+        "Yes, definitely. We are working on that line only. I mean our guidance and our monitoring of our field forces, our frontline managers, everybody is aligned, and we are sure that we will be able to maintain this product mix broadly with some kind of seasonal variations of this."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Amit Jhingran, the Managing Director and CEO of SBI Life Insurance, delivered a confident and comprehensive overview of the company's performance for Q1 FY26. He highlighted the company's strong financial results, including a 14% growth in profit after tax and a 15% increase in assets under management. Jhingran emphasized the company's strategic focus on innovation, customer centricity, and sustainability, with plans to enhance digital capabilities and expand distribution networks. He confidently addressed questions about maintaining product mix and growth strategies, reinforcing the company's commitment to long-term sustainable growth.",
+      "sentiment_score": 0.5191,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5191,
+        "positive": 0.5307,
+        "negative": 0.0116,
+        "neutral": 0.4577,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Avinash Singh",
+      "role": "Analyst from Emkay Global",
+      "tone": "inquisitive",
+      "key_topics": [
+        "margin performance",
+        "branch expansion",
+        "agency focus"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Avinash Singh, an analyst from Emkay Global, posed questions focusing on the company's margin performance and strategic expansion plans. He inquired about the impact of branch expansion and agency growth on operating expenses and margin calculations. His questions were aimed at understanding the company's operational strategies and their financial implications, reflecting an inquisitive tone.",
+      "sentiment_score": 0.0384,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0384,
+        "positive": 0.0743,
+        "negative": 0.0359,
+        "neutral": 0.8899,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aditi Joshi",
+      "role": "Analyst from JP Morgan",
+      "tone": "inquisitive",
+      "key_topics": [
+        "product mix",
+        "new Chairman",
+        "agency outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aditi Joshi, an analyst from JP Morgan, asked detailed questions about the product mix variations across different channels and the implications of a new Chairman's appointment. Her inquiries were aimed at understanding the strategic decisions behind product distribution and the potential impact of leadership changes on company policies. Her tone was inquisitive, seeking clarity on the company's strategic direction and leadership expectations.",
+      "sentiment_score": 0.0904,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0904,
+        "positive": 0.1304,
+        "negative": 0.04,
+        "neutral": 0.8297,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nidhesh Jain",
+      "role": "Analyst from Investec",
+      "tone": "inquisitive",
+      "key_topics": [
+        "protection growth",
+        "economic assumptions",
+        "growth guidance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nidhesh Jain, an analyst from Investec, focused his questions on the company's growth in the protection segment and the potential for revising growth guidance. He sought insights into the company's outlook from its banca partners and whether there would be any changes in growth projections. His tone was inquisitive, aiming to understand the company's strategic positioning and future growth expectations.",
+      "sentiment_score": 0.0524,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0524,
+        "positive": 0.0693,
+        "negative": 0.0169,
+        "neutral": 0.9139,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements from each speaker are extracted to capture their main points and tone. Management speakers are assessed for how directly they answer analyst questions, noting any deflections or vague responses. Each speaker's contribution is summarized to provide a narrative of their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

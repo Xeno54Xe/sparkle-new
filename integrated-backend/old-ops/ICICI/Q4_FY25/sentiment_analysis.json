@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8934,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9359,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9359,
+        "positive": 0.9574,
+        "negative": 0.0214,
+        "neutral": 0.0212,
+        "chunks_scored": 1
+      },
+      "text": "ICICI Bank reported a strong financial performance for Q4 FY25, with profit before tax excluding treasury growing by 13.2% year-on-year to ₹16,534 crore. The core operating profit increased by 13.7% year-on-year to ₹17,425 crore, and the profit after tax grew by 18.0% year-on-year to ₹12,630 crore. The net interest income rose by 11.0% year-on-year to ₹21,193 crore, while the net interest margin improved to 4.41% in Q4-2025 from 4.25% in Q3-2025. Fee income also saw a significant increase of 16.0% year-on-year to ₹6,306 crore. The consolidated profit after tax grew by 15.7% year-on-year to ₹13,502 crore. These results indicate that ICICI Bank's financial performance was ahead of expectations, driven by robust growth in core operating profit and net interest income."
+    },
+    "forward_guidance": {
+      "score": 0.8962,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8962,
+        "positive": 0.9071,
+        "negative": 0.0109,
+        "neutral": 0.082,
+        "chunks_scored": 1
+      },
+      "text": "Looking ahead, ICICI Bank expressed a cautiously optimistic outlook, emphasizing opportunities for 'risk-calibrated profitable growth.' The bank plans to focus on 'customer 360 degree' strategies and enhancing delivery systems to grow market share. Management highlighted the importance of maintaining a strong balance sheet and operational resilience. While the bank expects loan and deposit growth to continue, it acknowledged the impact of macroeconomic factors and repo rate cuts on margins. The language used was measured, with an emphasis on strategic growth and maintaining a 'return of capital principle.'"
+    },
+    "risk_language": {
+      "score": 0.8459,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8459,
+        "positive": 0.8734,
+        "negative": 0.0276,
+        "neutral": 0.099,
+        "chunks_scored": 1
+      },
+      "text": "The earnings call addressed several risks, including statutory and regulatory changes, international economic conditions, and potential increases in non-performing loans. Management was forthright about the challenges posed by an 'uncertain global environment' and emphasized the need for 'tight monitoring' of credit costs and portfolio quality. The bank continues to hold provisions against security receipts and maintains a high provisioning coverage ratio of 76.2% on non-performing loans. The call also highlighted the importance of maintaining a risk-calibrated growth strategy amidst potential headwinds."
+    },
+    "investor_confidence": {
+      "score": 0.8729,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8729,
+        "positive": 0.8857,
+        "negative": 0.0127,
+        "neutral": 0.1016,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial metrics. The bank's strategic focus on 'Fair to Customer, Fair to Bank' and 'One Bank, One Team' principles was reiterated, aiming to build trust and deliver sustainable returns. The call conveyed a sense of confidence in the bank's ability to navigate challenges, with management emphasizing their commitment to maintaining a strong capital position and leveraging growth opportunities. Overall, the tone was one of cautious optimism, with a clear articulation of strategic priorities."
+    }
+  },
+  "key_positive_drivers": [
+    "Profit before tax excluding treasury grew by 13.2%",
+    "Core operating profit increased by 13.7%",
+    "Net interest margin improved to 4.41%",
+    "Fee income grew by 16.0%",
+    "Consolidated profit after tax grew by 15.7%",
+    "Strong deposit growth of 14.0% year-on-year"
+  ],
+  "key_negative_drivers": [
+    "Impact of repo rate cuts on margins",
+    "Uncertain global environment",
+    "Potential increase in non-performing loans",
+    "Regulatory and statutory changes",
+    "Volatility in international economic conditions",
+    "Pressure on long-term growth due to tariffs"
+  ],
+  "notable_phrases": [
+    "risk-calibrated profitable growth",
+    "customer 360 degree",
+    "tight monitoring",
+    "uncertain global environment",
+    "return of capital principle",
+    "maintain a strong balance sheet",
+    "focus on operational resilience",
+    "measured approach to growth"
+  ],
+  "chain_of_thought": "ICICI Bank's financial performance exceeded expectations with strong growth in profit and margins. Forward guidance was cautiously optimistic, focusing on strategic growth and operational resilience. Risks were acknowledged, particularly regarding global economic conditions and regulatory changes. Management demonstrated confidence and transparency, addressing investor concerns and emphasizing strategic priorities."
+}

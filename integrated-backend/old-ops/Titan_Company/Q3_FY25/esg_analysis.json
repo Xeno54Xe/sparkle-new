@@ -1,0 +1,71 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 33.5,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 40.0,
+    "key_themes": [
+      "employee growth",
+      "community engagement",
+      "consumer centricity"
+    ],
+    "notable_excerpts": [
+      "We have 1,000 partners across the length and breadth of the country.",
+      "We are actually at the place when we are re-looking at our strategy and playing to our strength, which is a lot of consumer centricity, design, product, trust, assurance, quality, access of customers through our channel and higher price points."
+    ]
+  },
+  "governance": {
+    "score": 30.0,
+    "key_themes": [
+      "risk management",
+      "transparency"
+    ],
+    "notable_excerpts": [
+      "It's very difficult to predict, given the way gold prices have been swinging upward even in the month of Jan and Feb, thanks to whatever is happening in the US and the dollar is going up. So, there's a lot of volatility, and therefore one can't rule out GC dilution.",
+      "Pursuant to Regulation 46(2)(oa) of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we hereby inform the exchanges that the transcript of audio call recording of the Company’s Analyst Call to discuss the Unaudited Financial Results (standalone and consolidated) for the quarter and nine months ended 31st December 2024 is attached herewith."
+    ]
+  },
+  "chain_of_thought": "The earnings call lacked significant environmental disclosures, had moderate social content focusing on employee and community engagement, and some governance mentions related to risk management and regulatory compliance.",
+  "strengths": [
+    "Strong community and employee engagement",
+    "Focus on consumer centricity"
+  ],
+  "weaknesses": [
+    "Lack of environmental initiatives and disclosures",
+    "Limited governance transparency"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

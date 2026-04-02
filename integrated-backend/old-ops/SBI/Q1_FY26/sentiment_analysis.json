@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.4993,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.6315,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.6315,
+        "positive": 0.8036,
+        "negative": 0.1721,
+        "neutral": 0.0243,
+        "chunks_scored": 1
+      },
+      "text": "The financial performance for Q1FY26 was robust, with net profit standing at ₹19,160 crores, marking a 12.48% increase year-over-year. The bank's return on equity (ROE) was reported at 19.7%, and return on assets (ROA) at 1.14%, underscoring the resilience of the franchise. Credit growth was recorded at 11.61% YoY, with domestic credit growth at 11.06%. Deposit growth was slightly higher at 11.66% YoY, and the domestic credit-deposit ratio was 68.88%. Operating expenses decreased significantly by 21.92%, with overheads reducing by 37.98%. The net NPA ratio improved by 10 basis points YoY to 0.47%, and the slippage ratio improved by 9 basis points YoY to 0.75%. These results highlight the bank's ability to operate profitably at scale, driven by substantial core strengths and a commitment to fairness for all stakeholders."
+    },
+    "forward_guidance": {
+      "score": 0.936,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.936,
+        "positive": 0.9548,
+        "negative": 0.0188,
+        "neutral": 0.0263,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the future, maintaining a 3% guidance on net interest margin (NIM) despite acknowledging potential short-term declines. They anticipate credit expansion to outpace nominal GDP and industry growth, driven by retail loans, government CapEx, and green energy projects. The bank is sticking to its structural targets of ROE above 15% and ROA of 1% through the cycle. The SARAL project is expected to enhance productivity and operational efficiency. Management also noted a robust pipeline of ₹7.2 lakh crore in sanctions and proposals, indicating confidence in achieving double-digit corporate credit growth in the coming quarters."
+    },
+    "risk_language": {
+      "score": -0.7781,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.7781,
+        "positive": 0.0962,
+        "negative": 0.8743,
+        "neutral": 0.0295,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including supply chain disruptions and tariff policy uncertainties, which could impact certain sectors. However, management downplayed systemic risks, noting that exposures to affected sectors are minor. Concerns were raised about slippages and the decline in other income, but management assured that asset quality remains strong, with no significant concerns in any segment. The bank has not utilized its buffer provision of ₹30,000-31,000 crores, indicating a cautious approach to risk management. The competitive pressures from the CP market were acknowledged, with some corporate clients opting for cheaper financing options."
+    },
+    "investor_confidence": {
+      "score": 0.9233,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9233,
+        "positive": 0.9362,
+        "negative": 0.0129,
+        "neutral": 0.0509,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and transparency throughout the call, addressing analyst questions directly and providing detailed explanations for financial metrics and strategic initiatives. The successful QIP, which attracted significant foreign investment, was highlighted as a testament to investor confidence in the institution. Management's commitment to maintaining healthy spreads and asset quality, along with their strategic initiatives like the SARAL project, reinforced their credibility. The call concluded with a reiteration of the bank's promise to deliver superior returns and best-in-class service, emphasizing their focus on stakeholder value creation."
+    }
+  },
+  "key_positive_drivers": [
+    "Net profit increase of 12.48% YoY",
+    "ROE of 19.7% and ROA of 1.14%",
+    "Significant decrease in operating expenses",
+    "Improvement in net NPA and slippage ratios",
+    "Successful QIP with strong foreign investor participation"
+  ],
+  "key_negative_drivers": [
+    "Decline in other income",
+    "Lower than expected contribution from treasury",
+    "Potential short-term decline in NIM",
+    "Supply chain disruptions and tariff uncertainties",
+    "Competitive pressures from CP market"
+  ],
+  "notable_phrases": [
+    "Net profit for Q1FY26 stands at ₹19,160 crores",
+    "ROE of 19.7% and ROA of 1.14%",
+    "Operating expenses decreased by 21.92%",
+    "Sticking to our 3% guidance on NIM",
+    "Robust pipeline of ₹7.2 lakh crore",
+    "No concern on the asset quality",
+    "Successful QIP with foreign investors",
+    "Maintaining healthy spreads without sacrificing asset quality"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant profit growth and improved efficiency metrics. Forward guidance was cautiously optimistic, with expectations of credit growth and strategic initiatives to enhance productivity. Risks were acknowledged, particularly around income volatility and external uncertainties, but were downplayed in terms of systemic impact. Investor confidence was reinforced by successful capital raising and management's transparent communication, leading to a cautiously bullish overall tone."
+}

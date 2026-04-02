@@ -1,0 +1,76 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 54.5,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 20.0,
+    "key_themes": [
+      "cloud migration",
+      "data center managed services"
+    ],
+    "notable_excerpts": [
+      "The Central Bank of Ireland has now signed a 7-year contract with us with option to expand for up to further three years for data center managed Services."
+    ]
+  },
+  "social": {
+    "score": 65.0,
+    "key_themes": [
+      "employee growth",
+      "diversity",
+      "community recognition"
+    ],
+    "notable_excerpts": [
+      "Our employee strength has grown from below 3,000 to 220,755 as of end of December 2024.",
+      "We were also recognized by Forbes as One of the World's Best Employers for the 5th Consecutive Year."
+    ]
+  },
+  "governance": {
+    "score": 75.0,
+    "key_themes": [
+      "financial performance",
+      "shareholder returns",
+      "risk management"
+    ],
+    "notable_excerpts": [
+      "Our balance sheet continues to strengthen with gross cash at 3.5 billion and net cash at 3.24 billion.",
+      "We have delivered a total shareholder return at 20.6% on a CAGR basis from IPO till January 10th, 2024."
+    ]
+  },
+  "chain_of_thought": "The earnings call focused heavily on financial performance and growth, with significant mentions of employee growth and recognition. Environmental aspects were minimally discussed, with only indirect references to data center services. Governance was strong with detailed financial metrics and shareholder returns.",
+  "strengths": [
+    "Strong governance with detailed financial disclosures",
+    "Significant employee growth and recognition"
+  ],
+  "weaknesses": [
+    "Minimal discussion on environmental initiatives"
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

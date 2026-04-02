@@ -1,0 +1,113 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Sneha Gavankar",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sneha Gavankar served as the moderator for the earnings call, introducing the session and facilitating the Q&A segment. She maintained a neutral tone throughout, ensuring the smooth transition between speakers and managing the flow of questions from analysts. Her role was primarily logistical, focusing on the structure and order of the call rather than providing content or analysis.",
+      "sentiment_score": 0.0202,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0202,
+        "positive": 0.0371,
+        "negative": 0.017,
+        "neutral": 0.9459,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "GV Ramanan",
+      "role": "CFO, Tata Motors Limited",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "CapEx",
+        "Cash flow",
+        "Exceptional items"
+      ],
+      "direct_answers": [
+        "CapEx plans",
+        "Cash flow sustainability"
+      ],
+      "dodged_or_vague": [],
+      "summary": "GV Ramanan, the CFO of Tata Motors, provided a detailed financial overview of the company's performance in Q3 FY26. He confidently highlighted the company's strong revenue growth, improved margins, and robust cash flow, emphasizing the strategic management of exceptional items and disciplined capital expenditure. Ramanan addressed questions on CapEx and cash flow sustainability directly, reinforcing the company's commitment to financial prudence and growth. His tone was confident, reflecting a positive outlook for the company's financial health and future prospects.",
+      "sentiment_score": 0.7924,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7924,
+        "positive": 0.818,
+        "negative": 0.0256,
+        "neutral": 0.1565,
+        "chunks_scored": 4
+      }
+    },
+    {
+      "name": "Girish Wagh",
+      "role": "MD & CEO, Tata Motors Limited",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Product launches",
+        "Market share",
+        "Fleet utilization",
+        "Supply chain"
+      ],
+      "direct_answers": [
+        "Market share recovery",
+        "Truck operator profitability",
+        "Supply chain capacity"
+      ],
+      "dodged_or_vague": [
+        "Cross-selling opportunities"
+      ],
+      "summary": "Girish Wagh, the MD & CEO of Tata Motors, delivered an optimistic overview of the company's recent product launches and market performance. He highlighted the introduction of a range of electric and new trucks, emphasizing their advanced features and compliance with safety standards. Wagh discussed the recovery in market share and improvements in fleet utilization, attributing these to increased demand and strategic product offerings. While he directly addressed questions on market share and profitability, he was less forthcoming about cross-selling opportunities. His tone was optimistic, reflecting confidence in the company's strategic direction and growth potential.",
+      "sentiment_score": 0.7484,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7484,
+        "positive": 0.7629,
+        "negative": 0.0145,
+        "neutral": 0.2225,
+        "chunks_scored": 4
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "1. Identified speakers: Sneha Gavankar (Moderator), GV Ramanan (CFO), Girish Wagh (MD & CEO). 2. Extracted key statements for each speaker, focusing on financial details, product launches, and strategic insights. 3. Assessed tone based on language and context: Sneha was neutral, Ramanan was confident, and Wagh was optimistic. 4. Noted direct answers and vague responses for management speakers. 5. Crafted narrative summaries to encapsulate each speaker's contributions and stance.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

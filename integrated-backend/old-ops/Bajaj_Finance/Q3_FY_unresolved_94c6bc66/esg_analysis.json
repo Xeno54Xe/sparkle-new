@@ -1,0 +1,76 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 45.0,
+  "esg_label": "Neutral",
+  "esg_colour": "#F9A825",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 60.0,
+    "key_themes": [
+      "employee headcount",
+      "community",
+      "technology use"
+    ],
+    "notable_excerpts": [
+      "Employee headcount stood at 62,176. We added a much smaller number of people in the third quarter.",
+      "Consolidated annualized attrition came in at 16.2%.",
+      "Our use of technology has given us cross-sell opportunity, plus operational costs being contained."
+    ]
+  },
+  "governance": {
+    "score": 70.0,
+    "key_themes": [
+      "management transition",
+      "risk management",
+      "strategic partnerships"
+    ],
+    "notable_excerpts": [
+      "We have laid down a comprehensive 15-month transition plan.",
+      "We continue to take proactive risk actions by cutting segments and pruning exposures.",
+      "We have done a press release, a joint press release of a strategic partnership with Bharti Airtel."
+    ]
+  },
+  "chain_of_thought": "The transcript lacks any environmental disclosures, which results in a score of 0 for the environmental pillar. The social pillar has some mentions of employee headcount and technology use, but lacks depth in community or diversity aspects, resulting in a moderate score. Governance is relatively stronger with discussions on management transition, risk management, and strategic partnerships, leading to a higher score. The overall ESG score is calculated based on the weighted contributions of each pillar.",
+  "strengths": [
+    "Strong governance practices with clear management transition plans.",
+    "Proactive risk management strategies."
+  ],
+  "weaknesses": [
+    "Lack of environmental initiatives or disclosures.",
+    "Limited depth in social aspects beyond employee numbers."
+  ],
+  "red_flags": [
+    "No mention of environmental sustainability efforts."
+  ],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

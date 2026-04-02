@@ -1,0 +1,159 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Gopal Vittal",
+      "role": "Vice Chairman & Managing Director - Bharti Airtel Limited",
+      "tone": "confident",
+      "key_topics": [
+        "AGR issue",
+        "ESG progress",
+        "financial performance",
+        "5G expansion",
+        "broadband growth",
+        "digital business scaling",
+        "Africa performance",
+        "future investments"
+      ],
+      "direct_answers": [
+        "Ankur, on 5G standalone, there is really no meaningful capex, because it is all software-led, right?"
+      ],
+      "dodged_or_vague": [
+        "We have not yet guided on this particular issue, but I would again come back to saying that whatever is required to be invested, we will make the investment."
+      ],
+      "summary": "Gopal Vittal opened the call with a confident tone, addressing the AGR issue and expressing optimism about the Supreme Court's recent order. He highlighted Bharti Airtel's progress in ESG initiatives and detailed the company's financial performance, noting consistent revenue growth and strategic investments in 5G and broadband. Vittal emphasized the company's focus on premiumization and digital business scaling, while also discussing the strong performance in Africa. He provided direct answers on 5G capex but was vague about specific future investment guidance.",
+      "sentiment_score": 0.9128,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9128,
+        "positive": 0.9226,
+        "negative": 0.0098,
+        "neutral": 0.0675,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Soumen Ray",
+      "role": "Chief Financial Officer - India & South Asia – Bharti Airtel Limited & Director, Bharti Hexacom Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "capex trends",
+        "SG&A costs",
+        "seasonality impacts"
+      ],
+      "direct_answers": [
+        "SG&A, there is a bit of a one-off which has come and hit. You can take an average of the last trailing two quarters and you will get a fair number."
+      ],
+      "dodged_or_vague": [
+        "I am not taking a time limit of FY2026 for capex moderation."
+      ],
+      "summary": "Soumen Ray provided a neutral and factual overview of Bharti Airtel's financial performance, emphasizing strong cash generation and a robust balance sheet. He explained the impact of seasonality on operations and addressed questions about SG&A costs, attributing changes to a one-off event. While he provided clear answers on some financial metrics, he was less specific about the timeline for capex moderation, indicating a cautious approach to future guidance.",
+      "sentiment_score": -0.9147,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9147,
+        "positive": 0.0168,
+        "negative": 0.9314,
+        "neutral": 0.0518,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vaidehi Sharma",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vaidehi Sharma served as the neutral moderator for the earnings call, facilitating the session and ensuring smooth transitions between speakers. She managed the Q&A session, reminding participants of the format and time constraints. Her role was primarily administrative, maintaining the flow of the call without contributing to the content discussions.",
+      "sentiment_score": 0.0579,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0579,
+        "positive": 0.0743,
+        "negative": 0.0164,
+        "neutral": 0.9093,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anshuman Atri",
+      "role": "Analyst - Premji Invest",
+      "tone": "neutral",
+      "key_topics": [
+        "premiumization strategy",
+        "long-term growth"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anshuman Atri from Premji Invest posed questions regarding Bharti Airtel's long-term strategy, particularly focusing on the premiumization approach. He expressed interest in understanding how the company plans to compete with peers who might capture non-premium subscribers that could become valuable in the future. His tone was neutral, seeking insights into the company's strategic foresight.",
+      "sentiment_score": 0.2275,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2275,
+        "positive": 0.2365,
+        "negative": 0.0091,
+        "neutral": 0.7544,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ankur Rudra",
+      "role": "Analyst - JP Morgan",
+      "tone": "neutral",
+      "key_topics": [
+        "capex on 5G",
+        "data center investments"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ankur Rudra from JP Morgan asked about Bharti Airtel's capex plans, particularly concerning 5G and data center investments. He sought clarity on the timeline for reaching 100 million homes, reflecting a neutral tone focused on understanding the company's growth trajectory and competitive positioning. His questions were aimed at gauging the sustainability of current expansion efforts.",
+      "sentiment_score": 0.0486,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0486,
+        "positive": 0.0653,
+        "negative": 0.0167,
+        "neutral": 0.918,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted to capture the essence of their contributions, focusing on specific language and forward-looking statements. The tone of each speaker is assessed based on their language and context. For management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, highlighting their main points and overall stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

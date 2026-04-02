@@ -1,0 +1,133 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Question and answer session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, ensuring smooth transitions between speakers and managing the question-and-answer session. They maintained a neutral tone throughout, focusing on logistics and ensuring that the call proceeded according to schedule. The moderator's role was crucial in maintaining the structure of the call and ensuring that all participants had the opportunity to engage effectively.",
+      "sentiment_score": 0.0122,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0122,
+        "positive": 0.0334,
+        "negative": 0.0212,
+        "neutral": 0.9454,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "C. K. Venkataraman",
+      "role": "Managing Director, Titan Company Limited",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Performance satisfaction",
+        "Innovation",
+        "Execution excellence"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "C. K. Venkataraman expressed optimism about Titan's performance, highlighting satisfaction across various segments and geographies. He attributed success to the company's innovation and execution excellence, despite challenges such as fluctuating gold rates and pressures on discretionary consumption. His tone was consistently positive, emphasizing the dedication of Titan's workforce and partners. Venkataraman concluded the call by thanking participants for their questions and expressing eagerness for future engagements.",
+      "sentiment_score": 0.6607,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6607,
+        "positive": 0.6717,
+        "negative": 0.011,
+        "neutral": 0.3172,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ajoy Chawla",
+      "role": "CEO, Jewellery Division",
+      "tone": "Cautious",
+      "key_topics": [
+        "Jewellery margins",
+        "Consumer behavior",
+        "Growth outlook"
+      ],
+      "direct_answers": [
+        "Consumer behavior regarding gold prices",
+        "Jewellery sales growth expectations"
+      ],
+      "dodged_or_vague": [
+        "Specific future growth percentages"
+      ],
+      "summary": "Ajoy Chawla provided insights into the jewellery division, focusing on consumer behavior and market trends. He noted that rising gold prices have impacted consumer sentiment, particularly in lower price bands, and discussed the company's response with new product offerings in lower caratage gold. Chawla was cautious in his outlook, acknowledging uncertainties but expressing hope for continued growth. He addressed questions on consumer behavior and growth expectations directly but was vague about specific future growth percentages, reflecting a cautious approach to forecasting.",
+      "sentiment_score": 0.4185,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4185,
+        "positive": 0.5169,
+        "negative": 0.0984,
+        "neutral": 0.3848,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Ashok Sonthalia",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Jewellery margins",
+        "Operating leverage",
+        "Hedging gains"
+      ],
+      "direct_answers": [
+        "Jewellery margin sustainability",
+        "Operating leverage impact"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashok Sonthalia confidently addressed questions about the jewellery division's margins, explaining the impact of operating leverage and hedging gains on the reported figures. He maintained a cautious stance on future margin guidance, citing uncertainties in gold prices. Sonthalia provided clear and direct answers regarding the sustainability of current margins and the role of operating leverage, demonstrating a strong grasp of the financial dynamics at play.",
+      "sentiment_score": 0.3387,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3387,
+        "positive": 0.3846,
+        "negative": 0.0459,
+        "neutral": 0.5694,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting key statements from the transcript. The tone was assessed based on the language and context of their statements. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or vague responses. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

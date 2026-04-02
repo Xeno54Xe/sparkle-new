@@ -1,0 +1,175 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator, Pelsia, facilitated the ONGC Q2 FY26 earnings call, ensuring smooth transitions between speakers and managing the Q&A session. Her tone remained neutral throughout, focusing on logistics and procedural aspects of the call. She provided clear instructions to participants on how to engage during the session and ensured the call adhered to its schedule.",
+      "sentiment_score": 0.0186,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0186,
+        "positive": 0.0376,
+        "negative": 0.019,
+        "neutral": 0.9434,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vivek Tongaonkar",
+      "role": "Director (Finance), ONGC",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Production targets",
+        "Cost optimization",
+        "Future outlook"
+      ],
+      "direct_answers": [
+        "Probal Sen's question on production targets",
+        "Sabri Hazarika's question on cost optimization",
+        "Vikash Jain's question on ForEx loss"
+      ],
+      "dodged_or_vague": [
+        "Ramesh S's question on peak production timeline"
+      ],
+      "summary": "Vivek Tongaonkar, Director (Finance) at ONGC, led the earnings call with a confident tone, highlighting the company's financial performance and strategic initiatives. He detailed the growth in crude oil production and the stabilization of gas production, emphasizing the importance of new well gas. Tongaonkar addressed questions on production targets and cost optimization directly, showcasing ONGC's efforts in operational efficiency and future resilience. However, he provided a less definitive timeline for peak production in response to an investor's query, indicating some uncertainty in long-term projections.",
+      "sentiment_score": 0.3861,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3861,
+        "positive": 0.6804,
+        "negative": 0.2943,
+        "neutral": 0.0253,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Probal Sen",
+      "role": "Analyst, ICICI Securities",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Production targets",
+        "EBITDA improvement",
+        "New well gas"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Probal Sen from ICICI Securities participated actively in the Q&A session, focusing on production targets and financial metrics. His questions were aimed at understanding potential risks to ONGC's annual guidance and the factors driving EBITDA improvements. Sen's inquiries were detailed and sought specific data points, reflecting a thorough analysis of ONGC's operational and financial performance. His tone was inquisitive, seeking clarity on the company's strategic direction and future outlook.",
+      "sentiment_score": 0.1683,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1683,
+        "positive": 0.2028,
+        "negative": 0.0345,
+        "neutral": 0.7627,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sabri Hazarika",
+      "role": "Analyst, Emkay Global",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Cost optimization",
+        "CapEx and OpEx"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sabri Hazarika from Emkay Global focused on ONGC's cost optimization strategies during the earnings call. His questions aimed to clarify the extent and impact of the company's cost reduction plans, particularly in relation to CapEx and OpEx. Hazarika's inquiries were precise, seeking to understand the financial implications of ONGC's operational strategies. His tone was inquisitive, reflecting a keen interest in the company's efforts to enhance efficiency and reduce costs.",
+      "sentiment_score": 0.0577,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0577,
+        "positive": 0.0808,
+        "negative": 0.0231,
+        "neutral": 0.8961,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Varatharajan Sivasankaran",
+      "role": "Analyst, Antique Stock Broking",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Production guidance",
+        "Mozambique project"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Varatharajan Sivasankaran from Antique Stock Broking sought clarity on ONGC's production guidance for FY27 and the status of the Mozambique project. His questions were aimed at understanding the company's future production growth drivers and the official stance on international project developments. Sivasankaran's tone was inquisitive, reflecting a desire to obtain detailed insights into ONGC's strategic plans and international operations.",
+      "sentiment_score": 0.1511,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1511,
+        "positive": 0.1631,
+        "negative": 0.012,
+        "neutral": 0.8248,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vikash Jain",
+      "role": "Analyst, CLSA",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "ForEx loss",
+        "Production increase"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vikash Jain from CLSA focused on financial specifics, particularly the ForEx loss included in ONGC's operating expenses and expected production increases. His questions were direct and sought precise numerical data, indicating a detailed analysis of ONGC's financial statements. Jain's tone was inquisitive, aiming to clarify the financial impacts and future production expectations.",
+      "sentiment_score": 0.0118,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0118,
+        "positive": 0.0452,
+        "negative": 0.0334,
+        "neutral": 0.9214,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies each speaker's role and extracts their key statements to understand their focus and tone during the earnings call. Management, particularly Vivek Tongaonkar, provided detailed insights into ONGC's financial performance and strategic initiatives, addressing most questions directly but occasionally offering less definitive responses on long-term projections. Analysts focused on specific financial metrics and strategic plans, seeking clarity on production targets, cost optimization, and international projects. The moderator maintained a neutral tone, facilitating the call's logistics and ensuring smooth transitions between speakers.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

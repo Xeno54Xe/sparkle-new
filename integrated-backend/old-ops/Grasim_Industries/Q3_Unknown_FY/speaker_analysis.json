@@ -1,0 +1,156 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Grasim Industries Q3 FY '25 earnings call, providing instructions for participants and managing the flow of the Q&A session. The tone was neutral and professional, ensuring the call proceeded smoothly.",
+      "sentiment_score": 0.0142,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0142,
+        "positive": 0.0366,
+        "negative": 0.0224,
+        "neutral": 0.941,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ankit Panchmatia",
+      "role": "Head, Investor Relations",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Financial documents availability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ankit Panchmatia opened the earnings call by welcoming participants and directing them to the financial documents available online. His tone was neutral, focusing on procedural aspects and ensuring participants had access to necessary information.",
+      "sentiment_score": 0.0179,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0179,
+        "positive": 0.0378,
+        "negative": 0.0198,
+        "neutral": 0.9424,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pavan Jain",
+      "role": "Chief Financial Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Macro commentary",
+        "Financial performance",
+        "Capex plans"
+      ],
+      "direct_answers": [
+        "Sumangal Nevatia"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Pavan Jain provided a comprehensive overview of Grasim Industries' financial performance and strategic direction. He highlighted macroeconomic factors, such as geopolitical tensions and policy uncertainties, that could impact the business environment. Jain discussed the company's diversified portfolio and growth in revenue, while also addressing challenges in the cement and paints segments. His tone was cautious, reflecting on both opportunities and potential risks. He directly answered questions regarding cost pressures and capital allocation in the CSF division.",
+      "sentiment_score": 0.3167,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3167,
+        "positive": 0.6186,
+        "negative": 0.302,
+        "neutral": 0.0794,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Jayant Dhobley",
+      "role": "Business Head of Chemicals, Cellulosic Fashion Yarn and Insulator Business",
+      "tone": "Confident",
+      "key_topics": [
+        "Chemical division",
+        "Market dynamics",
+        "Tariffs"
+      ],
+      "direct_answers": [
+        "Mihir Shah",
+        "Shreya Banthia",
+        "Nirav Jimudia"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jayant Dhobley addressed questions related to the chemical division, focusing on market dynamics and the impact of tariffs. He confidently explained the effects of BPA and ECH price increases on margins and highlighted the competitive advantage India might have due to lower tariffs compared to other jurisdictions. Dhobley provided detailed responses to analyst questions, demonstrating a strong understanding of the market and the company's strategic positioning.",
+      "sentiment_score": -0.2046,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.2046,
+        "positive": 0.3212,
+        "negative": 0.5258,
+        "neutral": 0.153,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rakshit Hargave",
+      "role": "CEO of Birla Opus, Paint Division",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Paints business",
+        "Market growth",
+        "Dealer network"
+      ],
+      "direct_answers": [
+        "Amit Purohit",
+        "Tejash Shah"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rakshit Hargave discussed the paints business, expressing optimism about market growth and the expansion of the dealer network. He outlined the company's strategic plan to achieve breakeven within three years of full-scale operations and provided updates on plant commercialization. Hargave's responses were detailed and forward-looking, reflecting confidence in the division's growth trajectory and strategic initiatives.",
+      "sentiment_score": 0.0842,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0842,
+        "positive": 0.1159,
+        "negative": 0.0317,
+        "neutral": 0.8524,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone was assessed based on the language and context of their statements. For management speakers, their responses to analyst questions were evaluated to determine if they were direct or vague. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

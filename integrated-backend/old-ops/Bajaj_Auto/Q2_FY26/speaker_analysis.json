@@ -1,0 +1,111 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Rakesh Sharma",
+      "role": "Executive Director",
+      "tone": "confident",
+      "key_topics": [
+        "Q2 performance",
+        "all-time highs",
+        "market share",
+        "electric vehicles",
+        "new product launches"
+      ],
+      "direct_answers": [
+        "I will take the industry and the segment and all that, and then Dinesh can talk about the PLI and"
+      ],
+      "dodged_or_vague": [
+        "That part, I am holding close to my chest. But it will be sooner than later."
+      ],
+      "summary": "Rakesh Sharma opened the call with a confident overview of Bajaj Auto's record-breaking Q2 performance, highlighting all-time highs in topline, EBITDA, and PAT. He emphasized the positive impact of GST rate cuts and festive sentiment on the company's retail performance. Sharma detailed the company's strategic focus on market share gains in the 125cc plus motorcycle segment, driven by the success of the Pulsar brand. He also discussed the company's plans for new product launches and the continued growth of the electric vehicle segment. Sharma's tone was optimistic and forward-looking, though he was evasive about specific timelines for non-Pulsar brand launches.",
+      "sentiment_score": 0.8223,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8223,
+        "positive": 0.8911,
+        "negative": 0.0688,
+        "neutral": 0.0401,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Dinesh Thapar",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "record-breaking quarter",
+        "cost pressures",
+        "electric vehicle margins"
+      ],
+      "direct_answers": [
+        "It is coming out of a mix of a growing proportion of the electric three-wheelers plus better unit economics on the Chetak models."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Dinesh Thapar provided a confident overview of Bajaj Auto's financial performance, highlighting a record-breaking quarter with highest-ever revenue and profit metrics. He attributed the strong results to a mix of factors, including the growing proportion of electric three-wheelers and improved unit economics on Chetak models. Thapar acknowledged cost pressures from commodities but expressed optimism that currency tailwinds would offset these impacts. His tone was confident, reflecting the company's robust financial health and strategic positioning in the market.",
+      "sentiment_score": 0.8964,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8964,
+        "positive": 0.9091,
+        "negative": 0.0127,
+        "neutral": 0.0782,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anand Newar",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Anand Newar served as the moderator for the earnings call, introducing the speakers and outlining the structure of the call. His role was primarily to facilitate the flow of the meeting, ensuring that the management's presentations were followed by a Q&A session. Newar maintained a neutral tone throughout, focusing on logistical aspects of the call rather than content.",
+      "sentiment_score": 0.0651,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0651,
+        "positive": 0.0776,
+        "negative": 0.0125,
+        "neutral": 0.9098,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The task involves identifying speakers from the earnings call transcript and analyzing their contributions. Rakesh Sharma and Dinesh Thapar are the key management speakers, while Anand Newar serves as the moderator. Rakesh Sharma's statements focus on operational performance and strategic initiatives, with a confident tone and some evasiveness regarding specific product launch timelines. Dinesh Thapar provides financial highlights with a confident tone, addressing cost pressures and electric vehicle margins. Anand Newar's role is neutral, facilitating the call's structure. Each speaker's key statements are extracted verbatim for financial NLP analysis, and their tone and response to questions are assessed to provide a comprehensive narrative summary.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

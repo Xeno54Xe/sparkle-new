@@ -1,0 +1,105 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Varun Berry",
+      "role": "Vice Chairman and Managing Director",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "inflation challenges",
+        "market share",
+        "strategic pillars",
+        "cost leadership"
+      ],
+      "direct_answers": [
+        "Yes, yes, so he was talking about EBITDA, I was talking about PAT.",
+        "So we will stay in the current range, I would say. That would be the range that we would look at, although we don't give any forward-looking forecast, but I would say current range is what we would target.",
+        "Sorry, what -- I guess, our growths are coming through the strength of the brands as well as our distribution efforts. And we hope to continue with that.",
+        "We've always been very conscious of our overhead costs, but no, there's no reorganization.",
+        "So we focus on making sure that our top line growths, which I must confess that we've not been able to do in the last 2 years, but we -- our principle is that our -- if our top line growth is X, our fixed cost growth or our people cost growth should be 0.75X. And that's what we will keep with, so that we are leveraging our top line growths.",
+        "No, there is no flexibility. It's just the planning. You've got to plan for -- yes.",
+        "No, cost savings are going very well for us. In fact, we probably will beat our targets that we've set for ourselves for the full year.",
+        "It's about 5.5%. So not a big difference. There's a delta, because as I said, the adjacency business is much smaller for us but growing faster. So the delta between the total volume growth and the biscuit volume growth is 0.8%, 0.9%.",
+        "Yes, for sure. The exit numbers are certainly better. And even if you were to look at some of the public declarations on growths, etcetera, by some of the companies, it seems that we are ahead. Obviously, Nielsen gives us certain numbers, but they are based on taking a sample. When you look at the numbers declared by some of the public companies, it seems that we are certainly doing better than the others.",
+        "No, so we were measured because we were not clear where the inflationary trends are going from a deflation to inflation. And we were also hopeful -- actually not just us but the entire industry was hopeful that maybe the duties on fat, etcetera, will go away. But as our Honorable Finance Minister has said, this is basically going to stay because they want to indigenize fats in India.",
+        "Well, not so much. We've been -- yes, we did some forward buying, which helped us, as I said, to about 2% or 3%. But now with the season coming on Wheat, March, the season starts. So hopefully, we will see some better prices as far as flour is concerned, and some normalization. So I think it should be okay.",
+        "Which -- I didn't mention any margin range. Which margin are you talking about?",
+        "Yes, yes, so he was talking about EBITDA, I was talking about PAT."
+      ],
+      "dodged_or_vague": [
+        "We don't give any forward estimates.",
+        "It's just the planning. You've got to plan for -- yes.",
+        "No, there is no flexibility.",
+        "No, cost savings are going very well for us.",
+        "It's about 5.5%. So not a big difference.",
+        "Yes, for sure. The exit numbers are certainly better.",
+        "No, so we were measured because we were not clear where the inflationary trends are going.",
+        "Well, not so much. We've been -- yes, we did some forward buying.",
+        "Which -- I didn't mention any margin range."
+      ],
+      "summary": "Varun Berry, the Vice Chairman and Managing Director of Britannia Industries, presented a confident outlook during the earnings call, emphasizing the company's resilience in a challenging inflationary environment. He highlighted a 6.5% revenue growth and a 4.8% profit after tax, despite facing significant inflation in key commodities like palm oil and cocoa. Berry discussed strategic initiatives such as expanding direct distribution, enhancing urban retail strategies, and focusing on brand innovation and cost leadership. He addressed analyst questions directly, particularly on financial metrics and strategic plans, while maintaining a cautious stance on providing forward-looking estimates. Overall, Berry conveyed a strong commitment to sustaining market share and profitability through strategic investments and operational efficiencies.",
+      "sentiment_score": 0.3458,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3458,
+        "positive": 0.392,
+        "negative": 0.0462,
+        "neutral": 0.5618,
+        "chunks_scored": 8
+      }
+    },
+    {
+      "name": "Ayush Agarwal",
+      "role": "Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ayush Agarwal, representing the Investor Relations team, opened the Britannia Industries earnings call with a neutral tone, providing logistical details and introducing the key management team present for the discussion. He ensured that participants were aware of the availability of the analyst deck on the company's website and highlighted the Safe Harbor Statement, setting the stage for the detailed financial and strategic discussions led by Varun Berry. Agarwal's role was primarily to facilitate the smooth commencement of the call and ensure all necessary information was communicated to the participants.",
+      "sentiment_score": 0.0376,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0376,
+        "positive": 0.0524,
+        "negative": 0.0148,
+        "neutral": 0.9327,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 2,
+  "chain_of_thought": "The task involves identifying unique speakers from the earnings call transcript and analyzing their contributions. Varun Berry, as the primary speaker, provided detailed insights into the company's performance, strategic initiatives, and responses to analyst questions. His statements were extracted verbatim to capture specific language and numbers for financial analysis. Ayush Agarwal's role was introductory, focusing on logistics and setting the stage for the call. Each speaker's tone was assessed based on their statements, and a narrative summary was crafted to encapsulate their contributions and stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.887,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9463,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9463,
+        "positive": 0.9606,
+        "negative": 0.0143,
+        "neutral": 0.0251,
+        "chunks_scored": 1
+      },
+      "text": "Management reported a strong financial performance for Q1 FY26, with consolidated Profit After Tax up 24% and ROE reaching 20.6%, surpassing their target of 18%. Revenue grew by 31%, and PBIT increased by 15%, driven by significant market share expansion in SUVs and tractors. The Auto segment maintained a healthy 10% PBIT margin, while the Farm segment achieved a 19.8% PBIT margin. Despite a challenging market, the company highlighted 'remarkable growth' and 'very strong margins,' with Tech Mahindra's EBIT margin recovery on track at 11.1%. Mahindra Finance's asset quality remained strong at 3.8%, and Assets Under Management increased by 15%."
+    },
+    "forward_guidance": {
+      "score": 0.9286,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9286,
+        "positive": 0.9425,
+        "negative": 0.0139,
+        "neutral": 0.0436,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in their forward guidance, maintaining a 'mid to high teens' growth percentage for SUV sales, supported by new Electric SUV launches and minor variant refreshes. They are 'comfortable' with the current economic conditions and plan to stick to their guidance unless there is a significant economic downturn. The company is ramping up capacity utilization, with ICE at 80% and Electric Vehicles at 70%, and plans to increase production closer to the festival season. They have an 'aggressive launch calendar' for 2026, indicating a bullish outlook on future growth."
+    },
+    "risk_language": {
+      "score": 0.691,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.691,
+        "positive": 0.7763,
+        "negative": 0.0852,
+        "neutral": 0.1385,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including the challenging demand environment and potential cannibalization from lower variant EV models. They noted that 'EV is a true headwind' for the industry and mentioned inflationary pressures from steel and precious metals. Despite these challenges, they have taken steps to 'derisk' operations, such as substituting Rare Earth with Light Earth and ferrites. The company is also monitoring the impact of commodity costs on margins and has initiated projects to strengthen asset quality and customer experience."
+    },
+    "investor_confidence": {
+      "score": 0.9314,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9314,
+        "positive": 0.9469,
+        "negative": 0.0155,
+        "neutral": 0.0377,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial metrics and strategic initiatives. They emphasized their ability to 'manage risks' and deliver on commitments, reinforcing their credibility. The call highlighted strong customer feedback and deal-win momentum in Tech Mahindra, contributing to overall investor confidence. Management's forthrightness in discussing challenges and their strategic responses further bolstered their credibility with investors."
+    }
+  },
+  "key_positive_drivers": [
+    "24% increase in consolidated Profit After Tax",
+    "ROE reaching 20.6%",
+    "31% revenue growth",
+    "10% Auto PBIT margin",
+    "19.8% Farm PBIT margin",
+    "15% increase in Assets Under Management"
+  ],
+  "key_negative_drivers": [
+    "Challenging demand environment",
+    "Potential cannibalization from lower variant EV models",
+    "Inflationary pressures from steel and precious metals",
+    "EV industry headwinds",
+    "Impact of commodity costs on margins"
+  ],
+  "notable_phrases": [
+    "remarkable growth in a tough market",
+    "very strong margins",
+    "comfortable with the state of the current economy",
+    "EV is a true headwind",
+    "manage risks and deliver what we've committed",
+    "aggressive launch calendar",
+    "derisk ourselves",
+    "strong customer feedback"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with significant growth in profit and margins, supported by market share expansion. Forward guidance was optimistic, with plans for new product launches and capacity increases. Management acknowledged risks such as demand challenges and inflation but demonstrated confidence in their risk management strategies. Overall, the tone was cautiously bullish, with management projecting confidence and transparency."
+}

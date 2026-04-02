@@ -1,0 +1,169 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could engage during the session. They maintained a neutral tone throughout, ensuring the call proceeded smoothly and participants were aware of the process for asking questions.",
+      "sentiment_score": 0.0211,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0211,
+        "positive": 0.0407,
+        "negative": 0.0196,
+        "neutral": 0.9397,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ankit Panchmatia",
+      "role": "Head of Investor Relations",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Management team introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ankit Panchmatia opened the call by welcoming participants and introducing the management team. He ensured that attendees were aware of the resources available to them, such as the results presentation and press release. His tone was neutral, focusing on setting the stage for the management's presentations.",
+      "sentiment_score": 0.0961,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0961,
+        "positive": 0.1074,
+        "negative": 0.0114,
+        "neutral": 0.8812,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Himanshu Kapania",
+      "role": "Managing Director",
+      "tone": "Confident",
+      "key_topics": [
+        "Company growth",
+        "Paints business",
+        "Economic outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Himanshu Kapania delivered a confident and optimistic overview of Grasim Industries' growth trajectory and strategic initiatives. He highlighted the company's transformation from a textile company to a diversified conglomerate, emphasizing the significant growth under the leadership of Mr. Kumar Mangalam Birla. Kapania also discussed the strategic importance of the paints business and its alignment with India's economic growth, portraying a positive outlook for the company's future.",
+      "sentiment_score": 0.8226,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8226,
+        "positive": 0.8304,
+        "negative": 0.0077,
+        "neutral": 0.1619,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pavan Jain",
+      "role": "Chief Financial Officer",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Core businesses"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pavan Jain provided a cautious overview of Grasim's financial performance, focusing on the core businesses of cement, cellulosic fibres, and chemicals. He acknowledged the strong revenue growth in these areas but also highlighted challenges such as reduced profitability due to increased raw material costs. Jain's tone was measured, reflecting both the achievements and the financial pressures faced by the company.",
+      "sentiment_score": 0.5485,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5485,
+        "positive": 0.7588,
+        "negative": 0.2102,
+        "neutral": 0.031,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayant Dhobley",
+      "role": "Business Head Chemicals, Fashion Yarn, and Insulator business",
+      "tone": "Neutral",
+      "key_topics": [
+        "Chemical business",
+        "Market share"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jayant Dhobley maintained a neutral tone while discussing the chemical business. He emphasized the company's strong market share and the exclusivity of its dealer network. Dhobley focused on the stability and growth of the chemical division, providing assurance of its continued performance.",
+      "sentiment_score": 0.8271,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8271,
+        "positive": 0.8343,
+        "negative": 0.0072,
+        "neutral": 0.1585,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rakshit Hargave",
+      "role": "CEO, Birla Opus",
+      "tone": "Confident",
+      "key_topics": [
+        "Paints business",
+        "Market expansion"
+      ],
+      "direct_answers": [
+        "Amit Purohit"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rakshit Hargave expressed confidence in the growth and expansion of the Birla Opus paints business. He outlined the company's achievements in reaching a wide network of towns and dealers, and discussed plans for further expansion and consolidation. Hargave's responses to analyst questions were direct and focused on strategic goals, reflecting a positive outlook for the paints division.",
+      "sentiment_score": 0.2988,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2988,
+        "positive": 0.3085,
+        "negative": 0.0097,
+        "neutral": 0.6818,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies key speakers from the earnings call, focusing on their roles and contributions. Each speaker's statements are extracted to capture their tone and key messages. Management speakers are assessed for their responsiveness to analyst questions, noting any direct answers or evasive responses. The narrative summaries provide a comprehensive view of each speaker's stance and the overall tone of the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

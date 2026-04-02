@@ -1,0 +1,115 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference logistics",
+        "call management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the earnings call, ensuring that participants were aware of the call's logistics and procedures. They maintained a neutral tone throughout, focusing on managing the flow of the call and providing instructions for participants. The Moderator's role was crucial in maintaining the structure and order of the conference.",
+      "sentiment_score": 0.0195,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0195,
+        "positive": 0.0391,
+        "negative": 0.0196,
+        "neutral": 0.9412,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Kiran S. Divi",
+      "role": "Whole-Time Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "operational progress",
+        "strategic initiatives",
+        "generic business",
+        "custom synthesis",
+        "peptide business",
+        "manufacturing",
+        "CSR"
+      ],
+      "direct_answers": [
+        "Shyam Srinivasan's question on new avenues of growth"
+      ],
+      "dodged_or_vague": [
+        "Abdulkader Puranwala's question on capital investment specifics"
+      ],
+      "summary": "Dr. Kiran S. Divi delivered a confident overview of Divi's Laboratories' performance and strategic initiatives. He highlighted the company's resilience in the face of global challenges and emphasized their leadership in the generic and custom synthesis markets. Dr. Divi also discussed strategic investments in peptide synthesis and manufacturing advancements. He addressed some questions directly, such as those about growth opportunities, but was vague on specifics regarding capital investments.",
+      "sentiment_score": 0.908,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.908,
+        "positive": 0.92,
+        "negative": 0.012,
+        "neutral": 0.0681,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Nilima Prasad Divi",
+      "role": "Whole-Time Director (Commercial)",
+      "tone": "cautious",
+      "key_topics": [
+        "financial performance",
+        "supply chain",
+        "logistics",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "Bino Pathiparampil's question on CAPEX"
+      ],
+      "dodged_or_vague": [
+        "Nikhil's question on dedicated blocks"
+      ],
+      "summary": "Nilima Prasad Divi provided a cautious yet detailed overview of Divi's Laboratories' supply chain and logistics operations. She highlighted the stability in raw material pricing and the challenges posed by global transit disruptions. Nilima emphasized the company's proactive measures to mitigate these challenges and maintain operational efficiency. While she answered some questions directly, such as those regarding CAPEX, she was less forthcoming about specifics on dedicated blocks for new projects.",
+      "sentiment_score": 0.9089,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9089,
+        "positive": 0.9291,
+        "negative": 0.0202,
+        "neutral": 0.0507,
+        "chunks_scored": 3
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone was assessed based on the language and context of their statements. Management speakers' responses to analyst questions were categorized as direct or vague based on the specificity and clarity of their answers. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

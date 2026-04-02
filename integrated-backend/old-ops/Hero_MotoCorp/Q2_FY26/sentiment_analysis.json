@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8963,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9442,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9442,
+        "positive": 0.9627,
+        "negative": 0.0185,
+        "neutral": 0.0187,
+        "chunks_scored": 1
+      },
+      "text": "Hero MotoCorp reported a strong financial performance for Q2 FY26, achieving its highest ever quarterly revenue of ₹12,126 crores, reflecting a year-on-year growth of 16%. The company also recorded its highest ever EBITDA of ₹1,823 crores, a growth of 20%, and highest ever PAT of ₹1,393 crores, a growth of 16%. The EBITDA margin for the ICE business improved to 17.7%, up 121 basis points year-on-year, driven by lower material costs, cost efficiencies, and mix improvement. The overall EBITDA margin improved by 54 basis points to 15% for the quarter, despite an investment of ₹252 crores in the EV business. The average selling price increased by 4.2% year-on-year and 2.4% quarter-on-quarter, driven by mix and pricing."
+    },
+    "forward_guidance": {
+      "score": 0.9358,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9358,
+        "positive": 0.9487,
+        "negative": 0.0129,
+        "neutral": 0.0383,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in continuing the growth momentum, expecting the 2-wheeler industry to grow 8% to 10% in the second half of FY26, with Hero poised to outperform the market and gain market share. The company plans to continue investing in Premium, Scooters, EV portfolio, and brand building. New product launches and market expansions are expected to drive future growth. The company is optimistic about maintaining strong post-festive demand and expects to sustain market share gains. Management highlighted the robust growth trajectory of the EV business and the expansion into new international markets."
+    },
+    "risk_language": {
+      "score": 0.7482,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7482,
+        "positive": 0.7906,
+        "negative": 0.0424,
+        "neutral": 0.167,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks and challenges, including the need to optimize costs and leverage benefits like the PLI scheme. Management acknowledged the investment drag on EBITDA from the EV business but emphasized a focus on cost optimization and market expansion to mitigate these challenges. There was a mention of competitive pressures in the market, particularly in the EV segment, but management appeared confident in their strategic positioning and product offerings. Regulatory changes, such as GST reforms, were discussed as both a challenge and an opportunity."
+    },
+    "investor_confidence": {
+      "score": 0.9131,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9131,
+        "positive": 0.9248,
+        "negative": 0.0116,
+        "neutral": 0.0636,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, providing detailed responses to analyst questions. They emphasized their strategic vision and execution excellence, particularly in expanding market share and launching new products. The appointment of a new CEO with extensive global experience was highlighted as a positive step for the company's future trajectory. Management's transparency in discussing both achievements and challenges contributed to a sense of credibility and confidence among investors."
+    }
+  },
+  "key_positive_drivers": [
+    "Highest ever quarterly revenue and EBITDA",
+    "Improved EBITDA margin for ICE business",
+    "Strong market share gains across segments",
+    "Robust growth in EV business",
+    "Expansion into new international markets",
+    "Positive impact of GST reforms"
+  ],
+  "key_negative_drivers": [
+    "Investment drag on EBITDA from EV business",
+    "Need for cost optimization",
+    "Competitive pressures in EV segment",
+    "Regulatory challenges"
+  ],
+  "notable_phrases": [
+    "highest ever quarterly revenue of ₹12,126 crores",
+    "EBITDA margin improved to 17.7%",
+    "expect the 2-wheeler industry to grow 8% to 10%",
+    "robust growth trajectory with highest ever EV business market share",
+    "investment behind EV business of ₹252 crores",
+    "focus on optimizing our cost",
+    "continue to gain market share",
+    "strong financial performance for Hero MotoCorp"
+  ],
+  "chain_of_thought": "The financial performance was strong with record revenues and EBITDA, driven by cost efficiencies and market share gains. Forward guidance was optimistic, with expectations of outperforming the market and continued investment in growth areas. Risks were acknowledged, particularly in cost management and competitive pressures, but management's strategic focus and transparency instilled confidence. Overall, the tone was cautiously bullish, reflecting confidence in growth prospects while recognizing challenges."
+}

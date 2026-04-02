@@ -1,0 +1,160 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Aditya Dar",
+      "role": "Executive Director (Finance)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "welcome",
+        "leadership",
+        "stakeholder expectations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aditya Dar opened the meeting by welcoming attendees and highlighting the leadership of NTPC's CMD and Board. He emphasized the company's progress in operational and financial performance and posed a question about further positioning NTPC as a leading energy provider. His tone was neutral, focusing on setting the stage for the discussions to follow.",
+      "sentiment_score": 0.6505,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6505,
+        "positive": 0.6591,
+        "negative": 0.0086,
+        "neutral": 0.3322,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gurdeep Singh",
+      "role": "Chairman and Managing Director (CMD)",
+      "tone": "confident",
+      "key_topics": [
+        "challenges",
+        "capacity addition",
+        "future plans",
+        "renewable energy"
+      ],
+      "direct_answers": [
+        "Mohit Kumar's question on capacity addition"
+      ],
+      "dodged_or_vague": [
+        "Mohit Kumar's question on state-based bid participation"
+      ],
+      "summary": "Gurdeep Singh, CMD of NTPC, expressed gratitude to attendees and acknowledged the challenging circumstances. He confidently discussed the year's unique challenges, noting flat generation but highlighting positive economic indicators like reduced agricultural demand and controlled inflation. Singh outlined NTPC's capacity additions and future plans, including a revised target of 149 gigawatts by FY32 and significant investments in renewable energy. He directly answered questions about capacity addition but was vague on state-based bid participation, maintaining a confident tone throughout.",
+      "sentiment_score": 0.1168,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1168,
+        "positive": 0.2535,
+        "negative": 0.1367,
+        "neutral": 0.6099,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jaikumar Srinivasan",
+      "role": "Director (Finance)",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "sectoral outlook",
+        "strategic plans"
+      ],
+      "direct_answers": [
+        "Ramesh Bhojwani's question on interest rates"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jaikumar Srinivasan, Director of Finance, delivered a confident presentation on NTPC's financial performance and strategic plans. He provided a sectoral outlook, highlighting India's strong economic momentum and projected energy demand surge. Srinivasan discussed NTPC's growth trajectory, operational efficiency, and financial robustness. He directly answered questions about interest rates, maintaining a confident and informative tone throughout his presentation.",
+      "sentiment_score": 0.8792,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8792,
+        "positive": 0.8878,
+        "negative": 0.0086,
+        "neutral": 0.1037,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Subhadip Mitra",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "renewable energy",
+        "battery storage",
+        "capacity addition"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Subhadip Mitra, an analyst, actively participated in the discussion with an inquisitive tone. He asked pertinent questions about NTPC's renewable energy strategies, specifically regarding battery storage and capacity addition. Mitra's questions were acknowledged and addressed by management, indicating his engagement and interest in NTPC's strategic direction.",
+      "sentiment_score": 0.0468,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0468,
+        "positive": 0.0612,
+        "negative": 0.0144,
+        "neutral": 0.9244,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mohit Kumar",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "capacity addition",
+        "state-based bids"
+      ],
+      "direct_answers": [
+        "capacity addition"
+      ],
+      "dodged_or_vague": [
+        "state-based bid participation"
+      ],
+      "summary": "Mohit Kumar, an analyst from ICICI Securities, asked insightful questions about NTPC's capacity addition plans and potential participation in state-based bids. His tone was inquisitive, seeking clarity on NTPC's strategic direction. While his question on capacity addition was directly answered, the response to his inquiry about state-based bids was more vague, indicating a potential area of strategic ambiguity.",
+      "sentiment_score": 0.2342,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2342,
+        "positive": 0.2464,
+        "negative": 0.0121,
+        "neutral": 0.7415,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis identifies key speakers, including management and analysts, and extracts their statements for detailed examination. Each speaker's tone is assessed based on their statements, with management responses to analyst questions categorized as direct or vague. The narrative summaries capture the essence of each speaker's contribution, providing a comprehensive overview of the call dynamics and strategic insights.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, providing instructions for participants and managing the flow of the session. They ensured the call was recorded and organized the Q&A session, maintaining a neutral and professional tone throughout.",
+      "sentiment_score": 0.0095,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0095,
+        "positive": 0.0327,
+        "negative": 0.0231,
+        "neutral": 0.9442,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. Satish Choudhury",
+      "role": "Company Secretary and Chief Investor Relations Officer",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Financial results",
+        "Conference logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "M. Satish Choudhury opened the call by introducing the key management present and outlining the agenda. He provided details on the financial results and ensured participants were aware of the recording and copyright policies. His tone was neutral, focusing on logistics and procedural aspects of the call.",
+      "sentiment_score": 0.0133,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0133,
+        "positive": 0.0302,
+        "negative": 0.0169,
+        "neutral": 0.9529,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dr. Kiran S. Divi",
+      "role": "Whole-Time Director and Chief Executive Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Company performance",
+        "Strategic initiatives",
+        "Market position"
+      ],
+      "direct_answers": [
+        "We have not heard anything from our innovators nor any concern, okay. While there is a shift that manufacturing in the U.S. is a desire by the government, we have not seen much stress or concern coming from our customers towards us."
+      ],
+      "dodged_or_vague": [
+        "I cannot comment on that. like I explained before in the call, due to confidentiality, I cannot mention the capacities because these are innovator-based products."
+      ],
+      "summary": "Dr. Kiran S. Divi expressed confidence in Divi's Laboratories' strategic direction and market position. He highlighted the company's resilience and strategic initiatives, such as backward integration and long-term partnerships. While he answered some questions directly, he avoided specifics on certain topics due to confidentiality agreements, maintaining a confident tone throughout.",
+      "sentiment_score": 0.8396,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8396,
+        "positive": 0.847,
+        "negative": 0.0073,
+        "neutral": 0.1457,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nilima Prasad Divi",
+      "role": "Whole-Time Director, Commercial",
+      "tone": "Cautious",
+      "key_topics": [
+        "Financial performance",
+        "Market dynamics",
+        "Strategic investments"
+      ],
+      "direct_answers": [
+        "These are our -- these three are our Custom Synthesis projects. And usually, we refrain from talking in detail about them because of the CDA we signed."
+      ],
+      "dodged_or_vague": [
+        "As explained before, we cannot comment on any product, which is a product specific or acknowledge. The products are based on confidentiality."
+      ],
+      "summary": "Nilima Prasad Divi provided a cautious overview of the financial performance, acknowledging the challenges posed by market dynamics and geopolitical uncertainties. She emphasized the company's strategic clarity and disciplined execution. While she answered some questions directly, she often refrained from providing detailed information due to confidentiality agreements, maintaining a cautious tone.",
+      "sentiment_score": 0.8617,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8617,
+        "positive": 0.8741,
+        "negative": 0.0124,
+        "neutral": 0.1135,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aditya Iyer",
+      "role": "Individual Investor",
+      "tone": "Neutral",
+      "key_topics": [
+        "Market strategy",
+        "Regional contributions"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aditya Iyer, an individual investor, asked about the company's market strategy and regional contributions. His questions were straightforward, seeking clarity on future plans regarding market mix. His tone was neutral, focusing on understanding the company's strategic direction.",
+      "sentiment_score": 0.4499,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4499,
+        "positive": 0.4859,
+        "negative": 0.036,
+        "neutral": 0.4781,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Shrikant",
+      "role": "Analyst from Nuvama Wealth Management Limited",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Product mix",
+        "Asset turnover"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Shrikant, an analyst, inquired about the product mix and potential asset turnover of new dedicated units. His questions were probing, aiming to gain insights into the company's operational strategies. His tone was inquisitive, reflecting a desire to understand the company's future prospects.",
+      "sentiment_score": 0.0154,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0154,
+        "positive": 0.0436,
+        "negative": 0.0283,
+        "neutral": 0.9281,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis involved identifying each speaker and their role, extracting key statements, and assessing their tone. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or vague responses. Each speaker's contribution was summarized, capturing their stance and key messages conveyed during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

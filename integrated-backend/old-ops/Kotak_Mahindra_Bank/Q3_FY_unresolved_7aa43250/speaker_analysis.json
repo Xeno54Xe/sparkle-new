@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ashok Vaswani",
+      "role": "Managing Director & CEO",
+      "tone": "cautious",
+      "key_topics": [
+        "technology improvements",
+        "credit strain",
+        "macroeconomic environment",
+        "business growth",
+        "future strategy"
+      ],
+      "direct_answers": [
+        "Mahrukh what I said was that I want to be within the top three private sector banks in the country in terms of profitability and get there over a period of time in the next five years, which is like 2030 kind of timeframe."
+      ],
+      "dodged_or_vague": [
+        "Kunal, it's very hard to predict at what stage the RBI will say we are going to lift out of jail. I honestly do not know, so I do not know what to say."
+      ],
+      "summary": "Ashok Vaswani opened the call with reflections on his first year at Kotak Mahindra Bank, highlighting significant progress in technology and regulatory compliance. He acknowledged the challenges posed by credit strain and macroeconomic volatility but expressed cautious optimism about the bank's growth strategy. Vaswani emphasized the bank's commitment to growing at 1.5 to 2 times the nominal GDP and highlighted the positive impact of capital market buoyancy. He directly addressed questions about the bank's strategic goals but was vague about the timeline for regulatory relief.",
+      "sentiment_score": 0.3589,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3589,
+        "positive": 0.6226,
+        "negative": 0.2637,
+        "neutral": 0.1137,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Devang Gheewalla",
+      "role": "Group Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "profit growth",
+        "capital adequacy",
+        "credit quality"
+      ],
+      "direct_answers": [
+        "Saurabh, hi. I could not hear properly, but you mentioned slippage breakup, right? Yes. So, I think this quarter the contribution in slippage for this quarter, microfinance does contribute a higher percentage in that sense. But obviously, there is a improvement in some other secured businesses, which is why the slippage for the quarter is lower than the last quarter."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Devang Gheewalla provided a detailed overview of Kotak Mahindra Bank's financial performance, highlighting a 10% year-over-year profit growth and strong capital adequacy ratios. He emphasized the bank's stable performance despite macroeconomic challenges and regulatory embargoes. Gheewalla noted the growth in customer assets and the bank's focus on secured consumer banking and SME segments. He confidently addressed questions about slippage contributions and maintained a positive outlook on the bank's credit quality and cost management.",
+      "sentiment_score": 0.7122,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7122,
+        "positive": 0.7778,
+        "negative": 0.0656,
+        "neutral": 0.1567,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Shanti Ekambaram",
+      "role": "Deputy Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "customer assets growth",
+        "secured business banking",
+        "unsecured business loans",
+        "credit card business"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Shanti Ekambaram discussed the growth in Kotak Mahindra Bank's customer assets, emphasizing a 15% year-over-year increase. She highlighted the strong performance of secured business banking and the mortgage segment, which grew by 19% year-over-year. Ekambaram expressed optimism about the bank's ability to manage risk in the unsecured business loan segment through data analytics and policy measures. She acknowledged the impact of the regulatory embargo on the credit card business but remained positive about future growth once the embargo is lifted.",
+      "sentiment_score": 0.819,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.819,
+        "positive": 0.8334,
+        "negative": 0.0144,
+        "neutral": 0.1521,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Kotak Mahindra Bank Q3 FY’25 Earnings Conference Call, ensuring a smooth transition between speakers and managing the question-and-answer session. The moderator maintained a neutral tone throughout the call, providing instructions for participants and ensuring the call was recorded for future reference.",
+      "sentiment_score": 0.0513,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0513,
+        "positive": 0.065,
+        "negative": 0.0137,
+        "neutral": 0.9213,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "1. Identified unique speakers: Ashok Vaswani, Devang Gheewalla, Shanti Ekambaram, and the Moderator. 2. Extracted key statements for each speaker, focusing on specific language, numbers, and forward-looking statements. 3. Assessed each speaker's tone based on their statements and responses. 4. Noted which analyst questions were answered directly or deflected by management. 5. Summarized each speaker's contribution, stance, and key messages in a narrative format.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

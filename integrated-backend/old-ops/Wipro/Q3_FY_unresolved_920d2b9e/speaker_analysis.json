@@ -1,0 +1,156 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Dipak Bohra",
+      "role": "Senior Vice President (Corporate Treasurer & Investor Relations)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Dipak Bohra opened the earnings call by welcoming participants and outlining the agenda, which included presentations by key executives. He highlighted the presence of forward-looking statements and associated risks, emphasizing the company's compliance with regulatory requirements. His tone was neutral, focusing on procedural aspects of the call.",
+      "sentiment_score": -0.0652,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0652,
+        "positive": 0.0417,
+        "negative": 0.107,
+        "neutral": 0.8513,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srini Pallia",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "macroeconomic challenges",
+        "AI spending",
+        "financial highlights",
+        "strategic priorities"
+      ],
+      "direct_answers": [
+        "Gaurav Rateria's question on APMEA and Europe interventions",
+        "Sandeep Shah's question on portfolio issues"
+      ],
+      "dodged_or_vague": [
+        "Abhishek Bhandari's question on negative guidance despite positive factors"
+      ],
+      "summary": "Srini Pallia provided an optimistic outlook for 2025, highlighting a hopeful and resilient economic environment. He emphasized the company's commitment to AI-driven innovation and shared financial highlights, including a 12-quarter high in operating margins. Srini addressed questions about regional performance and strategic interventions, offering direct responses but was vague on guidance-related queries despite positive performance indicators.",
+      "sentiment_score": 0.9162,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9162,
+        "positive": 0.9314,
+        "negative": 0.0152,
+        "neutral": 0.0534,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aparna Iyer",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "margin expansion",
+        "guidance"
+      ],
+      "direct_answers": [
+        "Vibhor Singhal's question on margin levers",
+        "Abhishek Kumar's question on depreciation"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Aparna Iyer confidently discussed the company's financial performance, highlighting a significant expansion in operating margins and EPS growth. She explained the factors contributing to margin improvements and provided clear guidance for the next quarter. Aparna directly addressed questions regarding margin levers and depreciation, reinforcing her confident tone throughout the call.",
+      "sentiment_score": 0.9363,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9363,
+        "positive": 0.9553,
+        "negative": 0.019,
+        "neutral": 0.0257,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Saurabh Govil",
+      "role": "Chief Human Resources Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "leadership development",
+        "employee dedication"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Saurabh Govil focused on the company's human resources strategy, emphasizing leadership development and the cultivation of a high-performance culture. He highlighted the training of over 600 leaders as part of Wipro's commitment to building a diverse and skilled workforce. His tone was neutral, concentrating on strategic HR initiatives without engaging in the Q&A session.",
+      "sentiment_score": 0.6719,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6719,
+        "positive": 0.6792,
+        "negative": 0.0074,
+        "neutral": 0.3134,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the earnings call, providing instructions for participants and managing the Q&A session. The tone was neutral, focusing on logistical aspects and ensuring the smooth operation of the call.",
+      "sentiment_score": 0.0143,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0143,
+        "positive": 0.0359,
+        "negative": 0.0216,
+        "neutral": 0.9426,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their statements and interactions during the call. For management speakers, attention was given to how they addressed analyst questions, noting any direct answers or vague responses. A narrative summary was crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

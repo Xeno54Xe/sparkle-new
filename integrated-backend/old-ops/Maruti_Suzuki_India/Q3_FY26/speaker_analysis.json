@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Maruti Suzuki Q3 FY '26 earnings call, ensuring the call's logistics were clear to participants. They provided instructions on how to ask questions and introduced the speakers. The moderator maintained a neutral tone throughout the call, focusing on the smooth operation of the conference.",
+      "sentiment_score": 0.0492,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0492,
+        "positive": 0.0634,
+        "negative": 0.0142,
+        "neutral": 0.9225,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pranav Ambaprasad",
+      "role": "Host",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "safe harbor statement"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pranav Ambaprasad opened the earnings call by welcoming participants and introducing the key members of the Maruti Suzuki management team. He provided a safe harbor statement, indicating that forward-looking statements would be made during the call. His tone was neutral, focusing on setting the stage for the detailed presentations and discussions to follow.",
+      "sentiment_score": 0.106,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.106,
+        "positive": 0.1173,
+        "negative": 0.0113,
+        "neutral": 0.8713,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Bharti",
+      "role": "Chief Investor Relations Officer",
+      "tone": "confident",
+      "key_topics": [
+        "market growth",
+        "sales performance",
+        "capacity expansion",
+        "product launches",
+        "financial results"
+      ],
+      "direct_answers": [
+        "Binay Singh",
+        "Gunjan Prithyani",
+        "Pramod Amthe"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Rahul Bharti, the Chief Investor Relations Officer, presented a confident overview of Maruti Suzuki's performance and future outlook. He highlighted the positive impact of the GST reform on the passenger vehicle industry and Maruti Suzuki's robust sales growth. Bharti discussed the company's strategic capacity expansion plans and new product launches, including the VICTORIS SUV. He provided detailed financial results, noting record sales and net profit figures, while also addressing challenges such as commodity price pressures and supply constraints. Bharti's tone was optimistic, reflecting confidence in the company's market position and future prospects.",
+      "sentiment_score": 0.4408,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4408,
+        "positive": 0.6091,
+        "negative": 0.1682,
+        "neutral": 0.2227,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Arnab Roy",
+      "role": "Chief Financial Officer",
+      "tone": "cautious",
+      "key_topics": [
+        "financial compliance",
+        "hedging strategy",
+        "cost impacts"
+      ],
+      "direct_answers": [
+        "Rishi Vora"
+      ],
+      "dodged_or_vague": [
+        "Binay Singh"
+      ],
+      "summary": "Arnab Roy, the CFO, provided a cautious overview of Maruti Suzuki's financial compliance and hedging strategies. He explained the impact of accounting standards on financial restatements and addressed questions about hedging and cost impacts. Roy was cautious in his responses, particularly regarding forward-looking statements, emphasizing the company's policy not to provide specific future outlooks. He highlighted the importance of operating leverage and acknowledged external headwinds such as raw material and foreign exchange fluctuations.",
+      "sentiment_score": -0.1348,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.1348,
+        "positive": 0.0683,
+        "negative": 0.203,
+        "neutral": 0.7287,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The task involves identifying each speaker in the earnings call transcript and analyzing their contributions. The moderator and host, Pranav Ambaprasad, set the stage for the call, introducing the management team and providing logistical details. Rahul Bharti, the CIRO, delivered a comprehensive overview of Maruti Suzuki's performance, highlighting market growth, sales achievements, and strategic initiatives. His tone was confident and optimistic. Arnab Roy, the CFO, addressed financial compliance and hedging strategies with a cautious tone, providing clarity on accounting impacts and cost management. Each speaker's key statements were extracted verbatim to ensure accurate financial NLP scoring, and their responses to analyst questions were categorized as direct or vague to assess engagement levels.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

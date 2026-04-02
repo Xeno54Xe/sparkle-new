@@ -1,0 +1,152 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could engage and reminding them of the call's recording. They introduced the speakers and managed the transition to the Q&A session. Their role was primarily logistical, ensuring the call proceeded smoothly and on schedule.",
+      "sentiment_score": 0.0313,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0313,
+        "positive": 0.0459,
+        "negative": 0.0147,
+        "neutral": 0.9394,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srinivasan Vaidyanathan",
+      "role": "Chief Financial Officer",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Margins",
+        "Growth strategy",
+        "Asset quality"
+      ],
+      "direct_answers": [
+        "Mahrukh Adajania's question on margins and EBLR repricing"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Srinivasan Vaidyanathan provided detailed insights into the bank's financial performance, focusing on margins and growth strategies. He explained the impact of recent EBLR repricing and how it affects the bank's yield on assets. His tone was confident, indicating a strong grasp of the financial metrics and future expectations. He directly answered questions about the bank's financial strategies and provided clarity on the timing of margin impacts.",
+      "sentiment_score": -0.0021,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0021,
+        "positive": 0.0495,
+        "negative": 0.0516,
+        "neutral": 0.8988,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sashidhar Jagdishan",
+      "role": "CEO and Managing Director",
+      "tone": "Optimistic",
+      "key_topics": [
+        "Macro environment",
+        "Growth outlook",
+        "Strategic objectives",
+        "Market opportunities"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sashidhar Jagdishan opened the call with an optimistic overview of the macroeconomic environment, highlighting India's stable position amid global uncertainties. He expressed confidence in the bank's strategic objectives, emphasizing growth in deposits and a reduction in the credit deposit ratio. Jagdishan outlined the bank's growth strategy, focusing on customer centricity, technology, and people. His tone was optimistic, projecting confidence in the bank's ability to achieve its growth targets and navigate the current economic landscape.",
+      "sentiment_score": 0.9203,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9203,
+        "positive": 0.9505,
+        "negative": 0.0302,
+        "neutral": 0.0194,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mahrukh Adajania",
+      "role": "Analyst from Nuvama",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Margins",
+        "Growth triggers"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mahrukh Adajania posed questions regarding the bank's margins and growth prospects. She sought clarity on the timing of EBLR repricing following rate cuts and the linkage percentage. Her inquiries reflected a concern about the slowing growth in the banking sector and what might trigger a recovery. Her tone was inquisitive, aiming to understand the bank's strategies for navigating current challenges and improving growth metrics.",
+      "sentiment_score": -0.2011,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.2011,
+        "positive": 0.1475,
+        "negative": 0.3486,
+        "neutral": 0.5038,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rikin Shah",
+      "role": "Analyst from IIFL Capital",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Portfolio allocation",
+        "Asset quality",
+        "Credit cost"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rikin Shah asked detailed questions about the bank's portfolio allocation, asset quality, and credit costs. He was interested in understanding the recent changes in loan classification and how they affect business operations. His questions also touched on the bank's NPA recognition policy and the expected trajectory of credit costs. His tone was inquisitive, seeking to gain a deeper understanding of the bank's financial strategies and risk management practices.",
+      "sentiment_score": 0.4608,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4608,
+        "positive": 0.491,
+        "negative": 0.0302,
+        "neutral": 0.4787,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The transcript reveals multiple speakers, including the moderator, Srinivasan Vaidyanathan, Sashidhar Jagdishan, and analysts Mahrukh Adajania and Rikin Shah. Each speaker's contributions were analyzed for key statements, tone, and interaction dynamics. Management speakers provided detailed insights into financial performance and strategic objectives, while analysts posed questions to clarify growth prospects and financial strategies. The JSON structure captures each speaker's role, tone, key topics, and a narrative summary of their contributions to the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

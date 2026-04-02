@@ -1,0 +1,428 @@
+{
+  "document": {
+    "document_id": "e2bedf1eb61a",
+    "company": "Wipro",
+    "quarter": "Q3",
+    "fiscal_year": null,
+    "filename": "a3dbcb44-8526-45a3-ac61-152710230060.pdf",
+    "relative_path": "Data/Wipro/a3dbcb44-8526-45a3-ac61-152710230060.pdf",
+    "file_size_bytes": 3206754,
+    "file_checksum": "d11716df6e4cb47111306b78be03e693",
+    "discovered_at": "2026-03-19T07:15:00.632493+00:00",
+    "analyzed": false,
+    "analyzed_at": null,
+    "output_directory": null
+  },
+  "analysed_at": "2026-03-19T17:11:36.768224+00:00",
+  "output_directory": "C:\\Users\\Jairam Ayyar\\Documents\\Sparkle_Manual_Earnings_Call\\outputs\\Wipro\\Q3_FY_unresolved_e2bedf1e",
+  "agents": {
+    "esg": {
+      "agent": "esg",
+      "overall_esg_score": 40.5,
+      "esg_label": "Neutral",
+      "esg_colour": "#F9A825",
+      "environmental": {
+        "score": 20.0,
+        "key_themes": [
+          "energy",
+          "renewables"
+        ],
+        "notable_excerpts": [
+          "We have good momentum in energy in both Americas and Europe.",
+          "Our Capco business is seeing some traction on the energy consulting side."
+        ]
+      },
+      "social": {
+        "score": 40.0,
+        "key_themes": [
+          "employees",
+          "community",
+          "training"
+        ],
+        "notable_excerpts": [
+          "In salary hikes, we will take a call in the next few weeks.",
+          "A warm welcome to all HARMAN DTS employees joining us.",
+          "We are also partnering with client GCCs to drive transformation and turn their cost centers into high-impact innovation hubs."
+        ]
+      },
+      "governance": {
+        "score": 60.0,
+        "key_themes": [
+          "board independence",
+          "transparency",
+          "risk management"
+        ],
+        "notable_excerpts": [
+          "AI is now a standing board-level mandate led by CEOs.",
+          "These milestones reflect a legacy of strong governance, values, and integrity.",
+          "The uncertainties and risk factors are explained in our detailed filings with the SEC."
+        ]
+      },
+      "chain_of_thought": "The transcript contains limited environmental disclosures focused on energy. Social aspects are moderately covered with mentions of employee integration and community partnerships. Governance is the strongest pillar with references to board-level mandates and transparency in risk management.",
+      "strengths": [
+        "Strong governance practices",
+        "Employee integration and community partnerships"
+      ],
+      "weaknesses": [
+        "Limited environmental disclosures",
+        "Lack of specific social initiatives"
+      ],
+      "red_flags": [],
+      "esg_levels_reference": [
+        {
+          "range": "0–20",
+          "label": "Critical",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "21–40",
+          "label": "Concerning",
+          "colour": "#E65100"
+        },
+        {
+          "range": "41–60",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "61–80",
+          "label": "Commendable",
+          "colour": "#2E7D32"
+        },
+        {
+          "range": "81–100",
+          "label": "Exemplary",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "speaker": {
+      "agent": "speaker",
+      "speakers": [
+        {
+          "name": "Abhishek Jain",
+          "role": "Vice President (Corporate Treasurer & Head of Investor Relations)",
+          "tone": "neutral",
+          "key_topics": [
+            "introduction",
+            "forward-looking statements"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Abhishek Jain opened the earnings call by welcoming participants and outlining the agenda, which included presentations from key executives. He highlighted the presence of forward-looking statements in the call, emphasizing the associated risks and uncertainties. His tone was neutral, focusing on procedural aspects and setting the stage for the detailed discussions to follow.",
+          "sentiment_score": 0.0557,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": 0.0557,
+            "positive": 0.0678,
+            "negative": 0.0121,
+            "neutral": 0.9202,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Srini Pallia",
+          "role": "Chief Executive Officer and Managing Director",
+          "tone": "confident",
+          "key_topics": [
+            "AI-first strategy",
+            "quarterly performance",
+            "HARMAN DTS acquisition",
+            "future guidance"
+          ],
+          "direct_answers": [
+            "Nitin Padmanabhan's question on EMR growth"
+          ],
+          "dodged_or_vague": [
+            "Vibhor Singhal's question on Consumer vertical outlook"
+          ],
+          "summary": "Srini Pallia provided a confident overview of Wipro's strategic positioning in an AI-first world, emphasizing the influence of AI on client operations. He reported on the company's quarterly performance, highlighting revenue growth and the impact of the HARMAN DTS acquisition. Srini projected a cautious yet optimistic revenue growth for the next quarter. While he directly addressed questions about the EMR sector, he was less specific about the outlook for the Consumer vertical, indicating some uncertainty.",
+          "sentiment_score": 0.6576,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.6576,
+            "positive": 0.6742,
+            "negative": 0.0166,
+            "neutral": 0.3092,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Aparna Iyer",
+          "role": "Chief Financial Officer",
+          "tone": "cautious",
+          "key_topics": [
+            "financial performance",
+            "operating margins",
+            "HARMAN DTS impact"
+          ],
+          "direct_answers": [
+            "Kawaljeet Saluja's question on mega deals"
+          ],
+          "dodged_or_vague": [
+            "Vibhor Singhal's question on Q4 headwinds"
+          ],
+          "summary": "Aparna Iyer presented a cautious financial overview, detailing revenue growth and operating margin improvements. She noted the impact of the HARMAN DTS acquisition on future margins and provided guidance for the next quarter. Aparna addressed questions about mega deals but was less clear on the specifics of Q4 headwinds, reflecting a cautious approach to future uncertainties.",
+          "sentiment_score": 0.9163,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9163,
+            "positive": 0.9294,
+            "negative": 0.013,
+            "neutral": 0.0576,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Saurabh Govil",
+          "role": "Chief Human Resources Officer",
+          "tone": "neutral",
+          "key_topics": [
+            "salary hikes"
+          ],
+          "direct_answers": [
+            "Nitin Padmanabhan's question on salary hikes"
+          ],
+          "dodged_or_vague": [],
+          "summary": "Saurabh Govil provided a brief update on the status of salary hikes, indicating that a decision would be made in the coming weeks. His tone was neutral, focusing on the procedural aspect of the decision-making process. He directly answered questions regarding the timing of salary hikes, showing transparency in HR-related matters.",
+          "sentiment_score": 0.0432,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": 0.0432,
+            "positive": 0.0675,
+            "negative": 0.0243,
+            "neutral": 0.9082,
+            "chunks_scored": 1
+          }
+        }
+      ],
+      "speaker_count": 4,
+      "chain_of_thought": "The analysis involved identifying each speaker and their role, extracting key statements, and assessing their tone based on the content and context of their remarks. Management speakers were evaluated on their responsiveness to analyst questions, noting instances of direct answers versus vague or deflected responses. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+      "sentiment_levels_reference": [
+        {
+          "range": "–1.0 to –0.6",
+          "label": "Very Negative",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "–0.6 to –0.2",
+          "label": "Negative",
+          "colour": "#E53935"
+        },
+        {
+          "range": "–0.2 to +0.2",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "+0.2 to +0.6",
+          "label": "Positive",
+          "colour": "#43A047"
+        },
+        {
+          "range": "+0.6 to +1.0",
+          "label": "Very Positive",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "sentiment": {
+      "agent": "sentiment",
+      "overall_sentiment_score": 0.2205,
+      "overall_sentiment_label": "Positive",
+      "overall_sentiment_colour": "#43A047",
+      "overall_tone": "Cautiously Bullish",
+      "dimensions": {
+        "financial_performance": {
+          "score": -0.3218,
+          "label": "Negative",
+          "colour": "#E53935",
+          "finbert": {
+            "score": -0.3218,
+            "positive": 0.3264,
+            "negative": 0.6482,
+            "neutral": 0.0255,
+            "chunks_scored": 1
+          },
+          "text": "Our IT Services sequential revenue at $2.64 billion grew 1.4% on a constant currency basis, with a 0.6% growth excluding the HARMAN DTS acquisition. Operating margins expanded to 17.6%, a 40 basis point increase over the previous quarter and a 10 basis point improvement year-on-year, marking one of our best performances in the last 7 quarters. Adjusted net income was INR 33.6 billion, with an EPS of INR 3.21, reflecting a 3.5% increase quarter-on-quarter and flat year-on-year. Sector-wise, BFSI grew 2.6% sequentially, Health grew 4.2%, and Tech and Comm grew 4.2% sequentially. However, EMR declined 4.9% sequentially and 5.8% year-on-year. Capco revenue was flat year-on-year, impacted by furloughs."
+        },
+        "forward_guidance": {
+          "score": 0.9096,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.9096,
+            "positive": 0.9406,
+            "negative": 0.031,
+            "neutral": 0.0284,
+            "chunks_scored": 1
+          },
+          "text": "For Quarter 4, we are projecting sequential IT Services revenue growth of 0% to 2.0% in constant currency. Management emphasized maintaining operating margins in a similar band as in recent quarters despite the incremental dilution from HARMAN DTS. The guidance reflects a cautious approach, factoring in lower working days and the ongoing integration of HARMAN DTS. Management expressed confidence in the pipeline, particularly in energy and manufacturing sectors, and highlighted ongoing vendor consolidation and cost optimization efforts."
+        },
+        "risk_language": {
+          "score": -0.5912,
+          "label": "Negative",
+          "colour": "#E53935",
+          "finbert": {
+            "score": -0.5912,
+            "positive": 0.1796,
+            "negative": 0.7708,
+            "neutral": 0.0496,
+            "chunks_scored": 1
+          },
+          "text": "Management addressed several risks, including macroeconomic uncertainties, tariff-related challenges, and disrupted supply chains impacting the EMR sector. There were also two specific one-off charges impacting net income: INR 302 crores for gratuity expenses due to new labor code implementation and INR 263 crores from a restructuring exercise. Despite these challenges, management remains focused on converting a strong pipeline in energy and manufacturing, though they acknowledged the potential for delays in deal ramp-ups due to client-specific situations."
+        },
+        "investor_confidence": {
+          "score": 0.8121,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.8121,
+            "positive": 0.8209,
+            "negative": 0.0088,
+            "neutral": 0.1703,
+            "chunks_scored": 1
+          },
+          "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations of sector performances and strategic initiatives. They highlighted significant milestones, such as the completion of the HARMAN DTS acquisition and the company's 80th anniversary, as indicators of strong governance and long-term value creation. The call reflected a balanced tone, acknowledging challenges while emphasizing strategic growth areas and the integration of AI capabilities to drive future performance."
+        }
+      },
+      "key_positive_drivers": [
+        "Sequential revenue growth of 1.4% in IT Services",
+        "Operating margin expansion to 17.6%",
+        "Strong performance in BFSI, Health, and Tech & Comm sectors",
+        "Completion of HARMAN DTS acquisition",
+        "Significant large deal bookings"
+      ],
+      "key_negative_drivers": [
+        "Decline in EMR sector performance",
+        "Impact of macroeconomic uncertainties and tariffs",
+        "One-off charges affecting net income",
+        "Sequential decline in Americas 2"
+      ],
+      "notable_phrases": [
+        "one of our best margin performance in the last 7 quarters",
+        "projecting sequential IT Services revenue growth of 0% to 2.0%",
+        "incremental dilution of HARMAN DTS",
+        "macroeconomic uncertainty we have seen",
+        "strong governance, values, and integrity",
+        "vendor consolidation or cost takeout",
+        "good momentum in energy in both Americas and Europe",
+        "confident it will take some time, but it will ramp up"
+      ],
+      "chain_of_thought": "The financial performance showed solid sequential growth and margin expansion, though some sectors like EMR faced declines. Forward guidance was cautious, reflecting potential growth but acknowledging challenges. Risk discussions were forthright, addressing macroeconomic and sector-specific issues. Investor confidence was bolstered by strategic initiatives and transparent communication, suggesting a cautiously optimistic outlook."
+    },
+    "summary": {
+      "agent": "summary",
+      "executive_summary": "Wipro's Q3 earnings call revealed a mixed financial performance with sequential revenue growth of 1.4% in IT Services, driven by strong performances in the BFSI, Health, and Tech & Comm sectors. However, the company faced challenges in the EMR sector and a sequential decline in the Americas 2 region. The operating margin expanded to 17.6%, marking one of the best performances in the last seven quarters, despite one-off charges affecting net income. The completion of the HARMAN DTS acquisition was highlighted as a significant contributor to future growth.\n\nStrategically, Wipro emphasized its positioning in an AI-first world, with CEO Srini Pallia confidently discussing the influence of AI on client operations and the company's strategic initiatives. The integration of HARMAN DTS is expected to enhance Wipro's engineering and AI capabilities, opening new markets and high-growth industries. The company also highlighted its focus on cost optimization, vendor consolidation, and AI-led transformation as key themes in its deal pipeline.\n\nThe overall tone of the call was cautiously bullish, with management expressing confidence in their strategic direction and future growth prospects. However, there were cautious notes regarding macroeconomic uncertainties and tariff impacts, particularly in the EMR and Consumer sectors. Investors were likely reassured by the strong governance practices and strategic initiatives, though concerns about specific sector performances and macroeconomic risks remain.\n\nESG themes were significant, with Wipro scoring a neutral overall ESG score of 40.5. The company demonstrated strong governance practices, particularly in board independence and transparency. However, there were weaknesses in environmental disclosures and a lack of specific social initiatives. The ESG standing reflects a balanced approach, with room for improvement in environmental and social aspects.",
+      "qa_quality": {
+        "overall_transparency_score": 7.5,
+        "narrative": "During the Q&A session, management handled most questions with clarity and directness, particularly those related to financial performance and strategic initiatives. Aparna Iyer, the CFO, provided detailed responses regarding revenue growth and operating margins, although she was less clear on the specifics of mega deals. Saurabh Govil, the CHRO, was transparent about the timing of salary hikes, indicating a decision would be made soon. However, there were instances where management deflected questions, particularly regarding the specifics of the EMR sector's recovery and the impact of macroeconomic uncertainties.\n\nManagement was evasive when discussing the potential growth trajectory if mega deals were not delayed, with Aparna Iyer stating that they could not provide quantitative details. This lack of specificity on material issues such as deal ramp-ups and sector-specific challenges slightly detracted from the overall transparency. Despite these instances, the overall handling of the Q&A was satisfactory, with management providing a generally clear picture of the company's strategic direction and financial health.",
+        "direct_answer_examples": [
+          "Saurabh Govil directly answered questions regarding the timing of salary hikes, showing transparency in the decision-making process."
+        ],
+        "dodged_questions": [
+          {
+            "question": "What would the guidance have been for the March quarter if mega deals ramp-ups were not delayed?",
+            "management_response": "Obviously, we cannot talk about it quantitatively, Kawai. And qualitatively, like I have said, it is only delayed.",
+            "assessment": "Management avoided providing specific guidance, citing the complexity and variability of the deals."
+          }
+        ],
+        "vague_response_examples": [
+          "Aparna Iyer's response to the impact of macroeconomic uncertainties on the EMR sector was vague, lacking specific details."
+        ]
+      },
+      "short_term_implications": {
+        "narrative": "In the near term, investors should closely monitor Wipro's guidance for Q4, which projects sequential IT Services revenue growth of 0% to 2.0% in constant currency. The integration of HARMAN DTS is expected to contribute positively to margins and revenue, though the full impact will unfold over the coming quarters. The company's focus on AI-led transformation and cost optimization is likely to drive growth, particularly in the BFSI and Health sectors.\n\nKey risks include macroeconomic uncertainties and tariff impacts, which could affect sector performances, particularly in EMR and Consumer. The company's ability to convert its strong pipeline into tangible deals will be crucial for sustaining growth. Investors should also watch for updates on salary hikes and any further restructuring exercises, as these could impact operating costs and margins.",
+        "key_items": [
+          {
+            "item": "Q4 IT Services revenue growth guidance",
+            "timeframe": "Next quarter",
+            "impact": "positive"
+          },
+          {
+            "item": "Integration of HARMAN DTS",
+            "timeframe": "Next 6 months",
+            "impact": "positive"
+          },
+          {
+            "item": "Macroeconomic uncertainties and tariff impacts",
+            "timeframe": "Next 6 months",
+            "impact": "negative"
+          }
+        ]
+      },
+      "long_term_implications": {
+        "narrative": "Over the long term, Wipro's strategic trajectory is focused on leveraging AI to transform business models and drive competitive advantage. The company's capital allocation priorities include enhancing its engineering and AI capabilities through strategic acquisitions like HARMAN DTS. This aligns with management's vision of positioning Wipro as a leader in AI-driven transformation across industries.\n\nSector tailwinds, such as the growing demand for AI solutions and digital transformation, are expected to support Wipro's growth. However, headwinds include potential regulatory changes and competitive pressures in the IT services industry. Management's long-term vision is consistent with value creation, as evidenced by their focus on innovation and strategic partnerships. The company's ability to execute on these initiatives will be critical for sustaining long-term growth and maintaining its competitive positioning.",
+        "key_items": [
+          {
+            "item": "AI-driven transformation initiatives",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Strategic acquisitions and integrations",
+            "timeframe": "1-3 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Regulatory changes and competitive pressures",
+            "timeframe": "1-5 years",
+            "impact": "negative"
+          }
+        ]
+      },
+      "key_risks": {
+        "narrative": "Wipro faces several material risks, including macroeconomic uncertainties and tariff impacts, which could affect sector performances, particularly in EMR and Consumer. The company's execution risk is medium, given the complexity of integrating acquisitions like HARMAN DTS and converting its strong pipeline into tangible deals. Regulatory changes pose an external risk, potentially impacting the IT services industry. Additionally, competitive pressures from other global IT service providers could affect Wipro's market share and pricing power.",
+        "risks": [
+          {
+            "risk": "Macroeconomic uncertainties and tariff impacts",
+            "severity": "high",
+            "type": "external"
+          },
+          {
+            "risk": "Execution risk in integrating acquisitions",
+            "severity": "medium",
+            "type": "company-specific"
+          },
+          {
+            "risk": "Regulatory changes",
+            "severity": "medium",
+            "type": "external"
+          },
+          {
+            "risk": "Competitive pressures",
+            "severity": "medium",
+            "type": "external"
+          }
+        ]
+      },
+      "key_opportunities": {
+        "narrative": "Wipro's most compelling growth opportunities include its strategic focus on AI-driven transformation, which is expected to drive significant growth over the next 1-5 years. The integration of HARMAN DTS presents a high potential opportunity to enhance engineering capabilities and enter new markets. Additionally, the company's strong pipeline in sectors like BFSI and Health offers medium potential for growth in the next 1-3 years. The expansion of the Wipro Innovation Network and strategic partnerships also provide opportunities for long-term value creation.",
+        "opportunities": [
+          {
+            "opportunity": "AI-driven transformation initiatives",
+            "potential": "high",
+            "timeline": "1-5 years"
+          },
+          {
+            "opportunity": "Integration of HARMAN DTS",
+            "potential": "high",
+            "timeline": "1-3 years"
+          },
+          {
+            "opportunity": "Strong pipeline in BFSI and Health sectors",
+            "potential": "medium",
+            "timeline": "1-3 years"
+          }
+        ]
+      },
+      "investment_thesis_signal": "Cautiously Bullish",
+      "investment_thesis_rationale": "Wipro's Q3 earnings call reflects a cautiously bullish outlook, driven by strategic initiatives in AI and digital transformation. The company's strong governance practices and strategic acquisitions, such as HARMAN DTS, position it well for long-term growth. However, macroeconomic uncertainties and competitive pressures present risks that warrant caution. Overall, the sentiment data and management's confidence in their strategic direction support a cautiously bullish investment thesis.",
+      "chain_of_thought": "The analysis considered Wipro's financial performance, strategic initiatives, and management's tone during the earnings call. The company's focus on AI and digital transformation, coupled with strong governance practices, supports a positive outlook. However, macroeconomic risks and competitive pressures necessitate a cautious approach, leading to a cautiously bullish investment thesis."
+    }
+  }
+}

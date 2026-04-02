@@ -1,0 +1,242 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics",
+        "Introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the ICICI Bank Q3 FY2025 earnings call, ensuring smooth transitions between speakers and managing the Q&A session. The tone was neutral, focusing on logistics and ensuring participants were aware of the call's structure. The Moderator concluded the call by thanking participants and providing instructions for disconnection.",
+      "sentiment_score": 0.028,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.028,
+        "positive": 0.044,
+        "negative": 0.016,
+        "neutral": 0.9401,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Sandeep Bakhshi",
+      "role": "Managing Director and CEO",
+      "tone": "Confident",
+      "key_topics": [
+        "Operating environment",
+        "Strategic focus",
+        "Financial performance",
+        "Future outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Sandeep Bakhshi, the Managing Director and CEO of ICICI Bank, opened the earnings call with a confident tone, highlighting the bank's strategic focus on risk-calibrated profitable growth and maintaining high governance standards. He detailed the bank's financial performance, noting significant year-on-year growth in profit before tax and core operating profit. Bakhshi emphasized the bank's strong capital position and its commitment to investing in technology and operational resilience. He projected a positive outlook, focusing on customer-centric growth and market share expansion.",
+      "sentiment_score": 0.7698,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7698,
+        "positive": 0.7792,
+        "negative": 0.0094,
+        "neutral": 0.2114,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Anindya Banerjee",
+      "role": "Management",
+      "tone": "Cautious",
+      "key_topics": [
+        "Loan growth",
+        "Credit quality",
+        "P&L details",
+        "Technology initiatives"
+      ],
+      "direct_answers": [
+        "Yes, currently that would be the case. Yes.",
+        "No, no, none at all."
+      ],
+      "dodged_or_vague": [
+        "We don't give the number of write-back separately.",
+        "We give that number on an annual basis now. So, we have not been giving it."
+      ],
+      "summary": "Anindya Banerjee provided detailed insights into ICICI Bank's loan growth, credit quality, and P&L details. He highlighted the growth in various loan segments, while noting a decline in the overseas loan portfolio. His tone was cautious, particularly when discussing credit costs and provisions. Banerjee addressed questions on credit costs and employee numbers with some deflection, indicating a cautious approach to providing specific figures. He emphasized the stability in the retail business banking portfolio and the bank's ongoing technology initiatives.",
+      "sentiment_score": -0.0859,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0859,
+        "positive": 0.1619,
+        "negative": 0.2478,
+        "neutral": 0.5903,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Chintan Joshi",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Business banking book",
+        "Provisioning cost"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Chintan Joshi, an analyst, posed questions regarding the unsecured portion of the business banking book and the provisioning cost. His tone was inquisitive, seeking clarity on specific financial metrics and their implications for the future. Joshi's questions were aimed at understanding the bank's risk exposure and future provisioning strategies, reflecting a focus on financial stability and risk management.",
+      "sentiment_score": -0.0345,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0345,
+        "positive": 0.0452,
+        "negative": 0.0797,
+        "neutral": 0.8752,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mahrukh Adajania",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Provisioning",
+        "Farm slippages"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mahrukh Adajania, an analyst, focused on the bank's provisioning and farm slippages. Her questions were detailed and aimed at understanding the specifics of the bank's financial adjustments and risk management strategies. Adajania's tone was inquisitive, seeking clarity on the numbers and their implications for the bank's financial health. Her questions reflected a keen interest in the bank's provisioning strategies and their impact on financial stability.",
+      "sentiment_score": -0.3497,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.3497,
+        "positive": 0.0358,
+        "negative": 0.3855,
+        "neutral": 0.5787,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Piran Engineer",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Credit cost"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Piran Engineer, an analyst, asked a concise question regarding the credit cost comparison between business and retail books. His tone was inquisitive, aiming to confirm his understanding of the bank's credit cost dynamics. The question was straightforward, reflecting a focus on financial metrics and their implications for the bank's profitability.",
+      "sentiment_score": 0.0891,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0891,
+        "positive": 0.1628,
+        "negative": 0.0737,
+        "neutral": 0.7635,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Nitin Agarwal",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Fee income",
+        "Margins"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Nitin Agarwal, an analyst, inquired about the bank's fee income and its potential to offset margin pressures. His tone was inquisitive, focusing on the bank's revenue streams and their sustainability. Agarwal's question reflected an interest in understanding how the bank plans to navigate margin pressures and leverage fee income for growth.",
+      "sentiment_score": 0.3072,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3072,
+        "positive": 0.3358,
+        "negative": 0.0287,
+        "neutral": 0.6355,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Param Subramanian",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "CASA",
+        "Employee cost"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Param Subramanian, an analyst, congratulated the bank on its performance and asked about CASA growth and employee costs. His tone was inquisitive, seeking to understand the factors driving these metrics. Subramanian's questions reflected a focus on operational efficiency and the bank's ability to maintain growth in key areas.",
+      "sentiment_score": -0.6355,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.6355,
+        "positive": 0.0494,
+        "negative": 0.6849,
+        "neutral": 0.2657,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kunal Shah",
+      "role": "Analyst",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Yield",
+        "KCC impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kunal Shah, an analyst, focused on the yield dynamics and the impact of KCC on the bank's financials. His tone was inquisitive, aiming to understand the factors affecting yield movements and their future implications. Shah's question reflected a keen interest in the bank's interest income and its potential recovery in the upcoming quarters.",
+      "sentiment_score": -0.0703,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0703,
+        "positive": 0.0493,
+        "negative": 0.1196,
+        "neutral": 0.8312,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 9,
+  "chain_of_thought": "The analysis begins by identifying each speaker in the earnings call, including the moderator, management, and analysts. Each speaker's key statements are extracted, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions. For management speakers, their responses to analyst questions are categorized as direct or vague. A narrative summary is crafted for each speaker, capturing their contribution to the call and key messages. This structured approach ensures a comprehensive understanding of the call's dynamics and the perspectives of each participant.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

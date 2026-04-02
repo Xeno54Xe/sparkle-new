@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8532,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9429,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9429,
+        "positive": 0.9573,
+        "negative": 0.0144,
+        "neutral": 0.0283,
+        "chunks_scored": 1
+      },
+      "text": "Kotak Mahindra Bank reported a strong financial performance for Q4 FY25, with consolidated profit standing at Rs. 22,126 crore, up 21% year-on-year, and 5% YoY excluding the gain on the divestment of KGI of Rs. 3,013 crore. The Bank's standalone profit was Rs. 16,450 crore, up 19% YoY, including the gain on divestment of KGI. Excluding this gain, profit was Rs. 13,720 crore. The Bank's ROA excluding KGI gain was 2.2% for the quarter and full year. The capital adequacy ratio remained robust at 22.2%, with CET-1 at 21.1%. Advances grew by 13% YoY on an end-of-period basis, while average advances grew by 18% YoY. The mix of deposits enabled the Bank to optimize its cost of funds at 5.10% for the full year '25."
+    },
+    "forward_guidance": {
+      "score": 0.9183,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9183,
+        "positive": 0.9292,
+        "negative": 0.0108,
+        "neutral": 0.06,
+        "chunks_scored": 1
+      },
+      "text": "Looking ahead to FY26, Kotak Mahindra Bank remains committed to its strategy of growing assets between 1.5x to 2x nominal GDP growth. Management expressed confidence in the easing of liquidity and the lifting of the tech embargo, which has allowed the restart of cards and 811 acquisition engines. The Bank plans to continue leveraging its diversified financial conglomerate model, focusing on Banking and Lending, Capital Markets, Asset Management, and Protection. Management highlighted the launch of new propositions like 'Solitaire' for affluent customers and enhancements to the 811 app. The language used was cautiously optimistic, acknowledging potential global uncertainties but emphasizing strategic initiatives and growth opportunities."
+    },
+    "risk_language": {
+      "score": 0.6194,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.6194,
+        "positive": 0.794,
+        "negative": 0.1746,
+        "neutral": 0.0315,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks and challenges during the call, including global uncertainties from trade and tariff arrangements, geopolitical issues, and interest rate trends. The Bank has proactively managed credit strains in the microfinance sector, reducing the retail microfinance book by 33% YoY. Despite these challenges, the microfinance business remained profitable. The Bank also faced higher delinquencies in unsecured personal loans and credit cards, prompting tighter underwriting standards. Management was forthright about these risks, emphasizing a disciplined approach to risk management and capital adequacy."
+    },
+    "investor_confidence": {
+      "score": 0.8547,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8547,
+        "positive": 0.8637,
+        "negative": 0.009,
+        "neutral": 0.1274,
+        "chunks_scored": 1
+      },
+      "text": "Throughout the call, Kotak Mahindra Bank's management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations of financial results and strategic initiatives. The management team, including CEO Ashok Vaswani, emphasized the Bank's commitment to customer-centricity and sustainable growth. The Bank's strong capital position was highlighted as a 'fortress balance sheet,' providing confidence in its ability to navigate downturns and seize growth opportunities. The call concluded with a commitment to regular updates and a focus on executing the Bank's strategy."
+    }
+  },
+  "key_positive_drivers": [
+    "21% YoY growth in consolidated profit",
+    "18% YoY growth in average advances",
+    "Easing of liquidity and lifting of tech embargo",
+    "Strong capital adequacy at 22.2%",
+    "Launch of new customer propositions like 'Solitaire'",
+    "Restart of cards and 811 acquisition engines"
+  ],
+  "key_negative_drivers": [
+    "Global uncertainties from trade and tariff arrangements",
+    "Higher delinquencies in unsecured personal loans and credit cards",
+    "Credit strains in the microfinance sector",
+    "Potential downward trends in interest rates"
+  ],
+  "notable_phrases": [
+    "optimise our cost of funds at 5.10%",
+    "consolidated profit stood at Rs. 22,126 crore",
+    "easing of liquidity",
+    "lifting of the tech embargo",
+    "fortress balance sheet",
+    "disciplined approach towards managing our CD ratio",
+    "proactively managed the business",
+    "committed to driving our strategy"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant profit growth and robust capital adequacy. Forward guidance was cautiously optimistic, focusing on strategic growth and easing liquidity. Risks were acknowledged, particularly in unsecured lending and global uncertainties, but management was proactive in addressing them. Investor confidence was reinforced through clear communication and strategic focus, projecting a cautiously bullish outlook."
+}

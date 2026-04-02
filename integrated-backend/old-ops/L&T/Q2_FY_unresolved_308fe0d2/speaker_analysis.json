@@ -1,0 +1,107 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could ask questions and reminding them of the listen-only mode. The tone was neutral, focusing on logistics and ensuring the call proceeded smoothly.",
+      "sentiment_score": 0.0208,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0208,
+        "positive": 0.041,
+        "negative": 0.0203,
+        "neutral": 0.9387,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "P. Ramakrishnan",
+      "role": "Head, Investor Relations",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Economic outlook",
+        "Order book",
+        "Revenue guidance"
+      ],
+      "direct_answers": [
+        "Mohit Pandey's question on Infrastructure segment execution and margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "P. Ramakrishnan opened the call with a confident overview of L&T's financial performance and economic outlook. He highlighted the company's strong order book and revenue growth, maintaining a positive outlook for the remainder of the fiscal year. He addressed questions directly, particularly regarding the Infrastructure segment's execution and margins, demonstrating a clear understanding of the company's strategic direction and financial health.",
+      "sentiment_score": 0.4676,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4676,
+        "positive": 0.4826,
+        "negative": 0.0149,
+        "neutral": 0.5025,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Subramanian Sarma",
+      "role": "Deputy Managing Director and President",
+      "tone": "Confident",
+      "key_topics": [
+        "Project execution",
+        "International opportunities",
+        "Risk management"
+      ],
+      "direct_answers": [
+        "Mohit Kumar's question on Kuwait projects",
+        "Sumit Kishore's question on Hydrocarbon margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Subramanian Sarma provided insights into L&T's project execution and international opportunities, particularly in Kuwait and Tashkent. He confidently addressed questions about the company's position in large bids and the sustainability of prospects. Sarma also discussed risk management strategies, emphasizing the company's preparedness to handle legacy projects and new opportunities. His responses were direct and informative, reflecting a deep understanding of L&T's operational landscape.",
+      "sentiment_score": 0.0804,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0804,
+        "positive": 0.1036,
+        "negative": 0.0232,
+        "neutral": 0.8732,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "The transcript includes three main speakers: the Moderator, P. Ramakrishnan, and Subramanian Sarma. The Moderator's role was logistical, ensuring the call proceeded smoothly. P. Ramakrishnan provided a comprehensive overview of L&T's financial performance and economic outlook, maintaining a confident tone and directly answering questions about the Infrastructure segment. Subramanian Sarma focused on project execution and international opportunities, addressing questions about specific projects and risk management with confidence. Both management speakers demonstrated a clear understanding of L&T's strategic direction and operational challenges.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

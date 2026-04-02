@@ -1,0 +1,134 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Divya Gulati",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Divya Gulati served as the moderator for the earnings call, introducing the key speakers and setting the stage for the presentation and Q&A session. She reminded participants that the meeting was being recorded and highlighted the presence of forward-looking statements, which involve risks and uncertainties. Her tone was neutral, focusing on facilitating the flow of the meeting and ensuring that procedural aspects were covered.",
+      "sentiment_score": -0.0267,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0267,
+        "positive": 0.0364,
+        "negative": 0.0631,
+        "neutral": 0.9004,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Anish Shah",
+      "role": "Group CEO & MD",
+      "tone": "optimistic",
+      "key_topics": [
+        "quarterly results",
+        "business performance",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "There are no rights issues planned in the near future. Capital investments will be made in all businesses as they need them as part of our growth plans."
+      ],
+      "dodged_or_vague": [
+        "I cannot say much for future quarters but we will promise to deliver what is in our control and deal with things that are outside our control the best we can."
+      ],
+      "summary": "Anish Shah expressed optimism about the company's performance, highlighting a strong quarter with significant contributions from all business segments. He noted a 54% increase in farm profits and a 14% rise in auto profits, despite challenges from the GST transition. Shah emphasized the company's strategic focus on growth and execution, mentioning that no rights issues are planned in the near future. While he was optimistic, he also acknowledged uncertainties in future quarters, promising to manage controllable factors effectively.",
+      "sentiment_score": 0.8627,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8627,
+        "positive": 0.8796,
+        "negative": 0.017,
+        "neutral": 0.1034,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rajesh Jejurikar",
+      "role": "ED & CEO, Auto and Farm Sector",
+      "tone": "confident",
+      "key_topics": [
+        "market share",
+        "product strategy",
+        "regulatory compliance"
+      ],
+      "direct_answers": [
+        "Margin for MEAL is going to be, you know, series of things that kick in, which is what is the right Pack mix and pricing to enable growth in the segment."
+      ],
+      "dodged_or_vague": [
+        "Unfortunately, we can't share more details. The reason we don’t share more details on ICE, just so that you know doesn’t look like we are evading the question, is because it does affect buying of current portfolio products wherever there is uncertainty in customer."
+      ],
+      "summary": "Rajesh Jejurikar conveyed confidence in the company's market position and product strategy, reporting a 32% increase in volumes and a 50 basis point gain in market share. He highlighted the success of the farm machinery business and the achievement of significant milestones in tractor production. Jejurikar addressed questions on margins and regulatory compliance, providing direct answers where possible but also deflecting some inquiries about future product details to avoid impacting current sales. His focus was on maintaining momentum and managing customer expectations.",
+      "sentiment_score": 0.9313,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9313,
+        "positive": 0.9462,
+        "negative": 0.0148,
+        "neutral": 0.039,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Amarjyoti Barua",
+      "role": "Group CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "financial strategy",
+        "risk management",
+        "hedging"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Amarjyoti Barua adopted a cautious tone, focusing on the company's financial strategy and risk management practices. He highlighted the proactive hedging measures taken to mitigate the impact of rising precious metal prices, noting that while the company is currently protected, continued trends could increase hedging costs. Barua's remarks underscored the importance of strategic financial planning and the need to remain vigilant in managing external risks.",
+      "sentiment_score": 0.89,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.89,
+        "positive": 0.9123,
+        "negative": 0.0222,
+        "neutral": 0.0655,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The transcript reveals four key speakers: Divya Gulati as the moderator, Anish Shah as the Group CEO & MD, Rajesh Jejurikar as the ED & CEO of the Auto and Farm Sector, and Amarjyoti Barua as the Group CFO. Each speaker's statements were analyzed for tone, key topics, and the nature of their responses to questions. Divya's role was primarily procedural, while Anish Shah expressed optimism about the company's performance. Rajesh Jejurikar was confident in discussing market share and product strategy, though he deflected some questions about future products. Amarjyoti Barua took a cautious approach, emphasizing risk management and hedging strategies. The JSON structure captures these insights, providing a comprehensive overview of each speaker's contributions and stance during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

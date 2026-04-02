@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.567,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9425,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9425,
+        "positive": 0.9609,
+        "negative": 0.0185,
+        "neutral": 0.0206,
+        "chunks_scored": 1
+      },
+      "text": "HCL Tech reported a strong financial performance for Q3 FY26, with total revenue reaching $3.79 billion, marking a growth of 4.8% YoY and 4.2% QoQ in constant currency terms. The services business grew by 5% YoY and 1.8% sequentially, while the IT and Business Services segment saw a 3.8% YoY increase. The Engineering and R&D Services segment experienced a robust 10.8% YoY growth. HCLSoftware also performed well, with a 28.1% sequential growth in constant currency. The operating margin, including restructuring costs but excluding the one-time labor code impact, stood at 18.6%, up 111 basis points QoQ. Net new bookings were strong at $3 billion, reflecting a 17% QoQ and 43% YoY growth."
+    },
+    "forward_guidance": {
+      "score": 0.9335,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9335,
+        "positive": 0.9505,
+        "negative": 0.0171,
+        "neutral": 0.0324,
+        "chunks_scored": 1
+      },
+      "text": "Management provided an optimistic outlook, raising the full-year services revenue growth guidance to 4.75% to 5.25% in constant currency terms, and the company-level guidance to 4% to 4.5%. They remain on track to deliver on the full-year EBIT margin guidance of 17% to 18%. The guidance excludes contributions from recent acquisitions, indicating a focus on organic growth. The language used was confident, with phrases like 'sustained growth momentum' and 'standout quarter' suggesting a bullish stance on future performance."
+    },
+    "risk_language": {
+      "score": -0.9098,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9098,
+        "positive": 0.0364,
+        "negative": 0.9461,
+        "neutral": 0.0175,
+        "chunks_scored": 1
+      },
+      "text": "The call addressed several risks, including restructuring expenses and the impact of new labor costs. Management noted a slight dip in margins due to wage hikes and furloughs, but expressed confidence in recovering these in the future. There was mention of tariff uncertainties affecting the manufacturing vertical, particularly in the auto segment. Management was forthright about these challenges, acknowledging the need for further clarifications on labor code regulations and the potential impact on margins."
+    },
+    "investor_confidence": {
+      "score": 0.931,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.931,
+        "positive": 0.9463,
+        "negative": 0.0154,
+        "neutral": 0.0383,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and conviction throughout the call, with CEO C. Vijayakumar expressing confidence in the company's growth trajectory and pipeline. Analyst questions were addressed directly, with detailed explanations provided for financial metrics and strategic initiatives. The mention of strong net new bookings and a robust pipeline reinforced management's credibility. The call concluded with a positive note, emphasizing the company's commitment to client value creation and market opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "Strong revenue growth across segments",
+    "Raised full-year revenue guidance",
+    "Robust net new bookings",
+    "Improved operating margins",
+    "Successful AI-led service transformations",
+    "Strong pipeline and market opportunities"
+  ],
+  "key_negative_drivers": [
+    "Impact of restructuring expenses",
+    "Wage hike and furlough seasonality affecting margins",
+    "Tariff uncertainties in the manufacturing vertical",
+    "Pending clarifications on labor code regulations"
+  ],
+  "notable_phrases": [
+    "standout quarter on all fronts",
+    "sustained growth momentum",
+    "confident of recovering",
+    "strong traction in applications and engineering",
+    "highest in the last four years",
+    "AI propositions continue to drive",
+    "robust growth",
+    "clear leader in an AI accelerated world"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant revenue growth and improved margins, despite some restructuring costs. Forward guidance was optimistic, with raised revenue targets and a focus on organic growth. Risks were acknowledged, particularly around labor costs and tariff uncertainties, but management expressed confidence in overcoming these challenges. Investor confidence was bolstered by clear communication and a strong pipeline, leading to a cautiously bullish overall tone."
+}

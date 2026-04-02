@@ -1,0 +1,157 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Sashidhar Jagdishan",
+      "role": "Managing Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "credit growth",
+        "funding",
+        "profitability",
+        "CD ratio",
+        "future growth"
+      ],
+      "direct_answers": [
+        "Mahrukh Adajania's question on LDR and agri compliance"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Sashidhar Jagdishan, the CEO and MD, expressed confidence in the company's performance and future growth prospects. He highlighted the encouraging credit growth and maintained a positive outlook on funding through disciplined rate management. Jagdishan emphasized the importance of maintaining a downward glide path for the CD ratio and reiterated the company's commitment to achieving its growth targets. He acknowledged the challenges posed by liquidity issues but remained optimistic about the company's ability to outpace loan growth in the coming year. Overall, his tone was confident and forward-looking, with a focus on sustainable profitability and customer engagement.",
+      "sentiment_score": 0.6979,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6979,
+        "positive": 0.7671,
+        "negative": 0.0692,
+        "neutral": 0.1637,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Srinivasan Vaidyanathan",
+      "role": "Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "LDR",
+        "agri compliance",
+        "deposit growth",
+        "bulk deposits"
+      ],
+      "direct_answers": [
+        "Mahrukh Adajania's question on LDR and agri compliance",
+        "Kunal Shah's question on deposit growth and bulk deposits"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Srinivasan Vaidyanathan, the CFO, provided detailed responses to questions regarding the Loan-to-Deposit Ratio (LDR) and agri compliance. He explained the company's commitment to a downward glide path for the LDR and addressed the regulatory impact on the agri portfolio, noting that necessary provisions have been made. Vaidyanathan also discussed the factors affecting deposit growth and the company's strategies to manage bulk deposits. His tone was neutral, focusing on providing clarity and assurance about the company's financial strategies and regulatory compliance.",
+      "sentiment_score": 0.0431,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0431,
+        "positive": 0.079,
+        "negative": 0.0359,
+        "neutral": 0.8851,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Kaizad Bharucha",
+      "role": "Deputy Managing Director",
+      "tone": "neutral",
+      "key_topics": [
+        "asset quality",
+        "market competition"
+      ],
+      "direct_answers": [
+        "Chintan's question on asset quality",
+        "Jayant Kharote's question on market competition"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Kaizad Bharucha, the Deputy Managing Director, addressed questions related to asset quality and market competition. He acknowledged the presence of irrational pricing in the auto and home loan segments but expressed confidence that such pricing would not be sustainable in the long term. Bharucha's responses were straightforward and neutral, providing insights into the company's perspective on market dynamics and asset quality trends.",
+      "sentiment_score": -0.0372,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0372,
+        "positive": 0.06,
+        "negative": 0.0972,
+        "neutral": 0.8429,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mahrukh Adajania",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "LDR",
+        "agri compliance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mahrukh Adajania, an analyst, posed questions concerning the Loan-to-Deposit Ratio (LDR) and agri compliance. Her inquiries were focused on understanding the timeline for achieving a specific LDR target and the potential regulatory impacts on the agri portfolio. Her tone was inquisitive, seeking clarity on the bank's strategic plans and regulatory compliance.",
+      "sentiment_score": -0.0616,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0616,
+        "positive": 0.0654,
+        "negative": 0.127,
+        "neutral": 0.8075,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kunal Shah",
+      "role": "Analyst",
+      "tone": "inquisitive",
+      "key_topics": [
+        "LDR",
+        "deposit growth"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kunal Shah, an analyst, focused his questions on the Loan-to-Deposit Ratio (LDR) and the bank's deposit growth strategy. He sought to understand the reasons behind the slower deposit growth and the measures the bank plans to implement to achieve its LDR targets. His tone was inquisitive, aiming to gain insights into the bank's operational strategies and future growth plans.",
+      "sentiment_score": -0.2118,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.2118,
+        "positive": 0.1418,
+        "negative": 0.3536,
+        "neutral": 0.5046,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements and interactions during the call. For management speakers, the analysis includes whether they answered analyst questions directly or provided vague responses. A narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON structure is then populated with this information, ensuring it adheres to the specified schema.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

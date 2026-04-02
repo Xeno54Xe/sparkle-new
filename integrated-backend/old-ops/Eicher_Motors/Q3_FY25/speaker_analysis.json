@@ -1,0 +1,175 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could ask questions and reminding them of the call's recording status. The tone was neutral, focusing on logistics and ensuring the smooth operation of the call.",
+      "sentiment_score": 0.0078,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0078,
+        "positive": 0.0319,
+        "negative": 0.0241,
+        "neutral": 0.944,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mukesh Saraf",
+      "role": "Avendus Spark",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction of management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mukesh Saraf introduced the management team participating in the earnings call. His tone was neutral, focusing on welcoming participants and setting the stage for the management's presentations.",
+      "sentiment_score": 0.2362,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2362,
+        "positive": 0.2514,
+        "negative": 0.0152,
+        "neutral": 0.7333,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Siddhartha Lal",
+      "role": "Executive Chairman, Eicher Motors Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "leadership transitions",
+        "future outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Siddhartha Lal expressed confidence in Eicher Motors' performance, highlighting record-breaking financial results and significant milestones such as the launch of new motorcycles and entry into electric mobility. He also discussed leadership transitions, positioning the company for future growth. His tone was confident, emphasizing the company's achievements and strategic direction.",
+      "sentiment_score": 0.9272,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9272,
+        "positive": 0.9388,
+        "negative": 0.0116,
+        "neutral": 0.0497,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "B. Govindarajan",
+      "role": "Managing Director, Eicher Motors Limited and CEO, Royal Enfield",
+      "tone": "optimistic",
+      "key_topics": [
+        "Royal Enfield performance",
+        "product launches",
+        "market share"
+      ],
+      "direct_answers": [
+        "Amyn Pirani's question on OBD2B cost inflation"
+      ],
+      "dodged_or_vague": [
+        "Sanjaya Satapathy's question on sustainable margin"
+      ],
+      "summary": "B. Govindarajan was optimistic about Royal Enfield's performance, citing strong sales growth and successful product launches. He highlighted the company's expansion in international markets and progress in electric mobility. While he directly addressed some questions, he was vague about providing specific guidance on sustainable margins.",
+      "sentiment_score": 0.93,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.93,
+        "positive": 0.9413,
+        "negative": 0.0113,
+        "neutral": 0.0473,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vinod Aggarwal",
+      "role": "Vice Chairman, Eicher Motors Limited and MD and CEO of VECV",
+      "tone": "optimistic",
+      "key_topics": [
+        "VECV performance",
+        "industry outlook",
+        "capex"
+      ],
+      "direct_answers": [
+        "Mumuksh Mandlesha's question on CV industry outlook"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vinod Aggarwal was optimistic about VECV's performance, highlighting record sales and strong demand in the bus segment. He provided a positive outlook for the commercial vehicle industry, supported by government capital expenditure trends. He directly answered questions about industry outlook and capex plans, maintaining an optimistic tone throughout.",
+      "sentiment_score": -0.4268,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4268,
+        "positive": 0.2744,
+        "negative": 0.7012,
+        "neutral": 0.0244,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vidhya Srinivasan",
+      "role": "CFO, Eicher Motors Limited",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "gross margin"
+      ],
+      "direct_answers": [
+        "Mumuksh Mandlesha's question on gross margin"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vidhya Srinivasan maintained a neutral tone while discussing Eicher Motors' financial performance. She explained the factors affecting gross margins, attributing changes to product mix and pricing strategies. Her responses were direct and focused on providing clarity on financial metrics.",
+      "sentiment_score": 0.5826,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5826,
+        "positive": 0.6207,
+        "negative": 0.0381,
+        "neutral": 0.3412,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis identifies each speaker and their role, extracts key statements, assesses tone, and evaluates how management addressed analyst questions. The JSON structure captures the essence of each speaker's contribution, ensuring a comprehensive understanding of the earnings call dynamics.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

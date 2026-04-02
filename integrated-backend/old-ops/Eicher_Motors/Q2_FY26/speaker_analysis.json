@@ -1,0 +1,137 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Mukesh Saraf",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mukesh Saraf served as the moderator for the Eicher Motors earnings call, providing a neutral and professional tone. He introduced the call, outlined the logistics, and facilitated the transition to the management team for their presentations. His role was primarily to ensure the smooth running of the call and to manage the question and answer session.",
+      "sentiment_score": 0.0565,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0565,
+        "positive": 0.0698,
+        "negative": 0.0133,
+        "neutral": 0.917,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "B. Govindarajan",
+      "role": "MD, Eicher Motors Limited and CEO, Royal Enfield",
+      "tone": "optimistic",
+      "key_topics": [
+        "financial performance",
+        "product launches",
+        "market share",
+        "future outlook"
+      ],
+      "direct_answers": [
+        "operating expenses",
+        "capacity addition"
+      ],
+      "dodged_or_vague": [
+        "forward guidance on percentages"
+      ],
+      "summary": "B. Govindarajan delivered an optimistic overview of Eicher Motors' performance, highlighting record revenues and profits. He emphasized the success of new product launches and the company's strong market position. Govindarajan was confident about future growth, citing robust demand and consumer confidence. He directly addressed questions about operating expenses and capacity but avoided giving specific forward guidance on growth percentages.",
+      "sentiment_score": 0.9315,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9315,
+        "positive": 0.9503,
+        "negative": 0.0188,
+        "neutral": 0.0308,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vinod Aggarwal",
+      "role": "Vice Chairman, Eicher Motors Limited, MD and CEO, VE Commercial Vehicles Limited",
+      "tone": "confident",
+      "key_topics": [
+        "VECV performance",
+        "market position",
+        "future investments"
+      ],
+      "direct_answers": [
+        "volume outlook",
+        "margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vinod Aggarwal confidently reported on the strong performance of VE Commercial Vehicles, noting record sales and strategic product launches. He emphasized the company's focus on long-term value creation and customer engagement. Aggarwal provided direct answers regarding volume outlook and margins, reflecting a clear understanding of the business dynamics and future prospects.",
+      "sentiment_score": 0.8822,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8822,
+        "positive": 0.8893,
+        "negative": 0.0071,
+        "neutral": 0.1036,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Vidhya Srinivasan",
+      "role": "CFO, Eicher Motors Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "financial metrics",
+        "commodity costs",
+        "margins"
+      ],
+      "direct_answers": [
+        "commodity costs",
+        "margins"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Vidhya Srinivasan provided a cautious overview of Eicher Motors' financial metrics, focusing on the impact of commodity costs and margins. She detailed the effects of price increases and product mix on the company's financial performance. Srinivasan directly addressed questions about commodity costs and margins, indicating a careful approach to financial management amidst market challenges.",
+      "sentiment_score": 0.5962,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5962,
+        "positive": 0.636,
+        "negative": 0.0398,
+        "neutral": 0.3242,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies four key speakers: Mukesh Saraf as the moderator, B. Govindarajan as the MD and CEO of Eicher Motors and Royal Enfield, Vinod Aggarwal as the Vice Chairman and CEO of VE Commercial Vehicles, and Vidhya Srinivasan as the CFO. Each speaker's key statements are extracted to capture their contributions and tone. Govindarajan's tone is optimistic, focusing on growth and market strength, while Aggarwal is confident about VECV's performance and future investments. Srinivasan adopts a cautious tone, addressing financial metrics and commodity costs. The JSON captures direct answers and any deflections or vague responses, providing a comprehensive speaker-wise analysis of the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

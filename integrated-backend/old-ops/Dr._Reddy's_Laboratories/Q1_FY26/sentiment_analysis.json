@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.0878,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9304,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9304,
+        "positive": 0.023,
+        "negative": 0.9534,
+        "neutral": 0.0236,
+        "chunks_scored": 1
+      },
+      "text": "The quarter began on a positive note, marked by a steady double-digit revenue growth. We delivered an EBITDA margin of 26.7%, modestly ahead of our aspiration of 25%. Consolidated revenues for the quarter stood at ₹8,545 crores, which is $997 million, a growth of 11% YoY basis and remaining flat on sequential basis. The profit before tax for the quarter stood at ₹1,905 crores, that is $222 million. Profit after tax attributable to equity holders of the parent for the quarter stood at ₹1,419 crores, which is $166 million, a growth of 2% YoY and a decline of 11% QoQ. The EBITDA margin stood at 26.7% and was lower by 149 basis points year-over-year and 243 basis points on QoQ basis."
+    },
+    "forward_guidance": {
+      "score": 0.9277,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9277,
+        "positive": 0.938,
+        "negative": 0.0103,
+        "neutral": 0.0517,
+        "chunks_scored": 1
+      },
+      "text": "Our performance in Q1 highlights consistent performance and steady progress of our strategic agenda. We delivered a double-digit growth in our base business, advanced critical pipeline programs, including Semaglutide and Abatacept. We are also consistent with our strategic priorities, as we scale our presence in Consumer Health, Innovative therapies and Biosimilars. We expect a pick-up in the launch momentum in the remainder of the fiscal year, which is expected to support recovery and drive growth in this segment. For the full fiscal, we expect the R&D investment to be in the range of 7-7.5% of sales."
+    },
+    "risk_language": {
+      "score": -0.4891,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.4891,
+        "positive": 0.1427,
+        "negative": 0.6318,
+        "neutral": 0.2255,
+        "chunks_scored": 1
+      },
+      "text": "The USFDA inspected our Middleburgh API facility in New York and issued a Form 483 with two observations. Following our responses, the site has been classified as VAI. The agency also conducted a GMP inspections at CTO-5, our API facility in Miryalaguda, Telangana, and issued a Form 483 with two observations. Last week, the USFDA conducted a GMP and Pre-Approval Inspection at our FTO-11 formulations facility in Srikakulam, Andhra Pradesh, resulting in a Form 483 with seven observations. We will respond within the required timelines. The softness in the US generics market was primarily due to price erosion in select products, primarily Lenalidomide."
+    },
+    "investor_confidence": {
+      "score": 0.9319,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9319,
+        "positive": 0.9424,
+        "negative": 0.0105,
+        "neutral": 0.0471,
+        "chunks_scored": 1
+      },
+      "text": "We appreciate your time and interest. Our results were broad-based, except for some softness in US generics market. We delivered EBITDA margins of 27%. The RoCE for the quarter was 22%. We closed the quarter with a net cash surplus of $341 million, reinforcing our strong balance sheet position. Our biosimilars business gained momentum this quarter through a strategic collaboration with Alvotech. We remain committed to strengthening our pipeline as a key driver of future growth, while actively pursuing strategic collaborations to accelerate innovation and expand our capabilities."
+    }
+  },
+  "key_positive_drivers": [
+    "Steady double-digit revenue growth",
+    "EBITDA margin of 26.7%",
+    "Net cash surplus of $341 million",
+    "Strategic collaboration with Alvotech",
+    "11% YoY revenue growth"
+  ],
+  "key_negative_drivers": [
+    "Price erosion in US generics market",
+    "Form 483 observations from USFDA",
+    "11% QoQ decline in profit after tax",
+    "Lower business margins in PSAI"
+  ],
+  "notable_phrases": [
+    "Steady double-digit revenue growth",
+    "EBITDA margin of 26.7%",
+    "Net cash surplus of $341 million",
+    "Price erosion in select products",
+    "Form 483 with seven observations",
+    "Strategic collaboration with Alvotech",
+    "Consistent performance and steady progress",
+    "Strong balance sheet position"
+  ],
+  "chain_of_thought": "The financial performance showed steady growth with an EBITDA margin slightly above expectations, though profit after tax declined QoQ. Forward guidance was optimistic with expectations of growth in the fiscal year and strategic investments in key areas. Risk language highlighted regulatory challenges with USFDA observations, but management was proactive in addressing these. Investor confidence was bolstered by strategic collaborations and a strong balance sheet, despite some market softness."
+}

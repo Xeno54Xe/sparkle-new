@@ -1,0 +1,136 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Veenit Pasad",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "Introduction",
+        "Conference management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Veenit Pasad served as the moderator for the earnings call, ensuring the smooth flow of the session. He introduced the call, outlined the procedure for participants, and handed over the session to the management team. His tone remained neutral and professional throughout the call.",
+      "sentiment_score": 0.0497,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0497,
+        "positive": 0.0632,
+        "negative": 0.0135,
+        "neutral": 0.9233,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Agarwal",
+      "role": "Head of Investor Relations and ESG",
+      "tone": "neutral",
+      "key_topics": [
+        "Introduction",
+        "Earnings call structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Agarwal provided a brief introduction to the earnings call, setting the stage for the management's remarks and the subsequent Q&A session. His role was primarily to facilitate the transition to Ashwani Gupta's opening comments, maintaining a neutral tone.",
+      "sentiment_score": 0.0591,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0591,
+        "positive": 0.0736,
+        "negative": 0.0145,
+        "neutral": 0.9119,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ashwani Gupta",
+      "role": "Whole-Time Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "Record quarter",
+        "Financial growth",
+        "Strategy execution",
+        "Market share",
+        "Future outlook"
+      ],
+      "direct_answers": [
+        "Domestic Ports performance",
+        "International Ports margins"
+      ],
+      "dodged_or_vague": [
+        "Future EBITDA guidance"
+      ],
+      "summary": "Ashwani Gupta expressed confidence in the company's performance, highlighting a record quarter with significant growth across various metrics. He emphasized the success of the strategic focus on Logistics, Marine, and International Ports, noting improvements in market share and financial returns. Gupta addressed questions on domestic and international port performance directly but was vague about future EBITDA guidance, focusing instead on ongoing efforts and strategic execution.",
+      "sentiment_score": 0.9376,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9376,
+        "positive": 0.949,
+        "negative": 0.0114,
+        "neutral": 0.0397,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "D. Muthukumaran",
+      "role": "CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "Financial metrics",
+        "Rating outlook",
+        "Operational performance"
+      ],
+      "direct_answers": [
+        "Rating outlook",
+        "International Ports margins"
+      ],
+      "dodged_or_vague": [
+        "NQXT acquisitions timeline"
+      ],
+      "summary": "D. Muthukumaran provided insights into the company's financial health and rating outlook, expressing cautious optimism about future upgrades. He highlighted the company's strong balance sheet and operational performance as justifications for a stable rating. While he answered questions about financial metrics and international port margins, he was less specific about the timeline for NQXT acquisitions, indicating a wait-and-see approach.",
+      "sentiment_score": 0.0599,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0599,
+        "positive": 0.084,
+        "negative": 0.0241,
+        "neutral": 0.8919,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The transcript includes multiple speakers, each with distinct roles and contributions. The moderator, Veenit Pasad, facilitated the call, while Rahul Agarwal introduced the session. Ashwani Gupta, as CEO, provided a confident overview of the company's record performance and strategic focus, addressing some questions directly but remaining vague on future EBITDA guidance. D. Muthukumaran, the CFO, discussed financial metrics and rating outlook with a cautious tone, providing direct answers on some topics while being less specific on others. Each speaker's statements were analyzed for tone, key topics, and the nature of their responses to questions.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ramandeep Sahni",
+      "role": "Chief Financial Officer, Bajaj Finserv Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "consolidated results",
+        "insurance operations",
+        "forward-looking statements",
+        "accounting standards",
+        "joint venture with Allianz",
+        "financial results"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [
+        "forward-looking statements are just estimates and do not constitute an assurance"
+      ],
+      "summary": "Ramandeep Sahni opened the call with a cautious tone, emphasizing the focus on consolidated results and the insurance operations of Bajaj Finserv. He was careful to note that any forward-looking statements were merely estimates, indicating a cautious approach to future projections. Sahni also provided updates on accounting standards and the joint venture with Allianz, highlighting regulatory compliance and strategic partnerships. His statements were detailed but avoided making definitive assurances about future performance.",
+      "sentiment_score": 0.0204,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0204,
+        "positive": 0.0393,
+        "negative": 0.0189,
+        "neutral": 0.9418,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Tarun Chugh",
+      "role": "Managing Director and Chief Executive Officer, Bajaj Life Insurance Limited",
+      "tone": "confident",
+      "key_topics": [
+        "product mix",
+        "growth strategy",
+        "GST impact",
+        "protection plans"
+      ],
+      "direct_answers": [
+        "acknowledging the significant change"
+      ],
+      "dodged_or_vague": [
+        "I would not jump ahead of my time, and I would not make too many forward-looking statements yet"
+      ],
+      "summary": "Tarun Chugh displayed confidence in discussing Bajaj Life Insurance's growth strategy and product mix. He acknowledged the significant changes and improvements in the company's performance, particularly in protection plans. While he was optimistic about the future, he avoided making specific forward-looking statements, preferring a step-by-step approach. Chugh's responses were generally direct, but he maintained a cautious stance on future projections.",
+      "sentiment_score": 0.1605,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1605,
+        "positive": 0.1756,
+        "negative": 0.0151,
+        "neutral": 0.8093,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Devang Mody",
+      "role": "Managing Director and Chief Executive Officer, Bajaj Finserv Health Limited",
+      "tone": "confident",
+      "key_topics": [
+        "health transactions",
+        "North Star metrics",
+        "break-even target"
+      ],
+      "direct_answers": [
+        "we should break even in FY'28"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Devang Mody spoke with confidence about Bajaj Finserv Health's strategic focus on key metrics and the path to profitability. He emphasized the importance of health transactions and the creation of use cases as critical indicators of success. Mody was clear about the company's break-even target for FY'28, demonstrating a strong grasp of the business's financial trajectory. His responses were direct and focused on measurable outcomes.",
+      "sentiment_score": 0.572,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.572,
+        "positive": 0.6015,
+        "negative": 0.0294,
+        "neutral": 0.3691,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator maintained a neutral tone throughout the call, focusing on logistical aspects and ensuring the smooth operation of the conference. They provided instructions for participants and facilitated the transition between speakers. The moderator's role was primarily functional, ensuring that the call proceeded according to schedule and that participants had the opportunity to engage during the Q&A session.",
+      "sentiment_score": 0.024,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.024,
+        "positive": 0.0421,
+        "negative": 0.018,
+        "neutral": 0.9399,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted for each speaker, focusing on specific language and forward-looking statements. The tone of each speaker is assessed based on their language and approach to questions. For management speakers, the analysis notes which questions were answered directly and which were deflected or avoided. Finally, a narrative summary is crafted for each speaker, capturing their contribution to the call and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

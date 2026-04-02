@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1141,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.9537,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9537,
+        "positive": 0.0144,
+        "negative": 0.968,
+        "neutral": 0.0176,
+        "chunks_scored": 1
+      },
+      "text": "In Quarter 2, Wipro's IT services revenue stood at $2.6 billion with sequential growth of 0.3% in constant currency, which is within the guided range. However, revenue declined 2.6% year-on-year in constant currency terms. Operating margins for Q2 were at 16.7%, contracting 60 basis points quarter-on-quarter, impacted by a one-off charge due to a client bankruptcy. Adjusted margins were at 17.2%, an expansion of 40 basis points year-on-year. Americas 1 showed growth of 0.5% sequentially and 5% year-on-year, while Americas 2 and Europe faced declines. Net income and EPS grew 1% year-on-year, with operating cash flows at 104% of net income."
+    },
+    "forward_guidance": {
+      "score": 0.9056,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9056,
+        "positive": 0.9324,
+        "negative": 0.0267,
+        "neutral": 0.0409,
+        "chunks_scored": 1
+      },
+      "text": "For Quarter 3, Wipro projects sequential IT services revenue growth of minus 0.5% to plus 1.5% in constant currency. The guidance reflects a cautious outlook due to seasonal factors like furloughs and lower working days. The Harman DTS acquisition is expected to close during the quarter but is not included in the guidance. Management emphasized converting the strong backlog into revenue while maintaining operational discipline. The Phoenix deal is expected to start generating revenue from Quarter 3, providing further momentum."
+    },
+    "risk_language": {
+      "score": -0.2459,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.2459,
+        "positive": 0.3267,
+        "negative": 0.5726,
+        "neutral": 0.1008,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several headwinds, including margin pressures from large deal ramp-ups and investments for growth. The impact of a client bankruptcy event was a notable risk, affecting operating margins. There are challenges in the Consumer, Energy, and Manufacturing sectors due to tariff uncertainties. The company is also facing competitive pressures in vendor consolidation and AI-powered transformations. Despite these challenges, management is implementing initiatives to offset margin pressures."
+    },
+    "investor_confidence": {
+      "score": 0.8886,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8886,
+        "positive": 0.9081,
+        "negative": 0.0195,
+        "neutral": 0.0724,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency, addressing analyst questions directly and providing detailed explanations of financial metrics and strategic initiatives. They emphasized the importance of operational discipline and converting backlog into revenue. The call highlighted strong deal wins and a robust pipeline, indicating confidence in future growth. However, the cautious guidance and acknowledgment of headwinds suggest a balanced approach. Management's credibility was reinforced by their forthrightness about challenges and strategic responses."
+    }
+  },
+  "key_positive_drivers": [
+    "Sequential growth in Americas 1",
+    "Strong performance in Healthcare, Technology, and Communication sectors",
+    "Phoenix deal set to generate revenue",
+    "Strong deal wins and robust pipeline",
+    "Operational cash flows higher than net income"
+  ],
+  "key_negative_drivers": [
+    "Revenue decline year-on-year",
+    "Operating margin contraction due to client bankruptcy",
+    "Challenges in Consumer, Energy, and Manufacturing sectors",
+    "Margin pressures from large deal ramp-ups",
+    "Seasonal headwinds in Quarter 3"
+  ],
+  "notable_phrases": [
+    "Our endeavor will be to maintain the margins in a narrow band",
+    "Sequential IT services revenue growth of minus 0.5% to plus 1.5%",
+    "The Harman DTS acquisition is expected to close",
+    "We are seeing strong momentum in Europe",
+    "Our operating margins were impacted by a one-off charge",
+    "We continue to see momentum in BFSI",
+    "Our priority remains converting our strong backlog into revenue",
+    "Operational cash flows continue to remain higher than our net income"
+  ],
+  "chain_of_thought": "The financial performance showed modest sequential growth but a year-on-year decline, with margins impacted by a one-off charge. Forward guidance was cautious, reflecting seasonal headwinds and ongoing investments. Risk language acknowledged margin pressures and sector challenges, but management was forthright about strategic initiatives to mitigate these. Investor confidence was supported by strong deal wins and a robust pipeline, though tempered by cautious guidance."
+}

@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.1658,
+  "overall_sentiment_label": "Neutral",
+  "overall_sentiment_colour": "#F9A825",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.5848,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.5848,
+        "positive": 0.1626,
+        "negative": 0.7475,
+        "neutral": 0.0899,
+        "chunks_scored": 1
+      },
+      "text": "UltraTech Cement reported a like-for-like growth of 7% for overall consolidated operations, with a notable 13.2% year-on-year growth for the UltraTech brand itself. The company achieved a sales volume of over 31 million tons despite challenging weather conditions. EBITDA per metric ton was INR966, with India Cements and Kesoram assets contributing INR386 and INR755 per ton, respectively. The company faced higher costs this quarter, including maintenance, advertising, and staff costs, which collectively impacted the per ton cost by approximately INR200. However, management expects some of these costs to decrease in the next quarter. Capacity utilization varied regionally, with North and South in the 70s, West in the high 60s, and Central and East in the low 60s."
+    },
+    "forward_guidance": {
+      "score": 0.9147,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9147,
+        "positive": 0.9246,
+        "negative": 0.0099,
+        "neutral": 0.0655,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed confidence in achieving a 6% to 7% industry growth for the full year, with UltraTech's own volume growth boosting this outlook. The company is on track to complete its expansion plans, aiming for 200 million tons of capacity by the end of the financial year. Future growth is focused on North and West markets, with 22.8 million tons of incremental capacity planned. The company is also preparing for a production launch in its cables and wires business by Q3 CY '26. Management remains optimistic about long-term growth, citing a 7% to 8% CAGR and significant infrastructure projects like Google's $15 billion AI hub in Andhra as demand drivers."
+    },
+    "risk_language": {
+      "score": -0.583,
+      "label": "Negative",
+      "colour": "#E53935",
+      "finbert": {
+        "score": -0.583,
+        "positive": 0.1383,
+        "negative": 0.7212,
+        "neutral": 0.1405,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several cost pressures, including higher fuel costs and increased maintenance and advertising expenses. There was a specific mention of the impact of coal and pet coke prices on fuel costs, which rose to INR1.8 per Kcal. The company is also aware of potential oversupply risks in the North market due to competitor expansions but remains confident in its market share growth. Regulatory changes, such as the GST increase on coal, were discussed, though management believes these will not significantly impact profitability. The company is managing its debt levels, with plans to reduce net debt EBITDA to below 0.7x post-expansion."
+    },
+    "investor_confidence": {
+      "score": 0.9174,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9174,
+        "positive": 0.9289,
+        "negative": 0.0115,
+        "neutral": 0.0596,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence throughout the call, addressing analyst questions directly and providing detailed insights into expansion plans and cost management strategies. The CFO, Atul Daga, emphasized the company's ability to manage risks and leverage internal accruals for funding expansions. The call highlighted transparency in reporting, with detailed breakdowns of cost impacts and future growth plans. Analysts expressed appreciation for the level of detail and transparency provided, which bolstered investor confidence. Management's commitment to maintaining a strong market position and achieving growth targets was evident."
+    }
+  },
+  "key_positive_drivers": [
+    "13.2% growth in UltraTech brand",
+    "22.3% sales volume growth excluding acquisitions",
+    "200 million tons capacity target by year-end",
+    "7% to 8% CAGR long-term growth outlook",
+    "Google's $15 billion AI hub project",
+    "GST 2 benefits on coal costs"
+  ],
+  "key_negative_drivers": [
+    "Higher maintenance and advertising costs",
+    "Increased fuel costs",
+    "Potential oversupply in North market",
+    "Regulatory changes in GST on coal",
+    "Operating leverage impact due to lower sales volume",
+    "Cost pressures from coal and pet coke prices"
+  ],
+  "notable_phrases": [
+    "UltraTech as a brand has grown about 13.2%",
+    "We have sold more than 31 million tons of cement",
+    "Our expansion plans are going on full swing",
+    "We will complete or exit this financial year with 200 million tons of capacity",
+    "GST 2 will definitely boost demand for premium cement",
+    "We are confident that our capacity share will go up to 32%-33%",
+    "There is definitely scope for 20 - 25 million tons more",
+    "We will be again less than 0.7x net debt EBITDA"
+  ],
+  "chain_of_thought": "The call highlighted strong financial performance with significant growth in the UltraTech brand and overall sales volumes. Management provided a positive outlook for future growth, supported by expansion plans and infrastructure projects. However, they acknowledged cost pressures and potential market risks, particularly in the North. Despite these challenges, management's transparency and detailed responses to analyst questions reinforced investor confidence, leading to a cautiously bullish overall tone."
+}

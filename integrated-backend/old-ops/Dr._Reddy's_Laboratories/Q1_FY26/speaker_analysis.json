@@ -1,0 +1,131 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Aishwarya Sitharam",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aishwarya Sitharam served as the moderator for the earnings call, providing a structured introduction and managing the Q&A session. Her tone was neutral, focusing on procedural aspects of the call. She ensured that participants were aware of the format and how to engage with the management team during the Q&A segment.",
+      "sentiment_score": 0.0194,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0194,
+        "positive": 0.0376,
+        "negative": 0.0183,
+        "neutral": 0.9441,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Richa Periwal",
+      "role": "Head of Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "financial results availability"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Richa Periwal provided a formal introduction to the earnings call, welcoming participants and introducing the leadership team. Her tone was neutral, focusing on the availability of financial results and setting the stage for the presentations by the CEO and CFO. She ensured that participants were informed about where to access detailed financial information.",
+      "sentiment_score": 0.1233,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1233,
+        "positive": 0.1347,
+        "negative": 0.0115,
+        "neutral": 0.8538,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "M. V. Narasimham",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "EBITDA margin",
+        "revenue growth"
+      ],
+      "direct_answers": [
+        "It's ₹120 crores. Shashank, just, I would like to add, this is not like a one-time income. This always will be there, few quarters in a year going forward."
+      ],
+      "dodged_or_vague": [],
+      "summary": "M. V. Narasimham presented the financial highlights for the quarter, expressing confidence in the company's performance. He highlighted a steady double-digit revenue growth and an EBITDA margin of 26.7%, which exceeded their target. His tone was confident as he detailed the financial metrics and their implications for the company's strategic goals. He directly answered questions regarding specific financial figures, such as the out-licensing income.",
+      "sentiment_score": 0.9377,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9377,
+        "positive": 0.9573,
+        "negative": 0.0196,
+        "neutral": 0.0231,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Erez Israeli",
+      "role": "Chief Executive Officer",
+      "tone": "optimistic",
+      "key_topics": [
+        "strategic outlook",
+        "business highlights",
+        "growth opportunities"
+      ],
+      "direct_answers": [
+        "Yes.",
+        "I believe that it is going to be significant. The unmet need is very, very clear, especially for people that live here in India and so, I believe that it's a big opportunity."
+      ],
+      "dodged_or_vague": [
+        "I don't want to give you unreliable numbers. It's big. The potential is big. I don't want to say how much."
+      ],
+      "summary": "Erez Israeli provided an optimistic overview of the company's strategic outlook and business highlights. He emphasized the company's double-digit growth and advancements in pipeline programs. His tone was optimistic as he discussed growth opportunities in consumer health and biosimilars. While he directly answered some questions, he was evasive about providing specific numbers for potential market opportunities, indicating a cautious approach to forward-looking statements.",
+      "sentiment_score": 0.91,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.91,
+        "positive": 0.9191,
+        "negative": 0.0091,
+        "neutral": 0.0718,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis identifies four key speakers: Aishwarya Sitharam as the moderator, Richa Periwal as the Head of Investor Relations, M. V. Narasimham as the CFO, and Erez Israeli as the CEO. Each speaker's role and contributions to the call are assessed, focusing on their key statements, tone, and interaction with analysts. The management's responses to analyst questions are categorized into direct answers and those that were dodged or vague, providing insight into their communication strategy. The narrative summaries encapsulate each speaker's stance and key messages, reflecting their contribution to the earnings call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

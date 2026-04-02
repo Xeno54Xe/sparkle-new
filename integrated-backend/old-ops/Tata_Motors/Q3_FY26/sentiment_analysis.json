@@ -1,0 +1,85 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.898,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9399,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9399,
+        "positive": 0.9591,
+        "negative": 0.0192,
+        "neutral": 0.0217,
+        "chunks_scored": 1
+      },
+      "text": "Tata Motors reported a robust financial performance for Q3 FY26, with revenue reaching ₹21,533 crores, marking a 17% year-over-year increase, primarily driven by higher volumes. The EBITDA margin rose by 30 basis points, continuing a streak of double-digit EBITDA margin delivery for the 10th consecutive quarter. The profit before tax and exceptional items increased to ₹2,300 crores, an increase of ₹600 crores compared to last year. Free cash flow was strong at approximately ₹4,800 crores, outperforming the corresponding quarter last year. The company also reported a net cash position of ₹3,900 crores as of December '25, providing momentum for future growth. Year-to-date, revenue reached approximately ₹57,000 crores, representing a 6% Y-o-Y increase, with EBITDA margins improving to 12.4%, a rise of 80 bps compared to the previous year."
+    },
+    "forward_guidance": {
+      "score": 0.9375,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9375,
+        "positive": 0.9517,
+        "negative": 0.0142,
+        "neutral": 0.0341,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed optimism for the upcoming quarters, highlighting that Q4 is typically the strongest quarter. They anticipate continued strong cash flows and have maintained their guidance on cash flow and CapEx. The company is looking forward to a strong double-digit growth next year, driven by new product launches and increased demand in international markets such as Sri Lanka, SAARC, and the Middle East. The bus business is expected to grow at a higher single-digit rate, with increased capacity to meet anticipated demand. Management also mentioned the launch of 17 new trucks, including electric models, which are expected to accelerate volume growth and increase market presence."
+    },
+    "risk_language": {
+      "score": 0.9016,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9016,
+        "positive": 0.9228,
+        "negative": 0.0212,
+        "neutral": 0.056,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including commodity inflation and its impact on costs, which they have addressed by implementing a 1% price increase from January. They also noted the impact of exceptional items such as new labor code costs and demerger expenses, which are expected to be one-time occurrences. The company is aware of competitive pressures across all segments and is taking steps to mitigate supply chain bottlenecks, particularly in castings. Despite these challenges, management remains confident in their ability to manage risks through disciplined financial management and strategic initiatives."
+    },
+    "investor_confidence": {
+      "score": 0.7722,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7722,
+        "positive": 0.7848,
+        "negative": 0.0126,
+        "neutral": 0.2026,
+        "chunks_scored": 1
+      },
+      "text": "Management projected confidence and clarity during the call, addressing analyst questions directly and providing detailed explanations of their financial performance and strategic initiatives. They emphasized their commitment to profitable growth and maintaining financial prudence. The management team highlighted their disciplined approach to CapEx and cash flow management, reinforcing their credibility. They also provided transparency regarding exceptional items and their impact on financials, assuring investors that these are non-recurring. Overall, the tone was one of confidence in their strategic direction and ability to deliver on guidance."
+    }
+  },
+  "key_positive_drivers": [
+    "17% year-over-year revenue increase",
+    "10th consecutive quarter of double-digit EBITDA margin",
+    "Strong free cash flow of ₹4,800 crores",
+    "Launch of 17 new trucks including electric models",
+    "Strong demand in international markets"
+  ],
+  "key_negative_drivers": [
+    "Commodity inflation impacting costs",
+    "Exceptional items affecting financials",
+    "Supply chain bottlenecks in castings",
+    "Increased employee costs due to wage inflation"
+  ],
+  "notable_phrases": [
+    "17% year-over-year increase",
+    "10th consecutive quarter of double-digit EBITDA margin",
+    "Strong free cash flow",
+    "Exceptional items in this quarter",
+    "Launch of 17 new trucks",
+    "Strong double-digit growth next year",
+    "Commodity challenge",
+    "Disciplined financial management"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant revenue and profit growth, supported by robust cash flow and improved margins. Forward guidance was optimistic, with expectations of continued growth driven by new product launches and strong demand in key markets. Risk language acknowledged challenges such as commodity inflation and supply chain issues, but management expressed confidence in their mitigation strategies. Investor confidence signals were positive, with management providing clear and direct communication, reinforcing their credibility and strategic focus."
+}

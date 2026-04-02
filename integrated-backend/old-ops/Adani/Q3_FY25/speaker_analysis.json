@@ -1,0 +1,251 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Adani Enterprises Limited earnings call, ensuring smooth transitions between speakers and managing the Q&A session. They maintained a neutral tone throughout, focusing on logistical aspects of the call. The moderator concluded the session by thanking participants and signaling the end of the call.",
+      "sentiment_score": 0.0165,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0165,
+        "positive": 0.0376,
+        "negative": 0.0211,
+        "neutral": 0.9413,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mohit Kumar",
+      "role": "Host",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "management team"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mohit Kumar opened the earnings call by introducing the senior management team present, including Vinay Prakash, Robbie Singh, and Manan Vakharia. His role was primarily to set the stage for the detailed presentations and discussions that followed. He maintained a neutral tone, focusing on the formalities of the call.",
+      "sentiment_score": 0.068,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.068,
+        "positive": 0.0802,
+        "negative": 0.0122,
+        "neutral": 0.9075,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Robbie Singh",
+      "role": "CFO, Adani Enterprises",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "capex",
+        "project updates",
+        "debt management"
+      ],
+      "direct_answers": [
+        "No, we plan for what is called the long run volatility curve of roughly about 4%.",
+        "I think on the margin question, if you go back to our previous presentation, the margin largely is in line with what we indicated at that time.",
+        "I think that 10 GW is going as originally planned, it would not be preponed.",
+        "I think the status is - we are pretty much on track there.",
+        "Solar is external. Solar modules is external. Wind turbine is largely to AGEL.",
+        "For us, it is both retail plus utility market.",
+        "So on capex side, we have a slight variation because of various approvals etc.",
+        "Navi Mumbai itself will need capex.",
+        "Copper capex is mostly done."
+      ],
+      "dodged_or_vague": [
+        "We'll take this question as an FAQ and come specifically on the module mix in the domestic market.",
+        "I think on this, we will not be able to specifically answer this question for this quarter because we update that annually."
+      ],
+      "summary": "Robbie Singh, the CFO of Adani Enterprises, provided a comprehensive overview of the company's financial performance and strategic initiatives. He confidently highlighted the robust growth in EBITDA and income across various business segments, including the Green Hydrogen Ecosystem and Adani Airports. Singh addressed concerns about the impact of rupee volatility on finance charges and clarified the non-cash nature of certain costs. He also discussed the strategic divestment in Adani Wilmar, emphasizing its accretive impact on cash flow and EBITDA. While he directly answered several questions regarding financial projections and project timelines, he deferred some specifics to future updates, maintaining a confident and informative tone throughout.",
+      "sentiment_score": 0.5341,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.5341,
+        "positive": 0.5727,
+        "negative": 0.0386,
+        "neutral": 0.3888,
+        "chunks_scored": 6
+      }
+    },
+    {
+      "name": "Vinay Prakash",
+      "role": "Director-Adani Enterprises Limited and CEO-Natural Resources",
+      "tone": "confident",
+      "key_topics": [
+        "mining services",
+        "IRM business",
+        "commercial mining"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Vinay Prakash, Director and CEO of Natural Resources at Adani Enterprises, provided a detailed update on the company's mining services and IRM business. He confidently highlighted the company's pioneering role in the mine developer and operator concept in India, emphasizing their integrated business model and commitment to sustainable practices. Prakash reported significant growth in dispatch volumes, revenue, and EBITDA for the mining services segment. He also discussed the IRM business's strategic initiatives, including the development of an e-portal for online trading, which has expanded their market share. His tone was confident, reflecting the strong performance and strategic positioning of Adani Enterprises in the mining sector.",
+      "sentiment_score": 0.929,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.929,
+        "positive": 0.9394,
+        "negative": 0.0104,
+        "neutral": 0.0502,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Mahesh Patil",
+      "role": "Analyst, ICICI Securities",
+      "tone": "neutral",
+      "key_topics": [
+        "Navi Mumbai Airport",
+        "solar manufacturing"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mahesh Patil from ICICI Securities posed questions regarding the status of the Navi Mumbai Airport and the solar manufacturing order book. His inquiries were focused on understanding the operational timelines and financial implications of these projects. Patil maintained a neutral tone, seeking clarity on how revenues would be booked for aero charges and the impact of recent events on the U.S. market for solar manufacturing.",
+      "sentiment_score": 0.006,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.006,
+        "positive": 0.034,
+        "negative": 0.028,
+        "neutral": 0.9381,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Prateek Kumar",
+      "role": "Analyst, Jefferies",
+      "tone": "neutral",
+      "key_topics": [
+        "airport EBITDA",
+        "Adani Wilmar deal",
+        "leverage position"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Prateek Kumar from Jefferies asked detailed questions about the changes in airport EBITDA, the status of the Adani Wilmar deal, and the company's leverage position. He sought to understand the financial dynamics and future expectations regarding these areas. Kumar maintained a neutral tone, focusing on obtaining specific financial data and clarifications on the company's capex targets and debt figures.",
+      "sentiment_score": -0.0319,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0319,
+        "positive": 0.0416,
+        "negative": 0.0736,
+        "neutral": 0.8848,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Naman Jain",
+      "role": "Analyst, Kotak Institutional Equities",
+      "tone": "neutral",
+      "key_topics": [
+        "ANIL ecosystem",
+        "DCR market",
+        "10 GW target"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Naman Jain from Kotak Institutional Equities focused his questions on the ANIL ecosystem, seeking clarity on the sequential drop in exports, the realization in the domestic DCR market, and the timeline for the 10 GW target. He maintained a neutral tone, aiming to understand the company's strategic direction and market conditions. Jain also inquired about the pressure on EBITDA margins and requested specific data on WTG sales and EBITDA.",
+      "sentiment_score": -0.5498,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.5498,
+        "positive": 0.0649,
+        "negative": 0.6147,
+        "neutral": 0.3205,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Bhavik Shah",
+      "role": "Analyst, MK Ventures",
+      "tone": "neutral",
+      "key_topics": [
+        "capex plans",
+        "copper business",
+        "Navi Mumbai Airport"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Bhavik Shah from MK Ventures inquired about the company's capex plans for the next two years, focusing on the copper business and the Navi Mumbai Airport. He sought to understand the financial commitments and timelines for peak utilization in these areas. Shah maintained a neutral tone, asking for specific figures and clarifications on future capex requirements across various business segments.",
+      "sentiment_score": 0.0517,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0517,
+        "positive": 0.0705,
+        "negative": 0.0188,
+        "neutral": 0.9106,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dhaval Shah",
+      "role": "Analyst, RBSA Investment Managers",
+      "tone": "neutral",
+      "key_topics": [
+        "solar manufacturing",
+        "PVC capex",
+        "rupee depreciation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Dhaval Shah from RBSA Investment Managers asked questions regarding the solar manufacturing segment, specifically about revenue growth and EBITDA margins. He also sought clarification on the capex plans for PVC and the impact of rupee depreciation. Shah maintained a neutral tone, focusing on understanding the financial implications and strategic adjustments in these areas.",
+      "sentiment_score": 0.3926,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3926,
+        "positive": 0.4827,
+        "negative": 0.09,
+        "neutral": 0.4273,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 9,
+  "chain_of_thought": "The task involves identifying each speaker in the earnings call transcript, extracting their key statements, and analyzing their tone and responses. The moderator facilitated the call, maintaining a neutral tone and focusing on logistics. Mohit Kumar introduced the management team, setting the stage for the call. Robbie Singh, the CFO, provided detailed financial updates and addressed various strategic initiatives, maintaining a confident tone. He answered several questions directly but deferred some specifics to future updates. Vinay Prakash discussed the mining services and IRM business, highlighting growth and strategic initiatives with confidence. Analysts like Mahesh Patil, Prateek Kumar, Naman Jain, Bhavik Shah, and Dhaval Shah asked questions on various topics, maintaining a neutral tone and seeking clarity on financial and strategic aspects. Each speaker's contribution was analyzed based on their statements and interactions during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

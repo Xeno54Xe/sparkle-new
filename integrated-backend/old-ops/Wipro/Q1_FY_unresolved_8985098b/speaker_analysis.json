@@ -1,0 +1,155 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Dipak Bohra",
+      "role": "Senior Vice President (Corporate Treasurer & Investor Relations)",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "forward-looking statements",
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Dipak Bohra opened the earnings call by welcoming participants and outlining the agenda, which included presentations from key executives. He highlighted the presence of forward-looking statements and the associated risks, emphasizing that these are based on current expectations and may differ from actual results. His tone was neutral, focusing on procedural aspects of the call and ensuring participants were aware of the logistics and legal disclaimers.",
+      "sentiment_score": -0.0079,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0079,
+        "positive": 0.0271,
+        "negative": 0.035,
+        "neutral": 0.9379,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Srini Pallia",
+      "role": "Chief Executive Officer and Managing Director",
+      "tone": "cautious",
+      "key_topics": [
+        "macro uncertainty",
+        "AI and modernization",
+        "deal wins",
+        "financial performance",
+        "outlook"
+      ],
+      "direct_answers": [
+        "Gaurav Rateria's question on project pauses"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Srini Pallia provided an overview of the quarter, noting the macroeconomic uncertainties that affected demand. He highlighted the company's focus on AI, data, and modernization, which aligned with client priorities. Srini discussed significant deal wins and a strong pipeline, expressing cautious optimism for the future. He answered questions directly, particularly regarding project pauses, and maintained a cautious tone throughout, emphasizing the company's strategic focus on profitable growth despite external challenges.",
+      "sentiment_score": 0.9233,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9233,
+        "positive": 0.9342,
+        "negative": 0.0109,
+        "neutral": 0.0549,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aparna Iyer",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "margins",
+        "deal wins",
+        "capital allocation"
+      ],
+      "direct_answers": [
+        "Abhishek Kumar's question on deal TCV and ACV growth",
+        "Manik Taneja's question on client metrics"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Aparna Iyer presented a detailed financial overview, reporting a slight decline in IT services revenue but highlighting margin expansion. She confidently addressed questions about deal TCV and ACV growth, explaining the impact of longer deal tenors. Aparna also discussed the company's capital allocation strategy, including dividend payouts. Her tone was confident, reflecting a strong grasp of financial metrics and strategic initiatives aimed at maintaining operational excellence and profitability.",
+      "sentiment_score": -0.9555,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.9555,
+        "positive": 0.0119,
+        "negative": 0.9675,
+        "neutral": 0.0206,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Saurabh Govil",
+      "role": "Chief Human Resources Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "human resources",
+        "talent management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Saurabh Govil's presence was noted during the call, but he did not make any direct statements or contributions to the discussion. His role as Chief Human Resources Officer suggests a focus on talent management and HR-related strategies, although these were not explicitly covered in the excerpts provided.",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0,
+        "positive": 0.0,
+        "negative": 0.0,
+        "neutral": 1.0,
+        "chunks_scored": 0
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call logistics",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The Moderator facilitated the conference call, providing instructions for participants and managing the Q&A session. The tone was neutral, focusing on ensuring the smooth operation of the call and assisting participants as needed. The Moderator's role was crucial in maintaining the structure and flow of the discussion.",
+      "sentiment_score": 0.0145,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0145,
+        "positive": 0.0359,
+        "negative": 0.0214,
+        "neutral": 0.9427,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted for each speaker, focusing on verbatim quotes that included specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker, capturing their contributions, stance, and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

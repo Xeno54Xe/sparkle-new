@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.5848,
+  "overall_sentiment_label": "Positive",
+  "overall_sentiment_colour": "#43A047",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9346,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9346,
+        "positive": 0.9482,
+        "negative": 0.0136,
+        "neutral": 0.0381,
+        "chunks_scored": 1
+      },
+      "text": "Kotak Mahindra Bank reported a consolidated profit of Rs. 4,700 crore, marking a 10% increase year-over-year. The bank's net worth stands at Rs. 1,52,000 crore, with a book value per share growing by 23% to Rs. 769. Customer assets increased by 15% to Rs. 5,19,000 crore, and the capital adequacy ratio is strong at 23.4%. The standalone bank's profit after tax was Rs. 3,300 crore, contributing 72% to the group's profits, with a capital adequacy of 22.8% and a CET-1 ratio of 21.7%. The bank maintained a net interest margin (NIM) of 4.93% and a CASA ratio of 42.3%. Gross NPA was at 1.5%, with a provision coverage ratio of 73%. Despite the embargo, the bank managed to grow advances by 15% and deposits by 16%, indicating a stable financial performance amidst macroeconomic challenges."
+    },
+    "forward_guidance": {
+      "score": 0.9355,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9355,
+        "positive": 0.9475,
+        "negative": 0.012,
+        "neutral": 0.0405,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed 'cautious optimism' for the upcoming quarters, emphasizing a strategy built around customer centricity and transformation for scale. They anticipate growth at 1.5 to 2 times nominal GDP, with a focus on secured consumer banking and SME segments. The bank is optimistic about the potential for personal loan trends to improve and credit card portfolio stress to plateau. They plan to continue growing their business at a rate of 1.5 to 2 times GDP growth, with a focus on expanding market share in the credit card and personal loan segments once the embargo is lifted. The outlook for the next financial year includes hopes for better trends in the commercial vehicle segment and continued buoyancy in capital markets."
+    },
+    "risk_language": {
+      "score": -0.7979,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.7979,
+        "positive": 0.0657,
+        "negative": 0.8636,
+        "neutral": 0.0707,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged 'heightened volatility' and a 'slowdown in the economy' as significant risks. They noted stress in the microfinance portfolio and an increase in delinquencies in the commercial vehicle segment. The bank is 'very watchful' of the microfinance portfolio and has tightened collections and underwriting in response to increased delinquency. The macroeconomic environment poses challenges, but the bank remains focused on maintaining a conservative stance. Regulatory changes and competitive pressures in pricing were also highlighted as areas of concern."
+    },
+    "investor_confidence": {
+      "score": 0.9166,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9166,
+        "positive": 0.9281,
+        "negative": 0.0115,
+        "neutral": 0.0605,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of 'cautious optimism' and confidence in their strategy, emphasizing their focus on customer centricity and transformation for scale. They were transparent about the challenges faced, including the impact of the RBI embargo and macroeconomic volatility. Analyst questions were addressed directly, with management providing detailed explanations of financial metrics and strategic initiatives. The bank's commitment to maintaining a strong capital adequacy ratio and a conservative approach to risk management was reiterated, enhancing credibility and investor confidence."
+    }
+  },
+  "key_positive_drivers": [
+    "10% increase in consolidated profit",
+    "23% growth in book value per share",
+    "15% increase in customer assets",
+    "Strong capital adequacy ratio of 23.4%",
+    "Stable NIM at 4.93%",
+    "Growth in secured consumer banking and SME segments"
+  ],
+  "key_negative_drivers": [
+    "Heightened macroeconomic volatility",
+    "Slowdown in the economy",
+    "Stress in microfinance portfolio",
+    "Increased delinquencies in commercial vehicle segment",
+    "Regulatory changes impacting fee income",
+    "Competitive pressures in pricing"
+  ],
+  "notable_phrases": [
+    "cautious optimism",
+    "heightened volatility",
+    "slowdown in the economy",
+    "15% increase in customer assets",
+    "strong capital adequacy ratio",
+    "growth at 1.5 to 2 times GDP",
+    "stress in microfinance portfolio",
+    "maintaining a conservative stance"
+  ],
+  "chain_of_thought": "The financial performance was strong with significant profit and asset growth, despite macroeconomic challenges. Forward guidance was cautiously optimistic, with plans for growth in key segments. Risks were acknowledged, particularly macroeconomic volatility and portfolio stress. Investor confidence was bolstered by management's transparency and strategic focus."
+}

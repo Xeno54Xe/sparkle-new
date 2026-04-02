@@ -1,0 +1,88 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.6378,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.1789,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.1789,
+        "positive": 0.5745,
+        "negative": 0.3957,
+        "neutral": 0.0298,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed satisfaction with the financial results, stating they were 'in line with our expectations.' Credit growth was described as 'extremely encouraging,' with a focus on 'balanced credit across customer segments.' The easing rate cycle and CRR release were noted as catalysts for credit growth, which was 'slightly ahead of our expectations.' Funding through deposits maintained 'rate discipline,' and core individual retail customer segments were 'quite strong.' Despite falling short of 'strong ambitions,' management is confident that continued focus on strengths will bring the 'expected outcomes.' Cost of funds moved down, reflecting 'tailwind effects,' and CASA growth was 'positive.'"
+    },
+    "forward_guidance": {
+      "score": 0.8681,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8681,
+        "positive": 0.9048,
+        "negative": 0.0367,
+        "neutral": 0.0586,
+        "chunks_scored": 1
+      },
+      "text": "Management provided a cautiously optimistic outlook, indicating confidence in achieving a 'downward glide path' for the CD ratio by March '26 and '27. They expect top line growth to be 'in line with the system this financial year and faster than the system in the next financial year.' Liquidity and benign credit costs were seen as providing a 'lot of runway to grow.' The bank plans to intensify customer engagement and align pricing with a segmented approach. Management reiterated confidence in meeting the glide path for growth and emphasized the importance of maintaining a 'downward glide path' for sustainable profitability."
+    },
+    "risk_language": {
+      "score": 0.7326,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.7326,
+        "positive": 0.8095,
+        "negative": 0.0769,
+        "neutral": 0.1136,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the CD ratio and regulatory compliance. They acknowledged the importance of the CD ratio for sustainable profitability and expressed confidence in a 'downward glide path.' Regulatory inspection was completed, with a provision of about 5 billion already absorbed. Management emphasized the need to operate in a model acceptable to the regulator and mentioned ongoing recalibration of the agri portfolio. They acknowledged the challenges posed by liquidity conditions and external factors but expressed confidence in managing these risks effectively."
+    },
+    "investor_confidence": {
+      "score": 0.8859,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.8859,
+        "positive": 0.8973,
+        "negative": 0.0114,
+        "neutral": 0.0913,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and confidence, expressing gratitude to customers and staff for their support. They were open to questions and provided detailed responses, particularly on the LDR and agri compliance. Management emphasized their commitment to the glide path for growth and the CD ratio, projecting confidence in their strategies and the pillars in place to drive future growth. They acknowledged past shortfalls but remained optimistic about achieving their targets, demonstrating transparency and a willingness to engage with analysts."
+    }
+  },
+  "key_positive_drivers": [
+    "Credit growth ahead of expectations",
+    "Easing rate cycle as a catalyst",
+    "Strong core individual retail segments",
+    "Positive CASA growth",
+    "Cost of funds moving down",
+    "Confidence in achieving glide path"
+  ],
+  "key_negative_drivers": [
+    "Shortfall in strong ambitions",
+    "Regulatory compliance challenges",
+    "Liquidity conditions impacting availability",
+    "Need for recalibration of agri portfolio",
+    "Seasonality affecting LDR",
+    "External factors impacting growth"
+  ],
+  "notable_phrases": [
+    "in line with our expectations",
+    "extremely encouraging credit growth",
+    "slightly ahead of our expectations",
+    "confident that continued focus on our strengths",
+    "downward glide path for CD ratio",
+    "liquidity and benign credit costs provide runway",
+    "confident of the path forward",
+    "no regulatory benchmark for loan deposit ratio"
+  ],
+  "chain_of_thought": "The financial performance was satisfactory, with credit growth and funding strategies aligning with expectations. Forward guidance was cautiously optimistic, focusing on growth and CD ratio management. Risks were acknowledged, particularly regulatory compliance and liquidity challenges, but management expressed confidence in their strategies. Investor confidence was bolstered by management's transparency and engagement, projecting a cautiously bullish outlook."
+}

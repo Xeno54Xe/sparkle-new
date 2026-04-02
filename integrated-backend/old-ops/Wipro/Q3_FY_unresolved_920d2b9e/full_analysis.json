@@ -1,0 +1,449 @@
+{
+  "document": {
+    "document_id": "920d2b9e381d",
+    "company": "Wipro",
+    "quarter": "Q3",
+    "fiscal_year": null,
+    "filename": "c843cf72-b0ed-4444-b874-62c06e9bbbe9.pdf",
+    "relative_path": "Data/Wipro/c843cf72-b0ed-4444-b874-62c06e9bbbe9.pdf",
+    "file_size_bytes": 427330,
+    "file_checksum": "051f07c2a042612499444a349ca15a5d",
+    "discovered_at": "2026-03-19T07:15:00.821768+00:00",
+    "analyzed": false,
+    "analyzed_at": null,
+    "output_directory": null
+  },
+  "analysed_at": "2026-03-19T17:13:49.970719+00:00",
+  "output_directory": "C:\\Users\\Jairam Ayyar\\Documents\\Sparkle_Manual_Earnings_Call\\outputs\\Wipro\\Q3_FY_unresolved_920d2b9e",
+  "agents": {
+    "esg": {
+      "agent": "esg",
+      "overall_esg_score": 51.5,
+      "esg_label": "Neutral",
+      "esg_colour": "#F9A825",
+      "environmental": {
+        "score": 20.0,
+        "key_themes": [
+          "energy",
+          "resources"
+        ],
+        "notable_excerpts": [
+          "Energy, Manufacturing and Resources grew 0.4% quarter-on-quarter and declined 8.7% year-on-year."
+        ]
+      },
+      "social": {
+        "score": 70.0,
+        "key_themes": [
+          "employees",
+          "training",
+          "community"
+        ],
+        "notable_excerpts": [
+          "We are investing significantly in leadership development. In FY25 Wipro Leadership Institute would have trained over 600 leaders.",
+          "50,000 of our employees now hold advanced AI Certification.",
+          "We remain focused in building a globally diverse team with high performance culture."
+        ]
+      },
+      "governance": {
+        "score": 60.0,
+        "key_themes": [
+          "executive remuneration",
+          "board decisions"
+        ],
+        "notable_excerpts": [
+          "The Board of Directors approved increasing the payout percentage to 70% or above of the net income cumulatively on a block of three-year period.",
+          "The board has also declared an interim dividend of Rs. 6 per share."
+        ]
+      },
+      "chain_of_thought": "The environmental disclosures were minimal, focusing on energy and resources without specific initiatives or targets. Social aspects were well-covered, highlighting employee training and diversity efforts. Governance disclosures included board decisions on dividends and remuneration, but lacked depth in other governance areas.",
+      "strengths": [
+        "Strong focus on employee training and development",
+        "Commitment to diversity and inclusion"
+      ],
+      "weaknesses": [
+        "Limited environmental initiatives and disclosures",
+        "Lack of detailed governance practices beyond financial decisions"
+      ],
+      "red_flags": [],
+      "esg_levels_reference": [
+        {
+          "range": "0–20",
+          "label": "Critical",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "21–40",
+          "label": "Concerning",
+          "colour": "#E65100"
+        },
+        {
+          "range": "41–60",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "61–80",
+          "label": "Commendable",
+          "colour": "#2E7D32"
+        },
+        {
+          "range": "81–100",
+          "label": "Exemplary",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "speaker": {
+      "agent": "speaker",
+      "speakers": [
+        {
+          "name": "Dipak Bohra",
+          "role": "Senior Vice President (Corporate Treasurer & Investor Relations)",
+          "tone": "neutral",
+          "key_topics": [
+            "introduction",
+            "forward-looking statements",
+            "conference call logistics"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Dipak Bohra opened the earnings call by welcoming participants and outlining the agenda, which included presentations by key executives. He highlighted the presence of forward-looking statements and associated risks, emphasizing the company's compliance with regulatory requirements. His tone was neutral, focusing on procedural aspects of the call.",
+          "sentiment_score": -0.0652,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": -0.0652,
+            "positive": 0.0417,
+            "negative": 0.107,
+            "neutral": 0.8513,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Srini Pallia",
+          "role": "Chief Executive Officer and Managing Director",
+          "tone": "optimistic",
+          "key_topics": [
+            "macroeconomic challenges",
+            "AI spending",
+            "financial highlights",
+            "strategic priorities"
+          ],
+          "direct_answers": [
+            "Gaurav Rateria's question on APMEA and Europe interventions",
+            "Sandeep Shah's question on portfolio issues"
+          ],
+          "dodged_or_vague": [
+            "Abhishek Bhandari's question on negative guidance despite positive factors"
+          ],
+          "summary": "Srini Pallia provided an optimistic outlook for 2025, highlighting a hopeful and resilient economic environment. He emphasized the company's commitment to AI-driven innovation and shared financial highlights, including a 12-quarter high in operating margins. Srini addressed questions about regional performance and strategic interventions, offering direct responses but was vague on guidance-related queries despite positive performance indicators.",
+          "sentiment_score": 0.9162,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9162,
+            "positive": 0.9314,
+            "negative": 0.0152,
+            "neutral": 0.0534,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Aparna Iyer",
+          "role": "Chief Financial Officer",
+          "tone": "confident",
+          "key_topics": [
+            "financial performance",
+            "margin expansion",
+            "guidance"
+          ],
+          "direct_answers": [
+            "Vibhor Singhal's question on margin levers",
+            "Abhishek Kumar's question on depreciation"
+          ],
+          "dodged_or_vague": [],
+          "summary": "Aparna Iyer confidently discussed the company's financial performance, highlighting a significant expansion in operating margins and EPS growth. She explained the factors contributing to margin improvements and provided clear guidance for the next quarter. Aparna directly addressed questions regarding margin levers and depreciation, reinforcing her confident tone throughout the call.",
+          "sentiment_score": 0.9363,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.9363,
+            "positive": 0.9553,
+            "negative": 0.019,
+            "neutral": 0.0257,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Saurabh Govil",
+          "role": "Chief Human Resources Officer",
+          "tone": "neutral",
+          "key_topics": [
+            "leadership development",
+            "employee dedication"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "Saurabh Govil focused on the company's human resources strategy, emphasizing leadership development and the cultivation of a high-performance culture. He highlighted the training of over 600 leaders as part of Wipro's commitment to building a diverse and skilled workforce. His tone was neutral, concentrating on strategic HR initiatives without engaging in the Q&A session.",
+          "sentiment_score": 0.6719,
+          "sentiment_label": "Very Positive",
+          "sentiment_colour": "#1B5E20",
+          "finbert_detail": {
+            "score": 0.6719,
+            "positive": 0.6792,
+            "negative": 0.0074,
+            "neutral": 0.3134,
+            "chunks_scored": 1
+          }
+        },
+        {
+          "name": "Moderator",
+          "role": "Moderator",
+          "tone": "neutral",
+          "key_topics": [
+            "call logistics",
+            "Q&A session"
+          ],
+          "direct_answers": [],
+          "dodged_or_vague": [],
+          "summary": "The Moderator facilitated the earnings call, providing instructions for participants and managing the Q&A session. The tone was neutral, focusing on logistical aspects and ensuring the smooth operation of the call.",
+          "sentiment_score": 0.0143,
+          "sentiment_label": "Neutral",
+          "sentiment_colour": "#F9A825",
+          "finbert_detail": {
+            "score": 0.0143,
+            "positive": 0.0359,
+            "negative": 0.0216,
+            "neutral": 0.9426,
+            "chunks_scored": 1
+          }
+        }
+      ],
+      "speaker_count": 5,
+      "chain_of_thought": "The analysis began by identifying each speaker and their role in the earnings call. Key statements were extracted for each speaker, focusing on specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their statements and interactions during the call. For management speakers, attention was given to how they addressed analyst questions, noting any direct answers or vague responses. A narrative summary was crafted for each speaker, capturing their contribution to the call and key messages.",
+      "sentiment_levels_reference": [
+        {
+          "range": "–1.0 to –0.6",
+          "label": "Very Negative",
+          "colour": "#B71C1C"
+        },
+        {
+          "range": "–0.6 to –0.2",
+          "label": "Negative",
+          "colour": "#E53935"
+        },
+        {
+          "range": "–0.2 to +0.2",
+          "label": "Neutral",
+          "colour": "#F9A825"
+        },
+        {
+          "range": "+0.2 to +0.6",
+          "label": "Positive",
+          "colour": "#43A047"
+        },
+        {
+          "range": "+0.6 to +1.0",
+          "label": "Very Positive",
+          "colour": "#1B5E20"
+        }
+      ]
+    },
+    "sentiment": {
+      "agent": "sentiment",
+      "overall_sentiment_score": 0.8174,
+      "overall_sentiment_label": "Very Positive",
+      "overall_sentiment_colour": "#1B5E20",
+      "overall_tone": "Cautiously Bullish",
+      "dimensions": {
+        "financial_performance": {
+          "score": 0.938,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.938,
+            "positive": 0.9559,
+            "negative": 0.0179,
+            "neutral": 0.0262,
+            "chunks_scored": 1
+          },
+          "text": "Our IT services revenue for Quarter 3 was $2.63 billion reflecting a sequential growth of 0.1% and degrowth of 0.7% on a year-on-year basis. This takes us slightly above the upper end of our guidance. We ended the quarter with a TCV of $3.5 billion in bookings. Our operating margins came in at 17.5%, an expansion of 0.7% quarter-on-quarter and 1.5% year-on-year. This is a 12-quarter high. Our Capco business continues to see improved demand. Order book grew by 9% year-on-year and revenue grew 11% year-on-year. Our EPS or net income grew 24% year-on-year and 5% sequentially. This was led on the back of the margin expansion and therefore the EBIT growth, better treasury returns and a stable ETR of 24%."
+        },
+        "forward_guidance": {
+          "score": 0.9348,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.9348,
+            "positive": 0.948,
+            "negative": 0.0132,
+            "neutral": 0.0387,
+            "chunks_scored": 1
+          },
+          "text": "For the next quarter, we are guiding for a sequential growth of (-1%) to (+1%) in constant currency terms. Our guidance for Q4 is (-1%) to (+1%) and therefore the dollar terms will be $2.602 billion to $2.655 billion. We guide based on the visibility we have closer to the midpoint and then we guide in a range. The fact that in the last two quarters, we are able to come above the midpoint is because of both a stronger execution in Quarter 2 also, the demand environment is improving. We are seeing a gradual recovery happening and the sectors that I talked to you about just now, BFSI and Healthcare, clearly are doing well."
+        },
+        "risk_language": {
+          "score": 0.3713,
+          "label": "Positive",
+          "colour": "#43A047",
+          "finbert": {
+            "score": 0.3713,
+            "positive": 0.6056,
+            "negative": 0.2343,
+            "neutral": 0.1601,
+            "chunks_scored": 1
+          },
+          "text": "2024 was marked by macroeconomic challenges. 2025 looks more hopeful and resilient. Our clients are cautiously optimistic, and discretionary spending is slowly coming back. While cost optimization remains key, we expect significant growth in AI spending. The uncertainties and risk factors are explained in our detailed filings with SEC. Wipro does not undertake any obligation to update the forward-looking statements to reflect events and circumstances after the date of filing. Europe and APMEA remained soft for us, with Europe degrowing 2.7% sequentially and 4.6% on a year-on-year basis."
+        },
+        "investor_confidence": {
+          "score": 0.9066,
+          "label": "Very Positive",
+          "colour": "#1B5E20",
+          "finbert": {
+            "score": 0.9066,
+            "positive": 0.9145,
+            "negative": 0.0079,
+            "neutral": 0.0775,
+            "chunks_scored": 1
+          },
+          "text": "Thanks for taking my question and Congrats on a solid performance, especially in the margins front. Our current large deal pipeline is robust, and we are seeing good traction across geographies. We remain committed to investing and scaling our large accounts demonstrating client centricity by driving greater value, increasing wallet share and expanding into new lines of business. We have made good progress in our consulting-led, AI-powered, industry and cross-industry solutions. We continue to focus on our large accounts in our core markets and priority sectors."
+        }
+      },
+      "key_positive_drivers": [
+        "Operating margins at a 12-quarter high",
+        "EPS grew 24% year-on-year",
+        "Capco business demand improved",
+        "Sequential growth in top account",
+        "Large deal pipeline robust",
+        "AI-powered industry solutions success"
+      ],
+      "key_negative_drivers": [
+        "Revenue degrowth year-on-year",
+        "Europe and APMEA remained soft",
+        "Guidance includes potential negative growth",
+        "Macroeconomic challenges in 2024"
+      ],
+      "notable_phrases": [
+        "Operating margins came in at 17.5%",
+        "Sequential growth of (-1%) to (+1%)",
+        "Macroeconomic challenges",
+        "Clients are cautiously optimistic",
+        "Large deal pipeline is robust",
+        "Capco business continues to see improved demand",
+        "EPS or net income grew 24% year-on-year",
+        "Europe and APMEA remained soft"
+      ],
+      "chain_of_thought": "The financial performance showed strong margins and EPS growth, but revenue was slightly down year-on-year. Forward guidance was cautious with a potential for flat or slight growth, reflecting a measured outlook. Risk language acknowledged past macroeconomic challenges and current regional softness, but also highlighted optimism for 2025. Investor confidence was bolstered by robust deal pipelines and strategic focus on large accounts and AI solutions."
+    },
+    "summary": {
+      "agent": "summary",
+      "executive_summary": "Wipro's Q3 earnings call revealed a mixed financial performance, with IT services revenue reaching $2.63 billion, reflecting a slight sequential growth of 0.1% but a year-on-year decline of 0.7%. Operating margins were a highlight, expanding to a 12-quarter high of 17.5%, driven by cost optimization and improved demand in the Capco business. Despite these positives, revenue degrowth in Europe and APMEA regions and macroeconomic challenges in 2024 were noted as concerns. The company's guidance for Q4 indicates a potential range of -1% to +1% growth, reflecting cautious optimism.\n\nStrategically, management emphasized AI-driven innovation and a strong focus on leadership development and employee training. The company is investing in building a diverse and skilled workforce, with over 600 leaders trained through the Wipro Leadership Institute. Management also highlighted the robust pipeline of large deals, particularly in the BFSI and healthcare sectors, and the ongoing efforts to strengthen their presence in the APMEA and European markets.\n\nThe overall tone of the call was cautiously bullish, with CEO Srini Pallia and CFO Aparna Iyer expressing confidence in the company's strategic direction and financial health. While the sentiment was generally positive, there were acknowledgments of ongoing challenges in certain sectors and geographies. Investors were likely reassured by the strong margin performance and the strategic initiatives underway, though concerns about revenue growth and regional softness may linger.\n\nESG themes were not a major focus of the call, but Wipro's commitment to social initiatives, particularly in employee training and diversity, was noted as a strength. However, the company's limited environmental initiatives and governance disclosures were identified as areas needing improvement.",
+      "qa_quality": {
+        "overall_transparency_score": 7.5,
+        "narrative": "During the Q&A session, management provided clear and direct answers to several questions, particularly those related to financial performance and strategic initiatives. CFO Aparna Iyer effectively addressed inquiries about margin expansion and capital allocation, providing specific guidance and rationale. CEO Srini Pallia also offered insights into the company's strategic focus and market challenges, although some responses were more general in nature.\n\nHowever, there were instances where management deflected or provided vague responses, particularly regarding future margin targets and the impact of macroeconomic challenges. For example, when asked about the aspirational margin band, Aparna Iyer mentioned a narrow band without specifying exact figures, indicating a cautious approach to future projections. Overall, while the session was informative, certain areas lacked the depth of detail that might have provided greater clarity to investors.",
+        "direct_answer_examples": [
+          "Aparna Iyer: Yes, at least for now.",
+          "Aparna Iyer: I don't think there are any one-offs. It's likely to sustain. You can model it at the same level."
+        ],
+        "dodged_questions": [
+          {
+            "question": "What would now be our target band of margins given that we are already in the 17.5% range?",
+            "management_response": "Nothing that we would like to share at the moment.",
+            "assessment": "Management avoided providing a specific target, indicating uncertainty or strategic caution."
+          }
+        ],
+        "vague_response_examples": [
+          "Srini Pallia: We are confident of holding it in a narrow band and we will take it from there."
+        ]
+      },
+      "short_term_implications": {
+        "narrative": "In the near term, investors should closely monitor Wipro's ability to sustain its operating margin improvements, which reached a 12-quarter high of 17.5%. The company's guidance for Q4 suggests a potential growth range of -1% to +1%, indicating cautious optimism amid macroeconomic challenges. Key areas to watch include the performance of the Capco business, which has shown improved demand, and the execution of large deals in the BFSI and healthcare sectors.\n\nAdditionally, the softness in Europe and APMEA regions remains a concern, and any signs of recovery or further decline in these markets could significantly impact Wipro's overall performance. The company's strategic focus on AI-driven innovation and leadership development may also present opportunities for growth, particularly if these initiatives translate into tangible business outcomes.",
+        "key_items": [
+          {
+            "item": "Operating margin sustainability",
+            "timeframe": "Q4 2025",
+            "impact": "positive"
+          },
+          {
+            "item": "Capco business performance",
+            "timeframe": "Q4 2025",
+            "impact": "positive"
+          },
+          {
+            "item": "Regional performance in Europe and APMEA",
+            "timeframe": "Q4 2025",
+            "impact": "negative"
+          }
+        ]
+      },
+      "long_term_implications": {
+        "narrative": "Over the next 1-5 years, Wipro's strategic trajectory appears focused on leveraging AI-driven innovation and enhancing its leadership capabilities. The company's commitment to building a diverse and skilled workforce is expected to support its long-term growth ambitions. Management's emphasis on large deal wins, particularly in the BFSI and healthcare sectors, suggests a strategic focus on expanding its footprint in high-growth areas.\n\nHowever, the ongoing challenges in Europe and APMEA regions could pose headwinds to Wipro's growth if not addressed effectively. The company's ability to execute its strategic initiatives and convert its robust deal pipeline into tangible results will be critical to its long-term success. Additionally, Wipro's capital allocation priorities, including a preference for dividends and buybacks, indicate a balanced approach to shareholder returns and reinvestment in growth opportunities.",
+        "key_items": [
+          {
+            "item": "AI-driven innovation",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          },
+          {
+            "item": "Regional challenges in Europe and APMEA",
+            "timeframe": "1-5 years",
+            "impact": "negative"
+          },
+          {
+            "item": "Large deal execution",
+            "timeframe": "1-5 years",
+            "impact": "positive"
+          }
+        ]
+      },
+      "key_risks": {
+        "narrative": "Wipro faces several material risks, including execution challenges in its strategic initiatives, particularly in the Europe and APMEA regions where performance has been soft. The company's reliance on large deal wins also poses a risk if these deals do not materialize as expected. Additionally, macroeconomic challenges, such as potential economic slowdowns or geopolitical tensions, could impact demand for Wipro's services. On the governance front, limited environmental initiatives and disclosures may pose reputational risks, especially as ESG considerations become increasingly important to investors.",
+        "risks": [
+          {
+            "risk": "Execution challenges in Europe and APMEA",
+            "severity": "high",
+            "type": "company-specific"
+          },
+          {
+            "risk": "Dependence on large deal wins",
+            "severity": "medium",
+            "type": "company-specific"
+          },
+          {
+            "risk": "Macroeconomic challenges",
+            "severity": "medium",
+            "type": "external"
+          },
+          {
+            "risk": "Limited environmental initiatives",
+            "severity": "low",
+            "type": "company-specific"
+          }
+        ]
+      },
+      "key_opportunities": {
+        "narrative": "Wipro's most compelling growth opportunities include its focus on AI-driven innovation, which is expected to drive significant growth in the coming years. The company's strong pipeline of large deals, particularly in the BFSI and healthcare sectors, presents a high potential for revenue expansion. Additionally, Wipro's commitment to leadership development and employee training is likely to enhance its competitive positioning and operational efficiency. The strategic focus on expanding its presence in high-growth markets, such as the Americas, also offers promising opportunities for long-term growth.",
+        "opportunities": [
+          {
+            "opportunity": "AI-driven innovation",
+            "potential": "high",
+            "timeline": "1-5 years"
+          },
+          {
+            "opportunity": "Large deal pipeline in BFSI and healthcare",
+            "potential": "high",
+            "timeline": "0-12 months"
+          },
+          {
+            "opportunity": "Leadership development and employee training",
+            "potential": "medium",
+            "timeline": "1-5 years"
+          }
+        ]
+      },
+      "investment_thesis_signal": "Cautiously Bullish",
+      "investment_thesis_rationale": "Wipro's Q3 earnings call highlighted strong operating margin performance and a robust pipeline of large deals, particularly in the BFSI and healthcare sectors. The company's strategic focus on AI-driven innovation and leadership development supports its long-term growth potential. However, challenges in Europe and APMEA regions and macroeconomic uncertainties warrant a cautious approach. Overall, the positive sentiment from management and the company's strategic initiatives suggest a cautiously bullish outlook, with potential for upside if execution risks are managed effectively.",
+      "chain_of_thought": "The analysis considered Wipro's financial performance, strategic initiatives, and management's tone during the earnings call. The strong operating margins and positive sentiment from key executives were weighed against regional challenges and macroeconomic risks. The ESG analysis provided additional context on governance and environmental considerations, influencing the overall investment thesis."
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics",
+        "introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the Maruti Suzuki Q3 FY'25 earnings call, providing logistical details and ensuring the smooth transition between speakers. The tone was neutral, focusing on the procedural aspects of the call. The moderator's role was crucial in maintaining the structure and flow of the conference.",
+      "sentiment_score": 0.0493,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0493,
+        "positive": 0.0632,
+        "negative": 0.0139,
+        "neutral": 0.9229,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Pranav Ambaprasad",
+      "role": "Maruti Suzuki Representative",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "management team"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pranav Ambaprasad introduced the earnings call and the management team, setting the stage for the presentations and Q&A session. He reminded participants of the Safe Harbor statement and the recording of the call. His tone was neutral, focusing on procedural and introductory remarks.",
+      "sentiment_score": 0.0633,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0633,
+        "positive": 0.0762,
+        "negative": 0.0129,
+        "neutral": 0.9109,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Bharti",
+      "role": "Chief Investor Relations Officer",
+      "tone": "confident",
+      "key_topics": [
+        "business performance",
+        "EV strategy",
+        "market outlook",
+        "financial results"
+      ],
+      "direct_answers": [
+        "In the first nine months of the year, on a retail level, we have done about 3.5% growth.",
+        "The discount for the quarter was INR 30,999/vehicle, so around INR 31,000/vehicle which is almost similar to what was there in Q2."
+      ],
+      "dodged_or_vague": [
+        "It's difficult to predict volumes because there are about 100 countries of the world that we are planning to export and EV itself is a very dynamic story, not just in India but all over the world."
+      ],
+      "summary": "Rahul Bharti, the Chief Investor Relations Officer, presented a confident overview of Maruti Suzuki's performance and strategic initiatives. He highlighted the launch of the e Vitara, emphasizing its export potential and the company's commitment to EV infrastructure. Bharti also discussed the company's financial performance, noting record sales and profit figures. He addressed questions on demand trends, pricing strategies, and export plans, providing direct answers where possible but remaining cautious on specific volume predictions.",
+      "sentiment_score": 0.4282,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4282,
+        "positive": 0.627,
+        "negative": 0.1988,
+        "neutral": 0.1742,
+        "chunks_scored": 5
+      }
+    },
+    {
+      "name": "Arnab Roy",
+      "role": "CFO",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "discounts",
+        "cost management"
+      ],
+      "direct_answers": [
+        "The discount for the quarter was INR 30,999/vehicle, so around INR 31,000/vehicle which is almost similar to what was there in Q2."
+      ],
+      "dodged_or_vague": [
+        "There is nothing significant, there are small positives and negatives, but overall, there's nothing significant to call out for."
+      ],
+      "summary": "Arnab Roy, the CFO, provided a neutral and factual overview of Maruti Suzuki's financial performance. He detailed the discount levels and clarified that there were no significant non-recurring costs impacting the quarter. Roy's responses were straightforward, focusing on providing clarity on financial metrics and cost management strategies.",
+      "sentiment_score": -0.0992,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0992,
+        "positive": 0.1257,
+        "negative": 0.2248,
+        "neutral": 0.6495,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Gunjan",
+      "role": "Analyst from Bank of America",
+      "tone": "inquisitive",
+      "key_topics": [
+        "demand environment",
+        "margins",
+        "price hikes"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Gunjan, an analyst from Bank of America, asked probing questions about the demand environment, margin changes, and future price hikes. Her inquiries were aimed at understanding the underlying factors affecting Maruti Suzuki's financial performance and market outlook. Gunjan's tone was inquisitive, seeking detailed explanations and clarifications on financial metrics and strategic decisions.",
+      "sentiment_score": 0.1184,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1184,
+        "positive": 0.1461,
+        "negative": 0.0277,
+        "neutral": 0.8262,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jinesh Gandhi",
+      "role": "Analyst from Ambit Capital",
+      "tone": "inquisitive",
+      "key_topics": [
+        "demand trends",
+        "EV exports",
+        "plant operations"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Jinesh Gandhi, an analyst from Ambit Capital, focused on understanding the demand trends between rural and urban markets, the potential of EV exports, and the timeline for the Kharkhoda plant operations. His questions were aimed at gauging Maruti Suzuki's strategic positioning and operational readiness. Jinesh's tone was inquisitive, seeking to extract detailed insights into the company's future plans and market dynamics.",
+      "sentiment_score": 0.3804,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.3804,
+        "positive": 0.4027,
+        "negative": 0.0222,
+        "neutral": 0.5751,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 6,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. The moderator and Pranav Ambaprasad set the stage with introductions and procedural details. Rahul Bharti, as the Chief Investor Relations Officer, provides a comprehensive overview of Maruti Suzuki's performance, strategic initiatives, and financial results, addressing questions with confidence and clarity. Arnab Roy, the CFO, offers detailed financial insights, maintaining a neutral tone. Analysts Gunjan and Jinesh Gandhi ask probing questions to understand the company's market position and future outlook, with their tone being inquisitive and focused on extracting detailed information.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

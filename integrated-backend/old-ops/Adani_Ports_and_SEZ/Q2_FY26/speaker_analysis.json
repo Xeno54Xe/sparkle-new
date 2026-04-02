@@ -1,0 +1,137 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ashwani Gupta",
+      "role": "Whole-Time Director and CEO",
+      "tone": "confident",
+      "key_topics": [
+        "record quarter performance",
+        "financial and operating metrics",
+        "strategy for Logistics and Marine",
+        "International Ports performance",
+        "market share growth",
+        "EBITDA and ROCE improvements"
+      ],
+      "direct_answers": [
+        "We are still growing 1.6x to 1.7x than the cargo growth in the maritime.",
+        "Mundra is getting back after going through the disturbances of Operation Sindoor."
+      ],
+      "dodged_or_vague": [
+        "We don't want to comment it on today, not only on EBITDA, but any of the financial indicator."
+      ],
+      "summary": "Ashwani Gupta opened the call with a confident tone, highlighting the record performance of Adani Ports and SEZ in the second quarter. He emphasized the significant growth across financial and operating metrics, including market share, revenue, and EBITDA. Gupta was particularly proud of the improvements in the Logistics, Marine, and International Ports sectors, attributing these successes to strategic changes implemented last year. While he provided direct answers regarding growth rates and the recovery of Mundra, he was evasive about specific future financial indicators, maintaining a focus on the company's ongoing efforts to optimize performance.",
+      "sentiment_score": 0.9376,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9376,
+        "positive": 0.949,
+        "negative": 0.0114,
+        "neutral": 0.0397,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "D. Muthukumaran",
+      "role": "CFO",
+      "tone": "cautious",
+      "key_topics": [
+        "financial discipline",
+        "rating outlook",
+        "International Ports margins",
+        "Logistics business margins"
+      ],
+      "direct_answers": [
+        "We expect the EBITDA margin when all these operations are stabilized to go from 26% to somewhere between, around 45%."
+      ],
+      "dodged_or_vague": [
+        "As to when they will do, I guess, we will wait and watch."
+      ],
+      "summary": "D. Muthukumaran, the CFO, maintained a cautious tone throughout the call, focusing on financial discipline and the company's rating outlook. He provided insights into the expected margins for International Ports and the Logistics business, indicating a long-term target for EBITDA margins. Muthukumaran was optimistic about the company's financial stability and expected rating upgrades, but he was vague about the timing of these changes. His responses reflected a careful approach to managing expectations while highlighting the company's strategic financial positioning.",
+      "sentiment_score": 0.1346,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1346,
+        "positive": 0.1522,
+        "negative": 0.0176,
+        "neutral": 0.8303,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Rahul Agarwal",
+      "role": "Head of Investor Relations and ESG",
+      "tone": "neutral",
+      "key_topics": [
+        "introduction",
+        "earnings call structure"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Rahul Agarwal, as the Head of Investor Relations and ESG, played a neutral role in the earnings call, primarily focusing on the introduction and structure of the call. He welcomed participants and outlined the agenda, handing over the discussion to Ashwani Gupta for the opening remarks. Agarwal's contribution was limited to facilitating the call, ensuring a smooth transition between speakers.",
+      "sentiment_score": 0.0591,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0591,
+        "positive": 0.0736,
+        "negative": 0.0145,
+        "neutral": 0.9119,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Veenit Pasad",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call facilitation",
+        "introduction"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Veenit Pasad served as the moderator for the earnings call, maintaining a neutral tone throughout. He facilitated the introduction of the senior management team and outlined the structure of the call. Pasad's role was crucial in ensuring the smooth progression of the call, transitioning from introductions to the management's initial comments and the subsequent Q&A session.",
+      "sentiment_score": 0.1168,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1168,
+        "positive": 0.1281,
+        "negative": 0.0113,
+        "neutral": 0.8606,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying each unique speaker from the transcript, including the moderator, management, and analysts. Key statements were extracted for each speaker, focusing on verbatim quotes that highlight specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their statements and interactions during the call. For management speakers, their responses to analyst questions were categorized as direct or vague. Finally, a narrative summary was crafted for each speaker, capturing their contribution to the call, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

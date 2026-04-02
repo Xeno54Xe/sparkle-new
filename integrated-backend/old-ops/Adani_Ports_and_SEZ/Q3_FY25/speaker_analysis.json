@@ -1,0 +1,223 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator - PL Capital Limited",
+      "tone": "Neutral",
+      "key_topics": [
+        "Conference introduction",
+        "Q&A session management"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator from PL Capital Limited facilitated the conference call, ensuring that participants were aware of the procedures for asking questions and managing the Q&A session. The tone was neutral, focusing on logistics and ensuring the smooth flow of the call. The moderator did not engage in content discussions but played a crucial role in managing the call's structure.",
+      "sentiment_score": 0.0047,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0047,
+        "positive": 0.0279,
+        "negative": 0.0232,
+        "neutral": 0.9489,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Tushar Chaudhari",
+      "role": "Equity Research Analyst, PL Capital Limited",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Welcome"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Tushar Chaudhari, an Equity Research Analyst from PL Capital Limited, opened the call with a warm welcome and introduced the management team. His role was primarily to set the stage for the earnings call, and he maintained a neutral tone throughout. He did not engage in the Q&A or provide any financial insights, focusing instead on facilitating the transition to the management's presentation.",
+      "sentiment_score": 0.0651,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0651,
+        "positive": 0.0763,
+        "negative": 0.0112,
+        "neutral": 0.9125,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Rahul Agarwal",
+      "role": "Head ESG & IR, Adani Ports & Special Economic Zone Limited",
+      "tone": "Neutral",
+      "key_topics": [
+        "Introduction",
+        "Transition to CEO"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Rahul Agarwal, Head of ESG & IR at Adani Ports, provided a brief introduction and transitioned the call to Mr. Ashwani Gupta for the opening remarks. His tone was neutral, and he did not engage in detailed discussions or Q&A, focusing instead on facilitating the flow of the call.",
+      "sentiment_score": 0.0774,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0774,
+        "positive": 0.0918,
+        "negative": 0.0143,
+        "neutral": 0.8939,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Ashwani Gupta",
+      "role": "Whole Time Director & CEO, Adani Ports & Special Economic Zone Limited",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial performance",
+        "Growth strategy",
+        "Market share",
+        "Logistics expansion"
+      ],
+      "direct_answers": [
+        "EBITDA upgrade rationale",
+        "Logistics business expansion"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Mr. Ashwani Gupta, CEO of Adani Ports, delivered a confident presentation highlighting the company's strong financial performance and strategic growth initiatives. He emphasized the company's revenue growth, improved EBITDA margins, and successful business initiatives. Gupta also discussed the company's focus on expanding its logistics business and maintaining financial discipline. He directly answered questions about the rationale behind the EBITDA upgrade and the logistics business expansion, showcasing a clear and confident understanding of the company's strategic direction.",
+      "sentiment_score": 0.94,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.94,
+        "positive": 0.9559,
+        "negative": 0.0159,
+        "neutral": 0.0283,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. D. Muthukumaran",
+      "role": "CFO, Adani Ports & Special Economic Zone Limited",
+      "tone": "Confident",
+      "key_topics": [
+        "Financial guidance",
+        "Volume growth",
+        "Logistics details"
+      ],
+      "direct_answers": [
+        "Volume guidance for FY26",
+        "Realization growth"
+      ],
+      "dodged_or_vague": [
+        "Specific volume guidance for FY26"
+      ],
+      "summary": "Mr. D. Muthukumaran, CFO of Adani Ports, confidently discussed the company's financial achievements and future guidance. He highlighted the company's ability to increase EBITDA and manage significant business deals. Muthukumaran provided insights into volume growth and realization increases across ports, attributing these to strategic price adjustments and foreign exchange impacts. While he directly addressed questions about volume guidance and realization growth, he deferred specific volume guidance for FY26 to a later date, indicating a cautious approach to future projections.",
+      "sentiment_score": 0.9186,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9186,
+        "positive": 0.9329,
+        "negative": 0.0143,
+        "neutral": 0.0528,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Alok Deora",
+      "role": "Analyst, Motilal Oswal Financial Services Ltd",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "EBITDA guidance",
+        "Logistics business",
+        "Volume guidance"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Alok Deora from Motilal Oswal Financial Services Ltd posed several insightful questions regarding Adani Ports' financial guidance and strategic plans. He inquired about the rationale behind the EBITDA upgrade and the potential challenges in scaling the logistics business amidst competitive pressures. Deora also sought clarity on the company's volume guidance for FY26. His tone was inquisitive, aiming to understand the company's strategic positioning and future outlook.",
+      "sentiment_score": 0.2277,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2277,
+        "positive": 0.2457,
+        "negative": 0.018,
+        "neutral": 0.7363,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ms. Ankita Shah",
+      "role": "Analyst, Elara Capital",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "Volume growth",
+        "Realization growth",
+        "International business"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ms. Ankita Shah from Elara Capital asked probing questions about Adani Ports' volume and realization growth, as well as the company's international business strategy. She sought to understand the drivers behind the expected volume increase in the fourth quarter and the realization growth across ports. Additionally, Shah inquired about the company's long-term international business plans. Her tone was inquisitive, focusing on gaining a deeper understanding of the company's growth strategies and market positioning.",
+      "sentiment_score": 0.2475,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2475,
+        "positive": 0.2596,
+        "negative": 0.012,
+        "neutral": 0.7284,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Mr. Achal Lohade",
+      "role": "Analyst, Nuvama Institutional Equities",
+      "tone": "Inquisitive",
+      "key_topics": [
+        "International expansion",
+        "Domestic opportunities"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Mr. Achal Lohade from Nuvama Institutional Equities focused on Adani Ports' expansion plans, particularly in the international arena. He sought clarification on whether the company's growth strategy involved new domestic or international ports. His tone was inquisitive, aiming to understand the company's strategic focus and potential areas for expansion.",
+      "sentiment_score": 0.0115,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0115,
+        "positive": 0.0456,
+        "negative": 0.034,
+        "neutral": 0.9204,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 8,
+  "chain_of_thought": "The analysis begins by identifying each speaker and their role in the earnings call. Key statements are extracted verbatim to capture the specific language used, which is crucial for financial analysis. Each speaker's tone is assessed based on their statements and interactions during the call. Management speakers are further analyzed for their responses to analyst questions, noting whether they provided direct answers or deflected. The narrative summary for each speaker encapsulates their contributions, stance, and key messages, providing a comprehensive overview of their role in the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

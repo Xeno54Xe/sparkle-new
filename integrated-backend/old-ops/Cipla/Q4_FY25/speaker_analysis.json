@@ -1,0 +1,132 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Diksha Maheshwari",
+      "role": "Lead Investor Relations",
+      "tone": "neutral",
+      "key_topics": [
+        "forward-looking statements",
+        "investor presentation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Diksha Maheshwari opened the call by highlighting the presence of forward-looking statements and the associated risks and uncertainties. She emphasized that these statements are based on current management expectations and that Cipla is not obligated to update them publicly. Her tone was neutral, focusing on procedural aspects and ensuring that participants were aware of the investor presentation available online.",
+      "sentiment_score": -0.0058,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": -0.0058,
+        "positive": 0.036,
+        "negative": 0.0418,
+        "neutral": 0.9222,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Umang Vohra",
+      "role": "Managing Director and Global Chief Executive Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "market growth",
+        "product launches",
+        "U.S. pipeline"
+      ],
+      "direct_answers": [
+        "nano paclitaxel market share",
+        "Advair launch timeline"
+      ],
+      "dodged_or_vague": [
+        "impact of U.S. regulations on business"
+      ],
+      "summary": "Umang Vohra presented a confident overview of Cipla's performance, highlighting significant milestones across various markets. He emphasized the company's strong growth in India, North America, and Africa, driven by strategic partnerships and product launches. Vohra detailed the company's robust pipeline, particularly in the U.S., with plans for multiple product filings and launches. He directly addressed questions about market share and product timelines but was less specific about the impact of U.S. regulations, maintaining a focus on Cipla's strategic growth and resilience.",
+      "sentiment_score": 0.9296,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9296,
+        "positive": 0.9395,
+        "negative": 0.0099,
+        "neutral": 0.0505,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Ashish Adukia",
+      "role": "Global Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "EBITDA margin",
+        "R&D investments"
+      ],
+      "direct_answers": [
+        "financial highlights",
+        "EBITDA margin guidance"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashish Adukia provided a detailed and confident overview of Cipla's financial performance for Q4 FY25. He reported strong revenue growth and an increase in EBITDA margin, exceeding the company's guidance. Adukia highlighted the company's strategic focus on profitability, driven by a favorable product mix and cost management. He also detailed the company's R&D investments and their impact on revenue. His tone was confident, reflecting the company's solid financial standing and strategic execution.",
+      "sentiment_score": 0.8604,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.8604,
+        "positive": 0.8856,
+        "negative": 0.0252,
+        "neutral": 0.0892,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call logistics"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the conference call, providing instructions on how participants could ask questions and reminding them that the call was being recorded. The tone was neutral, focusing on ensuring the smooth operation of the call and providing logistical support to participants.",
+      "sentiment_score": 0.009,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.009,
+        "positive": 0.0328,
+        "negative": 0.0237,
+        "neutral": 0.9435,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 4,
+  "chain_of_thought": "The analysis began by identifying the unique speakers in the transcript: Diksha Maheshwari, Umang Vohra, Ashish Adukia, and the Moderator. Each speaker's key statements were extracted, focusing on verbatim quotes that included specific language, numbers, and forward-looking statements. The tone of each speaker was assessed based on their statements and context. For management speakers, direct answers and vague responses to analyst questions were noted. Finally, a narrative summary was crafted for each speaker, capturing their contribution to the call, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

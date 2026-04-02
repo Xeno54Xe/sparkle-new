@@ -1,0 +1,207 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "call introduction",
+        "question facilitation"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "The moderator facilitated the earnings call, ensuring the smooth transition between speakers and managing the question and answer session. They maintained a neutral tone throughout, focusing on procedural aspects of the call. The moderator's role was crucial in keeping the call organized and on schedule.",
+      "sentiment_score": 0.0189,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0189,
+        "positive": 0.0394,
+        "negative": 0.0205,
+        "neutral": 0.9401,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Abhishek Sharma",
+      "role": "Vice President and Head of Investor Relations and Strategic Projects",
+      "tone": "neutral",
+      "key_topics": [
+        "call introduction",
+        "closing comments"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Abhishek Sharma opened and closed the earnings call, providing a structured overview of the agenda and introducing the key speakers. His tone was neutral, focusing on logistics and ensuring that participants were aware of the resources available to them. He emphasized the importance of viewing forward-looking statements in the context of business risks.",
+      "sentiment_score": 0.0174,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0174,
+        "positive": 0.0368,
+        "negative": 0.0194,
+        "neutral": 0.9438,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Jayashree Satagopan",
+      "role": "Chief Financial Officer",
+      "tone": "confident",
+      "key_topics": [
+        "financial performance",
+        "consolidated financials",
+        "tax rate",
+        "balance sheet"
+      ],
+      "direct_answers": [
+        "Kunal Dhamesha"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Jayashree Satagopan provided a detailed and confident overview of Sun Pharma's financial performance for Q2 FY26. She highlighted key metrics such as sales growth, gross margin, EBITDA, and net profit, demonstrating a strong financial position. Her responses to analyst questions were direct and informative, particularly regarding the increase in intangible assets and cash flow changes.",
+      "sentiment_score": 0.9354,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9354,
+        "positive": 0.9526,
+        "negative": 0.0172,
+        "neutral": 0.0303,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Kirti Ganorkar",
+      "role": "Managing Director",
+      "tone": "optimistic",
+      "key_topics": [
+        "Global Innovative Medicines",
+        "India business",
+        "market share"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Kirti Ganorkar expressed optimism about Sun Pharma's performance, particularly in the Global Innovative Medicines segment, which saw significant growth. He highlighted the success of ILUMYA and the company's strong market position in India. His tone was positive, reflecting confidence in the company's strategic direction and market leadership.",
+      "sentiment_score": 0.926,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.926,
+        "positive": 0.9352,
+        "negative": 0.0092,
+        "neutral": 0.0556,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Richard Ascroft",
+      "role": "CEO (North America)",
+      "tone": "cautious",
+      "key_topics": [
+        "U.S. business performance",
+        "Innovative Medicines",
+        "Generics",
+        "tariffs"
+      ],
+      "direct_answers": [
+        "Alankar Garude",
+        "Neha Manpuria"
+      ],
+      "dodged_or_vague": [
+        "Shyam Srinivasan"
+      ],
+      "summary": "Richard Ascroft provided a cautious overview of the U.S. business, noting a decline in overall sales due to increased competition in the generics segment. He highlighted growth in Innovative Medicines and new product launches, expressing cautious optimism about future uptake. His responses to questions were generally direct, though he was vague about the impact of tariffs and potential U.S. manufacturing moves.",
+      "sentiment_score": -0.7263,
+      "sentiment_label": "Very Negative",
+      "sentiment_colour": "#B71C1C",
+      "finbert_detail": {
+        "score": -0.7263,
+        "positive": 0.1123,
+        "negative": 0.8386,
+        "neutral": 0.0491,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Aalok Shanghvi",
+      "role": "Chief Operating Officer",
+      "tone": "confident",
+      "key_topics": [
+        "Emerging Markets",
+        "Rest of World",
+        "currency impact"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Aalok Shanghvi confidently reported strong growth in Emerging Markets and Rest of the World, attributing success to both generics and innovative medicines. He noted the positive impact of currency movements and highlighted strong performances in South Africa and Brazil. His tone was positive, reflecting confidence in the company's international strategy and market expansion.",
+      "sentiment_score": 0.9393,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.9393,
+        "positive": 0.9511,
+        "negative": 0.0118,
+        "neutral": 0.0372,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Dilip Shanghvi",
+      "role": "Chairman",
+      "tone": "cautious",
+      "key_topics": [
+        "R&D initiatives",
+        "Innovative Medicines",
+        "biosimilar strategy"
+      ],
+      "direct_answers": [
+        "Neha Manpuria",
+        "Vishal Manchanda"
+      ],
+      "dodged_or_vague": [
+        "Shyam Srinivasan"
+      ],
+      "summary": "Dilip Shanghvi discussed Sun Pharma's R&D initiatives with a cautious tone, emphasizing ongoing investments in innovative medicines. He provided updates on key products like UNLOXCYT and ILUMYA, indicating progress in regulatory filings. While he answered some questions directly, he was cautious about providing specifics on biosimilar strategy and future competition.",
+      "sentiment_score": 0.1834,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1834,
+        "positive": 0.192,
+        "negative": 0.0086,
+        "neutral": 0.7994,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 7,
+  "chain_of_thought": "The analysis involved identifying each speaker's role and extracting their key statements from the transcript. The tone was assessed based on the language used and the context of their statements. Management speakers were evaluated on their responses to analyst questions, noting any direct answers or vague responses. Each speaker's contribution was summarized to capture their stance and key messages during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

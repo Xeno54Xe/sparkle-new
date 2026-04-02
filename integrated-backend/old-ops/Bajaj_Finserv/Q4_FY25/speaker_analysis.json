@@ -1,0 +1,158 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ajit Kumar",
+      "role": "Moderator",
+      "tone": "neutral",
+      "key_topics": [
+        "conference call introduction",
+        "management introduction",
+        "Q&A session"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Ajit Kumar served as the moderator for the Bajaj Finserv Q4 FY'25 earnings call. He introduced the call, outlined the agenda, and facilitated the Q&A session. His tone was neutral and professional, ensuring the call proceeded smoothly. He thanked the management for the opportunity to host the call and provided instructions for participants on how to engage during the session.",
+      "sentiment_score": 0.0751,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.0751,
+        "positive": 0.0873,
+        "negative": 0.0122,
+        "neutral": 0.9005,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "S. Sreenivasan",
+      "role": "President, Insurance and Special Projects, Bajaj Finserv Limited",
+      "tone": "cautious",
+      "key_topics": [
+        "conference call introduction",
+        "geopolitical environment",
+        "H2 outlook"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "S. Sreenivasan opened the Bajaj Finserv earnings call, setting the stage for the discussion of Q4 FY'25 results. He expressed a cautious tone, particularly regarding the geopolitical and external environment, which he noted could be volatile. Despite this, he conveyed a cautiously optimistic outlook for the second half of the year. His comments were brief, as he quickly handed over the detailed performance discussion to the Group CFO, Ramandeep Singh Sahni.",
+      "sentiment_score": 0.1238,
+      "sentiment_label": "Neutral",
+      "sentiment_colour": "#F9A825",
+      "finbert_detail": {
+        "score": 0.1238,
+        "positive": 0.1429,
+        "negative": 0.0192,
+        "neutral": 0.8379,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Ramandeep Singh Sahni",
+      "role": "Chief Financial Officer, Bajaj Finserv Limited",
+      "tone": "confident",
+      "key_topics": [
+        "financial results",
+        "insurance operations",
+        "regulatory updates",
+        "consolidated income"
+      ],
+      "direct_answers": [
+        "financial results",
+        "regulatory updates"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ramandeep Singh Sahni provided a detailed overview of Bajaj Finserv's financial performance for Q4 FY'25. He confidently highlighted the growth in consolidated total income and PAT, emphasizing the company's strong financial position. He also addressed regulatory updates, including the Allianz exit from the joint venture, and clarified the accounting standards used for financial reporting. His tone was confident, and he provided clear answers to questions regarding financial results and regulatory matters.",
+      "sentiment_score": 0.4652,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.4652,
+        "positive": 0.4889,
+        "negative": 0.0237,
+        "neutral": 0.4874,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Tapan Singhel",
+      "role": "Managing Director & Chief Executive Officer, Bajaj Allianz General Insurance Company Limited",
+      "tone": "confident",
+      "key_topics": [
+        "insurance operations",
+        "growth strategy",
+        "underwriting performance"
+      ],
+      "direct_answers": [
+        "retention strategy"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Tapan Singhel discussed the performance and strategy of Bajaj Allianz General Insurance. He confidently addressed questions about the company's retention strategy, emphasizing their strong capital and solvency position. He highlighted the company's competence in underwriting and their ability to adapt to regulatory changes. His tone was confident, reflecting a strong belief in the company's strategic direction and operational capabilities.",
+      "sentiment_score": 0.2101,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2101,
+        "positive": 0.225,
+        "negative": 0.0148,
+        "neutral": 0.7602,
+        "chunks_scored": 1
+      }
+    },
+    {
+      "name": "Tarun Chugh",
+      "role": "Managing Director & Chief Executive, Bajaj Allianz Life Insurance Company Limited",
+      "tone": "optimistic",
+      "key_topics": [
+        "product mix",
+        "growth strategy",
+        "agency channel"
+      ],
+      "direct_answers": [
+        "Axis Bank contribution",
+        "agency channel strategy"
+      ],
+      "dodged_or_vague": [],
+      "summary": "Tarun Chugh provided insights into Bajaj Allianz Life Insurance's strategic approach, particularly regarding their product mix and agency channel. He optimistically discussed the company's strategy to diversify its banca partnerships, reducing dependency on a single partner. He highlighted the positive developments in the agency channel, noting the successful implementation of a new product mix and the emergence of 'green shoots' in productivity and activity. His tone was optimistic, reflecting confidence in the company's strategic direction and growth potential.",
+      "sentiment_score": 0.2744,
+      "sentiment_label": "Positive",
+      "sentiment_colour": "#43A047",
+      "finbert_detail": {
+        "score": 0.2744,
+        "positive": 0.2884,
+        "negative": 0.014,
+        "neutral": 0.6976,
+        "chunks_scored": 1
+      }
+    }
+  ],
+  "speaker_count": 5,
+  "chain_of_thought": "The analysis begins by identifying all unique speakers in the earnings call, including the moderator and management team members. Each speaker's key statements are extracted, focusing on verbatim quotes that include specific language, numbers, and forward-looking statements. The tone of each speaker is assessed based on their statements, with management speakers also evaluated on their responses to analyst questions. A narrative summary is crafted for each speaker, capturing their contribution to the call, stance, and key messages. The JSON output is structured to provide a comprehensive analysis of each speaker's role and impact during the call.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

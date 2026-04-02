@@ -1,0 +1,112 @@
+{
+  "agent": "speaker",
+  "speakers": [
+    {
+      "name": "Ashok Vaswani",
+      "role": "Managing Director & CEO",
+      "tone": "confident",
+      "key_topics": [
+        "macroeconomic environment",
+        "repo rate cut impact",
+        "business strategy",
+        "credit costs",
+        "technology investment"
+      ],
+      "direct_answers": [
+        "Sure, go ahead."
+      ],
+      "dodged_or_vague": [],
+      "summary": "Ashok Vaswani opened the call by acknowledging Shanti Ekambaram's contributions and then provided a comprehensive overview of the macroeconomic environment and its impact on Kotak Mahindra Bank's performance. He highlighted the bank's strategic focus on scaling responsibly, leveraging automation, and maintaining a strong SME and institutional segment presence. Vaswani expressed confidence in the bank's growth, citing a healthy increase in net advances and deposits. He also discussed the bank's cautious approach to credit costs and its ongoing investment in technology to drive efficiency and scale.",
+      "sentiment_score": 0.6672,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.6672,
+        "positive": 0.7749,
+        "negative": 0.1077,
+        "neutral": 0.1173,
+        "chunks_scored": 3
+      }
+    },
+    {
+      "name": "Devang Gheewalla",
+      "role": "Group Chief Financial Officer",
+      "tone": "neutral",
+      "key_topics": [
+        "financial performance",
+        "NIM stabilization",
+        "credit costs",
+        "operating expenses"
+      ],
+      "direct_answers": [
+        "Yes, Abhishek. Largely, you are right because assuming there is no further repo cut, what you are saying is right."
+      ],
+      "dodged_or_vague": [
+        "See, I think we are still, we are looking at this year first, next year we have not thought, but what you are saying is effectively, yes, from Q3-Q4, you will see gradual improvement in the margin."
+      ],
+      "summary": "Devang Gheewalla provided a detailed financial overview of Kotak Mahindra Bank's Q2 performance, highlighting stabilization in NIM and moderation in credit costs. He noted the bank's growth in net advances and deposits, emphasizing the control over operating expenses and the focus on cost-to-assets ratio. Gheewalla discussed the bank's healthy capital adequacy and improvements in asset quality, while also addressing the cautious approach towards retail CV and rural segments. His tone was neutral, focusing on factual reporting of financial metrics and expectations for gradual improvement in credit costs.",
+      "sentiment_score": -0.4159,
+      "sentiment_label": "Negative",
+      "sentiment_colour": "#E53935",
+      "finbert_detail": {
+        "score": -0.4159,
+        "positive": 0.2714,
+        "negative": 0.6873,
+        "neutral": 0.0413,
+        "chunks_scored": 2
+      }
+    },
+    {
+      "name": "Pranav Mishra",
+      "role": "Consumer Bank",
+      "tone": "confident",
+      "key_topics": [
+        "deposits franchise",
+        "customer strategy",
+        "digital banking"
+      ],
+      "direct_answers": [],
+      "dodged_or_vague": [],
+      "summary": "Pranav Mishra discussed the strategic focus of Kotak Mahindra Bank's deposits franchise, emphasizing the importance of digital engagement and omni-banking experiences. He highlighted the growth in current and savings account balances, driven by a focus on self-employed and high net worth customer segments. Mishra also introduced the Kotak Solitaire and Kotak 811 propositions, which aim to enhance customer acquisition and engagement through digital solutions. His confident tone underscored the bank's commitment to leveraging technology for growth and efficiency.",
+      "sentiment_score": 0.7528,
+      "sentiment_label": "Very Positive",
+      "sentiment_colour": "#1B5E20",
+      "finbert_detail": {
+        "score": 0.7528,
+        "positive": 0.7609,
+        "negative": 0.0081,
+        "neutral": 0.231,
+        "chunks_scored": 2
+      }
+    }
+  ],
+  "speaker_count": 3,
+  "chain_of_thought": "1. Identified unique speakers: Ashok Vaswani, Devang Gheewalla, Pranav Mishra. 2. Extracted key statements for each speaker, focusing on specific language, numbers, and forward-looking statements. 3. Assessed each speaker's tone based on their statements. 4. Noted direct answers and vague responses for management speakers. 5. Constructed narrative summaries capturing each speaker's contribution, stance, and key messages.",
+  "sentiment_levels_reference": [
+    {
+      "range": "–1.0 to –0.6",
+      "label": "Very Negative",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "–0.6 to –0.2",
+      "label": "Negative",
+      "colour": "#E53935"
+    },
+    {
+      "range": "–0.2 to +0.2",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "+0.2 to +0.6",
+      "label": "Positive",
+      "colour": "#43A047"
+    },
+    {
+      "range": "+0.6 to +1.0",
+      "label": "Very Positive",
+      "colour": "#1B5E20"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": 0.8447,
+  "overall_sentiment_label": "Very Positive",
+  "overall_sentiment_colour": "#1B5E20",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": 0.9336,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9336,
+        "positive": 0.955,
+        "negative": 0.0215,
+        "neutral": 0.0235,
+        "chunks_scored": 1
+      },
+      "text": "Kotak Mahindra Bank reported a consolidated profit after tax of INR 4,900 crores, marking a 10% increase from INR 4,400 crores. The bank's ROE at the consolidated level is 11.39%, and ROA for Q3 is 2.10%. The consolidated net worth of the group stands at INR 1,75,000 crores. Capital adequacy remains robust at 23.3%, with CET-1 at 22.4%. The book value of the share has grown by 15% year-on-year. The bank's NIM for the quarter remained at 4.54%, consistent with the previous quarter, despite a 50% repo rate cut. Fee income saw a healthy growth of 6% quarter-on-quarter, driven by FX, debt capital, and other factors."
+    },
+    "forward_guidance": {
+      "score": 0.9221,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9221,
+        "positive": 0.9323,
+        "negative": 0.0102,
+        "neutral": 0.0575,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the future, emphasizing a focus on scaling responsibly. They highlighted a strategy to grow advances in the range of 1.5x to 2x nominal GDP growth. The bank plans to continue its focus on granular CASA growth and gradual growth in unsecured retail loans. Management expects normalization of credit costs to continue, albeit at a moderated pace. The bank is also investing in technology to enhance efficiency and customer service, indicating a commitment to long-term growth."
+    },
+    "risk_language": {
+      "score": 0.5071,
+      "label": "Positive",
+      "colour": "#43A047",
+      "finbert": {
+        "score": 0.5071,
+        "positive": 0.6717,
+        "negative": 0.1647,
+        "neutral": 0.1636,
+        "chunks_scored": 1
+      },
+      "text": "Management acknowledged several risks, including geopolitical tensions, trade and tariff uncertainties, and volatility in interest rates. They noted the absence of a final trade agreement with the U.S. as a source of uncertainty. The bank is cautious about growing its retail commercial vehicle book due to credit concerns. There is also a focus on recalibrating credit risk and strengthening technology resilience. The bank is monitoring the Retail CV segment carefully and expects credit costs to normalize at a moderated pace."
+    },
+    "investor_confidence": {
+      "score": 0.9328,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9328,
+        "positive": 0.9464,
+        "negative": 0.0137,
+        "neutral": 0.0399,
+        "chunks_scored": 1
+      },
+      "text": "Management projected clarity and transparency throughout the call, addressing analyst questions directly. They emphasized their strategy of scaling responsibly and maintaining a strong capital adequacy ratio. The bank's leadership team was strengthened with the addition of Anup Saha, enhancing their ability to execute at scale. Management's detailed discussion of financial performance and strategic initiatives demonstrated credibility and a commitment to shareholder value. The call conveyed a sense of confidence in the bank's ability to navigate challenges and capitalize on opportunities."
+    }
+  },
+  "key_positive_drivers": [
+    "10% increase in consolidated profit after tax",
+    "Strong capital adequacy at 23.3%",
+    "15% growth in book value of the share",
+    "Healthy fee income growth of 6% quarter-on-quarter",
+    "Focus on granular CASA growth",
+    "Investment in technology for efficiency"
+  ],
+  "key_negative_drivers": [
+    "Geopolitical tensions and trade uncertainties",
+    "Absence of a final trade agreement with the U.S.",
+    "Cautious growth in retail commercial vehicle book",
+    "Volatility in interest rates",
+    "Monitoring of Retail CV segment due to credit concerns"
+  ],
+  "notable_phrases": [
+    "consolidated profit after tax is INR 4,900 crores",
+    "ROE at consolidated level is at 11.39%",
+    "capital adequacy continues to remain strong at group level at 23.3%",
+    "NIM for the quarter remained at 4.54%",
+    "focus on scaling responsibly",
+    "normalization of credit costs to continue",
+    "geopolitical tensions, trade and tariff uncertainties",
+    "absence of a final trade agreement with the U.S."
+  ],
+  "chain_of_thought": "The financial performance was strong with significant profit growth and robust capital adequacy. Forward guidance was cautiously optimistic, focusing on responsible scaling and technology investment. Risk language acknowledged geopolitical and trade uncertainties, with a cautious approach to certain segments. Investor confidence was bolstered by management's transparency and strategic clarity, projecting a cautiously bullish outlook."
+}

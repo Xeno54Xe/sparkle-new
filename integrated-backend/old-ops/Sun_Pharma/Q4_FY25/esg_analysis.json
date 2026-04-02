@@ -1,0 +1,70 @@
+{
+  "agent": "esg",
+  "overall_esg_score": 21.0,
+  "esg_label": "Concerning",
+  "esg_colour": "#E65100",
+  "environmental": {
+    "score": 0.0,
+    "key_themes": [],
+    "notable_excerpts": []
+  },
+  "social": {
+    "score": 40.0,
+    "key_themes": [
+      "community engagement",
+      "patient advocacy",
+      "healthcare professionals"
+    ],
+    "notable_excerpts": [
+      "The promotion will be more with the HCPs as well as the patient advocacy groups.",
+      "The campaign underscores Sun Pharma's roles in the lives of patients, caregivers, doctors, pharmacists, and communities."
+    ]
+  },
+  "governance": {
+    "score": 30.0,
+    "key_themes": [
+      "risk management",
+      "regulatory compliance"
+    ],
+    "notable_excerpts": [
+      "The discussion today might include certain forward-looking statements and these must be viewed in conjunction with the risk that our business faces.",
+      "We have disclosed that we have requested FDA to audit Halol, they have to decide."
+    ]
+  },
+  "chain_of_thought": "The earnings call transcript lacks any mention of environmental initiatives or metrics, resulting in a score of 0 for the environmental pillar. The social pillar includes some discussion on community engagement and patient advocacy, but lacks depth and specificity, leading to a moderate score. Governance mentions are limited to risk management and regulatory compliance, with no detailed discussion on board independence or ethics, resulting in a low score.",
+  "strengths": [
+    "Community engagement through patient advocacy and healthcare professional interactions."
+  ],
+  "weaknesses": [
+    "Lack of environmental initiatives or disclosures.",
+    "Limited governance disclosures, particularly around board independence and ethics."
+  ],
+  "red_flags": [],
+  "esg_levels_reference": [
+    {
+      "range": "0–20",
+      "label": "Critical",
+      "colour": "#B71C1C"
+    },
+    {
+      "range": "21–40",
+      "label": "Concerning",
+      "colour": "#E65100"
+    },
+    {
+      "range": "41–60",
+      "label": "Neutral",
+      "colour": "#F9A825"
+    },
+    {
+      "range": "61–80",
+      "label": "Commendable",
+      "colour": "#2E7D32"
+    },
+    {
+      "range": "81–100",
+      "label": "Exemplary",
+      "colour": "#1B5E20"
+    }
+  ]
+}

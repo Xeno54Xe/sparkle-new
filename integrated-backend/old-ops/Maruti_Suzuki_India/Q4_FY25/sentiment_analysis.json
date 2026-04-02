@@ -1,0 +1,86 @@
+{
+  "agent": "sentiment",
+  "overall_sentiment_score": -0.233,
+  "overall_sentiment_label": "Negative",
+  "overall_sentiment_colour": "#E53935",
+  "overall_tone": "Cautiously Bullish",
+  "dimensions": {
+    "financial_performance": {
+      "score": -0.961,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.961,
+        "positive": 0.0119,
+        "negative": 0.9729,
+        "neutral": 0.0152,
+        "chunks_scored": 1
+      },
+      "text": "During the quarter, Maruti Suzuki registered the highest ever net sales of about Rs. 388 billion, compared to Rs. 367 billion in the same period of the previous year. However, net profit for the quarter was about Rs. 37.1 billion, down from Rs. 38.7 billion in Q4 FY24. The operating profit margin decreased to 8.7% of net sales from 10% in the previous quarter, impacted by several adverse expenses. The commercial production of the new Kharkhoda plant, with a capacity of 250,000 units per annum, began in March 2025, affecting margins by about 30 basis points. Despite these challenges, the company achieved a historic production milestone of 2 million units in FY25 and recorded its highest ever annual sales of 2.23 million vehicles."
+    },
+    "forward_guidance": {
+      "score": 0.1888,
+      "label": "Neutral",
+      "colour": "#F9A825",
+      "finbert": {
+        "score": 0.1888,
+        "positive": 0.5469,
+        "negative": 0.358,
+        "neutral": 0.0951,
+        "chunks_scored": 1
+      },
+      "text": "Management expressed a cautiously optimistic outlook for the next financial year, projecting a 20% growth in exports despite a modest domestic market growth forecast of 1% to 2%. The company plans to launch two new models, including the e VITARA and another SUV, which are expected to bolster sales. The new plant's production is expected to scale up gradually, and management is closely monitoring capacity utilization and operating leverage. The company is also focusing on making its plants more flexible to accommodate EV production, which is anticipated to have lower profitability in the short term."
+    },
+    "risk_language": {
+      "score": -0.9322,
+      "label": "Very Negative",
+      "colour": "#B71C1C",
+      "finbert": {
+        "score": -0.9322,
+        "positive": 0.0113,
+        "negative": 0.9435,
+        "neutral": 0.0452,
+        "chunks_scored": 1
+      },
+      "text": "Management addressed several risks, including the impact of commodity prices, particularly steel, which adversely affected margins by about 20 basis points. The new plant's overheads and depreciation are also impacting financials. There is concern about the safeguard duty on steel, though management is monitoring the situation closely. The company is aware of the challenges posed by the transition to EVs, which inherently have lower profitability. Additionally, discussions around free trade agreements and regulatory norms like CAFE are ongoing, which could impact future operations."
+    },
+    "investor_confidence": {
+      "score": 0.9257,
+      "label": "Very Positive",
+      "colour": "#1B5E20",
+      "finbert": {
+        "score": 0.9257,
+        "positive": 0.9455,
+        "negative": 0.0198,
+        "neutral": 0.0348,
+        "chunks_scored": 1
+      },
+      "text": "Management projected a sense of clarity and transparency throughout the call, addressing analyst questions directly and providing detailed explanations of financial impacts. They highlighted the company's strategic levers to handle headwinds and emphasized their leadership in the domestic market. The announcement of the highest ever dividend of Rs. 135 per share was a positive signal to investors. However, there was an acknowledgment of the challenges in predicting margins due to various factors, indicating a balanced approach to future expectations."
+    }
+  },
+  "key_positive_drivers": [
+    "Highest ever net sales of Rs. 388 billion",
+    "Historic production milestone of 2 million units",
+    "20% projected growth in exports",
+    "Launch of new models including e VITARA",
+    "Highest ever dividend of Rs. 135 per share"
+  ],
+  "key_negative_drivers": [
+    "Decrease in operating profit margin to 8.7%",
+    "Impact of new plant overheads and depreciation",
+    "Adverse impact of steel prices on margins",
+    "Lower profitability of EVs in the short term",
+    "Modest domestic market growth forecast"
+  ],
+  "notable_phrases": [
+    "Highest ever net sales",
+    "Historic production milestone",
+    "20% growth for exports",
+    "Lower profitability of EVs",
+    "Impact on margins by about 30 basis points",
+    "Highest ever dividend of Rs. 135 per share",
+    "Monitoring the situation closely",
+    "Cautiously optimistic outlook"
+  ],
+  "chain_of_thought": "The call highlighted strong sales performance and strategic initiatives, but also acknowledged challenges in margins and profitability due to new plant costs and commodity prices. Management expressed optimism for export growth and new model launches, while being cautious about domestic market growth and the transition to EVs. Risks were addressed with transparency, and investor confidence was bolstered by a record dividend announcement."
+}
