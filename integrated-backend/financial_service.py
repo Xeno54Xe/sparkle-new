@@ -1,9 +1,62 @@
-import yfinance as yf
+import os
 import json
+import logging
+import yfinance as yf
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Base directory for the new outputs structure
+# Points to integrated-backend/outputs
+BASE_OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "outputs")
+
+def get_fundamental_analysis(stock_name: str):
+    """
+    Fetches fundamental analysis from the new beginner.json structure.
+    New Structure: outputs/{stock_name}/{EC or AR}/{Year or Quarter}/beginner.json
+    """
+    try:
+        # Path to the stock-specific folder
+        stock_path = os.path.join(BASE_OUTPUTS_DIR, stock_name)
+        
+        if not os.path.exists(stock_path):
+            logger.error(f"Directory not found for stock: {stock_name} at {stock_path}")
+            return {"error": f"No data directory found for {stock_name}"}
+
+        # Step 1: Check Earnings Call (EC) folder as primary source
+        ec_path = os.path.join(stock_path, "EC")
+        if os.path.exists(ec_path):
+            # Sort to get the latest quarter (e.g., NOV25, JAN25)
+            quarters = sorted(os.listdir(ec_path), reverse=True)
+            for q in quarters:
+                file_path = os.path.join(ec_path, q, "beginner.json")
+                if os.path.exists(file_path):
+                    logger.info(f"Loading latest EC data for {stock_name} from {q}")
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        return json.load(f)
+
+        # Step 2: Fallback to Annual Report (AR) folder
+        ar_path = os.path.join(stock_path, "AR")
+        if os.path.exists(ar_path):
+            # Sort to get the latest year (e.g., FY25)
+            years = sorted(os.listdir(ar_path), reverse=True)
+            for y in years:
+                file_path = os.path.join(ar_path, y, "beginner.json")
+                if os.path.exists(file_path):
+                    logger.info(f"Loading latest AR data for {stock_name} from {y}")
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        return json.load(f)
+
+        logger.warning(f"beginner.json not found in EC or AR for {stock_name}")
+        return {"error": "Fundamental analysis file (beginner.json) not found"}
+
+    except Exception as e:
+        logger.error(f"Error reading fundamental analysis for {stock_name}: {str(e)}")
+        return {"error": f"Internal server error: {str(e)}"}
 
 def get_stock_info(ticker):
-    """Get comprehensive stock info including key metrics"""
+    """Get real-time comprehensive stock info from yfinance"""
     stock = yf.Ticker(ticker)
     try:
         info = stock.info
@@ -40,101 +93,47 @@ def get_stock_info(ticker):
     except Exception as e:
         return {"error": str(e)}
 
-
 def get_financials(ticker):
-    """Get income statement, balance sheet, cash flow"""
+    """Get income statement, balance sheet, cash flow from yfinance"""
     stock = yf.Ticker(ticker)
     result = {}
-
     try:
-        # Income Statement
-        fin = stock.financials
-        if fin is not None and not fin.empty:
-            income = {}
-            for col in fin.columns[:4]:  # Last 4 years
-                year = str(col.year) if hasattr(col, 'year') else str(col)
-                income[year] = {}
-                for idx in fin.index:
-                    val = fin.loc[idx, col]
-                    income[year][idx] = round(float(val), 2) if val == val else 0  # NaN check
-            result["income_statement"] = income
+        # Helper to process yfinance dataframes into JSON-serializable dicts
+        def process_df(df):
+            if df is not None and not df.empty:
+                data = {}
+                for col in df.columns[:4]:
+                    year = str(col.year) if hasattr(col, 'year') else str(col)
+                    data[year] = {idx: (round(float(val), 2) if val == val else 0) for idx, val in df[col].items()}
+                return data
+            return None
 
-        # Balance Sheet
-        bs = stock.balance_sheet
-        if bs is not None and not bs.empty:
-            balance = {}
-            for col in bs.columns[:4]:
-                year = str(col.year) if hasattr(col, 'year') else str(col)
-                balance[year] = {}
-                for idx in bs.index:
-                    val = bs.loc[idx, col]
-                    balance[year][idx] = round(float(val), 2) if val == val else 0
-            result["balance_sheet"] = balance
-
-        # Cash Flow
-        cf = stock.cashflow
-        if cf is not None and not cf.empty:
-            cashflow = {}
-            for col in cf.columns[:4]:
-                year = str(col.year) if hasattr(col, 'year') else str(col)
-                cashflow[year] = {}
-                for idx in cf.index:
-                    val = cf.loc[idx, col]
-                    cashflow[year][idx] = round(float(val), 2) if val == val else 0
-            result["cash_flow"] = cashflow
-
+        result["income_statement"] = process_df(stock.financials)
+        result["balance_sheet"] = process_df(stock.balance_sheet)
+        result["cash_flow"] = process_df(stock.cashflow)
     except Exception as e:
         result["error"] = str(e)
-
     return result
-
 
 def get_estimates(ticker):
-    """Get analyst recommendations and price targets"""
+    """Get analyst recommendations and price targets from yfinance"""
     stock = yf.Ticker(ticker)
     result = {}
-
     try:
-        # Recommendations
         rec = stock.recommendations
         if rec is not None and not rec.empty:
-            recent = rec.tail(10)
-            recs = []
-            for _, row in recent.iterrows():
-                recs.append({
-                    "firm": row.get("Firm", "Unknown"),
-                    "grade": row.get("To Grade", row.get("toGrade", "")),
-                    "action": row.get("Action", ""),
-                })
-            result["recommendations"] = recs
+            result["recommendations"] = [
+                {"firm": row.get("Firm", "Unknown"), "grade": row.get("To Grade", ""), "action": row.get("Action", "")}
+                for _, row in rec.tail(10).iterrows()
+            ]
 
-        # Price targets
-        try:
-            targets = stock.analyst_price_targets
-            if targets is not None:
-                result["price_targets"] = {
-                    "low": targets.get("low", 0),
-                    "current": targets.get("current", 0),
-                    "mean": targets.get("mean", 0),
-                    "median": targets.get("median", 0),
-                    "high": targets.get("high", 0),
-                }
-        except:
-            pass
-
-        # Earnings estimates
-        try:
-            earnings = stock.earnings_estimate
-            if earnings is not None and not earnings.empty:
-                result["earnings_estimate"] = earnings.to_dict()
-        except:
-            pass
+        targets = stock.analyst_price_targets
+        if targets:
+            result["price_targets"] = targets
 
     except Exception as e:
         result["error"] = str(e)
-
     return result
-
 
 def format_large_number(num):
     """Format number in Indian style (Cr, L)"""

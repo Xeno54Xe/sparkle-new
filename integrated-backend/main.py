@@ -1,15 +1,33 @@
+import os
+import json
+import logging
+import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+import urllib.request
+import re
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+
+# Import services
 from stock_service import get_stock_history, get_stock_price
 from technical_service import get_indicators, get_candlestick_pattern, get_crossovers
 from signal_service import generate_signal
-from financial_service import get_stock_info, get_financials, get_estimates
-import json
-import os
+from financial_service import (
+    get_stock_info, 
+    get_financials, 
+    get_estimates, 
+    get_fundamental_analysis  # Updated logic resides here
+)
 
-app = FastAPI(title="SparkleAI Investment Backend", version="4.0")
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
+app = FastAPI(title="SparkleAI Investment Backend", version="5.0")
+
+# Enable CORS for frontend communication
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -18,17 +36,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Base directory for the new outputs structure
 EARNINGS_OUTPUTS = os.path.join(os.path.dirname(__file__), "outputs")
+
+# Mount static files if needed for direct PDF/Image access
 if os.path.exists(EARNINGS_OUTPUTS):
     app.mount("/data", StaticFiles(directory=EARNINGS_OUTPUTS), name="earnings-data")
 
-
 @app.get("/")
 def home():
-    return {"message": "SparkleAI v4.0", "companies": 49, "total_analyses": 231}
+    return {
+        "status": "online",
+        "version": "5.0",
+        "message": "Integrated Backend Active",
+        "structure": "Optimized Beginner JSON"
+    }
 
-
-# ═══ TECHNICAL ═══
+# ═══ TECHNICAL ANALYSIS ═══
 
 @app.get("/price/{ticker}")
 def price(ticker: str):
@@ -52,127 +76,51 @@ def signal(ticker: str):
 
 @app.get("/full/{ticker}")
 def full_analysis(ticker: str):
-    df = get_stock_history(ticker)
-    indicators = get_indicators(df)
-    indicators["candle"] = get_candlestick_pattern(df)
-    indicators["crossovers"] = get_crossovers(df)
-    sig = generate_signal(indicators)
-    return {"indicators": indicators, "signal": sig}
+    try:
+        df = get_stock_history(ticker)
+        ind = get_indicators(df)
+        ind["candle"] = get_candlestick_pattern(df)
+        ind["crossovers"] = get_crossovers(df)
+        sig = generate_signal(ind)
+        return {"indicators": ind, "signal": sig}
+    except Exception as e:
+        return {"error": str(e)}
 
-
-# ═══ FUNDAMENTAL (Earnings Call Data) ═══
-
-@app.get("/fundamental/manifest")
-def get_manifest():
-    p = os.path.join(EARNINGS_OUTPUTS, "manifest.json")
-    if os.path.exists(p):
-        with open(p, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"error": "Manifest not found"}
+# ═══ FUNDAMENTAL ANALYSIS (Research Data) ═══
 
 @app.get("/fundamental/{company}")
-def get_company_analyses(company: str):
-    p = os.path.join(EARNINGS_OUTPUTS, "manifest.json")
-    if not os.path.exists(p):
-        return {"error": "Manifest not found"}
-    with open(p, "r", encoding="utf-8") as f:
-        manifest = json.load(f)
-    results = [e for e in manifest.get("analyses", []) if company.lower() in e.get("company", "").lower()]
-    results.sort(key=lambda x: (x.get("fiscal_year") or "", x.get("quarter") or ""), reverse=True)
-    return {"company": company, "total": len(results), "analyses": results}
-
-@app.get("/fundamental/{company}/{quarter_fy}")
-def get_quarter_analysis(company: str, quarter_fy: str):
-    company_folder = company.replace(" ", "_")
-    output_dir = os.path.join(EARNINGS_OUTPUTS, company_folder, quarter_fy)
-    if not os.path.exists(output_dir):
-        output_dir = os.path.join(EARNINGS_OUTPUTS, company, quarter_fy)
-    if not os.path.exists(output_dir):
-        return {"error": f"No analysis found for {company} {quarter_fy}"}
-
-    result = {}
-    files = {"esg": "esg_analysis.json", "sentiment": "sentiment_analysis.json",
-             "speaker": "speaker_analysis.json", "summary": "summary_analysis.json",
-             "metrics": "metrics.json"}
-    for key, filename in files.items():
-        filepath = os.path.join(output_dir, filename)
-        if os.path.exists(filepath):
-            with open(filepath, "r", encoding="utf-8") as f:
-                result[key] = json.load(f)
-
-    report_path = os.path.join(output_dir, "summary_report.md")
-    if os.path.exists(report_path):
-        with open(report_path, "r", encoding="utf-8") as f:
-            result["report_markdown"] = f.read()
-
-    manifest_path = os.path.join(EARNINGS_OUTPUTS, "manifest.json")
-    if os.path.exists(manifest_path):
-        with open(manifest_path, "r", encoding="utf-8") as f:
-            manifest = json.load(f)
-        for entry in manifest.get("analyses", []):
-            ef = entry.get("company", "").replace(" ", "_")
-            eq = (entry.get("quarter") or "") + "_" + (entry.get("fiscal_year") or "")
-            if ef == company_folder and eq == quarter_fy:
-                result["headline"] = entry.get("headline", {})
-                result["quarter"] = entry.get("quarter")
-                result["fiscal_year"] = entry.get("fiscal_year")
-                break
-    return result
-
-
-# ═══ NEW: METRICS ENDPOINTS ═══
-
-@app.get("/metrics/{company}")
-def get_company_metrics(company: str):
-    p = os.path.join(EARNINGS_OUTPUTS, "all_metrics.json")
-    if not os.path.exists(p):
-        return {"error": "all_metrics.json not found"}
-    with open(p, "r", encoding="utf-8") as f:
-        all_data = json.load(f)
-    results = [e for e in all_data if company.lower() in e.get("company", "").lower()]
-    results.sort(key=lambda x: (x.get("fiscal_year") or "", x.get("quarter") or ""), reverse=True)
-    return {"company": company, "total": len(results), "quarters": results}
-
-@app.get("/metrics/{company}/{quarter_fy}")
-def get_quarter_metrics(company: str, quarter_fy: str):
-    cf = company.replace(" ", "_")
-    p = os.path.join(EARNINGS_OUTPUTS, cf, quarter_fy, "metrics.json")
-    if not os.path.exists(p):
-        p = os.path.join(EARNINGS_OUTPUTS, company, quarter_fy, "metrics.json")
-    if not os.path.exists(p):
-        return {"error": f"No metrics for {company} {quarter_fy}"}
-    with open(p, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-@app.get("/all-metrics")
-def get_all_metrics():
-    p = os.path.join(EARNINGS_OUTPUTS, "all_metrics.json")
-    if not os.path.exists(p):
-        return {"error": "all_metrics.json not found"}
-    with open(p, "r", encoding="utf-8") as f:
-        return json.load(f)
+def get_fundamental(company: str):
+    """
+    Primary endpoint for Sparkle Intelligence -> Fundamental Analysis Tab.
+    This routes to financial_service.py which handles the EC/AR folder logic.
+    """
+    # company here should be the folder name (e.g., 'Adani Enterprises')
+    data = get_fundamental_analysis(company)
+    return data
 
 @app.get("/companies")
 def get_all_companies():
-    p = os.path.join(EARNINGS_OUTPUTS, "manifest.json")
-    if not os.path.exists(p):
-        return {"error": "Manifest not found"}
-    with open(p, "r", encoding="utf-8") as f:
-        manifest = json.load(f)
-    companies = {}
-    for entry in manifest.get("analyses", []):
-        name = entry.get("company", "")
-        if name not in companies:
-            companies[name] = {"name": name, "folder": name.replace(" ", "_"), "quarters": [], "latest_headline": None}
-        qfy = f"{entry.get('quarter') or ''}_{entry.get('fiscal_year') or ''}"
-        companies[name]["quarters"].append(qfy)
-        if companies[name]["latest_headline"] is None:
-            companies[name]["latest_headline"] = entry.get("headline", {})
-    result = sorted(companies.values(), key=lambda x: x["name"])
-    return {"total": len(result), "companies": result}
+    """
+    Lists all company folders present in the outputs directory.
+    """
+    try:
+        if not os.path.exists(EARNINGS_OUTPUTS):
+            return {"total": 0, "companies": []}
+        
+        folders = [f for f in os.listdir(EARNINGS_OUTPUTS) 
+                   if os.path.isdir(os.path.join(EARNINGS_OUTPUTS, f))]
+        
+        result = []
+        for folder in sorted(folders):
+            result.append({
+                "name": folder,
+                "folder": folder
+            })
+        return {"total": len(result), "companies": result}
+    except Exception as e:
+        return {"error": str(e)}
 
-
-# ═══ FINANCIAL DATA (yfinance) ═══
+# ═══ REAL-TIME FINANCIAL DATA (yfinance) ═══
 
 @app.get("/stock-info/{ticker}")
 def stock_info(ticker: str):
@@ -187,33 +135,37 @@ def estimates(ticker: str):
     return get_estimates(ticker)
 
 @app.get("/stock-complete/{ticker}")
-def stock_complete(ticker: str):
+def stock_complete(ticker: str, company_name: str = None):
+    """
+    Returns a combined view of Technicals, Financials (yfinance), 
+    and Fundamental (Research) data.
+    """
     info = get_stock_info(ticker)
+    
+    # Technical Data
     try:
         df = get_stock_history(ticker)
         ind = get_indicators(df)
         ind["candle"] = get_candlestick_pattern(df)
         ind["crossovers"] = get_crossovers(df)
         technical = {"indicators": ind, "signal": generate_signal(ind)}
-    except Exception as e:
-        technical = {"error": str(e)}
-    try:
-        fin = get_financials(ticker)
-    except Exception as e:
-        fin = {"error": str(e)}
-    try:
-        est = get_estimates(ticker)
-    except Exception as e:
-        est = {"error": str(e)}
-    return {"info": info, "technical": technical, "financials": fin, "estimates": est}
+    except:
+        technical = {"error": "Technical service unavailable"}
 
+    # Fundamental Data (Research Files)
+    fundamental = {"error": "Company name not provided for research data"}
+    if company_name:
+        fundamental = get_fundamental_analysis(company_name)
 
-# ═══ NEWS ENDPOINT (Google News RSS — category-based) ═══
+    return {
+        "info": info,
+        "technical": technical,
+        "financials": get_financials(ticker),
+        "estimates": get_estimates(ticker),
+        "fundamental_research": fundamental
+    }
 
-import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
-import urllib.request
-import re
+# ═══ NEWS SERVICE ═══
 
 def parse_time_ago(pub_date_str):
     try:
@@ -221,103 +173,62 @@ def parse_time_ago(pub_date_str):
         dt = dt.replace(tzinfo=timezone.utc)
         diff = datetime.now(timezone.utc) - dt
         mins = int(diff.total_seconds() / 60)
-        if mins < 60:
-            return f"{mins} min ago"
+        if mins < 60: return f"{mins}m ago"
         hours = mins // 60
-        if hours < 24:
-            return f"{hours} hr ago"
-        days = hours // 24
-        return f"{days}d ago"
+        if hours < 24: return f"{hours}h ago"
+        return f"{hours // 24}d ago"
     except:
         return "recently"
 
-def parse_pub_date(pub_date_str):
-    """Returns datetime object or None"""
-    try:
-        dt = datetime.strptime(pub_date_str.strip(), "%a, %d %b %Y %H:%M:%S %Z")
-        return dt.replace(tzinfo=timezone.utc)
-    except:
-        return None
-
 def fetch_rss(query, category, count=2):
     try:
-        # Add 'when:1d' to force results from last 24 hours
         full_query = f"{query} when:1d"
         url = f"https://news.google.com/rss/search?q={urllib.request.quote(full_query)}&hl=en-IN&gl=IN&ceid=IN:en"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         response = urllib.request.urlopen(req, timeout=8)
-        xml_data = response.read().decode("utf-8")
-        root = ET.fromstring(xml_data)
+        root = ET.fromstring(response.read().decode("utf-8"))
 
         articles = []
-        seen_titles = set()
         now = datetime.now(timezone.utc)
-
-        for item in root.findall(".//item"):
-            if len(articles) >= count:
-                break
+        for item in root.findall(".//item")[:count+3]: # Fetch slight overage to allow filtering
             title = item.findtext("title", "")
-            link = item.findtext("link", "")
             pub_date = item.findtext("pubDate", "")
-            source_match = re.search(r" - (.+)$", title)
-            source = source_match.group(1) if source_match else "Google News"
-            clean_title = re.sub(r" - [^-]+$", "", title).strip()
-
-            # Skip old articles (older than 48 hours)
-            dt = parse_pub_date(pub_date)
-            if dt:
-                age_hours = (now - dt).total_seconds() / 3600
-                if age_hours > 48:
-                    continue
-
-            # Skip duplicates
-            title_key = clean_title[:50].lower()
-            if title_key in seen_titles:
-                continue
-            seen_titles.add(title_key)
+            
+            # Date filtering
+            dt = None
+            try: dt = datetime.strptime(pub_date.strip(), "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc)
+            except: pass
+            
+            if dt and (now - dt).total_seconds() / 3600 > 48: continue
 
             articles.append({
-                "title": clean_title,
-                "link": link,
-                "source": source,
+                "title": re.sub(r" - [^-]+$", "", title).strip(),
+                "link": item.findtext("link", ""),
+                "source": (re.search(r" - (.+)$", title).group(1) if " - " in title else "News"),
                 "time": parse_time_ago(pub_date),
                 "category": category,
-                "_dt": dt,
+                "_dt": dt
             })
+            if len(articles) >= count: break
         return articles
     except:
         return []
 
 @app.get("/news")
 def get_news():
-    try:
-        categories = [
-            ("stock market India today Nifty Sensex", "Market", 2),
-            ("RBI SEBI policy regulation India today", "Policy", 1),
-            ("India company quarterly results earnings today", "Earnings", 1),
-            ("IT banking pharma auto sector stocks India today", "Sector", 1),
-            ("crude oil gold commodity price India today", "Commodities", 1),
-            ("FII DII buying selling India stocks today", "Market", 1),
-            ("IPO listing India stock exchange today", "Market", 1),
-        ]
-
-        all_articles = []
-        seen = set()
-        for query, category, count in categories:
-            items = fetch_rss(query, category, count)
-            for item in items:
-                key = item["title"][:50].lower()
-                if key not in seen:
-                    seen.add(key)
-                    all_articles.append(item)
-
-        # Sort by most recent first
-        all_articles.sort(key=lambda x: x.get("_dt") or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
-
-        # Remove internal _dt field before returning
-        for a in all_articles:
-            a.pop("_dt", None)
-
-        return {"articles": all_articles[:8], "count": len(all_articles[:8])}
-    except Exception as e:
-        return {"articles": [], "error": str(e)}
+    categories = [
+        ("Indian stock market Nifty Sensex today", "Market", 3),
+        ("RBI SEBI corporate news India", "Policy", 2),
+        ("quarterly results earnings India today", "Earnings", 3)
+    ]
+    all_articles = []
+    seen = set()
+    for query, cat, count in categories:
+        for item in fetch_rss(query, cat, count):
+            if item["title"] not in seen:
+                seen.add(item["title"])
+                all_articles.append(item)
+    
+    all_articles.sort(key=lambda x: x.get("_dt") or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+    for a in all_articles: a.pop("_dt", None)
+    return {"articles": all_articles[:10]}
