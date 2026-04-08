@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { Search, Bell, Settings, TrendingUp, TrendingDown } from "lucide-react"
+import Link from "next/link"
+import { Search, Settings, TrendingUp, TrendingDown } from "lucide-react"
 import { StockLogo } from "@/components/ui/stock-logo"
 
 const nifty50Stocks = [
@@ -209,15 +210,9 @@ export function TopBar() {
 
       {/* Actions */}
       <div className="flex items-center gap-3">
-        <button className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 border border-white/5 text-muted-foreground transition-all duration-300 hover:bg-white/10 hover:text-foreground hover:scale-105 hover:shadow-lg">
-          <Bell size={18} />
-          <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground shadow-[0_0_10px_rgba(16,185,129,0.5)] animate-pulse">
-            3
-          </span>
-        </button>
-        <button className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 border border-white/5 text-muted-foreground transition-all duration-300 hover:bg-white/10 hover:text-foreground hover:scale-105 hover:shadow-lg hover:rotate-90">
+        <Link href="/settings" className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 border border-white/5 text-muted-foreground transition-all duration-300 hover:bg-white/10 hover:text-foreground hover:scale-105 hover:shadow-lg hover:rotate-90">
           <Settings size={18} />
-        </button>
+        </Link>
       </div>
     </header>
   )
