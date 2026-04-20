@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -5,7 +7,9 @@ from stock_service import get_stock_history, get_stock_price
 from technical_service import get_indicators, get_candlestick_pattern, get_crossovers
 from signal_service import generate_signal
 from financial_service import get_stock_info, get_financials, get_estimates
+from typing import Optional
 import json
+import math
 import os
 
 app = FastAPI(title="SparkleAI Investment Backend", version="4.0")
@@ -23,7 +27,7 @@ if os.path.exists(EARNINGS_OUTPUTS):
     app.mount("/data", StaticFiles(directory=EARNINGS_OUTPUTS), name="earnings-data")
 
 
-def find_company_folder(company: str) -> str | None:
+def find_company_folder(company: str) -> Optional[str]:
     """Find the exact outputs folder for a company by exact then case-insensitive match."""
     if not os.path.isdir(EARNINGS_OUTPUTS):
         return None
@@ -43,6 +47,17 @@ def find_company_folder(company: str) -> str | None:
     return partial
 
 
+def clean_nans(obj):
+    """Recursively replace NaN/Inf floats with None for JSON compliance."""
+    if isinstance(obj, dict):
+        return {k: clean_nans(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [clean_nans(v) for v in obj]
+    elif isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
+        return None
+    return obj
+
+
 @app.get("/")
 def home():
     return {"message": "SparkleAI v4.0", "companies": 49, "total_analyses": 231}
@@ -60,7 +75,7 @@ def technical_analysis(ticker: str):
     indicators = get_indicators(df)
     indicators["candle"] = get_candlestick_pattern(df)
     indicators["crossovers"] = get_crossovers(df)
-    return indicators
+    return clean_nans(indicators)
 
 @app.get("/signal/{ticker}")
 def signal(ticker: str):
@@ -68,7 +83,7 @@ def signal(ticker: str):
     indicators = get_indicators(df)
     indicators["candle"] = get_candlestick_pattern(df)
     indicators["crossovers"] = get_crossovers(df)
-    return generate_signal(indicators)
+    return clean_nans(generate_signal(indicators))
 
 @app.get("/full/{ticker}")
 def full_analysis(ticker: str):
@@ -77,7 +92,7 @@ def full_analysis(ticker: str):
     indicators["candle"] = get_candlestick_pattern(df)
     indicators["crossovers"] = get_crossovers(df)
     sig = generate_signal(indicators)
-    return {"indicators": indicators, "signal": sig}
+    return clean_nans({"indicators": indicators, "signal": sig})
 
 
 # ═══ FUNDAMENTAL (Earnings Call Data) ═══
@@ -114,7 +129,12 @@ def list_company_reports(company: str):
 
 @app.get("/fundamental/{company}/{category}/{period}")
 def get_beginner_analysis(company: str, category: str, period: str):
-    """Return beginner.json for outputs/{company}/{category}/{period}/."""
+    """Return beginner.json for outputs/{company}/{category}/{period}/.
+    category must be EC or AR — guard against the old {quarter_fy} catch-all
+    routing here by checking the value."""
+    if category.upper() not in ("EC", "AR"):
+        # Delegate to the legacy quarter endpoint logic
+        return _legacy_quarter_analysis(company, category)
     folder = find_company_folder(company)
     if not folder:
         return {"error": f"Company '{company}' not found"}
@@ -136,15 +156,14 @@ def get_company_analyses(company: str):
     results.sort(key=lambda x: (x.get("fiscal_year") or "", x.get("quarter") or ""), reverse=True)
     return {"company": company, "total": len(results), "analyses": results}
 
-@app.get("/fundamental/{company}/{quarter_fy}")
-def get_quarter_analysis(company: str, quarter_fy: str):
+def _legacy_quarter_analysis(company: str, quarter_fy: str):
+    """Shared logic for the old quarter-based analysis lookup."""
     company_folder = company.replace(" ", "_")
     output_dir = os.path.join(EARNINGS_OUTPUTS, company_folder, quarter_fy)
     if not os.path.exists(output_dir):
         output_dir = os.path.join(EARNINGS_OUTPUTS, company, quarter_fy)
     if not os.path.exists(output_dir):
         return {"error": f"No analysis found for {company} {quarter_fy}"}
-
     result = {}
     files = {"esg": "esg_analysis.json", "sentiment": "sentiment_analysis.json",
              "speaker": "speaker_analysis.json", "summary": "summary_analysis.json",
@@ -154,12 +173,10 @@ def get_quarter_analysis(company: str, quarter_fy: str):
         if os.path.exists(filepath):
             with open(filepath, "r", encoding="utf-8") as f:
                 result[key] = json.load(f)
-
     report_path = os.path.join(output_dir, "summary_report.md")
     if os.path.exists(report_path):
         with open(report_path, "r", encoding="utf-8") as f:
             result["report_markdown"] = f.read()
-
     manifest_path = os.path.join(EARNINGS_OUTPUTS, "manifest.json")
     if os.path.exists(manifest_path):
         with open(manifest_path, "r", encoding="utf-8") as f:
@@ -173,6 +190,10 @@ def get_quarter_analysis(company: str, quarter_fy: str):
                 result["fiscal_year"] = entry.get("fiscal_year")
                 break
     return result
+
+@app.get("/fundamental/{company}/{quarter_fy}")
+def get_quarter_analysis(company: str, quarter_fy: str):
+    return _legacy_quarter_analysis(company, quarter_fy)
 
 
 # ═══ REPORTS LIST ═══
