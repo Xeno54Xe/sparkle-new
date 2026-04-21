@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { BarChart2, Zap, AlertTriangle, Loader2 } from "lucide-react"
+import { Zap, AlertTriangle, Loader2 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 interface TechnicalAnalysisProps { symbol: string }
@@ -74,11 +74,6 @@ export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
           <div className="inline-flex mt-3 rounded-full px-5 py-2 text-sm font-bold" style={{backgroundColor:sbb(v.sig),color:sc(v.sig)}}>{v.sig}</div>
           <div className="flex gap-8 mt-4">{[{c:"#34D399",val:v.buys,l:"Buy"},{c:"#F87171",val:v.sells,l:"Sell"},{c:"#FBBF24",val:v.n,l:"Neutral"}].map(i=>(<div key={i.l} className="text-center"><p className="text-xl font-bold" style={{color:i.c}}>{i.val}</p><p className="text-xs text-muted-foreground">{i.l}</p></div>))}</div>
         </div></CardContent></Card>
-
-        {/* Verdict Breakdown */}
-        <Card><CardHeader className="pb-3"><CardTitle className="flex items-center gap-2 text-lg"><BarChart2 size={20}/> Verdict Breakdown</CardTitle></CardHeader><CardContent className="space-y-4">
-          {[{n:"Trend (25%)",s:v.ts,f:"SMA50, SMA200, EMA20, EMA9, Ichimoku"},{n:"Momentum (25%)",s:v.ms,f:"MACD, Hist, ROC, ADX"},{n:"Oscillators (20%)",s:v.os,f:"RSI, Stoch, CCI, W%R, MFI"},{n:"Volume (15%)",s:v.vs,f:"VWAP, OBV"},{n:"Patterns (15%)",s:v.ps,f:"Candle, Crossovers"}].map((c,i)=>(<div key={i}><div className="flex justify-between mb-1"><span className="text-sm font-medium">{c.n}</span><span className="text-sm font-bold" style={{color:bc(c.s)}}>{c.s}</span></div><div className="h-1.5 rounded-full bg-secondary overflow-hidden"><div className="h-full rounded-full" style={{width:`${c.s}%`,backgroundColor:bc(c.s)}}/></div><p className="text-xs text-muted-foreground mt-1">{c.f}</p></div>))}
-        </CardContent></Card>
 
         {/* Candlestick Pattern + MA Crossovers */}
         <div className="grid gap-6 lg:grid-cols-2">

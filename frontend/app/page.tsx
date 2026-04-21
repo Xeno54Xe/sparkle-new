@@ -2,7 +2,6 @@ import { Sidebar } from "@/components/dashboard/sidebar"
 import { TopBar } from "@/components/dashboard/top-bar"
 import { MarketOverview } from "@/components/dashboard/market-overview"
 import { TrendingNews } from "@/components/dashboard/trending-news"
-import { AIIntelligence } from "@/components/dashboard/ai-intelligence"
 import { Watchlist } from "@/components/dashboard/watchlist"
 import { MostActive } from "@/components/dashboard/most-active"
 
@@ -17,7 +16,6 @@ export default function Dashboard() {
             <div className="space-y-6 lg:col-span-8 flex flex-col">
               <MarketOverview />
               <TrendingNews />
-              <AIIntelligence />
             </div>
             <div className="space-y-6 lg:col-span-4 flex flex-col">
               <Watchlist />
