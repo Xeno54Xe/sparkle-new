@@ -39,21 +39,6 @@ export function StockInfo({ stock }: StockInfoProps) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        {[
-          { label: "Day High", value: stock.price * 1.02 },
-          { label: "Day Low", value: stock.price * 0.98 },
-          { label: "52W High", value: stock.price * 1.25, color: "text-primary" },
-          { label: "52W Low", value: stock.price * 0.72, color: "text-destructive" },
-        ].map(item => (
-          <div key={item.label} className="rounded-lg border border-border bg-background p-4">
-            <p className="mb-1 text-xs text-muted-foreground">{item.label}</p>
-            <p className={`text-lg font-semibold ${item.color || "text-foreground"}`}>
-              {item.value.toLocaleString("en-IN", { style: "currency", currency: "INR" })}
-            </p>
-          </div>
-        ))}
-      </div>
     </div>
   )
 }

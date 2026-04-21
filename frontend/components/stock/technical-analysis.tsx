@@ -55,23 +55,27 @@ export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
   const crossovers = Object.values(d.crossovers||{}) as any[]
   const s1=d.support?.S1||d.price*0.98, s2=d.support?.S2||d.price*0.96, r1=d.resistance?.R1||d.price*1.02, r2=d.resistance?.R2||d.price*1.04
   const downside=((d.price-s2)/d.price*100), upside=((r2-d.price)/d.price*100), rrRatio=upside/(downside||1)
-  const sma50Pct=d.SMA50?((d.price-d.SMA50)/d.SMA50*100):0, sma200Pct=d.SMA200?((d.price-d.SMA200)/d.SMA200*100):0
+  const sma50Pct=d.SMA50!=null?((d.price-d.SMA50)/d.SMA50*100):null, sma200Pct=d.SMA200!=null?((d.price-d.SMA200)/d.SMA200*100):null
   const rsScore=Math.max(0,Math.min(100,Math.round(50+sma50Pct*3+sma200Pct*2)))
 
+  const n1 = (v: number|null|undefined) => v != null ? v.toFixed(1) : undefined
+  const n2 = (v: number|null|undefined) => v != null ? v.toFixed(2) : undefined
+  const inr = (v: number|null|undefined) => v != null ? "INR " + v.toFixed(2) : undefined
+
   const indicators = [
-    {n:"RSI (14)",v:d.RSI?.toFixed(1),s:d.RSI<30?"BUY":d.RSI>70?"SELL":"NEUTRAL",ds:"Momentum"},
-    {n:"MACD",v:d.MACD?.toFixed(2),s:d.MACD>d.MACDSignal?"BUY":"SELL",ds:d.MACD>d.MACDSignal?"Bullish":"Bearish"},
-    {n:"SMA 50",v:"INR "+d.SMA50?.toFixed(2),s:d.price>d.SMA50?"BUY":"SELL",ds:d.price>d.SMA50?"Above":"Below"},
-    {n:"SMA 200",v:"INR "+d.SMA200?.toFixed(2),s:d.price>d.SMA200?"BUY":"SELL",ds:d.price>d.SMA200?"Uptrend":"Downtrend"},
-    {n:"ADX",v:d.ADX?.toFixed(1),s:d.ADX>25?"STRONG":"WEAK",ds:d.ADX>25?"Strong":"Weak"},
-    {n:"Stoch %K",v:d.stochK?.toFixed(1),s:d.stochK<20?"BUY":d.stochK>80?"SELL":"NEUTRAL",ds:"Oscillator"},
-    {n:"CCI",v:d.CCI?.toFixed(1),s:d.CCI>100?"SELL":d.CCI<-100?"BUY":"NEUTRAL",ds:"Cycle"},
-    {n:"W %R",v:d.WilliamsR?.toFixed(1),s:d.WilliamsR>-20?"SELL":d.WilliamsR<-80?"BUY":"NEUTRAL",ds:"Range"},
-    {n:"MFI",v:d.MFI?.toFixed(1),s:d.MFI>80?"SELL":d.MFI<20?"BUY":"NEUTRAL",ds:"Flow"},
-    {n:"ROC",v:(d.ROC?.toFixed(1)||"0")+"%",s:d.ROC>0?"BUY":"SELL",ds:"Rate"},
-    {n:"EMA 20",v:"INR "+d.EMA20?.toFixed(2),s:d.price>d.EMA20?"BUY":"SELL",ds:"Short-term"},
-    {n:"VWAP",v:"INR "+d.VWAP?.toFixed(2),s:d.price>d.VWAP?"BUY":"SELL",ds:"Volume-wtd"},
-  ]
+    {n:"RSI (14)",v:n1(d.RSI),s:d.RSI!=null?(d.RSI<30?"BUY":d.RSI>70?"SELL":"NEUTRAL"):"NEUTRAL",ds:"Momentum"},
+    {n:"MACD",v:n2(d.MACD),s:d.MACD!=null&&d.MACDSignal!=null?(d.MACD>d.MACDSignal?"BUY":"SELL"):"NEUTRAL",ds:d.MACD!=null&&d.MACDSignal!=null?(d.MACD>d.MACDSignal?"Bullish":"Bearish"):"—"},
+    {n:"SMA 50",v:inr(d.SMA50),s:d.SMA50!=null?(d.price>d.SMA50?"BUY":"SELL"):"NEUTRAL",ds:d.SMA50!=null?(d.price>d.SMA50?"Above":"Below"):"—"},
+    {n:"SMA 200",v:inr(d.SMA200),s:d.SMA200!=null?(d.price>d.SMA200?"BUY":"SELL"):"NEUTRAL",ds:d.SMA200!=null?(d.price>d.SMA200?"Uptrend":"Downtrend"):"—"},
+    {n:"ADX",v:n1(d.ADX),s:d.ADX!=null?(d.ADX>25?"STRONG":"WEAK"):"NEUTRAL",ds:d.ADX!=null?(d.ADX>25?"Strong":"Weak"):"—"},
+    {n:"Stoch %K",v:n1(d.stochK),s:d.stochK!=null?(d.stochK<20?"BUY":d.stochK>80?"SELL":"NEUTRAL"):"NEUTRAL",ds:"Oscillator"},
+    {n:"CCI",v:n1(d.CCI),s:d.CCI!=null?(d.CCI>100?"SELL":d.CCI<-100?"BUY":"NEUTRAL"):"NEUTRAL",ds:"Cycle"},
+    {n:"W %R",v:n1(d.WilliamsR),s:d.WilliamsR!=null?(d.WilliamsR>-20?"SELL":d.WilliamsR<-80?"BUY":"NEUTRAL"):"NEUTRAL",ds:"Range"},
+    {n:"MFI",v:n1(d.MFI),s:d.MFI!=null?(d.MFI>80?"SELL":d.MFI<20?"BUY":"NEUTRAL"):"NEUTRAL",ds:"Flow"},
+    {n:"ROC",v:d.ROC!=null?d.ROC.toFixed(1)+"%":undefined,s:d.ROC!=null?(d.ROC>0?"BUY":"SELL"):"NEUTRAL",ds:"Rate"},
+    {n:"EMA 20",v:inr(d.EMA20),s:d.EMA20!=null?(d.price>d.EMA20?"BUY":"SELL"):"NEUTRAL",ds:"Short-term"},
+    {n:"VWAP",v:inr(d.VWAP),s:d.VWAP!=null?(d.price>d.VWAP?"BUY":"SELL"):"NEUTRAL",ds:"Volume-wtd"},
+  ].filter(ind => ind.v !== undefined)
 
   return (
     <div className="space-y-6">
@@ -131,7 +135,7 @@ export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
             </div>
             <div className="text-center mb-4"><p className="text-3xl font-bold" style={{color:bc(rsScore)}}>{rsScore}</p><p className="text-xs text-muted-foreground">Relative Strength Score</p></div>
             <div className="space-y-2">
-              {[{l:"vs SMA 50",v:sma50Pct},{l:"vs SMA 200",v:sma200Pct},{l:"ADX Strength",v:d.ADX,isAbs:true},{l:"Momentum (ROC)",v:d.ROC}].map((r,i)=>(<div key={i} className="flex justify-between py-2 border-b border-border last:border-0"><span className="text-sm text-muted-foreground">{r.l}</span><span className="text-sm font-semibold" style={{color:r.isAbs?(r.v>25?"#34D399":"#FBBF24"):(r.v>=0?"#34D399":"#EF4444")}}>{r.isAbs?r.v?.toFixed(1)+" "+(r.v>25?"(Strong)":"(Weak)"):(r.v>=0?"+":"")+r.v?.toFixed(2)+"%"}</span></div>))}
+              {([{l:"vs SMA 50",v:sma50Pct},{l:"vs SMA 200",v:sma200Pct},{l:"ADX Strength",v:d.ADX as number|null,isAbs:true},{l:"Momentum (ROC)",v:d.ROC as number|null}] as {l:string,v:number|null,isAbs?:boolean}[]).filter(r=>r.v!=null).map((r,i)=>{const rv=r.v as number;return(<div key={i} className="flex justify-between py-2 border-b border-border last:border-0"><span className="text-sm text-muted-foreground">{r.l}</span><span className="text-sm font-semibold" style={{color:r.isAbs?(rv>25?"#34D399":"#FBBF24"):(rv>=0?"#34D399":"#EF4444")}}>{r.isAbs?rv.toFixed(1)+" "+(rv>25?"(Strong)":"(Weak)"):(rv>=0?"+":"")+rv.toFixed(2)+"%"}</span></div>)})}
             </div>
           </CardContent></Card>
         </div>
