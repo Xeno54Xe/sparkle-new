@@ -94,10 +94,19 @@ function scoreColor(v: number) {
 async function safeFetch(url: string) {
   try {
     const r = await fetch(url)
-    if (!r.ok) return null
+    if (!r.ok) {
+      console.error(`[FundamentalAnalysis] HTTP ${r.status} for ${url}`)
+      return null
+    }
     const t = await r.text()
-    try { return JSON.parse(t) } catch { return null }
-  } catch { return null }
+    try { return JSON.parse(t) } catch (e) {
+      console.error(`[FundamentalAnalysis] JSON parse error for ${url}`, e)
+      return null
+    }
+  } catch (e) {
+    console.error(`[FundamentalAnalysis] Fetch failed for ${url}`, e)
+    return null
+  }
 }
 
 type Category = "EC" | "AR"
@@ -173,9 +182,10 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
 
   // ─── Derived data from beginner.json ──────────────────────────────────────
   const sections: Record<string, any> = data?.sections || {}
-  const synthesis = sections.investment_synthesis || sections.overall_sentiment
-  const synthScore = synthesis?.score ?? 0
-  const synthLabel = synthesis?.label ?? "N/A"
+  const sectionEntries = Object.entries(sections) as [string, any][]
+  const avgScore = sectionEntries.length > 0
+    ? Math.round(sectionEntries.reduce((sum, [, sec]) => sum + (sec.score ?? 0), 0) / sectionEntries.length)
+    : 0
   const docType = data?.doc_type || activeCategory.toLowerCase()
   const categoryLabel = activeCategory === "EC" ? "Earnings Call" : "Annual Report"
 
@@ -232,7 +242,7 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
       ) : (
         <>
           {/* ─── Overall Score gauge ────────────────────────────────────────── */}
-          {synthesis && (
+          {sectionEntries.length > 0 && (
             <Card className="border-primary/30 bg-gradient-to-br from-primary/5 via-transparent to-transparent">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
@@ -245,7 +255,7 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
                       <circle
                         cx="80" cy="80" r="64" fill="none"
                         stroke="url(#gaugeGrad)" strokeWidth="12" strokeLinecap="round"
-                        strokeDasharray={`${(synthScore / 100) * 402.1} 402.1`}
+                        strokeDasharray={`${(avgScore / 100) * 402.1} 402.1`}
                       />
                       <defs>
                         <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -255,41 +265,29 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
                       </defs>
                     </svg>
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-3xl font-bold">{Math.round(synthScore)}</span>
+                      <span className="text-3xl font-bold">{avgScore}</span>
                       <span className="text-xs text-muted-foreground">/ 100</span>
                     </div>
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold"
-                    style={{ backgroundColor: scoreColor(synthScore) + "20", color: scoreColor(synthScore) }}>
-                    <Lightbulb size={16} />{synthLabel}
-                  </div>
-                  {synthesis.bullets?.length > 0 && (
-                    <div className="mt-4 max-w-md space-y-1">
-                      {synthesis.bullets.map((b: string, i: number) => (
-                        <p key={i} className="text-xs text-muted-foreground leading-relaxed">{b}</p>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </CardContent>
             </Card>
           )}
 
           {/* ─── Section cards ───────────────────────────────────────────────── */}
-          {Object.entries(sections).filter(([k]) => k !== "investment_synthesis" && k !== "overall_sentiment").length > 0 && (
+          {sectionEntries.length > 0 && (
             <Card>
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <BarChart2 size={20} className="text-primary" /> Analysis Breakdown
                 </CardTitle>
                 <p className="text-xs text-muted-foreground">
-                  {Object.keys(sections).length} dimensions scored 0–100
+                  {sectionEntries.length} dimensions scored 0–100
                 </p>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {Object.entries(sections)
-                    .filter(([k]) => k !== "investment_synthesis")
+                  {sectionEntries
                     .map(([key, sec]: [string, any]) => {
                       const meta = SECTION_META[key]
                       const Icon = meta?.icon ?? BarChart2
