@@ -11,6 +11,9 @@ from typing import Optional
 import json
 import math
 import os
+import yfinance as yf
+import pandas as pd
+from datetime import datetime
 
 app = FastAPI(title="SparkleAI Investment Backend", version="4.0")
 
@@ -56,6 +59,121 @@ def clean_nans(obj):
     elif isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
         return None
     return obj
+
+
+# ═══ HEATMAP DATA ═══
+
+HEATMAP_TICKERS = {
+    "RELIANCE": "RELIANCE.NS", "TCS": "TCS.NS", "HDFCBANK": "HDFCBANK.NS",
+    "INFY": "INFY.NS", "ICICIBANK": "ICICIBANK.NS", "HINDUNILVR": "HINDUNILVR.NS",
+    "ITC": "ITC.NS", "SBIN": "SBIN.NS", "BHARTIARTL": "BHARTIARTL.NS",
+    "KOTAKBANK": "KOTAKBANK.NS", "LT": "LT.NS", "AXISBANK": "AXISBANK.NS",
+    "MARUTI": "MARUTI.NS", "HCLTECH": "HCLTECH.NS", "SUNPHARMA": "SUNPHARMA.NS",
+    "TITAN": "TITAN.NS", "BAJFINANCE": "BAJFINANCE.NS", "WIPRO": "WIPRO.NS",
+    "ULTRACEMCO": "ULTRACEMCO.NS", "ONGC": "ONGC.NS", "NTPC": "NTPC.NS",
+    "POWERGRID": "POWERGRID.NS", "M&M": "M&M.NS", "TATAMOTORS": "TATAMOTORS.NS",
+    "JSWSTEEL": "JSWSTEEL.NS", "TATASTEEL": "TATASTEEL.NS", "ADANIENT": "ADANIENT.NS",
+    "ADANIPORTS": "ADANIPORTS.NS", "COALINDIA": "COALINDIA.NS", "BPCL": "BPCL.NS",
+    "GRASIM": "GRASIM.NS", "DRREDDY": "DRREDDY.NS", "CIPLA": "CIPLA.NS",
+    "APOLLOHOSP": "APOLLOHOSP.NS", "EICHERMOT": "EICHERMOT.NS", "BAJAJFINSV": "BAJAJFINSV.NS",
+    "BAJAJ-AUTO": "BAJAJ-AUTO.NS", "HEROMOTOCO": "HEROMOTOCO.NS", "TECHM": "TECHM.NS",
+    "HINDALCO": "HINDALCO.NS", "INDUSINDBK": "INDUSINDBK.NS", "SBILIFE": "SBILIFE.NS",
+    "HDFCLIFE": "HDFCLIFE.NS", "DIVISLAB": "DIVISLAB.NS", "BRITANNIA": "BRITANNIA.NS",
+    "NESTLEIND": "NESTLEIND.NS", "TATACONSUM": "TATACONSUM.NS", "LTI": "LTIM.NS",
+}
+
+HEATMAP_NAMES = {
+    "RELIANCE": "Reliance Industries", "TCS": "Tata Consultancy Services",
+    "HDFCBANK": "HDFC Bank", "INFY": "Infosys", "ICICIBANK": "ICICI Bank",
+    "HINDUNILVR": "Hindustan Unilever", "ITC": "ITC Limited", "SBIN": "State Bank of India",
+    "BHARTIARTL": "Bharti Airtel", "KOTAKBANK": "Kotak Mahindra Bank",
+    "LT": "Larsen & Toubro", "AXISBANK": "Axis Bank", "MARUTI": "Maruti Suzuki",
+    "HCLTECH": "HCL Technologies", "SUNPHARMA": "Sun Pharmaceutical", "TITAN": "Titan Company",
+    "BAJFINANCE": "Bajaj Finance", "WIPRO": "Wipro", "ULTRACEMCO": "UltraTech Cement",
+    "ONGC": "Oil & Natural Gas Corp", "NTPC": "NTPC Limited", "POWERGRID": "Power Grid Corp",
+    "M&M": "Mahindra & Mahindra", "TATAMOTORS": "Tata Motors", "JSWSTEEL": "JSW Steel",
+    "TATASTEEL": "Tata Steel", "ADANIENT": "Adani Enterprises", "ADANIPORTS": "Adani Ports",
+    "COALINDIA": "Coal India", "BPCL": "Bharat Petroleum", "GRASIM": "Grasim Industries",
+    "DRREDDY": "Dr. Reddy's Labs", "CIPLA": "Cipla", "APOLLOHOSP": "Apollo Hospitals",
+    "EICHERMOT": "Eicher Motors", "BAJAJFINSV": "Bajaj Finserv", "BAJAJ-AUTO": "Bajaj Auto",
+    "HEROMOTOCO": "Hero MotoCorp", "TECHM": "Tech Mahindra", "HINDALCO": "Hindalco Industries",
+    "INDUSINDBK": "IndusInd Bank", "SBILIFE": "SBI Life Insurance",
+    "HDFCLIFE": "HDFC Life Insurance", "DIVISLAB": "Divi's Laboratories",
+    "BRITANNIA": "Britannia Industries", "NESTLEIND": "Nestle India",
+    "TATACONSUM": "Tata Consumer Products", "LTI": "LTIMindtree",
+}
+
+HEATMAP_SECTORS = {
+    "RELIANCE": "Energy", "TCS": "IT", "HDFCBANK": "Banking", "INFY": "IT",
+    "ICICIBANK": "Banking", "HINDUNILVR": "FMCG", "ITC": "FMCG", "SBIN": "Banking",
+    "BHARTIARTL": "Telecom", "KOTAKBANK": "Banking", "LT": "Infrastructure",
+    "AXISBANK": "Banking", "MARUTI": "Automobile", "HCLTECH": "IT",
+    "SUNPHARMA": "Pharma", "TITAN": "Consumer Goods", "BAJFINANCE": "Finance",
+    "WIPRO": "IT", "ULTRACEMCO": "Cement", "ONGC": "Energy", "NTPC": "Power",
+    "POWERGRID": "Power", "M&M": "Automobile", "TATAMOTORS": "Automobile",
+    "JSWSTEEL": "Metals", "TATASTEEL": "Metals", "ADANIENT": "Conglomerate",
+    "ADANIPORTS": "Infrastructure", "COALINDIA": "Mining", "BPCL": "Energy",
+    "GRASIM": "Cement", "DRREDDY": "Pharma", "CIPLA": "Pharma",
+    "APOLLOHOSP": "Healthcare", "EICHERMOT": "Automobile", "BAJAJFINSV": "Finance",
+    "BAJAJ-AUTO": "Automobile", "HEROMOTOCO": "Automobile", "TECHM": "IT",
+    "HINDALCO": "Metals", "INDUSINDBK": "Banking", "SBILIFE": "Insurance",
+    "HDFCLIFE": "Insurance", "DIVISLAB": "Pharma", "BRITANNIA": "FMCG",
+    "NESTLEIND": "FMCG", "TATACONSUM": "FMCG", "LTI": "IT",
+}
+
+
+@app.get("/market/heatmap")
+def get_market_heatmap():
+    """Fetch live price changes for all Nifty 50 stocks in one batch yfinance call."""
+    try:
+        ticker_list = list(HEATMAP_TICKERS.values())
+        raw = yf.download(
+            ticker_list,
+            period="5d",
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+        )
+
+        # yfinance returns MultiIndex (field, ticker) for multiple tickers
+        if isinstance(raw.columns, pd.MultiIndex):
+            close_df = raw["Close"].dropna(how="all")
+        else:
+            return clean_nans({"stocks": [], "error": "Unexpected data format"})
+
+        result = []
+        for symbol, yf_ticker in HEATMAP_TICKERS.items():
+            try:
+                if yf_ticker not in close_df.columns:
+                    continue
+                prices = close_df[yf_ticker].dropna()
+                if len(prices) < 2:
+                    continue
+                prev = float(prices.iloc[-2])
+                curr = float(prices.iloc[-1])
+                if prev == 0:
+                    continue
+                change_pct = ((curr - prev) / prev) * 100
+                result.append({
+                    "symbol": symbol,
+                    "name": HEATMAP_NAMES.get(symbol, symbol),
+                    "sector": HEATMAP_SECTORS.get(symbol, "Other"),
+                    "price": round(curr, 2),
+                    "change_pct": round(change_pct, 2),
+                })
+            except Exception:
+                continue
+
+        # Sort by sector then symbol for consistent grouping
+        result.sort(key=lambda x: (x["sector"], x["symbol"]))
+
+        return clean_nans({
+            "stocks": result,
+            "timestamp": datetime.now().isoformat(),
+            "count": len(result),
+        })
+    except Exception as e:
+        return {"error": str(e), "stocks": [], "count": 0}
 
 
 @app.get("/")
