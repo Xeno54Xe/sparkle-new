@@ -1,23 +1,48 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { Flame } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { StockLogo } from "@/components/ui/stock-logo"
+import Link from "next/link"
 
-const mostActiveStocks = [
-  { rank: 1, symbol: "ADANIENT", name: "Adani Enterprises", volume: "24.8M", price: "₹2,456.30", change: "+5.67%", isPositive: true, sparkline: [30,35,40,45,50,55,60,65,70,75] },
-  { rank: 2, symbol: "TATAMOTORS", name: "Tata Motors", volume: "18.2M", price: "₹642.15", change: "-1.23%", isPositive: false, sparkline: [60,58,55,52,50,48,45,42,40,38] },
-  { rank: 3, symbol: "RELIANCE", name: "Reliance Industries", volume: "15.6M", price: "₹1,402.50", change: "+2.34%", isPositive: true, sparkline: [40,45,42,48,52,50,55,58,54,60] },
-  { rank: 4, symbol: "HDFCBANK", name: "HDFC Bank", volume: "14.1M", price: "₹1,678.90", change: "+0.87%", isPositive: true, sparkline: [35,38,36,40,42,45,44,48,50,52] },
-  { rank: 5, symbol: "INFY", name: "Infosys", volume: "12.4M", price: "₹1,542.25", change: "-0.45%", isPositive: false, sparkline: [50,48,52,50,46,45,43,42,40,38] },
-]
-
-function Sparkline({ data, isPositive }: { data: number[]; isPositive: boolean }) {
-  const min = Math.min(...data), max = Math.max(...data), range = max - min || 1
-  const height = 24, width = 50
-  const points = data.map((v, i) => `${(i / (data.length - 1)) * width},${height - ((v - min) / range) * height}`).join(" ")
-  return <svg width={width} height={height} className="shrink-0" aria-hidden="true"><polyline points={points} fill="none" stroke={isPositive ? "#34D399" : "#F87171"} strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" /></svg>
+interface ActiveStock {
+  rank: number
+  symbol: string
+  name: string
+  price: number
+  change_pct: number
+  is_positive: boolean
+  volume_fmt: string
 }
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"
+
 export function MostActive() {
+  const [stocks, setStocks] = useState<ActiveStock[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
+
+  const fetchData = async () => {
+    setLoading(true)
+    setError(false)
+    try {
+      const res = await fetch(`${API_URL}/market/most-active`, { cache: "no-store" })
+      const json = await res.json()
+      if (json.stocks?.length) {
+        setStocks(json.stocks)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => { fetchData() }, [])
+
   return (
     <div className="rounded-2xl border border-border bg-card">
       <div className="flex items-center justify-between border-b border-border p-4">
@@ -25,31 +50,74 @@ export function MostActive() {
           <Flame size={18} className="text-[#FBBF24]" />
           <span className="text-sm font-semibold text-foreground">Most Active</span>
         </div>
-        <div className="flex items-center gap-3">
-          <span className="inline-flex items-center gap-1 rounded-full border border-amber-500/20 bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-400">
-            <span className="h-1 w-1 rounded-full bg-amber-400" />
-            Simulated
-          </span>
-          <button className="text-xs text-muted-foreground transition-colors hover:text-primary">See all</button>
+        <button
+          onClick={fetchData}
+          className="text-xs text-muted-foreground transition-colors hover:text-primary"
+        >
+          Refresh
+        </button>
+      </div>
+
+      {/* Skeleton */}
+      {loading && (
+        <div className="divide-y divide-border">
+          {[0, 1, 2, 3, 4].map((i) => (
+            <div key={i} className="flex items-center gap-3 p-4 animate-pulse">
+              <div className="h-6 w-6 rounded bg-white/10 shrink-0" />
+              <div className="h-7 w-7 rounded-full bg-white/10 shrink-0" />
+              <div className="flex-1 space-y-1.5">
+                <div className="h-3 w-20 rounded bg-white/10" />
+                <div className="h-2.5 w-14 rounded bg-white/10" />
+              </div>
+              <div className="space-y-1.5 text-right">
+                <div className="h-3 w-16 rounded bg-white/10" />
+                <div className="h-2.5 w-10 rounded bg-white/10" />
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-      <div className="divide-y divide-border">
-        {mostActiveStocks.map((stock) => (
-          <div key={stock.symbol} className="flex items-center gap-3 p-4 transition-colors hover:bg-secondary/50">
-            <div className={cn("flex h-6 w-6 shrink-0 items-center justify-center rounded text-xs font-bold", stock.rank <= 3 ? "bg-[#FBBF24]/20 text-[#FBBF24]" : "bg-secondary text-muted-foreground")}>{stock.rank}</div>
-            <StockLogo symbol={stock.symbol} size={28} isPositive={stock.isPositive} />
-            <div className="flex min-w-0 flex-1 flex-col">
-              <span className="text-sm font-semibold text-foreground">{stock.symbol}</span>
-              <span className="truncate text-xs text-muted-foreground">Vol: {stock.volume}</span>
-            </div>
-            <Sparkline data={stock.sparkline} isPositive={stock.isPositive} />
-            <div className="flex flex-col items-end">
-              <span className="text-sm font-medium text-foreground">{stock.price}</span>
-              <span className={cn("text-xs font-medium", stock.isPositive ? "text-primary" : "text-destructive")}>{stock.change}</span>
-            </div>
-          </div>
-        ))}
-      </div>
+      )}
+
+      {/* Error */}
+      {!loading && error && (
+        <div className="p-6 text-center">
+          <p className="text-sm text-muted-foreground">Could not load active stocks.</p>
+          <button onClick={fetchData} className="mt-2 text-xs text-primary hover:underline">Try again</button>
+        </div>
+      )}
+
+      {/* Live data */}
+      {!loading && !error && (
+        <div className="divide-y divide-border">
+          {stocks.map((stock) => (
+            <Link
+              key={stock.symbol}
+              href={`/stock/${stock.symbol}`}
+              className="flex items-center gap-3 p-4 transition-colors hover:bg-secondary/50"
+            >
+              <div className={cn(
+                "flex h-6 w-6 shrink-0 items-center justify-center rounded text-xs font-bold",
+                stock.rank <= 3 ? "bg-[#FBBF24]/20 text-[#FBBF24]" : "bg-secondary text-muted-foreground"
+              )}>
+                {stock.rank}
+              </div>
+              <StockLogo symbol={stock.symbol} size={28} isPositive={stock.is_positive} />
+              <div className="flex min-w-0 flex-1 flex-col">
+                <span className="text-sm font-semibold text-foreground">{stock.symbol}</span>
+                <span className="truncate text-xs text-muted-foreground">Vol: {stock.volume_fmt}</span>
+              </div>
+              <div className="flex flex-col items-end">
+                <span className="text-sm font-medium text-foreground">
+                  ₹{stock.price.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </span>
+                <span className={cn("text-xs font-medium", stock.is_positive ? "text-primary" : "text-destructive")}>
+                  {stock.is_positive ? "+" : ""}{stock.change_pct.toFixed(2)}%
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

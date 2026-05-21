@@ -176,6 +176,110 @@ def get_market_heatmap():
         return {"error": str(e), "stocks": [], "count": 0}
 
 
+@app.get("/market/indices")
+def get_market_indices():
+    """Fetch live data for Nifty 50, Sensex, and Bank Nifty."""
+    try:
+        tickers = {
+            "NIFTY 50":   "^NSEI",
+            "SENSEX":     "^BSESN",
+            "BANK NIFTY": "^NSEBANK",
+        }
+        raw = yf.download(
+            list(tickers.values()),
+            period="5d",
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+        )
+        if isinstance(raw.columns, pd.MultiIndex):
+            close_df = raw["Close"].dropna(how="all")
+        else:
+            return {"error": "Unexpected format", "indices": []}
+
+        result = []
+        symbols = ["N", "S", "B"]
+        for (name, yf_sym), sym in zip(tickers.items(), symbols):
+            try:
+                prices = close_df[yf_sym].dropna()
+                if len(prices) < 2:
+                    continue
+                prev = float(prices.iloc[-2])
+                curr = float(prices.iloc[-1])
+                change_pct = ((curr - prev) / prev) * 100
+                change_abs = curr - prev
+                result.append({
+                    "symbol": sym,
+                    "name": name,
+                    "value": round(curr, 2),
+                    "change_pct": round(change_pct, 2),
+                    "change_abs": round(change_abs, 2),
+                    "is_positive": change_pct >= 0,
+                })
+            except Exception:
+                continue
+
+        return clean_nans({"indices": result, "timestamp": datetime.now().isoformat()})
+    except Exception as e:
+        return {"error": str(e), "indices": []}
+
+
+@app.get("/market/most-active")
+def get_most_active():
+    """Fetch top 5 most actively traded Nifty 50 stocks by volume."""
+    try:
+        ticker_list = list(HEATMAP_TICKERS.values())
+        raw = yf.download(
+            ticker_list,
+            period="5d",
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+        )
+        if not isinstance(raw.columns, pd.MultiIndex):
+            return {"error": "Unexpected format", "stocks": []}
+
+        close_df  = raw["Close"].dropna(how="all")
+        volume_df = raw["Volume"].dropna(how="all")
+
+        stocks = []
+        for symbol, yf_ticker in HEATMAP_TICKERS.items():
+            try:
+                if yf_ticker not in close_df.columns or yf_ticker not in volume_df.columns:
+                    continue
+                prices  = close_df[yf_ticker].dropna()
+                volumes = volume_df[yf_ticker].dropna()
+                if len(prices) < 2 or len(volumes) < 1:
+                    continue
+                prev = float(prices.iloc[-2])
+                curr = float(prices.iloc[-1])
+                vol  = float(volumes.iloc[-1])
+                if prev == 0:
+                    continue
+                change_pct = ((curr - prev) / prev) * 100
+                stocks.append({
+                    "symbol": symbol,
+                    "name": HEATMAP_NAMES.get(symbol, symbol),
+                    "price": round(curr, 2),
+                    "change_pct": round(change_pct, 2),
+                    "is_positive": change_pct >= 0,
+                    "volume": vol,
+                    "volume_fmt": f"{vol/1e7:.1f}Cr" if vol >= 1e7 else f"{vol/1e5:.1f}L",
+                })
+            except Exception:
+                continue
+
+        stocks.sort(key=lambda x: x["volume"], reverse=True)
+        top5 = stocks[:5]
+        for i, s in enumerate(top5, 1):
+            s["rank"] = i
+            del s["volume"]  # don't expose raw volume float
+
+        return clean_nans({"stocks": top5, "timestamp": datetime.now().isoformat()})
+    except Exception as e:
+        return {"error": str(e), "stocks": []}
+
+
 @app.get("/")
 def home():
     return {"message": "SparkleAI v4.0", "companies": 49, "total_analyses": 231}
