@@ -19,7 +19,6 @@ const nifty50Stocks = [
   { symbol: "KOTAKBANK", name: "Kotak Mahindra Bank", price: 1789.30, change: -0.67 },
   { symbol: "LT", name: "Larsen & Toubro", price: 3456.70, change: 0.98 },
   { symbol: "AXISBANK", name: "Axis Bank", price: 1098.45, change: 1.56 },
-  { symbol: "ASIANPAINT", name: "Asian Paints", price: 2876.90, change: -0.34 },
   { symbol: "MARUTI", name: "Maruti Suzuki", price: 10234.50, change: 2.12 },
   { symbol: "HCLTECH", name: "HCL Technologies", price: 1456.80, change: -0.89 },
   { symbol: "SUNPHARMA", name: "Sun Pharmaceutical", price: 1123.45, change: 1.34 },
@@ -56,7 +55,6 @@ const nifty50Stocks = [
   { symbol: "NESTLEIND", name: "Nestle India", price: 23456.70, change: 1.12 },
   { symbol: "TATACONSUM", name: "Tata Consumer Products", price: 1023.45, change: -0.56 },
   { symbol: "LTI", name: "LTIMindtree", price: 5234.80, change: 2.67 },
-  { symbol: "SHREECEM", name: "Shree Cement", price: 26789.30, change: 0.45 },
 ]
 
 export function TopBar() {
