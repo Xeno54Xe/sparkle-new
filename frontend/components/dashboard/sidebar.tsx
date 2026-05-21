@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { LayoutDashboard, Star, FileText, Settings, ChevronLeft, ChevronRight, Menu, X, LogOut, LayoutGrid, GitCompare } from "lucide-react"
+import { LayoutDashboard, Star, FileText, Settings, ChevronLeft, ChevronRight, Menu, X, LogOut, LayoutGrid, GitCompare, SlidersHorizontal } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { createClient } from "@/lib/supabase/client"
 import { useSidebar } from "@/lib/context/sidebar"
@@ -13,6 +13,7 @@ const navItems = [
   { icon: Star, label: "Watchlist", href: "/watchlist" },
   { icon: LayoutGrid, label: "Heatmap", href: "/heatmap" },
   { icon: GitCompare, label: "Compare", href: "/compare" },
+  { icon: SlidersHorizontal, label: "Screener", href: "/screener" },
   { icon: FileText, label: "Reports", href: "/reports" },
   { icon: Settings, label: "Settings", href: "/settings" },
 ]

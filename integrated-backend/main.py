@@ -11,6 +11,7 @@ from typing import Optional
 import json
 import math
 import os
+import time
 import yfinance as yf
 import pandas as pd
 from datetime import datetime
@@ -278,6 +279,107 @@ def get_most_active():
         return clean_nans({"stocks": top5, "timestamp": datetime.now().isoformat()})
     except Exception as e:
         return {"error": str(e), "stocks": []}
+
+
+_screener_cache: dict = {"data": None, "ts": 0.0}
+SCREENER_TTL = 300  # 5 minutes
+
+
+@app.get("/market/screener")
+def get_screener():
+    """
+    Compute live technical screener for all Nifty 50 stocks.
+    Downloads 1 year of OHLCV in one batch, runs full indicator + signal
+    pipeline per stock. Results are cached for 5 minutes.
+    """
+    now = time.time()
+    if _screener_cache["data"] is not None and now - _screener_cache["ts"] < SCREENER_TTL:
+        result = dict(_screener_cache["data"])
+        result["cached"] = True
+        result["cache_age_s"] = int(now - _screener_cache["ts"])
+        return result
+
+    try:
+        ticker_list = list(HEATMAP_TICKERS.values())
+        raw = yf.download(
+            ticker_list,
+            period="1y",
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+        )
+
+        if not isinstance(raw.columns, pd.MultiIndex):
+            return {"error": "Unexpected data format", "stocks": [], "count": 0}
+
+        stocks = []
+        for symbol, yf_ticker in HEATMAP_TICKERS.items():
+            try:
+                df = pd.DataFrame({
+                    "Open":   raw["Open"][yf_ticker],
+                    "High":   raw["High"][yf_ticker],
+                    "Low":    raw["Low"][yf_ticker],
+                    "Close":  raw["Close"][yf_ticker],
+                    "Volume": raw["Volume"][yf_ticker],
+                }).dropna()
+
+                if len(df) < 55:   # need ≥50 rows for SMA50
+                    continue
+
+                indicators = get_indicators(df)
+                indicators["candle"] = get_candlestick_pattern(df)
+                indicators["crossovers"] = get_crossovers(df)
+                sig = generate_signal(indicators)
+
+                curr = float(df["Close"].iloc[-1])
+                prev = float(df["Close"].iloc[-2])
+                change_pct = ((curr - prev) / prev) * 100 if prev else 0
+
+                sma50  = indicators.get("SMA50")  or 0
+                sma200 = indicators.get("SMA200") or 0
+                vs_sma50  = round(((curr - sma50)  / sma50)  * 100, 2) if sma50  else None
+                vs_sma200 = round(((curr - sma200) / sma200) * 100, 2) if sma200 else None
+
+                macd_bullish = (indicators.get("MACD") or 0) > (indicators.get("MACDSignal") or 0)
+
+                stocks.append({
+                    "symbol":        symbol,
+                    "name":          HEATMAP_NAMES.get(symbol, symbol),
+                    "sector":        HEATMAP_SECTORS.get(symbol, "Other"),
+                    "price":         round(curr, 2),
+                    "change_pct":    round(change_pct, 2),
+                    "is_positive":   change_pct >= 0,
+                    "signal":        sig["signal"],
+                    "overall_score": sig["overall_score"],
+                    "scores":        sig["scores"],
+                    "counts":        sig["counts"],
+                    "rsi":           indicators.get("RSI"),
+                    "macd_bullish":  macd_bullish,
+                    "adx":           indicators.get("ADX"),
+                    "vs_sma50":      vs_sma50,
+                    "vs_sma200":     vs_sma200,
+                    "candle":        indicators.get("candle", {}).get("latest"),
+                    "candle_type":   indicators.get("candle", {}).get("type"),
+                    "volume_20d_avg": round(float(df["Volume"].tail(20).mean()), 0),
+                })
+            except Exception:
+                continue
+
+        stocks.sort(key=lambda x: x["overall_score"], reverse=True)
+
+        result = clean_nans({
+            "stocks":    stocks,
+            "count":     len(stocks),
+            "timestamp": datetime.now().isoformat(),
+            "cached":    False,
+            "cache_age_s": 0,
+        })
+        _screener_cache["data"] = result
+        _screener_cache["ts"]   = now
+        return result
+
+    except Exception as e:
+        return {"error": str(e), "stocks": [], "count": 0}
 
 
 @app.get("/")
