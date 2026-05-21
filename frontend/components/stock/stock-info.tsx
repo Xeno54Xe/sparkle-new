@@ -24,7 +24,7 @@ export function StockInfo({ stock }: StockInfoProps) {
       </div>
 
       <div className="mb-6 rounded-lg bg-secondary/50 p-4">
-        <p className="mb-1 text-sm text-muted-foreground">Current Price</p>
+        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Current Price</p>
         <div className="flex items-end gap-4">
           <span className="text-3xl font-bold text-foreground">
             {stock.price.toLocaleString("en-IN", { style: "currency", currency: "INR", minimumFractionDigits: 2 })}

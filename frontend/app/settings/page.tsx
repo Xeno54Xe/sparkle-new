@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Sidebar } from "@/components/dashboard/sidebar"
+import { DashboardShell } from "@/components/dashboard/dashboard-shell"
 import { Settings, User, Bell, Shield, Palette, KeyRound, Eye, EyeOff, Loader2, CheckCircle2, AlertCircle } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 
@@ -71,10 +71,8 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="flex min-h-screen">
-      <Sidebar />
-      <div className="flex flex-1 flex-col pl-[72px] lg:pl-[260px]">
-        <main className="flex-1 p-6 sm:p-8 max-w-4xl mx-auto w-full">
+    <DashboardShell noTopBar>
+        <main className="flex-1 max-w-4xl mx-auto w-full">
           {/* Header */}
           <div className="flex items-center gap-4 mb-8">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 shadow-[0_0_20px_rgba(16,185,129,0.15)]">
@@ -305,7 +303,6 @@ export default function SettingsPage() {
             </div>
           </div>
         </main>
-      </div>
-    </div>
+    </DashboardShell>
   )
 }

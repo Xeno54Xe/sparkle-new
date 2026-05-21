@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Sidebar } from "@/components/dashboard/sidebar"
+import { DashboardShell } from "@/components/dashboard/dashboard-shell"
 import { FileText, Download, Eye, Loader2 } from "lucide-react"
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
@@ -31,10 +31,8 @@ export default function ReportsPage() {
   const visible = filter === "ALL" ? reports : reports.filter(r => r.category === filter)
 
   return (
-    <div className="flex min-h-screen">
-      <Sidebar />
-      <div className="flex flex-1 flex-col pl-[72px] lg:pl-[260px]">
-        <main className="flex-1 p-6 sm:p-8">
+    <DashboardShell noTopBar>
+        <main className="flex-1">
           {/* Header */}
           <div className="flex items-center gap-4 mb-8">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 shadow-[0_0_20px_rgba(16,185,129,0.15)]">
@@ -67,11 +65,30 @@ export default function ReportsPage() {
 
           {/* Report list */}
           {loading ? (
-            <div className="flex items-center justify-center py-20 gap-3 text-muted-foreground">
-              <Loader2 size={20} className="animate-spin" /> Loading reports…
+            <div className="flex flex-col items-center justify-center py-24 gap-3 text-muted-foreground">
+              <Loader2 size={28} className="animate-spin text-primary/50" />
+              <p className="text-sm">Loading reports…</p>
             </div>
           ) : visible.length === 0 ? (
-            <div className="text-center py-20 text-muted-foreground">No reports found.</div>
+            <div className="flex flex-col items-center justify-center py-24 text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-secondary border border-white/5 mb-4">
+                <FileText size={28} className="text-muted-foreground/50" />
+              </div>
+              <h3 className="text-base font-semibold text-foreground mb-1">No reports found</h3>
+              <p className="text-sm text-muted-foreground max-w-xs">
+                {filter === "ALL"
+                  ? "No research reports are available yet. Check back after the backend has processed documents."
+                  : `No ${filter === "EC" ? "Earnings Call" : "Annual Report"} reports match your filter. Try switching to "All".`}
+              </p>
+              {filter !== "ALL" && (
+                <button
+                  onClick={() => setFilter("ALL")}
+                  className="mt-4 text-sm text-primary hover:underline font-medium"
+                >
+                  Clear filter
+                </button>
+              )}
+            </div>
           ) : (
             <div className="space-y-4">
               {visible.map((r, i) => {
@@ -118,7 +135,6 @@ export default function ReportsPage() {
             </div>
           )}
         </main>
-      </div>
-    </div>
+    </DashboardShell>
   )
 }

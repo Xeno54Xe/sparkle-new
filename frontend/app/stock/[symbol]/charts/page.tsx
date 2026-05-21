@@ -89,6 +89,7 @@ function TradingViewChart({ symbol, height, studies, title, subtitle, badge }: {
 
 export default function ChartsPage({ params }: { params: Promise<{ symbol: string }> }) {
   const { symbol } = use(params)
+  useEffect(() => { document.title = `${symbol} Charts — SparkleAI` }, [symbol])
   const stock = getStockBySymbol(symbol)
   if (!stock) return <div className="flex min-h-screen items-center justify-center bg-background text-muted-foreground">Stock not found</div>
 

@@ -1,5 +1,5 @@
 "use client"
-import { use } from "react"
+import { use, useEffect } from "react"
 import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { getStockBySymbol } from "@/lib/stocks"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -9,6 +9,7 @@ interface Props { params: Promise<{ symbol: string }> }
 
 export default function PricesPage({params}:Props) {
   const {symbol} = use(params)
+  useEffect(() => { document.title = `${symbol} Prices — SparkleAI` }, [symbol])
   const stock = getStockBySymbol(symbol)
   const base = stock?.price||1000
   const prices = Array.from({length:20},(_,i) => {const d=new Date();d.setDate(d.getDate()-i);const chg=(Math.random()-0.5)*base*0.03;const o=base+(Math.random()-0.5)*base*0.01;return{date:d.toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"}),open:o.toFixed(2),high:(Math.max(o,base)+Math.random()*base*0.01).toFixed(2),low:(Math.min(o,base)-Math.random()*base*0.01).toFixed(2),close:base.toFixed(2),change:chg,volume:Math.floor(Math.random()*1e7+2e6)}})

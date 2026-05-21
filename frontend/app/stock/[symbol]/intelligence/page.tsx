@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, use } from "react"
+import { useState, use, useEffect } from "react"
 import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { FundamentalAnalysis } from "@/components/stock/fundamental-analysis"
 import { TechnicalAnalysis } from "@/components/stock/technical-analysis"
@@ -12,6 +12,7 @@ interface IntelligencePageProps {
 
 export default function IntelligencePage({ params }: IntelligencePageProps) {
   const { symbol } = use(params)
+  useEffect(() => { document.title = `${symbol} — SparkleAI` }, [symbol])
   const [activeTab, setActiveTab] = useState<"fundamental" | "technical">("fundamental")
 
   return (
@@ -29,7 +30,7 @@ export default function IntelligencePage({ params }: IntelligencePageProps) {
                 <Sparkles size={24} className="text-primary" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold">Sparkle Intelligence</h1>
+                <h1 className="text-2xl font-bold tracking-tight">Sparkle Intelligence</h1>
                 <p className="text-sm text-muted-foreground">
                   AI-powered analysis for {symbol}
                 </p>
@@ -41,7 +42,7 @@ export default function IntelligencePage({ params }: IntelligencePageProps) {
           <div className="mb-6 flex gap-2 rounded-xl bg-card p-1.5">
             <button
               onClick={() => setActiveTab("fundamental")}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-all ${
+              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all ${
                 activeTab === "fundamental"
                   ? "bg-primary text-primary-foreground shadow-lg"
                   : "text-muted-foreground hover:bg-secondary hover:text-foreground"
@@ -52,7 +53,7 @@ export default function IntelligencePage({ params }: IntelligencePageProps) {
             </button>
             <button
               onClick={() => setActiveTab("technical")}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-all ${
+              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all ${
                 activeTab === "technical"
                   ? "bg-primary text-primary-foreground shadow-lg"
                   : "text-muted-foreground hover:bg-secondary hover:text-foreground"

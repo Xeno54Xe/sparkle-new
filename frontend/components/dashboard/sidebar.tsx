@@ -6,6 +6,7 @@ import { usePathname, useRouter } from "next/navigation"
 import { LayoutDashboard, Star, FileText, Settings, ChevronLeft, ChevronRight, Menu, X, LogOut } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { createClient } from "@/lib/supabase/client"
+import { useSidebar } from "@/lib/context/sidebar"
 
 const navItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
@@ -15,7 +16,7 @@ const navItems = [
 ]
 
 export function Sidebar() {
-  const [collapsed, setCollapsed] = useState(false)
+  const { collapsed, setCollapsed } = useSidebar()
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [userEmail, setUserEmail] = useState<string | null>(null)
   const pathname = usePathname()

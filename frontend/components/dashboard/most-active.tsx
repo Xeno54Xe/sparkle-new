@@ -21,8 +21,17 @@ export function MostActive() {
   return (
     <div className="rounded-2xl border border-border bg-card">
       <div className="flex items-center justify-between border-b border-border p-4">
-        <div className="flex items-center gap-2"><Flame size={18} className="text-[#FBBF24]" /><span className="text-sm font-semibold text-foreground">Most Active</span></div>
-        <button className="text-xs text-muted-foreground transition-colors hover:text-primary">See all</button>
+        <div className="flex items-center gap-2">
+          <Flame size={18} className="text-[#FBBF24]" />
+          <span className="text-sm font-semibold text-foreground">Most Active</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="inline-flex items-center gap-1 rounded-full border border-amber-500/20 bg-amber-500/10 px-2 py-0.5 text-[11px] font-medium text-amber-400">
+            <span className="h-1 w-1 rounded-full bg-amber-400" />
+            Simulated
+          </span>
+          <button className="text-xs text-muted-foreground transition-colors hover:text-primary">See all</button>
+        </div>
       </div>
       <div className="divide-y divide-border">
         {mostActiveStocks.map((stock) => (

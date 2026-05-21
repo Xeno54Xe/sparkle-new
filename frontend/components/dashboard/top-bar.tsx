@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { Search, Settings, TrendingUp, TrendingDown } from "lucide-react"
+import { Search, Settings } from "lucide-react"
 import { StockLogo } from "@/components/ui/stock-logo"
 
 const nifty50Stocks = [
@@ -155,44 +155,16 @@ export function TopBar() {
                 <button
                   key={stock.symbol}
                   onClick={() => navigateToStock(stock.symbol)}
-                  className={`flex w-full items-center justify-between px-4 py-3 text-left transition-all duration-200 border-b border-white/5 last:border-0 ${
+                  className={`flex w-full items-center gap-3 px-4 py-3 text-left transition-all duration-200 border-b border-white/5 last:border-0 ${
                     index === selectedIndex ? "bg-white/10 pl-5" : "hover:bg-white/5 hover:pl-5"
                   }`}
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 overflow-hidden rounded-full border border-white/10 bg-white/5 flex items-center justify-center shrink-0">
-                      <StockLogo symbol={stock.symbol} fallbackClassName="text-[10px] text-muted-foreground font-bold" />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="font-semibold text-foreground tracking-tight">
-                        {stock.symbol}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {stock.name}
-                      </span>
-                    </div>
+                  <div className="h-8 w-8 overflow-hidden rounded-full border border-white/10 bg-white/5 flex items-center justify-center shrink-0">
+                    <StockLogo symbol={stock.symbol} fallbackClassName="text-[10px] text-muted-foreground font-bold" />
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="text-sm font-medium text-foreground">
-                      {stock.price.toLocaleString("en-IN", {
-                        style: "currency",
-                        currency: "INR",
-                        minimumFractionDigits: 2,
-                      })}
-                    </span>
-                    <span
-                      className={`flex items-center gap-1 text-xs font-semibold px-2 py-1 rounded-md ${
-                        stock.change >= 0 ? "bg-primary/10 text-primary" : "bg-destructive/10 text-destructive"
-                      }`}
-                    >
-                      {stock.change >= 0 ? (
-                        <TrendingUp size={14} />
-                      ) : (
-                        <TrendingDown size={14} />
-                      )}
-                      {stock.change >= 0 ? "+" : ""}
-                      {stock.change.toFixed(2)}%
-                    </span>
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-foreground tracking-tight">{stock.symbol}</span>
+                    <span className="text-xs text-muted-foreground">{stock.name}</span>
                   </div>
                 </button>
               ))

@@ -10,6 +10,11 @@ interface StockPageProps {
   params: Promise<{ symbol: string }>
 }
 
+export async function generateMetadata({ params }: StockPageProps) {
+  const { symbol } = await params
+  return { title: `${symbol} — SparkleAI` }
+}
+
 export default async function StockPage({ params }: StockPageProps) {
   const { symbol } = await params
   const stock = getStockBySymbol(symbol)

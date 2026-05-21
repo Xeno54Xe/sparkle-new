@@ -1,5 +1,5 @@
 "use client"
-import { use } from "react"
+import { use, useEffect } from "react"
 import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { getStockBySymbol } from "@/lib/stocks"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -8,7 +8,7 @@ import { Target, Users } from "lucide-react"
 interface Props { params: Promise<{ symbol: string }> }
 
 export default function EstimatesPage({params}:Props) {
-  const {symbol}=use(params);const stock=getStockBySymbol(symbol);const price=stock?.price||1000
+  const {symbol}=use(params);useEffect(() => { document.title = `${symbol} Estimates — SparkleAI` }, [symbol]);const stock=getStockBySymbol(symbol);const price=stock?.price||1000
   const consensus=[{l:"Strong Buy",c:12,p:40,cl:"#10B981"},{l:"Buy",c:8,p:27,cl:"#34D399"},{l:"Hold",c:7,p:23,cl:"#FBBF24"},{l:"Sell",c:2,p:7,cl:"#F87171"},{l:"Strong Sell",c:1,p:3,cl:"#EF4444"}]
   const targets=[{l:"High",v:(price*1.35).toFixed(2),cl:"#10B981"},{l:"Median",v:(price*1.18).toFixed(2),cl:"#34D399"},{l:"Average",v:(price*1.15).toFixed(2),cl:"#FBBF24"},{l:"Low",v:(price*0.85).toFixed(2),cl:"#F87171"}]
   return(

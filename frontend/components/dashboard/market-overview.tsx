@@ -27,7 +27,15 @@ const indices = [
 
 export function MarketOverview() {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+    <div className="space-y-3">
+      <div className="flex items-center justify-between px-1">
+        <span className="text-sm font-semibold text-foreground">Market Overview</span>
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-1 text-xs font-medium text-amber-400">
+          <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+          Simulated data
+        </span>
+      </div>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
       {indices.map((index) => (
         <div
           key={index.name}
@@ -71,6 +79,7 @@ export function MarketOverview() {
           </div>
         </div>
       ))}
+      </div>
     </div>
   )
 }

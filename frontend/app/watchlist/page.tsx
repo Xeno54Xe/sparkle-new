@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react"
 import Link from "next/link"
-import { Sidebar } from "@/components/dashboard/sidebar"
+import { DashboardShell } from "@/components/dashboard/dashboard-shell"
 import { Star, Plus, TrendingUp, TrendingDown, Trash2, Search, X, Loader2 } from "lucide-react"
 import { useWatchlist } from "@/lib/hooks/useWatchlist"
 import { nifty50Stocks } from "@/lib/stocks"
@@ -134,10 +134,8 @@ export default function WatchlistPage() {
   }
 
   return (
-    <div className="flex min-h-screen bg-background">
-      <Sidebar />
-      <div className="flex flex-1 flex-col pl-[72px] lg:pl-[260px]">
-        <main className="flex-1 p-6">
+    <DashboardShell noTopBar>
+      <main className="flex-1">
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
             <div>
@@ -257,8 +255,7 @@ export default function WatchlistPage() {
               </table>
             )}
           </div>
-        </main>
-      </div>
+      </main>
 
       <AddStockModal
         open={modalOpen}
@@ -269,6 +266,6 @@ export default function WatchlistPage() {
         }}
         existingSymbols={existingSymbols}
       />
-    </div>
+    </DashboardShell>
   )
 }
