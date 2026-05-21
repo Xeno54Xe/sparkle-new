@@ -64,8 +64,8 @@ export function StockSidebar() {
         }`}
       >
         <div className="flex h-16 items-center border-b border-white/5 px-4 mt-12 lg:mt-0">
-          <Link 
-            href="/" 
+          <Link
+            href="/dashboard"
             className="flex items-center gap-2 text-muted-foreground transition-all hover:text-foreground hover:-translate-x-1"
           >
             <ArrowLeft size={18} />
