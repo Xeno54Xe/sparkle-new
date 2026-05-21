@@ -1,7 +1,9 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Link from "next/link"
-import { ArrowRight, BarChart2, Brain, FileText, TrendingUp, Zap, Shield, ChevronRight, Activity } from "lucide-react"
+import { ArrowRight, BarChart2, Brain, FileText, TrendingUp, Zap, Shield, ChevronRight, Activity, LayoutDashboard } from "lucide-react"
+import { createClient } from "@/lib/supabase/client"
 
 const features = [
   {
@@ -38,6 +40,19 @@ const stats = [
 ]
 
 export default function LandingPage() {
+  const [userEmail, setUserEmail] = useState<string | null>(null)
+  const [authChecked, setAuthChecked] = useState(false)
+
+  useEffect(() => {
+    const supabase = createClient()
+    supabase.auth.getUser().then(({ data }) => {
+      setUserEmail(data.user?.email ?? null)
+      setAuthChecked(true)
+    })
+  }, [])
+
+  const isLoggedIn = authChecked && userEmail !== null
+
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 
@@ -57,18 +72,33 @@ export default function LandingPage() {
           <span className="text-lg font-bold tracking-tight text-gradient-primary">SparkleAI</span>
         </div>
         <nav className="flex items-center gap-3">
-          <Link
-            href="/login"
-            className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Log in
-          </Link>
-          <Link
-            href="/signup"
-            className="px-5 py-2 text-sm font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.35)] hover:scale-[1.03]"
-          >
-            Get Started
-          </Link>
+          {!authChecked ? (
+            // Skeleton while checking auth — prevents layout shift
+            <div className="h-9 w-36 rounded-xl bg-white/5 animate-pulse" />
+          ) : isLoggedIn ? (
+            <Link
+              href="/dashboard"
+              className="flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.35)] hover:scale-[1.03]"
+            >
+              <LayoutDashboard size={15} />
+              Go to Dashboard
+            </Link>
+          ) : (
+            <>
+              <Link
+                href="/login"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Log in
+              </Link>
+              <Link
+                href="/signup"
+                className="px-5 py-2 text-sm font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.35)] hover:scale-[1.03]"
+              >
+                Get Started
+              </Link>
+            </>
+          )}
         </nav>
       </header>
 
@@ -90,19 +120,37 @@ export default function LandingPage() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Link
-            href="/signup"
-            className="group flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:shadow-[0_0_40px_rgba(16,185,129,0.45)] hover:scale-[1.03]"
-          >
-            Start for Free
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
-          <Link
-            href="/login"
-            className="flex items-center gap-2 px-8 py-3.5 rounded-xl border border-white/10 bg-white/5 text-foreground font-semibold text-base hover:bg-white/10 transition-all"
-          >
-            Log in <ChevronRight size={18} className="text-muted-foreground" />
-          </Link>
+          {isLoggedIn ? (
+            <>
+              <Link
+                href="/dashboard"
+                className="group flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:shadow-[0_0_40px_rgba(16,185,129,0.45)] hover:scale-[1.03]"
+              >
+                <LayoutDashboard size={18} />
+                Go to Dashboard
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <p className="text-sm text-muted-foreground">
+                Welcome back, <span className="text-foreground font-semibold">{userEmail}</span>
+              </p>
+            </>
+          ) : (
+            <>
+              <Link
+                href="/signup"
+                className="group flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:shadow-[0_0_40px_rgba(16,185,129,0.45)] hover:scale-[1.03]"
+              >
+                Start for Free
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                href="/login"
+                className="flex items-center gap-2 px-8 py-3.5 rounded-xl border border-white/10 bg-white/5 text-foreground font-semibold text-base hover:bg-white/10 transition-all"
+              >
+                Log in <ChevronRight size={18} className="text-muted-foreground" />
+              </Link>
+            </>
+          )}
         </div>
 
         {/* Hero visual — mock dashboard card */}
@@ -201,22 +249,42 @@ export default function LandingPage() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none" />
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold text-primary mb-6">
-                <Shield size={12} /> Free to get started
+                {isLoggedIn ? (
+                  <><span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" /> Welcome back</>
+                ) : (
+                  <><Shield size={12} /> Free to get started</>
+                )}
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
-                Ready to invest with{" "}
-                <span className="text-gradient-primary">intelligence?</span>
+                {isLoggedIn ? (
+                  <>Your dashboard is <span className="text-gradient-primary">ready.</span></>
+                ) : (
+                  <>Ready to invest with <span className="text-gradient-primary">intelligence?</span></>
+                )}
               </h2>
               <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-                Join thousands of investors using AI-powered insights to make better decisions on Indian markets.
+                {isLoggedIn
+                  ? "You're already signed in. Jump straight back into your AI-powered stock analysis."
+                  : "Join thousands of investors using AI-powered insights to make better decisions on Indian markets."}
               </p>
-              <Link
-                href="/signup"
-                className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-[1.03]"
-              >
-                Create Free Account
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+              {isLoggedIn ? (
+                <Link
+                  href="/dashboard"
+                  className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-[1.03]"
+                >
+                  <LayoutDashboard size={18} />
+                  Go to Dashboard
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              ) : (
+                <Link
+                  href="/signup"
+                  className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-[1.03]"
+                >
+                  Create Free Account
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              )}
             </div>
           </div>
         </div>
