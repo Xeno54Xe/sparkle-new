@@ -283,7 +283,7 @@ export default function ScreenerPage() {
           <div className="rounded-2xl border border-border bg-card p-8 text-center space-y-3">
             <div className="flex items-center justify-center gap-3">
               <RefreshCw size={20} className="animate-spin text-primary" />
-              <span className="text-sm font-medium text-foreground">Computing live indicators for 48 stocks…</span>
+              <span className="text-sm font-medium text-foreground">Computing live indicators for all 50 Nifty 50 stocks…</span>
             </div>
             <p className="text-xs text-muted-foreground">First load takes ~10 seconds · Results cached for 5 minutes</p>
             <div className="h-1.5 w-64 mx-auto rounded-full bg-white/10 overflow-hidden">

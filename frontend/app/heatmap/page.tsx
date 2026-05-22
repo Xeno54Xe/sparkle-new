@@ -318,7 +318,7 @@ export default function HeatmapPage() {
             <Loader2 size={36} className="animate-spin text-primary/50" />
             <div className="text-center">
               <p className="text-sm font-medium">Fetching live market data…</p>
-              <p className="text-xs text-muted-foreground/60 mt-1">Downloading all 49 Nifty 50 stocks from Yahoo Finance</p>
+              <p className="text-xs text-muted-foreground/60 mt-1">Downloading all 50 Nifty 50 stocks from Yahoo Finance</p>
             </div>
           </div>
         )}

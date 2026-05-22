@@ -81,6 +81,7 @@ HEATMAP_TICKERS = {
     "HINDALCO": "HINDALCO.NS", "INDUSINDBK": "INDUSINDBK.NS", "SBILIFE": "SBILIFE.NS",
     "HDFCLIFE": "HDFCLIFE.NS", "DIVISLAB": "DIVISLAB.NS", "BRITANNIA": "BRITANNIA.NS",
     "NESTLEIND": "NESTLEIND.NS", "TATACONSUM": "TATACONSUM.NS", "LTI": "LTIM.NS",
+    "ASIANPAINT": "ASIANPAINT.NS", "SHRIRAMFIN": "SHRIRAMFIN.NS",
 }
 
 HEATMAP_NAMES = {
@@ -102,6 +103,7 @@ HEATMAP_NAMES = {
     "HDFCLIFE": "HDFC Life Insurance", "DIVISLAB": "Divi's Laboratories",
     "BRITANNIA": "Britannia Industries", "NESTLEIND": "Nestle India",
     "TATACONSUM": "Tata Consumer Products", "LTI": "LTIMindtree",
+    "ASIANPAINT": "Asian Paints", "SHRIRAMFIN": "Shriram Finance",
 }
 
 HEATMAP_SECTORS = {
@@ -120,6 +122,7 @@ HEATMAP_SECTORS = {
     "HINDALCO": "Metals", "INDUSINDBK": "Banking", "SBILIFE": "Insurance",
     "HDFCLIFE": "Insurance", "DIVISLAB": "Pharma", "BRITANNIA": "FMCG",
     "NESTLEIND": "FMCG", "TATACONSUM": "FMCG", "LTI": "IT",
+    "ASIANPAINT": "Consumer Goods", "SHRIRAMFIN": "Finance",
 }
 
 
@@ -384,7 +387,7 @@ def get_screener():
 
 @app.get("/")
 def home():
-    return {"message": "SparkleAI v4.0", "companies": 49, "total_analyses": 231}
+    return {"message": "SparkleAI v4.0", "companies": 50, "total_analyses": 231}
 
 
 # ═══ TECHNICAL ═══
