@@ -2,13 +2,16 @@
 
 import Link from "next/link"
 import { usePathname, useParams } from "next/navigation"
-import { LayoutDashboard, Sparkles, LineChart, DollarSign, TrendingUp, ArrowLeft } from "lucide-react"
+import { LayoutDashboard, Sparkles, LineChart, DollarSign, TrendingUp, ArrowLeft, ShieldCheck } from "lucide-react"
 import { StockLogo } from "@/components/ui/stock-logo"
 import { cn } from "@/lib/utils"
+
+const optionsStrategiesEnabled = process.env.NEXT_PUBLIC_OPTIONS_STRATEGIES_ENABLED === "true"
 
 const stockNavItems = [
   { icon: LayoutDashboard, label: "Overview", href: "" },
   { icon: Sparkles, label: "Intelligence", href: "/intelligence" },
+  ...(optionsStrategiesEnabled ? [{ icon: ShieldCheck, label: "Options", href: "/options" }] : []),
   { icon: LineChart, label: "Charts", href: "/charts" },
   { icon: DollarSign, label: "Prices", href: "/prices" },
   { icon: TrendingUp, label: "Estimates", href: "/estimates" },
@@ -87,7 +90,7 @@ export function StockSidebar() {
       </aside>
 
       {/* ── Mobile horizontal tab strip (< lg) ── */}
-      <div className="lg:hidden sticky top-0 z-40 border-b border-white/5 bg-background/95 backdrop-blur-md">
+      <div className="lg:hidden sticky top-0 z-40 w-full max-w-full overflow-hidden border-b border-white/5 bg-background/95 backdrop-blur-md">
         {/* Back + stock name row */}
         <div className="flex items-center gap-3 px-4 py-3 border-b border-white/5">
           <Link
@@ -101,7 +104,7 @@ export function StockSidebar() {
           <span className="text-sm font-bold text-foreground">{symbol}</span>
         </div>
         {/* Tab strip */}
-        <div className="flex overflow-x-auto scrollbar-none px-2 py-1 gap-1">
+        <div className="flex w-full max-w-full overflow-x-auto scrollbar-none px-2 py-1 gap-1">
           {stockNavItems.map((item) => {
             const Icon = item.icon
             const active = isActive(item.href)

@@ -6,6 +6,16 @@ import { useRouter } from "next/navigation"
 import { Eye, EyeOff, Zap, BarChart2, Brain, FileText, Loader2, ArrowRight } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 
+const LOCAL_AUTH_COOKIE = "sparkle-local-auth"
+const LOCAL_AUTH_EMAIL = "sparkle-local-email"
+
+function localAuthBypassEnabled() {
+  return (
+    process.env.NEXT_PUBLIC_ENABLE_LOCAL_AUTH_BYPASS === "true" &&
+    typeof window !== "undefined"
+  )
+}
+
 const highlights = [
   { icon: Brain, text: "Fundamental analysis for 55 Nifty 50 companies" },
   { icon: BarChart2, text: "12+ live technical indicators & signals" },
@@ -26,11 +36,29 @@ export default function LoginPage() {
     e.preventDefault()
     setError("")
     setLoading(true)
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
-    if (error) {
-      setError(error.message)
+    let loginError: Error | null = null
+    try {
+      const { error } = await supabase.auth.signInWithPassword({ email, password })
+      loginError = error
+    } catch (error) {
+      loginError = error instanceof Error ? error : new Error("Unable to reach authentication service")
+    }
+
+    if (loginError) {
+      if (localAuthBypassEnabled()) {
+        document.cookie = `${LOCAL_AUTH_COOKIE}=1; path=/; max-age=604800; SameSite=Lax`
+        window.localStorage.setItem(LOCAL_AUTH_EMAIL, email)
+        router.push("/dashboard")
+        router.refresh()
+        return
+      }
+      setError(loginError.message)
       setLoading(false)
     } else {
+      if (localAuthBypassEnabled()) {
+        document.cookie = `${LOCAL_AUTH_COOKIE}=1; path=/; max-age=604800; SameSite=Lax`
+        window.localStorage.setItem(LOCAL_AUTH_EMAIL, email)
+      }
       router.push("/dashboard")
       router.refresh()
     }
