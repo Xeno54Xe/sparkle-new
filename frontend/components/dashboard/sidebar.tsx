@@ -2,14 +2,15 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { usePathname, useRouter } from "next/navigation"
-import { LayoutDashboard, Star, FileText, Settings, ChevronLeft, ChevronRight, Menu, X, LogOut, LayoutGrid, GitCompare, SlidersHorizontal } from "lucide-react"
+import { usePathname } from "next/navigation"
+import { LayoutDashboard, Star, FileText, Settings, ChevronLeft, ChevronRight, Menu, X, LogOut, LayoutGrid, GitCompare, SlidersHorizontal, BriefcaseBusiness } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { createClient } from "@/lib/supabase/client"
 import { useSidebar } from "@/lib/context/sidebar"
 
 const navItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
+  { icon: BriefcaseBusiness, label: "Portfolio", href: "/portfolio" },
   { icon: Star, label: "Watchlist", href: "/watchlist" },
   { icon: LayoutGrid, label: "Heatmap", href: "/heatmap" },
   { icon: GitCompare, label: "Compare", href: "/compare" },
@@ -18,24 +19,27 @@ const navItems = [
   { icon: Settings, label: "Settings", href: "/settings" },
 ]
 
+const LOCAL_AUTH_COOKIE = "sparkle-local-auth"
+const LOCAL_AUTH_EMAIL = "sparkle-local-email"
+
 export function Sidebar() {
   const { collapsed, setCollapsed } = useSidebar()
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [userEmail, setUserEmail] = useState<string | null>(null)
   const pathname = usePathname()
-  const router = useRouter()
   const supabase = createClient()
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
-      setUserEmail(data.user?.email ?? null)
+      setUserEmail(data.user?.email ?? window.localStorage.getItem(LOCAL_AUTH_EMAIL))
     })
   }, [])
 
   const handleLogout = async () => {
-    await supabase.auth.signOut()
-    router.push("/login")
-    router.refresh()
+    document.cookie = `${LOCAL_AUTH_COOKIE}=; path=/; max-age=0; SameSite=Lax`
+    window.localStorage.removeItem(LOCAL_AUTH_EMAIL)
+    void supabase.auth.signOut().catch(() => {})
+    window.location.href = "/login"
   }
 
   const initials = userEmail ? userEmail.slice(0, 2).toUpperCase() : "?"
