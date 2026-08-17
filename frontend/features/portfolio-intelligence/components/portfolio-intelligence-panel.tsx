@@ -104,7 +104,7 @@ export function PortfolioIntelligencePanel() {
   }
 
   return (
-    <div className="mx-auto w-full max-w-[1600px] space-y-6">
+    <div className="mx-auto w-full max-w-[1480px] min-w-0 space-y-6 overflow-hidden">
       <section className="overflow-hidden rounded-xl border border-primary/20 bg-card">
         <div className="grid gap-0 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="p-5 sm:p-6">
@@ -139,8 +139,8 @@ export function PortfolioIntelligencePanel() {
         <InsightCard icon={Sparkles} label="Sharpe-like score" value={summary.sharpeLike.toFixed(2)} caption="Free-data risk-adjusted proxy" />
       </section>
 
-      <section className="grid gap-6 xl:grid-cols-[1fr_0.95fr]">
-        <div className="rounded-xl border border-border bg-card p-5">
+      <section className="grid min-w-0 gap-6 2xl:grid-cols-[minmax(0,1fr)_minmax(360px,440px)]">
+        <div className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
           <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h2 className="text-lg font-semibold text-foreground">Holdings Lab</h2>
@@ -165,8 +165,8 @@ export function PortfolioIntelligencePanel() {
               </button>
             </div>
           </div>
-          <div className="overflow-x-auto rounded-lg border border-border">
-            <table className="w-full min-w-[760px] text-sm">
+          <div className="max-w-full overflow-x-auto rounded-lg border border-border">
+            <table className="w-full min-w-[720px] text-sm">
               <thead className="bg-secondary/40 text-xs uppercase text-muted-foreground">
                 <tr>
                   <th className="px-3 py-3 text-left">Stock</th>
@@ -189,7 +189,7 @@ export function PortfolioIntelligencePanel() {
                           const stock = nifty50Stocks.find((item) => item.symbol === event.target.value)
                           updateHolding(index, { symbol: event.target.value, averagePrice: stock?.price ?? holding.averagePrice })
                         }}
-                        className="h-10 w-full rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary"
+                        className="h-10 w-full min-w-0 rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary"
                       >
                         {nifty50Stocks.map((stock) => (
                           <option key={stock.symbol} value={stock.symbol}>{stock.symbol} - {stock.name}</option>
@@ -201,7 +201,7 @@ export function PortfolioIntelligencePanel() {
                         inputMode="numeric"
                         value={holding.quantity}
                         onChange={(event) => updateHolding(index, { quantity: Number(event.target.value) || 0 })}
-                        className="h-10 w-20 rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary"
+                        className="h-10 w-16 rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary sm:w-20"
                       />
                     </td>
                     <td className="px-3 py-3">
@@ -209,14 +209,14 @@ export function PortfolioIntelligencePanel() {
                         inputMode="decimal"
                         value={holding.averagePrice}
                         onChange={(event) => updateHolding(index, { averagePrice: Number(event.target.value) || 0 })}
-                        className="h-10 w-28 rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary"
+                        className="h-10 w-24 rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary sm:w-28"
                       />
                     </td>
                     <td className="px-3 py-3 font-semibold text-foreground">{formatCurrency(holding.value)}</td>
                     <td className="px-3 py-3">{(holding.weight * 100).toFixed(1)}%</td>
                     <td className={`px-3 py-3 font-semibold ${tone(holding.pnl)}`}>{formatPct(holding.pnlPct)}</td>
                     <td className="px-3 py-3">
-                      <div className="min-w-24 space-y-1">
+                      <div className="min-w-20 space-y-1">
                         <span className="text-xs font-semibold text-foreground">{Math.round(holding.factors.alpha)}/100</span>
                         <ScoreBar value={holding.factors.alpha} />
                       </div>
@@ -238,7 +238,7 @@ export function PortfolioIntelligencePanel() {
           </div>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-5">
+        <div className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
           <div className="mb-4 flex items-start gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
               <Brain size={20} />
@@ -250,7 +250,7 @@ export function PortfolioIntelligencePanel() {
           </div>
           <ChartContainer
             config={{ score: { label: "Score", color: "#34d399" } }}
-            className="h-[330px] w-full"
+            className="h-[300px] w-full max-w-full"
           >
             <RadarChart data={factorData}>
               <PolarGrid />
@@ -261,7 +261,7 @@ export function PortfolioIntelligencePanel() {
           </ChartContainer>
           <div className="mt-4 grid gap-2 sm:grid-cols-2">
             {factorData.map((item) => (
-              <div key={item.factor} className="rounded-lg border border-border bg-background p-3">
+              <div key={item.factor} className="min-w-0 rounded-lg border border-border bg-background p-3">
                 <div className="mb-2 flex items-center justify-between">
                   <span className="text-xs font-semibold text-muted-foreground">{item.factor}</span>
                   <span className="text-xs font-bold text-foreground">{item.score}</span>
@@ -273,8 +273,8 @@ export function PortfolioIntelligencePanel() {
         </div>
       </section>
 
-      <section className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
-        <div className="rounded-xl border border-border bg-card p-5">
+      <section className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+        <div className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
           <div className="mb-4 flex items-center gap-2">
             <BarChart3 size={20} className="text-primary" />
             <h2 className="text-lg font-semibold text-foreground">Sector Allocation</h2>
@@ -290,14 +290,14 @@ export function PortfolioIntelligencePanel() {
           </ChartContainer>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-5">
+        <div className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
           <div className="mb-4 flex items-center gap-2">
             <Sparkles size={20} className="text-primary" />
             <h2 className="text-lg font-semibold text-foreground">Theme Penetration</h2>
           </div>
           <div className="grid gap-3 md:grid-cols-2">
             {themeData.slice(0, 8).map((item) => (
-              <div key={item.theme} className="rounded-lg border border-border bg-background p-3">
+              <div key={item.theme} className="min-w-0 rounded-lg border border-border bg-background p-3">
                 <div className="mb-2 flex items-center justify-between gap-3">
                   <p className="text-sm font-semibold text-foreground">{item.theme}</p>
                   <span className="text-xs font-bold text-primary">{item.weight.toFixed(1)}%</span>
@@ -309,8 +309,8 @@ export function PortfolioIntelligencePanel() {
         </div>
       </section>
 
-      <section className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
-        <div className="rounded-xl border border-border bg-card p-5">
+      <section className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+        <div className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
           <div className="mb-4 flex items-start gap-3">
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-400/10 text-amber-300">
               <ShieldCheck size={20} />
@@ -335,7 +335,7 @@ export function PortfolioIntelligencePanel() {
           </div>
         </div>
 
-        <div className="rounded-xl border border-border bg-card p-5">
+        <div className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
           <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-start gap-3">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
@@ -382,7 +382,7 @@ export function PortfolioIntelligencePanel() {
         </div>
       </section>
 
-      <section className="rounded-xl border border-border bg-card p-5">
+      <section className="min-w-0 rounded-xl border border-border bg-card p-4 sm:p-5">
         <div className="mb-4 flex items-center gap-2">
           <Activity size={20} className="text-primary" />
           <h2 className="text-lg font-semibold text-foreground">Contribution Curve</h2>
