@@ -1,74 +1,53 @@
 "use client"
 
-import { useState, use } from "react"
+import { useState, useEffect, use } from "react"
 import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { FundamentalAnalysis } from "@/components/stock/fundamental-analysis"
-import { TechnicalAnalysis } from "@/components/stock/technical-analysis"
-import { Sparkles, BarChart3, Activity } from "lucide-react"
+import { Skeleton } from "@/components/ui/skeleton"
 
-interface IntelligencePageProps {
+interface Props {
   params: Promise<{ symbol: string }>
 }
 
-export default function IntelligencePage({ params }: IntelligencePageProps) {
+export default function IntelligencePage({ params }: Props) {
   const { symbol } = use(params)
-  const [activeTab, setActiveTab] = useState<"fundamental" | "technical">("fundamental")
+  const [analysisData, setAnalysisData] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    async function fetchAnalysis() {
+      try {
+        const res = await fetch(`/api/stock/analysis?company=${symbol}&type=EC&period=FEB26`)
+        const json = await res.json()
+        setAnalysisData(json)
+      } catch (err) {
+        console.error(err)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchAnalysis()
+  }, [symbol])
 
   return (
-    <div className="flex min-h-screen bg-background">
-      {/* Stock Sidebar */}
+    <div className="flex min-h-screen w-full relative">
       <StockSidebar />
-
-      {/* Main Content */}
-      <div className="flex flex-1 flex-col pl-[260px]">
-        <main className="flex-1 p-6">
-          {/* Header */}
-          <div className="mb-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                <Sparkles size={24} className="text-primary" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold">Sparkle Intelligence</h1>
-                <p className="text-sm text-muted-foreground">
-                  AI-powered analysis for {symbol}
-                </p>
-              </div>
+      <div className="flex flex-1 flex-col lg:pl-[260px] w-full">
+        <main className="flex-1 p-8">
+          <div className="space-y-8 max-w-[1600px] mx-auto">
+            <div className="flex flex-col gap-2">
+              <h1 className="text-4xl font-black italic uppercase tracking-tighter text-foreground">
+                Sparkle <span className="text-primary">Intelligence</span>
+              </h1>
+              <p className="text-muted-foreground">AI-Powered Fundamental Analysis & Sectional Scores</p>
             </div>
-          </div>
 
-          {/* Tab Switcher */}
-          <div className="mb-6 flex gap-2 rounded-xl bg-card p-1.5">
-            <button
-              onClick={() => setActiveTab("fundamental")}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-all ${
-                activeTab === "fundamental"
-                  ? "bg-primary text-primary-foreground shadow-lg"
-                  : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-              }`}
-            >
-              <BarChart3 size={18} />
-              Fundamental Analysis
-            </button>
-            <button
-              onClick={() => setActiveTab("technical")}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-all ${
-                activeTab === "technical"
-                  ? "bg-primary text-primary-foreground shadow-lg"
-                  : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-              }`}
-            >
-              <Activity size={18} />
-              Technical Analysis
-            </button>
+            {loading ? (
+              <Skeleton className="h-[600px] w-full rounded-2xl" />
+            ) : (
+              <FundamentalAnalysis data={analysisData?.sections} />
+            )}
           </div>
-
-          {/* Tab Content */}
-          {activeTab === "fundamental" ? (
-            <FundamentalAnalysis symbol={symbol} />
-          ) : (
-            <TechnicalAnalysis symbol={symbol} />
-          )}
         </main>
       </div>
     </div>

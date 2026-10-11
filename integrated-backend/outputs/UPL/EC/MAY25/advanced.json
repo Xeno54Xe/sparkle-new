@@ -1,0 +1,381 @@
+{
+  "doc_meta": {
+    "doc_id": "51ddd453d512",
+    "stock": "UPL",
+    "doc_type": "ec",
+    "period": "MAY25",
+    "quarter": null,
+    "fiscal_year": "FY26",
+    "filename": "MAY25.pdf",
+    "file_path": "data/UPL/EC/MAY25.pdf"
+  },
+  "doc_type": "ec",
+  "sections": {
+    "financial_metrics": {
+      "section": "financial_metrics",
+      "score": 92.3,
+      "label": "Strong Beat",
+      "revenue": {
+        "scope": "Q4 FY25",
+        "label": "Strong Growth",
+        "analysis": "Revenue for the fourth quarter stood at ₹155.7 billion, marking a robust 11% growth over the previous year, driven almost entirely by volume growth [p.5]. The annual revenue growth was 8%, which was at the higher end of the company's guidance [p.7]."
+      },
+      "ebitda": {
+        "scope": "Q4 FY25",
+        "label": "Strong Growth",
+        "analysis": "EBITDA for the fourth quarter was ₹32.4 billion, a significant 68% increase compared to the previous year [p.5]. For the full year, EBITDA stood at ₹81.2 billion, reflecting a 47% growth over the previous year, slightly below the guidance of 50% growth [p.6]. EBITDA margins improved to 20.8% in Q4, an increase of over 700 basis points [p.5]."
+      },
+      "profitability": {
+        "scope": "FY25",
+        "label": "Strong Recovery",
+        "analysis": "Profit after tax for the year was ₹9 billion, with the majority of this profit realized in Q4 [p.6]. The net profit for Q4 was significantly higher than the previous year, driven by strong EBITDA performance and reduced foreign exchange losses [p.5]."
+      },
+      "cash_flow": {
+        "scope": "FY25",
+        "label": "Exceeds Expectations",
+        "analysis": "Operating cash flow for the year was ₹44.51 billion, exceeding the guidance of $300-400 million in free cash flow [p.7]. This strong cash flow performance was supported by improvements in working capital management [p.8]."
+      },
+      "capex": {
+        "scope": "Not Available",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "debt": {
+        "scope": "FY25",
+        "label": "Significant Reduction",
+        "analysis": "Net debt as of March 31, 2025, was ₹138.6 billion, a sharp reduction of ₹83.3 billion from the previous year [p.7]. The net debt to EBITDA ratio improved to 1.7 times [p.7]."
+      },
+      "working_capital": {
+        "scope": "FY25",
+        "label": "Improved Efficiency",
+        "analysis": "Net working capital as of March 31 was ₹67.6 billion, a reduction of ₹33.7 billion from the previous year [p.6]. Working capital days reduced from 86 days in FY24 to 53 days, driven by inventory optimization and improved receivables collection [p.4]."
+      },
+      "operational_kpis": {
+        "scope": "FY25",
+        "label": "Volume Growth",
+        "analysis": "The company achieved a 13% growth in volumes across all regions and platforms, contributing significantly to revenue growth [p.9]."
+      },
+      "guidance": {
+        "scope": "FY26",
+        "label": "Cautious Optimism",
+        "analysis": "The company has guided for a revenue growth of 4% to 8% and an EBITDA growth of 10% to 14% for FY26, with expectations of subdued performance in the first half due to geopolitical factors [p.24]."
+      },
+      "qualitative_analysis": "UPL's financial performance in FY25 was strong, with revenue and EBITDA growth at the higher end of guidance. The performance was driven by volume growth and operational efficiencies. The company exceeded its free cash flow guidance, indicating strong cash generation capabilities. However, the guidance for FY26 is cautious due to geopolitical uncertainties.",
+      "analyst_flags": [
+        "Strong volume-driven revenue growth",
+        "Significant reduction in net debt",
+        "Exceeded free cash flow guidance"
+      ],
+      "sentiment_narrative": "Management expressed confidence in the company's performance, highlighting a 'fantastic achievement' despite a challenging year for the industry [p.9]. They emphasized the company's resilience and ability to outperform peers, with phrases like 'better growth, better performance than any other player in our industry' [p.9]. The focus on operational excellence and innovation was noted as key drivers of success, with management stating, 'we have delivered better growth, better performance than any other player in our industry in a revival zone' [p.9]. The cautious guidance for FY26 reflects a pragmatic approach to external uncertainties, with management stating, 'we should just be a bit cautious considering all the turmoil that's going around' [p.28].",
+      "raw_scores": {
+        "positive_prob": 0.9109,
+        "negative_prob": 0.0469,
+        "neutral_prob": 0.0422
+      },
+      "title": "Financial Metrics"
+    },
+    "risk_intelligence": {
+      "section": "risk_intelligence",
+      "score": 94.6,
+      "label": "Well Managed",
+      "overall_risk_environment": "ELEVATED",
+      "risks": [
+        {
+          "risk_id": "R1",
+          "category": "Geopolitical/Concentration",
+          "scope": "FY26 operations",
+          "label": "High Risk",
+          "risk_score": 16,
+          "severity": "HIGH",
+          "analysis": "The geopolitical environment remains volatile, with recent developments such as the US-China tariff agreement impacting trade flows [p.28]. Management acknowledges this volatility and has adopted a cautious approach in their guidance, emphasizing the need to maintain performance despite these challenges. However, the lack of specific mitigants beyond general caution suggests a significant risk to operations."
+        },
+        {
+          "risk_id": "R3",
+          "category": "Commodity/Input Cost",
+          "scope": "FY26 pricing strategy",
+          "label": "Moderate Risk",
+          "risk_score": 10,
+          "severity": "MODERATE",
+          "analysis": "The company anticipates flat to slightly lower costs for internally sourced active ingredients, but crop prices remain uncertain [p.11, p.27]. Management has adjusted in-season pricing to mitigate tariff impacts, yet the unpredictable nature of crop prices could affect profitability. The reliance on volume-driven growth with minimal price increases adds to the risk."
+        },
+        {
+          "risk_id": "R2",
+          "category": "Credit/Leverage",
+          "scope": "FY26 financial strategy",
+          "label": "Moderate Risk",
+          "risk_score": 9,
+          "severity": "MODERATE",
+          "analysis": "UPL's perpetual bond coupon is due for a reset, which will increase costs significantly [p.29]. Management is considering options to either roll over or redeem the bonds, indicating awareness of the potential financial impact. However, the decision is pending, and the outcome could affect financial flexibility."
+        },
+        {
+          "risk_id": "R4",
+          "category": "Execution/Operational",
+          "scope": "FY26 operational strategy",
+          "label": "Moderate Risk",
+          "risk_score": 8,
+          "severity": "MODERATE",
+          "analysis": "UPL's operational strategy involves driving growth through operational excellence and disciplined resource allocation [p.11]. While management is confident in their strategy, the execution risk remains due to the complex global environment and the need to adapt quickly to changing conditions. The company's ability to maintain efficiencies and manage costs will be crucial."
+        }
+      ],
+      "risks_emphasised": [
+        "Geopolitical volatility",
+        "Interest cost management",
+        "Operational excellence"
+      ],
+      "risks_downplayed": [
+        "Commodity price volatility",
+        "Debt management"
+      ],
+      "undisclosed_risks": [
+        "Potential impact of geopolitical tensions on supply chain",
+        "Long-term sustainability of pricing strategy"
+      ],
+      "risk_overview": {
+        "scope": "Full earnings call",
+        "analysis": "The overall risk communication was transparent, with management acknowledging key risks such as geopolitical volatility and interest cost management. However, some risks, like commodity price volatility and debt management, were not fully addressed, leaving potential gaps in the risk assessment. The emphasis on operational excellence suggests confidence, but the lack of detailed mitigants for certain risks indicates an elevated risk environment."
+      },
+      "sentiment_narrative": "Management communicated a cautiously optimistic outlook, emphasizing their confidence in outperforming peers despite acknowledging the volatile geopolitical environment. They highlighted their strategic focus on operational excellence and disciplined resource allocation as key drivers for future growth. However, there was a notable emphasis on being conservative in guidance due to uncertainties, particularly in commodity trade flows and interest costs. Overall, the sentiment was one of resilience and preparedness, albeit with an acknowledgment of the challenges ahead.",
+      "raw_scores": {
+        "positive_prob": 0.9346,
+        "negative_prob": 0.0245,
+        "neutral_prob": 0.0409
+      },
+      "title": "Risk Intelligence"
+    },
+    "esg": {
+      "section": "esg",
+      "score": 70.5,
+      "label": "Good",
+      "environmental": {
+        "available": true,
+        "score": 75.0,
+        "label": "Good",
+        "scope": "Sustainable agriculture and manufacturing",
+        "analysis": "UPL is actively engaged in sustainable manufacturing practices, emphasizing green chemistry and alternative energy, particularly in India, which is a competitive advantage [p.20]. The company has implemented programs like Shashwat Mithaas for sugarcane, covering 80,000 acres, and a rice carbon program in its second year, showcasing benefits in climate-smart agriculture [p.15]. UPL is also focused on reducing its environmental footprint in agriculture and manufacturing, aiming to decarbonize and enhance sustainability [p.3]. The company is investing in renewable energy and waste recycling, which are accretive to their bottom line [p.30]. However, specific targets and timelines for these initiatives are not detailed, which slightly limits the disclosure quality.",
+        "greenwashing_flags": [
+          "Lack of specific targets and timelines for renewable energy and waste recycling initiatives."
+        ]
+      },
+      "social": {
+        "available": true,
+        "score": 65.0,
+        "label": "Good",
+        "scope": "Farmer resilience and community service",
+        "analysis": "UPL places a strong emphasis on farmer resilience, addressing challenges such as food security and climate change impacts [p.3]. The company is involved in social change and community service across its markets, supporting social projects through its business operations [p.3]. UPL's programs like ProNutiva® and climate-smart products aim to promote health and safety for employees and distributors [p.15]. The company also focuses on digital transformation to enhance decision-making and risk management [p.15]. While these initiatives are commendable, the disclosure lacks detailed metrics and specific social impact targets.",
+        "greenwashing_flags": []
+      },
+      "governance": {
+        "available": true,
+        "score": 70.0,
+        "label": "Good",
+        "scope": "Board composition and governance standards",
+        "analysis": "UPL has established high governance standards with a global board composition, ensuring top-class investors are involved across its platforms [p.3]. The company emphasizes the importance of governance in maintaining its competitive edge and strategic advantage in ESG [p.2]. UPL's governance framework supports its focus on sustainability and innovation, contributing to its resilience and performance in challenging environments [p.3]. However, the disclosure does not provide detailed information on specific governance practices or third-party verification of governance standards.",
+        "greenwashing_flags": []
+      },
+      "disclosure_framework": "None mentioned",
+      "third_party_verified": false,
+      "sentiment_narrative": "UPL's ESG communication reflects a strong commitment to sustainability, particularly in agriculture and manufacturing. The company highlights its strategic focus on farmer resilience and community service, which are integral to its business model. However, while UPL discusses various initiatives and programs, the lack of specific targets and timelines in their environmental and social disclosures suggests room for improvement in transparency. Governance practices are emphasized, but detailed verification or third-party assessments are not mentioned. Overall, UPL's ESG narrative is positive, but could benefit from more concrete metrics and external validation.",
+      "raw_scores": {
+        "positive_prob": 0.5247,
+        "negative_prob": 0.0104,
+        "neutral_prob": 0.4649
+      },
+      "title": "ESG Analysis"
+    },
+    "speaker_sentiment": {
+      "section": "speaker_sentiment",
+      "score": 90.5,
+      "label": "Very Bullish",
+      "speakers": [
+        {
+          "name": "Jai Shroff",
+          "role": "Management",
+          "company": "UPL",
+          "scope": "Financial performance",
+          "tone": "Confident",
+          "analysis": "Jai Shroff expressed confidence in UPL's performance, highlighting an 8% revenue growth and a 47% increase in EBITDA, despite challenging industry conditions [p.1]. He emphasized UPL's resilience due to its global presence and diverse customer base, with no single customer contributing more than 3% of revenue [p.1]. Shroff's tone was driven by the company's strong financial results and strategic positioning in the market. Analysts did not appear to challenge his statements directly, allowing him to maintain a positive outlook throughout his presentation.",
+          "score": 95.6,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.9451,
+            "negative_prob": 0.0137,
+            "neutral_prob": 0.0411
+          }
+        },
+        {
+          "name": "Anand Vora",
+          "role": "Management",
+          "company": "UPL",
+          "scope": "Financial performance",
+          "tone": "Cautious",
+          "analysis": "Anand Vora provided guidance for the next year, projecting revenue growth of 4% to 8% and EBITDA growth of 10% to 14%, while acknowledging geopolitical uncertainties [p.24]. He noted that Q1 and Q2 might be subdued due to these factors but remained confident in achieving the full-year guidance [p.24]. Vora's cautious tone was influenced by the volatile geopolitical environment and the need to manage investor expectations carefully. Analysts questioned the potential impact on margins and working capital, prompting Vora to emphasize the company's focus on maintaining robust margins and improving working capital management [p.28, p.29].",
+          "score": 66.2,
+          "label": "Bullish",
+          "raw_scores": {
+            "positive_prob": 0.6384,
+            "negative_prob": 0.3039,
+            "neutral_prob": 0.0577
+          }
+        },
+        {
+          "name": "Mike Frank",
+          "role": "Management",
+          "company": "UPL Corporation",
+          "scope": "Global Crop Protection",
+          "tone": "Optimistic",
+          "analysis": "Mike Frank discussed the expected regional growth, identifying North America, Latin America, and other regions as areas of strength within the 4% to 8% growth guidance [p.25]. He contextualized UPL's performance against industry peers, noting that many reported flat or declining revenues, while UPL outperformed [p.25]. Frank's optimism was supported by UPL's relative success in a challenging industry environment. Analysts did not significantly challenge his regional growth projections, allowing him to maintain a positive tone.",
+          "score": 24.9,
+          "label": "Bearish",
+          "raw_scores": {
+            "positive_prob": 0.2092,
+            "negative_prob": 0.7273,
+            "neutral_prob": 0.0635
+          }
+        }
+      ],
+      "management_tone_summary": "Overall, the management communicated with a mix of confidence and caution. While Jai Shroff was confident about past performance and strategic positioning, Anand Vora adopted a more cautious tone regarding future guidance due to geopolitical uncertainties. Mike Frank remained optimistic about regional growth prospects.",
+      "analyst_pressure_points": [
+        "Revenue guidance",
+        "Margin expectations",
+        "Working capital management",
+        "Debt reduction strategy"
+      ],
+      "notable_exchanges": [
+        "Analysts questioned Anand Vora on the potential impact of geopolitical turmoil on revenue and margins, prompting a cautious response [p.28].",
+        "Saurabh Jain inquired about the strategy for managing the perpetual bond coupon, highlighting concerns about increased costs [p.29]."
+      ],
+      "overall_sentiment_shift": "Sentiment remained relatively stable throughout the call, with management maintaining a balance between confidence in past performance and caution regarding future uncertainties.",
+      "sentiment_narrative": "The dominant tone from management was one of cautious optimism. While Jai Shroff confidently highlighted UPL's strong financial performance and strategic advantages, Anand Vora tempered expectations with caution due to geopolitical uncertainties. Mike Frank's optimism about regional growth prospects added a positive note to the overall sentiment. Analysts' questions focused on future guidance and financial strategies, reflecting a cautious approach to potential risks. Despite these concerns, management's confidence in their strategic positioning and operational resilience was evident throughout the call.",
+      "raw_scores": {
+        "positive_prob": 0.8822,
+        "negative_prob": 0.0385,
+        "neutral_prob": 0.0792
+      },
+      "title": "Speaker Sentiment"
+    },
+    "qa_transparency": {
+      "section": "qa_transparency",
+      "score": 63.0,
+      "label": "Transparent",
+      "qa_pairs": [
+        {
+          "question_id": "Q1",
+          "analyst": "Somaiah Valliyappan, Avendus Spark",
+          "topic": "Guidance",
+          "label": "Partial Response",
+          "analysis": "Somaiah Valliyappan asked about the potential for pricing-led benefits within the 4% to 8% revenue growth guidance and which geographies might see higher growth [p.25]. Mike Frank responded by identifying North America, Latin America, and the rest of the world as regions likely to experience stronger growth, but did not provide specific pricing details. The response was partially transparent, offering some geographic insights but lacking detailed pricing information."
+        },
+        {
+          "question_id": "Q2",
+          "analyst": "S. Ramesh",
+          "topic": "Debt/Capital",
+          "label": "Direct Response",
+          "analysis": "S. Ramesh inquired about the impact of debt reduction on interest costs and whether there would be any increase in interest costs due to incremental debt growth [p.33]. Anand Vora explained that while some geographies like Brazil might see rising interest costs, overall interest costs are expected to reduce due to cash generation. This response was transparent, providing a clear explanation of the factors affecting interest costs."
+        },
+        {
+          "question_id": "Q3",
+          "analyst": "S. Ramesh",
+          "topic": "Guidance",
+          "label": "Partial Response",
+          "analysis": "S. Ramesh asked if the seed business and UPL SAS might outperform the 4-8% growth guidance while UPL Corp might grow slower [p.33]. Anand Vora responded optimistically but without specific data, and Jai Shroff added a cautious note about the overall positive outlook. The response was partially transparent, offering a general positive outlook without detailed performance metrics."
+        }
+      ],
+      "deflected_topics": [
+        "Pricing specifics",
+        "Detailed segment performance"
+      ],
+      "repeated_phrases": [
+        "we need your good wishes",
+        "being cautious"
+      ],
+      "forward_guidance_quality": "Vague",
+      "data_backed_responses": "1 of 3",
+      "qualitative_assessment": "Management provided some specific geographic insights and general optimism about future performance but often lacked detailed data to back their claims. Responses to questions about pricing and segment-specific performance were notably vague, indicating a tendency to avoid detailed disclosures in these areas.",
+      "sentiment_narrative": "Management's communication style was cautiously optimistic, often emphasizing resilience and potential for growth despite challenging conditions. They frequently acknowledged the volatile environment and expressed a desire to maintain a positive outlook. However, the lack of specific data in several responses suggests a preference for broad statements over detailed transparency. Overall, the tone was positive, with an emphasis on strategic positioning and future opportunities.",
+      "raw_scores": {
+        "positive_prob": 0.39,
+        "negative_prob": 0.0228,
+        "neutral_prob": 0.5872
+      },
+      "title": "Q&A Transparency"
+    },
+    "overall_sentiment": {
+      "section": "overall_sentiment",
+      "score": 96.5,
+      "label": "Very Bullish",
+      "management_confidence": "Mixed",
+      "earnings_quality": "Beat",
+      "guidance_tone": "Maintained",
+      "market_signal": "Cautiously Bullish",
+      "tone_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Management expressed mixed confidence, acknowledging both strong performance and external challenges. UPL reported an 8% revenue growth and a 47% increase in EBITDA, outperforming peers in a challenging industry environment [p.4, p.5]. However, they also highlighted geopolitical volatility and a cautious approach to guidance, maintaining a 4-8% growth target [p.28]. The company achieved significant margin improvements, with a 900bps increase in contribution margin, driven by a better product mix and cost efficiencies [p.9]. Despite these positives, management noted potential headwinds from geopolitical events and interest cost volatility in certain regions [p.33]. Overall, the tone was cautiously bullish, with a focus on resilience and sustainable growth."
+      },
+      "topics_gaining_momentum": [
+        "Differentiated and sustainable products",
+        "Volume growth in herbicides and fungicides",
+        "Margin improvement"
+      ],
+      "topics_losing_momentum": [
+        "Geopolitical volatility",
+        "Interest cost volatility"
+      ],
+      "key_surprises": [
+        "The significant 47% growth in EBITDA was a positive surprise, indicating strong operational performance [p.4]."
+      ],
+      "qualitative_synthesis": "The earnings call signals a cautiously bullish outlook for UPL, with management highlighting strong financial performance and resilience in a challenging market. While the company outperformed peers and achieved significant margin improvements, management remains cautious due to geopolitical uncertainties and potential interest cost volatility. Investors can expect continued focus on differentiated and sustainable products, which are driving growth and margin expansion.",
+      "sentiment_narrative": "Management expressed a mix of confidence and caution, noting, 'We continue to outperform, and we are quite confident, but at the same time, considering all the geopolitical events and the turmoil, we should just be a bit cautious' [p.28]. The company reported an 8% growth in revenue and a 47% increase in EBITDA, outperforming industry peers [p.4]. They highlighted a remarkable 900bps improvement in contribution margin, driven by a better product mix and cost efficiencies [p.9]. Despite these achievements, management acknowledged the volatile geopolitical environment and maintained a cautious approach to guidance, targeting 4-8% growth [p.28]. The focus remains on resilience and sustainable growth, with differentiated products showing strong momentum [p.10]. Overall, the tone was cautiously bullish, with an emphasis on navigating external challenges while capitalizing on internal strengths.",
+      "raw_scores": {
+        "positive_prob": 0.9596,
+        "negative_prob": 0.0188,
+        "neutral_prob": 0.0216
+      },
+      "title": "Overall Sentiment"
+    },
+    "investment_synthesis": {
+      "section": "investment_synthesis",
+      "score": 75,
+      "label": "Buy",
+      "recommendation": "Buy",
+      "conviction": "Medium",
+      "thesis": {
+        "scope": "Based on FY25 performance and FY26 outlook",
+        "analysis": "UPL has demonstrated resilience and strong recovery in FY25, achieving 8% revenue growth and a significant 47% increase in EBITDA, alongside generating $530 million in free cash flow [p.33]. The company's global presence across 140 countries and diversified product offerings provide a robust platform for continued growth, despite industry challenges [p.33]. UPL's focus on innovation, with a pipeline of over 20 new products and a target of $130 million in new revenue, positions it well for future growth [p.11]. However, geopolitical uncertainties and potential interest rate volatility in key markets like Brazil pose risks to the outlook [p.33]."
+      },
+      "bull_case": {
+        "scope": "Key upside drivers",
+        "analysis": "UPL's strong performance in FY25, with 8% revenue growth and 47% EBITDA growth, highlights its ability to outperform peers in a challenging industry environment [p.33]. The company's strategic focus on innovation, with a 17.5% innovation rate expected in FY26, supports long-term growth prospects [p.26]. UPL's global footprint and diversified product portfolio reduce dependency on any single market, enhancing resilience [p.33]. The significant reduction in net debt by $1.04 billion strengthens the balance sheet and reduces financial risk [p.7]."
+      },
+      "bear_case": {
+        "scope": "Key risks",
+        "analysis": "The agrochemical industry is expected to remain flat, with potential price degrowth, which could limit UPL's growth prospects despite its outperformance [p.25]. Geopolitical events and tariff changes, such as those between China and the US, introduce volatility and uncertainty into UPL's operating environment [p.28]. Interest rate increases in key markets like Brazil could offset benefits from debt reduction, impacting financial performance [p.33]. Additionally, foreign exchange headwinds, particularly from Brazil, may affect revenue growth [p.26]."
+      },
+      "catalysts": {
+        "near_term": "The launch of over 20 new products in FY26, with a target of $130 million in new revenue, could drive short-term growth and investor interest [p.11]. Continued debt reduction efforts and potential interest cost savings may enhance financial stability.",
+        "medium_term": "The company's focus on innovation, aiming for a mid-20s innovation rate by the end of the decade, positions it for sustained growth. Expansion in key markets like North America and Latin America could further support medium-term performance [p.25]."
+      },
+      "key_watchpoints": [
+        "Innovation rate progress",
+        "Debt reduction and interest cost trends",
+        "Geopolitical developments affecting tariffs",
+        "Performance in key markets like Brazil",
+        "New product launch success"
+      ],
+      "valuation_context": "Not discussed in this call.",
+      "scorecard": {
+        "earnings_quality": 4,
+        "management_quality": 4,
+        "strategy_clarity": 4,
+        "risk_management": 3,
+        "esg_commitment": 5
+      },
+      "sentiment_narrative": "Management expressed confidence in UPL's ability to outperform the industry despite a challenging environment, highlighting strong revenue and EBITDA growth in FY25 [p.33]. They emphasized the company's strategic focus on innovation and new product launches as key drivers for future growth [p.11]. However, they also acknowledged the potential risks from geopolitical volatility and interest rate fluctuations, advising a cautious outlook [p.28]. The reduction in net debt and strong cash flow generation were noted as significant achievements, enhancing financial stability [p.7]. Overall, management conveyed a balanced view, optimistic about growth opportunities while mindful of external risks.",
+      "raw_scores": {
+        "positive_prob": 0.951,
+        "negative_prob": 0.0202,
+        "neutral_prob": 0.0287
+      },
+      "title": "Investment Synthesis"
+    }
+  }
+}

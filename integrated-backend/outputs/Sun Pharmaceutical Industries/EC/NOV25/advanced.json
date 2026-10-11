@@ -1,0 +1,405 @@
+{
+  "doc_meta": {
+    "doc_id": "cd6f87badca4",
+    "stock": "Sun Pharmaceutical Industries",
+    "doc_type": "ec",
+    "period": "NOV25",
+    "quarter": null,
+    "fiscal_year": "FY26",
+    "filename": "NOV25.pdf",
+    "file_path": "data/Sun Pharmaceutical Industries/EC/NOV25.pdf"
+  },
+  "doc_type": "ec",
+  "sections": {
+    "financial_metrics": {
+      "section": "financial_metrics",
+      "score": 96.3,
+      "label": "Strong Beat",
+      "revenue": {
+        "scope": "Q2 FY26",
+        "label": "Moderate Growth",
+        "analysis": "Q2 FY26 sales were at INR144,052 million, recording a growth of 8.6% compared to the second quarter of FY '25 [p.3]. For the first half of FY26, sales reached INR281,913 million, marking a growth of 9.3% over the first half of the previous year [p.4]. The India business saw formulation sales of INR47,348 million, growing by 11% over Q2 last year [p.4]."
+      },
+      "ebitda": {
+        "scope": "Q2 FY26",
+        "label": "Strong Growth",
+        "analysis": "EBITDA for the quarter was INR45,271 million, registering an increase of 14.9% over Q2 last year [p.3]. The EBITDA margin for the quarter was 31.3%, up from 29.6% in Q2 FY '25 and slightly higher than 31.1% in the first quarter of FY '26 [p.3]. For the first half, EBITDA was INR88,287 million, showing a growth of 17% over the first half of last year [p.4]."
+      },
+      "profitability": {
+        "scope": "Q2 FY26",
+        "label": "Slight Improvement",
+        "analysis": "Net profit after tax for Q2 FY26 was INR31,180 million, which is up by 2.6% over the reported net profit of Q2 last year [p.3]. The EPS for the quarter was INR13 per share [p.3]. The effective tax rate for the quarter was 24.7%, higher than 15.8% in Q2 FY '25 [p.4]."
+      },
+      "cash_flow": {
+        "scope": "Q2 FY26",
+        "label": "Decline",
+        "analysis": "Net cash generated year-on-year has declined despite similar profits, primarily due to increased working capital and business acquisitions [p.10]. The company expects cash generation to align with profit growth by the end of the fiscal year [p.10]."
+      },
+      "capex": {
+        "scope": "Q2 FY26",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "debt": {
+        "scope": "Q2 FY26",
+        "label": "Short-term Increase",
+        "analysis": "The balance sheet remains strong with a net cash position of $2.9 billion at a consolidated level [p.4]. There was a spike in interest cost due to short-term borrowings for acquisitions, which is expected to reduce in future quarters [p.17]."
+      },
+      "working_capital": {
+        "scope": "Q2 FY26",
+        "label": "Increase",
+        "analysis": "There has been an increase in working capital, which contributed to the decline in net cash generated year-on-year [p.10]. The company anticipates normalization of working capital in the coming quarters [p.10]."
+      },
+      "operational_kpis": {
+        "scope": "Q2 FY26",
+        "label": "Strong Growth",
+        "analysis": "Global Innovative Medicines sales increased by 16.4% to USD313 million [p.4]. U.S. sales of Innovative Medicine surpassed generics for the first time during the quarter [p.4]. The company launched 9 new products in India during Q2 FY26 [p.4]."
+      },
+      "guidance": {
+        "scope": "FY26",
+        "label": "Stable Outlook",
+        "analysis": "The company expects the effective tax rate to hover around 25% for the full year [p.17]. R&D spend is anticipated to be at the lower end of the 6% to 8% guidance [p.7]."
+      },
+      "qualitative_analysis": "The financial performance for Q2 FY26 was largely in line with expectations, with moderate revenue growth driven by strong performance in the Global Innovative Medicines segment. The increase in EBITDA margin indicates improved operational efficiency. However, the decline in cash flow due to increased working capital and short-term borrowings for acquisitions could be a concern if not managed effectively.",
+      "analyst_flags": [
+        "Increased working capital impacting cash flow",
+        "Higher effective tax rate",
+        "Short-term borrowings for acquisitions"
+      ],
+      "sentiment_narrative": "Management expressed confidence in the company's performance, highlighting the strong growth in Global Innovative Medicines sales, which increased by 16.4% to USD313 million [p.4]. They noted that U.S. sales of Innovative Medicine surpassed generics for the first time during the quarter, marking a significant milestone [p.4]. The CFO, Jayashree Satagopan, emphasized the company's strong balance sheet with a net cash position of $2.9 billion, despite recent acquisitions and settlements [p.4]. The company remains optimistic about normalizing working capital and aligning cash generation with profit growth by the end of the fiscal year [p.10]. Management also reiterated their commitment to maintaining a competitive edge in the market, with plans to launch new products and expand their R&D pipeline [p.5].",
+      "raw_scores": {
+        "positive_prob": 0.9547,
+        "negative_prob": 0.0148,
+        "neutral_prob": 0.0305
+      },
+      "title": "Financial Metrics"
+    },
+    "risk_intelligence": {
+      "section": "risk_intelligence",
+      "score": 94.2,
+      "label": "Well Managed",
+      "overall_risk_environment": "ELEVATED",
+      "risks": [
+        {
+          "risk_id": "R1",
+          "category": "Regulatory/Policy",
+          "scope": "U.S. Tariff Policy",
+          "label": "High Risk",
+          "risk_score": 16,
+          "severity": "HIGH",
+          "analysis": "The potential imposition of 100% tariffs on patent drug imports into the U.S. poses a significant risk to Sun Pharma's IM products, which are manufactured outside the U.S. [p.9]. Management acknowledged the uncertainty surrounding the policy and the ongoing Section 232 investigation, indicating that no additional tariffs are currently being paid [p.10]. They are prepared to have discussions if the situation changes, but no specific mitigants were disclosed [p.15]."
+        },
+        {
+          "risk_id": "R3",
+          "category": "Execution/Operational",
+          "scope": "U.S. Market Competition",
+          "label": "Moderate Risk",
+          "risk_score": 10,
+          "severity": "MODERATE",
+          "analysis": "The entry of new competitors in the U.S. market, particularly affecting products like Cequa, poses a risk to Sun Pharma's market share and pricing power [p.13]. Management remains optimistic, citing a strong value proposition and patient support programs as mitigants [p.13]. However, the competitive landscape could still pressure margins and growth."
+        },
+        {
+          "risk_id": "R2",
+          "category": "Credit/Leverage",
+          "scope": "Q2 FY26 Financials",
+          "label": "Moderate Risk",
+          "risk_score": 9,
+          "severity": "MODERATE",
+          "analysis": "Sun Pharma's interest costs have spiked this quarter due to short-term borrowings for acquisitions, notably Checkpoint [p.17]. Management expects these borrowings to be reduced in the future, indicating a temporary nature of the increased leverage [p.17]. However, the current increase in leverage could impact financial flexibility if not managed properly."
+        }
+      ],
+      "risks_emphasised": [
+        "U.S. Tariff Policy",
+        "Interest Cost Spike",
+        "U.S. Market Competition"
+      ],
+      "risks_downplayed": [
+        "Short-term Borrowing Impact",
+        "Tariff Policy Uncertainty"
+      ],
+      "undisclosed_risks": [
+        "Potential Impact of U.S. Manufacturing Shifts"
+      ],
+      "risk_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Overall, the risk communication during the earnings call was moderately transparent. Management highlighted key risks such as U.S. tariff policy and increased interest costs but did not provide detailed mitigation strategies for all risks. The potential impact of shifting manufacturing to the U.S. was not explicitly discussed, leaving some uncertainty about future operational adjustments."
+      },
+      "sentiment_narrative": "Management communicated a cautiously optimistic outlook, acknowledging significant risks such as potential U.S. tariffs and increased competition in the U.S. market. They emphasized their preparedness to address these challenges but provided limited details on specific mitigation strategies. The tone suggested confidence in their current market position and strategic initiatives, despite the external uncertainties.",
+      "raw_scores": {
+        "positive_prob": 0.926,
+        "negative_prob": 0.0168,
+        "neutral_prob": 0.0572
+      },
+      "title": "Risk Intelligence"
+    },
+    "esg": {
+      "section": "esg",
+      "score": 50.0,
+      "label": "Average",
+      "environmental": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "social": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "governance": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "disclosure_framework": "None mentioned",
+      "third_party_verified": false,
+      "sentiment_narrative": "The earnings call transcript for Sun Pharmaceutical Industries does not provide any specific ESG disclosures. There is no mention of environmental, social, or governance initiatives or metrics. The focus of the call is primarily on financial performance, business highlights, and strategic updates. The absence of ESG content suggests that the company may not prioritize these aspects in its communication strategy for this particular earnings call. Without any ESG framework or third-party verification mentioned, it is difficult to assess the company's commitment to sustainability and responsible business practices.",
+      "raw_scores": {
+        "positive_prob": 0.0278,
+        "negative_prob": 0.0507,
+        "neutral_prob": 0.9215
+      },
+      "title": "ESG Analysis"
+    },
+    "speaker_sentiment": {
+      "section": "speaker_sentiment",
+      "score": 86.7,
+      "label": "Very Bullish",
+      "speakers": [
+        {
+          "name": "Dilip Shanghvi",
+          "role": "Management",
+          "company": "Sun Pharmaceutical Industries Ltd.",
+          "scope": "R&D and Strategic Initiatives",
+          "tone": "Confident",
+          "analysis": "Dilip Shanghvi expressed confidence in the company's R&D initiatives, stating that they continue to invest in building an R&D pipeline for their Innovative Medicines business [p.10]. He mentioned that consolidated investments towards R&D for Q2 FY '26 stand at INR7,827 million or 5.4% of sales [p.10]. His tone was driven by the strategic focus on innovation and the anticipation of FDA decisions on key products. Analysts did not seem to press him hard on these points, indicating a general acceptance of the company's R&D direction.",
+          "score": 84.1,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.7756,
+            "negative_prob": 0.0113,
+            "neutral_prob": 0.2132
+          }
+        },
+        {
+          "name": "Jayashree Satagopan",
+          "role": "Management",
+          "company": "Sun Pharmaceutical Industries Ltd.",
+          "scope": "Financial Performance",
+          "tone": "Neutral",
+          "analysis": "Jayashree Satagopan provided a detailed overview of the financial performance, noting an 8.6% growth in Q2 FY '26 sales to INR144,052 million and a gross margin of 79.3% [p.3]. She highlighted an EBITDA increase of 14.9% over the previous year [p.3]. Her tone was neutral, focusing on factual reporting of financial metrics without embellishment. Analysts questioned the decline in net cash generated despite similar profits, which she attributed to increased working capital and business acquisitions [p.10].",
+          "score": 27.2,
+          "label": "Bearish",
+          "raw_scores": {
+            "positive_prob": 0.2515,
+            "negative_prob": 0.7149,
+            "neutral_prob": 0.0336
+          }
+        },
+        {
+          "name": "Richard Ascroft",
+          "role": "Management",
+          "company": "Sun Pharmaceutical Industries Ltd.",
+          "scope": "U.S. Business Performance",
+          "tone": "Cautious",
+          "analysis": "Richard Ascroft discussed the U.S. business performance, noting a 4.1% decline to $496 million for the quarter, primarily due to increased competition in generics and lower sales of lenalidomide [p.10]. He maintained a cautious tone, acknowledging challenges while highlighting growth in Innovative Medicines led by ILUMYA, CEQUA, and ODOMZO [p.10]. Analysts probed the impact of competition on Cequa, to which he responded that they continue to see good growth despite new market entrants [p.13].",
+          "score": 5.0,
+          "label": "Very Bearish",
+          "raw_scores": {
+            "positive_prob": 0.0407,
+            "negative_prob": 0.9464,
+            "neutral_prob": 0.0129
+          }
+        },
+        {
+          "name": "Kirti Ganorkar",
+          "role": "Management",
+          "company": "Sun Pharmaceutical Industries Ltd.",
+          "scope": "Global and India Business",
+          "tone": "Optimistic",
+          "analysis": "Kirti Ganorkar was optimistic about the Global Innovative Medicines and India business, reporting a 16.4% increase in sales to USD313 million and noting that U.S. sales of Innovative Medicine have surpassed generics for the first time [p.10]. He emphasized strong growth in the India business, with formulation sales up by 11% [p.10]. His optimism was driven by the successful commercialization of ILUMYA in 35 markets and the company's leading market position in India. Analysts did not challenge his statements, suggesting confidence in the reported growth.",
+          "score": 96.5,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.9579,
+            "negative_prob": 0.015,
+            "neutral_prob": 0.0271
+          }
+        },
+        {
+          "name": "Aalok Shanghvi",
+          "role": "Management",
+          "company": "Sun Pharmaceutical Industries Ltd.",
+          "scope": "Emerging Markets and Rest of World",
+          "tone": "Confident",
+          "analysis": "Aalok Shanghvi reported confidently on the performance in Emerging Markets and the Rest of the World, noting a 10.9% increase in formulation revenues in Emerging Markets and a 17.7% increase in Rest of the World [p.10]. He attributed growth to both generics and Innovative Medicines, aided by favorable currency movements. His confidence was supported by the broad-based growth across regions. There was no significant analyst pushback on his statements, indicating acceptance of the positive performance.",
+          "score": 96.4,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.9576,
+            "negative_prob": 0.0167,
+            "neutral_prob": 0.0257
+          }
+        }
+      ],
+      "management_tone_summary": "Overall, the management communicated with a mix of confidence and caution. While they were optimistic about growth in Innovative Medicines and the India market, they were cautious about challenges in the U.S. generics market.",
+      "analyst_pressure_points": [
+        "Cash flow decline",
+        "Impact of competition on Cequa",
+        "R&D spending levels"
+      ],
+      "notable_exchanges": [
+        "Analysts questioned the decline in net cash generated despite similar profits, which was attributed to increased working capital and business acquisitions [p.10].",
+        "Richard Ascroft was asked about the impact of competition on Cequa, to which he responded that they continue to see good growth despite new market entrants [p.13]."
+      ],
+      "overall_sentiment_shift": "The sentiment remained stable throughout the call, with management maintaining a balanced view of opportunities and challenges.",
+      "sentiment_narrative": "The management of Sun Pharmaceutical Industries conveyed a balanced tone during the earnings call. They expressed confidence in their strategic initiatives, particularly in R&D and the growth of Innovative Medicines. While they acknowledged challenges in the U.S. generics market, they remained optimistic about their market position in India and the potential of their global business. The financial performance was presented factually, with a focus on growth metrics and strategic investments. Overall, the sentiment was one of cautious optimism, with a clear emphasis on innovation and market leadership.",
+      "raw_scores": {
+        "positive_prob": 0.8209,
+        "negative_prob": 0.0269,
+        "neutral_prob": 0.1522
+      },
+      "title": "Speaker Sentiment"
+    },
+    "qa_transparency": {
+      "section": "qa_transparency",
+      "score": 39.5,
+      "label": "Evasive",
+      "qa_pairs": [
+        {
+          "question_id": "Q1",
+          "analyst": "Neha Manpuria, Bank of America",
+          "topic": "R&D Spend",
+          "label": "Direct Response",
+          "analysis": "Neha Manpuria asked about the expected R&D spend for the full year, noting it was tracking below revised guidance [p.7]. Dilip Shanghvi responded that they expect to come in at the lower end of the 6% to 8% guidance. This response was direct and included specific guidance, indicating transparency in addressing the question."
+        },
+        {
+          "question_id": "Q2",
+          "analyst": "Rashmi, Dolat Capital",
+          "topic": "Debt/Capital",
+          "label": "Direct Response",
+          "analysis": "Rashmi inquired about the spike in interest costs and short-term borrowings, questioning if it was due to an acquisition and if it would reduce in the future [p.17]. Jayashree Satagopan confirmed it was due to a short-term borrowing for an acquisition and stated it would even out in coming quarters. This was a clear and direct response, providing transparency on the financial strategy."
+        },
+        {
+          "question_id": "Q3",
+          "analyst": "Surya Narayan Patra, PhillipCapital",
+          "topic": "Tax Rate",
+          "label": "Direct Response",
+          "analysis": "Surya Narayan Patra asked about the higher tax rate and a one-time adjustment related to a merger [p.17]. Jayashree Satagopan explained the ETR increase to 24.5% and expected it to hover around 25%, attributing the change to the end of certain tax benefits. This response was specific and informative, showing transparency in financial reporting."
+        },
+        {
+          "question_id": "Q4",
+          "analyst": "Shashank Krishnakumar, Emkay Global",
+          "topic": "Strategy",
+          "label": "Partial Response",
+          "analysis": "Shashank Krishnakumar asked about the U.S./Europe biosimilar strategy in light of FDA guidance [p.16]. Dilip Shanghvi stated they are studying the situation and waiting for clear guidance before deciding. While the response acknowledged the question, it lacked specific strategic details, indicating partial transparency."
+        }
+      ],
+      "deflected_topics": [
+        "Biosimilar Strategy",
+        "Canada Market Plans"
+      ],
+      "repeated_phrases": [
+        "we are studying",
+        "waiting for clear guidance"
+      ],
+      "forward_guidance_quality": "Specific",
+      "data_backed_responses": "3 of 4",
+      "qualitative_assessment": "Overall, management provided clear and specific responses to most questions, particularly those related to financial metrics such as R&D spend and tax rates. However, strategic questions, especially regarding future market strategies, were met with more cautious and less detailed responses.",
+      "sentiment_narrative": "Management's communication style was generally straightforward and informative, particularly when discussing financial figures and immediate operational plans. They showed a willingness to provide specific guidance where possible, but were more reserved and non-committal on strategic decisions that depend on external factors, such as regulatory guidance. This cautious approach suggests a focus on maintaining flexibility in uncertain areas while being transparent about current operations and financials.",
+      "raw_scores": {
+        "positive_prob": 0.046,
+        "negative_prob": 0.3463,
+        "neutral_prob": 0.6077
+      },
+      "title": "Q&A Transparency"
+    },
+    "overall_sentiment": {
+      "section": "overall_sentiment",
+      "score": 10.9,
+      "label": "Very Bearish",
+      "management_confidence": "Moderate",
+      "earnings_quality": "In-Line",
+      "guidance_tone": "Maintained",
+      "market_signal": "Neutral",
+      "tone_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Management expressed moderate confidence, highlighting an 8.6% sales growth in Q2 FY '26 compared to the previous year [p.3]. The gross margin remained strong at 79.3%, and EBITDA increased by 14.9% [p.3]. However, the net profit growth was modest at 2.6%, and the effective tax rate increased significantly to 24.7% from 15.8% [p.3]. The U.S. business faced a decline of 4.1%, but this was offset by strong performance in Innovative Medicines, particularly ILUMYA, CEQUA, and ODOMZO [p.4, p.5]. The company maintained its guidance on R&D spending, expecting it to be at the lower end of the 6% to 8% range [p.7]. Overall, the tone was neutral with steady performance in key areas but tempered by challenges in the U.S. generics market."
+      },
+      "topics_gaining_momentum": [
+        "Innovative Medicines",
+        "ILUMYA",
+        "Emerging Markets"
+      ],
+      "topics_losing_momentum": [
+        "U.S. Generics",
+        "Cash Flow"
+      ],
+      "key_surprises": [
+        "U.S. sales of Innovative Medicine surpassed generics for the first time during the quarter [p.4]."
+      ],
+      "qualitative_synthesis": "The earnings call for Sun Pharmaceutical Industries reflected a balanced outlook. While the company reported solid growth in sales and maintained strong margins, challenges in the U.S. generics market and increased tax rates tempered overall optimism. The focus on Innovative Medicines, particularly ILUMYA, is a positive signal for future growth. Investors should note the maintained guidance on R&D spending and the strategic emphasis on expanding the Innovative Medicines segment.",
+      "sentiment_narrative": "Management highlighted an 8.6% growth in Q2 sales, with a gross margin of 79.3% and an EBITDA increase of 14.9% [p.3]. Despite these positives, the net profit growth was only 2.6%, and the effective tax rate rose to 24.7% [p.3]. The U.S. business saw a decline, but the growth in Innovative Medicines, led by ILUMYA, CEQUA, and ODOMZO, was a bright spot [p.4, p.5]. The company expects R&D spending to be at the lower end of the 6% to 8% range, indicating a cautious approach [p.7]. Overall, the call conveyed a neutral tone, with steady performance in key areas but challenges in the U.S. generics market impacting the outlook.",
+      "raw_scores": {
+        "positive_prob": 0.091,
+        "negative_prob": 0.8831,
+        "neutral_prob": 0.026
+      },
+      "title": "Overall Sentiment"
+    },
+    "investment_synthesis": {
+      "section": "investment_synthesis",
+      "score": 75,
+      "label": "Buy",
+      "recommendation": "Buy",
+      "conviction": "Medium",
+      "thesis": {
+        "scope": "Based on Q2 FY26 results",
+        "analysis": "Sun Pharmaceutical Industries reported a solid Q2 FY26 with sales growth of 8.6% year-over-year, reaching INR144,052 million, and an EBITDA increase of 14.9% [p.3]. The company's gross margin remained robust at 79.3%, and the EBITDA margin improved to 31.3% from 29.6% in the previous year [p.3]. Despite a decline in the U.S. business, the growth in Global Innovative Medicines and the Indian market provides a balanced outlook [p.3, p.12]. The company's strategic focus on innovative medicines, particularly ILUMYA, and its strong cash position of $2.9 billion support a positive long-term view [p.3]."
+      },
+      "bull_case": {
+        "scope": "Key upside drivers",
+        "analysis": "Sun Pharma's Global Innovative Medicines sales increased by 16.4%, with ILUMYA now commercialized in 35 markets, indicating strong growth potential [p.12]. The Indian market also showed robust performance with an 11% growth in formulation sales, driven by new product launches and volume growth [p.12]. The company's strong cash position of $2.9 billion provides financial flexibility for future investments and acquisitions [p.3]. Additionally, the EBITDA margin improvement to 31.3% reflects operational efficiency gains [p.3]."
+      },
+      "bear_case": {
+        "scope": "Key risks",
+        "analysis": "The U.S. business saw a decline of 4.1%, which could be a concern if the trend continues, especially given the competitive pressures in the generics market [p.12]. The increase in interest costs due to short-term borrowings for acquisitions could impact profitability if not managed effectively [p.17]. Potential risks from U.S. tariff policies on imported drugs could affect the company's cost structure and margins [p.9]. Additionally, the R&D spend is tracking below guidance, which may impact future product pipeline development [p.7]."
+      },
+      "catalysts": {
+        "near_term": "The launch of new products in the Indian market and continued commercialization of ILUMYA in additional markets could drive near-term growth. Monitoring U.S. policy developments on drug tariffs will be crucial.",
+        "medium_term": "Expansion of the Global Innovative Medicines portfolio and strategic acquisitions could enhance growth prospects. The company's ability to manage interest costs and leverage its strong cash position for strategic investments will be key."
+      },
+      "key_watchpoints": [
+        "U.S. business performance",
+        "R&D expenditure trends",
+        "Impact of U.S. tariff policies",
+        "Interest cost management",
+        "ILUMYA market expansion"
+      ],
+      "valuation_context": "Not discussed in this call.",
+      "scorecard": {
+        "earnings_quality": 4,
+        "management_quality": 4,
+        "strategy_clarity": 4,
+        "risk_management": 3,
+        "esg_commitment": 3
+      },
+      "sentiment_narrative": "Management expressed confidence in the growth of the Global Innovative Medicines segment, particularly highlighting the success of ILUMYA in multiple markets [p.12]. They acknowledged the challenges in the U.S. market but emphasized the strategic focus on innovative medicines over generics [p.12]. The CFO noted the strong cash position and operational efficiencies contributing to improved margins [p.3]. There was a cautious tone regarding potential U.S. tariff impacts, with management closely monitoring policy developments [p.9]. Overall, the sentiment was cautiously optimistic, with a focus on leveraging strengths in innovation and market expansion.",
+      "raw_scores": {
+        "positive_prob": 0.908,
+        "negative_prob": 0.0274,
+        "neutral_prob": 0.0646
+      },
+      "title": "Investment Synthesis"
+    }
+  }
+}

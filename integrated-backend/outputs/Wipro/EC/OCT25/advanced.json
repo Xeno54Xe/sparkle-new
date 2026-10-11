@@ -1,0 +1,369 @@
+{
+  "doc_meta": {
+    "doc_id": "35a32ff23615",
+    "stock": "Wipro",
+    "doc_type": "ec",
+    "period": "OCT25",
+    "quarter": null,
+    "fiscal_year": "FY26",
+    "filename": "OCT25.pdf",
+    "file_path": "data/Wipro/EC/OCT25.pdf"
+  },
+  "doc_type": "ec",
+  "sections": {
+    "financial_metrics": {
+      "section": "financial_metrics",
+      "score": 92.9,
+      "label": "Strong Beat",
+      "revenue": {
+        "scope": "Q2 FY26",
+        "label": "Mixed Performance",
+        "analysis": "In Q2 FY26, Wipro's IT services revenue was $2.6 billion, showing a sequential growth of 0.3% in constant currency terms and 0.7% in reported currency [p.6]. However, revenue declined 2.6% year-on-year in constant currency terms [p.6]. The Americas 1 segment grew 0.5% sequentially and 5% year-on-year, while Americas 2 declined 2% sequentially and 5.2% year-on-year [p.6]. Europe grew 1.4% sequentially but declined 10.2% year-on-year [p.6]."
+      },
+      "ebitda": {
+        "scope": "Q2 FY26",
+        "label": "Margin Pressure",
+        "analysis": "Wipro's operating margins for Q2 FY26 were 16.7%, contracting 60 basis points quarter-on-quarter and 10 basis points year-on-year [p.6]. Adjusted for a one-off charge due to a client bankruptcy event, the operating margins were at 17.2%, which is an expansion of 40 basis points year-on-year [p.6]."
+      },
+      "profitability": {
+        "scope": "Q2 FY26",
+        "label": "Slight Improvement",
+        "analysis": "Net income and EPS grew 1% year-on-year in Q2 FY26 [p.6]. The effective tax rate (ETR) was 23.8% for Q2 FY26, compared to 24.6% in the same quarter last year [p.6]."
+      },
+      "cash_flow": {
+        "scope": "Q2 FY26",
+        "label": "Strong Performance",
+        "analysis": "Operating cash flows were higher than net income, standing at 104% of net income for Q2 FY26 [p.6]."
+      },
+      "capex": {
+        "scope": "Q2 FY26",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "debt": {
+        "scope": "Q2 FY26",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "working_capital": {
+        "scope": "Q2 FY26",
+        "label": "Not Available",
+        "analysis": "No specific data disclosed in this document."
+      },
+      "operational_kpis": {
+        "scope": "Q2 FY26",
+        "label": "Mixed Performance",
+        "analysis": "The company closed $4.7 billion in total contract value and signed 13 large deals in Q2 FY26 [p.10]. Utilization improved, and attrition rates decreased, contributing positively to operational performance [p.8]."
+      },
+      "guidance": {
+        "scope": "Q3 FY26",
+        "label": "Cautious Optimism",
+        "analysis": "Wipro provided guidance for sequential IT services revenue growth of minus 0.5% to plus 1.5% in constant currency for Q3 FY26 [p.5]. The company expects the Phoenix deal to start generating revenue from Q3, providing further momentum [p.10]."
+      },
+      "qualitative_analysis": "Wipro's Q2 FY26 results were mixed, with revenue growth in some segments offset by declines in others. The company managed to maintain operating margins within a narrow band despite margin pressures. Strong deal wins and a robust pipeline suggest potential for future growth, although the guidance for Q3 remains cautious.",
+      "analyst_flags": [
+        "Revenue decline in Americas 2 and Europe year-on-year",
+        "Operating margin pressure due to client bankruptcy event",
+        "Strong deal wins and pipeline"
+      ],
+      "sentiment_narrative": "Management expressed confidence in future growth, highlighting that 'Americas 1 delivered sequential and year-on-year growth driven by strong performance in Healthcare, technology and communication sectors' [p.10]. They acknowledged margin pressures but emphasized efforts to 'maintain the margins in a narrow band' [p.6]. The company is optimistic about the impact of large deals, stating, 'The Phoenix deal is set to start generating revenue from Quarter 3, providing further momentum' [p.10]. Management also noted that 'our utilization has been better' and 'attrition has come down,' which are positive operational indicators [p.8]. Overall, the tone was cautiously optimistic, with a focus on executing large deals and maintaining operational discipline.",
+      "raw_scores": {
+        "positive_prob": 0.9217,
+        "negative_prob": 0.0534,
+        "neutral_prob": 0.0249
+      },
+      "title": "Financial Metrics"
+    },
+    "risk_intelligence": {
+      "section": "risk_intelligence",
+      "score": 25.9,
+      "label": "High Risk",
+      "overall_risk_environment": "ELEVATED",
+      "risks": [
+        {
+          "risk_id": "R1",
+          "category": "Execution/Operational",
+          "scope": "Q3 FY26 margins",
+          "label": "High Risk",
+          "risk_score": 15,
+          "severity": "HIGH",
+          "analysis": "Wipro faces significant margin pressures due to the ramp-up of large deals and vendor consolidation, which are expected to continue into Q3 FY26 [p.8, p.9]. Management acknowledges these headwinds and plans to offset them with operational improvements and strategic initiatives. However, the effectiveness of these mitigants remains uncertain, as the company has not provided specific guidance on margin improvement [p.9]."
+        },
+        {
+          "risk_id": "R3",
+          "category": "Execution/Operational",
+          "scope": "FY26 deal ramp-up",
+          "label": "Moderate Risk",
+          "risk_score": 10,
+          "severity": "MODERATE",
+          "analysis": "There are concerns about the timely ramp-up of large deals signed in the past six months, particularly in Europe BFSI, which could impact revenue growth [p.12]. Management has not explicitly confirmed that these challenges are resolved, indicating potential delays in realizing expected benefits from these deals."
+        },
+        {
+          "risk_id": "R2",
+          "category": "Currency/FX",
+          "scope": "Q2 FY26 operations",
+          "label": "Moderate Risk",
+          "risk_score": 9,
+          "severity": "MODERATE",
+          "analysis": "Wipro benefited from rupee depreciation and dollar weakness in Q2 FY26, which positively impacted margins [p.8]. While this was a favorable development, currency fluctuations remain a risk, as future movements could reverse these gains. Management has not disclosed any hedging strategies to mitigate potential adverse currency impacts."
+        },
+        {
+          "risk_id": "R4",
+          "category": "Regulatory/Policy",
+          "scope": "U.S. operations",
+          "label": "Low Risk",
+          "risk_score": 4,
+          "severity": "LOW",
+          "analysis": "Wipro's U.S. operations face minimal risk from H1-B visa restrictions due to a high percentage of localized workforce [p.14]. Management has proactively reduced dependence on H1-B visas, mitigating potential regulatory impacts on staffing and operational costs."
+        }
+      ],
+      "risks_emphasised": [
+        "Margin pressures from large deals",
+        "Vendor consolidation impact",
+        "Currency fluctuations"
+      ],
+      "risks_downplayed": [
+        "Deal ramp-up delays",
+        "Currency risk management"
+      ],
+      "undisclosed_risks": [
+        "Potential impact of AI-related liabilities"
+      ],
+      "risk_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Overall, Wipro's management communicated a clear awareness of margin pressures and operational challenges, emphasizing ongoing initiatives to mitigate these risks. However, there was limited discussion on specific strategies to manage currency risks and potential delays in deal ramp-ups. The call lacked transparency on how AI-related liabilities are being managed, which could pose future risks."
+      },
+      "sentiment_narrative": "Management conveyed a cautiously optimistic outlook, acknowledging significant margin pressures due to large deal ramp-ups and vendor consolidation. They emphasized operational improvements and strategic initiatives as mitigants, while expressing confidence in future growth driven by strong deal pipelines. However, there was a lack of detailed guidance on managing currency risks and potential delays in deal execution, suggesting a need for more comprehensive risk management strategies.",
+      "raw_scores": {
+        "positive_prob": 0.2175,
+        "negative_prob": 0.7158,
+        "neutral_prob": 0.0667
+      },
+      "title": "Risk Intelligence"
+    },
+    "esg": {
+      "section": "esg",
+      "score": 50.0,
+      "label": "Average",
+      "environmental": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "social": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "governance": {
+        "available": false,
+        "score": null,
+        "label": "N/A",
+        "scope": "",
+        "analysis": "No ESG disclosure found for this pillar in this earnings call.",
+        "greenwashing_flags": []
+      },
+      "disclosure_framework": "None mentioned",
+      "third_party_verified": false,
+      "sentiment_narrative": "The earnings call transcript for Wipro Limited does not provide any specific ESG disclosures. There is no mention of environmental, social, or governance initiatives, metrics, or targets. The focus of the call is primarily on financial performance, deal wins, and strategic partnerships. Without any ESG-related content, it is not possible to assess the company's commitments or communication quality in these areas. The absence of ESG information suggests a potential gap in transparency or prioritization of these aspects in the company's public disclosures.",
+      "raw_scores": {
+        "positive_prob": 0.0308,
+        "negative_prob": 0.278,
+        "neutral_prob": 0.6911
+      },
+      "title": "ESG Analysis"
+    },
+    "speaker_sentiment": {
+      "section": "speaker_sentiment",
+      "score": 77.1,
+      "label": "Bullish",
+      "speakers": [
+        {
+          "name": "Srini Pallia",
+          "role": "Management",
+          "company": "Wipro Limited",
+          "scope": "Financial performance",
+          "tone": "Confident",
+          "analysis": "Srini Pallia opened the call by reporting IT services revenue of $2.6 billion with a sequential growth of 0.3% in constant currency [p.11]. He highlighted the company's adjusted operating margin of 17.2%, which is an improvement of 0.4% compared to the same period last year [p.11]. Srini expressed confidence in future growth, particularly in Europe and APMEA, driven by strong performance in sectors like Healthcare and BFSI [p.11, p.12]. He emphasized the strategic importance of AI-powered transformations and consulting-led programs, which are driving demand and contributing to the $4.7 billion in total contract value closed this quarter [p.12].",
+          "score": 95.7,
+          "label": "Very Bullish",
+          "raw_scores": {
+            "positive_prob": 0.9462,
+            "negative_prob": 0.013,
+            "neutral_prob": 0.0408
+          }
+        },
+        {
+          "name": "Aparna Iyer",
+          "role": "Management",
+          "company": "Wipro Limited",
+          "scope": "Financial performance",
+          "tone": "Cautious",
+          "analysis": "Aparna Iyer provided a detailed financial overview, noting a 0.3% sequential growth in IT services revenue in constant currency terms [p.12]. She acknowledged a contraction in operating margins to 16.7% due to a one-off charge from a client bankruptcy event, but adjusted margins stood at 17.2% [p.12]. Aparna was cautious about future margin pressures due to ongoing investments for growth, yet she aimed to maintain margins within a narrow band [p.12]. She also highlighted the performance of strategic market units, with Americas 1 showing growth, while Americas 2 and Europe faced declines [p.12].",
+          "score": 54.8,
+          "label": "Neutral",
+          "raw_scores": {
+            "positive_prob": 0.534,
+            "negative_prob": 0.4357,
+            "neutral_prob": 0.0303
+          }
+        }
+      ],
+      "management_tone_summary": "Overall, the management communicated with a mix of confidence and caution. Srini Pallia was confident about the company's growth prospects and strategic initiatives, while Aparna Iyer was more cautious, focusing on margin pressures and financial discipline.",
+      "analyst_pressure_points": [
+        "Margin sustainability",
+        "Impact of large deals on margins",
+        "Revenue growth headwinds"
+      ],
+      "notable_exchanges": [
+        "Analysts questioned the sustainability of margins given the large deals and their potential dilutive effects [p.9].",
+        "There was a discussion on the impact of seasonality and other headwinds on revenue growth in Q3 [p.10]."
+      ],
+      "overall_sentiment_shift": "The sentiment remained stable throughout the call, with management maintaining a balanced view of optimism for growth and caution regarding margin pressures.",
+      "sentiment_narrative": "The management of Wipro Limited conveyed a cautiously optimistic outlook during the earnings call. Srini Pallia expressed confidence in the company's strategic direction, particularly in leveraging AI and consulting-led programs to drive growth. He highlighted significant contract wins and the potential for future expansion in key markets like Europe and APMEA. Aparna Iyer, while acknowledging the positive revenue growth, was cautious about margin pressures due to necessary investments. She emphasized the importance of maintaining financial discipline to ensure sustainable growth. Overall, the management's tone reflected a careful balance between optimism for future opportunities and caution regarding current financial challenges.",
+      "raw_scores": {
+        "positive_prob": 0.6875,
+        "negative_prob": 0.073,
+        "neutral_prob": 0.2395
+      },
+      "title": "Speaker Sentiment"
+    },
+    "qa_transparency": {
+      "section": "qa_transparency",
+      "score": 44.5,
+      "label": "Mixed",
+      "qa_pairs": [
+        {
+          "question_id": "Q1",
+          "analyst": "Ravi Menon, Macquarie",
+          "topic": "Guidance",
+          "label": "Partial Response",
+          "analysis": "Ravi Menon asked if Wipro's year-on-year growth in line with peers could be sustained or improved [p.10]. Srini Pallia responded by mentioning the positive midpoint of Q3 guidance and the execution of deal wins, but did not directly address the sustainability or potential improvement of growth beyond general optimism. The response was partially transparent, providing some guidance but lacking specific future growth projections."
+        },
+        {
+          "question_id": "Q2",
+          "analyst": "Ravi Menon, Macquarie",
+          "topic": "Operations",
+          "label": "Direct Response",
+          "analysis": "Ravi Menon inquired about specific headwinds to revenue in Q3 beyond seasonality [p.10]. Aparna Iyer responded directly, stating there were no additional headwinds anticipated. This response was transparent and straightforward, providing a clear answer to the question."
+        },
+        {
+          "question_id": "Q3",
+          "analyst": "Sudheer Guntupalli, Kotak Mahindra AMC",
+          "topic": "Strategy",
+          "label": "Direct Response",
+          "analysis": "Sudheer Guntupalli sought clarity on whether the large deal wins were specific to BFSI or overall [p.11]. Srini Pallia clarified that the two mega deals were in healthcare and BFSI, providing a direct and clear response. This was a transparent answer with specific information."
+        },
+        {
+          "question_id": "Q4",
+          "analyst": "Nitin Padmanabhan, Investec",
+          "topic": "Operations",
+          "label": "Partial Response",
+          "analysis": "Nitin Padmanabhan asked about the status of large SAP implementation projects and client conversations [p.17]. Srini Pallia acknowledged ongoing client difficulties due to tariffs but mentioned good traction for SAP HANA, without providing specific timelines or resolutions. The response was partially transparent, acknowledging challenges but lacking detailed resolution timelines."
+        }
+      ],
+      "deflected_topics": [
+        "Growth sustainability",
+        "Specific margin guidance"
+      ],
+      "repeated_phrases": [
+        "we don't guide on that",
+        "focus on execution"
+      ],
+      "forward_guidance_quality": "Vague",
+      "data_backed_responses": "2 of 4",
+      "qualitative_assessment": "Overall, management provided some specific data points, such as deal values and sector performance, but often relied on general statements about focus and execution. While some questions were answered directly, others were met with partial responses that lacked detailed projections or specific strategies.",
+      "sentiment_narrative": "Management's communication style was cautiously optimistic, emphasizing execution and deal momentum. They acknowledged challenges, such as tariff impacts, but often deflected detailed guidance on future growth or margins. The use of specific data was limited, with a tendency to focus on broader strategic themes rather than granular details.",
+      "raw_scores": {
+        "positive_prob": 0.0363,
+        "negative_prob": 0.2114,
+        "neutral_prob": 0.7524
+      },
+      "title": "Q&A Transparency"
+    },
+    "overall_sentiment": {
+      "section": "overall_sentiment",
+      "score": 8.8,
+      "label": "Very Bearish",
+      "management_confidence": "Moderate",
+      "earnings_quality": "In-Line",
+      "guidance_tone": "Maintained",
+      "market_signal": "Neutral",
+      "tone_overview": {
+        "scope": "Full earnings call",
+        "analysis": "Management expressed moderate confidence, highlighting a sequential IT services revenue growth of 0.3% in constant currency and maintaining an adjusted operating margin of 17.2% [p.3]. The company closed $4.7 billion in total contract value and signed 13 large deals, indicating strong deal momentum [p.4]. However, the guidance for Q3 was only marginally positive, with a range of -0.5% to +1.5% growth, reflecting caution due to potential volatilities and seasonal headwinds [p.5, p.9]. While there is optimism from large deals ramping up, the impact of furloughs and lower working days in Q3 tempers expectations [p.8]. Overall, the tone was neutral with no significant changes in guidance."
+      },
+      "topics_gaining_momentum": [
+        "Large deal wins",
+        "AI-powered transformations",
+        "Healthcare sector"
+      ],
+      "topics_losing_momentum": [
+        "Americas 2 region",
+        "Consumer sector"
+      ],
+      "key_surprises": [
+        "Sequential growth in Europe after several quarters of decline [p.4]."
+      ],
+      "qualitative_synthesis": "The earnings call signals a stable outlook for Wipro, with management maintaining a cautious stance despite strong deal wins. The company's focus on AI and digital transformation is driving momentum, particularly in Europe and the Healthcare sector. However, seasonal challenges and regional declines, such as in Americas 2, present ongoing risks. Investors should watch for the execution of large deals and their conversion into revenue as key indicators of future performance.",
+      "sentiment_narrative": "Management highlighted a sequential IT services revenue growth of 0.3% in constant currency, with an adjusted operating margin of 17.2%, which is within the expected narrow band [p.3]. The company closed $4.7 billion in total contract value and signed 13 large deals, driven by vendor consolidation and AI-powered transformations [p.4]. Despite these positive developments, the guidance for Q3 remains cautious, with expected growth ranging from -0.5% to +1.5% due to potential volatilities and seasonal headwinds [p.5, p.9]. The ramp-up of large deals is expected to provide positive momentum, but the impact of furloughs and lower working days in Q3 is a concern [p.8]. Overall, the sentiment is neutral, with management focusing on converting deal wins into revenue and maintaining operational discipline.",
+      "raw_scores": {
+        "positive_prob": 0.0692,
+        "negative_prob": 0.9039,
+        "neutral_prob": 0.0269
+      },
+      "title": "Overall Sentiment"
+    },
+    "investment_synthesis": {
+      "section": "investment_synthesis",
+      "score": 50,
+      "label": "Hold",
+      "recommendation": "Hold",
+      "conviction": "Medium",
+      "thesis": {
+        "scope": "Based on Q2 FY26 results",
+        "analysis": "Wipro's Q2 FY26 results show a mixed performance with IT services revenue at $2.6 billion, reflecting a sequential growth of 0.3% in constant currency [p.10]. The company maintains its operating margin within a narrow band at 17.2%, which is an improvement from the previous year [p.10]. Despite strong deal wins totaling $4.7 billion and significant large deals, growth guidance remains modest with a projected IT services revenue growth of -0.5% to +1.5% for Q3 [p.5, p.8]. The ongoing investments in AI and strategic partnerships are promising, but margin pressures and sector-specific challenges persist [p.5, p.9]."
+      },
+      "bull_case": {
+        "scope": "Key upside drivers",
+        "analysis": "Wipro has secured $4.7 billion in total contract value this quarter, including 13 large deals, which indicates strong demand for its services [p.10]. The company's strategic focus on AI-powered transformations and consulting-led programs is gaining traction, as evidenced by the launch of Wipro Intelligence [p.5]. Sequential growth in key markets like Americas 1 and Europe, driven by sectors such as BFSI and Healthcare, highlights potential for future expansion [p.10]. The Phoenix deal is expected to start generating revenue in Q3, providing additional momentum [p.10]."
+      },
+      "bear_case": {
+        "scope": "Key risks",
+        "analysis": "Wipro faces margin pressures due to ongoing investments and large deal ramp-ups, which are expected to be margin dilutive initially [p.9]. The company's guidance for Q3 indicates only marginal growth, reflecting potential headwinds in converting large deal wins into revenue [p.5, p.8]. Sector-specific challenges, such as tariff uncertainties impacting Consumer, Energy, and Manufacturing sectors, could hinder growth [p.10]. Additionally, the Harman DTS acquisition is expected to dilute margins by 60 basis points, adding to the financial strain [p.9]."
+      },
+      "catalysts": {
+        "near_term": "The ramp-up of the Phoenix deal in Q3 could provide a boost to revenue. Additionally, the realization of productivity gains from vendor consolidation and AI initiatives may improve margins.",
+        "medium_term": "Over the next 6-18 months, the full integration of Wipro Intelligence and its AI platforms could drive significant growth. The completion of large deals and strategic partnerships in Europe and the Americas are expected to unlock further revenue streams."
+      },
+      "key_watchpoints": [
+        "Margin trends and pressures",
+        "Progress on large deal ramp-ups",
+        "Impact of AI initiatives on revenue",
+        "Sector-specific growth, especially in BFSI and Healthcare",
+        "Integration and impact of Harman DTS acquisition"
+      ],
+      "valuation_context": "Not discussed in this call.",
+      "scorecard": {
+        "earnings_quality": 3,
+        "management_quality": 4,
+        "strategy_clarity": 4,
+        "risk_management": 3,
+        "esg_commitment": 4
+      },
+      "sentiment_narrative": "Management expressed confidence in the company's strategic direction, highlighting strong deal wins and the launch of Wipro Intelligence as key growth drivers [p.5, p.10]. They acknowledged margin pressures but emphasized efforts to maintain them within a narrow band [p.9]. The guidance for Q3 reflects cautious optimism, with a focus on converting large deals into revenue [p.5]. Management is optimistic about the potential of AI initiatives to drive future growth, despite current sector-specific challenges [p.10]. Overall, the tone was cautiously positive, with a focus on long-term strategic initiatives.",
+      "raw_scores": {
+        "positive_prob": 0.9314,
+        "negative_prob": 0.0186,
+        "neutral_prob": 0.05
+      },
+      "title": "Investment Synthesis"
+    }
+  }
+}
