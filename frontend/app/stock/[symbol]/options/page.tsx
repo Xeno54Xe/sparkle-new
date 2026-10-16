@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation"
-import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { getStockBySymbol } from "@/lib/stocks"
 import { OptionsStrategiesPanel } from "@/features/options-strategies/components/options-strategies-panel"
 
@@ -11,26 +10,13 @@ const optionsStrategiesEnabled = process.env.NEXT_PUBLIC_OPTIONS_STRATEGIES_ENAB
 
 export async function generateMetadata({ params }: OptionsPageProps) {
   const { symbol } = await params
-  return { title: `${symbol} Options Strategies — SparkleAI` }
+  return { title: `${decodeURIComponent(symbol)} Options — SparkleAI` }
 }
 
 export default async function OptionsPage({ params }: OptionsPageProps) {
   if (!optionsStrategiesEnabled) notFound()
-
   const { symbol } = await params
-  const stock = getStockBySymbol(symbol)
+  const stock = getStockBySymbol(decodeURIComponent(symbol))
   if (!stock) notFound()
-
-  return (
-    <div className="flex min-h-screen bg-background">
-      <StockSidebar />
-      <div className="flex flex-1 flex-col lg:pl-[260px]">
-        <main className="flex-1 p-4 sm:p-6">
-          <div className="mx-auto w-full max-w-[1400px]">
-            <OptionsStrategiesPanel stock={stock} />
-          </div>
-        </main>
-      </div>
-    </div>
-  )
+  return <OptionsStrategiesPanel stock={stock} />
 }

@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react"
 import {
   Target, Brain, Leaf, FileText, AlertTriangle,
-  TrendingUp, Lightbulb, Shield, Eye, MessageSquare, Loader2,
+  TrendingUp, Lightbulb, Shield, Eye, MessageSquare,
   BarChart2,
 } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { cn } from "@/lib/utils"
 
 import { API_BASE } from "@/lib/api"
 interface FundamentalAnalysisProps {
@@ -76,20 +77,20 @@ const MAP: Record<string, string> = {
 }
 
 const SECTION_META: Record<string, { icon: React.ElementType; color: string }> = {
-  financial_metrics:   { icon: TrendingUp,    color: "#34D399" },
-  risk_intelligence:   { icon: AlertTriangle,  color: "#F87171" },
-  esg:                 { icon: Leaf,           color: "#10B981" },
-  speaker_sentiment:   { icon: MessageSquare,  color: "#60A5FA" },
-  qa_transparency:     { icon: Eye,            color: "#A78BFA" },
-  overall_sentiment:   { icon: Target,         color: "#06B6D4" },
-  investment_synthesis:{ icon: Lightbulb,      color: "#F59E0B" },
-  capital_structure:   { icon: Shield,         color: "#8B5CF6" },
-  management_discussion:{ icon: FileText,      color: "#64748B" },
-  strategy:            { icon: Brain,          color: "#EC4899" },
+  financial_metrics:   { icon: TrendingUp,    color: "#2FB57C" },
+  risk_intelligence:   { icon: AlertTriangle,  color: "#E35D5B" },
+  esg:                 { icon: Leaf,           color: "#2FB57C" },
+  speaker_sentiment:   { icon: MessageSquare,  color: "#6AA6F8" },
+  qa_transparency:     { icon: Eye,            color: "#A48AF0" },
+  overall_sentiment:   { icon: Target,         color: "#5BC0D8" },
+  investment_synthesis:{ icon: Lightbulb,      color: "#F2A93B" },
+  capital_structure:   { icon: Shield,         color: "#A48AF0" },
+  management_discussion:{ icon: FileText,      color: "#8A95AB" },
+  strategy:            { icon: Brain,          color: "#E07BB0" },
 }
 
 function scoreColor(v: number) {
-  return v >= 70 ? "#34D399" : v >= 40 ? "#FBBF24" : "#F87171"
+  return v >= 70 ? "var(--up)" : v >= 40 ? "var(--primary)" : "var(--down)"
 }
 
 async function safeFetch(url: string) {
@@ -170,15 +171,20 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
   }
 
   // ─── Loading / empty states ───────────────────────────────────────────────
-  if (loading) return (
-    <div className="flex items-center justify-center py-20 gap-3 text-muted-foreground">
-      <Loader2 size={20} className="animate-spin" /> Loading analysis...
+  if (loading && !data) return (
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-12" aria-busy="true">
+      <div className="panel h-72 animate-pulse lg:col-span-4" />
+      <div className="panel h-[420px] animate-pulse lg:col-span-8" />
     </div>
   )
 
   const hasAny = reportList.earnings_calls.length > 0 || reportList.annual_reports.length > 0
   if (!hasAny) return (
-    <div className="text-center py-20 text-muted-foreground">No fundamental data available for {symbol}</div>
+    <Panel>
+      <EmptyState title={`No AI analysis for ${symbol} yet`}>
+        Earnings-call and annual-report analysis is available for the companies in the reports library. Technical signals still work for every stock.
+      </EmptyState>
+    </Panel>
   )
 
   // ─── Derived data from beginner.json ──────────────────────────────────────
@@ -187,49 +193,47 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
   const avgScore = sectionEntries.length > 0
     ? Math.round(sectionEntries.reduce((sum, [, sec]) => sum + (sec.score ?? 0), 0) / sectionEntries.length)
     : 0
-  const categoryLabel = activeCategory === "EC" ? "Earnings Call" : "Annual Report"
+  const categoryLabel = activeCategory === "EC" ? "Earnings call" : "Annual report"
+  const pdfUrl = selectedPeriod
+    ? `${API}/data/${encodeURIComponent(company)}/${activeCategory}/${encodeURIComponent(selectedPeriod)}/report.pdf`
+    : null
+  const RING = 2 * Math.PI * 52
 
   return (
-    <div className="space-y-6">
-
-      {/* ─── Category tabs + period selector ─────────────────────────────── */}
-      <div className="space-y-3">
-        {/* Tabs */}
-        <div className="flex gap-1 rounded-lg bg-secondary p-1 w-fit">
-          {(
-            [
-              { key: "EC" as Category, label: "Earnings Calls", count: reportList.earnings_calls.length },
-              { key: "AR" as Category, label: "Annual Reports",  count: reportList.annual_reports.length },
-            ] as const
-          )
-            .filter(t => t.count > 0)
-            .map(({ key, label, count }) => (
-              <button
-                key={key}
-                onClick={() => handleCategorySwitch(key)}
-                className={`rounded-md px-4 py-1.5 text-sm font-medium transition-all ${
-                  activeCategory === key
-                    ? "bg-background text-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {label}
-                <span className="ml-1.5 text-xs opacity-50">({count})</span>
-              </button>
-            ))}
+    <div className="space-y-5">
+      {/* Document type + period */}
+      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div className="inline-flex w-fit rounded-lg border border-line bg-surface p-1" role="tablist" aria-label="Document type">
+          {([
+            { key: "EC" as Category, label: "Earnings calls", count: reportList.earnings_calls.length },
+            { key: "AR" as Category, label: "Annual reports", count: reportList.annual_reports.length },
+          ]).filter(t => t.count > 0).map(({ key, label, count }) => (
+            <button
+              key={key}
+              role="tab"
+              aria-selected={activeCategory === key}
+              onClick={() => handleCategorySwitch(key)}
+              className={cn(
+                "rounded-md px-3.5 py-1.5 text-sm transition-colors",
+                activeCategory === key ? "bg-surface-2 font-medium text-foreground" : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              {label} <span className="ml-1 text-faint-foreground">{count}</span>
+            </button>
+          ))}
         </div>
-
-        {/* Period buttons */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5" role="group" aria-label="Period">
           {activePeriods.map(item => (
             <button
               key={item.period}
               onClick={() => setSelectedPeriod(item.period)}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+              aria-pressed={selectedPeriod === item.period}
+              className={cn(
+                "rounded-md border px-3 py-1.5 text-sm tabular transition-colors",
                 selectedPeriod === item.period
-                  ? "bg-primary text-primary-foreground shadow-lg"
-                  : "bg-secondary text-muted-foreground hover:text-foreground"
-              }`}
+                  ? "border-primary/50 bg-primary/10 text-primary"
+                  : "border-line text-muted-foreground hover:border-line-strong hover:text-foreground"
+              )}
             >
               {item.label}
             </button>
@@ -238,102 +242,66 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
       </div>
 
       {!data ? (
-        <div className="text-center py-12 text-muted-foreground">No data for this period.</div>
+        <Panel><EmptyState title="No analysis for this period">Pick another period above.</EmptyState></Panel>
       ) : (
-        <>
-          {/* ─── Overall Score gauge ────────────────────────────────────────── */}
-          {sectionEntries.length > 0 && (
-            <Card className="border-primary/30 bg-gradient-to-br from-primary/5 via-transparent to-transparent">
-              <CardContent className="pt-6">
-                <div className="flex flex-col items-center text-center">
-                  <p className="text-xs font-semibold tracking-[3px] text-muted-foreground mb-6">
-                    {categoryLabel.toUpperCase()} — {selectedPeriod}
-                  </p>
-                  <div className="relative h-40 w-40 mb-4">
-                    <svg className="h-40 w-40 -rotate-90 transform" viewBox="0 0 160 160">
-                      <circle cx="80" cy="80" r="64" fill="none" stroke="currentColor" strokeWidth="12" className="text-secondary" />
-                      <circle
-                        cx="80" cy="80" r="64" fill="none"
-                        stroke="url(#gaugeGrad)" strokeWidth="12" strokeLinecap="round"
-                        strokeDasharray={`${(avgScore / 100) * 402.1} 402.1`}
-                      />
-                      <defs>
-                        <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#34D399" />
-                          <stop offset="100%" stopColor="#06B6D4" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-3xl font-bold">{avgScore}</span>
-                      <span className="text-xs text-muted-foreground">/ 100</span>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          )}
-
-          {/* ─── Section cards ───────────────────────────────────────────────── */}
-          {sectionEntries.length > 0 && (
-            <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="flex items-center gap-2 text-lg">
-                  <BarChart2 size={20} className="text-primary" /> Analysis Breakdown
-                </CardTitle>
-                <p className="text-xs text-muted-foreground">
-                  {sectionEntries.length} dimensions scored 0–100
+        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
+          {/* Overall score */}
+          <Panel className="lg:col-span-4" aria-label="Overall score">
+            <PanelHeader title={`${categoryLabel}, ${selectedPeriod}`} description={`Average of ${sectionEntries.length} scored dimensions`} />
+            <div className="flex items-center gap-5 px-5 py-6">
+              <svg width="128" height="128" viewBox="0 0 128 128" className="shrink-0 -rotate-90" aria-hidden="true">
+                <circle cx="64" cy="64" r="52" fill="none" stroke="var(--surface-2)" strokeWidth="10" />
+                <circle cx="64" cy="64" r="52" fill="none" stroke={scoreColor(avgScore)} strokeWidth="10" strokeLinecap="round"
+                  strokeDasharray={`${(avgScore / 100) * RING} ${RING}`} />
+              </svg>
+              <div>
+                <p className="figure text-5xl leading-none text-foreground">{avgScore}</p>
+                <p className="mt-1 text-sm text-muted-foreground">out of 100</p>
+                <p className="mt-3 text-sm font-medium" style={{ color: scoreColor(avgScore) }}>
+                  {avgScore >= 70 ? "Strong quarter" : avgScore >= 40 ? "Mixed picture" : "Weak signals"}
                 </p>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {sectionEntries
-                    .map(([key, sec]: [string, any]) => {
-                      const meta = SECTION_META[key]
-                      const Icon = meta?.icon ?? BarChart2
-                      const accent = meta?.color ?? scoreColor(sec.score)
-                      const bar = scoreColor(sec.score)
-                      return (
-                        <div key={key} className="rounded-lg border border-border p-4 space-y-3">
-                          {/* Header row */}
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-2">
-                              <Icon size={15} style={{ color: accent }} />
-                              <span className="text-sm font-medium">{sec.title}</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <span className="text-xs font-semibold" style={{ color: bar }}>
-                                {sec.label}
-                              </span>
-                              <span className="text-sm font-bold">{Math.round(sec.score)}</span>
-                            </div>
-                          </div>
-                          {/* Score bar */}
-                          <div className="h-1.5 rounded-full bg-secondary overflow-hidden">
-                            <div
-                              className="h-full rounded-full transition-all"
-                              style={{ width: `${sec.score}%`, backgroundColor: bar }}
-                            />
-                          </div>
-                          {/* Bullets */}
-                          {sec.bullets?.length > 0 && (
-                            <ul className="space-y-1">
-                              {sec.bullets.map((b: string, i: number) => (
-                                <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
-                                  <span className="mt-1 h-1 w-1 shrink-0 rounded-full" style={{ backgroundColor: accent }} />
-                                  {b}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      )
-                    })}
-                </div>
-              </CardContent>
-            </Card>
-          )}
-        </>
+              </div>
+            </div>
+            {pdfUrl && (
+              <div className="border-t border-line px-5 py-3">
+                <a href={pdfUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+                  <FileText size={15} /> Open the full report (PDF)
+                </a>
+              </div>
+            )}
+          </Panel>
+
+          {/* Breakdown */}
+          <Panel className="lg:col-span-8" aria-label="Score breakdown">
+            <PanelHeader title="What the analysis found" description="Each dimension is scored 0–100 from the document text" />
+            <ul className="divide-y divide-line">
+              {sectionEntries.map(([key, sec]: [string, any]) => {
+                const Icon = SECTION_META[key]?.icon ?? BarChart2
+                const color = scoreColor(sec.score)
+                return (
+                  <li key={key} className="px-5 py-4">
+                    <div className="flex items-center gap-3">
+                      <Icon size={16} className="shrink-0 text-muted-foreground" />
+                      <span className="flex-1 text-sm font-medium text-foreground">{sec.title}</span>
+                      <span className="text-xs" style={{ color }}>{sec.label}</span>
+                      <span className="w-8 text-right text-sm font-medium tabular text-foreground">{Math.round(sec.score)}</span>
+                    </div>
+                    <div className="ml-7 mt-2 h-1 overflow-hidden rounded-full bg-surface-2">
+                      <div className="h-full rounded-full" style={{ width: `${sec.score}%`, backgroundColor: color }} />
+                    </div>
+                    {sec.bullets?.length > 0 && (
+                      <ul className="ml-7 mt-3 space-y-1.5">
+                        {sec.bullets.map((b: string, i: number) => (
+                          <li key={i} className="text-sm leading-relaxed text-muted-foreground">{b}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                )
+              })}
+            </ul>
+          </Panel>
+        </div>
       )}
     </div>
   )

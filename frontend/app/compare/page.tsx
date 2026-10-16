@@ -3,12 +3,13 @@
 import { useState, useEffect, useCallback, useRef, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
-import { DashboardShell } from "@/components/dashboard/dashboard-shell"
+import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-shell"
+import { StockLogo } from "@/components/ui/stock-logo"
 import { nifty50Stocks } from "@/lib/stocks"
 import { cn } from "@/lib/utils"
 import {
   GitCompare, Plus, X, Search, Loader2, AlertCircle,
-  TrendingUp, TrendingDown, Minus, ChevronDown, ChevronUp,
+  TrendingUp, TrendingDown,
 } from "lucide-react"
 
 import { API_BASE } from "@/lib/api"
@@ -65,7 +66,7 @@ function winnerIndex(values: (number | null)[], higherIsBetter = true): number |
 function signalColor(s: string) {
   if (s === "BUY")  return "text-primary bg-primary/10 border-primary/20"
   if (s === "SELL") return "text-destructive bg-destructive/10 border-destructive/20"
-  return "text-amber-400 bg-amber-400/10 border-amber-400/20"
+  return "text-primary bg-primary/10 border-primary/20"
 }
 
 function rsiColor(v: number | null) {
@@ -90,9 +91,9 @@ function adxLabel(v: number | null) {
 }
 
 function scoreColor(s: number) {
-  if (s >= 65) return "#34d399"
-  if (s >= 45) return "#fbbf24"
-  return "#f87171"
+  if (s >= 65) return "#2FB57C"
+  if (s >= 45) return "#F2A93B"
+  return "#E35D5B"
 }
 
 function fmt(v: number | null, decimals = 2) {
@@ -200,7 +201,7 @@ function StockSelector({
           </button>
 
           {open && (
-            <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-2xl border border-white/10 glass-card shadow-2xl overflow-hidden">
+            <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-2xl border border-white/10 glass-card overflow-hidden">
               <div className="border-b border-white/5 p-3">
                 <div className="relative">
                   <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
@@ -289,7 +290,7 @@ function SectionHeader({ title, colCount }: { title: string; colCount: number })
       style={{ gridTemplateColumns: `180px repeat(${colCount}, 1fr)` }}
     >
       <div className="py-2.5 px-4 col-span-full">
-        <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">{title}</span>
+        <span className="text-[11px] font-bold text-muted-foreground">{title}</span>
       </div>
     </div>
   )
@@ -324,8 +325,8 @@ function CompareContent() {
         loading: false,
         error: null,
       }))
-    } catch (e: any) {
-      setStocks(prev => prev.map(s => s.symbol === symbol ? { ...s, loading: false, error: "Failed to load" } : s))
+    } catch {
+      setStocks(prev => prev.map(s => s.symbol === symbol ? { ...s, loading: false, error: "Data didn't load" } : s))
     }
   }, [])
 
@@ -355,19 +356,8 @@ function CompareContent() {
   const n = stocks.length
 
   return (
-    <div className="max-w-[1300px] mx-auto w-full space-y-6">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 shadow-[0_0_20px_rgba(16,185,129,0.15)]">
-            <GitCompare size={26} className="text-primary" />
-          </div>
-          <div>
-            <h1 className="text-3xl font-bold tracking-tight text-gradient">Compare Stocks</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">Side-by-side technical analysis · up to 3 stocks</p>
-          </div>
-        </div>
-      </div>
+    <div className="w-full space-y-6">
+      <PageHeader title="Compare" description="Put up to three Nifty 50 stocks side by side on price, signals and indicators." />
 
       {/* Stock selector */}
       <div className="glass-card rounded-2xl border border-white/5 p-5">
@@ -408,9 +398,9 @@ function CompareContent() {
       {n > 0 && (
         <div className="glass-card rounded-2xl border border-white/5 overflow-hidden overflow-x-auto">
           {/* ── Stock header row ── */}
-          <div className="grid gap-px bg-white/5" style={{ gridTemplateColumns: `180px repeat(${n}, 1fr)` }}>
+          <div className="grid gap-px bg-white/5" style={{ gridTemplateColumns: `minmax(120px,180px) repeat(${n}, minmax(170px,1fr))`, minWidth: 120 + n * 170 }}>
             <div className="bg-background/80 p-4 flex items-end">
-              <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Stock</span>
+              <span className="text-xs font-semibold text-muted-foreground">Stock</span>
             </div>
             {stocks.map((s, i) => {
               const meta = nifty50Stocks.find(x => x.symbol === s.symbol)
@@ -438,9 +428,7 @@ function CompareContent() {
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex items-center gap-3">
                           <Link href={`/stock/${s.symbol}`}>
-                            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary/25 to-primary/5 border border-primary/20 text-sm font-bold text-primary hover:scale-105 transition-transform">
-                              {s.symbol.slice(0, 2)}
-                            </div>
+                            <StockLogo symbol={s.symbol} size={40} className="rounded-lg" />
                           </Link>
                           <div>
                             <Link href={`/stock/${s.symbol}`} className="text-base font-bold hover:text-primary transition-colors">
@@ -460,7 +448,7 @@ function CompareContent() {
                         </span>
                         {isTopPick && n > 1 && (
                           <span className="inline-flex items-center gap-1 text-[10px] font-semibold bg-primary/15 border border-primary/25 text-primary rounded-full px-2 py-0.5">
-                            ★ Top pick
+                            Highest score
                           </span>
                         )}
                       </div>
@@ -470,7 +458,7 @@ function CompareContent() {
                           <p className="text-xl font-bold tabular-nums">
                             ₹{pd.price.toLocaleString("en-IN", { minimumFractionDigits: 2 })}
                           </p>
-                          <div className={cn("flex items-center gap-1 text-xs font-semibold mt-0.5", isUp ? "text-primary" : "text-destructive")}>
+                          <div className={cn("flex items-center gap-1 text-xs font-semibold mt-0.5", isUp ? "text-up" : "text-down")}>
                             {isUp ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
                             {isUp ? "+" : ""}{pd.change_pct.toFixed(2)}% today
                           </div>
@@ -495,7 +483,7 @@ function CompareContent() {
               if (d.loading) return <div className="h-8 w-20 rounded-lg bg-white/5 animate-pulse" />
               if (!d.signal) return <span className="text-xs text-muted-foreground">—</span>
               return (
-                <span className={cn("inline-flex items-center rounded-lg border px-3 py-1.5 text-sm font-bold tracking-wide", signalColor(d.signal.signal))}>
+                <span className={cn("inline-flex items-center rounded-lg border px-3 py-1.5 text-sm font-bold", signalColor(d.signal.signal))}>
                   {d.signal.signal}
                 </span>
               )
@@ -584,7 +572,7 @@ function CompareContent() {
               if (macd == null || sig == null) return <span className="text-xs text-muted-foreground">—</span>
               const bullish = macd > sig
               return (
-                <span className={cn("text-xs font-semibold px-2.5 py-1 rounded-lg", bullish ? "bg-primary/10 text-primary" : "bg-destructive/10 text-destructive")}>
+                <span className={cn("text-xs font-semibold px-2.5 py-1 rounded-lg", bullish ? "bg-up/10 text-up" : "bg-down/10 text-down")}>
                   {bullish ? "Bullish" : "Bearish"}
                 </span>
               )
@@ -622,7 +610,7 @@ function CompareContent() {
               const pct   = ((price - sma) / sma * 100)
               return (
                 <div className="space-y-0.5">
-                  <span className={cn("text-xs font-semibold", above ? "text-primary" : "text-destructive")}>
+                  <span className={cn("text-xs font-semibold", above ? "text-up" : "text-down")}>
                     {above ? "Above" : "Below"}
                   </span>
                   <p className="text-[10px] text-muted-foreground">{above ? "+" : ""}{pct.toFixed(1)}%</p>
@@ -645,7 +633,7 @@ function CompareContent() {
               const pct   = ((price - sma) / sma * 100)
               return (
                 <div className="space-y-0.5">
-                  <span className={cn("text-xs font-semibold", above ? "text-primary" : "text-destructive")}>
+                  <span className={cn("text-xs font-semibold", above ? "text-up" : "text-down")}>
                     {above ? "Above" : "Below"}
                   </span>
                   <p className="text-[10px] text-muted-foreground">{above ? "+" : ""}{pct.toFixed(1)}%</p>
@@ -693,7 +681,7 @@ function CompareContent() {
               const bullish = golden.status === "Bullish"
               return (
                 <div className="space-y-0.5">
-                  <span className={cn("text-xs font-semibold", bullish ? "text-primary" : "text-destructive")}>
+                  <span className={cn("text-xs font-semibold", bullish ? "text-up" : "text-down")}>
                     {bullish ? "Golden Cross" : "Death Cross"}
                   </span>
                   <p className="text-[10px] text-muted-foreground">{golden.daysAgo}d ago</p>

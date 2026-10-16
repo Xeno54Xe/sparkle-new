@@ -1,20 +1,143 @@
 "use client"
-import { use } from "react"
-import { StockSidebar } from "@/components/stock/stock-sidebar"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, AlertTriangle, TrendingUp } from "lucide-react"
 
-interface Props { params: Promise<{ symbol: string }> }
+import { use, useEffect, useState } from "react"
+import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { getStockBySymbol } from "@/lib/stocks"
+import { API_BASE } from "@/lib/api"
+import { cn } from "@/lib/utils"
 
-export default function CreditPage({params}:Props) {
-  const {symbol}=use(params)
-  return(
-    <div className="flex min-h-screen bg-background"><StockSidebar/><div className="flex flex-1 flex-col pl-[260px]"><main className="flex-1 p-6 space-y-6">
-      <div><h1 className="text-2xl font-bold">{symbol} Credit Analysis</h1><p className="text-sm text-muted-foreground">Debt profile & solvency</p></div>
-      <Card className="border-primary/30 bg-gradient-to-r from-primary/5 to-transparent"><CardContent className="pt-6"><div className="flex items-center justify-between"><div><p className="text-sm text-muted-foreground mb-1">Credit Rating</p><p className="text-4xl font-bold text-primary">A-</p><p className="text-sm text-muted-foreground mt-1">S&P Global</p></div><div className="text-right"><div className="flex items-center gap-2 text-primary"><TrendingUp size={16}/><span className="text-sm font-semibold">Upgraded from BBB+</span></div><p className="text-xs text-muted-foreground mt-1">Outlook: Stable</p></div></div></CardContent></Card>
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card><CardHeader className="pb-3"><CardTitle className="flex items-center gap-2"><Shield size={20}/>Debt Metrics</CardTitle></CardHeader><CardContent className="space-y-3">{[{l:"Total Debt",v:"₹2,34,567 Cr"},{l:"Net Debt",v:"₹1,22,222 Cr"},{l:"D/E Ratio",v:"0.32"},{l:"Debt/EBITDA",v:"1.8x"},{l:"Interest Coverage",v:"12.5x"},{l:"Current Ratio",v:"1.63"},{l:"Quick Ratio",v:"1.21"},{l:"Cash",v:"₹1,12,345 Cr"}].map(m=><div key={m.l} className="flex justify-between items-center rounded-lg bg-secondary/30 px-4 py-3"><span className="text-sm text-muted-foreground">{m.l}</span><span className="text-sm font-semibold">{m.v}</span></div>)}</CardContent></Card>
-        <Card><CardHeader className="pb-3"><CardTitle className="flex items-center gap-2"><AlertTriangle size={20}/>Solvency</CardTitle></CardHeader><CardContent className="space-y-4">{[{l:"Short-term",s:85,lb:"Strong",c:"#10B981"},{l:"Long-term",s:78,lb:"Good",c:"#34D399"},{l:"Debt Service",s:82,lb:"Strong",c:"#10B981"},{l:"Liquidity",s:71,lb:"Adequate",c:"#FBBF24"}].map(s=><div key={s.l}><div className="flex justify-between mb-2"><span className="text-sm">{s.l}</span><span className="text-sm font-semibold" style={{color:s.c}}>{s.lb} ({s.s}/100)</span></div><div className="h-2 rounded-full bg-secondary overflow-hidden"><div className="h-full rounded-full" style={{width:`${s.s}%`,backgroundColor:s.c}}/></div></div>)}<div className="mt-4 rounded-lg bg-primary/5 border border-primary/20 p-4"><p className="text-sm font-medium text-primary mb-1">Assessment</p><p className="text-xs text-muted-foreground leading-relaxed">Healthy debt profile with strong interest coverage. S&P upgrade reflects shift towards less cyclical businesses.</p></div></CardContent></Card>
-      </div>
-    </main></div></div>)
+type Statement = Record<string, Record<string, number>>
+type Tone = "good" | "ok" | "weak" | "na"
+
+const FINANCIAL_SECTORS = new Set(["Banking", "Finance", "Insurance"])
+
+function latest(st?: Statement) {
+  if (!st) return undefined
+  const year = Object.keys(st).sort((a, b) => b.localeCompare(a))[0]
+  return year ? { year, row: st[year] } : undefined
+}
+const pick = (row: Record<string, number> | undefined, ...keys: string[]) => {
+  for (const k of keys) { const v = row?.[k]; if (typeof v === "number" && v !== 0) return v }
+  return null
+}
+const crore = (v: number | null) => v == null ? "—" : `${v < 0 ? "-" : ""}₹${Math.abs(v / 1e7).toLocaleString("en-IN", { maximumFractionDigits: 0 })} Cr`
+
+interface Metric { label: string; value: string; tone: Tone; note: string }
+
+function grade(v: number | null, good: (v: number) => boolean, ok: (v: number) => boolean): Tone {
+  if (v == null || !isFinite(v)) return "na"
+  return good(v) ? "good" : ok(v) ? "ok" : "weak"
+}
+
+const TONE_STYLE: Record<Tone, string> = {
+  good: "text-up",
+  ok: "text-primary",
+  weak: "text-down",
+  na: "text-faint-foreground",
+}
+const TONE_LABEL: Record<Tone, string> = { good: "Comfortable", ok: "Watch", weak: "Stretched", na: "Not available" }
+
+export default function CreditPage({ params }: { params: Promise<{ symbol: string }> }) {
+  const { symbol: raw } = use(params)
+  const symbol = decodeURIComponent(raw)
+  const stock = getStockBySymbol(symbol)
+  const [metrics, setMetrics] = useState<Metric[] | null>(null)
+  const [amounts, setAmounts] = useState<{ label: string; value: string }[]>([])
+  const [year, setYear] = useState<string>("")
+  const [failed, setFailed] = useState(false)
+
+  useEffect(() => { document.title = `${symbol} Debt & liquidity — SparkleAI` }, [symbol])
+
+  useEffect(() => {
+    let cancelled = false
+    setMetrics(null)
+    setFailed(false)
+    Promise.all([
+      fetch(`${API_BASE}/financials/${encodeURIComponent(symbol)}.NS`).then(r => (r.ok ? r.json() : null)),
+      fetch(`${API_BASE}/stock-info/${encodeURIComponent(symbol)}.NS`).then(r => (r.ok ? r.json() : null)),
+    ]).then(([fin, info]) => {
+      if (cancelled) return
+      const bs = latest(fin?.balance_sheet)
+      const is = latest(fin?.income_statement)
+      if (!bs && !is) { setFailed(true); return }
+      setYear(bs?.year || is?.year || "")
+
+      const debt = pick(bs?.row, "Total Debt")
+      const cash = pick(bs?.row, "Cash And Cash Equivalents", "Cash Cash Equivalents And Short Term Investments")
+      const netDebt = pick(bs?.row, "Net Debt") ?? (debt != null && cash != null ? debt - cash : null)
+      const equity = pick(bs?.row, "Stockholders Equity", "Common Stock Equity")
+      const ebitda = pick(is?.row, "EBITDA", "Normalized EBITDA")
+      const ebit = pick(is?.row, "EBIT", "Operating Income")
+      const interest = pick(is?.row, "Interest Expense", "Interest Expense Non Operating")
+      const curRatio = info?.metrics?.current_ratio || null
+
+      const de = debt != null && equity ? debt / equity : null
+      const debtEbitda = debt != null && ebitda ? debt / ebitda : null
+      const coverage = ebit != null && interest ? ebit / Math.abs(interest) : null
+
+      setAmounts([
+        { label: "Total debt", value: crore(debt) },
+        { label: "Cash & equivalents", value: crore(cash) },
+        { label: "Net debt", value: crore(netDebt) },
+        { label: "Shareholders' equity", value: crore(equity) },
+      ])
+      setMetrics([
+        { label: "Debt / equity", value: de == null ? "—" : `${de.toFixed(2)}×`, tone: grade(de, v => v < 0.5, v => v < 1.5), note: "Borrowings for every rupee of shareholder money. Under 0.5× is light; above 1.5× is heavy for a non-financial company." },
+        { label: "Debt / EBITDA", value: debtEbitda == null ? "—" : `${debtEbitda.toFixed(2)}×`, tone: grade(debtEbitda, v => v < 1, v => v < 3), note: "Years of operating profit needed to repay all debt. Under 1× is comfortable; above 3× needs attention." },
+        { label: "Interest coverage", value: coverage == null ? "—" : `${coverage.toFixed(1)}×`, tone: grade(coverage, v => v > 8, v => v > 3), note: "How many times operating profit covers interest. Above 8× is comfortable; under 3× is thin." },
+        { label: "Current ratio", value: curRatio ? `${curRatio.toFixed(2)}` : "—", tone: grade(curRatio, v => v >= 1.5, v => v >= 1), note: "Short-term assets against short-term liabilities. Below 1 means bills due within a year exceed liquid assets." },
+      ])
+    }).catch(() => { if (!cancelled) setFailed(true) })
+    return () => { cancelled = true }
+  }, [symbol])
+
+  const isFinancial = stock && FINANCIAL_SECTORS.has(stock.sector)
+
+  if (failed) {
+    return <Panel><EmptyState title="Balance sheet data didn't load">Yahoo Finance returned no statements for {symbol}. Check that the backend is running.</EmptyState></Panel>
+  }
+
+  return (
+    <div className="space-y-6">
+      {isFinancial && (
+        <p className="rounded-lg border border-line bg-surface px-5 py-3 text-sm text-muted-foreground">
+          {stock?.name} is a {stock?.sector.toLowerCase()} company. Borrowing is its raw material, so leverage ratios read high by design; compare it with other lenders rather than with industrial companies.
+        </p>
+      )}
+
+      <Panel aria-label="Debt ratios">
+        <PanelHeader title="Debt ratios" description={year ? `Computed from the FY${year.slice(-2)} annual statements` : "Computed from the latest annual statements"} />
+        <div className="grid grid-cols-1 divide-y divide-line md:grid-cols-2 md:divide-y-0 xl:grid-cols-4 xl:divide-x">
+          {(metrics ?? [null, null, null, null]).map((m, i) => (
+            <div key={m?.label ?? i} className="px-5 py-5">
+              {m ? (
+                <>
+                  <p className="text-sm text-muted-foreground">{m.label}</p>
+                  <p className="figure mt-1.5 text-[28px] leading-none text-foreground">{m.value}</p>
+                  <p className={cn("mt-2 text-sm font-medium", TONE_STYLE[isFinancial && m.label !== "Current ratio" ? "na" : m.tone])}>
+                    {isFinancial && m.label !== "Current ratio" ? "Not comparable for lenders" : TONE_LABEL[m.tone]}
+                  </p>
+                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{m.note}</p>
+                </>
+              ) : (
+                <div className="animate-pulse space-y-2.5"><div className="h-3.5 w-24 rounded bg-surface-2" /><div className="h-7 w-20 rounded bg-surface-2" /><div className="h-10 rounded bg-surface-2" /></div>
+              )}
+            </div>
+          ))}
+        </div>
+      </Panel>
+
+      <Panel aria-label="Balance sheet amounts">
+        <PanelHeader title="Balance sheet" />
+        <dl className="grid grid-cols-2 divide-x divide-line md:grid-cols-4">
+          {amounts.length ? amounts.map(a => (
+            <div key={a.label} className="px-5 py-4">
+              <dt className="text-sm text-muted-foreground">{a.label}</dt>
+              <dd className="mt-1 text-lg font-medium tabular text-foreground">{a.value}</dd>
+            </div>
+          )) : [0, 1, 2, 3].map(i => <div key={i} className="px-5 py-4"><div className="h-10 animate-pulse rounded bg-surface-2" /></div>)}
+        </dl>
+      </Panel>
+    </div>
+  )
 }

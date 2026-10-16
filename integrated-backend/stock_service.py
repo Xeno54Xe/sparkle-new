@@ -1,5 +1,10 @@
+import threading
 import yfinance as yf
 import pandas as pd
+
+# yf.download is not safe to call concurrently (shared global state); every
+# download in the backend goes through this lock.
+YF_LOCK = threading.Lock()
 
 
 class NoDataError(Exception):
@@ -7,7 +12,8 @@ class NoDataError(Exception):
 
 
 def get_stock_history(ticker, period="1y", interval="1d"):
-    df = yf.download(ticker, period=period, interval=interval, auto_adjust=True, progress=False)
+    with YF_LOCK:
+        df = yf.download(ticker, period=period, interval=interval, auto_adjust=True, progress=False, threads=False)
 
     # Flatten MultiIndex columns (yfinance returns MultiIndex)
     if isinstance(df.columns, pd.MultiIndex):

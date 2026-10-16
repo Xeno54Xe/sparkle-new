@@ -22,7 +22,7 @@ export function StockLogo({ symbol, size = 40, className, fallbackClassName, isP
     <div
       className={cn(
         "flex shrink-0 items-center justify-center rounded-lg overflow-hidden",
-        !showImg && (isPositive ? "bg-primary/20 text-primary" : "bg-destructive/20 text-destructive"),
+        !showImg && (isPositive ? "bg-up/20 text-up" : "bg-down/20 text-down"),
         showImg && "bg-white",
         className
       )}

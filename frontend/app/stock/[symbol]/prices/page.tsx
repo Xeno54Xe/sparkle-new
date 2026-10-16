@@ -1,21 +1,111 @@
 "use client"
-import { use, useEffect } from "react"
-import { StockSidebar } from "@/components/stock/stock-sidebar"
-import { getStockBySymbol } from "@/lib/stocks"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { TrendingUp, TrendingDown } from "lucide-react"
 
-interface Props { params: Promise<{ symbol: string }> }
+import { use, useEffect, useState } from "react"
+import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { API_BASE } from "@/lib/api"
+import { cn } from "@/lib/utils"
 
-export default function PricesPage({params}:Props) {
-  const {symbol} = use(params)
-  useEffect(() => { document.title = `${symbol} Prices — SparkleAI` }, [symbol])
-  const stock = getStockBySymbol(symbol)
-  const base = stock?.price||1000
-  const prices = Array.from({length:20},(_,i) => {const d=new Date();d.setDate(d.getDate()-i);const chg=(Math.random()-0.5)*base*0.03;const o=base+(Math.random()-0.5)*base*0.01;return{date:d.toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"}),open:o.toFixed(2),high:(Math.max(o,base)+Math.random()*base*0.01).toFixed(2),low:(Math.min(o,base)-Math.random()*base*0.01).toFixed(2),close:base.toFixed(2),change:chg,volume:Math.floor(Math.random()*1e7+2e6)}})
+interface Row { date: string; open: number; high: number; low: number; close: number; volume: number; change_pct: number | null }
+
+const PERIODS = [
+  { id: "1mo", label: "1M" },
+  { id: "3mo", label: "3M" },
+  { id: "6mo", label: "6M" },
+  { id: "1y", label: "1Y" },
+]
+
+const inr = (v: number) => v.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+const vol = (v: number) => (v >= 1e7 ? `${(v / 1e7).toFixed(2)} Cr` : `${(v / 1e5).toFixed(2)} L`)
+
+export default function PricesPage({ params }: { params: Promise<{ symbol: string }> }) {
+  const { symbol: raw } = use(params)
+  const symbol = decodeURIComponent(raw)
+  const [period, setPeriod] = useState("3mo")
+  const [rows, setRows] = useState<Row[] | null>(null)
+  const [failed, setFailed] = useState(false)
+
+  useEffect(() => { document.title = `${symbol} Price history — SparkleAI` }, [symbol])
+
+  useEffect(() => {
+    let cancelled = false
+    setRows(null)
+    setFailed(false)
+    fetch(`${API_BASE}/history/${encodeURIComponent(symbol)}.NS?period=${period}`)
+      .then(r => (r.ok ? r.json() : null))
+      .then(j => {
+        if (cancelled) return
+        if (j?.rows) setRows(j.rows)
+        else setFailed(true)
+      })
+      .catch(() => { if (!cancelled) setFailed(true) })
+    return () => { cancelled = true }
+  }, [symbol, period])
+
+  const summary = rows && rows.length > 1 ? {
+    high: Math.max(...rows.map(r => r.high)),
+    low: Math.min(...rows.map(r => r.low)),
+    ret: ((rows[0].close - rows[rows.length - 1].close) / rows[rows.length - 1].close) * 100,
+  } : null
+
   return (
-    <div className="flex min-h-screen bg-background"><StockSidebar /><div className="flex flex-1 flex-col pl-[260px]"><main className="flex-1 p-6 space-y-6">
-      <div><h1 className="text-2xl font-bold">{symbol} Price History</h1><p className="text-sm text-muted-foreground">Historical OHLCV data</p></div>
-      <Card><CardHeader className="pb-3"><CardTitle>Daily Prices</CardTitle></CardHeader><CardContent><div className="overflow-x-auto"><table className="w-full text-sm"><thead><tr className="border-b border-border">{["Date","Open","High","Low","Close","Change","Volume"].map(h=><th key={h} className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground">{h}</th>)}</tr></thead><tbody>{prices.map((p,i)=>{const up=p.change>=0;return(<tr key={i} className="border-b border-border/50 hover:bg-secondary/30"><td className="px-4 py-3 font-medium">{p.date}</td><td className="px-4 py-3">₹{p.open}</td><td className="px-4 py-3 text-primary">₹{p.high}</td><td className="px-4 py-3 text-destructive">₹{p.low}</td><td className="px-4 py-3 font-semibold">₹{p.close}</td><td className="px-4 py-3"><div className={`flex items-center gap-1 ${up?"text-primary":"text-destructive"}`}>{up?<TrendingUp size={12}/>:<TrendingDown size={12}/>}<span className="font-medium">{up?"+":""}{p.change.toFixed(2)}</span></div></td><td className="px-4 py-3 text-muted-foreground">{(p.volume/1e6).toFixed(2)}M</td></tr>)})}</tbody></table></div></CardContent></Card>
-    </main></div></div>)
+    <Panel aria-label="Daily prices">
+      <PanelHeader
+        title="Daily prices"
+        description={summary
+          ? <span className="tabular">Range ₹{inr(summary.low)} – ₹{inr(summary.high)}<span className={cn("ml-3", summary.ret >= 0 ? "text-up" : "text-down")}>{summary.ret >= 0 ? "+" : ""}{summary.ret.toFixed(2)}% over the period</span></span>
+          : "Open, high, low, close and volume for each session"}
+        actions={
+          <div className="flex rounded-md border border-line p-0.5" role="group" aria-label="Period">
+            {PERIODS.map(p => (
+              <button
+                key={p.id}
+                onClick={() => setPeriod(p.id)}
+                aria-pressed={period === p.id}
+                className={cn("rounded px-2.5 py-1 text-xs", period === p.id ? "bg-surface-2 text-foreground" : "text-muted-foreground hover:text-foreground")}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+        }
+      />
+      {failed ? (
+        <EmptyState title="Price history didn't load">Yahoo Finance returned no data for {symbol}. Check that the backend is running and try another period.</EmptyState>
+      ) : (
+        <div className="max-h-[70vh] overflow-auto custom-scrollbar">
+          <table className="w-full text-sm">
+            <thead className="sticky top-0 bg-surface">
+              <tr className="border-b border-line text-xs text-muted-foreground">
+                <th scope="col" className="px-5 py-2.5 text-left font-medium">Date</th>
+                {["Open", "High", "Low", "Close", "Change", "Volume"].map(h => (
+                  <th key={h} scope="col" className="px-5 py-2.5 text-right font-medium">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-line">
+              {(rows ?? Array.from({ length: 12 }, () => null)).map((r, i) => (
+                <tr key={r?.date ?? i} className="hover:bg-surface-2/50">
+                  {r ? (
+                    <>
+                      <td className="px-5 py-2.5 text-foreground">{new Date(r.date).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}</td>
+                      <td className="px-5 py-2.5 text-right text-muted-foreground">{inr(r.open)}</td>
+                      <td className="px-5 py-2.5 text-right text-muted-foreground">{inr(r.high)}</td>
+                      <td className="px-5 py-2.5 text-right text-muted-foreground">{inr(r.low)}</td>
+                      <td className="px-5 py-2.5 text-right font-medium text-foreground">{inr(r.close)}</td>
+                      <td className={cn("px-5 py-2.5 text-right", r.change_pct == null ? "text-faint-foreground" : r.change_pct >= 0 ? "text-up" : "text-down")}>
+                        {r.change_pct == null ? "—" : `${r.change_pct >= 0 ? "+" : ""}${r.change_pct.toFixed(2)}%`}
+                      </td>
+                      <td className="px-5 py-2.5 text-right text-muted-foreground">{vol(r.volume)}</td>
+                    </>
+                  ) : (
+                    <td colSpan={7} className="px-5 py-3"><div className="h-3.5 animate-pulse rounded bg-surface-2" /></td>
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </Panel>
+  )
 }

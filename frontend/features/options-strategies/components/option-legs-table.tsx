@@ -23,7 +23,7 @@ export function OptionLegsTable({ legs, onChange }: OptionLegsTableProps) {
 
       <div className="hidden overflow-x-auto rounded-xl border border-border md:block">
         <table className="w-full text-sm">
-          <thead className="bg-secondary/50 text-xs uppercase text-muted-foreground">
+          <thead className="bg-secondary/50 text-xs text-muted-foreground">
             <tr>
               <th className="px-3 py-3 text-left">Leg</th>
               <th className="px-3 py-3 text-left">Side</th>
@@ -39,7 +39,7 @@ export function OptionLegsTable({ legs, onChange }: OptionLegsTableProps) {
               <tr key={leg.id}>
                 <td className="px-3 py-3 font-medium text-foreground">{leg.label}</td>
                 <td className="px-3 py-3">
-                  <span className={cn("rounded-md px-2 py-1 text-xs font-semibold", leg.side === "long" ? "bg-primary/10 text-primary" : "bg-amber-500/10 text-amber-400")}>
+                  <span className={cn("rounded-md px-2 py-1 text-xs font-semibold", leg.side === "long" ? "bg-primary/10 text-primary" : "bg-primary/10 text-primary")}>
                     {leg.side}
                   </span>
                 </td>

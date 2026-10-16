@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
-from stock_service import get_stock_history, get_stock_price, NoDataError
+from stock_service import get_stock_history, get_stock_price, NoDataError, YF_LOCK
 from technical_service import get_indicators, get_candlestick_pattern, get_crossovers
 from signal_service import generate_signal
 from financial_service import get_stock_info, get_financials, get_estimates
@@ -67,6 +67,37 @@ def clean_nans(obj):
     elif isinstance(obj, float) and (math.isnan(obj) or math.isinf(obj)):
         return None
     return obj
+
+
+# yfinance's multi-ticker download shares global state and is not safe to run
+# concurrently; the dashboard fires several market calls at once. Serialise the
+# downloads and cache each (tickers, period) result briefly.
+_yf_lock = YF_LOCK
+_yf_cache: dict = {}
+YF_CACHE_TTL = 60  # seconds
+
+
+def yf_download_cached(tickers, period: str, ttl: int = YF_CACHE_TTL):
+    key = (tuple(tickers), period)
+    now = time.time()
+    hit = _yf_cache.get(key)
+    if hit and now - hit[0] < ttl:
+        return hit[1]
+    with _yf_lock:
+        hit = _yf_cache.get(key)
+        if hit and time.time() - hit[0] < ttl:
+            return hit[1]
+        raw = yf.download(
+            list(tickers),
+            period=period,
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+            threads=False,
+        )
+        if raw is not None and not raw.empty:
+            _yf_cache[key] = (time.time(), raw)
+        return raw
 
 
 # ═══ HEATMAP DATA ═══
@@ -138,13 +169,7 @@ def get_market_heatmap():
     """Fetch live price changes for all Nifty 50 stocks in one batch yfinance call."""
     try:
         ticker_list = list(HEATMAP_TICKERS.values())
-        raw = yf.download(
-            ticker_list,
-            period="5d",
-            interval="1d",
-            auto_adjust=True,
-            progress=False,
-        )
+        raw = yf_download_cached(ticker_list, "5d")
 
         # yfinance returns MultiIndex (field, ticker) for multiple tickers
         if isinstance(raw.columns, pd.MultiIndex):
@@ -196,13 +221,7 @@ def get_market_indices():
             "SENSEX":     "^BSESN",
             "BANK NIFTY": "^NSEBANK",
         }
-        raw = yf.download(
-            list(tickers.values()),
-            period="5d",
-            interval="1d",
-            auto_adjust=True,
-            progress=False,
-        )
+        raw = yf_download_cached(list(tickers.values()), "5d")
         if isinstance(raw.columns, pd.MultiIndex):
             close_df = raw["Close"].dropna(how="all")
         else:
@@ -240,13 +259,7 @@ def get_most_active():
     """Fetch top 5 most actively traded Nifty 50 stocks by volume."""
     try:
         ticker_list = list(HEATMAP_TICKERS.values())
-        raw = yf.download(
-            ticker_list,
-            period="5d",
-            interval="1d",
-            auto_adjust=True,
-            progress=False,
-        )
+        raw = yf_download_cached(ticker_list, "5d")
         if not isinstance(raw.columns, pd.MultiIndex):
             return {"error": "Unexpected format", "stocks": []}
 
@@ -311,13 +324,7 @@ def get_screener():
 
     try:
         ticker_list = list(HEATMAP_TICKERS.values())
-        raw = yf.download(
-            ticker_list,
-            period="1y",
-            interval="1d",
-            auto_adjust=True,
-            progress=False,
-        )
+        raw = yf_download_cached(ticker_list, "1y")
 
         if not isinstance(raw.columns, pd.MultiIndex):
             return {"error": "Unexpected data format", "stocks": [], "count": 0}
@@ -414,6 +421,33 @@ def home():
 @app.get("/price/{ticker}")
 def price(ticker: str):
     return clean_nans(get_stock_price(ticker))
+
+HISTORY_PERIODS = {"1mo", "3mo", "6mo", "1y", "2y", "5y"}
+
+
+@app.get("/history/{ticker}")
+def price_history(ticker: str, period: str = "3mo"):
+    """Daily OHLCV rows, newest first."""
+    if period not in HISTORY_PERIODS:
+        period = "3mo"
+    df = get_stock_history(ticker, period=period)
+    rows = []
+    prev_close = None
+    for idx, r in df.iterrows():
+        close = float(r["Close"])
+        rows.append({
+            "date": idx.strftime("%Y-%m-%d"),
+            "open": round(float(r["Open"]), 2),
+            "high": round(float(r["High"]), 2),
+            "low": round(float(r["Low"]), 2),
+            "close": round(close, 2),
+            "volume": int(r["Volume"]) if r["Volume"] == r["Volume"] else 0,
+            "change_pct": round((close - prev_close) / prev_close * 100, 2) if prev_close else None,
+        })
+        prev_close = close
+    rows.reverse()
+    return clean_nans({"symbol": ticker, "period": period, "rows": rows})
+
 
 @app.get("/technical/{ticker}")
 def technical_analysis(ticker: str):
@@ -643,17 +677,34 @@ def get_all_companies():
 
 # ═══ FINANCIAL DATA (yfinance) ═══
 
+# Company fundamentals change at most daily but each Yahoo call takes seconds,
+# so keep results for a while. Errors are not cached.
+_fund_cache: dict = {}
+FUND_CACHE_TTL = 600
+
+
+def _cached(kind: str, ticker: str, fn):
+    key = (kind, ticker.upper())
+    hit = _fund_cache.get(key)
+    if hit and time.time() - hit[0] < FUND_CACHE_TTL:
+        return hit[1]
+    value = clean_nans(fn(ticker))
+    if isinstance(value, dict) and not value.get("error"):
+        _fund_cache[key] = (time.time(), value)
+    return value
+
+
 @app.get("/stock-info/{ticker}")
 def stock_info(ticker: str):
-    return clean_nans(get_stock_info(ticker))
+    return _cached("info", ticker, get_stock_info)
 
 @app.get("/financials/{ticker}")
 def financials(ticker: str):
-    return clean_nans(get_financials(ticker))
+    return _cached("financials", ticker, get_financials)
 
 @app.get("/estimates/{ticker}")
 def estimates(ticker: str):
-    return clean_nans(get_estimates(ticker))
+    return _cached("estimates", ticker, get_estimates)
 
 @app.get("/stock-complete/{ticker}")
 def stock_complete(ticker: str):

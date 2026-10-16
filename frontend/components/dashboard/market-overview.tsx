@@ -1,10 +1,11 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { TrendingUp, TrendingDown, RefreshCw } from "lucide-react"
+import { useCallback, useEffect, useState } from "react"
+import Link from "next/link"
+import { RefreshCw } from "lucide-react"
 import { cn } from "@/lib/utils"
-
 import { API_BASE } from "@/lib/api"
+
 interface IndexData {
   symbol: string
   name: string
@@ -14,133 +15,126 @@ interface IndexData {
   is_positive: boolean
 }
 
-const API_URL = API_BASE
+interface Breadth { up: number; down: number; flat: number }
 
 function formatValue(v: number) {
   return v.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 }
 
+function titleCase(name: string) {
+  return name.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()).replace("Nifty", "Nifty")
+}
+
 export function MarketOverview() {
   const [indices, setIndices] = useState<IndexData[]>([])
+  const [breadth, setBreadth] = useState<Breadth | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const [lastUpdated, setLastUpdated] = useState<string | null>(null)
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true)
     setError(false)
     try {
-      const res = await fetch(`${API_URL}/market/indices`, { cache: "no-store" })
-      const json = await res.json()
+      const [idxRes, heatRes] = await Promise.all([
+        fetch(`${API_BASE}/market/indices`, { cache: "no-store" }),
+        fetch(`${API_BASE}/market/heatmap`, { cache: "no-store" }).catch(() => null),
+      ])
+      const json = await idxRes.json()
       if (json.indices?.length) {
         setIndices(json.indices)
         setLastUpdated(new Date().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" }))
       } else {
         setError(true)
       }
+      if (heatRes?.ok) {
+        const heat = await heatRes.json()
+        const stocks: { change_pct: number }[] = heat.stocks || []
+        if (stocks.length) {
+          setBreadth({
+            up: stocks.filter(s => s.change_pct > 0).length,
+            down: stocks.filter(s => s.change_pct < 0).length,
+            flat: stocks.filter(s => s.change_pct === 0).length,
+          })
+        }
+      }
     } catch {
       setError(true)
     } finally {
       setLoading(false)
     }
-  }
+  }, [])
 
-  useEffect(() => { fetchData() }, [])
+  useEffect(() => { fetchData() }, [fetchData])
+
+  const total = breadth ? breadth.up + breadth.down + breadth.flat : 0
 
   return (
-    <div className="space-y-3">
-      <div className="flex items-center justify-between px-1">
-        <span className="text-sm font-semibold text-foreground">Market Overview</span>
-        <div className="flex items-center gap-2">
-          {lastUpdated && (
-            <span className="text-xs text-muted-foreground">Updated {lastUpdated}</span>
-          )}
+    <section aria-labelledby="market-heading" className="panel overflow-hidden">
+      <div className="flex items-center justify-between border-b border-line px-5 py-3">
+        <h2 id="market-heading" className="text-sm font-medium text-foreground">Indian markets</h2>
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+          {lastUpdated && <span>Updated {lastUpdated}</span>}
           <button
             onClick={fetchData}
             disabled={loading}
-            className="flex items-center gap-1 rounded-md px-2 py-1 text-xs text-muted-foreground hover:text-foreground hover:bg-white/5 transition-all disabled:opacity-40"
+            className="flex items-center gap-1.5 rounded-md px-2 py-1 transition-colors hover:bg-surface-2 hover:text-foreground disabled:opacity-40"
+            aria-label="Refresh market data"
           >
-            <RefreshCw size={11} className={cn(loading && "animate-spin")} />
+            <RefreshCw size={12} className={cn(loading && "animate-spin")} />
             Refresh
           </button>
         </div>
       </div>
 
-      {/* Skeleton */}
-      {loading && (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {[0, 1, 2].map((i) => (
-            <div key={i} className="rounded-2xl glass-card border-white/10 p-5 animate-pulse">
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-xl bg-white/10" />
-                <div className="flex-1 space-y-2">
-                  <div className="h-3 w-20 rounded bg-white/10" />
-                  <div className="h-6 w-28 rounded bg-white/10" />
-                  <div className="h-4 w-14 rounded bg-white/10" />
+      {error && !loading ? (
+        <div className="px-5 py-8 text-center">
+          <p className="text-sm text-muted-foreground">Index prices didn&apos;t load. Check that the backend is running on port 8000.</p>
+          <button onClick={fetchData} className="mt-2 text-sm font-medium text-primary hover:underline">Try again</button>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+          {(loading && indices.length === 0 ? [null, null, null] : indices).map((index, i) => (
+            <div key={index?.name ?? i} className="px-5 py-4">
+              {index ? (
+                <>
+                  <p className="text-sm text-muted-foreground">{titleCase(index.name)}</p>
+                  <p className="figure mt-1 text-[32px] leading-none text-foreground">{formatValue(index.value)}</p>
+                  <p className={cn("mt-2 text-sm font-medium tabular", index.is_positive ? "text-up" : "text-down")}>
+                    {index.is_positive ? "▲" : "▼"} {index.is_positive ? "+" : ""}{formatValue(index.change_abs)}
+                    <span className="ml-1.5">({index.is_positive ? "+" : ""}{index.change_pct.toFixed(2)}%)</span>
+                  </p>
+                </>
+              ) : (
+                <div className="animate-pulse space-y-2.5">
+                  <div className="h-3.5 w-20 rounded bg-surface-2" />
+                  <div className="h-8 w-36 rounded bg-surface-2" />
+                  <div className="h-3.5 w-28 rounded bg-surface-2" />
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
       )}
 
-      {/* Error fallback */}
-      {!loading && error && (
-        <div className="rounded-2xl border border-border bg-card p-6 text-center">
-          <p className="text-sm text-muted-foreground">Could not load market data.</p>
-          <button onClick={fetchData} className="mt-2 text-xs text-primary hover:underline">Try again</button>
-        </div>
+      {breadth && total > 0 && (
+        <Link href="/heatmap" className="group block border-t border-line px-5 py-3 transition-colors hover:bg-surface-2/50">
+          <div className="mb-2 flex items-center justify-between gap-3 text-xs">
+            <span className="whitespace-nowrap text-muted-foreground">Nifty 50 breadth</span>
+            <span className="whitespace-nowrap tabular">
+              <span className="text-up">{breadth.up} up</span>
+              <span className="mx-2 text-faint-foreground">/</span>
+              <span className="text-down">{breadth.down} down</span>
+              <span className="ml-3 hidden text-faint-foreground group-hover:text-muted-foreground sm:inline">View heatmap</span>
+            </span>
+          </div>
+          <div className="flex h-1.5 overflow-hidden rounded-full bg-surface-2" role="img" aria-label={`${breadth.up} of ${total} stocks advancing`}>
+            <div className="bg-up" style={{ width: `${(breadth.up / total) * 100}%` }} />
+            <div className="bg-faint-foreground" style={{ width: `${(breadth.flat / total) * 100}%` }} />
+            <div className="bg-down" style={{ width: `${(breadth.down / total) * 100}%` }} />
+          </div>
+        </Link>
       )}
-
-      {/* Live data */}
-      {!loading && !error && (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {indices.map((index) => (
-            <div
-              key={index.name}
-              className="group flex flex-col justify-center gap-4 rounded-2xl glass-card border-white/10 p-5 glass-card-hover relative overflow-hidden"
-            >
-              {/* Subtle gradient orb */}
-              <div className={cn(
-                "absolute -right-6 -top-6 h-24 w-24 rounded-full opacity-20 blur-2xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-40",
-                index.is_positive ? "bg-primary" : "bg-destructive"
-              )} />
-
-              <div className="flex items-center gap-4 relative z-10">
-                <div className={cn(
-                  "flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-sm font-bold shadow-lg transition-transform duration-300 group-hover:scale-110",
-                  index.is_positive
-                    ? "bg-primary/20 text-primary shadow-[0_0_15px_rgba(16,185,129,0.15)] border border-primary/20"
-                    : "bg-destructive/20 text-destructive shadow-[0_0_15px_rgba(239,68,68,0.15)] border border-destructive/20"
-                )}>
-                  {index.symbol}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xs text-muted-foreground font-medium uppercase tracking-wider">{index.name}</span>
-                  <span className="text-2xl font-bold text-foreground tracking-tight">
-                    {formatValue(index.value)}
-                  </span>
-                  <div className="flex items-center gap-1.5 mt-0.5">
-                    <span className={cn(
-                      "flex items-center gap-1 rounded-md px-1.5 py-0.5 text-xs font-semibold",
-                      index.is_positive ? "bg-primary/10 text-primary" : "bg-destructive/10 text-destructive"
-                    )}>
-                      {index.is_positive
-                        ? <TrendingUp size={12} />
-                        : <TrendingDown size={12} />
-                      }
-                      {index.is_positive ? "+" : ""}{index.change_pct.toFixed(2)}%
-                    </span>
-                    <span className={cn("text-xs", index.is_positive ? "text-primary/60" : "text-destructive/60")}>
-                      ({index.is_positive ? "+" : ""}{formatValue(index.change_abs)})
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
+    </section>
   )
 }

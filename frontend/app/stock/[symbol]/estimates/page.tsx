@@ -1,9 +1,8 @@
 "use client"
 import { use, useEffect, useState } from "react"
-import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { getStockBySymbol } from "@/lib/stocks"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Target, Users, Loader2 } from "lucide-react"
+import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
 
 interface Props { params: Promise<{ symbol: string }> }
@@ -13,7 +12,8 @@ interface EstimatesData {
 }
 
 export default function EstimatesPage({params}:Props) {
-  const {symbol}=use(params)
+  const {symbol:raw}=use(params)
+  const symbol=decodeURIComponent(raw)
   const stock=getStockBySymbol(symbol)
   const [data,setData]=useState<EstimatesData|null>(null)
   const [loading,setLoading]=useState(true)
@@ -33,22 +33,60 @@ export default function EstimatesPage({params}:Props) {
   const c=data?.consensus
   const total=c?c.strong_buy+c.buy+c.hold+c.sell+c.strong_sell:0
   const pct=(n:number)=>total?Math.round((n/total)*100):0
-  const consensus=c?[{l:"Strong Buy",c:c.strong_buy,cl:"#10B981"},{l:"Buy",c:c.buy,cl:"#34D399"},{l:"Hold",c:c.hold,cl:"#FBBF24"},{l:"Sell",c:c.sell,cl:"#F87171"},{l:"Strong Sell",c:c.strong_sell,cl:"#EF4444"}].map(x=>({...x,p:pct(x.c)})):[]
+  const consensus=c?[{l:"Strong Buy",c:c.strong_buy,cl:"#2FB57C"},{l:"Buy",c:c.buy,cl:"#2FB57C"},{l:"Hold",c:c.hold,cl:"#F2A93B"},{l:"Sell",c:c.sell,cl:"#E35D5B"},{l:"Strong Sell",c:c.strong_sell,cl:"#E35D5B"}].map(x=>({...x,p:pct(x.c)})):[]
   const pt=data?.price_targets
   const price=pt?.current||stock?.price||0
-  const targets=[{l:"High",v:pt?.high,cl:"#10B981"},{l:"Median",v:pt?.median,cl:"#34D399"},{l:"Average",v:pt?.mean,cl:"#FBBF24"},{l:"Low",v:pt?.low,cl:"#F87171"}]
+  const targets=[{l:"Highest",v:pt?.high},{l:"Median",v:pt?.median},{l:"Average",v:pt?.mean},{l:"Lowest",v:pt?.low}]
   const upside=(v?:number)=>v&&price?((v-price)/price)*100:null
 
-  return(
-    <div className="flex min-h-screen bg-background"><StockSidebar/><div className="flex flex-1 flex-col lg:pl-[260px]"><main className="flex-1 p-6 space-y-6">
-      <div><h1 className="text-2xl font-bold">{symbol} Estimates</h1><p className="text-sm text-muted-foreground">Analyst consensus & price targets (live from Yahoo Finance)</p></div>
-      {loading ? (
-        <div className="flex items-center justify-center py-20 gap-3 text-muted-foreground"><Loader2 size={20} className="animate-spin"/> Loading estimates...</div>
-      ) : (
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card><CardHeader className="pb-3"><CardTitle className="flex items-center gap-2"><Users size={20}/>Analyst Consensus</CardTitle>{total>0&&<p className="text-xs text-muted-foreground">{total} analysts</p>}</CardHeader><CardContent className="space-y-3">{consensus.length===0||total===0?<p className="text-sm text-muted-foreground py-6 text-center">No analyst ratings available.</p>:consensus.map(c=><div key={c.l}><div className="flex justify-between text-sm mb-1"><span>{c.l}</span><span className="text-muted-foreground">{c.c} ({c.p}%)</span></div><div className="h-2 rounded-full bg-secondary overflow-hidden"><div className="h-full rounded-full" style={{width:`${c.p}%`,backgroundColor:c.cl}}/></div></div>)}</CardContent></Card>
-        <Card><CardHeader className="pb-3"><CardTitle className="flex items-center gap-2"><Target size={20}/>Price Targets</CardTitle></CardHeader><CardContent><div className="mb-4 rounded-lg bg-primary/5 border border-primary/20 p-4 text-center"><p className="text-xs text-muted-foreground mb-1">Current</p><p className="text-2xl font-bold">{price?`₹${price.toFixed(2)}`:"N/A"}</p></div><div className="space-y-3">{targets.map(t=>{const u=upside(t.v);return<div key={t.l} className="flex justify-between items-center rounded-lg bg-secondary/30 px-4 py-3"><span className="text-sm">{t.l}</span><span className="font-semibold" style={{color:t.cl}}>{t.v?`₹${t.v.toFixed(2)}`:"N/A"}{u!=null&&<span className="ml-2 text-xs text-muted-foreground">({u>=0?"+":""}{u.toFixed(1)}%)</span>}</span></div>})}</div></CardContent></Card>
-      </div>
-      )}
-    </main></div></div>)
+  const bar: Record<string, string> = { "Strong Buy": "bg-up", "Buy": "bg-up/60", "Hold": "bg-faint-foreground", "Sell": "bg-down/60", "Strong Sell": "bg-down" }
+
+  return (
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <Panel aria-label="Analyst ratings">
+        <PanelHeader title="Analyst ratings" description={total > 0 ? `${total} analysts, latest month` : "Latest month"} />
+        {loading ? (
+          <div className="space-y-4 p-5">{[0, 1, 2, 3, 4].map(i => <div key={i} className="h-6 animate-pulse rounded bg-surface-2" />)}</div>
+        ) : total === 0 ? (
+          <EmptyState title="No analyst ratings">No brokerages have published ratings for {symbol} on Yahoo Finance.</EmptyState>
+        ) : (
+          <div className="space-y-3.5 p-5">
+            {consensus.map(c => (
+              <div key={c.l} className="grid grid-cols-[96px_1fr_64px] items-center gap-3 text-sm">
+                <span className="text-muted-foreground">{c.l}</span>
+                <div className="h-2 overflow-hidden rounded-full bg-surface-2">
+                  <div className={cn("h-full rounded-full", bar[c.l])} style={{ width: `${c.p}%` }} />
+                </div>
+                <span className="text-right tabular text-foreground">{c.c} <span className="text-faint-foreground">({c.p}%)</span></span>
+              </div>
+            ))}
+          </div>
+        )}
+      </Panel>
+
+      <Panel aria-label="Price targets">
+        <PanelHeader title="12-month price targets" description={price ? `Against the current ₹${price.toFixed(2)}` : undefined} />
+        {loading ? (
+          <div className="space-y-4 p-5">{[0, 1, 2, 3].map(i => <div key={i} className="h-6 animate-pulse rounded bg-surface-2" />)}</div>
+        ) : !pt?.mean ? (
+          <EmptyState title="No price targets">No analyst targets are published for {symbol}.</EmptyState>
+        ) : (
+          <dl className="divide-y divide-line">
+            {targets.map(t => {
+              const u = upside(t.v)
+              return (
+                <div key={t.l} className="flex items-baseline justify-between px-5 py-3 text-sm">
+                  <dt className="text-muted-foreground">{t.l}</dt>
+                  <dd className="tabular">
+                    <span className="text-foreground">{t.v ? `₹${t.v.toFixed(2)}` : "—"}</span>
+                    {u != null && <span className={cn("ml-3 inline-block w-16 text-right", u >= 0 ? "text-up" : "text-down")}>{u >= 0 ? "+" : ""}{u.toFixed(1)}%</span>}
+                  </dd>
+                </div>
+              )
+            })}
+          </dl>
+        )}
+      </Panel>
+    </div>
+  )
 }

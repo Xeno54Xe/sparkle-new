@@ -134,7 +134,7 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
               <div>
                 <div className="mb-2 flex flex-wrap gap-2">
                   <span className="rounded-md border border-primary/30 bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">Automated simulator</span>
-                  <span className="rounded-md border border-sky-400/30 bg-sky-400/10 px-2.5 py-1 text-xs font-semibold text-sky-300">Model-estimated premiums</span>
+                  <span className="rounded-md border border-info/30 bg-info/10 px-2.5 py-1 text-xs font-semibold text-info">Model-estimated premiums</span>
                 </div>
                 <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">Options Strategy Lab</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
@@ -145,17 +145,17 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
           </div>
           <div className="grid grid-cols-3 border-t border-border bg-background/60 lg:border-l lg:border-t-0">
             <div className="p-4">
-              <p className="text-xs font-medium uppercase text-muted-foreground">Spot</p>
+              <p className="text-xs font-medium text-muted-foreground">Spot</p>
               <p className="mt-1 text-lg font-bold text-foreground">Rs {stock.price.toLocaleString("en-IN")}</p>
             </div>
             <div className="border-l border-border p-4">
-              <p className="text-xs font-medium uppercase text-muted-foreground">Move</p>
-              <p className={stock.change >= 0 ? "mt-1 text-lg font-bold text-primary" : "mt-1 text-lg font-bold text-destructive"}>
+              <p className="text-xs font-medium text-muted-foreground">Move</p>
+              <p className={stock.change >= 0 ? "mt-1 text-lg font-bold text-up" : "mt-1 text-lg font-bold text-down"}>
                 {stock.change >= 0 ? "+" : ""}{stock.change.toFixed(2)}%
               </p>
             </div>
             <div className="border-l border-border p-4">
-              <p className="text-xs font-medium uppercase text-muted-foreground">Model IV</p>
+              <p className="text-xs font-medium text-muted-foreground">Model IV</p>
               <p className="mt-1 truncate text-lg font-bold text-foreground">{Math.round(assumptions.annualVolatility * 100)}%</p>
             </div>
           </div>
@@ -171,14 +171,14 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
           <p className="mt-2 text-sm text-muted-foreground">Every strategy gets model-picked strikes, expiry, premiums and lot size from the current stock price.</p>
         </div>
         <div className="rounded-xl border border-border bg-card p-4">
-          <div className="flex items-center gap-2 text-sky-300">
+          <div className="flex items-center gap-2 text-info">
             <Activity size={18} />
             <p className="text-sm font-semibold">Payoff engine</p>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">The graph recalculates max profit, max loss, breakevens and profit zones as inputs change.</p>
         </div>
         <div className="rounded-xl border border-border bg-card p-4">
-          <div className="flex items-center gap-2 text-amber-300">
+          <div className="flex items-center gap-2 text-primary">
             <Target size={18} />
             <p className="text-sm font-semibold">Live-data ready</p>
           </div>
@@ -226,15 +226,15 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
 
       <div className="grid gap-3 rounded-xl border border-border bg-card p-4 text-sm text-muted-foreground md:grid-cols-4">
         <div>
-          <p className="text-xs font-semibold uppercase text-muted-foreground">Model expiry</p>
+          <p className="text-xs font-semibold text-muted-foreground">Model expiry</p>
           <p className="mt-1 font-semibold text-foreground">{expiry}</p>
         </div>
         <div>
-          <p className="text-xs font-semibold uppercase text-muted-foreground">Days to expiry</p>
+          <p className="text-xs font-semibold text-muted-foreground">Days to expiry</p>
           <p className="mt-1 font-semibold text-foreground">{assumptions.daysToExpiry}</p>
         </div>
         <div>
-          <p className="text-xs font-semibold uppercase text-muted-foreground">Estimated IV</p>
+          <p className="text-xs font-semibold text-muted-foreground">Estimated IV</p>
           <p className="mt-1 font-semibold text-foreground">{Math.round(assumptions.annualVolatility * 100)}%</p>
         </div>
         <div className="flex items-end">

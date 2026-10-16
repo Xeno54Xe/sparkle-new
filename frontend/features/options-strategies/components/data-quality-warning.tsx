@@ -29,7 +29,7 @@ export function DataQualityWarning({ issues }: DataQualityWarningProps) {
       ))}
 
       {visibleWarnings.map((issue) => (
-        <div key={issue.code} className="flex items-start gap-2 rounded-lg border border-amber-400/30 bg-amber-400/5 p-3 text-sm text-amber-300">
+        <div key={issue.code} className="flex items-start gap-2 rounded-lg border border-primary/30 bg-primary/5 p-3 text-sm text-primary">
           <AlertTriangle size={16} className="mt-0.5 shrink-0" />
           <span>{issue.message}</span>
         </div>

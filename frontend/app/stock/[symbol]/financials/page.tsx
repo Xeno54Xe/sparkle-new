@@ -1,8 +1,7 @@
 "use client"
 import { use, useEffect, useState } from "react"
-import { StockSidebar } from "@/components/stock/stock-sidebar"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { TrendingUp, TrendingDown, Loader2 } from "lucide-react"
+import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
 
 interface Props { params: Promise<{ symbol: string }> }
@@ -52,7 +51,8 @@ function sortedYears(st?: Statement) {
 }
 
 export default function FinancialsPage({ params }: Props) {
-  const { symbol } = use(params)
+  const { symbol: raw } = use(params)
+  const symbol = decodeURIComponent(raw)
   const [tab, setTab] = useState("income")
   const [data, setData] = useState<FinancialsData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -83,18 +83,65 @@ export default function FinancialsPage({ params }: Props) {
   const cf = CASHFLOW_ROWS.map(r => ({ l: r.l, v: pick(data?.cash_flow?.[cfYear], r.k) }))
   const fy = (y?: string) => (y ? `FY${y.slice(-2)}` : "—")
 
-  return(
-    <div className="flex min-h-screen bg-background"><StockSidebar/><div className="flex flex-1 flex-col lg:pl-[260px]"><main className="flex-1 p-6 space-y-6">
-      <div><h1 className="text-2xl font-bold">{symbol} Financials</h1><p className="text-sm text-muted-foreground">Income, Balance Sheet & Cash Flow (annual, live from Yahoo Finance)</p></div>
-      <div className="flex gap-2">{[{id:"income",l:"Income Statement"},{id:"balance",l:"Balance Sheet"},{id:"cashflow",l:"Cash Flow"}].map(t=><button key={t.id} onClick={()=>setTab(t.id)} className={`rounded-lg px-4 py-2 text-sm font-medium ${tab===t.id?"bg-primary text-primary-foreground shadow-lg":"bg-secondary text-muted-foreground"}`}>{t.l}</button>)}</div>
+  const TABS = [{ id: "income", l: "Income statement" }, { id: "balance", l: "Balance sheet" }, { id: "cashflow", l: "Cash flow" }]
+  const noData = !loading && (!data || (incomeYears.length === 0 && !bsYear && !cfYear))
+
+  return (
+    <Panel aria-label="Financial statements">
+      <PanelHeader
+        title="Financial statements"
+        description="Annual figures in ₹ crore, from Yahoo Finance"
+        actions={
+          <div className="flex rounded-md border border-line p-0.5" role="tablist">
+            {TABS.map(t => (
+              <button key={t.id} role="tab" aria-selected={tab === t.id} onClick={() => setTab(t.id)}
+                className={cn("rounded px-2.5 py-1 text-xs", tab === t.id ? "bg-surface-2 text-foreground" : "text-muted-foreground hover:text-foreground")}>
+                {t.l}
+              </button>
+            ))}
+          </div>
+        }
+      />
       {loading ? (
-        <div className="flex items-center justify-center py-20 gap-3 text-muted-foreground"><Loader2 size={20} className="animate-spin"/> Loading financials...</div>
-      ) : !data || incomeYears.length === 0 && !bsYear && !cfYear ? (
-        <div className="text-center py-20 text-muted-foreground">No financial statements available for {symbol}. Is the backend running?</div>
-      ) : (<>
-      {tab==="income"&&<Card><CardHeader className="pb-3"><CardTitle>Income Statement</CardTitle></CardHeader><CardContent><table className="w-full text-sm"><thead><tr className="border-b border-border">{["",fy(cur),fy(prev),"Growth"].map((h,i)=><th key={i} className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground">{h}</th>)}</tr></thead><tbody>{income.map((r,i)=><tr key={i} className={`border-b border-border/50 ${r.h?"bg-primary/5":""}`}><td className={`px-4 py-3 ${r.h?"font-bold text-primary":"font-medium"}`}>{r.l}</td><td className="px-4 py-3">{crore(r.a)}</td><td className="px-4 py-3 text-muted-foreground">{crore(r.b)}</td><td className={`px-4 py-3 font-semibold ${r.g==null?"text-muted-foreground":r.g>=0?"text-primary":"text-destructive"}`}>{r.g==null?"—":`${r.g>=0?"+":""}${r.g.toFixed(1)}%`}</td></tr>)}</tbody></table></CardContent></Card>}
-      {tab==="balance"&&<Card><CardHeader className="pb-3"><CardTitle>Balance Sheet ({fy(bsYear)})</CardTitle></CardHeader><CardContent><div className="grid grid-cols-2 gap-4">{balance.map((r,i)=><div key={i} className="rounded-lg border border-border p-4"><p className="text-xs text-muted-foreground mb-1">{r.l}</p><p className="text-lg font-semibold">{crore(r.v)}</p></div>)}</div></CardContent></Card>}
-      {tab==="cashflow"&&<Card><CardHeader className="pb-3"><CardTitle>Cash Flow ({fy(cfYear)})</CardTitle></CardHeader><CardContent className="space-y-3">{cf.map((r,i)=>{const u=(r.v??0)>=0;return<div key={i} className="flex justify-between items-center rounded-lg bg-secondary/30 px-4 py-3"><span className="text-sm">{r.l}</span><div className="flex items-center gap-2">{r.v==null?null:u?<TrendingUp size={14} className="text-primary"/>:<TrendingDown size={14} className="text-destructive"/>}<span className={`font-semibold ${r.v==null?"text-muted-foreground":u?"text-primary":"text-destructive"}`}>{crore(r.v)}</span></div></div>})}</CardContent></Card>}
-      </>)}
-    </main></div></div>)
+        <div className="space-y-3 p-5">{[0, 1, 2, 3].map(i => <div key={i} className="h-5 animate-pulse rounded bg-surface-2" />)}</div>
+      ) : noData ? (
+        <EmptyState title="No statements available">Yahoo Finance has no annual statements for {symbol}. Check that the backend is running.</EmptyState>
+      ) : tab === "income" ? (
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-line text-xs text-muted-foreground">
+              <th scope="col" className="px-5 py-2.5 text-left font-medium">Line item</th>
+              <th scope="col" className="px-5 py-2.5 text-right font-medium">{fy(cur)}</th>
+              <th scope="col" className="px-5 py-2.5 text-right font-medium">{fy(prev)}</th>
+              <th scope="col" className="px-5 py-2.5 text-right font-medium">Change</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-line">
+            {income.map(r => (
+              <tr key={r.l}>
+                <th scope="row" className={cn("px-5 py-3 text-left font-normal", r.h ? "font-medium text-foreground" : "text-muted-foreground")}>{r.l}</th>
+                <td className={cn("px-5 py-3 text-right", r.h && "font-medium")}>{crore(r.a)}</td>
+                <td className="px-5 py-3 text-right text-muted-foreground">{crore(r.b)}</td>
+                <td className={cn("px-5 py-3 text-right", r.g == null ? "text-faint-foreground" : r.g >= 0 ? "text-up" : "text-down")}>
+                  {r.g == null ? "—" : `${r.g >= 0 ? "+" : ""}${r.g.toFixed(1)}%`}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <dl className="grid grid-cols-1 divide-y divide-line sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-3">
+          {(tab === "balance" ? balance : cf).map(r => (
+            <div key={r.l} className="border-line px-5 py-4 sm:border-b">
+              <dt className="text-sm text-muted-foreground">{r.l}</dt>
+              <dd className={cn("mt-1 text-lg font-medium tabular", r.v != null && r.v < 0 ? "text-down" : "text-foreground")}>{crore(r.v)}</dd>
+            </div>
+          ))}
+          <p className="px-5 py-4 text-xs text-faint-foreground sm:col-span-2 lg:col-span-3">
+            As of {fy(tab === "balance" ? bsYear : cfYear)}
+          </p>
+        </dl>
+      )}
+    </Panel>
+  )
 }

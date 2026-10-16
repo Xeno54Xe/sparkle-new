@@ -1,14 +1,11 @@
 "use client"
 
 import { useEffect, useState, useMemo, useCallback } from "react"
-import { useRouter } from "next/navigation"
-import {
-  RefreshCw, Search, TrendingUp, TrendingDown, Minus,
-  ChevronUp, ChevronDown, ChevronsUpDown, SlidersHorizontal,
-  Zap, Clock, AlertCircle, X,
-} from "lucide-react"
+import Link from "next/link"
+import { RefreshCw, Search, ChevronUp, ChevronDown, ChevronsUpDown, X } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { DashboardShell } from "@/components/dashboard/dashboard-shell"
+import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-shell"
+import { Panel, EmptyState } from "@/components/ui/panel"
 
 import { API_BASE } from "@/lib/api"
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -49,10 +46,10 @@ const SECTORS = [
 function SignalBadge({ signal }: { signal: string }) {
   return (
     <span className={cn(
-      "inline-flex items-center rounded-md px-2 py-0.5 text-xs font-bold tracking-wide",
-      signal === "BUY"  && "bg-emerald-500/15 text-emerald-400 border border-emerald-500/25",
-      signal === "SELL" && "bg-red-500/15 text-red-400 border border-red-500/25",
-      signal === "HOLD" && "bg-amber-500/15 text-amber-400 border border-amber-500/25",
+      "inline-flex items-center rounded-sm px-1.5 py-0.5 text-xs font-semibold",
+      signal === "BUY"  && "bg-up/15 text-up",
+      signal === "SELL" && "bg-down/15 text-down",
+      signal === "HOLD" && "bg-primary/15 text-primary",
     )}>
       {signal}
     </span>
@@ -60,14 +57,14 @@ function SignalBadge({ signal }: { signal: string }) {
 }
 
 function ScoreBar({ score, size = "md" }: { score: number; size?: "sm" | "md" }) {
-  const color = score >= 60 ? "bg-emerald-500" : score >= 40 ? "bg-amber-500" : "bg-red-500"
+  const color = score >= 60 ? "bg-up" : score >= 40 ? "bg-primary" : "bg-down"
   return (
     <div className="flex items-center gap-2">
-      <div className={cn("rounded-full bg-white/10 overflow-hidden", size === "sm" ? "h-1.5 w-16" : "h-2 w-20")}>
+      <div className={cn("rounded-full bg-surface-2 overflow-hidden", size === "sm" ? "h-1.5 w-14" : "h-2 w-20")}>
         <div className={cn("h-full rounded-full transition-all", color)} style={{ width: `${score}%` }} />
       </div>
       <span className={cn("font-semibold tabular-nums", size === "sm" ? "text-xs" : "text-sm",
-        score >= 60 ? "text-emerald-400" : score >= 40 ? "text-amber-400" : "text-red-400"
+        score >= 60 ? "text-up" : score >= 40 ? "text-primary" : "text-down"
       )}>
         {score}
       </span>
@@ -82,14 +79,14 @@ function RsiPill({ rsi }: { rsi: number | null }) {
     <div className="flex items-center gap-1.5">
       <span className={cn(
         "text-sm font-semibold tabular-nums",
-        rsi < 30 ? "text-emerald-400" : rsi > 70 ? "text-red-400" : "text-foreground"
+        rsi < 30 ? "text-up" : rsi > 70 ? "text-down" : "text-foreground"
       )}>
         {rsi.toFixed(1)}
       </span>
       {label && (
         <span className={cn(
           "text-[10px] font-bold rounded px-1",
-          rsi < 30 ? "bg-emerald-500/15 text-emerald-400" : "bg-red-500/15 text-red-400"
+          rsi < 30 ? "bg-up/15 text-up" : "bg-down/15 text-down"
         )}>
           {label}
         </span>
@@ -102,27 +99,40 @@ function SmaCell({ pct }: { pct: number | null }) {
   if (pct == null) return <span className="text-muted-foreground text-xs">—</span>
   const pos = pct >= 0
   return (
-    <span className={cn("text-sm font-medium tabular-nums", pos ? "text-emerald-400" : "text-red-400")}>
+    <span className={cn("text-sm font-medium tabular-nums", pos ? "text-up" : "text-down")}>
       {pos ? "+" : ""}{pct.toFixed(1)}%
     </span>
   )
 }
 
-function FilterChip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
+function FilterSelect({ label, value, options, onChange }: {
+  label: string
+  value: string
+  options: { value: string; label: string }[]
+  onChange: (v: string) => void
+}) {
+  const active = value !== "All"
   return (
-    <button
-      onClick={onClick}
-      className={cn(
-        "rounded-lg px-3 py-1.5 text-xs font-medium transition-all whitespace-nowrap",
-        active
-          ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(16,185,129,0.3)]"
-          : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground border border-white/5"
-      )}
-    >
-      {label}
-    </button>
+    <label className="relative flex items-center">
+      <span className="sr-only">{label}</span>
+      <select
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        className={cn(
+          "h-9 appearance-none rounded-md border bg-surface pl-3 pr-8 text-sm transition-colors focus:border-primary/60 focus:outline-none",
+          active ? "border-primary/50 text-foreground" : "border-line text-muted-foreground hover:border-line-strong"
+        )}
+      >
+        {options.map(o => (
+          <option key={o.value} value={o.value}>{o.value === "All" ? `${label}: any` : `${label}: ${o.label}`}</option>
+        ))}
+      </select>
+      <ChevronDown size={14} className="pointer-events-none absolute right-2.5 text-faint-foreground" />
+    </label>
   )
 }
+
+const opts = (...values: [string, string?][]) => values.map(([value, label]) => ({ value, label: label ?? value }))
 
 function SortIcon({ col, sortKey, sortDir }: { col: SortKey; sortKey: SortKey; sortDir: SortDir }) {
   if (col !== sortKey) return <ChevronsUpDown size={12} className="text-muted-foreground/40" />
@@ -134,7 +144,6 @@ function SortIcon({ col, sortKey, sortDir }: { col: SortKey; sortKey: SortKey; s
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function ScreenerPage() {
-  const router = useRouter()
   const [stocks, setStocks]         = useState<ScreenerStock[]>([])
   const [loading, setLoading]       = useState(true)
   const [error, setError]           = useState<string | null>(null)
@@ -233,336 +242,174 @@ export default function ScreenerPage() {
 
   const ThCol = ({ col, label, className }: { col: SortKey; label: string; className?: string }) => (
     <th
-      onClick={() => handleSort(col)}
-      className={cn("cursor-pointer select-none whitespace-nowrap px-3 py-3 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground transition-colors", className)}
+      scope="col"
+      aria-sort={sortKey === col ? (sortDir === "desc" ? "descending" : "ascending") : "none"}
+      className={cn("whitespace-nowrap px-3 py-2.5 text-right text-xs font-medium text-muted-foreground", className)}
     >
-      <div className="flex items-center gap-1">
+      <button onClick={() => handleSort(col)} className="ml-auto flex items-center gap-1 hover:text-foreground">
         {label}
         <SortIcon col={col} sortKey={sortKey} sortDir={sortDir} />
-      </div>
+      </button>
     </th>
   )
 
+  const updated = timestamp
+    ? cached
+      ? `Indicators computed ${Math.max(1, Math.round(cacheAge / 60))} min ago.`
+      : `Indicators computed at ${new Date(timestamp).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })}.`
+    : "Fifteen technical indicators, recomputed every 5 minutes."
+
   return (
     <DashboardShell>
-      <div className="space-y-6 max-w-[1400px] mx-auto">
+      <PageHeader
+        title="Screener"
+        description={<>Filter all Nifty 50 stocks by technical signal. {updated}</>}
+        actions={
+          <button
+            onClick={fetchData}
+            disabled={loading}
+            className="flex h-9 items-center gap-2 rounded-md border border-line px-3 text-sm text-muted-foreground transition-colors hover:border-line-strong hover:text-foreground disabled:opacity-40"
+          >
+            <RefreshCw size={14} className={cn(loading && "animate-spin")} /> Refresh
+          </button>
+        }
+      />
 
-        {/* ── Header ── */}
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h1 className="text-2xl font-bold text-foreground tracking-tight flex items-center gap-2">
-              <SlidersHorizontal size={22} className="text-primary" />
-              Stock Screener
-            </h1>
-            <p className="text-sm text-muted-foreground mt-0.5">
-              Live technical analysis across all Nifty 50 stocks
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            {timestamp && (
-              <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                {cached ? <Clock size={12} /> : <Zap size={12} className="text-primary" />}
-                {cached
-                  ? `Cached · ${Math.floor(cacheAge / 60)}m ${cacheAge % 60}s ago`
-                  : `Live · ${new Date(timestamp).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })}`
-                }
-              </div>
+      {loading ? (
+        <Panel aria-busy="true">
+          <div className="px-5 py-4 text-sm text-muted-foreground">Computing indicators for 50 stocks. The first load takes about 10 seconds.</div>
+          <div className="space-y-2 px-5 pb-5">{Array.from({ length: 8 }, (_, i) => <div key={i} className="h-9 animate-pulse rounded bg-surface-2" />)}</div>
+        </Panel>
+      ) : error ? (
+        <Panel>
+          <EmptyState title="Screener data didn't load" action={<button onClick={fetchData} className="inline-flex h-9 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90">Try again</button>}>
+            {error}
+          </EmptyState>
+        </Panel>
+      ) : (
+        <div className="space-y-4">
+          {/* Filters */}
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="relative w-full sm:w-56">
+              <Search size={14} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-faint-foreground" />
+              <input
+                type="search"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                placeholder="Symbol or name"
+                aria-label="Filter by symbol or name"
+                className="h-9 w-full rounded-md border border-line bg-surface pl-8 pr-3 text-sm text-foreground placeholder:text-faint-foreground focus:border-primary/60 focus:outline-none"
+              />
+            </div>
+            <FilterSelect label="Signal" value={signal} onChange={setSignal} options={opts(["All"], ["BUY", "Buy"], ["HOLD", "Hold"], ["SELL", "Sell"])} />
+            <FilterSelect label="Sector" value={sector} onChange={setSector} options={SECTORS.map(v => ({ value: v, label: v }))} />
+            <FilterSelect label="RSI" value={rsiZone} onChange={setRsiZone} options={opts(["All"], ["Oversold", "oversold (<30)"], ["Neutral", "30–70"], ["Overbought", "overbought (>70)"])} />
+            <FilterSelect label="MACD" value={macdFilter} onChange={setMacdFilter} options={opts(["All"], ["Bullish", "bullish"], ["Bearish", "bearish"])} />
+            <FilterSelect label="ADX" value={adxFilter} onChange={setAdxFilter} options={opts(["All"], ["Strong", "trending (>25)"], ["Weak", "no trend (≤25)"])} />
+            <FilterSelect label="Trend" value={trendFilter} onChange={setTrendFilter} options={opts(["All"], ["Above SMA50", "above SMA 50"], ["Below SMA50", "below SMA 50"], ["Above SMA200", "above SMA 200"], ["Below SMA200", "below SMA 200"])} />
+            {anyFilterActive && (
+              <button onClick={clearFilters} className="flex h-9 items-center gap-1.5 rounded-md px-3 text-sm text-muted-foreground hover:text-foreground">
+                <X size={14} /> Clear
+              </button>
             )}
-            <button
-              onClick={fetchData}
-              disabled={loading}
-              className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-muted-foreground hover:bg-white/10 hover:text-foreground transition-all disabled:opacity-40"
-            >
-              <RefreshCw size={12} className={cn(loading && "animate-spin")} />
-              {loading ? "Loading…" : "Refresh"}
-            </button>
           </div>
-        </div>
 
-        {/* ── Loading state ── */}
-        {loading && (
-          <div className="rounded-2xl border border-border bg-card p-8 text-center space-y-3">
-            <div className="flex items-center justify-center gap-3">
-              <RefreshCw size={20} className="animate-spin text-primary" />
-              <span className="text-sm font-medium text-foreground">Computing live indicators for all 50 Nifty 50 stocks…</span>
-            </div>
-            <p className="text-xs text-muted-foreground">First load takes ~10 seconds · Results cached for 5 minutes</p>
-            <div className="h-1.5 w-64 mx-auto rounded-full bg-white/10 overflow-hidden">
-              <div className="h-full w-1/2 rounded-full bg-primary animate-pulse" />
-            </div>
-          </div>
-        )}
+          <p className="text-sm text-muted-foreground">
+            <span className="tabular text-foreground">{filtered.length}</span> of {stocks.length} stocks
+            <span className="ml-4 tabular text-up">{buys} buy</span>
+            <span className="ml-3 tabular text-primary">{holds} hold</span>
+            <span className="ml-3 tabular text-down">{sells} sell</span>
+          </p>
 
-        {/* ── Error ── */}
-        {!loading && error && (
-          <div className="rounded-2xl border border-destructive/20 bg-destructive/5 p-6 flex items-start gap-3">
-            <AlertCircle size={18} className="text-destructive shrink-0 mt-0.5" />
-            <div>
-              <p className="text-sm font-medium text-destructive">Failed to load screener data</p>
-              <p className="text-xs text-muted-foreground mt-1">{error}</p>
-              <button onClick={fetchData} className="mt-2 text-xs text-primary hover:underline">Try again</button>
-            </div>
-          </div>
-        )}
-
-        {!loading && !error && (
-          <>
-            {/* ── Filters ── */}
-            <div className="rounded-2xl border border-border bg-card p-4 space-y-4">
-              {/* Search + clear */}
-              <div className="flex items-center gap-3">
-                <div className="relative flex-1 max-w-xs">
-                  <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-                  <input
-                    type="text"
-                    value={search}
-                    onChange={e => setSearch(e.target.value)}
-                    placeholder="Search symbol or name…"
-                    className="w-full rounded-lg border border-white/10 bg-white/5 pl-8 pr-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary/50 focus:outline-none focus:ring-1 focus:ring-primary/30"
-                  />
-                </div>
-                {anyFilterActive && (
-                  <button
-                    onClick={clearFilters}
-                    className="flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-muted-foreground hover:text-destructive hover:border-destructive/20 transition-all"
-                  >
-                    <X size={12} />
-                    Clear filters
-                  </button>
-                )}
-              </div>
-
-              {/* Filter rows */}
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-medium text-muted-foreground w-16 shrink-0">Signal</span>
-                  {["All", "BUY", "HOLD", "SELL"].map(v => (
-                    <FilterChip key={v} label={v} active={signal === v} onClick={() => setSignal(v)} />
-                  ))}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-medium text-muted-foreground w-16 shrink-0">RSI</span>
-                  {["All", "Oversold", "Neutral", "Overbought"].map(v => (
-                    <FilterChip key={v} label={v} active={rsiZone === v} onClick={() => setRsiZone(v)} />
-                  ))}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-medium text-muted-foreground w-16 shrink-0">MACD</span>
-                  {["All", "Bullish", "Bearish"].map(v => (
-                    <FilterChip key={v} label={v} active={macdFilter === v} onClick={() => setMacdFilter(v)} />
-                  ))}
-                  <span className="text-xs font-medium text-muted-foreground ml-4 shrink-0">ADX</span>
-                  {["All", "Strong (>25)", "Weak (≤25)"].map(v => (
-                    <FilterChip key={v} label={v} active={adxFilter === v}
-                      onClick={() => setAdxFilter(v === "Strong (>25)" ? "Strong" : v === "Weak (≤25)" ? "Weak" : "All")} />
-                  ))}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-medium text-muted-foreground w-16 shrink-0">Trend</span>
-                  {["All", "Above SMA50", "Below SMA50", "Above SMA200", "Below SMA200"].map(v => (
-                    <FilterChip key={v} label={v} active={trendFilter === v} onClick={() => setTrendFilter(v)} />
-                  ))}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-medium text-muted-foreground w-16 shrink-0">Sector</span>
-                  <div className="flex flex-wrap gap-2">
-                    {SECTORS.map(v => (
-                      <FilterChip key={v} label={v} active={sector === v} onClick={() => setSector(v)} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* ── Summary bar ── */}
-            <div className="flex flex-wrap items-center gap-4">
-              <span className="text-sm text-muted-foreground">
-                Showing <span className="font-semibold text-foreground">{filtered.length}</span> of {stocks.length} stocks
-              </span>
-              <div className="flex items-center gap-3">
-                <div className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                  <span className="text-xs font-medium text-emerald-400">{buys} BUY</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-amber-500" />
-                  <span className="text-xs font-medium text-amber-400">{holds} HOLD</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-red-500" />
-                  <span className="text-xs font-medium text-red-400">{sells} SELL</span>
-                </div>
-              </div>
-            </div>
-
-            {/* ── Table (desktop) ── */}
-            {filtered.length === 0 ? (
-              <div className="rounded-2xl border border-border bg-card p-10 text-center">
-                <p className="text-sm font-medium text-foreground">No stocks match your filters</p>
-                <button onClick={clearFilters} className="mt-2 text-xs text-primary hover:underline">Clear all filters</button>
-              </div>
-            ) : (
-              <>
-                {/* Desktop table */}
-                <div className="hidden md:block rounded-2xl border border-border bg-card overflow-hidden">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead className="border-b border-border bg-white/[0.02]">
-                        <tr>
-                          <th className="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground w-8">#</th>
-                          <th className="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground min-w-[160px]">Stock</th>
-                          <th className="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">Sector</th>
-                          <ThCol col="price"         label="Price"    />
-                          <ThCol col="change_pct"    label="Change"   />
-                          <th className="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">Signal</th>
-                          <ThCol col="overall_score" label="Score"    />
-                          <ThCol col="rsi"           label="RSI"      />
-                          <th className="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">MACD</th>
-                          <ThCol col="adx"           label="ADX"      />
-                          <ThCol col="vs_sma50"      label="vs SMA50" />
-                          <ThCol col="vs_sma200"     label="vs SMA200"/>
+          {filtered.length === 0 ? (
+            <Panel>
+              <EmptyState title="No stocks match these filters" action={<button onClick={clearFilters} className="text-sm font-medium text-primary hover:underline">Clear all filters</button>} />
+            </Panel>
+          ) : (
+            <>
+              {/* Desktop table */}
+              <Panel className="hidden md:block">
+                <div className="overflow-x-auto custom-scrollbar">
+                  <table className="w-full text-sm">
+                    <thead className="border-b border-line">
+                      <tr>
+                        <th scope="col" className="px-3 py-2.5 pl-5 text-left text-xs font-medium text-muted-foreground">Stock</th>
+                        <ThCol col="price" label="Price" />
+                        <ThCol col="change_pct" label="Change" />
+                        <th scope="col" className="px-3 py-2.5 text-left text-xs font-medium text-muted-foreground">Signal</th>
+                        <ThCol col="overall_score" label="Score" className="text-left [&>button]:ml-0" />
+                        <ThCol col="rsi" label="RSI" />
+                        <th scope="col" className="px-3 py-2.5 text-right text-xs font-medium text-muted-foreground">MACD</th>
+                        <ThCol col="adx" label="ADX" />
+                        <ThCol col="vs_sma50" label="vs SMA 50" />
+                        <ThCol col="vs_sma200" label="vs SMA 200" className="pr-5" />
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-line">
+                      {filtered.map(stock => (
+                        <tr key={stock.symbol} className="group hover:bg-surface-2/50">
+                          <td className="px-3 py-2.5 pl-5">
+                            <Link href={`/stock/${encodeURIComponent(stock.symbol)}`} className="block">
+                              <span className="block font-medium text-foreground group-hover:text-primary">{stock.symbol}</span>
+                              <span className="block max-w-[180px] truncate text-xs text-muted-foreground">{stock.name}</span>
+                            </Link>
+                          </td>
+                          <td className="whitespace-nowrap px-3 py-2.5 text-right tabular text-foreground">
+                            ₹{stock.price.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                          </td>
+                          <td className={cn("whitespace-nowrap px-3 py-2.5 text-right tabular", stock.is_positive ? "text-up" : "text-down")}>
+                            {stock.is_positive ? "+" : ""}{stock.change_pct.toFixed(2)}%
+                          </td>
+                          <td className="px-3 py-2.5"><SignalBadge signal={stock.signal} /></td>
+                          <td className="px-3 py-2.5"><ScoreBar score={stock.overall_score} size="sm" /></td>
+                          <td className="px-3 py-2.5 text-right"><RsiPill rsi={stock.rsi} /></td>
+                          <td className={cn("px-3 py-2.5 text-right", stock.macd_bullish ? "text-up" : "text-down")}>{stock.macd_bullish ? "Bullish" : "Bearish"}</td>
+                          <td className={cn("px-3 py-2.5 text-right tabular", stock.adx != null && stock.adx > 25 ? "text-foreground" : "text-muted-foreground")}>
+                            {stock.adx != null ? stock.adx.toFixed(1) : "—"}
+                          </td>
+                          <td className="px-3 py-2.5 text-right"><SmaCell pct={stock.vs_sma50} /></td>
+                          <td className="px-3 py-2.5 pr-5 text-right"><SmaCell pct={stock.vs_sma200} /></td>
                         </tr>
-                      </thead>
-                      <tbody className="divide-y divide-border">
-                        {filtered.map((stock, i) => (
-                          <tr
-                            key={stock.symbol}
-                            onClick={() => router.push(`/stock/${stock.symbol}`)}
-                            className="cursor-pointer transition-colors hover:bg-white/[0.03] group"
-                          >
-                            <td className="px-3 py-3 text-xs text-muted-foreground font-mono">{i + 1}</td>
-                            <td className="px-3 py-3">
-                              <div className="flex flex-col">
-                                <span className="font-semibold text-foreground group-hover:text-primary transition-colors">{stock.symbol}</span>
-                                <span className="text-xs text-muted-foreground truncate max-w-[150px]">{stock.name}</span>
-                              </div>
-                            </td>
-                            <td className="px-3 py-3">
-                              <span className="text-xs text-muted-foreground whitespace-nowrap">{stock.sector}</span>
-                            </td>
-                            <td className="px-3 py-3 font-medium text-foreground tabular-nums whitespace-nowrap">
-                              ₹{stock.price.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                            </td>
-                            <td className="px-3 py-3">
-                              <span className={cn(
-                                "flex items-center gap-1 text-sm font-medium tabular-nums whitespace-nowrap",
-                                stock.is_positive ? "text-emerald-400" : "text-red-400"
-                              )}>
-                                {stock.is_positive ? <TrendingUp size={13} /> : <TrendingDown size={13} />}
-                                {stock.is_positive ? "+" : ""}{stock.change_pct.toFixed(2)}%
-                              </span>
-                            </td>
-                            <td className="px-3 py-3">
-                              <SignalBadge signal={stock.signal} />
-                            </td>
-                            <td className="px-3 py-3">
-                              <ScoreBar score={stock.overall_score} size="sm" />
-                            </td>
-                            <td className="px-3 py-3">
-                              <RsiPill rsi={stock.rsi} />
-                            </td>
-                            <td className="px-3 py-3">
-                              <span className={cn(
-                                "inline-flex items-center gap-1 rounded px-1.5 py-0.5 text-xs font-medium",
-                                stock.macd_bullish
-                                  ? "bg-emerald-500/10 text-emerald-400"
-                                  : "bg-red-500/10 text-red-400"
-                              )}>
-                                {stock.macd_bullish ? <TrendingUp size={10} /> : <TrendingDown size={10} />}
-                                {stock.macd_bullish ? "Bull" : "Bear"}
-                              </span>
-                            </td>
-                            <td className="px-3 py-3">
-                              {stock.adx != null
-                                ? <span className={cn("text-sm font-medium tabular-nums", stock.adx > 25 ? "text-foreground" : "text-muted-foreground")}>
-                                    {stock.adx.toFixed(1)}
-                                    {stock.adx > 25 && <span className="ml-1 text-[10px] text-primary">↑</span>}
-                                  </span>
-                                : <span className="text-muted-foreground text-xs">—</span>
-                              }
-                            </td>
-                            <td className="px-3 py-3"><SmaCell pct={stock.vs_sma50} /></td>
-                            <td className="px-3 py-3"><SmaCell pct={stock.vs_sma200} /></td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
+              </Panel>
 
-                {/* Mobile card list */}
-                <div className="md:hidden space-y-3">
-                  {filtered.map((stock, i) => (
-                    <div
-                      key={stock.symbol}
-                      onClick={() => router.push(`/stock/${stock.symbol}`)}
-                      className="rounded-2xl border border-border bg-card p-4 cursor-pointer hover:border-primary/30 transition-all"
-                    >
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="flex items-center gap-3">
-                          <span className="text-xs text-muted-foreground font-mono w-5 shrink-0">{i + 1}</span>
-                          <div>
+              {/* Mobile list */}
+              <Panel className="md:hidden">
+                <ul className="divide-y divide-line">
+                  {filtered.map(stock => (
+                    <li key={stock.symbol}>
+                      <Link href={`/stock/${encodeURIComponent(stock.symbol)}`} className="block px-4 py-3">
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0">
                             <div className="flex items-center gap-2">
-                              <span className="font-semibold text-foreground">{stock.symbol}</span>
+                              <span className="font-medium text-foreground">{stock.symbol}</span>
                               <SignalBadge signal={stock.signal} />
                             </div>
-                            <span className="text-xs text-muted-foreground">{stock.name}</span>
+                            <span className="block truncate text-xs text-muted-foreground">{stock.name}</span>
+                          </div>
+                          <div className="shrink-0 text-right tabular">
+                            <div className="text-sm text-foreground">₹{stock.price.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+                            <div className={cn("text-xs", stock.is_positive ? "text-up" : "text-down")}>{stock.is_positive ? "+" : ""}{stock.change_pct.toFixed(2)}%</div>
                           </div>
                         </div>
-                        <div className="text-right shrink-0">
-                          <div className="text-sm font-semibold text-foreground tabular-nums">
-                            ₹{stock.price.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                          </div>
-                          <div className={cn("text-xs font-medium", stock.is_positive ? "text-emerald-400" : "text-red-400")}>
-                            {stock.is_positive ? "+" : ""}{stock.change_pct.toFixed(2)}%
-                          </div>
+                        <div className="mt-2 flex gap-4 text-xs text-muted-foreground">
+                          <span>Score <span className="tabular text-foreground">{stock.overall_score}</span></span>
+                          <span>RSI <span className="tabular text-foreground">{stock.rsi?.toFixed(1) ?? "—"}</span></span>
+                          <span>ADX <span className="tabular text-foreground">{stock.adx?.toFixed(1) ?? "—"}</span></span>
+                          <span className={stock.macd_bullish ? "text-up" : "text-down"}>MACD {stock.macd_bullish ? "bullish" : "bearish"}</span>
                         </div>
-                      </div>
-
-                      <div className="mt-3 grid grid-cols-4 gap-2 text-center">
-                        <div>
-                          <div className="text-xs text-muted-foreground mb-0.5">Score</div>
-                          <div className={cn("text-sm font-bold", stock.overall_score >= 60 ? "text-emerald-400" : stock.overall_score >= 40 ? "text-amber-400" : "text-red-400")}>
-                            {stock.overall_score}
-                          </div>
-                        </div>
-                        <div>
-                          <div className="text-xs text-muted-foreground mb-0.5">RSI</div>
-                          <div className={cn("text-sm font-semibold", stock.rsi != null && stock.rsi < 30 ? "text-emerald-400" : stock.rsi != null && stock.rsi > 70 ? "text-red-400" : "text-foreground")}>
-                            {stock.rsi?.toFixed(1) ?? "—"}
-                          </div>
-                        </div>
-                        <div>
-                          <div className="text-xs text-muted-foreground mb-0.5">ADX</div>
-                          <div className="text-sm font-semibold text-foreground">{stock.adx?.toFixed(1) ?? "—"}</div>
-                        </div>
-                        <div>
-                          <div className="text-xs text-muted-foreground mb-0.5">MACD</div>
-                          <div className={cn("text-sm font-semibold", stock.macd_bullish ? "text-emerald-400" : "text-red-400")}>
-                            {stock.macd_bullish ? "Bull" : "Bear"}
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="mt-2 flex items-center justify-between text-xs text-muted-foreground">
-                        <span>{stock.sector}</span>
-                        <div className="flex items-center gap-3">
-                          <span>SMA50: <SmaCell pct={stock.vs_sma50} /></span>
-                          <span>SMA200: <SmaCell pct={stock.vs_sma200} /></span>
-                        </div>
-                      </div>
-                    </div>
+                      </Link>
+                    </li>
                   ))}
-                </div>
-              </>
-            )}
-          </>
-        )}
-      </div>
+                </ul>
+              </Panel>
+            </>
+          )}
+        </div>
+      )}
     </DashboardShell>
   )
 }

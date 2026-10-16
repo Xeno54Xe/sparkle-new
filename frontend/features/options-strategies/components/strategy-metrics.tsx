@@ -19,7 +19,7 @@ type StrategyMetricsProps = {
 function toneClass(tone: MetricTone) {
   if (tone === "good") return "text-primary"
   if (tone === "bad") return "text-destructive"
-  if (tone === "warn") return "text-amber-300"
+  if (tone === "warn") return "text-primary"
   return "text-foreground"
 }
 
@@ -64,7 +64,7 @@ export function StrategyMetricsCards({ metrics, blocked, rewardToRisk, capitalAt
     <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {items.map((item) => (
         <div key={item.label} className="rounded-xl border border-border bg-card p-4">
-          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">{item.label}</p>
+          <p className="text-xs font-medium text-muted-foreground">{item.label}</p>
           <p className={`mt-2 text-base font-semibold ${toneClass(item.tone)}`}>{item.value}</p>
         </div>
       ))}
