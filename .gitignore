@@ -10,4 +10,5 @@ backend/node_modules/
 # Ignore build folders
 frontend/.next/
 frontend/out/
-backend/dist/
+backend/dist/__pycache__/
+*.tsbuildinfo

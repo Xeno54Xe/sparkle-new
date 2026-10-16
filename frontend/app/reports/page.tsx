@@ -4,7 +4,8 @@ import { useState, useEffect } from "react"
 import { DashboardShell } from "@/components/dashboard/dashboard-shell"
 import { FileText, Download, Eye, Loader2 } from "lucide-react"
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+import { API_BASE } from "@/lib/api"
+const API = API_BASE
 
 interface Report {
   company_name: string

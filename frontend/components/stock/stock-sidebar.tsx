@@ -43,7 +43,7 @@ export function StockSidebar() {
         <div className="border-b border-white/5 px-4 py-6">
           <div className="flex items-center gap-3">
             <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-gradient-to-br from-primary/30 to-primary/10 border border-primary/20 shadow-[0_0_15px_rgba(16,185,129,0.15)] flex items-center justify-center">
-              <StockLogo symbol={symbol} fallbackClassName="text-lg text-primary" />
+              <StockLogo symbol={symbol} size={48} className="rounded-xl" fallbackClassName="text-lg text-primary" />
             </div>
             <div className="min-w-0">
               <h2 className="text-xl font-bold text-foreground tracking-tight">{symbol}</h2>

@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react"
 import type { Stock } from "@/lib/stocks"
 
+import { API_BASE } from "@/lib/api"
 interface KeyMetricsProps {
   stock: Stock
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
 
 function formatNum(num: number | null | undefined): string {
   if (!num || num === 0) return "N/A"

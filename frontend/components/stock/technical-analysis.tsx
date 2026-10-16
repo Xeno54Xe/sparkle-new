@@ -4,8 +4,9 @@ import { useState, useEffect } from "react"
 import { Zap, AlertTriangle, Loader2 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
+import { API_BASE } from "@/lib/api"
 interface TechnicalAnalysisProps { symbol: string }
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+const API = API_BASE
 
 function calcVerdict(d: any) {
   const p = d.price || 0
@@ -19,14 +20,13 @@ function calcVerdict(d: any) {
   const csc = cv.filter((x: any) => x.status === "Bullish").length / (cv.length || 1)
   const pscore = ((cb + csc) / 2) * 100
   const ov = Math.round(ts*0.25 + ms*0.25 + os*0.2 + vs*0.15 + pscore*0.15)
-  const buys = [p>d.SMA50, p>d.SMA200, p>d.EMA20, p>d.VWAP, d.MACD>d.MACDSignal, d.ROC>0].filter(Boolean).length
+  const buys = [p>d.SMA50, p>d.SMA200, p>d.EMA20, p>d.VWAP, d.MACD>d.MACDSignal, d.ROC>0, d.RSI<30, d.stochK<20, d.CCI<-100, d.WilliamsR<-80, d.MFI<20].filter(Boolean).length
   const sells = [p<d.SMA50, p<d.SMA200, p<d.EMA20, p<d.VWAP, d.MACD<d.MACDSignal, d.ROC<0, d.RSI>70, d.stochK>80, d.CCI>100, d.WilliamsR>-20, d.MFI>80].filter(Boolean).length
   return { ov, ts: Math.round(ts), ms: Math.round(ms), os: Math.round(os), vs: Math.round(vs), ps: Math.round(pscore), buys, sells, n: 11-buys-sells, sig: ov>=60?"BUY":ov<=40?"SELL":"HOLD" }
 }
 
 const sc = (t: string) => t==="BUY"||t==="STRONG"||t==="bullish"?"#34D399":t==="SELL"||t==="bearish"?"#F87171":"#FBBF24"
 const sbb = (t: string) => sc(t)+"15"
-const bc = (s: number) => s<35?"#EF4444":s<55?"#FBBF24":"#34D399"
 
 export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
   const [subTab, setSubTab] = useState<"overview"|"indicators"|"events">("overview")

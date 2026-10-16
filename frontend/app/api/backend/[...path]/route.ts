@@ -5,7 +5,7 @@ export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
 
 const BACKEND_API_URL = process.env.BACKEND_API_URL || "http://localhost:8000"
-const PROXY_TIMEOUT_MS = 4500
+const PROXY_TIMEOUT_MS = 20000
 
 type Stock = typeof nifty50Stocks[number]
 type SignalName = "BUY" | "SELL" | "HOLD"

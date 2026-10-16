@@ -15,9 +15,11 @@ export async function middleware(request: NextRequest) {
     localAuthAvailable &&
     request.cookies.get("sparkle-local-auth")?.value === "1"
 
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  const supabase = supabaseUrl && supabaseKey ? createServerClient(
+    supabaseUrl,
+    supabaseKey,
     {
       cookies: {
         getAll() {
@@ -32,10 +34,10 @@ export async function middleware(request: NextRequest) {
         },
       },
     }
-  )
+  ) : null
 
   let user: unknown = null
-  if (!localAuthAvailable) {
+  if (!localAuthAvailable && supabase) {
     try {
       const { data } = await supabase.auth.getUser()
       user = data.user
@@ -49,6 +51,7 @@ export async function middleware(request: NextRequest) {
   const isPublic =
     publicPaths.includes(pathname) ||
     pathname.startsWith("/api/backend") ||
+    pathname.startsWith("/api/logo") ||
     pathname.startsWith("/api/options-strategies")
 
   // Authenticated users visiting login/signup → send to dashboard

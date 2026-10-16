@@ -6,7 +6,8 @@ import { DashboardShell } from "@/components/dashboard/dashboard-shell"
 import { LayoutGrid, RefreshCw, TrendingUp, TrendingDown, Minus, AlertCircle, Loader2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+import { API_BASE } from "@/lib/api"
+const API = API_BASE
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 interface StockTile {
@@ -212,7 +213,8 @@ export default function HeatmapPage() {
   const [sortBy, setSortBy]         = useState<"sector" | "gainers" | "losers">("sector")
 
   const fetchData = useCallback(async (isRefresh = false) => {
-    isRefresh ? setRefreshing(true) : setLoading(true)
+    if (isRefresh) setRefreshing(true)
+    else setLoading(true)
     setError("")
     try {
       const res = await fetch(`${API}/market/heatmap`, { cache: "no-store" })
@@ -239,7 +241,7 @@ export default function HeatmapPage() {
       grouped[s.sector].push(s)
     })
 
-    let sortedStocks = [...stocks]
+    const sortedStocks = [...stocks]
     if (sortBy === "gainers") sortedStocks.sort((a, b) => b.change_pct - a.change_pct)
     if (sortBy === "losers")  sortedStocks.sort((a, b) => a.change_pct - b.change_pct)
 

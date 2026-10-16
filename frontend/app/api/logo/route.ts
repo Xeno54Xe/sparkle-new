@@ -9,9 +9,10 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Server-side fetch bypasses client-side AdBlockers (like uBlock Origin or Brave Shields)
-    // enabling us to reliably fetch crisp, high-resolution Clearbit logos
-    const response = await fetch(`https://logo.clearbit.com/${domain}?size=128`, {
+    // Server-side fetch bypasses client-side AdBlockers (like uBlock Origin or Brave Shields).
+    // Clearbit's free logo API was shut down, so use Google's favicon service instead;
+    // it answers 404 for unknown domains, which lets the client fall back to initials.
+    const response = await fetch(`https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`, {
       headers: {
         'Accept': 'image/*',
         'User-Agent': 'SparkleAI-Logo-Proxy/1.0',

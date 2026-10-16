@@ -22,7 +22,7 @@ export const nifty50Stocks = [
   { symbol: "NTPC", name: "NTPC Limited", price: 345.80, change: 2.45, sector: "Power" },
   { symbol: "POWERGRID", name: "Power Grid Corp", price: 267.90, change: 1.23, sector: "Power" },
   { symbol: "M&M", name: "Mahindra & Mahindra", price: 1567.80, change: 0.45, sector: "Automobile" },
-  { symbol: "TATAMOTORS", name: "Tata Motors", price: 678.90, change: -2.34, sector: "Automobile" },
+  { symbol: "TMPV", name: "Tata Motors Passenger Vehicles", price: 678.90, change: -2.34, sector: "Automobile" },
   { symbol: "JSWSTEEL", name: "JSW Steel", price: 789.45, change: 1.89, sector: "Metals" },
   { symbol: "TATASTEEL", name: "Tata Steel", price: 134.56, change: -0.78, sector: "Metals" },
   { symbol: "ADANIENT", name: "Adani Enterprises", price: 2345.70, change: 3.45, sector: "Conglomerate" },
@@ -46,7 +46,9 @@ export const nifty50Stocks = [
   { symbol: "BRITANNIA", name: "Britannia Industries", price: 4890.60, change: 0.78, sector: "FMCG" },
   { symbol: "NESTLEIND", name: "Nestle India", price: 23456.70, change: 1.12, sector: "FMCG" },
   { symbol: "TATACONSUM", name: "Tata Consumer Products", price: 1023.45, change: -0.56, sector: "FMCG" },
-  { symbol: "LTI", name: "LTIMindtree", price: 5234.80, change: 2.67, sector: "IT" },
+  { symbol: "LTM", name: "LTIMindtree", price: 5234.80, change: 2.67, sector: "IT" },
+  { symbol: "ASIANPAINT", name: "Asian Paints", price: 2876.40, change: 0.42, sector: "Consumer Goods" },
+  { symbol: "SHRIRAMFIN", name: "Shriram Finance", price: 612.35, change: 1.08, sector: "Finance" },
 ]
 
 export type Stock = typeof nifty50Stocks[number]

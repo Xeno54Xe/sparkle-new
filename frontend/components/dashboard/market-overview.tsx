@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { TrendingUp, TrendingDown, RefreshCw } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+import { API_BASE } from "@/lib/api"
 interface IndexData {
   symbol: string
   name: string
@@ -13,7 +14,7 @@ interface IndexData {
   is_positive: boolean
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"
+const API_URL = API_BASE
 
 function formatValue(v: number) {
   return v.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })

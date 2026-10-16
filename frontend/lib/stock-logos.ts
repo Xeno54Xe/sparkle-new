@@ -1,5 +1,5 @@
 // Stock symbol → company logo URL mapping
-// Uses Clearbit Logo API (free, no key needed): https://logo.clearbit.com/:domain
+// Served through the /api/logo proxy (Google favicon service)
 // Falls back to first-letter avatar if logo fails to load
 
 const LOGO_DOMAINS: Record<string, string> = {
@@ -27,7 +27,7 @@ const LOGO_DOMAINS: Record<string, string> = {
   NTPC: "ntpc.co.in",
   POWERGRID: "powergrid.in",
   "M&M": "mahindra.com",
-  TATAMOTORS: "tatamotors.com",
+  TMPV: "tatamotors.com",
   JSWSTEEL: "jsw.in",
   TATASTEEL: "tatasteel.com",
   ADANIENT: "adani.com",
@@ -51,14 +51,15 @@ const LOGO_DOMAINS: Record<string, string> = {
   BRITANNIA: "britannia.co.in",
   NESTLEIND: "nestle.in",
   TATACONSUM: "tataconsumer.com",
-  LTIM: "ltimindtree.com",
+  LTM: "ltimindtree.com",
   UPL: "upl-ltd.com",
+  SHRIRAMFIN: "shriramfinance.in",
 }
 
 export function getStockLogoUrl(symbol: string): string {
   const domain = LOGO_DOMAINS[symbol]
   if (domain) {
-    return `https://logo.clearbit.com/${domain}`
+    return `/api/logo?domain=${encodeURIComponent(domain)}`
   }
   return ""
 }

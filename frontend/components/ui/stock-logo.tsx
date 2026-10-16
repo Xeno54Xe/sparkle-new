@@ -1,17 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import { getStockLogoUrl, hasLogo } from "@/lib/stock-logos"
+import { getStockLogoUrl } from "@/lib/stock-logos"
 import { cn } from "@/lib/utils"
 
 interface StockLogoProps {
   symbol: string
   size?: number
   className?: string
+  /** Extra classes for the text initials shown when no logo is available */
+  fallbackClassName?: string
   isPositive?: boolean
 }
 
-export function StockLogo({ symbol, size = 40, className, isPositive = true }: StockLogoProps) {
+export function StockLogo({ symbol, size = 40, className, fallbackClassName, isPositive = true }: StockLogoProps) {
   const [imgError, setImgError] = useState(false)
   const logoUrl = getStockLogoUrl(symbol)
   const showImg = logoUrl && !imgError
@@ -37,7 +39,7 @@ export function StockLogo({ symbol, size = 40, className, isPositive = true }: S
           style={{ width: size - 8, height: size - 8 }}
         />
       ) : (
-        <span className="font-bold" style={{ fontSize: size * 0.3 }}>
+        <span className={cn("font-bold", fallbackClassName)} style={{ fontSize: size * 0.3 }}>
           {symbol.slice(0, 2)}
         </span>
       )}

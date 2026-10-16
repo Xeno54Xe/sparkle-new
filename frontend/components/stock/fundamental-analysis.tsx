@@ -2,17 +2,18 @@
 
 import { useState, useEffect } from "react"
 import {
-  Target, Brain, Leaf, Users, FileText, AlertTriangle,
+  Target, Brain, Leaf, FileText, AlertTriangle,
   TrendingUp, Lightbulb, Shield, Eye, MessageSquare, Loader2,
   BarChart2,
 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
+import { API_BASE } from "@/lib/api"
 interface FundamentalAnalysisProps {
   symbol: string
 }
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+const API = API_BASE
 
 // Stock symbol → company folder name (must match outputs/ directory names exactly)
 const MAP: Record<string, string> = {
@@ -48,7 +49,7 @@ const MAP: Record<string, string> = {
   JSWSTEEL:    "JSW Steel",
   JIOFIN:      "Jio Financial Services",
   KOTAKBANK:   "Kotak Mahindra Bank",
-  LTIM:        "LTIMindtree",
+  LTM:         "LTIMindtree",
   LT:          "Larsen & Toubro",
   "M&M":       "Mahindra & Mahindra",
   MARUTI:      "Maruti Suzuki India",
@@ -64,7 +65,7 @@ const MAP: Record<string, string> = {
   SUNPHARMA:   "Sun Pharmaceutical Industries",
   TCS:         "TCS",
   TATACONSUM:  "Tata Consumer Products",
-  TATAMOTORS:  "Tata Motors Passenger Vehicles",
+  TMPV:        "Tata Motors Passenger Vehicles",
   TATASTEEL:   "Tata Steel",
   TECHM:       "Tech Mahindra",
   TITAN:       "Titan Company",
@@ -186,7 +187,6 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
   const avgScore = sectionEntries.length > 0
     ? Math.round(sectionEntries.reduce((sum, [, sec]) => sum + (sec.score ?? 0), 0) / sectionEntries.length)
     : 0
-  const docType = data?.doc_type || activeCategory.toLowerCase()
   const categoryLabel = activeCategory === "EC" ? "Earnings Call" : "Annual Report"
 
   return (

@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { StockLogo } from "@/components/ui/stock-logo"
 import Link from "next/link"
 
+import { API_BASE } from "@/lib/api"
 interface ActiveStock {
   rank: number
   symbol: string
@@ -16,7 +17,7 @@ interface ActiveStock {
   volume_fmt: string
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"
+const API_URL = API_BASE
 
 export function MostActive() {
   const [stocks, setStocks] = useState<ActiveStock[]>([])

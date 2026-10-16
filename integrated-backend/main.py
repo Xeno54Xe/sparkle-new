@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
-from stock_service import get_stock_history, get_stock_price
+from stock_service import get_stock_history, get_stock_price, NoDataError
 from technical_service import get_indicators, get_candlestick_pattern, get_crossovers
 from signal_service import generate_signal
 from financial_service import get_stock_info, get_financials, get_estimates
@@ -11,20 +12,29 @@ from typing import Optional
 import json
 import math
 import os
+import re
 import time
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
 import yfinance as yf
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timezone
 
 app = FastAPI(title="SparkleAI Investment Backend", version="4.0")
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.exception_handler(NoDataError)
+async def no_data_handler(_request: Request, exc: NoDataError):
+    return JSONResponse(status_code=404, content={"error": str(exc)})
+
 
 EARNINGS_OUTPUTS = os.path.join(os.path.dirname(__file__), "outputs")
 if os.path.exists(EARNINGS_OUTPUTS):
@@ -36,18 +46,15 @@ def find_company_folder(company: str) -> Optional[str]:
     if not os.path.isdir(EARNINGS_OUTPUTS):
         return None
     needle = company.lower().replace("_", " ").strip()
-    exact = None
     partial = None
-    for entry in os.listdir(EARNINGS_OUTPUTS):
+    for entry in sorted(os.listdir(EARNINGS_OUTPUTS)):
         if not os.path.isdir(os.path.join(EARNINGS_OUTPUTS, entry)):
             continue
         entry_lower = entry.lower()
         if entry_lower == needle:
             return entry          # exact match wins immediately
-        if needle in entry_lower and exact is None:
+        if partial is None and (needle in entry_lower or entry_lower in needle):
             partial = entry
-        elif entry_lower in needle and exact is None:
-            partial = partial or entry
     return partial
 
 
@@ -72,7 +79,7 @@ HEATMAP_TICKERS = {
     "MARUTI": "MARUTI.NS", "HCLTECH": "HCLTECH.NS", "SUNPHARMA": "SUNPHARMA.NS",
     "TITAN": "TITAN.NS", "BAJFINANCE": "BAJFINANCE.NS", "WIPRO": "WIPRO.NS",
     "ULTRACEMCO": "ULTRACEMCO.NS", "ONGC": "ONGC.NS", "NTPC": "NTPC.NS",
-    "POWERGRID": "POWERGRID.NS", "M&M": "M&M.NS", "TATAMOTORS": "TATAMOTORS.NS",
+    "POWERGRID": "POWERGRID.NS", "M&M": "M&M.NS", "TMPV": "TMPV.NS",
     "JSWSTEEL": "JSWSTEEL.NS", "TATASTEEL": "TATASTEEL.NS", "ADANIENT": "ADANIENT.NS",
     "ADANIPORTS": "ADANIPORTS.NS", "COALINDIA": "COALINDIA.NS", "BPCL": "BPCL.NS",
     "GRASIM": "GRASIM.NS", "DRREDDY": "DRREDDY.NS", "CIPLA": "CIPLA.NS",
@@ -80,7 +87,7 @@ HEATMAP_TICKERS = {
     "BAJAJ-AUTO": "BAJAJ-AUTO.NS", "HEROMOTOCO": "HEROMOTOCO.NS", "TECHM": "TECHM.NS",
     "HINDALCO": "HINDALCO.NS", "INDUSINDBK": "INDUSINDBK.NS", "SBILIFE": "SBILIFE.NS",
     "HDFCLIFE": "HDFCLIFE.NS", "DIVISLAB": "DIVISLAB.NS", "BRITANNIA": "BRITANNIA.NS",
-    "NESTLEIND": "NESTLEIND.NS", "TATACONSUM": "TATACONSUM.NS", "LTI": "LTIM.NS",
+    "NESTLEIND": "NESTLEIND.NS", "TATACONSUM": "TATACONSUM.NS", "LTM": "LTM.NS",
     "ASIANPAINT": "ASIANPAINT.NS", "SHRIRAMFIN": "SHRIRAMFIN.NS",
 }
 
@@ -93,7 +100,7 @@ HEATMAP_NAMES = {
     "HCLTECH": "HCL Technologies", "SUNPHARMA": "Sun Pharmaceutical", "TITAN": "Titan Company",
     "BAJFINANCE": "Bajaj Finance", "WIPRO": "Wipro", "ULTRACEMCO": "UltraTech Cement",
     "ONGC": "Oil & Natural Gas Corp", "NTPC": "NTPC Limited", "POWERGRID": "Power Grid Corp",
-    "M&M": "Mahindra & Mahindra", "TATAMOTORS": "Tata Motors", "JSWSTEEL": "JSW Steel",
+    "M&M": "Mahindra & Mahindra", "TMPV": "Tata Motors Passenger Vehicles", "JSWSTEEL": "JSW Steel",
     "TATASTEEL": "Tata Steel", "ADANIENT": "Adani Enterprises", "ADANIPORTS": "Adani Ports",
     "COALINDIA": "Coal India", "BPCL": "Bharat Petroleum", "GRASIM": "Grasim Industries",
     "DRREDDY": "Dr. Reddy's Labs", "CIPLA": "Cipla", "APOLLOHOSP": "Apollo Hospitals",
@@ -102,7 +109,7 @@ HEATMAP_NAMES = {
     "INDUSINDBK": "IndusInd Bank", "SBILIFE": "SBI Life Insurance",
     "HDFCLIFE": "HDFC Life Insurance", "DIVISLAB": "Divi's Laboratories",
     "BRITANNIA": "Britannia Industries", "NESTLEIND": "Nestle India",
-    "TATACONSUM": "Tata Consumer Products", "LTI": "LTIMindtree",
+    "TATACONSUM": "Tata Consumer Products", "LTM": "LTIMindtree",
     "ASIANPAINT": "Asian Paints", "SHRIRAMFIN": "Shriram Finance",
 }
 
@@ -113,7 +120,7 @@ HEATMAP_SECTORS = {
     "AXISBANK": "Banking", "MARUTI": "Automobile", "HCLTECH": "IT",
     "SUNPHARMA": "Pharma", "TITAN": "Consumer Goods", "BAJFINANCE": "Finance",
     "WIPRO": "IT", "ULTRACEMCO": "Cement", "ONGC": "Energy", "NTPC": "Power",
-    "POWERGRID": "Power", "M&M": "Automobile", "TATAMOTORS": "Automobile",
+    "POWERGRID": "Power", "M&M": "Automobile", "TMPV": "Automobile",
     "JSWSTEEL": "Metals", "TATASTEEL": "Metals", "ADANIENT": "Conglomerate",
     "ADANIPORTS": "Infrastructure", "COALINDIA": "Mining", "BPCL": "Energy",
     "GRASIM": "Cement", "DRREDDY": "Pharma", "CIPLA": "Pharma",
@@ -121,7 +128,7 @@ HEATMAP_SECTORS = {
     "BAJAJ-AUTO": "Automobile", "HEROMOTOCO": "Automobile", "TECHM": "IT",
     "HINDALCO": "Metals", "INDUSINDBK": "Banking", "SBILIFE": "Insurance",
     "HDFCLIFE": "Insurance", "DIVISLAB": "Pharma", "BRITANNIA": "FMCG",
-    "NESTLEIND": "FMCG", "TATACONSUM": "FMCG", "LTI": "IT",
+    "NESTLEIND": "FMCG", "TATACONSUM": "FMCG", "LTM": "IT",
     "ASIANPAINT": "Consumer Goods", "SHRIRAMFIN": "Finance",
 }
 
@@ -387,14 +394,26 @@ def get_screener():
 
 @app.get("/")
 def home():
-    return {"message": "SparkleAI v4.0", "companies": 50, "total_analyses": 231}
+    companies = 0
+    analyses = 0
+    if os.path.isdir(EARNINGS_OUTPUTS):
+        for company in os.listdir(EARNINGS_OUTPUTS):
+            company_path = os.path.join(EARNINGS_OUTPUTS, company)
+            if not os.path.isdir(company_path):
+                continue
+            companies += 1
+            for cat in ("EC", "AR"):
+                cat_path = os.path.join(company_path, cat)
+                if os.path.isdir(cat_path):
+                    analyses += sum(os.path.isdir(os.path.join(cat_path, p)) for p in os.listdir(cat_path))
+    return {"message": "SparkleAI v4.0", "companies": companies, "total_analyses": analyses}
 
 
 # ═══ TECHNICAL ═══
 
 @app.get("/price/{ticker}")
 def price(ticker: str):
-    return get_stock_price(ticker)
+    return clean_nans(get_stock_price(ticker))
 
 @app.get("/technical/{ticker}")
 def technical_analysis(ticker: str):
@@ -432,6 +451,22 @@ def get_manifest():
             return json.load(f)
     return {"error": "Manifest not found"}
 
+_MONTHS = {m: i for i, m in enumerate(
+    ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"], 1)}
+
+
+def _period_sort_key(period: str):
+    """Chronological key for period folders like 'NOV25' (EC) or 'FY25' (AR)."""
+    p = period.upper()
+    m = re.fullmatch(r"([A-Z]{3})(\d{2})", p)
+    if m and m.group(1) in _MONTHS:
+        return (int(m.group(2)), _MONTHS[m.group(1)])
+    m = re.fullmatch(r"FY(\d{2,4})", p)
+    if m:
+        return (int(m.group(1)[-2:]), 13)
+    return (-1, 0)
+
+
 @app.get("/fundamental/{company}/list")
 def list_company_reports(company: str):
     """Return available Earnings Calls (EC) and Annual Reports (AR) for a company."""
@@ -445,7 +480,8 @@ def list_company_reports(company: str):
             return []
         return sorted(
             [p for p in os.listdir(path) if os.path.isdir(os.path.join(path, p))],
-            reverse=True
+            key=_period_sort_key,
+            reverse=True,
         )
 
     return {
@@ -460,8 +496,7 @@ def get_beginner_analysis(company: str, category: str, period: str):
     category must be EC or AR — guard against the old {quarter_fy} catch-all
     routing here by checking the value."""
     if category.upper() not in ("EC", "AR"):
-        # Delegate to the legacy quarter endpoint logic
-        return _legacy_quarter_analysis(company, category)
+        return {"error": f"Unknown category '{category}' (expected EC or AR)"}
     folder = find_company_folder(company)
     if not folder:
         return {"error": f"Company '{company}' not found"}
@@ -544,7 +579,7 @@ def list_reports():
                 if not os.path.isdir(period_path):
                     continue
                 if os.path.exists(os.path.join(period_path, "report.pdf")):
-                    pdf_url = f"/data/{urllib.request.quote(company)}/{category}/{urllib.request.quote(period)}/report.pdf"
+                    pdf_url = f"/data/{urllib.parse.quote(company)}/{category}/{urllib.parse.quote(period)}/report.pdf"
                     reports.append({
                         "company_name": company,
                         "category": category,
@@ -610,15 +645,15 @@ def get_all_companies():
 
 @app.get("/stock-info/{ticker}")
 def stock_info(ticker: str):
-    return get_stock_info(ticker)
+    return clean_nans(get_stock_info(ticker))
 
 @app.get("/financials/{ticker}")
 def financials(ticker: str):
-    return get_financials(ticker)
+    return clean_nans(get_financials(ticker))
 
 @app.get("/estimates/{ticker}")
 def estimates(ticker: str):
-    return get_estimates(ticker)
+    return clean_nans(get_estimates(ticker))
 
 @app.get("/stock-complete/{ticker}")
 def stock_complete(ticker: str):
@@ -639,15 +674,10 @@ def stock_complete(ticker: str):
         est = get_estimates(ticker)
     except Exception as e:
         est = {"error": str(e)}
-    return {"info": info, "technical": technical, "financials": fin, "estimates": est}
+    return clean_nans({"info": info, "technical": technical, "financials": fin, "estimates": est})
 
 
 # ═══ NEWS ENDPOINT (Google News RSS — category-based) ═══
-
-import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
-import urllib.request
-import re
 
 def parse_time_ago(pub_date_str):
     try:
@@ -662,7 +692,7 @@ def parse_time_ago(pub_date_str):
             return f"{hours} hr ago"
         days = hours // 24
         return f"{days}d ago"
-    except:
+    except Exception:
         return "recently"
 
 def parse_pub_date(pub_date_str):
@@ -670,14 +700,14 @@ def parse_pub_date(pub_date_str):
     try:
         dt = datetime.strptime(pub_date_str.strip(), "%a, %d %b %Y %H:%M:%S %Z")
         return dt.replace(tzinfo=timezone.utc)
-    except:
+    except Exception:
         return None
 
 def fetch_rss(query, category, count=2):
     try:
         # Add 'when:1d' to force results from last 24 hours
         full_query = f"{query} when:1d"
-        url = f"https://news.google.com/rss/search?q={urllib.request.quote(full_query)}&hl=en-IN&gl=IN&ceid=IN:en"
+        url = f"https://news.google.com/rss/search?q={urllib.parse.quote(full_query)}&hl=en-IN&gl=IN&ceid=IN:en"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         response = urllib.request.urlopen(req, timeout=8)
         xml_data = response.read().decode("utf-8")
@@ -719,7 +749,7 @@ def fetch_rss(query, category, count=2):
                 "_dt": dt,
             })
         return articles
-    except:
+    except Exception:
         return []
 
 @app.get("/news")

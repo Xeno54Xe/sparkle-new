@@ -29,7 +29,8 @@ def get_stock_info(ticker):
                 "forward_pe": round(info.get("forwardPE", 0) or 0, 2),
                 "pb_ratio": round(info.get("priceToBook", 0) or 0, 2),
                 "eps": round(info.get("trailingEps", 0) or 0, 2),
-                "dividend_yield": round((info.get("dividendYield", 0) or 0) * 100, 2),
+                # yfinance >= 0.2.54 reports dividendYield already in percent
+                "dividend_yield": round(info.get("dividendYield", 0) or 0, 2),
                 "roe": round((info.get("returnOnEquity", 0) or 0) * 100, 2),
                 "debt_to_equity": round(info.get("debtToEquity", 0) or 0, 2),
                 "current_ratio": round(info.get("currentRatio", 0) or 0, 2),
@@ -95,18 +96,19 @@ def get_estimates(ticker):
     result = {}
 
     try:
-        # Recommendations
+        # Recommendations — yfinance now returns a monthly summary table
+        # (period, strongBuy, buy, hold, sell, strongSell); "0m" is the latest.
         rec = stock.recommendations
-        if rec is not None and not rec.empty:
-            recent = rec.tail(10)
-            recs = []
-            for _, row in recent.iterrows():
-                recs.append({
-                    "firm": row.get("Firm", "Unknown"),
-                    "grade": row.get("To Grade", row.get("toGrade", "")),
-                    "action": row.get("Action", ""),
-                })
-            result["recommendations"] = recs
+        if rec is not None and not rec.empty and "strongBuy" in rec.columns:
+            latest = rec.iloc[0]
+            result["consensus"] = {
+                "period": str(latest.get("period", "0m")),
+                "strong_buy": int(latest.get("strongBuy", 0) or 0),
+                "buy": int(latest.get("buy", 0) or 0),
+                "hold": int(latest.get("hold", 0) or 0),
+                "sell": int(latest.get("sell", 0) or 0),
+                "strong_sell": int(latest.get("strongSell", 0) or 0),
+            }
 
         # Price targets
         try:
@@ -119,7 +121,7 @@ def get_estimates(ticker):
                     "median": targets.get("median", 0),
                     "high": targets.get("high", 0),
                 }
-        except:
+        except Exception:
             pass
 
         # Earnings estimates
@@ -127,7 +129,7 @@ def get_estimates(ticker):
             earnings = stock.earnings_estimate
             if earnings is not None and not earnings.empty:
                 result["earnings_estimate"] = earnings.to_dict()
-        except:
+        except Exception:
             pass
 
     except Exception as e:

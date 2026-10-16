@@ -10,6 +10,7 @@ import {
 import { cn } from "@/lib/utils"
 import { DashboardShell } from "@/components/dashboard/dashboard-shell"
 
+import { API_BASE } from "@/lib/api"
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface ScreenerStock {
@@ -35,7 +36,7 @@ interface ScreenerStock {
 type SortKey = "overall_score" | "change_pct" | "price" | "rsi" | "adx" | "vs_sma50" | "vs_sma200"
 type SortDir = "asc" | "desc"
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"
+const API_URL = API_BASE
 
 const SECTORS = [
   "All", "Banking", "IT", "Energy", "FMCG", "Automobile", "Pharma",

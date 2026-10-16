@@ -5,57 +5,8 @@ import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { Search, Settings } from "lucide-react"
 import { StockLogo } from "@/components/ui/stock-logo"
+import { nifty50Stocks } from "@/lib/stocks"
 
-const nifty50Stocks = [
-  { symbol: "RELIANCE", name: "Reliance Industries", price: 2456.75, change: 1.23 },
-  { symbol: "TCS", name: "Tata Consultancy Services", price: 3892.40, change: -0.45 },
-  { symbol: "HDFCBANK", name: "HDFC Bank", price: 1678.90, change: 0.87 },
-  { symbol: "INFY", name: "Infosys", price: 1534.25, change: -1.12 },
-  { symbol: "ICICIBANK", name: "ICICI Bank", price: 1023.50, change: 2.34 },
-  { symbol: "HINDUNILVR", name: "Hindustan Unilever", price: 2567.80, change: 0.56 },
-  { symbol: "ITC", name: "ITC Limited", price: 456.35, change: 1.78 },
-  { symbol: "SBIN", name: "State Bank of India", price: 634.20, change: -0.23 },
-  { symbol: "BHARTIARTL", name: "Bharti Airtel", price: 1245.60, change: 1.45 },
-  { symbol: "KOTAKBANK", name: "Kotak Mahindra Bank", price: 1789.30, change: -0.67 },
-  { symbol: "LT", name: "Larsen & Toubro", price: 3456.70, change: 0.98 },
-  { symbol: "AXISBANK", name: "Axis Bank", price: 1098.45, change: 1.56 },
-  { symbol: "MARUTI", name: "Maruti Suzuki", price: 10234.50, change: 2.12 },
-  { symbol: "HCLTECH", name: "HCL Technologies", price: 1456.80, change: -0.89 },
-  { symbol: "SUNPHARMA", name: "Sun Pharmaceutical", price: 1123.45, change: 1.34 },
-  { symbol: "TITAN", name: "Titan Company", price: 3234.60, change: 0.78 },
-  { symbol: "BAJFINANCE", name: "Bajaj Finance", price: 6789.25, change: -1.45 },
-  { symbol: "WIPRO", name: "Wipro", price: 456.70, change: 0.23 },
-  { symbol: "ULTRACEMCO", name: "UltraTech Cement", price: 8765.40, change: 1.67 },
-  { symbol: "ONGC", name: "Oil & Natural Gas Corp", price: 234.56, change: -0.56 },
-  { symbol: "NTPC", name: "NTPC Limited", price: 345.80, change: 2.45 },
-  { symbol: "POWERGRID", name: "Power Grid Corp", price: 267.90, change: 1.23 },
-  { symbol: "M&M", name: "Mahindra & Mahindra", price: 1567.80, change: 0.45 },
-  { symbol: "TATAMOTORS", name: "Tata Motors", price: 678.90, change: -2.34 },
-  { symbol: "JSWSTEEL", name: "JSW Steel", price: 789.45, change: 1.89 },
-  { symbol: "TATASTEEL", name: "Tata Steel", price: 134.56, change: -0.78 },
-  { symbol: "ADANIENT", name: "Adani Enterprises", price: 2345.70, change: 3.45 },
-  { symbol: "ADANIPORTS", name: "Adani Ports", price: 1234.50, change: 1.12 },
-  { symbol: "COALINDIA", name: "Coal India", price: 423.80, change: 0.67 },
-  { symbol: "BPCL", name: "Bharat Petroleum", price: 567.90, change: -1.23 },
-  { symbol: "GRASIM", name: "Grasim Industries", price: 2123.45, change: 0.89 },
-  { symbol: "DRREDDY", name: "Dr. Reddy's Labs", price: 5678.90, change: 1.56 },
-  { symbol: "CIPLA", name: "Cipla", price: 1234.70, change: -0.45 },
-  { symbol: "APOLLOHOSP", name: "Apollo Hospitals", price: 5890.30, change: 2.34 },
-  { symbol: "EICHERMOT", name: "Eicher Motors", price: 3456.80, change: 0.12 },
-  { symbol: "BAJAJFINSV", name: "Bajaj Finserv", price: 1567.40, change: -0.89 },
-  { symbol: "BAJAJ-AUTO", name: "Bajaj Auto", price: 8234.50, change: 1.78 },
-  { symbol: "HEROMOTOCO", name: "Hero MotoCorp", price: 4123.60, change: 0.56 },
-  { symbol: "TECHM", name: "Tech Mahindra", price: 1234.90, change: -1.34 },
-  { symbol: "HINDALCO", name: "Hindalco Industries", price: 523.45, change: 2.12 },
-  { symbol: "INDUSINDBK", name: "IndusInd Bank", price: 1456.70, change: -0.67 },
-  { symbol: "SBILIFE", name: "SBI Life Insurance", price: 1345.80, change: 0.34 },
-  { symbol: "HDFCLIFE", name: "HDFC Life Insurance", price: 623.40, change: 1.45 },
-  { symbol: "DIVISLAB", name: "Divi's Laboratories", price: 3567.80, change: -0.23 },
-  { symbol: "BRITANNIA", name: "Britannia Industries", price: 4890.60, change: 0.78 },
-  { symbol: "NESTLEIND", name: "Nestle India", price: 23456.70, change: 1.12 },
-  { symbol: "TATACONSUM", name: "Tata Consumer Products", price: 1023.45, change: -0.56 },
-  { symbol: "LTI", name: "LTIMindtree", price: 5234.80, change: 2.67 },
-]
 
 export function TopBar() {
   const router = useRouter()
@@ -160,7 +111,7 @@ export function TopBar() {
                   }`}
                 >
                   <div className="h-8 w-8 overflow-hidden rounded-full border border-white/10 bg-white/5 flex items-center justify-center shrink-0">
-                    <StockLogo symbol={stock.symbol} fallbackClassName="text-[10px] text-muted-foreground font-bold" />
+                    <StockLogo symbol={stock.symbol} size={32} className="rounded-full" fallbackClassName="text-[10px] text-muted-foreground font-bold" />
                   </div>
                   <div className="flex flex-col">
                     <span className="font-semibold text-foreground tracking-tight">{stock.symbol}</span>
