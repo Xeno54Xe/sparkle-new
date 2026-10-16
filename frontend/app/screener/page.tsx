@@ -8,6 +8,7 @@ import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-she
 import { Panel, EmptyState } from "@/components/ui/panel"
 
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface ScreenerStock {
@@ -277,8 +278,7 @@ export default function ScreenerPage() {
 
       {loading ? (
         <Panel aria-busy="true">
-          <div className="px-5 py-4 text-sm text-muted-foreground">Computing indicators for 50 stocks. The first load takes about 10 seconds.</div>
-          <div className="space-y-2 px-5 pb-5">{Array.from({ length: 8 }, (_, i) => <div key={i} className="h-9 animate-pulse rounded bg-surface-2" />)}</div>
+          <MarketLoader label="indicators for all 50 stocks" />
         </Panel>
       ) : error ? (
         <Panel>

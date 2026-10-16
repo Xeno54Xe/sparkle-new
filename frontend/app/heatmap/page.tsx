@@ -7,6 +7,7 @@ import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-she
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 interface StockTile {
   symbol: string
@@ -164,10 +165,9 @@ export default function HeatmapPage() {
       />
 
       {loading ? (
-        <div className="space-y-4" aria-busy="true">
-          <div className="panel h-16 animate-pulse" />
-          {[0, 1, 2].map(i => <div key={i} className="panel h-36 animate-pulse" />)}
-        </div>
+        <Panel aria-busy="true">
+          <MarketLoader label="the Nifty 50 heatmap" />
+        </Panel>
       ) : error ? (
         <Panel>
           <EmptyState

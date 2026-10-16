@@ -28,10 +28,10 @@ function MarketClock() {
   }, [])
   if (!status) return null
   return (
-    <div className="hidden items-center gap-2 text-sm text-muted-foreground sm:flex" title="NSE cash market, Mon–Fri 09:15–15:30 IST">
+    <div className="hidden items-center gap-2 whitespace-nowrap text-sm text-muted-foreground sm:flex" title="NSE cash market, Mon–Fri 09:15–15:30 IST">
       <span className={cn("h-2 w-2 rounded-full", status.open ? "bg-up" : "bg-faint-foreground")} aria-hidden="true" />
       <span>{status.open ? "NSE open" : "NSE closed"}</span>
-      <span className="tabular text-faint-foreground">{status.time} IST</span>
+      <span className="hidden tabular text-faint-foreground md:inline">{status.time} IST</span>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { RefreshCw } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 interface IndexData {
   symbol: string
@@ -93,8 +94,11 @@ export function MarketOverview() {
           <button onClick={fetchData} className="mt-2 text-sm font-medium text-primary hover:underline">Try again</button>
         </div>
       ) : (
+        loading && indices.length === 0 ? (
+          <MarketLoader variant="compact" label="Nifty 50, Sensex and Bank Nifty" className="min-h-[108px] justify-center" />
+        ) : (
         <div className="grid grid-cols-1 divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-          {(loading && indices.length === 0 ? [null, null, null] : indices).map((index, i) => (
+          {indices.map((index, i) => (
             <div key={index?.name ?? i} className="px-5 py-4">
               {index ? (
                 <>
@@ -105,16 +109,11 @@ export function MarketOverview() {
                     <span className="ml-1.5">({index.is_positive ? "+" : ""}{index.change_pct.toFixed(2)}%)</span>
                   </p>
                 </>
-              ) : (
-                <div className="animate-pulse space-y-2.5">
-                  <div className="h-3.5 w-20 rounded bg-surface-2" />
-                  <div className="h-8 w-36 rounded bg-surface-2" />
-                  <div className="h-3.5 w-28 rounded bg-surface-2" />
-                </div>
-              )}
+              ) : null}
             </div>
           ))}
         </div>
+        )
       )}
 
       {breadth && total > 0 && (

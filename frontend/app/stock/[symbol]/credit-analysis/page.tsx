@@ -2,6 +2,7 @@
 
 import { use, useEffect, useState } from "react"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { MarketLoader } from "@/components/ui/market-loader"
 import { getStockBySymbol } from "@/lib/stocks"
 import { API_BASE } from "@/lib/api"
 import { cn } from "@/lib/utils"
@@ -95,6 +96,10 @@ export default function CreditPage({ params }: { params: Promise<{ symbol: strin
 
   if (failed) {
     return <Panel><EmptyState title="Balance sheet data didn't load">Yahoo Finance returned no statements for {symbol}. Check that the backend is running.</EmptyState></Panel>
+  }
+
+  if (!metrics) {
+    return <Panel aria-busy="true"><MarketLoader label="balance sheet data" /></Panel>
   }
 
   return (

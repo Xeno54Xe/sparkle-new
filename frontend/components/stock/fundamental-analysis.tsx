@@ -10,6 +10,7 @@ import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { cn } from "@/lib/utils"
 
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 interface FundamentalAnalysisProps {
   symbol: string
 }
@@ -172,10 +173,7 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
 
   // ─── Loading / empty states ───────────────────────────────────────────────
   if (loading && !data) return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-12" aria-busy="true">
-      <div className="panel h-72 animate-pulse lg:col-span-4" />
-      <div className="panel h-[420px] animate-pulse lg:col-span-8" />
-    </div>
+    <Panel aria-busy="true"><MarketLoader label="the AI analysis" /></Panel>
   )
 
   const hasAny = reportList.earnings_calls.length > 0 || reportList.annual_reports.length > 0

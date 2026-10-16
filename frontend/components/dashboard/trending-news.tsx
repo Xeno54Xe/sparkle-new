@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react"
 import { RefreshCw } from "lucide-react"
 import { Panel, PanelHeader, PanelAction, EmptyState } from "@/components/ui/panel"
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 import { cn } from "@/lib/utils"
 
 interface NewsItem {
@@ -51,14 +52,7 @@ export function TrendingNews() {
         }
       />
       {loading && news.length === 0 ? (
-        <ul className="divide-y divide-line">
-          {[0, 1, 2, 3, 4].map(i => (
-            <li key={i} className="animate-pulse space-y-2 px-5 py-4">
-              <div className="h-3.5 w-11/12 rounded bg-surface-2" />
-              <div className="h-3 w-40 rounded bg-surface-2" />
-            </li>
-          ))}
-        </ul>
+        <MarketLoader label="today's market headlines" />
       ) : news.length === 0 ? (
         <EmptyState title="No recent headlines">The news feed returned nothing for the last 48 hours. Try refreshing in a few minutes.</EmptyState>
       ) : (

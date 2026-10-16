@@ -3,6 +3,7 @@ import { use, useEffect, useState } from "react"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 interface Props { params: Promise<{ symbol: string }> }
 type Statement = Record<string, Record<string, number>>
@@ -103,7 +104,7 @@ export default function FinancialsPage({ params }: Props) {
         }
       />
       {loading ? (
-        <div className="space-y-3 p-5">{[0, 1, 2, 3].map(i => <div key={i} className="h-5 animate-pulse rounded bg-surface-2" />)}</div>
+        <MarketLoader label="financial statements" />
       ) : noData ? (
         <EmptyState title="No statements available">Yahoo Finance has no annual statements for {symbol}. Check that the backend is running.</EmptyState>
       ) : tab === "income" ? (

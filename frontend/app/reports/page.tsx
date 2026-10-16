@@ -6,6 +6,7 @@ import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-she
 import { Panel, EmptyState } from "@/components/ui/panel"
 import { API_BASE } from "@/lib/api"
 import { cn } from "@/lib/utils"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 const API = API_BASE
 
@@ -85,7 +86,7 @@ export default function ReportsPage() {
       </div>
 
       {loading ? (
-        <Panel aria-busy="true"><div className="space-y-2 p-5">{Array.from({ length: 8 }, (_, i) => <div key={i} className="h-10 animate-pulse rounded bg-surface-2" />)}</div></Panel>
+        <Panel aria-busy="true"><MarketLoader label="the reports library" /></Panel>
       ) : companies.length === 0 ? (
         <Panel>
           <EmptyState

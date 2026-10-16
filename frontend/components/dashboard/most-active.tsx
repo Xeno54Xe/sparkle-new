@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { StockLogo } from "@/components/ui/stock-logo"
 import { Panel, PanelHeader, PanelAction, EmptyState } from "@/components/ui/panel"
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 interface ActiveStock {
   rank: number
@@ -52,15 +53,7 @@ export function MostActive() {
         }
       />
       {loading && stocks.length === 0 ? (
-        <ul className="divide-y divide-line">
-          {[0, 1, 2, 3, 4].map(i => (
-            <li key={i} className="flex animate-pulse items-center gap-3 px-5 py-3">
-              <div className="h-7 w-7 rounded-md bg-surface-2" />
-              <div className="flex-1 space-y-1.5"><div className="h-3 w-20 rounded bg-surface-2" /><div className="h-2.5 w-14 rounded bg-surface-2" /></div>
-              <div className="h-3 w-16 rounded bg-surface-2" />
-            </li>
-          ))}
-        </ul>
+        <MarketLoader variant="compact" label="trading volumes" />
       ) : error ? (
         <EmptyState title="Volume data didn't load" action={<button onClick={fetchData} className="text-sm font-medium text-primary hover:underline">Try again</button>} />
       ) : (

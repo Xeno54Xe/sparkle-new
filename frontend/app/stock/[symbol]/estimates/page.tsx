@@ -4,6 +4,7 @@ import { getStockBySymbol } from "@/lib/stocks"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 interface Props { params: Promise<{ symbol: string }> }
 interface EstimatesData {
@@ -46,7 +47,7 @@ export default function EstimatesPage({params}:Props) {
       <Panel aria-label="Analyst ratings">
         <PanelHeader title="Analyst ratings" description={total > 0 ? `${total} analysts, latest month` : "Latest month"} />
         {loading ? (
-          <div className="space-y-4 p-5">{[0, 1, 2, 3, 4].map(i => <div key={i} className="h-6 animate-pulse rounded bg-surface-2" />)}</div>
+          <MarketLoader label="analyst ratings" />
         ) : total === 0 ? (
           <EmptyState title="No analyst ratings">No brokerages have published ratings for {symbol} on Yahoo Finance.</EmptyState>
         ) : (

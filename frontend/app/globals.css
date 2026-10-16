@@ -226,3 +226,31 @@
     display: none;
   }
 }
+
+/* ── Market loader ───────────────────────────────────────────────────────────
+ * Five candles that rise and settle in sequence, like a chart printing new bars.
+ * The global reduced-motion rule above freezes them into a static chart.
+ */
+@keyframes candle-print {
+  0%, 100% { transform: scaleY(0.35); opacity: 0.45; }
+  45% { transform: scaleY(1); opacity: 1; }
+  70% { transform: scaleY(0.8); opacity: 0.9; }
+}
+@keyframes loader-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+@keyframes loader-text-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+@utility candle-anim {
+  transform-origin: center;
+  animation: candle-print 1.4s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+}
+@utility loader-sweep {
+  animation: loader-sweep 1.6s ease-in-out infinite;
+}
+@utility loader-text-in {
+  animation: loader-text-in 300ms ease-out both;
+}

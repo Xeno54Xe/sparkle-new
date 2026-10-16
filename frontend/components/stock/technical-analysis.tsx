@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { API_BASE } from "@/lib/api"
 import { cn } from "@/lib/utils"
+import { MarketLoader } from "@/components/ui/market-loader"
 
 interface TechnicalAnalysisProps { symbol: string }
 
@@ -66,10 +67,7 @@ export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
   }, [symbol])
 
   if (loading) return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-12" aria-busy="true">
-      <div className="panel h-72 animate-pulse lg:col-span-4" />
-      <div className="panel h-72 animate-pulse lg:col-span-8" />
-    </div>
+    <Panel aria-busy="true"><MarketLoader label="technical indicators" /></Panel>
   )
   if (!d) return <Panel><EmptyState title="No technical data">Price history for {symbol} didn&apos;t load. Check that the backend is running.</EmptyState></Panel>
 
