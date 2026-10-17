@@ -14,6 +14,7 @@ const optionsEnabled = process.env.NEXT_PUBLIC_OPTIONS_STRATEGIES_ENABLED === "t
 
 const TABS = [
   { label: "Overview", href: "" },
+  { label: "Sparkle Report", href: "/sparkle" },
   { label: "Intelligence", href: "/intelligence" },
   { label: "Charts", href: "/charts" },
   { label: "Price history", href: "/prices" },

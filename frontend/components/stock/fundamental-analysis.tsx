@@ -7,6 +7,7 @@ import {
   BarChart2,
 } from "lucide-react"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
+import { companyFolder } from "@/lib/company-folders"
 import { cn } from "@/lib/utils"
 
 import { API_BASE } from "@/lib/api"
@@ -17,65 +18,6 @@ interface FundamentalAnalysisProps {
 
 const API = API_BASE
 
-// Stock symbol → company folder name (must match outputs/ directory names exactly)
-const MAP: Record<string, string> = {
-  ADANIENT:    "Adani Enterprises",
-  ADANIPORTS:  "Adani Ports & Special Economic Zone",
-  APOLLOHOSP:  "Apollo Hospitals",
-  AXISBANK:    "Axis Bank",
-  BPCL:        "BPCL",
-  "BAJAJ-AUTO":"Bajaj Auto",
-  BAJFINANCE:  "Bajaj Finance",
-  BAJAJFINSV:  "Bajaj Finserv",
-  BEL:         "Bharat Electronics",
-  BHARTIARTL:  "Bharti Airtel",
-  BRITANNIA:   "Britannia Industries",
-  CIPLA:       "Cipla",
-  COALINDIA:   "Coal India",
-  DIVISLAB:    "Divi's Laboratories",
-  DRREDDY:     "Dr Reddys Laboratories",
-  EICHERMOT:   "Eicher Motors",
-  ETERNAL:     "Eternal",
-  GRASIM:      "Grasim Industries",
-  HCLTECH:     "HCL Technologies",
-  HDFCBANK:    "HDFC Bank",
-  HDFCLIFE:    "HDFC Life Insurance Company",
-  HEROMOTOCO:  "Hero MotoCorp",
-  HINDALCO:    "Hindalco",
-  HINDUNILVR:  "Hindustan Unilever",
-  ICICIBANK:   "ICICI Bank",
-  ITC:         "ITC",
-  INDUSINDBK:  "IndusInd Bank",
-  INFY:        "Infosys",
-  INDIGO:      "Interglobe Aviation",
-  JSWSTEEL:    "JSW Steel",
-  JIOFIN:      "Jio Financial Services",
-  KOTAKBANK:   "Kotak Mahindra Bank",
-  LTM:         "LTIMindtree",
-  LT:          "Larsen & Toubro",
-  "M&M":       "Mahindra & Mahindra",
-  MARUTI:      "Maruti Suzuki India",
-  MAXHEALTH:   "Max Healthcare Institute",
-  NTPC:        "NTPC",
-  NESTLEIND:   "Nestle India",
-  ONGC:        "ONGC",
-  POWERGRID:   "Power Grid Corporation of India",
-  RELIANCE:    "Reliance Industries",
-  SBILIFE:     "SBI Life Insurance Company",
-  SHRIRAMFIN:  "Shriram Finance",
-  SBIN:        "State Bank of India",
-  SUNPHARMA:   "Sun Pharmaceutical Industries",
-  TCS:         "TCS",
-  TATACONSUM:  "Tata Consumer Products",
-  TMPV:        "Tata Motors Passenger Vehicles",
-  TATASTEEL:   "Tata Steel",
-  TECHM:       "Tech Mahindra",
-  TITAN:       "Titan Company",
-  TRENT:       "Trent",
-  UPL:         "UPL",
-  ULTRACEMCO:  "UltraTech Cement",
-  WIPRO:       "Wipro",
-}
 
 const SECTION_META: Record<string, { icon: React.ElementType; color: string }> = {
   financial_metrics:   { icon: TrendingUp,    color: "#2FB57C" },
@@ -123,7 +65,7 @@ export function FundamentalAnalysis({ symbol }: FundamentalAnalysisProps) {
   const [data, setData] = useState<any>(null)
   const [loading, setLoading] = useState(true)
 
-  const company = MAP[symbol] || symbol
+  const company = companyFolder(symbol)
 
   // Fetch available reports list
   useEffect(() => {

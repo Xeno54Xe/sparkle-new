@@ -1,0 +1,469 @@
+{
+  "doc_type": "sr",
+  "company": "HDFC Bank",
+  "folder": "HDFC Bank",
+  "symbol": "HDFCBANK",
+  "as_of": "2026-10-17",
+  "period": {
+    "start": "2026-10-03",
+    "end": "2026-10-17"
+  },
+  "previous_report": null,
+  "summary": {
+    "headline": "HDFC Bank: underperformed the Nifty 50 (+1.06% vs +3.23%), news mood positive (60/100), technical signal BUY.",
+    "points": [
+      "Shares moved +1.06% from ₹721.20 (2026-10-01) to ₹728.85 (2026-10-16).",
+      "89 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 60/100 (39 positive, 22 negative, the rest neutral); 5 headlines that did not name the company were left out.",
+      "Of 41 analyst ratings this month, 6 are strong buy, 33 buy, 2 hold, 0 sell and 0 strong sell.",
+      "Filings by type: Other update (2), Board meeting outcome (1)."
+    ]
+  },
+  "sections": {
+    "price_performance": {
+      "title": "Price & performance",
+      "label": "Underperformed",
+      "score": 39,
+      "bullets": [
+        "Shares moved +1.06% from ₹721.20 (2026-10-01) to ₹728.85 (2026-10-16).",
+        "The Nifty 50 moved +3.23% over the same days, so the stock was 2.17 percentage points behind the index.",
+        "Other Financial Services companies tracked by SparkleAI averaged +2.15% (11 companies).",
+        "At ₹728.85 the price sits at 13.9% of its 52-week range (₹681.90 to ₹1,020.50).",
+        "Average daily volume in the period was 0.97x its 3-month average."
+      ],
+      "metrics": [
+        {
+          "name": "Price",
+          "value": 728.85,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Return (period)",
+          "value": 1.06,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Nifty 50 return",
+          "value": 3.23,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Versus Nifty 50",
+          "value": -2.17,
+          "unit": "pp",
+          "previous": null
+        },
+        {
+          "name": "Sector average return",
+          "value": 2.15,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "52-week position",
+          "value": 13.9,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Volume vs 3-month average",
+          "value": 0.97,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: HDFCBANK.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/HDFCBANK.NS/history",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "news_sentiment": {
+      "title": "News sentiment",
+      "label": "Positive",
+      "score": 60,
+      "bullets": [
+        "89 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 60/100 (39 positive, 22 negative, the rest neutral); 5 headlines that did not name the company were left out.",
+        "Positive: \"HDFC Bank’s Q2FY27 net profit edges up 4.7%; asset quality improves\" (Fortune India, 2026-10-17).",
+        "Positive: \"HDFC Bank, Axis, Kotak Mahindra See Robust Deposit Growth in Q2\" (Rediff, 2026-10-13).",
+        "Positive: \"HDFC Bank Q2 earnings: Net profit rises 5% to ₹19,510 crore, NII advances 10%; Asset quality improves\" (Upstox, 2026-10-17).",
+        "Negative: \"HDFC Bank Q2 FY27 Results: The ₹1,610-Crore Treasury Drop Behind 4.7% Profit Growth\" (NiftyTrader, 2026-10-17).",
+        "Negative: \"HDFC Bank Q2 Results: Margins at record low; Treasury income drops 67%\" (CNBC TV18, 2026-10-17).",
+        "Negative: \"SBI, ICICI Bank, HDFC Bank, others drag Nifty Bank down 1%; here’s why banking stocks are falling today\" (Upstox, 2026-10-12)."
+      ],
+      "metrics": [
+        {
+          "name": "Headlines",
+          "value": 89,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Off-topic headlines dropped",
+          "value": 5,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "News mood",
+          "value": 60,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Positive headlines",
+          "value": 39,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Negative headlines",
+          "value": 22,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Fortune India: HDFC Bank’s Q2FY27 net profit edges up 4.7%; asset quality improves",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOamZVdmRnZFJ2d2EwNlJuYTQzS0JSUXhRSnc0WENGcGNESk0xdF96c19xQ0R5RGFZYjZ3b3BsUS1BYmtzZm55OWxRRThGem00RUwtOGhvazdBNHBZR0M0ZUxkS0tjOFRYMWRqdmNuR3JDeUQzX1dfb2xzSXVLV3hlRm9sQ1oyYjhCY05ZY1hPUFVOX0xhMk5PVEY4dTZpUkxYOFdoTHI1LThsZktHd1JUSmJKSVNQaGNzWHI1bm1DMXVod9IBzwFBVV95cUxORzM0VTJLcG01NUd3VVdOb3RrLWdsQ2hFYjZHUlFiLXAzcXZsOEJjWEVoS1FGSWdqV1JkN1dpYnhRbDBGcFRTd0w3eTltY2lPeDd4SGo1UXJaZDV6OXJXcjhSY3pjc1JhczF0cEMycGFVMGJnS19rZzFGSF81UDgxdmQyZHctZXlzQzE0UFI2akJfUkdxSGUzNXJzOHFBUmw3ZjRwdTZRUHNSNnY5LV9XTHRTQWVHaEdyY3BoWXVGNEE4Z0JZVW1HakIxQVdwbGM?oc=5",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "Rediff: HDFC Bank, Axis, Kotak Mahindra See Robust Deposit Growth in Q2",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPV2JoZ21oNzc3TmlQcFV2dXVaMUd5RlVCODhvRWR3YXRab2FvT0FaVUZwdjU0bEd3UFVxb0JjYXdKS25tUDR2ZG1KVEVLRXJqNFpodmhpNHMzNl96VFJHdUMyNjVxbENqYzh2Nm5zZndxemNBNnMwNTFsdHo3QjU3WUpLN0lSbE0zUmVQbkJoaWFscHkwSXZiaVB2VUtFcGVNVnA5Z2hrMzE5MW9MWE9VRDZqaDdTLW9MM1RzRjg5NEZib2dn0gHHAUFVX3lxTE9iR0pKNDE0TXF4VTJKRlRyZDZXRTNkaVlVZ0FWbDNRNVNraHhIU3o0ZDhXeFV2LVJMWV9sRGR6Q0N4dDA2eGViNmYwMUJlcTFUY0NnUXhPUG0xRWR3Y3c1LW1xX2xXVzFYYkFkOFE5bnpRS0pMdDZFbGZPWTRZU0RleFpJZHd0dHJKc21rN0FqcXFEblU2T254NEdBRFpIUFZfdVY1YmcybGwtdS1VQlVseE1aWXBlQ3RvZUxzTU0wemw0QmpvcEE?oc=5",
+          "date": "2026-10-13"
+        },
+        {
+          "label": "Upstox: HDFC Bank Q2 earnings: Net profit rises 5% to ₹19,510 crore, NII advances 10%; Asset quality improves",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPb0owdks5YnVUQkZkckZKU1lOb2tsUDhIYlZvV0dHbEdFOEJBeDRHQ2Vta1RjaXhwOHJSRk5jWW9wdmVTTmMtdG8xYnpoa3E0Y2hCV2g2cUgtR3RoRUNEcnlfNnlhc1ByMW93cjRBemVNb0hmU3BPdEx6Tktkb1RGXzFKQkdQbkdvcXFLQXc1VGhTTUdBYTZsbW9kc29wQmwtLUgxcTNwc2VELXFsdnFEdEVSbFQ5b2d3YjF4LXg1VnRkYV9yd0RXN2UtMk91aUJnSWtOaEs3clVsYnQ3dkhhcjFoQmdENVlxdFI2Mg?oc=5",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "NiftyTrader: HDFC Bank Q2 FY27 Results: The ₹1,610-Crore Treasury Drop Behind 4.7% Profit Growth",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMHFjbmZ4TWhKak5fX2FWaDd6RTdxdWtFcm4tZ1NJQjBOaXhQcHhJd0hOU0J0LTZnZjFRV0JSeXRJN18waTdfMUlOVy1ubzJUc08wbFNkdFlxU19EZU5McTk3MUNnNmNLUVdkbkhhdzZXcVpHcXdrd0N3Umg3THFrSg?oc=5",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "CNBC TV18: HDFC Bank Q2 Results: Margins at record low; Treasury income drops 67%",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYk1jTHNPTUZyNGJxcXAtNnhNaVF0Qmk2OUg3TjJ1WUQ4TnVyMTFxZURfRnhtejZiUFY4emg4emp1eGVOZ3ZZd2d0NkdJYXE3MGtCNENxcXotTlc3QTRqX3hmeVNzdkNpLU81M2RWNndjQTJXSkZvUVdsWUFNckxOa1pKTDhwVTMxODNQRXlGQWNjSEFGUkJ3aHJjUVh5cGtKa1R2cU1kM3JMdDdHcmNYWW9ER21vbnRfTGdxUDBWYnh2MHBjYUFuQ3BROFTSAdIBQVVfeXFMT2l2VFpGdm1iaGlYTlhlU3l3TlNBMEVtRGEtZmZBYWhHVVhIdnlqN19GcE5Ta3lVc2hnR0FhNjJaajlQZzFESXFpaXB2aGNGbWxHalgwVnhNQXo4dWcya3VHV1NsWWVZR0UyWjdqVGNNcTY1MGVUbzlrLTN1UEQzUzM2Y2RfREJ5dHp0RTRSbW1PZVEzcXlCd01jb2x6Y0s1b1FPY3NCRHRTR0lITndNZVNacE5WVjFrSGJfeG5vRi02TFQzM0VyaVBjcHJGWXdyMHZR?oc=5",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "Upstox: SBI, ICICI Bank, HDFC Bank, others drag Nifty Bank down 1%; here’s why banking stocks are falling today",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYndpMHR5MnJXMlE3MDMxQnhITFV5UGtjM3FwV09HSFpvdV9fbndvYi1mVmZWLWhUQXFOU19BLWlwMVNiOXg4d0ZRU3hpSDc3SkVqRkhTNnc1ZlNsSm4xZzJGSkJyTVk5d3g1R3ZGVHJtLWxOQXdzRk42cGpPZDN0U3RUaXlPamhRR3JIYklva1U5Mmw0Q0ZkLTYyNnZ1aW41SF9uWjRFdTVVTWJVaVdzcmI4LXozSGtkclJuR3JxbENiY1U4d1NrYzFTbTJsV2ZXRzdIb0Y0QVF5ZmJYQ2lPYlduUTd4Si1QQ1hpZHp3?oc=5",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    "announcements": {
+      "title": "Company announcements",
+      "label": "3 notable filings",
+      "score": null,
+      "bullets": [
+        "Filings by type: Other update (2), Board meeting outcome (1).",
+        "2026-10-17: Other update — Disclosure Under Regulation 30 And Other Applicable Regulations Of The SEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015.",
+        "2026-10-17: Board meeting outcome — Board Meeting Outcome for Approval Of Unaudited Standalone And Consolidated Financial Results Of The Bank For The Quarter And Half-Year Ended September 30, 2026.",
+        "2026-10-04: Other update — Intimation Under SEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015."
+      ],
+      "metrics": [
+        {
+          "name": "Notable filings",
+          "value": 3,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Routine filings left out",
+          "value": 5,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "BSE: Other update — Disclosure Under Regulation 30 And Other Applicable Regulations Of The SEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/6d9d420a-a6d1-4394-8638-8a978b7e2cc1.pdf",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "BSE: Board meeting outcome — Board Meeting Outcome for Approval Of Unaudited Standalone And Consolidated Financial Results Of The Bank For The Quarter And Half-Year Ended September 30, 2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f5d5fb37-aa66-401c-85d6-58ccd3982828.pdf",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "BSE: Other update — Intimation Under SEBI (Listing Obligations And Disclosure Requirements) Regulations, 2015",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/77b525dd-aefa-4773-93d4-08b72f426e54.pdf",
+          "date": "2026-10-04"
+        }
+      ]
+    },
+    "valuation": {
+      "title": "Valuation",
+      "label": "Cheaper than sector",
+      "score": 71,
+      "bullets": [
+        "Trailing P/E is 15.93x, against a median of 27.45x for 11 other Financial Services companies tracked.",
+        "At today's trailing earnings per share (₹45.75), the past year's closing prices put the P/E between 15.02x and 22.07x.",
+        "Price-to-book is 1.85x (sector median 2.63x).",
+        "Dividend yield is 1.78%."
+      ],
+      "metrics": [
+        {
+          "name": "P/E (trailing)",
+          "value": 15.93,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/B",
+          "value": 1.85,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Dividend yield",
+          "value": 1.78,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year low (at current EPS)",
+          "value": 15.02,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year high (at current EPS)",
+          "value": 22.07,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/E",
+          "value": 27.45,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/B",
+          "value": 2.63,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: HDFCBANK.NS key statistics",
+          "url": "https://finance.yahoo.com/quote/HDFCBANK.NS/key-statistics",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "technicals": {
+      "title": "Technical signal",
+      "label": "BUY",
+      "score": 61,
+      "bullets": [
+        "The SparkleAI technical model gives BUY with a score of 61/100 (5 buy, 2 sell and 4 neutral readings).",
+        "Trend 83/100, momentum 75/100, oscillators 40/100, volume 50/100, patterns 42/100.",
+        "The price is +1.44% against its 50-day average and -8.27% against its 200-day average; RSI is 55.3."
+      ],
+      "metrics": [
+        {
+          "name": "Signal score",
+          "value": 61,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Trend score",
+          "value": 83,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Momentum score",
+          "value": 75,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "RSI (14)",
+          "value": 55.3,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Price vs 50-day average",
+          "value": 1.44,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Price vs 200-day average",
+          "value": -8.27,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI technical model on Yahoo Finance HDFCBANK.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/HDFCBANK.NS/chart",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "analyst_views": {
+      "title": "Analyst views",
+      "label": "Strong buy",
+      "score": 95,
+      "bullets": [
+        "Of 41 analyst ratings this month, 6 are strong buy, 33 buy, 2 hold, 0 sell and 0 strong sell.",
+        "The mean target is ₹978.51 (range ₹800.00 to ₹1,270.00), +34.25% from the ₹728.85 close."
+      ],
+      "metrics": [
+        {
+          "name": "Analysts",
+          "value": 41,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Buy or strong buy",
+          "value": 39,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Hold",
+          "value": 2,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Sell or strong sell",
+          "value": 0,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Mean target",
+          "value": 978.51,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "High target",
+          "value": 1270.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Low target",
+          "value": 800.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Upside to mean target",
+          "value": 34.25,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: HDFCBANK.NS analyst ratings and targets",
+          "url": "https://finance.yahoo.com/quote/HDFCBANK.NS/analysis",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "promise_vs_reality": {
+      "title": "Promise vs reality",
+      "label": "3 items tracked",
+      "score": null,
+      "bullets": [
+        "Guidance (EC MAR26): \"The management reassured that the operational performance and growth plans remain unchanged despite recent developments.\" Since 2026-03-30 the shares moved -0.37% against +3.65% for the Nifty 50. No filing or headline in this period clearly relates to it.",
+        "Risk flagged: Chairman resignation impact (EC MAR26): \"The resignation of Mr.\" Since 2026-03-30 the shares moved -0.37% against +3.65% for the Nifty 50. No filing or headline in this period clearly relates to it.",
+        "Annual report outlook (AR FY25): \"Management anticipates a recovery in private capital expenditure supported by accommodative monetary policy, lower inflation, and healthy balance sheets of financial institutions and corporates.\" Since 2025-03-28 the shares moved -20.27% against -1.59% for the Nifty 50. Related filing this period: Board meeting outcome — Board Meeting Outcome for Approval Of Unaudited Standalone And Consolidated Financial Results Of The Bank For The Quarter And Half-Year Ended September 30, 2026 (2026-10-17)."
+      ],
+      "metrics": [
+        {
+          "name": "Statements tracked",
+          "value": 3,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI EC analysis MAR26 (Guidance)",
+          "url": "outputs/HDFC Bank/EC/MAR26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "SparkleAI EC analysis MAR26 (Risk flagged: Chairman resignation impact)",
+          "url": "outputs/HDFC Bank/EC/MAR26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "BSE: Board meeting outcome — Board Meeting Outcome for Approval Of Unaudited Standalone And Consolidated Financial Results Of The Bank For The Quarter And Half-Year Ended September 30, 2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/f5d5fb37-aa66-401c-85d6-58ccd3982828.pdf",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "SparkleAI AR analysis FY25 (Annual report outlook)",
+          "url": "outputs/HDFC Bank/AR/FY25/advanced.json",
+          "date": null
+        }
+      ]
+    }
+  },
+  "section_order": [
+    "price_performance",
+    "news_sentiment",
+    "announcements",
+    "valuation",
+    "technicals",
+    "analyst_views",
+    "promise_vs_reality"
+  ],
+  "changes": [
+    {
+      "metric": "Previous report",
+      "previous": null,
+      "current": null,
+      "direction": "same",
+      "text": "This is the first Sparkle Report for HDFC Bank; there is no previous report to compare with."
+    }
+  ],
+  "scores": {
+    "price_performance": 39,
+    "news_sentiment": 60,
+    "announcements": null,
+    "valuation": 71,
+    "technicals": 61,
+    "analyst_views": 95,
+    "promise_vs_reality": null
+  },
+  "meta": {
+    "generated_at": "2026-10-17T13:23:37+00:00",
+    "writer": "rules",
+    "model": null,
+    "fallback_blocks": [],
+    "data_sources": [
+      "yfinance",
+      "google_news",
+      "bse",
+      "finbert",
+      "ec_ar_reports"
+    ]
+  }
+}

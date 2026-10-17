@@ -8,7 +8,6 @@ import { MarketLoader } from "@/components/ui/market-loader"
 
 interface TechnicalAnalysisProps { symbol: string }
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
 // Same weighting as the backend signal_service so the verdict matches the screener.
 function calcVerdict(d: any) {
   const p = d.price || 0
