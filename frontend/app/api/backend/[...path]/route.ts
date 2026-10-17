@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { nifty50Stocks, getStockBySymbol } from "@/lib/stocks"
+import { demoStocks, type DemoStock as Stock } from "@/lib/demo-prices"
 
 export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
@@ -7,7 +7,6 @@ export const dynamic = "force-dynamic"
 const BACKEND_API_URL = process.env.BACKEND_API_URL || "http://localhost:8000"
 const PROXY_TIMEOUT_MS = 20000
 
-type Stock = typeof nifty50Stocks[number]
 type SignalName = "BUY" | "SELL" | "HOLD"
 
 function nowIso() {
@@ -23,7 +22,7 @@ function normalizeSymbol(value: string) {
 
 function stockFor(value: string): Stock {
   const symbol = normalizeSymbol(value)
-  return getStockBySymbol(symbol) || nifty50Stocks[0]
+  return demoStocks.find((stock) => stock.symbol === symbol) || demoStocks[0]
 }
 
 function signalFor(stock: Stock) {
@@ -157,7 +156,7 @@ function stockInfoFor(stock: Stock) {
 }
 
 function marketIndices() {
-  const avgChange = nifty50Stocks.reduce((sum, stock) => sum + stock.change, 0) / nifty50Stocks.length
+  const avgChange = demoStocks.reduce((sum, stock) => sum + stock.change, 0) / demoStocks.length
   const indices = [
     { symbol: "N50", name: "Nifty 50", value: 24128.85, change_pct: avgChange },
     { symbol: "SEN", name: "Sensex", value: 79246.15, change_pct: avgChange * 0.92 },
@@ -231,7 +230,7 @@ function fallbackFor(pathname: string) {
 
   if (pathname === "/market/most-active") {
     return {
-      stocks: [...nifty50Stocks]
+      stocks: [...demoStocks]
         .sort((a, b) => Math.abs(b.change) - Math.abs(a.change))
         .slice(0, 8)
         .map((stock, index) => ({
@@ -249,22 +248,22 @@ function fallbackFor(pathname: string) {
 
   if (pathname === "/market/heatmap") {
     return {
-      stocks: nifty50Stocks.map((stock) => ({
+      stocks: demoStocks.map((stock) => ({
         symbol: stock.symbol,
         name: stock.name,
         sector: stock.sector,
         price: stock.price,
         change_pct: stock.change,
       })),
-      count: nifty50Stocks.length,
+      count: demoStocks.length,
       timestamp: nowIso(),
     }
   }
 
   if (pathname === "/market/screener") {
     return {
-      stocks: nifty50Stocks.map(screenerStock),
-      count: nifty50Stocks.length,
+      stocks: demoStocks.map(screenerStock),
+      count: demoStocks.length,
       timestamp: nowIso(),
       cached: true,
       cache_age_s: 0,

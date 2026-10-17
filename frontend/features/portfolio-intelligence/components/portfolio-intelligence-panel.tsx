@@ -29,7 +29,7 @@ import {
   Trash2,
 } from "lucide-react"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-import { nifty50Stocks } from "@/lib/stocks"
+import { demoStocks as nifty50Stocks } from "@/lib/demo-prices"
 import {
   analyzePortfolio,
   findPairCandidates,

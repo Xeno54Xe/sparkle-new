@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
 import { getStockBySymbol } from "@/lib/stocks"
+import { withDemoPrice } from "@/lib/demo-prices"
 import { OptionsStrategiesPanel } from "@/features/options-strategies/components/options-strategies-panel"
 
 type OptionsPageProps = {
@@ -18,5 +19,5 @@ export default async function OptionsPage({ params }: OptionsPageProps) {
   const { symbol } = await params
   const stock = getStockBySymbol(decodeURIComponent(symbol))
   if (!stock) notFound()
-  return <OptionsStrategiesPanel stock={stock} />
+  return <OptionsStrategiesPanel stock={withDemoPrice(stock)} />
 }

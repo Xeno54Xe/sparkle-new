@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react"
 import { Activity, Calculator, Target, Wand2 } from "lucide-react"
-import type { Stock } from "@/lib/stocks"
+import type { DemoStock as Stock } from "@/lib/demo-prices"
 import type { LegDraft, OptionLeg, RiskPreference, StrategyCandidate, StrategyGoal, StrategyId, TechnicalSnapshot } from "../domain/types"
 import { STRATEGY_DEFINITIONS } from "../domain/strategy-definitions"
 import { buildStrategyCandidates, defaultGoalFromStock } from "../domain/recommendation-engine"

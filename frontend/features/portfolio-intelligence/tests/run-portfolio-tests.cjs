@@ -9,24 +9,23 @@ const ts = require("typescript")
 const root = path.resolve(__dirname, "..")
 const outDir = path.join(os.tmpdir(), "sparkle-portfolio-intelligence-tests")
 const sourceFile = path.join(root, "domain", "portfolio-model.ts")
-const stocksFile = path.resolve(root, "..", "..", "lib", "stocks.ts")
+const libDir = path.resolve(root, "..", "..", "lib")
+const compilerOptions = { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, esModuleInterop: true }
+
+function transpile(from, to) {
+  const source = fs.readFileSync(from, "utf8").replace(/@\/lib\//g, "../lib/")
+  fs.writeFileSync(to, ts.transpileModule(source, { compilerOptions }).outputText)
+}
 
 function compile() {
   fs.rmSync(outDir, { recursive: true, force: true })
   fs.mkdirSync(path.join(outDir, "domain"), { recursive: true })
   fs.mkdirSync(path.join(outDir, "lib"), { recursive: true })
 
-  const stocksSource = fs.readFileSync(stocksFile, "utf8")
-  const stocksOutput = ts.transpileModule(stocksSource, {
-    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
-  })
-  fs.writeFileSync(path.join(outDir, "lib", "stocks.js"), stocksOutput.outputText)
-
-  const source = fs.readFileSync(sourceFile, "utf8").replace("@/lib/stocks", "../lib/stocks")
-  const output = ts.transpileModule(source, {
-    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
-  })
-  fs.writeFileSync(path.join(outDir, "domain", "portfolio-model.js"), output.outputText)
+  fs.copyFileSync(path.join(libDir, "nifty50.json"), path.join(outDir, "lib", "nifty50.json"))
+  transpile(path.join(libDir, "stocks.ts"), path.join(outDir, "lib", "stocks.js"))
+  transpile(path.join(libDir, "demo-prices.ts"), path.join(outDir, "lib", "demo-prices.js"))
+  transpile(sourceFile, path.join(outDir, "domain", "portfolio-model.js"))
 }
 
 compile()
@@ -37,7 +36,7 @@ const {
   samplePortfolio,
   scoreStockFactors,
 } = require(path.join(outDir, "domain", "portfolio-model.js"))
-const { nifty50Stocks } = require(path.join(outDir, "lib", "stocks.js"))
+const { demoStocks: nifty50Stocks } = require(path.join(outDir, "lib", "demo-prices.js"))
 
 test("portfolio summary derives value, risk and factor tilts", () => {
   const summary = analyzePortfolio(samplePortfolio)

@@ -1,6 +1,5 @@
 "use client"
 import { use, useEffect, useState } from "react"
-import { getStockBySymbol } from "@/lib/stocks"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { cn } from "@/lib/utils"
 import { API_BASE } from "@/lib/api"
@@ -15,7 +14,6 @@ interface EstimatesData {
 export default function EstimatesPage({params}:Props) {
   const {symbol:raw}=use(params)
   const symbol=decodeURIComponent(raw)
-  const stock=getStockBySymbol(symbol)
   const [data,setData]=useState<EstimatesData|null>(null)
   const [loading,setLoading]=useState(true)
 
@@ -36,7 +34,7 @@ export default function EstimatesPage({params}:Props) {
   const pct=(n:number)=>total?Math.round((n/total)*100):0
   const consensus=c?[{l:"Strong Buy",c:c.strong_buy,cl:"#2FB57C"},{l:"Buy",c:c.buy,cl:"#2FB57C"},{l:"Hold",c:c.hold,cl:"#F2A93B"},{l:"Sell",c:c.sell,cl:"#E35D5B"},{l:"Strong Sell",c:c.strong_sell,cl:"#E35D5B"}].map(x=>({...x,p:pct(x.c)})):[]
   const pt=data?.price_targets
-  const price=pt?.current||stock?.price||0
+  const price=pt?.current||0
   const targets=[{l:"Highest",v:pt?.high},{l:"Median",v:pt?.median},{l:"Average",v:pt?.mean},{l:"Lowest",v:pt?.low}]
   const upside=(v?:number)=>v&&price?((v-price)/price)*100:null
 

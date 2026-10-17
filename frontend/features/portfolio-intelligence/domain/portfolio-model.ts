@@ -1,4 +1,5 @@
-import { nifty50Stocks, type Stock } from "@/lib/stocks"
+// Runs on the fixed demo prices until real holdings import lands.
+import { demoStocks as nifty50Stocks, type DemoStock as Stock } from "@/lib/demo-prices"
 
 export type HoldingInput = {
   symbol: string

@@ -8,6 +8,10 @@ from stock_service import get_stock_history, get_stock_price, NoDataError, YF_LO
 from technical_service import get_indicators, get_candlestick_pattern, get_crossovers
 from signal_service import generate_signal
 from financial_service import get_stock_info, get_financials, get_estimates
+from stocks import TICKERS as HEATMAP_TICKERS, NAMES as HEATMAP_NAMES, SECTORS as HEATMAP_SECTORS
+from precompute import Precomputer
+from concurrent.futures import ThreadPoolExecutor
+from contextlib import asynccontextmanager
 from typing import Optional
 import json
 import math
@@ -21,7 +25,17 @@ import yfinance as yf
 import pandas as pd
 from datetime import datetime, timezone
 
-app = FastAPI(title="SparkleAI Investment Backend", version="4.0")
+precomputer = Precomputer()
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    precomputer.start()
+    yield
+    precomputer.stop()
+
+
+app = FastAPI(title="SparkleAI Investment Backend", version="4.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -100,72 +114,32 @@ def yf_download_cached(tickers, period: str, ttl: int = YF_CACHE_TTL):
         return raw
 
 
+# A stock page asks for /price, /full and /history within a second or two;
+# keep each ticker's history briefly so they share one download.
+_hist_cache: dict = {}
+HISTORY_CACHE_TTL = 60  # seconds
+
+
+def stock_history_cached(ticker: str, period: str = "1y"):
+    key = (ticker.upper(), period)
+    now = time.time()
+    hit = _hist_cache.get(key)
+    if hit and now - hit[0] < HISTORY_CACHE_TTL:
+        return hit[1].copy()
+    df = get_stock_history(ticker, period=period)  # raises NoDataError, never cached
+    if len(_hist_cache) > 500:
+        for k in [k for k, (ts, _) in _hist_cache.items() if now - ts >= HISTORY_CACHE_TTL]:
+            _hist_cache.pop(k, None)
+    _hist_cache[key] = (time.time(), df)
+    return df.copy()
+
+
 # ═══ HEATMAP DATA ═══
 
-HEATMAP_TICKERS = {
-    "RELIANCE": "RELIANCE.NS", "TCS": "TCS.NS", "HDFCBANK": "HDFCBANK.NS",
-    "INFY": "INFY.NS", "ICICIBANK": "ICICIBANK.NS", "HINDUNILVR": "HINDUNILVR.NS",
-    "ITC": "ITC.NS", "SBIN": "SBIN.NS", "BHARTIARTL": "BHARTIARTL.NS",
-    "KOTAKBANK": "KOTAKBANK.NS", "LT": "LT.NS", "AXISBANK": "AXISBANK.NS",
-    "MARUTI": "MARUTI.NS", "HCLTECH": "HCLTECH.NS", "SUNPHARMA": "SUNPHARMA.NS",
-    "TITAN": "TITAN.NS", "BAJFINANCE": "BAJFINANCE.NS", "WIPRO": "WIPRO.NS",
-    "ULTRACEMCO": "ULTRACEMCO.NS", "ONGC": "ONGC.NS", "NTPC": "NTPC.NS",
-    "POWERGRID": "POWERGRID.NS", "M&M": "M&M.NS", "TMPV": "TMPV.NS",
-    "JSWSTEEL": "JSWSTEEL.NS", "TATASTEEL": "TATASTEEL.NS", "ADANIENT": "ADANIENT.NS",
-    "ADANIPORTS": "ADANIPORTS.NS", "COALINDIA": "COALINDIA.NS", "BPCL": "BPCL.NS",
-    "GRASIM": "GRASIM.NS", "DRREDDY": "DRREDDY.NS", "CIPLA": "CIPLA.NS",
-    "APOLLOHOSP": "APOLLOHOSP.NS", "EICHERMOT": "EICHERMOT.NS", "BAJAJFINSV": "BAJAJFINSV.NS",
-    "BAJAJ-AUTO": "BAJAJ-AUTO.NS", "HEROMOTOCO": "HEROMOTOCO.NS", "TECHM": "TECHM.NS",
-    "HINDALCO": "HINDALCO.NS", "INDUSINDBK": "INDUSINDBK.NS", "SBILIFE": "SBILIFE.NS",
-    "HDFCLIFE": "HDFCLIFE.NS", "DIVISLAB": "DIVISLAB.NS", "BRITANNIA": "BRITANNIA.NS",
-    "NESTLEIND": "NESTLEIND.NS", "TATACONSUM": "TATACONSUM.NS", "LTM": "LTM.NS",
-    "ASIANPAINT": "ASIANPAINT.NS", "SHRIRAMFIN": "SHRIRAMFIN.NS",
-}
-
-HEATMAP_NAMES = {
-    "RELIANCE": "Reliance Industries", "TCS": "Tata Consultancy Services",
-    "HDFCBANK": "HDFC Bank", "INFY": "Infosys", "ICICIBANK": "ICICI Bank",
-    "HINDUNILVR": "Hindustan Unilever", "ITC": "ITC Limited", "SBIN": "State Bank of India",
-    "BHARTIARTL": "Bharti Airtel", "KOTAKBANK": "Kotak Mahindra Bank",
-    "LT": "Larsen & Toubro", "AXISBANK": "Axis Bank", "MARUTI": "Maruti Suzuki",
-    "HCLTECH": "HCL Technologies", "SUNPHARMA": "Sun Pharmaceutical", "TITAN": "Titan Company",
-    "BAJFINANCE": "Bajaj Finance", "WIPRO": "Wipro", "ULTRACEMCO": "UltraTech Cement",
-    "ONGC": "Oil & Natural Gas Corp", "NTPC": "NTPC Limited", "POWERGRID": "Power Grid Corp",
-    "M&M": "Mahindra & Mahindra", "TMPV": "Tata Motors Passenger Vehicles", "JSWSTEEL": "JSW Steel",
-    "TATASTEEL": "Tata Steel", "ADANIENT": "Adani Enterprises", "ADANIPORTS": "Adani Ports",
-    "COALINDIA": "Coal India", "BPCL": "Bharat Petroleum", "GRASIM": "Grasim Industries",
-    "DRREDDY": "Dr. Reddy's Labs", "CIPLA": "Cipla", "APOLLOHOSP": "Apollo Hospitals",
-    "EICHERMOT": "Eicher Motors", "BAJAJFINSV": "Bajaj Finserv", "BAJAJ-AUTO": "Bajaj Auto",
-    "HEROMOTOCO": "Hero MotoCorp", "TECHM": "Tech Mahindra", "HINDALCO": "Hindalco Industries",
-    "INDUSINDBK": "IndusInd Bank", "SBILIFE": "SBI Life Insurance",
-    "HDFCLIFE": "HDFC Life Insurance", "DIVISLAB": "Divi's Laboratories",
-    "BRITANNIA": "Britannia Industries", "NESTLEIND": "Nestle India",
-    "TATACONSUM": "Tata Consumer Products", "LTM": "LTIMindtree",
-    "ASIANPAINT": "Asian Paints", "SHRIRAMFIN": "Shriram Finance",
-}
-
-HEATMAP_SECTORS = {
-    "RELIANCE": "Energy", "TCS": "IT", "HDFCBANK": "Banking", "INFY": "IT",
-    "ICICIBANK": "Banking", "HINDUNILVR": "FMCG", "ITC": "FMCG", "SBIN": "Banking",
-    "BHARTIARTL": "Telecom", "KOTAKBANK": "Banking", "LT": "Infrastructure",
-    "AXISBANK": "Banking", "MARUTI": "Automobile", "HCLTECH": "IT",
-    "SUNPHARMA": "Pharma", "TITAN": "Consumer Goods", "BAJFINANCE": "Finance",
-    "WIPRO": "IT", "ULTRACEMCO": "Cement", "ONGC": "Energy", "NTPC": "Power",
-    "POWERGRID": "Power", "M&M": "Automobile", "TMPV": "Automobile",
-    "JSWSTEEL": "Metals", "TATASTEEL": "Metals", "ADANIENT": "Conglomerate",
-    "ADANIPORTS": "Infrastructure", "COALINDIA": "Mining", "BPCL": "Energy",
-    "GRASIM": "Cement", "DRREDDY": "Pharma", "CIPLA": "Pharma",
-    "APOLLOHOSP": "Healthcare", "EICHERMOT": "Automobile", "BAJAJFINSV": "Finance",
-    "BAJAJ-AUTO": "Automobile", "HEROMOTOCO": "Automobile", "TECHM": "IT",
-    "HINDALCO": "Metals", "INDUSINDBK": "Banking", "SBILIFE": "Insurance",
-    "HDFCLIFE": "Insurance", "DIVISLAB": "Pharma", "BRITANNIA": "FMCG",
-    "NESTLEIND": "FMCG", "TATACONSUM": "FMCG", "LTM": "IT",
-    "ASIANPAINT": "Consumer Goods", "SHRIRAMFIN": "Finance",
-}
+# The stock list (HEATMAP_TICKERS / NAMES / SECTORS) comes from stocks.py.
 
 
-@app.get("/market/heatmap")
-def get_market_heatmap():
+def compute_heatmap():
     """Fetch live price changes for all Nifty 50 stocks in one batch yfinance call."""
     try:
         ticker_list = list(HEATMAP_TICKERS.values())
@@ -212,8 +186,7 @@ def get_market_heatmap():
         return {"error": str(e), "stocks": [], "count": 0}
 
 
-@app.get("/market/indices")
-def get_market_indices():
+def compute_indices():
     """Fetch live data for Nifty 50, Sensex, and Bank Nifty."""
     try:
         tickers = {
@@ -254,8 +227,7 @@ def get_market_indices():
         return {"error": str(e), "indices": []}
 
 
-@app.get("/market/most-active")
-def get_most_active():
+def compute_most_active():
     """Fetch top 5 most actively traded Nifty 50 stocks by volume."""
     try:
         ticker_list = list(HEATMAP_TICKERS.values())
@@ -304,24 +276,12 @@ def get_most_active():
         return {"error": str(e), "stocks": []}
 
 
-_screener_cache: dict = {"data": None, "ts": 0.0}
-SCREENER_TTL = 300  # 5 minutes
-
-
-@app.get("/market/screener")
-def get_screener():
+def compute_screener():
     """
     Compute live technical screener for all Nifty 50 stocks.
     Downloads 1 year of OHLCV in one batch, runs full indicator + signal
-    pipeline per stock. Results are cached for 5 minutes.
+    pipeline per stock.
     """
-    now = time.time()
-    if _screener_cache["data"] is not None and now - _screener_cache["ts"] < SCREENER_TTL:
-        result = dict(_screener_cache["data"])
-        result["cached"] = True
-        result["cache_age_s"] = int(now - _screener_cache["ts"])
-        return result
-
     try:
         ticker_list = list(HEATMAP_TICKERS.values())
         raw = yf_download_cached(ticker_list, "1y")
@@ -384,19 +344,58 @@ def get_screener():
 
         stocks.sort(key=lambda x: x["overall_score"], reverse=True)
 
-        result = clean_nans({
+        return clean_nans({
             "stocks":    stocks,
             "count":     len(stocks),
             "timestamp": datetime.now().isoformat(),
             "cached":    False,
             "cache_age_s": 0,
         })
-        _screener_cache["data"] = result
-        _screener_cache["ts"]   = now
-        return result
 
     except Exception as e:
         return {"error": str(e), "stocks": [], "count": 0}
+
+
+# ═══ PRECOMPUTED MARKET ENDPOINTS ═══
+# Built in the background (see precompute.py) so these answer instantly.
+
+def _has(key):
+    return lambda r: isinstance(r, dict) and not r.get("error") and bool(r.get(key))
+
+
+precomputer.register("indices", compute_indices, _has("indices"), open_every=60, closed_every=600)
+precomputer.register("heatmap", compute_heatmap, _has("stocks"), open_every=60, closed_every=600)
+precomputer.register("most_active", compute_most_active, _has("stocks"), open_every=60, closed_every=600)
+precomputer.register("screener", compute_screener, _has("stocks"), open_every=300, closed_every=1800)
+
+
+@app.get("/market/heatmap")
+def get_market_heatmap():
+    return precomputer.serve("heatmap")[0]
+
+
+@app.get("/market/indices")
+def get_market_indices():
+    return precomputer.serve("indices")[0]
+
+
+@app.get("/market/most-active")
+def get_most_active():
+    return precomputer.serve("most_active")[0]
+
+
+@app.get("/market/screener")
+def get_screener():
+    result, age = precomputer.serve("screener")
+    if age is None:
+        return result
+    return {**result, "cached": True, "cache_age_s": int(age)}
+
+
+@app.get("/precompute/status")
+def precompute_status():
+    """What is ready, how old it is and the last error; for checking the background job."""
+    return precomputer.status()
 
 
 @app.get("/")
@@ -420,7 +419,7 @@ def home():
 
 @app.get("/price/{ticker}")
 def price(ticker: str):
-    return clean_nans(get_stock_price(ticker))
+    return _cached("price", ticker, get_stock_price, ttl=PRICE_CACHE_TTL)
 
 HISTORY_PERIODS = {"1mo", "3mo", "6mo", "1y", "2y", "5y"}
 
@@ -430,7 +429,7 @@ def price_history(ticker: str, period: str = "3mo"):
     """Daily OHLCV rows, newest first."""
     if period not in HISTORY_PERIODS:
         period = "3mo"
-    df = get_stock_history(ticker, period=period)
+    df = stock_history_cached(ticker, period=period)
     rows = []
     prev_close = None
     for idx, r in df.iterrows():
@@ -451,7 +450,7 @@ def price_history(ticker: str, period: str = "3mo"):
 
 @app.get("/technical/{ticker}")
 def technical_analysis(ticker: str):
-    df = get_stock_history(ticker)
+    df = stock_history_cached(ticker)
     indicators = get_indicators(df)
     indicators["candle"] = get_candlestick_pattern(df)
     indicators["crossovers"] = get_crossovers(df)
@@ -459,7 +458,7 @@ def technical_analysis(ticker: str):
 
 @app.get("/signal/{ticker}")
 def signal(ticker: str):
-    df = get_stock_history(ticker)
+    df = stock_history_cached(ticker)
     indicators = get_indicators(df)
     indicators["candle"] = get_candlestick_pattern(df)
     indicators["crossovers"] = get_crossovers(df)
@@ -467,7 +466,7 @@ def signal(ticker: str):
 
 @app.get("/full/{ticker}")
 def full_analysis(ticker: str):
-    df = get_stock_history(ticker)
+    df = stock_history_cached(ticker)
     indicators = get_indicators(df)
     indicators["candle"] = get_candlestick_pattern(df)
     indicators["crossovers"] = get_crossovers(df)
@@ -743,12 +742,13 @@ def get_all_companies():
 # so keep results for a while. Errors are not cached.
 _fund_cache: dict = {}
 FUND_CACHE_TTL = 600
+PRICE_CACHE_TTL = 30
 
 
-def _cached(kind: str, ticker: str, fn):
+def _cached(kind: str, ticker: str, fn, ttl: int = FUND_CACHE_TTL):
     key = (kind, ticker.upper())
     hit = _fund_cache.get(key)
-    if hit and time.time() - hit[0] < FUND_CACHE_TTL:
+    if hit and time.time() - hit[0] < ttl:
         return hit[1]
     value = clean_nans(fn(ticker))
     if isinstance(value, dict) and not value.get("error"):
@@ -772,7 +772,7 @@ def estimates(ticker: str):
 def stock_complete(ticker: str):
     info = get_stock_info(ticker)
     try:
-        df = get_stock_history(ticker)
+        df = stock_history_cached(ticker)
         ind = get_indicators(df)
         ind["candle"] = get_candlestick_pattern(df)
         ind["crossovers"] = get_crossovers(df)
@@ -865,8 +865,7 @@ def fetch_rss(query, category, count=2):
     except Exception:
         return []
 
-@app.get("/news")
-def get_news():
+def compute_news():
     try:
         categories = [
             ("stock market India today Nifty Sensex", "Market", 2),
@@ -878,10 +877,13 @@ def get_news():
             ("IPO listing India stock exchange today", "Market", 1),
         ]
 
+        # Fetch the feeds in parallel; results keep the category order.
+        with ThreadPoolExecutor(max_workers=len(categories)) as pool:
+            feeds = list(pool.map(lambda c: fetch_rss(*c), categories))
+
         all_articles = []
         seen = set()
-        for query, category, count in categories:
-            items = fetch_rss(query, category, count)
+        for items in feeds:
             for item in items:
                 key = item["title"][:50].lower()
                 if key not in seen:
@@ -898,3 +900,11 @@ def get_news():
         return {"articles": all_articles[:8], "count": len(all_articles[:8])}
     except Exception as e:
         return {"articles": [], "error": str(e)}
+
+
+precomputer.register("news", compute_news, _has("articles"), open_every=300, closed_every=300)
+
+
+@app.get("/news")
+def get_news():
+    return precomputer.serve("news")[0]
