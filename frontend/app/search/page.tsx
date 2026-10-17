@@ -6,6 +6,8 @@ import { Search } from "lucide-react"
 import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-shell"
 import { Panel, EmptyState } from "@/components/ui/panel"
 import { StockLogo } from "@/components/ui/stock-logo"
+import { NewBadge } from "@/components/ui/new-badge"
+import { useFreshReports } from "@/lib/hooks/useFreshReports"
 import { nifty50Stocks } from "@/lib/stocks"
 import { cn } from "@/lib/utils"
 
@@ -14,6 +16,7 @@ const SECTORS = ["All", ...Array.from(new Set(nifty50Stocks.map(s => s.sector)))
 export default function AllStocksPage() {
   const [query, setQuery] = useState("")
   const [sector, setSector] = useState("All")
+  const fresh = useFreshReports()
   useEffect(() => { document.title = "All stocks — SparkleAI" }, [])
 
   const filtered = useMemo(() => {
@@ -67,7 +70,7 @@ export default function AllStocksPage() {
                 <Link href={`/stock/${encodeURIComponent(stock.symbol)}`} className="flex items-center gap-3 px-5 py-3 transition-colors hover:bg-surface-2/60">
                   <StockLogo symbol={stock.symbol} size={32} className="rounded-md" />
                   <span className="min-w-0 flex-1">
-                    <span className="block text-sm font-medium text-foreground">{stock.symbol}</span>
+                    <span className="flex items-center gap-2 text-sm font-medium text-foreground">{stock.symbol}<NewBadge reports={fresh[stock.symbol]} /></span>
                     <span className="block truncate text-xs text-muted-foreground">{stock.name}</span>
                   </span>
                   <span className="shrink-0 text-xs text-faint-foreground">{stock.sector}</span>

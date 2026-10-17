@@ -4,6 +4,8 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useWatchlist } from "@/lib/hooks/useWatchlist"
 import { StockLogo } from "@/components/ui/stock-logo"
+import { NewBadge } from "@/components/ui/new-badge"
+import { useFreshReports } from "@/lib/hooks/useFreshReports"
 import { Panel, PanelHeader, EmptyState } from "@/components/ui/panel"
 import { API_BASE } from "@/lib/api"
 import { cn } from "@/lib/utils"
@@ -14,6 +16,7 @@ export function Watchlist() {
   const { items, loading } = useWatchlist()
   const preview = items.slice(0, 6)
   const [quotes, setQuotes] = useState<Record<string, Quote>>({})
+  const fresh = useFreshReports()
   const symbolsKey = preview.map(i => i.symbol).join(",")
 
   // Live quotes for the visible rows
@@ -61,7 +64,7 @@ export function Watchlist() {
                 <Link href={`/stock/${item.symbol}`} className="flex items-center gap-3 px-5 py-3 transition-colors hover:bg-surface-2/60">
                   <StockLogo symbol={item.symbol} size={28} className="rounded-md" />
                   <span className="min-w-0 flex-1">
-                    <span className="block text-sm font-medium text-foreground">{item.symbol}</span>
+                    <span className="flex items-center gap-2 text-sm font-medium text-foreground">{item.symbol}<NewBadge reports={fresh[item.symbol]} /></span>
                     <span className="block truncate text-xs text-muted-foreground">{item.name}</span>
                   </span>
                   <span className="text-right tabular">

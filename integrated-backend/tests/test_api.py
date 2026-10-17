@@ -137,3 +137,123 @@ def test_fundamental_list_for_every_folder(client):
         if s["folder"]:
             r = client.get(f"/fundamental/{s['folder']}/list")
             assert r.status_code == 200, s["folder"]
+
+
+# ── stock news ──
+
+def _news(articles, error=None):
+    out = {"symbol": "TCS", "lookback_days": 7, "articles": articles,
+           "mood": {"positive": 0, "negative": 0, "neutral": len(articles), "label": "Mixed"}}
+    if error:
+        out = {"symbol": "TCS", "articles": [], "error": error}
+    return out
+
+
+def test_stock_news_endpoint(client, monkeypatch):
+    import main
+    n = {"calls": 0}
+
+    def fake(stock):
+        n["calls"] += 1
+        return _news([{"title": f"{stock['name']} news", "tone": "neutral"}])
+
+    main._stock_news_cache.clear()
+    monkeypatch.setattr(main.stock_news, "stock_news", fake)
+    assert client.get("/news/stock/TCS").json()["articles"][0]["title"] == "Tata Consultancy Services news"
+    client.get("/news/stock/tcs.ns")                           # same stock, from memory
+    assert n["calls"] == 1
+    assert client.get("/news/stock/NOPE").status_code == 404
+
+
+def test_stock_news_keeps_last_good_result_when_feed_fails(client, monkeypatch):
+    import main
+    main._stock_news_cache.clear()
+    monkeypatch.setattr(main.stock_news, "stock_news", lambda s: _news([{"title": "x", "tone": "neutral"}]))
+    good = client.get("/news/stock/INFY").json()
+    ts, val = main._stock_news_cache["INFY"]
+    main._stock_news_cache["INFY"] = (ts - 10_000, val)        # expired
+    monkeypatch.setattr(main.stock_news, "stock_news", lambda s: _news([], error="down"))
+    assert client.get("/news/stock/INFY").json() == good
+    main._stock_news_cache.clear()
+    assert client.get("/news/stock/INFY").json()["error"] == "down"
+    assert "INFY" not in main._stock_news_cache                # errors are not cached
+
+
+# ── new-report badges ──
+
+def _outputs(tmp_path, folders):
+    """folders: {folder: {"SR": [...], "EC": [...], "AR": [...]}}"""
+    for folder, cats in folders.items():
+        for cat, periods in cats.items():
+            for p in periods:
+                d = tmp_path / folder / cat / p
+                d.mkdir(parents=True)
+                (d / ("sparkle.json" if cat == "SR" else "beginner.json")).write_text("{}")
+    return tmp_path
+
+
+def _fresh(monkeypatch, tmp_path, folders, today, registry=None):
+    import json
+    from datetime import date
+    import main
+    out = _outputs(tmp_path, folders)
+    monkeypatch.setattr(main, "EARNINGS_OUTPUTS", str(out))
+    reg = out / "registry.json"
+    if registry is not None:
+        reg.write_text(json.dumps(registry))
+    monkeypatch.setattr(main, "REGISTRY_FILE", str(reg))
+    return main.compute_fresh_reports(date.fromisoformat(today))["symbols"]
+
+
+def test_fresh_sparkle_report_window(monkeypatch, tmp_path):
+    folders = {"TCS": {"SR": ["2026-10-01", "2026-10-17"]}, "Infosys": {"SR": ["2026-09-01"]}}
+    got = _fresh(monkeypatch, tmp_path, folders, "2026-10-18")
+    assert got == {"TCS": [{"kind": "sparkle", "label": "Sparkle Report", "period": "2026-10-17"}]}
+    assert _fresh(monkeypatch, tmp_path / "b", folders, "2026-11-01") == {}       # 15 days later
+
+
+def test_fresh_earnings_call_by_filing_month(monkeypatch, tmp_path):
+    folders = {"TCS": {"EC": ["AUG26", "OCT26"], "AR": ["FY26"]}, "Wipro": {"EC": ["SEP26"]}, "Infosys": {"EC": ["JUL26"]}}
+    got = _fresh(monkeypatch, tmp_path, folders, "2026-10-18")
+    assert got == {
+        "TCS": [{"kind": "ec", "label": "Earnings call", "period": "OCT26"}],
+        "WIPRO": [{"kind": "ec", "label": "Earnings call", "period": "SEP26"}],
+    }
+    # January: December of last year counts as last month
+    assert "TCS" in _fresh(monkeypatch, tmp_path / "jan", {"TCS": {"EC": ["DEC26"]}}, "2027-01-05")
+
+
+def test_fresh_uses_registry_when_present(monkeypatch, tmp_path):
+    def entry(stock, kind, period, ts, status="success"):
+        return {"stock": stock, "doc_type": kind, "period": period,
+                "steps": {"beginner": {"status": status, "timestamp": ts}}}
+    registry = {
+        "a": entry("TCS", "ar", "FY26", "2026-10-10T08:00:00+00:00"),
+        "b": entry("TCS", "ec", "OCT26", "2026-09-01T08:00:00+00:00"),      # finished long ago
+        "c": entry("Infosys", "ec", "MAY26", "2026-10-16T08:00:00+00:00"),  # old call, newly analysed
+        "d": entry("Wipro", "ar", "FY26", "2026-10-16T08:00:00+00:00", status="failed"),
+    }
+    folders = {"TCS": {"EC": ["OCT26"], "AR": ["FY26"]}, "Infosys": {"EC": ["MAY26"]}, "Wipro": {"AR": ["FY26"]}}
+    got = _fresh(monkeypatch, tmp_path, folders, "2026-10-18", registry)
+    assert got == {
+        "TCS": [{"kind": "ar", "label": "Annual report", "period": "FY26"}],
+        "INFY": [{"kind": "ec", "label": "Earnings call", "period": "MAY26"}],
+    }
+
+
+def test_fresh_ignores_bad_registry(monkeypatch, tmp_path):
+    import main
+    out = _outputs(tmp_path, {"TCS": {"EC": ["OCT26"]}})
+    (out / "registry.json").write_text("{not json")
+    monkeypatch.setattr(main, "EARNINGS_OUTPUTS", str(out))
+    monkeypatch.setattr(main, "REGISTRY_FILE", str(out / "registry.json"))
+    from datetime import date
+    assert main.compute_fresh_reports(date(2026, 10, 18))["symbols"]["TCS"][0]["period"] == "OCT26"
+
+
+def test_fresh_endpoint_on_real_outputs(client):
+    import main
+    main._fresh_cache.update(ts=0.0, day=None, value=None)
+    body = client.get("/reports/fresh").json()
+    assert set(body) == {"as_of", "rules", "symbols"}
+    assert all(sym in stocks.TICKERS for sym in body["symbols"])

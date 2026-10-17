@@ -6,6 +6,8 @@ import { Plus, Search, Trash2, X } from "lucide-react"
 import { DashboardShell, PageHeader } from "@/components/dashboard/dashboard-shell"
 import { Panel, EmptyState } from "@/components/ui/panel"
 import { StockLogo } from "@/components/ui/stock-logo"
+import { NewBadge } from "@/components/ui/new-badge"
+import { useFreshReports } from "@/lib/hooks/useFreshReports"
 import { useWatchlist } from "@/lib/hooks/useWatchlist"
 import { nifty50Stocks } from "@/lib/stocks"
 import { API_BASE } from "@/lib/api"
@@ -97,6 +99,7 @@ export default function WatchlistPage() {
   const { items, loading, addStock, removeStock } = useWatchlist()
   const [dialogOpen, setDialogOpen] = useState(false)
   const [quotes, setQuotes] = useState<Record<string, Quote | null>>({})
+  const fresh = useFreshReports()
   const [notice, setNotice] = useState<string | null>(null)
   const existing = useMemo(() => new Set(items.map(i => i.symbol)), [items])
   const symbolsKey = items.map(i => i.symbol).join(",")
@@ -178,7 +181,7 @@ export default function WatchlistPage() {
                       <Link href={`/stock/${encodeURIComponent(item.symbol)}`} className="flex items-center gap-3">
                         <StockLogo symbol={item.symbol} size={30} className="rounded-md" />
                         <span className="min-w-0">
-                          <span className="block font-medium text-foreground group-hover:text-primary">{item.symbol}</span>
+                          <span className="flex items-center gap-2 font-medium text-foreground group-hover:text-primary">{item.symbol}<NewBadge reports={fresh[item.symbol]} /></span>
                           <span className="block max-w-[160px] truncate text-xs text-muted-foreground sm:max-w-none">{item.name}</span>
                         </span>
                       </Link>

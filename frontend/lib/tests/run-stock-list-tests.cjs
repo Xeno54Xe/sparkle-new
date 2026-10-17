@@ -56,3 +56,13 @@ test("every stock has a demo price for the offline fallback", () => {
   assert.equal(demoStocks.length, 50)
   for (const s of demoStocks) assert.ok(s.price > 0 && s.price !== 100, s.symbol)
 })
+
+test("new-report labels read naturally", () => {
+  const source = fs.readFileSync(path.join(libDir, "fresh-reports.ts"), "utf8")
+  fs.writeFileSync(path.join(outDir, "fresh-reports.js"), ts.transpileModule(source, { compilerOptions }).outputText)
+  const { describeFresh } = require(path.join(outDir, "fresh-reports.js"))
+  assert.equal(describeFresh({ kind: "sparkle", label: "Sparkle Report", period: "2026-10-17" }), "Sparkle Report, 17 Oct")
+  assert.equal(describeFresh({ kind: "ec", label: "Earnings call", period: "FEB26" }), "Earnings call, Feb 2026")
+  assert.equal(describeFresh({ kind: "ar", label: "Annual report", period: "FY26" }), "Annual report, FY26")
+  assert.equal(describeFresh({ kind: "ec", label: "Earnings call", period: "Q3" }), "Earnings call, Q3")
+})

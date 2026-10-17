@@ -325,6 +325,14 @@ function fallbackFor(pathname: string) {
     return fundamentalFor(decodeURIComponent(parts[1]), parts[2], decodeURIComponent(parts.slice(3).join("/")))
   }
 
+  if (pathname === "/reports/fresh") {
+    return { symbols: {}, timestamp: nowIso(), local_fallback: true }
+  }
+
+  if (parts[0] === "news" && parts[1] === "stock") {
+    return { articles: [], error: "Live news needs the Python backend.", timestamp: nowIso(), local_fallback: true }
+  }
+
   if (pathname === "/reports/list") {
     return {
       reports: [],

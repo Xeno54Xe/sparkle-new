@@ -1,5 +1,6 @@
 import { TradingViewChart } from "@/components/stock/tradingview-chart"
 import { KeyMetrics } from "@/components/stock/key-metrics"
+import { StockNews } from "@/components/stock/stock-news"
 import { getStockBySymbol } from "@/lib/stocks"
 
 interface StockPageProps {
@@ -25,6 +26,7 @@ export default async function StockPage({ params }: StockPageProps) {
         description="Daily candles with volume"
       />
       <KeyMetrics stock={stock} />
+      <StockNews stock={stock} />
     </div>
   )
 }

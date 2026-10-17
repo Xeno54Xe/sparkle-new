@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { Star } from "lucide-react"
 import { StockLogo } from "@/components/ui/stock-logo"
 import { useWatchlist } from "@/lib/hooks/useWatchlist"
+import { useFreshReports, describeFresh, type FreshReport } from "@/lib/hooks/useFreshReports"
 import { API_BASE } from "@/lib/api"
 import { cn } from "@/lib/utils"
 import type { Stock } from "@/lib/stocks"
@@ -14,8 +15,8 @@ const optionsEnabled = process.env.NEXT_PUBLIC_OPTIONS_STRATEGIES_ENABLED === "t
 
 const TABS = [
   { label: "Overview", href: "" },
-  { label: "Sparkle Report", href: "/sparkle" },
-  { label: "Intelligence", href: "/intelligence" },
+  { label: "Sparkle Report", href: "/sparkle", fresh: ["sparkle"] },
+  { label: "Intelligence", href: "/intelligence", fresh: ["ec", "ar"] },
   { label: "Charts", href: "/charts" },
   { label: "Price history", href: "/prices" },
   { label: "Financials", href: "/financials" },
@@ -32,6 +33,9 @@ export function StockHeader({ stock }: { stock: Stock }) {
   const [live, setLive] = useState<LivePrice | null>(null)
   const { items, addStock, removeStock } = useWatchlist()
   const watched = items.find(i => i.symbol === stock.symbol)
+  const freshReports = useFreshReports()[stock.symbol] ?? []
+  const freshFor = (kinds?: string[]): FreshReport[] =>
+    kinds ? freshReports.filter(r => kinds.includes(r.kind)) : []
 
   useEffect(() => {
     let cancelled = false
@@ -103,6 +107,7 @@ export function StockHeader({ stock }: { stock: Stock }) {
         <nav className="-mb-px mt-5 flex gap-1 overflow-x-auto scrollbar-none" aria-label={`${stock.symbol} sections`}>
           {TABS.map(tab => {
             const active = isActive(tab.href)
+            const fresh = freshFor("fresh" in tab ? tab.fresh : undefined)
             return (
               <Link
                 key={tab.label}
@@ -116,6 +121,14 @@ export function StockHeader({ stock }: { stock: Stock }) {
                 )}
               >
                 {tab.label}
+                {fresh.length > 0 && (
+                  <span
+                    className="ml-1.5 inline-block h-1.5 w-1.5 -translate-y-0.5 rounded-full bg-info align-middle"
+                    title={`New: ${fresh.map(describeFresh).join("; ")}`}
+                  >
+                    <span className="sr-only">, new: {fresh.map(describeFresh).join("; ")}</span>
+                  </span>
+                )}
               </Link>
             )
           })}

@@ -9,6 +9,8 @@ from technical_service import get_indicators, get_candlestick_pattern, get_cross
 from signal_service import generate_signal
 from financial_service import get_stock_info, get_financials, get_estimates
 from stocks import TICKERS as HEATMAP_TICKERS, NAMES as HEATMAP_NAMES, SECTORS as HEATMAP_SECTORS
+from stocks import STOCKS, find_stock
+import stock_news
 from precompute import Precomputer
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
@@ -23,7 +25,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import yfinance as yf
 import pandas as pd
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 precomputer = Precomputer()
 
@@ -908,3 +910,141 @@ precomputer.register("news", compute_news, _has("articles"), open_every=300, clo
 @app.get("/news")
 def get_news():
     return precomputer.serve("news")[0]
+
+
+# ═══ STOCK NEWS ═══
+
+_stock_news_cache: dict = {}
+STOCK_NEWS_TTL = 900        # 15 minutes
+STOCK_NEWS_EMPTY_TTL = 300  # a quiet feed is checked again sooner
+
+
+@app.get("/news/stock/{symbol}")
+def get_stock_news(symbol: str):
+    """Last week's headlines that name this company, newest first, each with a rough tone."""
+    stock = find_stock(symbol)
+    if not stock:
+        return JSONResponse(status_code=404, content={"error": f"'{symbol}' is not in the covered stock list"})
+    key = stock["symbol"]
+    hit = _stock_news_cache.get(key)
+    if hit and time.time() - hit[0] < (STOCK_NEWS_TTL if hit[1]["articles"] else STOCK_NEWS_EMPTY_TTL):
+        return hit[1]
+    result = stock_news.stock_news(stock)
+    if not result.get("error"):
+        _stock_news_cache[key] = (time.time(), result)
+    elif hit:
+        return hit[1]  # feed down: keep showing the last good headlines
+    return result
+
+
+# ═══ NEW-REPORT BADGES ═══
+
+SPARKLE_NEW_DAYS = 14   # a Sparkle Report is "new" for one fortnightly cycle
+REGISTRY_NEW_DAYS = 14  # an EC/AR report is "new" this long after the generator finished it
+REGISTRY_FILE = os.path.join(EARNINGS_OUTPUTS, "registry.json")  # optional copy of the generator's registry
+
+_fresh_cache: dict = {"ts": 0.0, "day": None, "value": None}
+FRESH_CACHE_TTL = 300
+
+
+def _ec_month(period: str):
+    m = re.fullmatch(r"([A-Z]{3})(\d{2})", period.upper())
+    if m and m.group(1) in _MONTHS:
+        return 2000 + int(m.group(2)), _MONTHS[m.group(1)]
+    return None
+
+
+def _registry_finished():
+    """{(folder, 'EC'|'AR', period): finished date} from outputs/registry.json, if present."""
+    if not os.path.exists(REGISTRY_FILE):
+        return {}
+    try:
+        with open(REGISTRY_FILE, encoding="utf-8") as f:
+            entries = json.load(f)
+    except Exception:
+        return {}
+    out = {}
+    for e in (entries.values() if isinstance(entries, dict) else entries):
+        if not isinstance(e, dict):
+            continue
+        steps = e.get("steps") or {}
+        done = (steps.get("beginner") or {}) if (steps.get("beginner") or {}).get("status") == "success" else {}
+        ts = done.get("timestamp")
+        if not (ts and e.get("stock") and e.get("period") and e.get("doc_type")):
+            continue
+        try:
+            finished = datetime.fromisoformat(ts.replace("Z", "+00:00")).date()
+        except ValueError:
+            continue
+        out[(e["stock"], e["doc_type"].upper(), str(e["period"]).upper())] = finished
+    return out
+
+
+def compute_fresh_reports(today: date) -> dict:
+    """New reports per stock symbol.
+
+    - Sparkle Report: dated within the last SPARKLE_NEW_DAYS days.
+    - Earnings call / annual report: finished by the generator within
+      REGISTRY_NEW_DAYS (needs outputs/registry.json). Without the registry an
+      earnings call counts as new when it was filed this month or last month.
+    """
+    finished = _registry_finished()
+    this_month = (today.year, today.month)
+    last_month = (today.year - 1, 12) if today.month == 1 else (today.year, today.month - 1)
+    symbols = {}
+    for stock in STOCKS:
+        folder = stock.get("folder")
+        if not folder or not os.path.isdir(os.path.join(EARNINGS_OUTPUTS, folder)):
+            continue
+        base = os.path.join(EARNINGS_OUTPUTS, folder)
+        found = []
+
+        sr_dir = os.path.join(base, "SR")
+        if os.path.isdir(sr_dir):
+            dates = sorted((d for d in os.listdir(sr_dir)
+                            if _SR_DATE.match(d) and os.path.exists(os.path.join(sr_dir, d, "sparkle.json"))),
+                           reverse=True)
+            if dates:
+                try:
+                    d = date.fromisoformat(dates[0])
+                except ValueError:
+                    d = None
+                if d and timedelta(0) <= today - d <= timedelta(days=SPARKLE_NEW_DAYS):
+                    found.append({"kind": "sparkle", "label": "Sparkle Report", "period": dates[0]})
+
+        for cat, kind, label in (("EC", "ec", "Earnings call"), ("AR", "ar", "Annual report")):
+            cat_dir = os.path.join(base, cat)
+            if not os.path.isdir(cat_dir):
+                continue
+            periods = sorted((p for p in os.listdir(cat_dir) if os.path.isdir(os.path.join(cat_dir, p))),
+                             key=_period_sort_key, reverse=True)
+            for period in periods:
+                done = finished.get((folder, cat, period.upper()))
+                if done is not None:
+                    is_new = timedelta(0) <= today - done <= timedelta(days=REGISTRY_NEW_DAYS)
+                else:
+                    is_new = cat == "EC" and _ec_month(period) in (this_month, last_month)
+                if is_new:
+                    found.append({"kind": kind, "label": label, "period": period})
+                    break  # the newest new one is enough for a badge
+
+        if found:
+            symbols[stock["symbol"]] = found
+    return {
+        "as_of": today.isoformat(),
+        "rules": {"sparkle_days": SPARKLE_NEW_DAYS, "registry_days": REGISTRY_NEW_DAYS,
+                  "registry": os.path.exists(REGISTRY_FILE)},
+        "symbols": symbols,
+    }
+
+
+@app.get("/reports/fresh")
+def get_fresh_reports():
+    """Which stocks have a new Sparkle Report, earnings-call or annual-report analysis."""
+    today = datetime.now(timezone(timedelta(hours=5, minutes=30))).date()  # IST
+    c = _fresh_cache
+    if c["value"] is not None and c["day"] == today and time.time() - c["ts"] < FRESH_CACHE_TTL:
+        return c["value"]
+    value = compute_fresh_reports(today)
+    c.update(ts=time.time(), day=today, value=value)
+    return value

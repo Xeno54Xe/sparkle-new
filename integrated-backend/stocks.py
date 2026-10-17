@@ -28,3 +28,12 @@ STOCKS = load_stocks()
 TICKERS = {s["symbol"]: s["yahoo"] for s in STOCKS}
 NAMES = {s["symbol"]: s["name"] for s in STOCKS}
 SECTORS = {s["symbol"]: s["sector"] for s in STOCKS}
+BY_SYMBOL = {s["symbol"]: s for s in STOCKS}
+
+
+def find_stock(symbol: str):
+    """Look up a listed stock by NSE symbol, with or without '.NS', any case."""
+    sym = symbol.strip().upper()
+    if sym.endswith(".NS"):
+        sym = sym[:-3]
+    return BY_SYMBOL.get(sym)

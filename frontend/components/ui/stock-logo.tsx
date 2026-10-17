@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { getStockLogoUrl } from "@/lib/stock-logos"
 import { cn } from "@/lib/utils"
 
@@ -15,8 +15,18 @@ interface StockLogoProps {
 
 export function StockLogo({ symbol, size = 40, className, fallbackClassName, isPositive = true }: StockLogoProps) {
   const [imgError, setImgError] = useState(false)
+  const imgRef = useRef<HTMLImageElement>(null)
   const logoUrl = getStockLogoUrl(symbol)
   const showImg = logoUrl && !imgError
+
+  // A server-rendered <img> can fail before React attaches onError; catch that after mount.
+  useEffect(() => {
+    setImgError(false)
+  }, [logoUrl])
+  useEffect(() => {
+    const img = imgRef.current
+    if (img && img.complete && img.naturalWidth === 0) setImgError(true)
+  }, [logoUrl, imgError])
 
   return (
     <div
@@ -30,6 +40,7 @@ export function StockLogo({ symbol, size = 40, className, fallbackClassName, isP
     >
       {showImg ? (
         <img
+          ref={imgRef}
           src={logoUrl}
           alt={symbol}
           width={size - 8}
