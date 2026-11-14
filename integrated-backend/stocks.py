@@ -1,15 +1,20 @@
 """The covered stock list, read from the file the frontend also uses.
 
-frontend/lib/nifty50.json is the single source of truth. Set
-SPARKLE_STOCKS_FILE to point somewhere else (e.g. when the backend is
-deployed without the frontend folder next to it).
+frontend/lib/nifty50.json is the single source of truth. When the backend
+is deployed on its own (e.g. on Vercel, without the frontend folder next to
+it) the copy in this folder, nifty50.json, is used instead; a test keeps the
+two identical. SPARKLE_STOCKS_FILE overrides both.
 """
 import json
 import os
 
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_FRONTEND_FILE = os.path.join(_HERE, "..", "frontend", "lib", "nifty50.json")
+_BUNDLED_FILE = os.path.join(_HERE, "nifty50.json")
+
 STOCKS_FILE = os.environ.get(
     "SPARKLE_STOCKS_FILE",
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "lib", "nifty50.json"),
+    _FRONTEND_FILE if os.path.exists(_FRONTEND_FILE) else _BUNDLED_FILE,
 )
 
 

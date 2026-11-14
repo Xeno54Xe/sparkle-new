@@ -13,6 +13,13 @@ def test_backend_reads_the_frontend_list():
     assert [s["symbol"] for s in frontend] == list(stocks.TICKERS)
 
 
+def test_bundled_copy_matches_the_frontend_list():
+    # The backend ships its own copy for standalone deploys; it must not drift.
+    bundled = os.path.join(os.path.dirname(__file__), "..", "nifty50.json")
+    with open(FRONTEND_LIST, encoding="utf-8") as f, open(bundled, encoding="utf-8") as g:
+        assert json.load(g) == json.load(f), "run: cp frontend/lib/nifty50.json integrated-backend/"
+
+
 def test_list_is_complete_and_unique():
     symbols = [s["symbol"] for s in stocks.STOCKS]
     assert len(symbols) == 50
