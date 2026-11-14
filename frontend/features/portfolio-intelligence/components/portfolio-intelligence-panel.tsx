@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import {
   Area,
   AreaChart,
@@ -28,12 +28,14 @@ import {
   Target,
   Trash2,
 } from "lucide-react"
+import { API_BASE } from "@/lib/api"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 import { demoStocks as nifty50Stocks } from "@/lib/demo-prices"
 import {
   analyzePortfolio,
   findPairCandidates,
   samplePortfolio,
+  rebaseToLivePrices,
   type HoldingInput,
 } from "../domain/portfolio-model"
 
@@ -73,7 +75,28 @@ function ScoreBar({ value, color = "bg-primary" }: { value: number; color?: stri
 export function PortfolioIntelligencePanel() {
   const [holdings, setHoldings] = useState<HoldingInput[]>(samplePortfolio)
   const [selectedPair, setSelectedPair] = useState(0)
-  const summary = useMemo(() => analyzePortfolio(holdings), [holdings])
+  // Bundled snapshot first, then live quotes for all 50 from the backend.
+  const [universe, setUniverse] = useState(nifty50Stocks)
+  const holdingsEdited = useRef(false)
+  const summary = useMemo(() => analyzePortfolio(holdings, universe), [holdings, universe])
+
+  useEffect(() => {
+    let active = true
+    fetch(`${API_BASE}/market/heatmap`, { cache: "no-store" })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        const rows: Array<{ symbol: string; price: number; change_pct: number }> = data?.stocks ?? []
+        if (!active || !Array.isArray(rows) || rows.length === 0) return
+        const live = nifty50Stocks.map((stock) => {
+          const row = rows.find((item) => item.symbol === stock.symbol)
+          return row && row.price > 0 ? { ...stock, price: row.price, change: Number(row.change_pct) || 0 } : stock
+        })
+        setUniverse(live)
+        if (!holdingsEdited.current) setHoldings(rebaseToLivePrices(samplePortfolio, live))
+      })
+      .catch(() => {})
+    return () => { active = false }
+  }, [])
   const pairs = useMemo(() => findPairCandidates(6), [])
   const activePair = pairs[selectedPair] ?? pairs[0]
   const factorData = Object.entries(summary.factorTilt).map(([key, value]) => ({
@@ -90,15 +113,18 @@ export function PortfolioIntelligencePanel() {
   }))
 
   const updateHolding = (index: number, patch: Partial<HoldingInput>) => {
+    holdingsEdited.current = true
     setHoldings((current) => current.map((holding, itemIndex) => itemIndex === index ? { ...holding, ...patch } : holding))
   }
 
   const addHolding = () => {
-    const next = nifty50Stocks.find((stock) => !holdings.some((holding) => holding.symbol === stock.symbol)) ?? nifty50Stocks[0]
+    holdingsEdited.current = true
+    const next = universe.find((stock) => !holdings.some((holding) => holding.symbol === stock.symbol)) ?? universe[0]
     setHoldings((current) => [...current, { symbol: next.symbol, quantity: 1, averagePrice: next.price }])
   }
 
   const removeHolding = (index: number) => {
+    holdingsEdited.current = true
     setHoldings((current) => current.filter((_, itemIndex) => itemIndex !== index))
   }
 
@@ -135,7 +161,7 @@ export function PortfolioIntelligencePanel() {
             <div className="flex gap-2">
               <button
                 type="button"
-                onClick={() => setHoldings(samplePortfolio)}
+                onClick={() => { holdingsEdited.current = false; setHoldings(rebaseToLivePrices(samplePortfolio, universe)) }}
                 className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-border px-3 text-sm font-semibold text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
               >
                 <RefreshCw size={15} />
@@ -172,7 +198,7 @@ export function PortfolioIntelligencePanel() {
                       <select
                         value={holding.symbol}
                         onChange={(event) => {
-                          const stock = nifty50Stocks.find((item) => item.symbol === event.target.value)
+                          const stock = universe.find((item) => item.symbol === event.target.value)
                           updateHolding(index, { symbol: event.target.value, averagePrice: stock?.price ?? holding.averagePrice })
                         }}
                         className="h-10 w-full min-w-0 rounded-lg border border-border bg-background px-2 text-sm text-foreground outline-none focus:border-primary"

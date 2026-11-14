@@ -136,8 +136,8 @@ function percentileRank(value: number, values: number[], highIsGood = true) {
   return Math.round(highIsGood ? pct : 100 - pct)
 }
 
-export function scoreStockFactors(stock: Stock): FactorScores {
-  const prices = nifty50Stocks.map((item) => item.price)
+export function scoreStockFactors(stock: Stock, universe: Stock[] = nifty50Stocks): FactorScores {
+  const prices = universe.map((item) => item.price)
   const sector = stock.sector
   const momentum = clamp(50 + stock.change * 12 + stableNoise(stock.symbol, 4))
   const value = clamp(percentileRank(stock.price, prices, false) * 0.65 + (sectorQuality[sector] ?? 60) * 0.35)
@@ -169,9 +169,10 @@ function summarizeBy<T extends string>(holdings: HoldingAnalysis[], key: (holdin
     .sort((a, b) => b.weight - a.weight)
 }
 
-export function analyzePortfolio(inputs: HoldingInput[]): PortfolioSummary {
+/** Prices default to the bundled snapshot; pass live quotes as `universe` when available. */
+export function analyzePortfolio(inputs: HoldingInput[], universe: Stock[] = nifty50Stocks): PortfolioSummary {
   const valid = inputs
-    .map((input) => ({ input, stock: nifty50Stocks.find((stock) => stock.symbol === input.symbol) }))
+    .map((input) => ({ input, stock: universe.find((stock) => stock.symbol === input.symbol) }))
     .filter((item): item is { input: HoldingInput; stock: Stock } => Boolean(item.stock) && item.input.quantity > 0)
 
   const totalValue = valid.reduce((sum, item) => sum + item.stock.price * item.input.quantity, 0)
@@ -186,7 +187,7 @@ export function analyzePortfolio(inputs: HoldingInput[]): PortfolioSummary {
       weight: totalValue > 0 ? value / totalValue : 0,
       pnl: value - cost,
       pnlPct: cost > 0 ? ((value - cost) / cost) * 100 : 0,
-      factors: scoreStockFactors(stock),
+      factors: scoreStockFactors(stock, universe),
       theme: sectorThemes[stock.sector] ?? "Core equity",
     }
   })
@@ -319,6 +320,20 @@ export function findPairCandidates(limit = 6): PairCandidate[] {
   return candidates
     .sort((a, b) => b.confidence - a.confidence)
     .slice(0, limit)
+}
+
+/**
+ * Rebase holdings' average prices from the snapshot to live prices, keeping
+ * each holding's gain or loss in percent. Used for the sample portfolio so
+ * its P&L stays realistic once live quotes arrive.
+ */
+export function rebaseToLivePrices(inputs: HoldingInput[], live: Stock[]): HoldingInput[] {
+  return inputs.map((input) => {
+    const before = nifty50Stocks.find((stock) => stock.symbol === input.symbol)
+    const now = live.find((stock) => stock.symbol === input.symbol)
+    if (!before || !now || !(before.price > 0)) return input
+    return { ...input, averagePrice: Math.round(input.averagePrice * (now.price / before.price) * 100) / 100 }
+  })
 }
 
 export const samplePortfolio: HoldingInput[] = [

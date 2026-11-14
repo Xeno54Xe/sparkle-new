@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import { Activity, Calculator, Target, Wand2 } from "lucide-react"
 import type { DemoStock as Stock } from "@/lib/demo-prices"
 import type { LegDraft, OptionLeg, RiskPreference, StrategyCandidate, StrategyGoal, StrategyId, TechnicalSnapshot } from "../domain/types"
@@ -40,7 +40,13 @@ function draftsToLegs(drafts: LegDraft[], expiry: string): OptionLeg[] {
   }))
 }
 
-export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
+export function OptionsStrategiesPanel({ stock: snapshot }: OptionsStrategiesPanelProps) {
+  // Start from the bundled snapshot so the page renders at once, then switch
+  // to the live quote; the snapshot can be months old.
+  const [quote, setQuote] = useState({ price: snapshot.price, change: snapshot.change })
+  const stock = { ...snapshot, price: quote.price, change: quote.change }
+  // Once the user edits the inputs, a late live quote must not overwrite them.
+  const userEdited = useRef(false)
   const [strategyId, setStrategyId] = useState<StrategyId>("long-call")
   const [riskPreference, setRiskPreference] = useState<RiskPreference>("balanced")
   const [strategyGoal, setStrategyGoal] = useState<StrategyGoal>(() => defaultGoalFromStock(stock.change))
@@ -72,11 +78,13 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
   const assumptions = getModelAssumptions(parsedSpot, stock.change, technicalSnapshot, expiry)
 
   const handleStrategyChange = (next: StrategyId) => {
+    userEdited.current = true
     setStrategyId(next)
     setLegs(createModelDrafts(next, Number(spotPrice) || stock.price, stock.change, technicalSnapshot, expiry))
   }
 
   const handleCandidateSelect = (candidate: StrategyCandidate) => {
+    userEdited.current = true
     setStrategyId(candidate.strategyId)
     setLegs(createModelDrafts(candidate.strategyId, Number(spotPrice) || stock.price, stock.change, technicalSnapshot, expiry))
   }
@@ -93,8 +101,30 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
   }
 
   const handleLegChange = (id: string, field: keyof LegDraft, value: string) => {
+    userEdited.current = true
     setLegs((current) => current.map((leg) => leg.id === id ? { ...leg, [field]: value } : leg))
   }
+
+  useEffect(() => {
+    let active = true
+    fetch(`/api/backend/price/${encodeURIComponent(snapshot.symbol)}.NS`, { cache: "no-store" })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        const price = Number(data?.price)
+        const change = Number(data?.change_pct)
+        if (!active || !(price > 0) || !Number.isFinite(change)) return
+        setQuote({ price, change })
+        if (userEdited.current) return
+        const next = getModelAssumptions(price, change, null, "")
+        setSpotPrice(String(price))
+        setExpiry(next.expiry)
+        setStrategyGoal(defaultGoalFromStock(change))
+        setLegs(createModelDrafts("long-call", price, change, null, next.expiry))
+        setStrategyId("long-call")
+      })
+      .catch(() => {})
+    return () => { active = false }
+  }, [snapshot.symbol])
 
   useEffect(() => {
     let active = true
@@ -194,13 +224,13 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
         candidates={candidates}
         loadingSignal={loadingSignal}
         onRiskChange={setRiskPreference}
-        onGoalChange={setStrategyGoal}
+        onGoalChange={(goal) => { userEdited.current = true; setStrategyGoal(goal) }}
         onSelectCandidate={handleCandidateSelect}
       />
 
       <div className="grid gap-4 lg:grid-cols-[1fr_1fr_1fr]">
         <StrategySelector value={strategyId} onChange={handleStrategyChange} />
-        <ExpirySelector value={expiry} onChange={setExpiry} />
+        <ExpirySelector value={expiry} onChange={(value) => { userEdited.current = true; setExpiry(value) }} />
         <div className="space-y-2">
           <div className="flex items-center justify-between gap-3">
             <label htmlFor="spot-price" className="text-sm font-medium text-foreground">
@@ -218,7 +248,7 @@ export function OptionsStrategiesPanel({ stock }: OptionsStrategiesPanelProps) {
             id="spot-price"
             inputMode="decimal"
             value={spotPrice}
-            onChange={(event) => setSpotPrice(event.target.value)}
+            onChange={(event) => { userEdited.current = true; setSpotPrice(event.target.value) }}
             className="h-11 w-full rounded-lg border border-border bg-background px-3 text-sm text-foreground outline-none transition-colors focus:border-primary"
           />
         </div>

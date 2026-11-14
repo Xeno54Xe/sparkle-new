@@ -2,7 +2,7 @@ import { nifty50Stocks, type Stock } from "./stocks"
 
 // Fixed demo prices, not real quotes. Used by the offline fallback in
 // app/api/backend (when the Python backend can't be reached) and by the
-// portfolio and options simulators, which still run on demo data.
+// portfolio and options simulators until live quotes load.
 export const DEMO_PRICES: Record<string, { price: number; change: number }> = {
   RELIANCE: { price: 2456.75, change: 1.23 },
   TCS: { price: 3892.4, change: -0.45 },
