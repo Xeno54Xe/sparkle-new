@@ -47,8 +47,13 @@ test("report folders exist and fall back to the symbol", () => {
   assert.equal(companyFolder("ASIANPAINT"), "ASIANPAINT")
 })
 
-test("every stock has a logo", () => {
-  for (const s of nifty50Stocks) assert.match(getStockLogoUrl(s.symbol), /^\/api\/logo\?domain=/, s.symbol)
+test("every stock has a logo, or none so the initials show without a failed request", () => {
+  // These companies have no favicon Google can serve; logo is null on purpose.
+  const noLogo = new Set(["NTPC", "SBILIFE", "LTM"])
+  for (const s of nifty50Stocks) {
+    if (noLogo.has(s.symbol)) assert.equal(getStockLogoUrl(s.symbol), "", s.symbol)
+    else assert.match(getStockLogoUrl(s.symbol), /^\/api\/logo\?domain=/, s.symbol)
+  }
   assert.equal(getStockLogoUrl("NOPE"), "")
 })
 

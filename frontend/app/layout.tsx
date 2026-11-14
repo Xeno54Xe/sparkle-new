@@ -41,7 +41,8 @@ export default function RootLayout({
     <html lang="en" className={`dark ${plex.variable}`}>
       <body className="font-sans antialiased min-h-screen overflow-x-hidden custom-scrollbar">
         {children}
-        <Analytics />
+        {/* Needs Web Analytics switched on for the Vercel project, else its script 404s */}
+        {process.env.NEXT_PUBLIC_VERCEL_ANALYTICS === "true" && <Analytics />}
       </body>
     </html>
   )
