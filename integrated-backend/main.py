@@ -1,5 +1,14 @@
 from __future__ import annotations
 
+import os
+
+# On Vercel (serverless) there is no long-lived process for the precompute
+# thread, and only /tmp is writable, so use request-time caching and keep
+# yfinance's cache under /tmp.
+if os.environ.get("VERCEL"):
+    os.environ.setdefault("SPARKLE_PRECOMPUTE", "0")
+    os.environ.setdefault("XDG_CACHE_HOME", "/tmp/.cache")
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -25,6 +34,13 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import yfinance as yf
 import pandas as pd
+
+if os.environ.get("VERCEL"):
+    try:
+        os.makedirs("/tmp/.cache/py-yfinance", exist_ok=True)
+        yf.set_tz_cache_location("/tmp/.cache/py-yfinance")
+    except Exception:
+        pass
 from datetime import date, datetime, timedelta, timezone
 
 precomputer = Precomputer()

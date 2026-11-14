@@ -3,9 +3,10 @@ import { demoStocks, type DemoStock as Stock } from "@/lib/demo-prices"
 
 export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
+export const maxDuration = 60
 
 const BACKEND_API_URL = process.env.BACKEND_API_URL || "http://localhost:8000"
-const PROXY_TIMEOUT_MS = 20000
+const PROXY_TIMEOUT_MS = 50000
 
 type SignalName = "BUY" | "SELL" | "HOLD"
 
