@@ -68,17 +68,20 @@ function roundStrike(price: number, offsetSteps = 0) {
   return Math.max(step, Math.round(price / step) * step + offsetSteps * step)
 }
 
-function nextMonthlyExpiry(from = new Date()) {
-  const date = new Date(from)
-  date.setMonth(date.getMonth() + 1)
-  date.setDate(1)
+const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000
+const MONTHLY_EXPIRY_WEEKDAY = 2 // NSE monthly F&O contracts expire on the last Tuesday (since Sep 2025)
 
-  const month = date.getMonth()
-  const lastDay = new Date(date.getFullYear(), month + 1, 0)
-  while (lastDay.getDay() !== 4) {
-    lastDay.setDate(lastDay.getDate() - 1)
+/**
+ * Last Tuesday of next month, as YYYY-MM-DD. Worked out on the IST calendar
+ * with UTC date maths, so the server (UTC) and an Indian browser agree; the
+ * old local-midnight + toISOString version landed a day early in IST.
+ */
+export function nextMonthlyExpiry(from = new Date()) {
+  const ist = new Date(from.getTime() + IST_OFFSET_MS)
+  const lastDay = new Date(Date.UTC(ist.getUTCFullYear(), ist.getUTCMonth() + 2, 0))
+  while (lastDay.getUTCDay() !== MONTHLY_EXPIRY_WEEKDAY) {
+    lastDay.setUTCDate(lastDay.getUTCDate() - 1)
   }
-
   return lastDay.toISOString().slice(0, 10)
 }
 
