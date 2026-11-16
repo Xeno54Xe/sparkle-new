@@ -1,77 +1,45 @@
 "use client"
 
 import { useState, use, useEffect } from "react"
-import { StockSidebar } from "@/components/stock/stock-sidebar"
 import { FundamentalAnalysis } from "@/components/stock/fundamental-analysis"
 import { TechnicalAnalysis } from "@/components/stock/technical-analysis"
-import { Sparkles, BarChart3, Activity } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 interface IntelligencePageProps {
   params: Promise<{ symbol: string }>
 }
 
+const VIEWS = [
+  { id: "fundamental", label: "Earnings calls & annual reports", short: "Fundamental" },
+  { id: "technical", label: "Price signals & indicators", short: "Technical" },
+] as const
+
 export default function IntelligencePage({ params }: IntelligencePageProps) {
-  const { symbol } = use(params)
-  useEffect(() => { document.title = `${symbol} — SparkleAI` }, [symbol])
-  const [activeTab, setActiveTab] = useState<"fundamental" | "technical">("fundamental")
+  const { symbol: raw } = use(params)
+  const symbol = decodeURIComponent(raw)
+  useEffect(() => { document.title = `${symbol} Intelligence — SparkleAI` }, [symbol])
+  const [view, setView] = useState<"fundamental" | "technical">("fundamental")
 
   return (
-    <div className="flex min-h-screen bg-background">
-      {/* Stock Sidebar */}
-      <StockSidebar />
-
-      {/* Main Content */}
-      <div className="flex flex-1 flex-col pl-[260px]">
-        <main className="flex-1 p-6">
-          {/* Header */}
-          <div className="mb-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                <Sparkles size={24} className="text-primary" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold tracking-tight">Sparkle Intelligence</h1>
-                <p className="text-sm text-muted-foreground">
-                  AI-powered analysis for {symbol}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Tab Switcher */}
-          <div className="mb-6 flex gap-2 rounded-xl bg-card p-1.5">
-            <button
-              onClick={() => setActiveTab("fundamental")}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all ${
-                activeTab === "fundamental"
-                  ? "bg-primary text-primary-foreground shadow-lg"
-                  : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-              }`}
-            >
-              <BarChart3 size={18} />
-              Fundamental Analysis
-            </button>
-            <button
-              onClick={() => setActiveTab("technical")}
-              className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition-all ${
-                activeTab === "technical"
-                  ? "bg-primary text-primary-foreground shadow-lg"
-                  : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-              }`}
-            >
-              <Activity size={18} />
-              Technical Analysis
-            </button>
-          </div>
-
-          {/* Tab Content */}
-          {activeTab === "fundamental" ? (
-            <FundamentalAnalysis symbol={symbol} />
-          ) : (
-            <TechnicalAnalysis symbol={symbol} />
-          )}
-        </main>
+    <div className="space-y-6">
+      <div className="inline-flex rounded-lg border border-line bg-surface p-1" role="tablist" aria-label="Analysis type">
+        {VIEWS.map(v => (
+          <button
+            key={v.id}
+            role="tab"
+            aria-selected={view === v.id}
+            onClick={() => setView(v.id)}
+            className={cn(
+              "rounded-md px-4 py-2 text-sm transition-colors",
+              view === v.id ? "bg-surface-2 font-medium text-foreground" : "text-muted-foreground hover:text-foreground"
+            )}
+          >
+            <span className="font-medium">{v.short}</span>
+            <span className="ml-2 hidden text-xs text-muted-foreground md:inline">{v.label}</span>
+          </button>
+        ))}
       </div>
+      {view === "fundamental" ? <FundamentalAnalysis symbol={symbol} /> : <TechnicalAnalysis symbol={symbol} />}
     </div>
   )
 }

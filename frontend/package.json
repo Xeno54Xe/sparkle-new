@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p .",
+    "test": "node --test lib/tests/run-stock-list-tests.cjs features/portfolio-intelligence/tests/run-portfolio-tests.cjs features/options-strategies/tests/run-payoff-tests.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

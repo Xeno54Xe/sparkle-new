@@ -35,7 +35,7 @@ const { calculateStrategyMetrics } = require(path.join(outDir, "domain", "metric
 const { validateLegs } = require(path.join(outDir, "domain", "validation.js"))
 const { buildStrategyCandidates, defaultGoalFromStock } = require(path.join(outDir, "domain", "recommendation-engine.js"))
 const { buildLiveRecommendations, selectModelExpiry } = require(path.join(outDir, "domain", "live-recommendation-engine.js"))
-const { createModelDrafts, estimateVolatility, getModelAssumptions } = require(path.join(outDir, "domain", "model-pricing.js"))
+const { createModelDrafts, estimateVolatility, getModelAssumptions, nextMonthlyExpiry } = require(path.join(outDir, "domain", "model-pricing.js"))
 
 function leg(overrides) {
   return {
@@ -238,4 +238,12 @@ test("live model selects expiry, strikes and execution-side premiums from option
   assert.equal(recommendations[0].expiry, expiry)
   assert(recommendations[0].legs.every((item) => item.premium > 0))
   assert(recommendations[0].metrics)
+})
+
+test("monthly expiry is the last Tuesday of next month on the IST calendar", () => {
+  // 14 Nov 2026 -> last Tuesday of December 2026 is the 29th
+  assert.equal(nextMonthlyExpiry(new Date("2026-11-14T06:00:00Z")), "2026-12-29")
+  // 30 Nov 2026 22:00 UTC is already 1 Dec in India -> January 2027 (26th)
+  assert.equal(nextMonthlyExpiry(new Date("2026-11-30T22:00:00Z")), "2027-01-26")
+  assert.equal(new Date(nextMonthlyExpiry(new Date("2026-03-10T00:00:00Z")) + "T00:00:00Z").getUTCDay(), 2)
 })

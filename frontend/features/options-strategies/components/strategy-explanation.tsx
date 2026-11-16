@@ -41,7 +41,7 @@ export function StrategyExplanation({ definition }: StrategyExplanationProps) {
               <div key={trait.label} className="rounded-lg border border-border bg-background p-3">
                 <div className="flex items-center gap-2 text-primary">
                   <Icon size={15} />
-                  <p className="text-xs font-semibold uppercase tracking-wide">{trait.label}</p>
+                  <p className="text-xs font-semibold">{trait.label}</p>
                 </div>
                 <p className="mt-2 text-sm font-semibold capitalize text-foreground">{trait.value}</p>
               </div>

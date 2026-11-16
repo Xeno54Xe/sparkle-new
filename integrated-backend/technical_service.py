@@ -1,6 +1,5 @@
-import pandas_ta as ta
+import indicators as ta
 import pandas as pd
-import numpy as np
 
 def get_indicators(df):
     """Calculate all technical indicators from price data"""
@@ -24,18 +23,10 @@ def get_indicators(df):
     result["EMA9"] = safe_last(ema9)
     result["EMA20"] = safe_last(ema20)
 
-    # Ichimoku
-    ichimoku = ta.ichimoku(high, low, close)
-    if ichimoku is not None and len(ichimoku) >= 2:
-        ichi_df = ichimoku[0]  # ichimoku returns a tuple of DataFrames
-        if "ITS_9" in ichi_df.columns:
-            result["ichimokuTenkan"] = safe_last(ichi_df["ITS_9"])
-        if "IKS_26" in ichi_df.columns:
-            result["ichimokuKijun"] = safe_last(ichi_df["IKS_26"])
-    if "ichimokuTenkan" not in result:
-        result["ichimokuTenkan"] = safe_last(ta.sma(close, length=9))
-    if "ichimokuKijun" not in result:
-        result["ichimokuKijun"] = safe_last(ta.sma(close, length=26))
+    # Ichimoku (Tenkan-sen / Kijun-sen)
+    tenkan, kijun = ta.ichimoku_lines(high, low)
+    result["ichimokuTenkan"] = safe_last(tenkan)
+    result["ichimokuKijun"] = safe_last(kijun)
 
     # ─── MOMENTUM INDICATORS ─────────────────────────────
     # MACD
@@ -108,13 +99,8 @@ def get_indicators(df):
     obv = ta.obv(close, volume)
     result["OBV"] = safe_last(obv)
 
-    # VWAP (Volume Weighted Average Price)
-    try:
-        vwap = ta.vwap(high, low, close, volume)
-        result["VWAP"] = safe_last(vwap)
-    except:
-        # VWAP can fail on daily data, calculate manually
-        result["VWAP"] = round(float((close * volume).tail(20).sum() / volume.tail(20).sum()), 2)
+    # VWAP (Volume Weighted Average Price) — rolling 20-day on daily bars
+    result["VWAP"] = safe_last(ta.rolling_vwap(high, low, close, volume, length=20))
 
     # ─── CURRENT PRICE ───────────────────────────────────
     result["price"] = round(float(close.iloc[-1]), 2)
@@ -312,5 +298,5 @@ def safe_last(series):
         if len(s) == 0:
             return 0
         return round(float(s.iloc[-1]), 2)
-    except:
+    except Exception:
         return 0

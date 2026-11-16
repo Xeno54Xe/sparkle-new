@@ -1,0 +1,481 @@
+{
+  "doc_type": "sr",
+  "company": "Larsen & Toubro",
+  "folder": "Larsen & Toubro",
+  "symbol": "LT",
+  "as_of": "2026-10-17",
+  "period": {
+    "start": "2026-10-03",
+    "end": "2026-10-17"
+  },
+  "previous_report": null,
+  "summary": {
+    "headline": "Larsen & Toubro: underperformed the Nifty 50 (-1.80% vs +3.23%), news mood positive (65/100), technical signal SELL.",
+    "points": [
+      "Shares moved -1.80% from ₹3,693.40 (2026-10-01) to ₹3,627.10 (2026-10-16).",
+      "90 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 65/100 (49 positive, 11 negative, the rest neutral); 7 headlines that did not name the company were left out.",
+      "Of 29 analyst ratings this month, 5 are strong buy, 18 buy, 4 hold, 1 sell and 1 strong sell.",
+      "Filings by type: Order / contract (2), Financial results (1), Management change (1), Other update (1)."
+    ]
+  },
+  "sections": {
+    "price_performance": {
+      "title": "Price & performance",
+      "label": "Underperformed",
+      "score": 25,
+      "bullets": [
+        "Shares moved -1.80% from ₹3,693.40 (2026-10-01) to ₹3,627.10 (2026-10-16).",
+        "The Nifty 50 moved +3.23% over the same days, so the stock was 5.02 percentage points behind the index.",
+        "Other Industrials companies tracked by SparkleAI averaged -1.94% (3 companies).",
+        "At ₹3,627.10 the price sits at 29.4% of its 52-week range (₹3,288.10 to ₹4,440.00).",
+        "Average daily volume in the period was 1.10x its 3-month average."
+      ],
+      "metrics": [
+        {
+          "name": "Price",
+          "value": 3627.1,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Return (period)",
+          "value": -1.8,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Nifty 50 return",
+          "value": 3.23,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Versus Nifty 50",
+          "value": -5.02,
+          "unit": "pp",
+          "previous": null
+        },
+        {
+          "name": "Sector average return",
+          "value": -1.94,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "52-week position",
+          "value": 29.4,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Volume vs 3-month average",
+          "value": 1.1,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: LT.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/LT.NS/history",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "news_sentiment": {
+      "title": "News sentiment",
+      "label": "Positive",
+      "score": 65,
+      "bullets": [
+        "90 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 65/100 (49 positive, 11 negative, the rest neutral); 7 headlines that did not name the company were left out.",
+        "Positive: \"L&T Finance PAT up 33% on cost-efficiency in Q2FY27\" (BusinessLine, 2026-10-15).",
+        "Positive: \"Larsen & Toubro (NSE:LT): Rising Wedge and Liquidity Analysis\" (Kalkine India, 2026-10-16).",
+        "Positive: \"Larsen & Toubro Limited Wins Orders for Power Transmission & Distribution Business\" (www.marketscreener.com, 2026-10-05).",
+        "Negative: \"L&T Finance shares fall up to 6% despite strong Q2; Analysts project up to 31% upside\" (CNBC TV18, 2026-10-16).",
+        "Negative: \"Larsen & Toubro stock at INR 3,703.30, 16.6 percent below its high - ad-hoc-news.de\" (ad-hoc-news.de, 2026-10-09).",
+        "Negative: \"L&T Finance shares fall up to 6% despite strong Q2; Analysts project up to 31% upside - CNBC TV18\" (LinkedIn, 2026-10-16)."
+      ],
+      "metrics": [
+        {
+          "name": "Headlines",
+          "value": 90,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Off-topic headlines dropped",
+          "value": 7,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "News mood",
+          "value": 65,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Positive headlines",
+          "value": 49,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Negative headlines",
+          "value": 11,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "BusinessLine: L&T Finance PAT up 33% on cost-efficiency in Q2FY27",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbXRhbDlwQTlCdGFvajhVNUZLcHlEX2FvWG8xRmNxYmdHeEdvYnlNQ3RsdE54Z1VRUEtkY2k3Zk1SN1puRGEwQ29yWHdqLTJ5d0E5dzdDSGpVS2hCN0tPaFVNWG1sWWZVbVZDc3N0RDZJSHVHWGVlZHI1bk5nLUhUVHU3LXBSWnZPNmlpWThQcUcyZlVjSTlUbTZuZkUwS1V2X05aUER1cnBYdHp6MmJNTTJQU1ZSLUxLSWpscDBWUDFvUdIByAFBVV95cUxOMVBsaFBzWThRUTFXbkJhQWM1RHhMQ05sVkZuZ0JUUVR4Rm9TNDMzVy1Gb0lodDZkRlRtbHIxR0xJSUhhQXVNbkNKRi1Sd0wwUENiQ3ZFUjJPRXgzQVFCWXZGRlltbFJBN053RlFtVy1WSlBxWEUtRlRoaTNqcUVWUTBQYWhaZzY5eEx5bTVLV09abTBxVUdtd3pmMDR6WGRKam9ZeHZuSklhYm1sLUREUlZKVXU1eDJETVNYMk5lbHNGOUxqQ2NSTw?oc=5",
+          "date": "2026-10-15"
+        },
+        {
+          "label": "Kalkine India: Larsen & Toubro (NSE:LT): Rising Wedge and Liquidity Analysis",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQVpHcExHRWNpVU82cl9rRUQ4TnZLcWtkdlBrR1Vud3Naa0NUU3BoOEFES1QwcHdScU82Qm1wVEE3bUlUMXFLaFllckpGU1FCbE5vUHBrc2dBRmhSZWdtMlRrc1l1LTg3Q1FFeVZTSUYtZ1R4Zld0VDkzVFVEZFlLS0Z2bVprTXpPajlhOTVIYU9odnNfN1B0Nml2eEZPdHJ5eVZwaUtQSUJKQjRuNC1zdFV4ZWNtM0VuMkgtUWxoNWNDNmg1c3dPZGp3?oc=5",
+          "date": "2026-10-16"
+        },
+        {
+          "label": "www.marketscreener.com: Larsen & Toubro Limited Wins Orders for Power Transmission & Distribution Business",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTVMzeWx5c24zZEFUTWo1a0NIOUN1QXVFN3dGQkswS0tWWDM1TGg4QVFBZGJSaWJOeWFnTVVYNlF5d1lMV3hOMlhlWXVxb2ZuNlpQQ1lCak9venhUVGxjQ3QxUGR0NF9iYmU4cmVqZEROSThXOHU3YUsxVUM4OHNwb2EtWlMyelZHdWRncTlra3NpM04zald6VGpHRTBTRlVtYmpZd0F6MnZoQXlhVExZYzJqckRlbXZKbnVQTEJOOGxTamx1SkxxZFJoWQ?oc=5",
+          "date": "2026-10-05"
+        },
+        {
+          "label": "CNBC TV18: L&T Finance shares fall up to 6% despite strong Q2; Analysts project up to 31% upside",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRExWWnJhc0VGX2NYVFlmNWxyenByWm4tT0xRUzFkSkI0YmVNSWV2U1Yyb3lrOGFNU2xNQ2RrU3RseGFoOXQwai1kSldCVnBDV2VYamFNSXNYb2ZrbGRjWlVNN29IRDVsZW1qVjNXbEFiaUNMOW9OTldvM2ZpQkF0WGQ3MWxycm45V2FLUmVZNnd0eEN4YmM2WUp4MThLOUx2UVlMS3BsRUhBUHk4cldzZUZ0YUFWTW5LUlo4SjRiYTB0UlRLM0VhV21PNm5vQ01TLWs3YWp5ZjRsUdIB3wFBVV95cUxQVlIzVWNXYlNvQllTbkhhUEVtQ3FwN0xPZW9LUGJYdlNCRXlQTjZJOVRqUGpocXlUdURvS1ZUWnZhSC1qakZfY24wQ3lBMGw4VE9WcWhtRXplUVZWaXRnQ3dzSE1nbGRWQU1EckNFUEhha294MjFoSFQ4a2Ntc2NYZ3JKOUoxSnZySXBJakRFU0twMjU3SGRwRlEwb1Z3X1ZPRDFaQ1hkR2N6YlBjMVFTdmZtUktpV01XZGFKTXVmcmlFd1h1ZjBTZkZqZkRxemNaczJVV1VfUlFTQVV4RC1r?oc=5",
+          "date": "2026-10-16"
+        },
+        {
+          "label": "ad-hoc-news.de: Larsen & Toubro stock at INR 3,703.30, 16.6 percent below its high - ad-hoc-news.de",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOY0NJeEI2YnR4OWsxd1p0Qllfb0FsT1FGUnJTVHdxUnRwQ3hlZS00ejlYbmRFOGxSc2hXU0lBLUtVNVltS2xFVXUzeUdTbjRDdkd6NmNfVy13TUJweDRvcU13czBiWWIzSnF1anVLUVFNOWdBRlZhalNuZTQySm02TlJ2UHpJY2lNY0YzZ1RLNjM3bGlMMmhYSjNWUHpWd192cVRSc1J6S0xmVUUzMEtadzloYjVtUVVjQm1HQ1hTZkxPcnQyVnQ4OEZR?oc=5",
+          "date": "2026-10-09"
+        },
+        {
+          "label": "LinkedIn: L&T Finance shares fall up to 6% despite strong Q2; Analysts project up to 31% upside - CNBC TV18",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPai1QbzNuRWlFT1hiRlhHQXFfRDFZSDFYMzJiX0JPaWxKWEc0TWJ6Ujd3cVNpVnhLT1dVZDdNMDNDbzJ4LTFJejhTZEhobGNSbnFsWGNGUWh0U053djdJVnJMcHdmQlByd01TNGVucFVLbFBzRVQ1enNaMWtwSVhIRHJLSS1heUV4MmNOdnlqNTByRTN1dlAwUEY2THBYdUU5ajJXY1Z5R3hDaXJVeWd5WkptSQ?oc=5",
+          "date": "2026-10-16"
+        }
+      ]
+    },
+    "announcements": {
+      "title": "Company announcements",
+      "label": "5 notable filings",
+      "score": null,
+      "bullets": [
+        "Filings by type: Order / contract (2), Financial results (1), Management change (1), Other update (1).",
+        "2026-10-13: Financial results — Board Meeting Intimation for Considering The Unaudited Financial Results For The Quarter And Half Year Ended 30Th September 2026.",
+        "2026-10-07: Management change — Change in Management.",
+        "2026-10-07: Other update — Compliances-Half Yearly Report (SEBI Circular No. CIR/IMD/DF-1/67/2017).",
+        "2026-10-07: Order / contract — Award_of_Order_Receipt_of_Order.",
+        "2026-10-05: Order / contract — Award_of_Order_Receipt_of_Order."
+      ],
+      "metrics": [
+        {
+          "name": "Notable filings",
+          "value": 5,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Routine filings left out",
+          "value": 2,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "BSE: Financial results — Board Meeting Intimation for Considering The Unaudited Financial Results For The Quarter And Half Year Ended 30Th September 2026",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/69aa9bce-1c52-4e8d-a556-2b8928c778b9.pdf",
+          "date": "2026-10-13"
+        },
+        {
+          "label": "BSE: Management change — Change in Management",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/1ddedabb-dcb8-4f59-864f-bcbdcd86f98e.pdf",
+          "date": "2026-10-07"
+        },
+        {
+          "label": "BSE: Other update — Compliances-Half Yearly Report (SEBI Circular No. CIR/IMD/DF-1/67/2017)",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/2a4ed744-5192-4c8d-8760-513b4e23b8b3.pdf",
+          "date": "2026-10-07"
+        },
+        {
+          "label": "BSE: Order / contract — Award_of_Order_Receipt_of_Order",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/16fbd81c-8c95-4c36-a652-42963d4d07f8.pdf",
+          "date": "2026-10-07"
+        },
+        {
+          "label": "BSE: Order / contract — Award_of_Order_Receipt_of_Order",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/52920a59-b019-4868-9d75-f5cfd878ced3.pdf",
+          "date": "2026-10-05"
+        }
+      ]
+    },
+    "valuation": {
+      "title": "Valuation",
+      "label": "Cheaper than sector",
+      "score": 60,
+      "bullets": [
+        "Trailing P/E is 30.09x, against a median of 37.37x for 2 other Industrials companies tracked.",
+        "At today's trailing earnings per share (₹120.55), the past year's closing prices put the P/E between 27.73x and 36.65x.",
+        "Price-to-book is 4.57x (sector median 11.48x).",
+        "Dividend yield is 1.05%."
+      ],
+      "metrics": [
+        {
+          "name": "P/E (trailing)",
+          "value": 30.09,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/B",
+          "value": 4.57,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Dividend yield",
+          "value": 1.05,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year low (at current EPS)",
+          "value": 27.73,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year high (at current EPS)",
+          "value": 36.65,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/E",
+          "value": 37.37,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/B",
+          "value": 11.48,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: LT.NS key statistics",
+          "url": "https://finance.yahoo.com/quote/LT.NS/key-statistics",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "technicals": {
+      "title": "Technical signal",
+      "label": "SELL",
+      "score": 20,
+      "bullets": [
+        "The SparkleAI technical model gives SELL with a score of 20/100 (2 buy, 6 sell and 3 neutral readings).",
+        "Trend 0/100, momentum 25/100, oscillators 70/100, volume 0/100, patterns 0/100.",
+        "The price is -7.14% against its 50-day average and -7.73% against its 200-day average; RSI is 36.8."
+      ],
+      "metrics": [
+        {
+          "name": "Signal score",
+          "value": 20,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Trend score",
+          "value": 0,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Momentum score",
+          "value": 25,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "RSI (14)",
+          "value": 36.8,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Price vs 50-day average",
+          "value": -7.14,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Price vs 200-day average",
+          "value": -7.73,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI technical model on Yahoo Finance LT.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/LT.NS/chart",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "analyst_views": {
+      "title": "Analyst views",
+      "label": "Buy",
+      "score": 79,
+      "bullets": [
+        "Of 29 analyst ratings this month, 5 are strong buy, 18 buy, 4 hold, 1 sell and 1 strong sell.",
+        "The mean target is ₹4,501.71 (range ₹3,550.00 to ₹5,060.00), +24.11% from the ₹3,627.10 close."
+      ],
+      "metrics": [
+        {
+          "name": "Analysts",
+          "value": 28,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Buy or strong buy",
+          "value": 23,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Hold",
+          "value": 4,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Sell or strong sell",
+          "value": 2,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Mean target",
+          "value": 4501.71,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "High target",
+          "value": 5060.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Low target",
+          "value": 3550.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Upside to mean target",
+          "value": 24.11,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: LT.NS analyst ratings and targets",
+          "url": "https://finance.yahoo.com/quote/LT.NS/analysis",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "promise_vs_reality": {
+      "title": "Promise vs reality",
+      "label": "3 items tracked",
+      "score": null,
+      "bullets": [
+        "Guidance (EC JAN26): \"The company expects a customary ramp-up in project execution during Q4 and is confident of achieving its full-year revenue growth guidance of 15%.\" Since 2026-01-30 the shares moved -7.76% against -8.59% for the Nifty 50. No filing or headline in this period clearly relates to it.",
+        "Risk flagged: Hydrocarbon segment (EC JAN26): \"The Hydrocarbon segment is experiencing margin pressure due to 2-3 projects that are at the final stages of completion.\" Since 2026-01-30 the shares moved -7.76% against -8.59% for the Nifty 50. No filing or headline in this period clearly relates to it.",
+        "Annual report outlook (AR FY25): \"Larsen & Toubro has set ambitious sustainability targets for FY 2025-26, aiming to achieve 55% of revenue from green businesses, up from 53% in FY 2024-25.\" Since 2025-03-28 the shares moved +3.86% against -1.59% for the Nifty 50. Related news this period: \"Make in India milestone: Navy commissions Samarthak, major warship built by Larsen & Toubro\" (Moneycontrol.com, 2026-10-16)."
+      ],
+      "metrics": [
+        {
+          "name": "Statements tracked",
+          "value": 3,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI EC analysis JAN26 (Guidance)",
+          "url": "outputs/Larsen & Toubro/EC/JAN26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "SparkleAI EC analysis JAN26 (Risk flagged: Hydrocarbon segment)",
+          "url": "outputs/Larsen & Toubro/EC/JAN26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "Moneycontrol.com: Make in India milestone: Navy commissions Samarthak, major warship built by Larsen & Toubro",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbU5obGV6UlNoUTJSU0JRSWJ3c3RGdHNSNktCcFVYTW1CUDFQbnNSLTljYnhlMGRLcGtpTUM2R0x0UkdjY2RlMDBfR0FaRDg3UkI3WmtKYXltY3E0b2NmUnQ0amZRaWJOcXhWZ3o2dVRUWGtaYUw4YzhSMjhuOTBxSlh6a1g4OVpZNDZGVGpnU0hiYmh2dmQ3d3MtMnpZaUlyM1hfXzdxc2l1YjRMUTV3QmxjcldDelZwVXVFc2xXVGZXczhERmJFTFRzN2ZKT0pmR0FFdFFVUXJqaE9iLTJmZnRpZzBtUdIB5gFBVV95cUxQbU5obGV6UlNoUTJSU0JRSWJ3c3RGdHNSNktCcFVYTW1CUDFQbnNSLTljYnhlMGRLcGtpTUM2R0x0UkdjY2RlMDBfR0FaRDg3UkI3WmtKYXltY3E0b2NmUnQ0amZRaWJOcXhWZ3o2dVRUWGtaYUw4YzhSMjhuOTBxSlh6a1g4OVpZNDZGVGpnU0hiYmh2dmQ3d3MtMnpZaUlyM1hfXzdxc2l1YjRMUTV3QmxjcldDelZwVXVFc2xXVGZXczhERmJFTFRzN2ZKT0pmR0FFdFFVUXJqaE9iLTJmZnRpZzBtUQ?oc=5",
+          "date": "2026-10-16"
+        },
+        {
+          "label": "SparkleAI AR analysis FY25 (Annual report outlook)",
+          "url": "outputs/Larsen & Toubro/AR/FY25/advanced.json",
+          "date": null
+        }
+      ]
+    }
+  },
+  "section_order": [
+    "price_performance",
+    "news_sentiment",
+    "announcements",
+    "valuation",
+    "technicals",
+    "analyst_views",
+    "promise_vs_reality"
+  ],
+  "changes": [
+    {
+      "metric": "Previous report",
+      "previous": null,
+      "current": null,
+      "direction": "same",
+      "text": "This is the first Sparkle Report for Larsen & Toubro; there is no previous report to compare with."
+    }
+  ],
+  "scores": {
+    "price_performance": 25,
+    "news_sentiment": 65,
+    "announcements": null,
+    "valuation": 60,
+    "technicals": 20,
+    "analyst_views": 79,
+    "promise_vs_reality": null
+  },
+  "meta": {
+    "generated_at": "2026-10-17T13:24:04+00:00",
+    "writer": "rules",
+    "model": null,
+    "fallback_blocks": [],
+    "data_sources": [
+      "yfinance",
+      "google_news",
+      "bse",
+      "finbert",
+      "ec_ar_reports"
+    ]
+  }
+}

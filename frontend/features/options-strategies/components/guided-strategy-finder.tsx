@@ -41,7 +41,7 @@ export function GuidedStrategyFinder({
   onSelectCandidate,
 }: GuidedStrategyFinderProps) {
   return (
-    <section className="rounded-xl border border-primary/20 bg-card p-5 shadow-[0_0_40px_rgba(16,185,129,0.06)]" aria-label="Guided strategy finder">
+    <section className="rounded-xl border border-primary/20 bg-card p-5" aria-label="Guided strategy finder">
       <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div className="flex items-start gap-3">
           <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 text-primary">
@@ -58,7 +58,7 @@ export function GuidedStrategyFinder({
           </div>
         </div>
         <div className="rounded-lg border border-border bg-background px-3 py-2 text-sm text-muted-foreground">
-          Today: <span className={change >= 0 ? "font-semibold text-primary" : "font-semibold text-destructive"}>{change >= 0 ? "+" : ""}{change.toFixed(2)}%</span>
+          Today: <span className={change >= 0 ? "font-semibold text-up" : "font-semibold text-down"}>{change >= 0 ? "+" : ""}{change.toFixed(2)}%</span>
         </div>
       </div>
 
@@ -110,7 +110,7 @@ export function GuidedStrategyFinder({
           <article
             key={candidate.strategyId}
             className={`flex flex-col rounded-xl border bg-background p-4 transition-colors ${
-              index === 0 ? "border-primary/35 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]" : "border-border"
+              index === 0 ? "border-primary/35" : "border-border"
             }`}
           >
             <div className="mb-3 flex items-start justify-between gap-3">
@@ -137,7 +137,7 @@ export function GuidedStrategyFinder({
             <div className="mt-4 rounded-lg border border-border bg-secondary/30 p-3">
               <div className="flex items-center gap-2">
                 <Layers3 size={14} className="text-primary" />
-              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Auto-priced setup</p>
+              <p className="text-xs font-semibold text-muted-foreground">Auto-priced setup</p>
               </div>
               <p className="mt-1 text-sm text-muted-foreground">
                 {candidate.setupGuide.join(" ")}

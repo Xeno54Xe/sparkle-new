@@ -1,26 +1,38 @@
 "use client"
 
-import { useState } from "react"
-import { getStockLogoUrl, hasLogo } from "@/lib/stock-logos"
+import { useEffect, useRef, useState } from "react"
+import { getStockLogoUrl } from "@/lib/stock-logos"
 import { cn } from "@/lib/utils"
 
 interface StockLogoProps {
   symbol: string
   size?: number
   className?: string
+  /** Extra classes for the text initials shown when no logo is available */
+  fallbackClassName?: string
   isPositive?: boolean
 }
 
-export function StockLogo({ symbol, size = 40, className, isPositive = true }: StockLogoProps) {
+export function StockLogo({ symbol, size = 40, className, fallbackClassName, isPositive = true }: StockLogoProps) {
   const [imgError, setImgError] = useState(false)
+  const imgRef = useRef<HTMLImageElement>(null)
   const logoUrl = getStockLogoUrl(symbol)
   const showImg = logoUrl && !imgError
+
+  // A server-rendered <img> can fail before React attaches onError; catch that after mount.
+  useEffect(() => {
+    setImgError(false)
+  }, [logoUrl])
+  useEffect(() => {
+    const img = imgRef.current
+    if (img && img.complete && img.naturalWidth === 0) setImgError(true)
+  }, [logoUrl, imgError])
 
   return (
     <div
       className={cn(
         "flex shrink-0 items-center justify-center rounded-lg overflow-hidden",
-        !showImg && (isPositive ? "bg-primary/20 text-primary" : "bg-destructive/20 text-destructive"),
+        !showImg && (isPositive ? "bg-up/20 text-up" : "bg-down/20 text-down"),
         showImg && "bg-white",
         className
       )}
@@ -28,6 +40,7 @@ export function StockLogo({ symbol, size = 40, className, isPositive = true }: S
     >
       {showImg ? (
         <img
+          ref={imgRef}
           src={logoUrl}
           alt={symbol}
           width={size - 8}
@@ -37,7 +50,7 @@ export function StockLogo({ symbol, size = 40, className, isPositive = true }: S
           style={{ width: size - 8, height: size - 8 }}
         />
       ) : (
-        <span className="font-bold" style={{ fontSize: size * 0.3 }}>
+        <span className={cn("font-bold", fallbackClassName)} style={{ fontSize: size * 0.3 }}>
           {symbol.slice(0, 2)}
         </span>
       )}

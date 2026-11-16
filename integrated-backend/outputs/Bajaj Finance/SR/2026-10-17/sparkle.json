@@ -1,0 +1,464 @@
+{
+  "doc_type": "sr",
+  "company": "Bajaj Finance",
+  "folder": "Bajaj Finance",
+  "symbol": "BAJFINANCE",
+  "as_of": "2026-10-17",
+  "period": {
+    "start": "2026-10-03",
+    "end": "2026-10-17"
+  },
+  "previous_report": null,
+  "summary": {
+    "headline": "Bajaj Finance: moved in line with the Nifty 50 (+3.56% vs +3.23%), news mood positive (63/100), technical signal HOLD.",
+    "points": [
+      "Shares moved +3.56% from ₹948.30 (2026-10-01) to ₹982.10 (2026-10-16).",
+      "89 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 63/100 (40 positive, 10 negative, the rest neutral); 8 headlines that did not name the company were left out.",
+      "Of 35 analyst ratings this month, 5 are strong buy, 22 buy, 4 hold, 1 sell and 3 strong sell.",
+      "Filings by type: Fund raising (1), Financial results (1), Insider / SAST (1)."
+    ]
+  },
+  "sections": {
+    "price_performance": {
+      "title": "Price & performance",
+      "label": "In line",
+      "score": 52,
+      "bullets": [
+        "Shares moved +3.56% from ₹948.30 (2026-10-01) to ₹982.10 (2026-10-16).",
+        "The Nifty 50 moved +3.23% over the same days, so the stock was 0.33 percentage points ahead of the index.",
+        "Other Financial Services companies tracked by SparkleAI averaged +1.92% (11 companies).",
+        "At ₹982.10 the price sits at 50.0% of its 52-week range (₹787.90 to ₹1,176.40).",
+        "Average daily volume in the period was 1.15x its 3-month average."
+      ],
+      "metrics": [
+        {
+          "name": "Price",
+          "value": 982.1,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Return (period)",
+          "value": 3.56,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Nifty 50 return",
+          "value": 3.23,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Versus Nifty 50",
+          "value": 0.33,
+          "unit": "pp",
+          "previous": null
+        },
+        {
+          "name": "Sector average return",
+          "value": 1.92,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "52-week position",
+          "value": 50.0,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Volume vs 3-month average",
+          "value": 1.15,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: BAJFINANCE.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/BAJFINANCE.NS/history",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "news_sentiment": {
+      "title": "News sentiment",
+      "label": "Positive",
+      "score": 63,
+      "bullets": [
+        "89 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 63/100 (40 positive, 10 negative, the rest neutral); 8 headlines that did not name the company were left out.",
+        "Positive: \"Bajaj Finance gains on strong asset growth\" (BusinessLine, 2026-10-05).",
+        "Positive: \"Jefferies Calls Bajaj Finance A Top Pick, Sees Strong Loan Growth Despite Capital Raise\" (TradingView, 2026-10-05).",
+        "Positive: \"Bajaj Finance shares rise 3.4% on strong September quarter AUM growth\" (Investing.com India, 2026-10-05).",
+        "Negative: \"HP High Court Quashes Notice Issued To Bajaj Finance U/S 94 BNSS For Production Of Allegedly Stolen...\" (Live Law, 2026-10-13).",
+        "Negative: \"HC Quashes police notice to bajaj finance for production of alleged stolen gold\" (Himachal Scape, 2026-10-14).",
+        "Negative: \"Bajaj Finance grows AUM 26.50 percent. Bajaj Finance stock is 18.65 percent below its high - ad-hoc-news.de\" (ad-hoc-news.de, 2026-10-14)."
+      ],
+      "metrics": [
+        {
+          "name": "Headlines",
+          "value": 89,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Off-topic headlines dropped",
+          "value": 8,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "News mood",
+          "value": 63,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Positive headlines",
+          "value": 40,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Negative headlines",
+          "value": 10,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "BusinessLine: Bajaj Finance gains on strong asset growth",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUUNHck5xdFZuV3o5ZkhFX3J3ZHRJTzFrTmh2bnpXUU8yNjlvLVdpR2RJVmNkYnhBRHFuODlYMHhnN0RuaGNaNnpfTUFleHlteFZIeC1RblEwNFJsNXN0V2lxcEhlSVg0NlI3ZTNxY3pYZnN2N3lDUFhMcjhpUDd2U0ZEN0ZBck5BLXk2M1FLZXpnNGFlaGZtNXZ3b2I0cUVVcW1sT09BZ0FrNmfSAbIBQVVfeXFMTUlRazNMWDFPQkdQYWh0UHUzWllpNG5SUHVHeDVFV1YzaGlJN0VZM001YVRkbW95b2xXRTM0MDJMTk90NXNNR0Q0MXV3cTJPTm85cUxwQWtBWmFuX3FBblo2elhWdmdmaHRPR1VmbXdXLUNVdDEyWTBlRy1sT1dGa1NiSnIzWlpqZnE5YVBuU0dIRTBmVlcwTzNKMlBJTHptT1hySFphbGc2YVZyX2piVFhBZw?oc=5",
+          "date": "2026-10-05"
+        },
+        {
+          "label": "TradingView: Jefferies Calls Bajaj Finance A Top Pick, Sees Strong Loan Growth Despite Capital Raise",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNW5PTFF3VlNhb2o5SlJfel84alZuN2htbVBiTmFRUWhNaElxTExlWUcyWkdnOE90OWV6SzNPNi00RGk3SEdaa0RpOGtQdVJtdkpSRUhUeWI3UXJlRk5hRkJuWFpoWW1JWlpXdUFlVktCaXhvcVo1b1RuTHFBVnRGUVlhQWRCQnFCTkdmbjI3OHh6eG4zbTBEUU1OWEpreC0xZjVFYzJOZlQ2bTBhSXJhRUdMYWg1ZmgzSm1mNEs2MHFXd3g1VThkQ29SYWlHYkxuUkhQZC1WYXBKVGc?oc=5",
+          "date": "2026-10-05"
+        },
+        {
+          "label": "Investing.com India: Bajaj Finance shares rise 3.4% on strong September quarter AUM growth",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTDlYbDBGaXJGNXBEUUlkUEtxNkRzOW5rZGJ1TTBrc2Fyd0k0SHdtTmJGa1AyaGZvdmJuY0ExSmpFbDBrek5hSEJWdkRvQkk3bzJjRDl5anEzNzdhQUNrSjBDeEtyUUU3WHRLcGxRTV9PVF9jbl82MHBJUm0zbmR0SnpGejM2cUprSmctZjJuOFJkbk9ySW9EeFN6dGh3bjgtZHVSNFR1V1VvTjY3bUhrRGpOVG9nUE5tOXpnaVA1MTA0aV9kbHMw?oc=5",
+          "date": "2026-10-05"
+        },
+        {
+          "label": "Live Law: HP High Court Quashes Notice Issued To Bajaj Finance U/S 94 BNSS For Production Of Allegedly Stolen...",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxObzhyQVROVm1nVkNRTUlrd0p1MDFWQkNMVGpmOGc5MS10STEzYk5fbDRXUk9iZVVRYmZhZ0I3MDZyV3ItanFRZDEyN201Vl9vZGN4Zk80eTVyNG9qYkowc1dUZHNWWmpDNzRLYy1ObnRKeXdHeEtmelBwWjIwY3pWOU8tYnpiR3ZiVlJ2TF9SZnBzdlR3QkZvZDkxckJ4My0wN2F4cldtUVd6ekJ1RWpJSWdtMFZrSVc2RWhGV3FsQkRUeHBWTE5fdTB0UXhHLWJnRURERTdPMUlZZ2xhVm1xMnJTVXZheV9QeElRYk1QTHdSN0hVSkhtcUJEaXVuM3BUT2NGd9IBigJBVV95cUxQSmxJaVRIVDlvS1pIUWxOdUNDazZtZ1RMRWloT2VtYWNPSlBnTG5SNTYySFYzbVVIcUZIb3Jsb1k3RXlzcGtNNXVHbWFRdTV3VXZlZHZjZ3NKZWt4c2dvNXJJUGsyX3R2T1JQcXJ4eWd3M0lkRTFOcWRYa1VrSl9tVURrdTFFZ3lYcVV4VHhVWW5iaWdrQmZ1RWRVdjFzNUNlekZaQ3NidVZwX0FEQ3pYcUw4azBZNV9tYWY1Z3AwTWUtYmpadVUtUHo4SDNDVzVDYXAybDNJSFBKRHV2ZWI2VUhQc3c3cC10bjV1Zi1JQWlvRkRSR3ZUQkZpMzk2NkxoamlTSF95cVhzZw?oc=5",
+          "date": "2026-10-13"
+        },
+        {
+          "label": "Himachal Scape: HC Quashes police notice to bajaj finance for production of alleged stolen gold",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS0dqbnpqZHpJZnIzRTJ5ZHpQRHlSRE85T1VWRklwV3dtT2p2MTdyRjUzZDlILV9fcHZjaEV4MmVELWs1TzZvUHVob2NUajJtYU0zbl92ak41aS1TSktzM0UwMFg5Mk5pQlJEMDdybXJCV1FFdU82bVFjRGZYWkRJTUZuUXdFb1BSN3pEeER0Q251RFVjQ1A4Q3NJY05LX09iVkpzcWp3RmliUGJyUGFNRkh0S0lrV0RQ?oc=5",
+          "date": "2026-10-14"
+        },
+        {
+          "label": "ad-hoc-news.de: Bajaj Finance grows AUM 26.50 percent. Bajaj Finance stock is 18.65 percent below its high - ad-hoc-news.de",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNYm5uTi1PdUJKY1hlbTJMa3F1b05ZQmhUVTRxT2ttSENrQzRVTWtkY2RaeE5rdDJXeE1lZUdkYk9Qb3gyaktsYXB2R2xHb3BWUkc3WE9qXzM2YjJ3aXJYTEVxazBJaU83dzktN1Z4dVViME5tVGNLcE1PM0VvX1NFMllybE1yM1NrVUVRZGR6UFU3RWpoLXZLS2o1ZXI0TGpnYXFDUW92Q1hndFRRenFFVWc5M1FnODVTSVh4V2pOSWdGbWhrWTBGZ0I1bTlZX2F6NVRtZjBIV3BMbFNEZFh4NW9rVENzTmM?oc=5",
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    "announcements": {
+      "title": "Company announcements",
+      "label": "3 notable filings",
+      "score": null,
+      "bullets": [
+        "Filings by type: Fund raising (1), Financial results (1), Insider / SAST (1).",
+        "2026-10-09: Fund raising — Allotment.",
+        "2026-10-05: Financial results — Board Meeting Intimation for Considering And Approving Unaudited Standalone And Consolidated Financial Results For The Quarter And Half Year Ended 30 September .",
+        "2026-10-03: Insider / SAST — Information Under Regulation 30 Of SEBI (Listing Obligations And Disclosure Requirements) Regulation, 2015 R/W Schedule A Of Regulation 8 Of SEBI (Prohibition O."
+      ],
+      "metrics": [
+        {
+          "name": "Notable filings",
+          "value": 3,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Routine filings left out",
+          "value": 7,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "BSE: Fund raising — Allotment",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d19f2dd1-edd0-42c7-aebe-680558175811.pdf",
+          "date": "2026-10-09"
+        },
+        {
+          "label": "BSE: Financial results — Board Meeting Intimation for Considering And Approving Unaudited Standalone And Consolidated Financial Results For The Quarter And Half Year Ended 30 September ",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7befbd0b-8d13-47e1-bf9f-3f91b13538c2.pdf",
+          "date": "2026-10-05"
+        },
+        {
+          "label": "BSE: Insider / SAST — Information Under Regulation 30 Of SEBI (Listing Obligations And Disclosure Requirements) Regulation, 2015 R/W Schedule A Of Regulation 8 Of SEBI (Prohibition O",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/211b489c-1633-4c21-9141-73d4672004a4.pdf",
+          "date": "2026-10-03"
+        }
+      ]
+    },
+    "valuation": {
+      "title": "Valuation",
+      "label": "Pricier than sector",
+      "score": 33,
+      "bullets": [
+        "Trailing P/E is 29.36x, against a median of 21.93x for 11 other Financial Services companies tracked.",
+        "At today's trailing earnings per share (₹33.45), the past year's closing prices put the P/E between 23.96x and 34.64x.",
+        "Price-to-book is 5.36x (sector median 2.46x).",
+        "Dividend yield is 0.55%."
+      ],
+      "metrics": [
+        {
+          "name": "P/E (trailing)",
+          "value": 29.36,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/B",
+          "value": 5.36,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Dividend yield",
+          "value": 0.55,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year low (at current EPS)",
+          "value": 23.96,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year high (at current EPS)",
+          "value": 34.64,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/E",
+          "value": 21.93,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/B",
+          "value": 2.46,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: BAJFINANCE.NS key statistics",
+          "url": "https://finance.yahoo.com/quote/BAJFINANCE.NS/key-statistics",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "technicals": {
+      "title": "Technical signal",
+      "label": "HOLD",
+      "score": 59,
+      "bullets": [
+        "The SparkleAI technical model gives HOLD with a score of 59/100 (4 buy, 2 sell and 5 neutral readings).",
+        "Trend 50/100, momentum 75/100, oscillators 50/100, volume 50/100, patterns 67/100.",
+        "The price is -5.04% against its 50-day average and +1.09% against its 200-day average; RSI is 47.3."
+      ],
+      "metrics": [
+        {
+          "name": "Signal score",
+          "value": 59,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Trend score",
+          "value": 50,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Momentum score",
+          "value": 75,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "RSI (14)",
+          "value": 47.3,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Price vs 50-day average",
+          "value": -5.04,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Price vs 200-day average",
+          "value": 1.09,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI technical model on Yahoo Finance BAJFINANCE.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/BAJFINANCE.NS/chart",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "analyst_views": {
+      "title": "Analyst views",
+      "label": "Buy",
+      "score": 77,
+      "bullets": [
+        "Of 35 analyst ratings this month, 5 are strong buy, 22 buy, 4 hold, 1 sell and 3 strong sell.",
+        "The mean target is ₹1,170.20 (range ₹827.00 to ₹1,340.00), +19.15% from the ₹982.10 close."
+      ],
+      "metrics": [
+        {
+          "name": "Analysts",
+          "value": 35,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Buy or strong buy",
+          "value": 27,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Hold",
+          "value": 4,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Sell or strong sell",
+          "value": 4,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Mean target",
+          "value": 1170.2,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "High target",
+          "value": 1340.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Low target",
+          "value": 827.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Upside to mean target",
+          "value": 19.15,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: BAJFINANCE.NS analyst ratings and targets",
+          "url": "https://finance.yahoo.com/quote/BAJFINANCE.NS/analysis",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "promise_vs_reality": {
+      "title": "Promise vs reality",
+      "label": "3 items tracked",
+      "score": null,
+      "bullets": [
+        "Guidance (EC FEB26): \"The company expects full-year growth to be between 22% to 23%.\" Since 2026-02-27 the shares moved -1.39% against -8.07% for the Nifty 50. No filing or headline in this period clearly relates to it.",
+        "Risk flagged: Consumer leverage (EC FEB26): \"Management identified consumer leverage as a persistent concern, noting that while it has remained flat year-on-year, it still represents a red flag.\" Since 2026-02-27 the shares moved -1.39% against -8.07% for the Nifty 50. No filing or headline in this period clearly relates to it.",
+        "Annual report outlook (AR FY25): \"Management has set ambitious targets to be among the top 5 players in each line of business in India and among the top 20 most profitable companies in India.\" Since 2025-03-28 the shares moved +9.79% against -1.59% for the Nifty 50. No filing or headline in this period clearly relates to it."
+      ],
+      "metrics": [
+        {
+          "name": "Statements tracked",
+          "value": 3,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI EC analysis FEB26 (Guidance)",
+          "url": "outputs/Bajaj Finance/EC/FEB26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "SparkleAI EC analysis FEB26 (Risk flagged: Consumer leverage)",
+          "url": "outputs/Bajaj Finance/EC/FEB26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "SparkleAI AR analysis FY25 (Annual report outlook)",
+          "url": "outputs/Bajaj Finance/AR/FY25/advanced.json",
+          "date": null
+        }
+      ]
+    }
+  },
+  "section_order": [
+    "price_performance",
+    "news_sentiment",
+    "announcements",
+    "valuation",
+    "technicals",
+    "analyst_views",
+    "promise_vs_reality"
+  ],
+  "changes": [
+    {
+      "metric": "Previous report",
+      "previous": null,
+      "current": null,
+      "direction": "same",
+      "text": "This is the first Sparkle Report for Bajaj Finance; there is no previous report to compare with."
+    }
+  ],
+  "scores": {
+    "price_performance": 52,
+    "news_sentiment": 63,
+    "announcements": null,
+    "valuation": 33,
+    "technicals": 59,
+    "analyst_views": 77,
+    "promise_vs_reality": null
+  },
+  "meta": {
+    "generated_at": "2026-10-17T13:23:57+00:00",
+    "writer": "rules",
+    "model": null,
+    "fallback_blocks": [],
+    "data_sources": [
+      "yfinance",
+      "google_news",
+      "bse",
+      "finbert",
+      "ec_ar_reports"
+    ]
+  }
+}

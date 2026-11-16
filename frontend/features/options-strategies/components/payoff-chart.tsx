@@ -58,15 +58,15 @@ export function PayoffChart({ points, spotPrice, legs, metrics }: PayoffChartPro
         <div className="flex flex-wrap gap-2 text-xs font-semibold">
           <span className="rounded-md bg-primary/10 px-2.5 py-1 text-primary">Profit zone</span>
           <span className="rounded-md bg-destructive/10 px-2.5 py-1 text-destructive">Loss zone</span>
-          <span className="rounded-md bg-sky-400/10 px-2.5 py-1 text-sky-300">Spot</span>
+          <span className="rounded-md bg-info/10 px-2.5 py-1 text-info">Spot</span>
         </div>
       </div>
       <div className="p-4">
         <ChartContainer
           config={{
-            payoff: { label: "P/L", color: "#34d399" },
-            profit: { label: "Profit", color: "#10b981" },
-            loss: { label: "Loss", color: "#ef4444" },
+            payoff: { label: "P/L", color: "#2FB57C" },
+            profit: { label: "Profit", color: "#2FB57C" },
+            loss: { label: "Loss", color: "#E35D5B" },
           }}
           className="min-h-[360px] w-full"
         >
@@ -75,22 +75,22 @@ export function PayoffChart({ points, spotPrice, legs, metrics }: PayoffChartPro
             <XAxis dataKey="price" tickFormatter={(value) => formatRs(Number(value))} />
             <YAxis tickFormatter={(value) => formatRs(Number(value))} width={78} />
             <ChartTooltip content={<ChartTooltipContent />} />
-            <Area dataKey="profit" fill="#10b981" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
-            <Area dataKey="loss" fill="#ef4444" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
-            <Line type="monotone" dataKey="payoff" stroke="#34d399" strokeWidth={3} dot={false} isAnimationActive={false} />
-            <ReferenceLine y={0} stroke="#94a3b8" strokeDasharray="4 4" label="Zero" />
-            <ReferenceLine x={spotPrice} stroke="#38bdf8" strokeDasharray="4 4" label="Spot" />
+            <Area dataKey="profit" fill="#2FB57C" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
+            <Area dataKey="loss" fill="#E35D5B" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
+            <Line type="monotone" dataKey="payoff" stroke="#2FB57C" strokeWidth={3} dot={false} isAnimationActive={false} />
+            <ReferenceLine y={0} stroke="#8A95AB" strokeDasharray="4 4" label="Zero" />
+            <ReferenceLine x={spotPrice} stroke="#6AA6F8" strokeDasharray="4 4" label="Spot" />
             {legs.map((leg) => (
-              <ReferenceLine key={leg.id} x={leg.strike} stroke="#f59e0b" strokeDasharray="3 3" label={`K ${leg.strike}`} />
+              <ReferenceLine key={leg.id} x={leg.strike} stroke="#F2A93B" strokeDasharray="3 3" label={`K ${leg.strike}`} />
             ))}
             {metrics?.breakevens.map((breakeven) => (
-              <ReferenceLine key={breakeven} x={breakeven} stroke="#a78bfa" strokeDasharray="2 4" label="BE" />
+              <ReferenceLine key={breakeven} x={breakeven} stroke="#A48AF0" strokeDasharray="2 4" label="BE" />
             ))}
             {metrics?.maxProfit !== null && metrics?.maxProfit !== undefined && (
-              <ReferenceLine y={metrics.maxProfit} stroke="#10b981" strokeDasharray="2 2" label="Max profit" />
+              <ReferenceLine y={metrics.maxProfit} stroke="#2FB57C" strokeDasharray="2 2" label="Max profit" />
             )}
             {metrics?.maxLoss !== null && metrics?.maxLoss !== undefined && (
-              <ReferenceLine y={metrics.maxLoss} stroke="#ef4444" strokeDasharray="2 2" label="Max loss" />
+              <ReferenceLine y={metrics.maxLoss} stroke="#E35D5B" strokeDasharray="2 2" label="Max loss" />
             )}
           </ComposedChart>
         </ChartContainer>

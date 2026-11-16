@@ -1,0 +1,468 @@
+{
+  "doc_type": "sr",
+  "company": "Titan Company",
+  "folder": "Titan Company",
+  "symbol": "TITAN",
+  "as_of": "2026-10-17",
+  "period": {
+    "start": "2026-10-03",
+    "end": "2026-10-17"
+  },
+  "previous_report": null,
+  "summary": {
+    "headline": "Titan Company: underperformed the Nifty 50 (-1.57% vs +3.23%), news mood positive (63/100), technical signal SELL.",
+    "points": [
+      "Shares moved -1.57% from ₹4,515.70 (2026-10-01) to ₹4,444.80 (2026-10-16).",
+      "68 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 63/100 (25 positive, 4 negative, the rest neutral); 29 headlines that did not name the company were left out.",
+      "Of 35 analyst ratings this month, 13 are strong buy, 16 buy, 4 hold, 0 sell and 2 strong sell.",
+      "Filings by type: Fund raising (1), Other update (1)."
+    ]
+  },
+  "sections": {
+    "price_performance": {
+      "title": "Price & performance",
+      "label": "Underperformed",
+      "score": 26,
+      "bullets": [
+        "Shares moved -1.57% from ₹4,515.70 (2026-10-01) to ₹4,444.80 (2026-10-16).",
+        "The Nifty 50 moved +3.23% over the same days, so the stock was 4.80 percentage points behind the index.",
+        "Other Consumer Cyclical companies tracked by SparkleAI averaged +4.25% (8 companies).",
+        "At ₹4,444.80 the price sits at 51.2% of its 52-week range (₹3,667.30 to ₹5,186.70).",
+        "Average daily volume in the period was 1.20x its 3-month average."
+      ],
+      "metrics": [
+        {
+          "name": "Price",
+          "value": 4444.8,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Return (period)",
+          "value": -1.57,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Nifty 50 return",
+          "value": 3.23,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Versus Nifty 50",
+          "value": -4.8,
+          "unit": "pp",
+          "previous": null
+        },
+        {
+          "name": "Sector average return",
+          "value": 4.25,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "52-week position",
+          "value": 51.2,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Volume vs 3-month average",
+          "value": 1.2,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: TITAN.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/TITAN.NS/history",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "news_sentiment": {
+      "title": "News sentiment",
+      "label": "Positive",
+      "score": 63,
+      "bullets": [
+        "68 distinct headlines between 2026-10-03 and 2026-10-17; FinBERT mood 63/100 (25 positive, 4 negative, the rest neutral); 29 headlines that did not name the company were left out.",
+        "Positive: \"Tanishq sees renewed natural diamond demand; expects gold jewellery momentum to sustain through festive seas..\" (ET Retail, 2026-10-14).",
+        "Positive: \"Tanishq Opens First Store In Kuwait At Salam Mall, Strengthens International Presence\" (IFAB MEDIA, 2026-10-05).",
+        "Positive: \"Titan Company Consumer Businesses Grow 25% In Q2 FY27\" (Business Viewpoint Magazine, 2026-10-07).",
+        "Negative: \"Titan Company Stock Update: Shares Plunge Over 3% on Q2 Jewellery Miss\" (LatestLY, 2026-10-07).",
+        "Negative: \"Titan Company - Negative Breakout: These 6 stocks cross below their 200 DMAs\" (The Economic Times, 2026-10-08).",
+        "Negative: \"Titan Company shares fall 4% after Q2 business update. What is Nomura saying?\" (The Economic Times, 2026-10-07)."
+      ],
+      "metrics": [
+        {
+          "name": "Headlines",
+          "value": 68,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Off-topic headlines dropped",
+          "value": 29,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "News mood",
+          "value": 63,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Positive headlines",
+          "value": 25,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Negative headlines",
+          "value": 4,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "ET Retail: Tanishq sees renewed natural diamond demand; expects gold jewellery momentum to sustain through festive seas..",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOdHM1N3pUcm1hUGVyck81eGpENkdKTzRhY1VJSjVPbFdpbC10c0o1TEhuQzc1bjNnLTBUR1VLbWhNa0wwZXd3UnFMb2x5a2RfRF9rV29TbjBkcjVESThtR01ab3N5S2dPeDFLTXhYT1V2aGFBWnhCNThDSC1VQVFDb3JUUUlKYTFpLXFMUVBfY3I4QXJ2M3NXTGM5MGdLeXB4Q1JLTWtNdHhNMktKZ0pyUmNTZGc2dzZqdFFwVjBrbWcyTjVvVlU3RjJ3Y2c3WGN6M2d5b3R2UmVZc3hfY1pyR29UYXZwTmhsamJHZDdqd2FxYkFMSzY3RXVDYm5td9IBgwJBVV95cUxOeGVDOTJzX0YwYl9GVTMwOWVUY05mdHJBblQzMkhlVXU2RDVmX1NmS0NNZEdSYV9oUmJGVC1qN3VQR2k2bzZxanZLWWRGUkxJZVdsRG0yWGtYbzJwV0NodGk0MXBERFhBaVpjUklSRTBoRVV5ZTNjck1rYkxkMmc0T0M4OFF5WGxhcGhwbDlQVllZNHlWRzNockpnYnFxNUdYdllLV3FrdnRlRWR0dnJWM0pYQ1RiYVdtamJxLXVrZXdsOEZlOE10a1hZMWdvVF9KU21ZRG1jS1NHUEdpSXhqOFpqYklBaTBTV2hWODZpcmFSTS1vN01UUy04bEFZS19CbjRn?oc=5",
+          "date": "2026-10-14"
+        },
+        {
+          "label": "IFAB MEDIA: Tanishq Opens First Store In Kuwait At Salam Mall, Strengthens International Presence",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45WHg0MHprX3NKQW03aEJKZ3ZiZEhpZGpRWktPNUE4enFaa1huMGU3bTVvbmQ0T0RILVk2RXJZeU02el9XdWFJajhkQ08xemMzXy1JUFE5UFRBc0VMei1FdVln?oc=5",
+          "date": "2026-10-05"
+        },
+        {
+          "label": "Business Viewpoint Magazine: Titan Company Consumer Businesses Grow 25% In Q2 FY27",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5b25hbVVPaVV2Y3dEbVBkTkp4OXhoUEcxUVhOQWtMRmpJSi15WnVKREs1QmM2VjJnR1Z4RUV2Q1hEZDNMZDdZRS0zN1o5VjNoaU5kcTBxV3lPT0hYMDRTRmhn?oc=5",
+          "date": "2026-10-07"
+        },
+        {
+          "label": "LatestLY: Titan Company Stock Update: Shares Plunge Over 3% on Q2 Jewellery Miss",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRll3Y1VnTXZ6S0lsU1d4MW5PelAyMjJfX2pHMExlYVdhQXdnU3RTY0g3RFpJWFg4dE1TNDFrNlRaV2IzRm9lU3MxUmFvRFNwWlNPSVZkWElQa1JQRXF2ZE5fQ3FFZ21JMkNmYWY0WDdkcDdYcnU0ZGd1MHo2dzVfY01UUEdsLWVicWp1UHFJcDhUSk9oS0l3VkFYS2dEaEhBeURDazdXa0RzZndOVUJPRzZHRHZZUdIBuwFBVV95cUxPdGxCd3dGT1RieDB0ak5HUU93MlEyTjFycG15QlRGSld5QlBnWHlhdHQwV2JzalEtOEVSZnZ5UkVyOTBIUkVWcE5jbXJ6alNhTVAwOXBOQ1F4V3NRSmhiNnhjdWNjZ2tpaXVqTXlBQnQ4dk91RExuS29MdXh5bUJhbkM5WUU3cWtlR2tUeG8yUmZYelhVbVN4S0pidFdOa3NiazNRZ3NWc2c5QWlGR01rY0hkblZucnJuVHRj?oc=5",
+          "date": "2026-10-07"
+        },
+        {
+          "label": "The Economic Times: Titan Company - Negative Breakout: These 6 stocks cross below their 200 DMAs",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObmw0eFlqdmh1UWJZa1A2ejJCZEhXZjJwTktHaGRPTDdxWlVhaTFqUlJHTmpKSnNOLTRQSVBLWjE5OUR1Q1Y3cHd1NGUwbklPWlRRU2hSLXZ1QUFOWGMwd3JCVFYxLWVoUVI5VFNjdGMtdmU1QnViQ3h5ako5T1YySWFQSUhsSzUxdGh5ZHNIWndoSVppOFZlSE9SSlBsZUdyYTRBR2x4QkVPcDlCVzNrWUxyRGthY0JaQzJiVW1xMk5FellnUERkczBPOUhfMUJLRHBzdFJoaUM2dDVpZWc?oc=5",
+          "date": "2026-10-08"
+        },
+        {
+          "label": "The Economic Times: Titan Company shares fall 4% after Q2 business update. What is Nomura saying?",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLVNlQ3RXakFfUXZDZXlYTTBpamh3SVBzQmlwcS01SWtyZ1d5alFENFA1cVltTTF2ZEVEeHlKMHBDVjI2Mzc0OWp1TWprMHBpRHF2LVRkU2ExaGVkbldBRkdIQUJhcWtHNHY5VjJoblZzQ3pPTlhfTEtuVWhLUndCdm02aWpKN0twNldkN0llV3VueGpZeWJ6V2ZnZ1ZtZmYtRGNfN3lyODBYVkhjdVBFRkxNaXdLZmRPU24wU0ZmeTh5QmVmQm1oTTRnbjRuMGc0OXItRTdGTlJjOTk1UlEzN1RBX07SAeoBQVVfeXFMTkdMRC1ZOC1fSUVtQlZHcEV6MmdPaW5RbWJLYjNKZzhaanJHbmpwdk5uUTRjUkdkWGZPRm1oMmc2YnBuX1FoUjJ6eldPbU9wcnZ5cU5GSEpJRFVTSXVvR092aWJLTURjakhDcmE4TVA4SWVHLXF4QzdVOFIxV2tpeGxzRXhaS2FDTFFJaE1jUnZYblNWdDQwWXV5UVlPeUJvb21MSDRuMmR1Y3R3eUdKdnJOZkJNSVpKU2QwSGNDdHlpYVJ3bHc1MFpyWGR3MnluajZKMTA1MGNxdG9fM08ta19udVVHM2hFbTFR?oc=5",
+          "date": "2026-10-07"
+        }
+      ]
+    },
+    "announcements": {
+      "title": "Company announcements",
+      "label": "2 notable filings",
+      "score": null,
+      "bullets": [
+        "Filings by type: Fund raising (1), Other update (1).",
+        "2026-10-08: Fund raising — Intimation of Repayment of Commercial Paper (CP).",
+        "2026-10-06: Other update — Quarterly Update - Q2 FY 2026-27."
+      ],
+      "metrics": [
+        {
+          "name": "Notable filings",
+          "value": 2,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Routine filings left out",
+          "value": 1,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "BSE: Fund raising — Intimation of Repayment of Commercial Paper (CP)",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ad927144-51f6-458f-a4a5-dfed2478c03a.pdf",
+          "date": "2026-10-08"
+        },
+        {
+          "label": "BSE: Other update — Quarterly Update - Q2 FY 2026-27",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/320a9938-ffc8-4d64-a304-1bc937163f38.pdf",
+          "date": "2026-10-06"
+        }
+      ]
+    },
+    "valuation": {
+      "title": "Valuation",
+      "label": "Pricier than sector",
+      "score": 0,
+      "bullets": [
+        "Trailing P/E is 68.51x, against a median of 25.20x for 7 other Consumer Cyclical companies tracked.",
+        "At today's trailing earnings per share (₹64.88), the past year's closing prices put the P/E between 57.26x and 79.67x.",
+        "Price-to-book is 25.13x (sector median 6.16x).",
+        "Dividend yield is 0.34%."
+      ],
+      "metrics": [
+        {
+          "name": "P/E (trailing)",
+          "value": 68.51,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/B",
+          "value": 25.13,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Dividend yield",
+          "value": 0.34,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year low (at current EPS)",
+          "value": 57.26,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "P/E 1-year high (at current EPS)",
+          "value": 79.67,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/E",
+          "value": 25.2,
+          "unit": "x",
+          "previous": null
+        },
+        {
+          "name": "Sector median P/B",
+          "value": 6.16,
+          "unit": "x",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: TITAN.NS key statistics",
+          "url": "https://finance.yahoo.com/quote/TITAN.NS/key-statistics",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "technicals": {
+      "title": "Technical signal",
+      "label": "SELL",
+      "score": 30,
+      "bullets": [
+        "The SparkleAI technical model gives SELL with a score of 30/100 (1 buy, 5 sell and 5 neutral readings).",
+        "Trend 17/100, momentum 25/100, oscillators 50/100, volume 50/100, patterns 17/100.",
+        "The price is -8.74% against its 50-day average and +0.50% against its 200-day average; RSI is 35.0."
+      ],
+      "metrics": [
+        {
+          "name": "Signal score",
+          "value": 30,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Trend score",
+          "value": 17,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "Momentum score",
+          "value": 25,
+          "unit": "/100",
+          "previous": null
+        },
+        {
+          "name": "RSI (14)",
+          "value": 35.0,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Price vs 50-day average",
+          "value": -8.74,
+          "unit": "%",
+          "previous": null
+        },
+        {
+          "name": "Price vs 200-day average",
+          "value": 0.5,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "SparkleAI technical model on Yahoo Finance TITAN.NS daily prices",
+          "url": "https://finance.yahoo.com/quote/TITAN.NS/chart",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "analyst_views": {
+      "title": "Analyst views",
+      "label": "Buy",
+      "score": 83,
+      "bullets": [
+        "Of 35 analyst ratings this month, 13 are strong buy, 16 buy, 4 hold, 0 sell and 2 strong sell.",
+        "The mean target is ₹5,425.06 (range ₹4,500.00 to ₹6,000.00), +22.05% from the ₹4,444.80 close."
+      ],
+      "metrics": [
+        {
+          "name": "Analysts",
+          "value": 35,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Buy or strong buy",
+          "value": 29,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Hold",
+          "value": 4,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Sell or strong sell",
+          "value": 2,
+          "unit": null,
+          "previous": null
+        },
+        {
+          "name": "Mean target",
+          "value": 5425.06,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "High target",
+          "value": 6000.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Low target",
+          "value": 4500.0,
+          "unit": "₹",
+          "previous": null
+        },
+        {
+          "name": "Upside to mean target",
+          "value": 22.05,
+          "unit": "%",
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: TITAN.NS analyst ratings and targets",
+          "url": "https://finance.yahoo.com/quote/TITAN.NS/analysis",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "promise_vs_reality": {
+      "title": "Promise vs reality",
+      "label": "3 items tracked",
+      "score": null,
+      "bullets": [
+        "Guidance (EC FEB26): \"Management expressed cautious optimism, noting that while January was a good month, the volatility in gold prices makes it difficult to predict the rest of the quarter.\" Since 2026-02-27 the shares moved +2.71% against -8.07% for the Nifty 50. Related news this period: \"Gold rate today (October 17, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IBJA, Malabar Gold & Diamonds, Joyalukkas, Kalyan Jewellers and Tanishq\" (The Economic Times, 2026-10-17).",
+        "Risk flagged: Gold price volatility (EC FEB26): \"Gold prices have been rising in an accelerated manner, causing stress on margins.\" Since 2026-02-27 the shares moved +2.71% against -8.07% for the Nifty 50. Related news this period: \"Gold rate today (October 17, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IBJA, Malabar Gold & Diamonds, Joyalukkas, Kalyan Jewellers and Tanishq\" (The Economic Times, 2026-10-17).",
+        "Annual report outlook (AR FY25): \"Titan is optimistic about achieving strong, profitable, and sustainable growth in FY26, backed by its trusted brands, committed employees, and resilient retail and distribution ecosystems.\" Since 2025-03-28 the shares moved +45.10% against -1.59% for the Nifty 50. No filing or headline in this period clearly relates to it."
+      ],
+      "metrics": [
+        {
+          "name": "Statements tracked",
+          "value": 3,
+          "unit": null,
+          "previous": null
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Economic Times: Gold rate today (October 17, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IBJA, Malabar Gold & Diamonds, Joyalukkas, Kalyan Jewellers and Tanishq",
+          "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPLU82cUlTQ3hON1dSWjZ6UmtZemg0Qmp1MlRtbzJkaXVzYzJ5eG01d0Nid2FCX25aWl8wNWRzZnBKR05TTWVJSENHV1lmN3d3cDFkWmJKNFlqUHpLZ0NHS1V3TmYxdkRHSEcxNVgyYVBoMGstTnZVTDRnQy1uczVpU0VPSU5rUHgzU1hfWENIWXpHMUdCM1NUUG9UUmI5bzYzNGRRaGlQSVBXOVRRRUR1bGhqeDF0TF92eFU2TlBGeDZXazlXaVQ0TnVnNlpLbElDd1ZJdHBPRE1YYmtJMTlhWmFXeHJYbzRCV1NRTjlWQkFIY2RWMkpuRWZrYm5mVXlFR1RXakRQbUF3djlvVjJPb19NNVdOd0JJc2ZwRWJINjhKLXQyaWc?oc=5",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "SparkleAI EC analysis FEB26 (Guidance)",
+          "url": "outputs/Titan Company/EC/FEB26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "The Economic Times: Gold rate today (October 17, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IBJA, Malabar Gold & Diamonds, Joyalukkas, Kalyan Jewellers and Tanishq",
+          "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPLU82cUlTQ3hON1dSWjZ6UmtZemg0Qmp1MlRtbzJkaXVzYzJ5eG01d0Nid2FCX25aWl8wNWRzZnBKR05TTWVJSENHV1lmN3d3cDFkWmJKNFlqUHpLZ0NHS1V3TmYxdkRHSEcxNVgyYVBoMGstTnZVTDRnQy1uczVpU0VPSU5rUHgzU1hfWENIWXpHMUdCM1NUUG9UUmI5bzYzNGRRaGlQSVBXOVRRRUR1bGhqeDF0TF92eFU2TlBGeDZXazlXaVQ0TnVnNlpLbElDd1ZJdHBPRE1YYmtJMTlhWmFXeHJYbzRCV1NRTjlWQkFIY2RWMkpuRWZrYm5mVXlFR1RXakRQbUF3djlvVjJPb19NNVdOd0JJc2ZwRWJINjhKLXQyaWc?oc=5",
+          "date": "2026-10-17"
+        },
+        {
+          "label": "SparkleAI EC analysis FEB26 (Risk flagged: Gold price volatility)",
+          "url": "outputs/Titan Company/EC/FEB26/advanced.json",
+          "date": null
+        },
+        {
+          "label": "SparkleAI AR analysis FY25 (Annual report outlook)",
+          "url": "outputs/Titan Company/AR/FY25/advanced.json",
+          "date": null
+        }
+      ]
+    }
+  },
+  "section_order": [
+    "price_performance",
+    "news_sentiment",
+    "announcements",
+    "valuation",
+    "technicals",
+    "analyst_views",
+    "promise_vs_reality"
+  ],
+  "changes": [
+    {
+      "metric": "Previous report",
+      "previous": null,
+      "current": null,
+      "direction": "same",
+      "text": "This is the first Sparkle Report for Titan Company; there is no previous report to compare with."
+    }
+  ],
+  "scores": {
+    "price_performance": 26,
+    "news_sentiment": 63,
+    "announcements": null,
+    "valuation": 0,
+    "technicals": 30,
+    "analyst_views": 83,
+    "promise_vs_reality": null
+  },
+  "meta": {
+    "generated_at": "2026-10-17T13:24:45+00:00",
+    "writer": "rules",
+    "model": null,
+    "fallback_blocks": [],
+    "data_sources": [
+      "yfinance",
+      "google_news",
+      "bse",
+      "finbert",
+      "ec_ar_reports"
+    ]
+  }
+}

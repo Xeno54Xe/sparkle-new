@@ -1,15 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter, Outfit } from 'next/font/google'
+import { IBM_Plex_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-heading" });
+const plex = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-plex",
+  axes: ["wdth"],
+  display: "swap",
+})
 
 export const metadata: Metadata = {
-  title: 'SparkleAI - Intelligent Investment Dashboard',
-  description: 'Professional institutional-grade investment dashboard with AI-powered market intelligence',
-  generator: 'v0.app',
+  title: 'SparkleAI — Nifty 50 research',
+  description: 'Live prices, technical signals and AI-read earnings calls for every Nifty 50 company.',
   icons: {
     icon: [
       {
@@ -35,21 +38,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable} ${outfit.variable}`}>
-      <body className="font-sans antialiased text-slate-50 relative bg-[#020617] selection:bg-primary/30 custom-scrollbar min-h-screen overflow-x-hidden">
-        {/* Modern dark abstract background gradient */}
-        <div className="fixed inset-0 z-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(2,6,23,0))] pointer-events-none" />
-        
-        {/* Subtle Grid overlay */}
-        <div 
-          className="fixed inset-0 z-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"
-          style={{ maskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, #000 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, #000 70%, transparent 100%)' }}
-        />
-        
-        <div className="relative z-10 w-full min-h-screen">
-          {children}
-        </div>
-        <Analytics />
+    <html lang="en" className={`dark ${plex.variable}`}>
+      <body className="font-sans antialiased min-h-screen overflow-x-hidden custom-scrollbar">
+        {children}
+        {/* Needs Web Analytics switched on for the Vercel project, else its script 404s */}
+        {process.env.NEXT_PUBLIC_VERCEL_ANALYTICS === "true" && <Analytics />}
       </body>
     </html>
   )
