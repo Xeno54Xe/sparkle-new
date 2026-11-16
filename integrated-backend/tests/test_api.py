@@ -68,7 +68,7 @@ def test_news(client, calls):
 def test_precompute_status(client):
     client.get("/market/indices")
     jobs = client.get("/precompute/status").json()["jobs"]
-    assert set(jobs) == {"indices", "heatmap", "most_active", "screener", "news"}
+    assert set(jobs) == {"indices", "heatmap", "most_active", "screener", "news", "portfolio"}
     assert jobs["indices"]["ready"] is True
 
 

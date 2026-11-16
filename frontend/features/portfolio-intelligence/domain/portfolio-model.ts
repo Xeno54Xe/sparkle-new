@@ -1,5 +1,14 @@
-// Runs on the fixed demo prices until real holdings import lands.
+// Portfolio maths for the Portfolio page.
+//
+// Prices are live quotes (or the bundled snapshot until they load). Everything
+// that needs history (factor scores, beta, volatility, alpha, Sharpe,
+// correlations, pairs) comes from the backend's /portfolio/analytics, which
+// computes it from a year of real daily prices and published fundamentals.
+// Until that data arrives those fields are null and the page says so; nothing
+// here is simulated.
 import { demoStocks as nifty50Stocks, type DemoStock as Stock } from "@/lib/demo-prices"
+
+const TRADING_DAYS = 252
 
 export type HoldingInput = {
   symbol: string
@@ -7,15 +16,69 @@ export type HoldingInput = {
   averagePrice: number
 }
 
-export type FactorScores = {
-  momentum: number
-  value: number
-  size: number
-  quality: number
-  lowVolatility: number
-  esg: number
+export const FACTOR_KEYS = ["momentum", "value", "size", "quality", "lowVolatility"] as const
+export type FactorKey = (typeof FACTOR_KEYS)[number]
+export type FactorScores = Record<FactorKey, number | null>
+
+export type StockAnalytics = {
+  sector: string | null
+  ret_1y: number
+  vol: number
+  beta: number
   alpha: number
-  penetration: number
+  momentum_12_1: number | null
+  pe: number | null
+  pb: number | null
+  roe: number | null
+  debt_to_equity: number | null
+  market_cap: number | null
+  factors: FactorScores
+}
+
+export type PairAnalytics = {
+  pair: string
+  left: string
+  right: string
+  sector: string
+  hedge_ratio: number
+  adf_t: number
+  significance: "1%" | "5%" | "10%" | null
+  half_life: number | null
+  correlation: number | null
+  z: number
+  signal: string
+  points: Array<{ date: string; z: number }>
+}
+
+export type MarketAnalytics = {
+  as_of: string
+  start: string
+  days: number
+  risk_free: number
+  benchmark: { symbol: string; name: string; ret_1y: number; vol: number }
+  dates: string[]
+  benchmark_returns: number[]
+  returns: Record<string, number[]>
+  stocks: Record<string, StockAnalytics>
+  pairs: PairAnalytics[]
+  pairs_tested: number
+  methodology: Record<string, string>
+}
+
+/** Accept a /portfolio/analytics payload only if it has the shape the maths needs. */
+export function isMarketAnalytics(data: unknown): data is MarketAnalytics {
+  const d = data as MarketAnalytics | null
+  return Boolean(
+    d &&
+      typeof d === "object" &&
+      Array.isArray(d.dates) &&
+      Array.isArray(d.benchmark_returns) &&
+      d.benchmark_returns.length === d.dates.length &&
+      d.dates.length > 20 &&
+      d.returns && typeof d.returns === "object" &&
+      d.stocks && typeof d.stocks === "object" &&
+      Array.isArray(d.pairs)
+  )
 }
 
 export type HoldingAnalysis = HoldingInput & {
@@ -24,8 +87,27 @@ export type HoldingAnalysis = HoldingInput & {
   weight: number
   pnl: number
   pnlPct: number
-  factors: FactorScores
+  analytics: StockAnalytics | null
   theme: string
+}
+
+export type RiskMetrics = {
+  /** Return over the past year had today's weights been held throughout (annualised). */
+  annualReturn: number
+  benchmarkReturn: number
+  excessReturn: number
+  volatility: number
+  benchmarkVolatility: number
+  beta: number
+  /** Jensen's alpha, annualised, against the benchmark. */
+  alpha: number
+  sharpe: number
+  maxDrawdown: number
+  /** Weighted average stock volatility divided by portfolio volatility; above 1 means correlation is helping. */
+  diversificationRatio: number
+  /** Share of portfolio value that has a year of history behind these numbers. */
+  coveredWeight: number
+  riskFree: number
 }
 
 export type PortfolioSummary = {
@@ -35,71 +117,20 @@ export type PortfolioSummary = {
   pnl: number
   pnlPct: number
   dayChangePct: number
-  estimatedAlpha: number
-  beta: number
-  volatility: number
-  sharpeLike: number
-  concentrationRisk: number
+  /** Herfindahl index of weights, in percent. */
+  concentration: number
+  /** 1 / Herfindahl: how many equal-sized holdings this is equivalent to. */
   effectiveStocks: number
   factorTilt: FactorScores
+  risk: RiskMetrics | null
+  mostCorrelated: { pair: string; correlation: number } | null
   sectorWeights: Array<{ sector: string; weight: number; value: number }>
   themes: Array<{ theme: string; weight: number }>
   topContributors: HoldingAnalysis[]
-  rebalanceNotes: string[]
+  notes: string[]
 }
 
-export type PairCandidate = {
-  pair: string
-  left: Stock
-  right: Stock
-  correlation: number
-  zScore: number
-  spread: number
-  signal: string
-  confidence: number
-  points: Array<{ day: string; spread: number; mean: number; upper: number; lower: number }>
-}
-
-const sectorQuality: Record<string, number> = {
-  Banking: 72,
-  Finance: 68,
-  Insurance: 66,
-  IT: 78,
-  FMCG: 76,
-  Pharma: 73,
-  Healthcare: 74,
-  Automobile: 65,
-  Energy: 58,
-  Power: 62,
-  Infrastructure: 64,
-  Metals: 54,
-  Cement: 61,
-  Telecom: 67,
-  Mining: 48,
-  Conglomerate: 56,
-  "Consumer Goods": 70,
-}
-
-const sectorEsg: Record<string, number> = {
-  Banking: 69,
-  Finance: 66,
-  Insurance: 70,
-  IT: 78,
-  FMCG: 72,
-  Pharma: 68,
-  Healthcare: 74,
-  Automobile: 59,
-  Energy: 44,
-  Power: 55,
-  Infrastructure: 58,
-  Metals: 45,
-  Cement: 48,
-  Telecom: 64,
-  Mining: 39,
-  Conglomerate: 50,
-  "Consumer Goods": 71,
-}
-
+// A label per sector for grouping, not a score.
 const sectorThemes: Record<string, string> = {
   Banking: "Credit growth",
   Finance: "Consumer credit",
@@ -120,39 +151,110 @@ const sectorThemes: Record<string, string> = {
   "Consumer Goods": "Discretionary consumption",
 }
 
-function clamp(value: number, min = 0, max = 100) {
-  return Math.max(min, Math.min(max, value))
+function mean(xs: number[]) {
+  return xs.reduce((sum, x) => sum + x, 0) / xs.length
 }
 
-function stableNoise(symbol: string, scale = 1) {
-  const seed = symbol.split("").reduce((sum, char, index) => sum + char.charCodeAt(0) * (index + 7), 0)
-  return (Math.sin(seed) + Math.cos(seed * 0.7)) * scale
+function covariance(a: number[], b: number[]) {
+  const ma = mean(a)
+  const mb = mean(b)
+  let sum = 0
+  for (let i = 0; i < a.length; i += 1) sum += (a[i] - ma) * (b[i] - mb)
+  return sum / (a.length - 1)
 }
 
-function percentileRank(value: number, values: number[], highIsGood = true) {
-  const sorted = [...values].sort((a, b) => a - b)
-  const rank = sorted.findIndex((item) => item >= value)
-  const pct = rank < 0 ? 100 : (rank / Math.max(sorted.length - 1, 1)) * 100
-  return Math.round(highIsGood ? pct : 100 - pct)
+function stdev(xs: number[]) {
+  return Math.sqrt(covariance(xs, xs))
 }
 
-export function scoreStockFactors(stock: Stock, universe: Stock[] = nifty50Stocks): FactorScores {
-  const prices = universe.map((item) => item.price)
-  const sector = stock.sector
-  const momentum = clamp(50 + stock.change * 12 + stableNoise(stock.symbol, 4))
-  const value = clamp(percentileRank(stock.price, prices, false) * 0.65 + (sectorQuality[sector] ?? 60) * 0.35)
-  const size = clamp(percentileRank(stock.price, prices, true) * 0.85 + 10 + stableNoise(stock.symbol, 3))
-  const quality = clamp((sectorQuality[sector] ?? 60) + Math.max(-8, Math.min(8, stock.change * 2)) + stableNoise(stock.symbol, 3))
-  const lowVolatility = clamp(82 - Math.abs(stock.change) * 13 + stableNoise(stock.symbol, 3))
-  const esg = clamp((sectorEsg[sector] ?? 58) + stableNoise(stock.symbol, 5))
-  const alpha = clamp(momentum * 0.35 + quality * 0.25 + value * 0.2 + lowVolatility * 0.1 + esg * 0.1)
-  const penetration = clamp((sectorThemes[sector] ? 62 : 50) + stock.change * 3 + stableNoise(stock.symbol, 6))
-
-  return { momentum, value, size, quality, lowVolatility, esg, alpha, penetration }
+function annualise(daily: number[]) {
+  const growth = daily.reduce((g, r) => g * (1 + r), 1)
+  return growth > 0 ? growth ** (TRADING_DAYS / daily.length) - 1 : Number.NaN
 }
 
-function weightedAverage(holdings: HoldingAnalysis[], key: keyof FactorScores) {
-  return holdings.reduce((sum, holding) => sum + holding.factors[key] * holding.weight, 0)
+function maxDrawdown(daily: number[]) {
+  let level = 1
+  let peak = 1
+  let worst = 0
+  for (const r of daily) {
+    level *= 1 + r
+    peak = Math.max(peak, level)
+    worst = Math.min(worst, level / peak - 1)
+  }
+  return worst
+}
+
+/** Risk and return of the portfolio over the past year, holding today's weights. */
+export function portfolioRisk(holdings: HoldingAnalysis[], analytics: MarketAnalytics): RiskMetrics | null {
+  const covered = holdings.filter((h) => h.weight > 0 && analytics.returns[h.symbol]?.length === analytics.dates.length)
+  const coveredWeight = covered.reduce((sum, h) => sum + h.weight, 0)
+  if (!covered.length || coveredWeight <= 0) return null
+
+  const bench = analytics.benchmark_returns
+  const days = bench.length
+  const port = new Array<number>(days).fill(0)
+  for (const h of covered) {
+    const w = h.weight / coveredWeight
+    const series = analytics.returns[h.symbol]
+    for (let t = 0; t < days; t += 1) port[t] += w * series[t]
+  }
+
+  const rf = analytics.risk_free
+  const rfDaily = (1 + rf) ** (1 / TRADING_DAYS) - 1
+  const volDaily = stdev(port)
+  const benchVar = covariance(bench, bench)
+  const beta = benchVar > 0 ? covariance(port, bench) / benchVar : Number.NaN
+  const alphaDaily = mean(port.map((r) => r - rfDaily)) - beta * mean(bench.map((r) => r - rfDaily))
+  const annualReturn = annualise(port)
+  const benchmarkReturn = annualise(bench)
+  const volatility = volDaily * Math.sqrt(TRADING_DAYS)
+  const weightedStockVol = covered.reduce(
+    (sum, h) => sum + (h.weight / coveredWeight) * stdev(analytics.returns[h.symbol]) * Math.sqrt(TRADING_DAYS),
+    0
+  )
+
+  return {
+    annualReturn,
+    benchmarkReturn,
+    excessReturn: annualReturn - benchmarkReturn,
+    volatility,
+    benchmarkVolatility: stdev(bench) * Math.sqrt(TRADING_DAYS),
+    beta,
+    alpha: (1 + alphaDaily) ** TRADING_DAYS - 1,
+    sharpe: volatility > 0 ? (annualReturn - rf) / volatility : Number.NaN,
+    maxDrawdown: maxDrawdown(port),
+    diversificationRatio: volatility > 0 ? weightedStockVol / volatility : Number.NaN,
+    coveredWeight,
+    riskFree: rf,
+  }
+}
+
+function weightedFactor(holdings: HoldingAnalysis[], key: FactorKey): number | null {
+  let sum = 0
+  let weight = 0
+  for (const h of holdings) {
+    const score = h.analytics?.factors[key]
+    if (score == null || h.weight <= 0) continue
+    sum += score * h.weight
+    weight += h.weight
+  }
+  return weight > 0 ? sum / weight : null
+}
+
+function mostCorrelatedPair(holdings: HoldingAnalysis[], analytics: MarketAnalytics) {
+  let best: { pair: string; correlation: number } | null = null
+  const withData = holdings.filter((h) => h.weight > 0 && analytics.returns[h.symbol])
+  for (let i = 0; i < withData.length; i += 1) {
+    for (let j = i + 1; j < withData.length; j += 1) {
+      const a = analytics.returns[withData[i].symbol]
+      const b = analytics.returns[withData[j].symbol]
+      const corr = covariance(a, b) / (stdev(a) * stdev(b))
+      if (Number.isFinite(corr) && (!best || corr > best.correlation)) {
+        best = { pair: `${withData[i].symbol}/${withData[j].symbol}`, correlation: corr }
+      }
+    }
+  }
+  return best
 }
 
 function summarizeBy<T extends string>(holdings: HoldingAnalysis[], key: (holding: HoldingAnalysis) => T) {
@@ -169,15 +271,54 @@ function summarizeBy<T extends string>(holdings: HoldingAnalysis[], key: (holdin
     .sort((a, b) => b.weight - a.weight)
 }
 
-/** Prices default to the bundled snapshot; pass live quotes as `universe` when available. */
-export function analyzePortfolio(inputs: HoldingInput[], universe: Stock[] = nifty50Stocks): PortfolioSummary {
+const pct = (x: number, digits = 0) => `${(x * 100).toFixed(digits)}%`
+
+function buildNotes(summary: Omit<PortfolioSummary, "notes">, analytics: MarketAnalytics | null): string[] {
+  const notes: string[] = []
+  const { risk, factorTilt, sectorWeights, effectiveStocks, mostCorrelated } = summary
+  const top = sectorWeights[0]
+
+  if (top && top.weight > 0.35) notes.push(`${top.sector} is ${pct(top.weight)} of the portfolio; one sector drives most of the outcome.`)
+  if (summary.holdings.length > 1 && effectiveStocks < 5) {
+    notes.push(`Weights make this behave like ${effectiveStocks.toFixed(1)} equal-sized holdings; a few positions dominate.`)
+  }
+  if (!analytics || !risk) {
+    notes.push("Risk notes based on price history appear once a year of market data has loaded.")
+    return notes.slice(0, 5)
+  }
+  if (risk.beta > 1.2) notes.push(`Beta ${risk.beta.toFixed(2)}: over the past year the portfolio moved about ${risk.beta.toFixed(1)}x as much as the Nifty 50.`)
+  else if (risk.beta < 0.8) notes.push(`Beta ${risk.beta.toFixed(2)}: more defensive than the Nifty 50; expect to lag in strong rallies.`)
+  if (risk.volatility > risk.benchmarkVolatility * 1.25) {
+    notes.push(`Volatility ${pct(risk.volatility, 1)} is well above the Nifty 50's ${pct(risk.benchmarkVolatility, 1)}.`)
+  }
+  if (risk.maxDrawdown < -0.2) notes.push(`At today's weights the worst fall in the past year was ${pct(risk.maxDrawdown, 1)} from a peak.`)
+  if (mostCorrelated && mostCorrelated.correlation > 0.75) {
+    notes.push(`${mostCorrelated.pair.replace("/", " and ")} moved together (correlation ${mostCorrelated.correlation.toFixed(2)}); they diversify each other little.`)
+  }
+  if (factorTilt.momentum != null && factorTilt.momentum < 30) notes.push("Holdings rank low on 12-month momentum: most have lagged the rest of the Nifty 50.")
+  if (factorTilt.value != null && factorTilt.value < 35) notes.push("Holdings rank expensive on earnings and book yield compared with other Nifty 50 stocks.")
+  if (factorTilt.quality != null && factorTilt.quality < 35) notes.push("Holdings rank low on quality (return on equity and leverage).")
+  if (risk.coveredWeight < 0.999) notes.push(`${pct(1 - risk.coveredWeight)} of the value lacks a full year of history and is left out of the risk figures.`)
+  if (!notes.length) notes.push("No concentration, beta, volatility or factor extremes stand out; sizing and entry discipline matter most now.")
+  return notes.slice(0, 5)
+}
+
+/**
+ * Prices default to the bundled snapshot; pass live quotes as `universe`.
+ * Pass the /portfolio/analytics payload as `analytics` for factor and risk figures.
+ */
+export function analyzePortfolio(
+  inputs: HoldingInput[],
+  universe: Stock[] = nifty50Stocks,
+  analytics: MarketAnalytics | null = null
+): PortfolioSummary {
   const valid = inputs
     .map((input) => ({ input, stock: universe.find((stock) => stock.symbol === input.symbol) }))
     .filter((item): item is { input: HoldingInput; stock: Stock } => Boolean(item.stock) && item.input.quantity > 0)
 
   const totalValue = valid.reduce((sum, item) => sum + item.stock.price * item.input.quantity, 0)
   const totalCost = valid.reduce((sum, item) => sum + item.input.averagePrice * item.input.quantity, 0)
-  const holdings = valid.map(({ input, stock }) => {
+  const holdings: HoldingAnalysis[] = valid.map(({ input, stock }) => {
     const value = stock.price * input.quantity
     const cost = input.averagePrice * input.quantity
     return {
@@ -187,139 +328,30 @@ export function analyzePortfolio(inputs: HoldingInput[], universe: Stock[] = nif
       weight: totalValue > 0 ? value / totalValue : 0,
       pnl: value - cost,
       pnlPct: cost > 0 ? ((value - cost) / cost) * 100 : 0,
-      factors: scoreStockFactors(stock, universe),
+      analytics: analytics?.stocks[stock.symbol] ?? null,
       theme: sectorThemes[stock.sector] ?? "Core equity",
     }
   })
 
-  const dayChangePct = holdings.reduce((sum, holding) => sum + holding.stock.change * holding.weight, 0)
-  const factorTilt: FactorScores = {
-    momentum: weightedAverage(holdings, "momentum"),
-    value: weightedAverage(holdings, "value"),
-    size: weightedAverage(holdings, "size"),
-    quality: weightedAverage(holdings, "quality"),
-    lowVolatility: weightedAverage(holdings, "lowVolatility"),
-    esg: weightedAverage(holdings, "esg"),
-    alpha: weightedAverage(holdings, "alpha"),
-    penetration: weightedAverage(holdings, "penetration"),
-  }
-  const concentrationRisk = holdings.reduce((sum, holding) => sum + holding.weight * holding.weight, 0)
-  const effectiveStocks = concentrationRisk > 0 ? 1 / concentrationRisk : 0
-  const beta = clamp(0.78 + factorTilt.momentum / 220 + (100 - factorTilt.lowVolatility) / 260, 0.6, 1.65)
-  const volatility = clamp(10 + (100 - factorTilt.lowVolatility) * 0.22 + concentrationRisk * 18, 8, 38)
-  const estimatedAlpha = Number(((factorTilt.alpha - 55) / 4 + dayChangePct * 0.18).toFixed(2))
-  const sharpeLike = Number(((estimatedAlpha + 7) / Math.max(volatility, 1)).toFixed(2))
-  const sectorWeights = summarizeBy(holdings, (holding) => holding.stock.sector).map((item) => ({
-    sector: item.label,
-    weight: item.weight,
-    value: item.value,
-  }))
-  const themes = summarizeBy(holdings, (holding) => holding.theme).map((item) => ({
-    theme: item.label,
-    weight: item.weight,
-  }))
-  const topContributors = [...holdings].sort((a, b) => b.pnl - a.pnl).slice(0, 4)
-  const rebalanceNotes = buildRebalanceNotes(factorTilt, sectorWeights, effectiveStocks)
-
-  return {
+  const herfindahl = holdings.reduce((sum, h) => sum + h.weight * h.weight, 0)
+  const factorTilt = Object.fromEntries(FACTOR_KEYS.map((k) => [k, weightedFactor(holdings, k)])) as FactorScores
+  const base = {
     holdings,
     totalValue,
     totalCost,
     pnl: totalValue - totalCost,
     pnlPct: totalCost > 0 ? ((totalValue - totalCost) / totalCost) * 100 : 0,
-    dayChangePct,
-    estimatedAlpha,
-    beta: Number(beta.toFixed(2)),
-    volatility: Number(volatility.toFixed(1)),
-    sharpeLike,
-    concentrationRisk: Number((concentrationRisk * 100).toFixed(1)),
-    effectiveStocks: Number(effectiveStocks.toFixed(1)),
+    dayChangePct: holdings.reduce((sum, h) => sum + h.stock.change * h.weight, 0),
+    concentration: Number((herfindahl * 100).toFixed(1)),
+    effectiveStocks: herfindahl > 0 ? Number((1 / herfindahl).toFixed(1)) : 0,
     factorTilt,
-    sectorWeights,
-    themes,
-    topContributors,
-    rebalanceNotes,
+    risk: analytics ? portfolioRisk(holdings, analytics) : null,
+    mostCorrelated: analytics ? mostCorrelatedPair(holdings, analytics) : null,
+    sectorWeights: summarizeBy(holdings, (h) => h.stock.sector).map((item) => ({ sector: item.label, weight: item.weight, value: item.value })),
+    themes: summarizeBy(holdings, (h) => h.theme).map((item) => ({ theme: item.label, weight: item.weight })),
+    topContributors: [...holdings].sort((a, b) => b.pnl - a.pnl).slice(0, 4),
   }
-}
-
-function buildRebalanceNotes(factors: FactorScores, sectors: Array<{ sector: string; weight: number }>, effectiveStocks: number) {
-  const notes: string[] = []
-  const topSector = sectors[0]
-  if (topSector && topSector.weight > 0.35) notes.push(`Reduce ${topSector.sector} concentration or offset it with a less-correlated sector.`)
-  if (factors.value < 52) notes.push("Add more value exposure to balance momentum-heavy positioning.")
-  if (factors.esg < 58) notes.push("ESG score is below the model comfort zone; consider higher ESG sectors or leaders.")
-  if (factors.lowVolatility < 55) notes.push("Portfolio volatility is elevated; add steadier compounders or reduce high-beta names.")
-  if (effectiveStocks < 5) notes.push("Effective diversification is low; portfolio behaves like fewer stocks than the holding count suggests.")
-  if (!notes.length) notes.push("Portfolio looks balanced across factors; focus next on sizing and entry discipline.")
-  return notes.slice(0, 4)
-}
-
-function syntheticReturns(stock: Stock, days = 90) {
-  const sectorBias = (sectorQuality[stock.sector] ?? 60) / 1000
-  return Array.from({ length: days }, (_, index) => {
-    const wave = Math.sin((index + 1) * 0.17 + stableNoise(stock.symbol, 0.5)) * 0.009
-    const cycle = Math.cos((index + 1) * 0.07 + stock.symbol.length) * 0.006
-    const drift = stock.change / 100 / 18 + sectorBias
-    return drift + wave + cycle + stableNoise(`${stock.symbol}-${index}`, 0.002)
-  })
-}
-
-function correlation(left: number[], right: number[]) {
-  const n = Math.min(left.length, right.length)
-  const l = left.slice(0, n)
-  const r = right.slice(0, n)
-  const meanL = l.reduce((sum, value) => sum + value, 0) / n
-  const meanR = r.reduce((sum, value) => sum + value, 0) / n
-  const cov = l.reduce((sum, value, index) => sum + (value - meanL) * (r[index] - meanR), 0)
-  const sdL = Math.sqrt(l.reduce((sum, value) => sum + (value - meanL) ** 2, 0))
-  const sdR = Math.sqrt(r.reduce((sum, value) => sum + (value - meanR) ** 2, 0))
-  return sdL && sdR ? cov / (sdL * sdR) : 0
-}
-
-export function findPairCandidates(limit = 6): PairCandidate[] {
-  const candidates: PairCandidate[] = []
-  for (let i = 0; i < nifty50Stocks.length; i += 1) {
-    for (let j = i + 1; j < nifty50Stocks.length; j += 1) {
-      const left = nifty50Stocks[i]
-      const right = nifty50Stocks[j]
-      if (left.sector !== right.sector) continue
-      const leftReturns = syntheticReturns(left)
-      const rightReturns = syntheticReturns(right)
-      const corr = correlation(leftReturns, rightReturns)
-      const spreadPoints = leftReturns.map((value, index) => value - rightReturns[index])
-      const mean = spreadPoints.reduce((sum, value) => sum + value, 0) / spreadPoints.length
-      const sd = Math.sqrt(spreadPoints.reduce((sum, value) => sum + (value - mean) ** 2, 0) / spreadPoints.length) || 0.001
-      const spread = spreadPoints.at(-1) ?? 0
-      const zScore = (spread - mean) / sd
-      const absZ = Math.abs(zScore)
-      const signal = absZ < 1
-        ? "Watch only"
-        : zScore > 0
-          ? `Long ${right.symbol}, short ${left.symbol}`
-          : `Long ${left.symbol}, short ${right.symbol}`
-      const points = spreadPoints.slice(-45).map((item, index) => ({
-        day: `D-${44 - index}`,
-        spread: Number((item * 100).toFixed(2)),
-        mean: Number((mean * 100).toFixed(2)),
-        upper: Number(((mean + sd * 1.5) * 100).toFixed(2)),
-        lower: Number(((mean - sd * 1.5) * 100).toFixed(2)),
-      }))
-      candidates.push({
-        pair: `${left.symbol}/${right.symbol}`,
-        left,
-        right,
-        correlation: Number(corr.toFixed(2)),
-        zScore: Number(zScore.toFixed(2)),
-        spread: Number((spread * 100).toFixed(2)),
-        signal,
-        confidence: clamp(corr * 70 + Math.min(absZ, 2.5) * 12),
-        points,
-      })
-    }
-  }
-  return candidates
-    .sort((a, b) => b.confidence - a.confidence)
-    .slice(0, limit)
+  return { ...base, notes: buildNotes(base, analytics) }
 }
 
 /**

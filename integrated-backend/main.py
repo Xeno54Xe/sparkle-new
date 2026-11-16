@@ -20,6 +20,7 @@ from financial_service import get_stock_info, get_financials, get_estimates
 from stocks import TICKERS as HEATMAP_TICKERS, NAMES as HEATMAP_NAMES, SECTORS as HEATMAP_SECTORS
 from stocks import STOCKS, find_stock
 import stock_news
+import portfolio_analytics
 from precompute import Precomputer
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
@@ -385,6 +386,40 @@ precomputer.register("indices", compute_indices, _has("indices"), open_every=60,
 precomputer.register("heatmap", compute_heatmap, _has("stocks"), open_every=60, closed_every=600)
 precomputer.register("most_active", compute_most_active, _has("stocks"), open_every=60, closed_every=600)
 precomputer.register("screener", compute_screener, _has("stocks"), open_every=300, closed_every=1800)
+
+
+# ═══ PORTFOLIO ANALYTICS ═══
+# Real factor scores, betas, alphas, daily returns and cointegrated pairs for
+# the Portfolio page (see portfolio_analytics.py). Prices move slowly enough
+# at this horizon that refreshing every 30-60 minutes is plenty.
+
+def _fundamentals_for(symbol: str) -> dict:
+    info = get_stock_info(HEATMAP_TICKERS[symbol])
+    return (info or {}).get("metrics") or {}
+
+
+def compute_portfolio_analytics():
+    try:
+        tickers = list(HEATMAP_TICKERS.values()) + [portfolio_analytics.BENCHMARK]
+        raw = yf_download_cached(tickers, "2y", ttl=1800)
+        if raw is None or raw.empty or not isinstance(raw.columns, pd.MultiIndex):
+            return {"error": "No price history from Yahoo Finance"}
+        closes = raw["Close"].dropna(how="all")
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            fundamentals = dict(zip(HEATMAP_TICKERS, pool.map(_fundamentals_for, HEATMAP_TICKERS)))
+        result = portfolio_analytics.build_analytics(closes, fundamentals, HEATMAP_TICKERS, HEATMAP_SECTORS)
+        result["timestamp"] = datetime.now().isoformat()
+        return clean_nans(result)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+precomputer.register("portfolio", compute_portfolio_analytics, _has("stocks"), open_every=1800, closed_every=3600)
+
+
+@app.get("/portfolio/analytics")
+def get_portfolio_analytics():
+    return precomputer.serve("portfolio")[0]
 
 
 @app.get("/market/heatmap")

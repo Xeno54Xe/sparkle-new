@@ -48,7 +48,7 @@ def calls():
 def client(monkeypatch, calls):
     def download(tickers, period, ttl=60):
         calls["download"] += 1
-        return fake_ohlcv(list(tickers), 250 if period == "1y" else 5)
+        return fake_ohlcv(list(tickers), {"1y": 250, "2y": 500}.get(period, 5))
 
     def history(ticker, period="1y", interval="1d"):
         calls["history"] += 1
@@ -62,6 +62,9 @@ def client(monkeypatch, calls):
     monkeypatch.setattr(main, "yf_download_cached", download)
     monkeypatch.setattr(main, "get_stock_history", history)
     monkeypatch.setattr(main, "fetch_rss", rss)
+    monkeypatch.setattr(main, "get_stock_info", lambda t: {"metrics": {
+        "market_cap": 1e12 + 1e9 * len(t), "pe_ratio": 10 + len(t), "pb_ratio": 2 + len(t) / 10,
+        "roe": 5 + len(t), "debt_to_equity": 40 - len(t)}})
     monkeypatch.setattr(main, "get_stock_price", lambda t: {"price": 101.0, "prev_close": 100.0, "change": 1.0, "change_pct": 1.0})
 
     # Fresh state for every test.
