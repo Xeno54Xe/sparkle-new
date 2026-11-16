@@ -5,7 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
   LayoutDashboard, Star, FileText, Settings, PanelLeftClose, PanelLeftOpen, X, LogOut,
-  LayoutGrid, GitCompare, SlidersHorizontal, BriefcaseBusiness, List,
+  LayoutGrid, GitCompare, SlidersHorizontal, BriefcaseBusiness, List, Sparkles,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { createClient } from "@/lib/supabase/client"
@@ -18,6 +18,7 @@ const navGroups = [
     label: "You",
     items: [
       { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
+      { icon: Sparkles, label: "Ask Sparkle", href: "/ask" },
       { icon: BriefcaseBusiness, label: "Portfolio", href: "/portfolio" },
       { icon: Star, label: "Watchlist", href: "/watchlist" },
     ],

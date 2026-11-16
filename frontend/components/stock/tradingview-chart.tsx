@@ -53,9 +53,31 @@ export function TradingViewChart({ symbol, height, studies, title, description }
       studies: studiesKey ? studiesKey.split(",") : [],
     })
 
+    // TradingView's script looks up its container when it runs. If the page is
+    // left before it has loaded, park the container off-screen until it has
+    // run, so it doesn't throw on a detached element.
+    let loaded = false
+    let parked: HTMLDivElement | null = null
+    const settle = () => {
+      loaded = true
+      parked?.remove()
+    }
+    script.addEventListener("load", settle)
+    script.addEventListener("error", settle)
+
     el.appendChild(widget)
     el.appendChild(script)
-    return () => { el.innerHTML = "" }
+    return () => {
+      if (!loaded) {
+        parked = document.createElement("div")
+        parked.setAttribute("aria-hidden", "true")
+        parked.style.cssText = "position:absolute;width:0;height:0;overflow:hidden;visibility:hidden"
+        parked.append(...Array.from(el.childNodes))
+        document.body.appendChild(parked)
+        setTimeout(() => parked?.remove(), 30000)
+      }
+      el.innerHTML = ""
+    }
   }, [symbol, height, studiesKey])
 
   return (

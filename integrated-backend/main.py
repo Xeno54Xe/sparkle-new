@@ -21,6 +21,7 @@ from stocks import TICKERS as HEATMAP_TICKERS, NAMES as HEATMAP_NAMES, SECTORS a
 from stocks import STOCKS, find_stock
 import stock_news
 import portfolio_analytics
+import ask_knowledge
 from precompute import Precomputer
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
@@ -1099,3 +1100,96 @@ def get_fresh_reports():
     value = compute_fresh_reports(today)
     c.update(ts=time.time(), day=today, value=value)
     return value
+
+
+
+# ═══ ASK SPARKLE ═══
+# Compact, model-friendly views of the app's data for the Ask Sparkle
+# assistant (frontend/app/api/ask). Each answer stays small so a language
+# model can read several in one turn.
+
+knowledge = ask_knowledge.Knowledge(EARNINGS_OUTPUTS, {s["folder"]: s["symbol"] for s in STOCKS})
+
+
+@app.get("/ask/catalog")
+def ask_catalog():
+    """Which companies have which reports."""
+    return {"companies": knowledge.catalog()}
+
+
+@app.get("/ask/search")
+def ask_search(q: str, company: Optional[str] = None, doc_type: Optional[str] = None, limit: int = 6):
+    limit = max(1, min(int(limit), 10))
+    if doc_type and doc_type.upper() not in ask_knowledge.DOC_TYPES:
+        doc_type = None
+    return {"query": q, "results": knowledge.search(q[:300], company=company, doc_type=doc_type, limit=limit)}
+
+
+@app.get("/ask/report")
+def ask_report(company: str, doc_type: str = "EC", period: Optional[str] = None, sections: Optional[str] = None):
+    wanted = [x.strip() for x in sections.split(",") if x.strip()] if sections else None
+    return clean_nans(knowledge.report(company, doc_type, period, wanted))
+
+
+def _technical_summary(ticker: str) -> dict:
+    data = full_analysis(ticker)
+    ind, sig = data.get("indicators") or {}, data.get("signal") or {}
+    keep = ("price", "RSI", "MACD", "MACDSignal", "ADX", "SMA50", "SMA200", "EMA20", "stochK", "MFI")
+    return {
+        "signal": sig.get("signal"),
+        "score": sig.get("overall_score"),
+        "indicator_votes": sig.get("counts"),
+        "category_scores": sig.get("scores"),
+        "indicators": {k: (round(ind[k], 2) if isinstance(ind.get(k), (int, float)) else ind.get(k)) for k in keep if k in ind},
+        "candle": (ind.get("candle") or {}).get("latest"),
+        "crossovers": {k: v.get("status") for k, v in (ind.get("crossovers") or {}).items() if isinstance(v, dict)},
+    }
+
+
+@app.get("/ask/snapshot/{symbol}")
+def ask_snapshot(symbol: str):
+    """Everything worth knowing about one listed stock in one small payload."""
+    stock = find_stock(symbol)
+    if not stock:
+        return {"error": f"{symbol} is not one of the Nifty 50 stocks SparkleAI covers."}
+    ticker = stock["yahoo"]
+
+    def safe(fn):
+        try:
+            return clean_nans(fn())
+        except Exception as e:  # one failing source must not sink the others
+            return {"error": str(e)}
+
+    def one_year():
+        r = stock_history_cached(ticker, "1y")["Close"].pct_change().dropna()
+        m = stock_history_cached(portfolio_analytics.BENCHMARK, "1y")["Close"].pct_change().dropna()
+        st = portfolio_analytics.stock_stats(r, m)
+        return {k: round(v, 4) for k, v in st.items()}
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        f_price = pool.submit(safe, lambda: _cached("price", ticker, get_stock_price, ttl=PRICE_CACHE_TTL))
+        f_info = pool.submit(safe, lambda: _cached("info", ticker, get_stock_info))
+        f_tech = pool.submit(safe, lambda: _technical_summary(ticker))
+        f_year = pool.submit(safe, one_year)
+        price, info, tech, year = f_price.result(), f_info.result(), f_tech.result(), f_year.result()
+
+    # Factor ranks need all 50 stocks; include them when that run is cached.
+    analytics = precomputer.jobs["portfolio"].value or {}
+    factors = ((analytics.get("stocks") or {}).get(stock["symbol"]) or {}).get("factors")
+    return clean_nans({
+        "symbol": stock["symbol"],
+        "name": stock["name"],
+        "sector": stock["sector"],
+        "price": price,
+        "fundamentals": (info or {}).get("metrics") if isinstance(info, dict) and not info.get("error") else info,
+        "industry": (info or {}).get("industry") if isinstance(info, dict) else None,
+        "fifty_two_week": {k: ((info or {}).get("price") or {}).get(k) for k in ("fifty_two_week_low", "fifty_two_week_high")}
+        if isinstance(info, dict) and not info.get("error") else None,
+        "technical": tech,
+        "one_year_vs_nifty50": {**year, "note": "ret_1y and vol annualised; beta and Jensen's alpha vs the Nifty 50 at 6.5% risk-free"}
+        if isinstance(year, dict) and not year.get("error") else year,
+        "factor_percentiles": factors,
+        "report_scores": knowledge.scores(stock["folder"]),
+        "links": {"stock_page": f"/stock/{stock['symbol']}", "intelligence": f"/stock/{stock['symbol']}/intelligence",
+                  "sparkle_report": f"/stock/{stock['symbol']}/sparkle"},
+    })

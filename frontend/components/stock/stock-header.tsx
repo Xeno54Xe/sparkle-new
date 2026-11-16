@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Star } from "lucide-react"
+import { Sparkles, Star } from "lucide-react"
 import { StockLogo } from "@/components/ui/stock-logo"
 import { useWatchlist } from "@/lib/hooks/useWatchlist"
 import { useFreshReports, describeFresh, type FreshReport } from "@/lib/hooks/useFreshReports"
@@ -88,6 +88,14 @@ export function StockHeader({ stock }: { stock: Stock }) {
                 </div>
               )}
             </div>
+            <Link
+              href={`/ask?symbol=${encodeURIComponent(stock.symbol)}`}
+              className="flex h-9 items-center gap-2 rounded-md border border-primary/40 bg-primary/10 px-3 text-sm text-primary transition-colors hover:bg-primary/15"
+            >
+              <Sparkles size={15} />
+              <span className="hidden sm:inline">Ask Sparkle</span>
+              <span className="sm:hidden">Ask</span>
+            </Link>
             <button
               onClick={() => (watched ? removeStock(watched.id) : addStock(stock.symbol, stock.name))}
               className={cn(

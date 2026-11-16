@@ -1,12 +1,27 @@
+import time
 import yfinance as yf
 import json
 
 
+def _info_with_retry(ticker, attempts=2, pause=1.5):
+    """Yahoo sometimes answers 401 / empty for a moment under load; one retry usually clears it."""
+    last = None
+    for i in range(attempts):
+        try:
+            info = yf.Ticker(ticker).info
+            if info:
+                return info
+        except Exception as e:
+            last = e
+        if i < attempts - 1:
+            time.sleep(pause)
+    raise last or ValueError(f"No data from Yahoo Finance for {ticker}")
+
+
 def get_stock_info(ticker):
     """Get comprehensive stock info including key metrics"""
-    stock = yf.Ticker(ticker)
     try:
-        info = stock.info
+        info = _info_with_retry(ticker)
         return {
             "symbol": ticker,
             "name": info.get("longName", ""),

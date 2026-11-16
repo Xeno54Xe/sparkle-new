@@ -254,3 +254,22 @@
 @utility loader-text-in {
   animation: loader-text-in 300ms ease-out both;
 }
+
+/* Ask Sparkle answers (rendered markdown) */
+.ask-markdown { overflow-wrap: anywhere; }
+.ask-markdown > * + * { margin-top: 0.65em; }
+.ask-markdown h1, .ask-markdown h2, .ask-markdown h3 { font-weight: 600; color: var(--foreground); margin-top: 1em; }
+.ask-markdown h1 { font-size: 1.05rem; }
+.ask-markdown h2 { font-size: 1rem; }
+.ask-markdown h3 { font-size: 0.925rem; }
+.ask-markdown ul { list-style: disc; padding-left: 1.25rem; }
+.ask-markdown ol { list-style: decimal; padding-left: 1.25rem; }
+.ask-markdown li + li { margin-top: 0.25em; }
+.ask-markdown li > p { margin: 0; }
+.ask-markdown strong { font-weight: 600; color: var(--foreground); }
+.ask-markdown code { font-size: 0.85em; background: var(--surface-2); padding: 0.1em 0.35em; border-radius: 4px; }
+.ask-markdown blockquote { border-left: 2px solid var(--line-strong); padding-left: 0.75rem; color: var(--muted-foreground); }
+.ask-markdown th { font-weight: 600; color: var(--muted-foreground); background: var(--surface-2); }
+.ask-markdown th, .ask-markdown td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.ask-markdown tr:last-child td { border-bottom: 0; }
+.ask-markdown hr { border-color: var(--line); }
