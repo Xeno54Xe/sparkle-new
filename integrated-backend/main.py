@@ -1146,6 +1146,8 @@ def _technical_summary(ticker: str) -> dict:
     }
 
 
+SNAPSHOT_BUDGET_S = 12
+
 @app.get("/ask/snapshot/{symbol}")
 def ask_snapshot(symbol: str):
     """Everything worth knowing about one listed stock in one small payload."""
@@ -1166,12 +1168,25 @@ def ask_snapshot(symbol: str):
         st = portfolio_analytics.stock_stats(r, m)
         return {k: round(v, 4) for k, v in st.items()}
 
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        f_price = pool.submit(safe, lambda: _cached("price", ticker, get_stock_price, ttl=PRICE_CACHE_TTL))
-        f_info = pool.submit(safe, lambda: _cached("info", ticker, get_stock_info))
-        f_tech = pool.submit(safe, lambda: _technical_summary(ticker))
-        f_year = pool.submit(safe, one_year)
-        price, info, tech, year = f_price.result(), f_info.result(), f_tech.result(), f_year.result()
+    # Yahoo occasionally stalls a request for 30s or more. Give the sources a
+    # shared time budget and answer with whatever arrived; a slow source is
+    # reported as unavailable instead of holding up the whole answer.
+    pool = ThreadPoolExecutor(max_workers=4)
+    futures = {
+        "price": pool.submit(safe, lambda: _cached("price", ticker, get_stock_price, ttl=PRICE_CACHE_TTL)),
+        "info": pool.submit(safe, lambda: _cached("info", ticker, get_stock_info)),
+        "tech": pool.submit(safe, lambda: _technical_summary(ticker)),
+        "year": pool.submit(safe, one_year),
+    }
+    deadline = time.time() + SNAPSHOT_BUDGET_S
+    got = {}
+    for key, fut in futures.items():
+        try:
+            got[key] = fut.result(timeout=max(0.1, deadline - time.time()))
+        except Exception:
+            got[key] = {"error": "Data source was too slow to answer; try again shortly."}
+    pool.shutdown(wait=False)
+    price, info, tech, year = got["price"], got["info"], got["tech"], got["year"]
 
     # Factor ranks need all 50 stocks; include them when that run is cached.
     analytics = precomputer.jobs["portfolio"].value or {}

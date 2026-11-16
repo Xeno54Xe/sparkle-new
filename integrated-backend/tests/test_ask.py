@@ -74,3 +74,15 @@ def test_search_keeps_to_companies_named_in_the_question():
     assert main.knowledge.mentioned_companies("Which companies flagged greenwashing?") == set()
     hits = main.knowledge.search("How did Infosys management sound in its latest earnings call?", limit=5)
     assert hits and {h["company"] for h in hits} == {"Infosys"}
+
+
+def test_snapshot_answers_even_when_a_source_stalls(client, monkeypatch):
+    import time as _time
+    monkeypatch.setattr(main, "SNAPSHOT_BUDGET_S", 0.5)
+    monkeypatch.setattr(main, "get_stock_info", lambda t: _time.sleep(3) or {"metrics": {}})
+    main._fund_cache.clear()
+    started = _time.time()
+    snap = client.get("/ask/snapshot/TCS").json()
+    assert _time.time() - started < 2
+    assert "error" in snap["fundamentals"]
+    assert snap["price"]["price"] == 101.0 and snap["technical"]["signal"]

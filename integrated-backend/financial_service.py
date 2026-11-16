@@ -7,14 +7,18 @@ def _info_with_retry(ticker, attempts=2, pause=1.5):
     """Yahoo sometimes answers 401 / empty for a moment under load; one retry usually clears it."""
     last = None
     for i in range(attempts):
+        started = time.time()
         try:
             info = yf.Ticker(ticker).info
             if info:
                 return info
         except Exception as e:
             last = e
-        if i < attempts - 1:
+        # Only retry quick refusals; retrying a slow timeout would just double the wait.
+        if i < attempts - 1 and time.time() - started < 5:
             time.sleep(pause)
+        else:
+            break
     raise last or ValueError(f"No data from Yahoo Finance for {ticker}")
 
 
