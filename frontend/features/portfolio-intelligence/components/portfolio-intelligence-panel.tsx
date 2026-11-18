@@ -73,12 +73,12 @@ function formatPct(value: number, digits = 1) {
 }
 
 function tone(value: number) {
-  if (value > 0) return "text-primary"
+  if (value > 0) return "text-up"
   if (value < 0) return "text-destructive"
   return "text-foreground"
 }
 
-function ScoreBar({ value, color = "bg-primary" }: { value: number; color?: string }) {
+function ScoreBar({ value, color = "bg-foreground/70" }: { value: number; color?: string }) {
   return (
     <div className="h-2 overflow-hidden rounded-full bg-surface-2">
       <div className={`h-full rounded-full ${color}`} style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
@@ -176,8 +176,8 @@ export function PortfolioIntelligencePanel() {
     <div className="mx-auto w-full max-w-[1480px] min-w-0 space-y-6 overflow-hidden">
       <section className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
         <div className="min-w-0">
-          <h1 className="text-2xl font-semibold text-foreground">Portfolio</h1>
-          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+          <h1 className="display text-[34px] text-foreground sm:text-[44px]">Portfolio</h1>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
             Model your holdings to see factor tilts, concentration risk and pairs-trading ideas. Edits stay on this device.
           </p>
           <p className="mt-1 text-xs text-faint-foreground">{historyNote}</p>
@@ -189,7 +189,7 @@ export function PortfolioIntelligencePanel() {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section className="grid gap-px overflow-hidden rounded-[var(--radius)] border border-line bg-line md:grid-cols-2 xl:grid-cols-4">
         <InsightCard
           icon={Target}
           label="1 year vs Nifty 50"
@@ -317,13 +317,13 @@ export function PortfolioIntelligencePanel() {
           ) : (
           <>
           <ChartContainer
-            config={{ score: { label: "Score", color: "#2FB57C" } }}
+            config={{ score: { label: "Score", color: "#3DDC97" } }}
             className="h-[300px] w-full max-w-full"
           >
             <RadarChart data={factorData}>
               <PolarGrid />
               <PolarAngleAxis dataKey="factor" />
-              <Radar dataKey="score" stroke="#2FB57C" fill="#2FB57C" fillOpacity={0.22} />
+              <Radar dataKey="score" stroke="#C5FF4A" fill="#C5FF4A" fillOpacity={0.16} />
               <ChartTooltip content={<ChartTooltipContent />} />
             </RadarChart>
           </ChartContainer>
@@ -349,13 +349,13 @@ export function PortfolioIntelligencePanel() {
             <BarChart3 size={20} className="text-primary" />
             <h2 className="text-base font-medium text-foreground">Sector Allocation</h2>
           </div>
-          <ChartContainer config={{ weight: { label: "Weight", color: "#6AA6F8" } }} className="h-[260px] w-full">
+          <ChartContainer config={{ weight: { label: "Weight", color: "#7DB4FF" } }} className="h-[260px] w-full">
             <BarChart data={sectorData} margin={{ left: 4, right: 8 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="sector" tick={{ fontSize: 10 }} interval={0} angle={-20} textAnchor="end" height={60} />
               <YAxis tickFormatter={(value) => `${value}%`} />
               <ChartTooltip content={<ChartTooltipContent />} />
-              <Bar dataKey="weight" fill="#6AA6F8" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="weight" fill="#7DB4FF" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ChartContainer>
         </div>
@@ -450,16 +450,16 @@ export function PortfolioIntelligencePanel() {
                 <RiskStat label="Z-score now" value={activePair.z.toFixed(2)} hint={`Hedge ratio ${activePair.hedge_ratio}`} />
                 <RiskStat label="Signal" value={activePair.signal} compact />
               </div>
-              <ChartContainer config={{ z: { label: "Spread z-score", color: "#2FB57C" } }} className="h-[270px] w-full">
+              <ChartContainer config={{ z: { label: "Spread z-score", color: "#3DDC97" } }} className="h-[270px] w-full">
                 <LineChart data={pairChart}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="date" tick={{ fontSize: 10 }} minTickGap={40} tickFormatter={(d: string) => d.slice(5)} />
                   <YAxis domain={[-3.5, 3.5]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
-                  <Line dataKey="upper" stroke="#F2A93B" strokeDasharray="4 4" dot={false} />
-                  <Line dataKey="mean" stroke="#8A95AB" strokeDasharray="3 3" dot={false} />
-                  <Line dataKey="lower" stroke="#F2A93B" strokeDasharray="4 4" dot={false} />
-                  <Line dataKey="z" stroke="#2FB57C" strokeWidth={2} dot={false} />
+                  <Line dataKey="upper" stroke="#5E6A63" strokeDasharray="4 4" dot={false} />
+                  <Line dataKey="mean" stroke="#8E9C93" strokeDasharray="3 3" dot={false} />
+                  <Line dataKey="lower" stroke="#5E6A63" strokeDasharray="4 4" dot={false} />
+                  <Line dataKey="z" stroke="#C5FF4A" strokeWidth={2} dot={false} />
                 </LineChart>
               </ChartContainer>
             </>
@@ -472,13 +472,13 @@ export function PortfolioIntelligencePanel() {
           <Activity size={20} className="text-primary" />
           <h2 className="text-base font-medium text-foreground">Contribution Curve</h2>
         </div>
-        <ChartContainer config={{ value: { label: "Value", color: "#2FB57C" } }} className="h-[260px] w-full">
+        <ChartContainer config={{ value: { label: "Value", color: "#3DDC97" } }} className="h-[260px] w-full">
           <AreaChart data={summary.topContributors.map((holding) => ({ symbol: holding.symbol, value: Math.round(holding.pnl) }))}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="symbol" />
             <YAxis />
             <ChartTooltip content={<ChartTooltipContent />} />
-            <Area dataKey="value" fill="#2FB57C" fillOpacity={0.18} stroke="#2FB57C" strokeWidth={2} />
+            <Area dataKey="value" fill="#C5FF4A" fillOpacity={0.1} stroke="#C5FF4A" strokeWidth={2} />
           </AreaChart>
         </ChartContainer>
       </section>
@@ -497,15 +497,13 @@ function Metric({ label, value, valueClass = "text-foreground" }: { label: strin
 
 function InsightCard({ icon: Icon, label, value, caption }: { icon: typeof Target; label: string; value: string; caption: string }) {
   return (
-    <div className="panel p-4">
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-          <Icon size={19} />
-        </div>
-        <span className="text-xl font-bold text-foreground">{value}</span>
-      </div>
-      <p className="text-sm font-semibold text-foreground">{label}</p>
-      <p className="mt-1 text-sm text-muted-foreground">{caption}</p>
+    <div className="bg-surface p-5">
+      <p className="flex items-center gap-2 text-[13px] text-muted-foreground">
+        <Icon size={14} className="text-primary" aria-hidden />
+        {label}
+      </p>
+      <p className="figure mt-3 text-[40px] leading-none text-foreground">{value}</p>
+      <p className="mt-3 text-[13px] leading-relaxed text-faint-foreground">{caption}</p>
     </div>
   )
 }
@@ -514,7 +512,7 @@ function RiskStat({ label, value, hint, compact = false }: { label: string; valu
   return (
     <div className="rounded-lg border border-border bg-background p-3">
       <p className="text-sm text-muted-foreground">{label}</p>
-      <p className={`mt-1 font-bold text-foreground ${compact ? "text-xs leading-snug" : "text-base"}`}>{value}</p>
+      <p className={`mt-1 text-foreground ${compact ? "text-xs font-semibold leading-snug" : "figure text-lg"}`}>{value}</p>
       {hint && <p className="mt-0.5 text-xs text-faint-foreground">{hint}</p>}
     </div>
   )

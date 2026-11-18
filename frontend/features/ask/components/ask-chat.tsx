@@ -194,11 +194,11 @@ export function AskChat({ symbol, initialQuestion }: { symbol?: string | null; i
   const empty = messages.length === 0
 
   return (
-    <div className="flex h-[calc(100dvh-8.5rem)] min-h-[520px] flex-col lg:h-[calc(100dvh-9.5rem)]">
-      <div className="mb-3 flex items-center justify-between gap-3">
+    <div className="flex h-[calc(100dvh-9.5rem)] min-h-[520px] flex-col lg:h-[calc(100dvh-10.5rem)]">
+      <div className="mb-5 flex items-end justify-between gap-3">
         <div className="min-w-0">
-          <h1 className="flex items-center gap-2 text-2xl font-semibold text-foreground">
-            <Sparkles size={22} className="text-primary" aria-hidden /> Ask Sparkle
+          <h1 className="display flex items-center gap-3 text-[34px] text-foreground sm:text-[40px]">
+            <Sparkles size={26} className="text-primary" aria-hidden /> Ask Sparkle
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             {stock
@@ -236,7 +236,7 @@ export function AskChat({ symbol, initialQuestion }: { symbol?: string | null; i
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Sparkles size={24} />
             </div>
-            <p className="text-lg font-medium text-foreground">{stock ? `What would you like to know about ${stock.name}?` : "What would you like to know?"}</p>
+            <p className="font-display text-2xl font-semibold tracking-tight text-foreground">{stock ? `What would you like to know about ${stock.name}?` : "What would you like to know?"}</p>
             <p className="mt-1 max-w-md text-sm text-muted-foreground">
               Earnings-call and annual-report analyses, Sparkle Reports, prices, technicals, news and risk, all in one place.
             </p>

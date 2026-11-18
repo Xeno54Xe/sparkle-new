@@ -50,7 +50,7 @@ function SignalBadge({ signal }: { signal: string }) {
       "inline-flex items-center rounded-sm px-1.5 py-0.5 text-xs font-semibold",
       signal === "BUY"  && "bg-up/15 text-up",
       signal === "SELL" && "bg-down/15 text-down",
-      signal === "HOLD" && "bg-primary/15 text-primary",
+      signal === "HOLD" && "bg-warning/15 text-warning",
     )}>
       {signal}
     </span>
@@ -58,14 +58,14 @@ function SignalBadge({ signal }: { signal: string }) {
 }
 
 function ScoreBar({ score, size = "md" }: { score: number; size?: "sm" | "md" }) {
-  const color = score >= 60 ? "bg-up" : score >= 40 ? "bg-primary" : "bg-down"
+  const color = score >= 60 ? "bg-up" : score >= 40 ? "bg-warning" : "bg-down"
   return (
     <div className="flex items-center gap-2">
       <div className={cn("rounded-full bg-surface-2 overflow-hidden", size === "sm" ? "h-1.5 w-14" : "h-2 w-20")}>
         <div className={cn("h-full rounded-full transition-all", color)} style={{ width: `${score}%` }} />
       </div>
       <span className={cn("font-semibold tabular-nums", size === "sm" ? "text-xs" : "text-sm",
-        score >= 60 ? "text-up" : score >= 40 ? "text-primary" : "text-down"
+        score >= 60 ? "text-up" : score >= 40 ? "text-warning" : "text-down"
       )}>
         {score}
       </span>
@@ -317,7 +317,7 @@ export default function ScreenerPage() {
           <p className="text-sm text-muted-foreground">
             <span className="tabular text-foreground">{filtered.length}</span> of {stocks.length} stocks
             <span className="ml-4 tabular text-up">{buys} buy</span>
-            <span className="ml-3 tabular text-primary">{holds} hold</span>
+            <span className="ml-3 tabular text-warning">{holds} hold</span>
             <span className="ml-3 tabular text-down">{sells} sell</span>
           </p>
 

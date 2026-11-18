@@ -53,14 +53,14 @@ export function StockHeader({ stock }: { stock: Stock }) {
     href === "" ? decodedPath === `/stock/${stock.symbol}` : decodedPath === `/stock/${stock.symbol}${href}`
 
   return (
-    <div className="border-b border-line bg-surface">
-      <div className="mx-auto w-full max-w-[1400px] px-4 pt-5 sm:px-6 lg:px-8">
+    <div className="border-b border-line bg-[linear-gradient(180deg,rgba(34,43,38,0.55),rgba(16,19,17,0))]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pt-7 sm:px-6 lg:px-10">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex min-w-0 items-center gap-3.5">
-            <StockLogo symbol={stock.symbol} size={44} className="rounded-lg" />
+            <StockLogo symbol={stock.symbol} size={52} className="rounded-xl ring-1 ring-line-strong" />
             <div className="min-w-0">
               <div className="flex items-baseline gap-2.5">
-                <h1 className="text-xl font-semibold text-foreground">{stock.symbol}</h1>
+                <h1 className="display text-[32px] text-foreground">{stock.symbol}</h1>
                 <span className="text-sm text-muted-foreground">NSE</span>
               </div>
               <p className="flex min-w-0 gap-3 text-sm">
@@ -74,7 +74,7 @@ export function StockHeader({ stock }: { stock: Stock }) {
             <div className="text-left sm:text-right">
               {live ? (
                 <>
-                  <p className="figure text-[28px] leading-none text-foreground">
+                  <p className="figure text-[38px] leading-none text-foreground">
                     ₹{live.price.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </p>
                   <p className={cn("mt-1.5 text-sm font-medium tabular", up ? "text-up" : "text-down")}>
@@ -90,7 +90,7 @@ export function StockHeader({ stock }: { stock: Stock }) {
             </div>
             <Link
               href={`/ask?symbol=${encodeURIComponent(stock.symbol)}`}
-              className="flex h-9 items-center gap-2 rounded-md border border-primary/40 bg-primary/10 px-3 text-sm text-primary transition-colors hover:bg-primary/15"
+              className="flex h-9 items-center gap-2 rounded-md bg-primary px-3.5 text-sm font-medium text-primary-foreground transition-[filter,transform] hover:brightness-110 active:scale-[0.98]"
             >
               <Sparkles size={15} />
               <span className="hidden sm:inline">Ask Sparkle</span>
@@ -122,7 +122,7 @@ export function StockHeader({ stock }: { stock: Stock }) {
                 href={`${base}${tab.href}`}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "shrink-0 whitespace-nowrap border-b-2 px-3 pb-3 pt-1 text-sm transition-colors",
+                  "shrink-0 whitespace-nowrap border-b-2 px-3 pb-3.5 pt-1 text-[13.5px] transition-colors",
                   active
                     ? "border-primary font-medium text-foreground"
                     : "border-transparent text-muted-foreground hover:text-foreground"

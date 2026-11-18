@@ -3,12 +3,14 @@ import { MarketOverview } from "@/components/dashboard/market-overview"
 import { TrendingNews } from "@/components/dashboard/trending-news"
 import { Watchlist } from "@/components/dashboard/watchlist"
 import { MostActive } from "@/components/dashboard/most-active"
+import { TodayHeader } from "@/components/dashboard/today-header"
 
 export const metadata = { title: "Dashboard — SparkleAI" }
 
 export default function Dashboard() {
   return (
     <DashboardShell>
+      <TodayHeader />
       <div className="space-y-6">
         <MarketOverview />
         <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-12">

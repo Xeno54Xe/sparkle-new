@@ -31,7 +31,10 @@ function MarketClock() {
   if (!status) return null
   return (
     <div className="hidden items-center gap-2 whitespace-nowrap text-sm text-muted-foreground sm:flex" title="NSE cash market, Mon–Fri 09:15–15:30 IST">
-      <span className={cn("h-2 w-2 rounded-full", status.open ? "bg-up" : "bg-faint-foreground")} aria-hidden="true" />
+      <span className="relative flex h-2 w-2" aria-hidden="true">
+        {status.open && <span className="absolute inset-0 animate-ping rounded-full bg-up opacity-50 [animation-duration:2.4s]" />}
+        <span className={cn("relative h-2 w-2 rounded-full", status.open ? "bg-up" : "bg-faint-foreground")} />
+      </span>
       <span>{status.open ? "NSE open" : "NSE closed"}</span>
       <span className="hidden tabular text-faint-foreground md:inline">{status.time} IST</span>
     </div>
@@ -110,7 +113,7 @@ export function TopBar() {
   }
 
   return (
-    <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-line bg-background/90 px-4 backdrop-blur sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-30 flex h-16 items-center gap-3 border-b border-line/70 bg-background/80 px-4 backdrop-blur-md sm:px-6 lg:px-8">
       <button
         onClick={() => setMobileOpen(true)}
         className="-ml-1 rounded-md p-2 text-muted-foreground hover:bg-surface-2 hover:text-foreground lg:hidden"
@@ -121,7 +124,7 @@ export function TopBar() {
 
       {/* Search */}
       <div className="relative w-full max-w-md">
-        <Search size={16} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+        <Search size={16} className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
         <input
           ref={inputRef}
           type="search"
@@ -129,18 +132,18 @@ export function TopBar() {
           onChange={(e) => setSearchQuery(e.target.value)}
           onFocus={() => setIsOpen(true)}
           onKeyDown={handleKeyNavigation}
-          placeholder="Search stocks"
+          placeholder="Search Nifty 50 by name or symbol"
           aria-label="Search Nifty 50 stocks"
-          className="peer h-9 w-full rounded-md border border-line bg-surface pl-9 pr-14 text-sm text-foreground placeholder:text-faint-foreground transition-colors hover:border-line-strong focus:border-primary/60 focus:outline-none"
+          className="peer h-10 w-full rounded-lg border border-line bg-surface/80 pl-10 pr-14 text-sm text-foreground placeholder:text-faint-foreground transition-[border-color,box-shadow] hover:border-line-strong focus:border-primary/50 focus:shadow-[0_0_0_4px_rgba(197,255,74,0.08)] focus:outline-none"
         />
-        <kbd className="pointer-events-none absolute right-2 top-1/2 hidden -translate-y-1/2 rounded border border-line px-1.5 py-0.5 text-[11px] text-faint-foreground sm:inline-block peer-focus:opacity-0">
+        <kbd className="pointer-events-none absolute right-2.5 top-1/2 hidden -translate-y-1/2 rounded border border-line bg-surface-2 px-1.5 py-0.5 font-sans text-[11px] text-muted-foreground sm:inline-block peer-focus:opacity-0">
           ⌘K
         </kbd>
 
         {isOpen && searchQuery.length > 0 && (
           <div
             ref={dropdownRef}
-            className="absolute left-0 top-11 z-50 max-h-80 w-full overflow-y-auto rounded-lg border border-line bg-surface-2 py-1 shadow-[0_12px_32px_rgba(0,0,0,0.45)] custom-scrollbar"
+            className="pop-in absolute left-0 top-12 z-50 max-h-80 w-full overflow-y-auto rounded-lg border border-line-strong bg-surface-2 p-1 shadow-[0_16px_40px_-8px_rgba(0,0,0,0.6)] custom-scrollbar"
             role="listbox"
           >
             {filteredStocks.length > 0 ? (
@@ -152,8 +155,8 @@ export function TopBar() {
                   onMouseEnter={() => setSelectedIndex(index)}
                   onClick={() => navigateToStock(stock.symbol)}
                   className={cn(
-                    "flex w-full items-center gap-3 px-3 py-2 text-left transition-colors",
-                    index === selectedIndex ? "bg-accent" : "hover:bg-accent/60"
+                    "flex w-full items-center gap-3 rounded-md px-2.5 py-2 text-left transition-colors",
+                    index === selectedIndex ? "bg-forest" : "hover:bg-forest/60"
                   )}
                 >
                   <StockLogo symbol={stock.symbol} size={28} className="rounded-md" fallbackClassName="text-muted-foreground" />

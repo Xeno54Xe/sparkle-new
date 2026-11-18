@@ -10,7 +10,7 @@ import {
 import { cn } from "@/lib/utils"
 import { createClient } from "@/lib/supabase/client"
 import { useSidebar } from "@/lib/context/sidebar"
-import { BrandMark } from "@/components/ui/brand"
+import { BrandMark, BrandWord } from "@/components/ui/brand"
 
 // Grouped by what the user is doing: their own money, then exploring the market.
 const navGroups = [
@@ -76,7 +76,7 @@ export function Sidebar() {
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-50 flex flex-col border-r border-line bg-surface transition-[width,transform] duration-200 ease-out",
+          "fixed inset-y-0 left-0 z-50 flex flex-col border-r border-line bg-sidebar transition-[width,transform] duration-300 ease-[var(--ease-out)]",
           "w-[var(--rail-width)] lg:translate-x-0",
           mobileOpen ? "translate-x-0" : "-translate-x-full",
           collapsed && "lg:w-[var(--rail-collapsed)]"
@@ -84,10 +84,10 @@ export function Sidebar() {
         aria-label="Main navigation"
       >
         {/* Brand */}
-        <div className={cn("flex h-14 shrink-0 items-center border-b border-line", narrow ? "lg:justify-center px-3" : "justify-between px-4")}>
+        <div className={cn("flex h-16 shrink-0 items-center", narrow ? "lg:justify-center px-3" : "justify-between px-5")}>
           <Link href="/dashboard" className="flex items-center gap-2.5 text-foreground">
             <BrandMark />
-            <span className={cn("text-[15px] font-semibold tracking-tight", narrow && "lg:hidden")}>SparkleAI</span>
+            <BrandWord className={cn(narrow && "lg:hidden")} />
           </Link>
           <button onClick={() => setMobileOpen(false)} className="rounded-md p-1.5 text-muted-foreground hover:bg-surface-2 hover:text-foreground lg:hidden" aria-label="Close menu">
             <X size={18} />
@@ -95,10 +95,10 @@ export function Sidebar() {
         </div>
 
         {/* Nav */}
-        <nav className="flex-1 overflow-y-auto px-3 py-4 custom-scrollbar">
+        <nav className="flex-1 overflow-y-auto px-3 pb-4 pt-2 custom-scrollbar">
           {navGroups.map((group, gi) => (
-            <div key={group.label} className={cn(gi > 0 && "mt-5")}>
-              <p className={cn("mb-1.5 px-2.5 text-xs font-medium text-faint-foreground", narrow && "lg:sr-only")}>{group.label}</p>
+            <div key={group.label} className={cn(gi > 0 && "mt-6")}>
+              <p className={cn("mb-2 px-3 text-[11px] font-medium tracking-wide text-faint-foreground", narrow && "lg:sr-only")}>{group.label}</p>
               <ul className="space-y-0.5">
                 {group.items.map((item) => {
                   const active = isActive(item.href)
@@ -109,15 +109,15 @@ export function Sidebar() {
                         title={narrow ? item.label : undefined}
                         aria-current={active ? "page" : undefined}
                         className={cn(
-                          "relative flex h-9 items-center gap-3 rounded-md px-2.5 text-sm transition-colors",
+                          "group/nav relative flex h-9 items-center gap-3 rounded-md px-3 text-[13.5px] transition-colors duration-150",
                           narrow && "lg:justify-center lg:px-0",
                           active
-                            ? "bg-surface-2 font-medium text-foreground"
-                            : "text-muted-foreground hover:bg-surface-2/60 hover:text-foreground"
+                            ? "bg-forest font-medium text-foreground"
+                            : "text-muted-foreground hover:bg-surface-2 hover:text-foreground"
                         )}
                       >
-                        {active && <span className="absolute inset-y-2 left-0 w-[3px] rounded-r bg-primary" aria-hidden="true" />}
-                        <item.icon size={17} className={cn("shrink-0", active && "text-primary")} />
+                        {active && <span className="absolute inset-y-2.5 -left-3 w-[3px] rounded-r-full bg-primary shadow-[0_0_12px_rgba(197,255,74,0.6)]" aria-hidden="true" />}
+                        <item.icon size={17} strokeWidth={active ? 2.1 : 1.8} className={cn("shrink-0 transition-colors", active ? "text-primary" : "group-hover/nav:text-foreground")} />
                         <span className={cn(narrow && "lg:hidden")}>{item.label}</span>
                       </Link>
                     </li>
@@ -135,11 +135,11 @@ export function Sidebar() {
             title={narrow ? "Settings" : undefined}
             className={cn(
               "flex items-center gap-3 rounded-md p-1.5 transition-colors hover:bg-surface-2",
-              isActive("/settings") && "bg-surface-2",
+              isActive("/settings") && "bg-forest",
               narrow && "lg:justify-center"
             )}
           >
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/15 text-xs font-semibold text-primary">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-forest text-xs font-semibold text-primary ring-1 ring-inset ring-primary/20">
               {initials}
             </span>
             <span className={cn("min-w-0 flex-1", narrow && "lg:hidden")}>

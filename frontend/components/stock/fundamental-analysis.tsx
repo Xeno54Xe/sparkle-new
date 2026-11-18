@@ -20,20 +20,20 @@ const API = API_BASE
 
 
 const SECTION_META: Record<string, { icon: React.ElementType; color: string }> = {
-  financial_metrics:   { icon: TrendingUp,    color: "#2FB57C" },
-  risk_intelligence:   { icon: AlertTriangle,  color: "#E35D5B" },
-  esg:                 { icon: Leaf,           color: "#2FB57C" },
-  speaker_sentiment:   { icon: MessageSquare,  color: "#6AA6F8" },
-  qa_transparency:     { icon: Eye,            color: "#A48AF0" },
+  financial_metrics:   { icon: TrendingUp,    color: "#3DDC97" },
+  risk_intelligence:   { icon: AlertTriangle,  color: "#FF5F57" },
+  esg:                 { icon: Leaf,           color: "#3DDC97" },
+  speaker_sentiment:   { icon: MessageSquare,  color: "#7DB4FF" },
+  qa_transparency:     { icon: Eye,            color: "#B59CFF" },
   overall_sentiment:   { icon: Target,         color: "#5BC0D8" },
-  investment_synthesis:{ icon: Lightbulb,      color: "#F2A93B" },
-  capital_structure:   { icon: Shield,         color: "#A48AF0" },
-  management_discussion:{ icon: FileText,      color: "#8A95AB" },
+  investment_synthesis:{ icon: Lightbulb,      color: "#C5FF4A" },
+  capital_structure:   { icon: Shield,         color: "#B59CFF" },
+  management_discussion:{ icon: FileText,      color: "#8E9C93" },
   strategy:            { icon: Brain,          color: "#E07BB0" },
 }
 
 function scoreColor(v: number) {
-  return v >= 70 ? "var(--up)" : v >= 40 ? "var(--primary)" : "var(--down)"
+  return v >= 70 ? "var(--up)" : v >= 40 ? "var(--warning)" : "var(--down)"
 }
 
 async function safeFetch(url: string) {

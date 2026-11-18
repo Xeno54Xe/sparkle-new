@@ -15,7 +15,7 @@ const localBypass = process.env.NEXT_PUBLIC_ENABLE_LOCAL_AUTH_BYPASS === "true"
 const STRENGTH = [
   { label: "", bar: "bg-surface-2", text: "" },
   { label: "Too short", bar: "bg-down", text: "text-down" },
-  { label: "Fair", bar: "bg-primary", text: "text-primary" },
+  { label: "Fair", bar: "bg-warning", text: "text-warning" },
   { label: "Strong", bar: "bg-up", text: "text-up" },
 ]
 
@@ -65,7 +65,7 @@ export default function SignupPage() {
   if (sent) {
     return (
       <AuthLayout>
-        <h1 className="text-2xl font-semibold text-foreground">Check your email</h1>
+        <h1 className="display text-[40px] text-foreground">Check your email</h1>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           We sent a confirmation link to <span className="text-foreground">{email}</span>. Open it to activate your account, then log in.
         </p>
@@ -76,7 +76,7 @@ export default function SignupPage() {
 
   return (
     <AuthLayout>
-      <h1 className="text-2xl font-semibold text-foreground">Create your account</h1>
+      <h1 className="display text-[40px] text-foreground">Create your account</h1>
       <p className="mt-1.5 text-sm text-muted-foreground">
         Already have one? <Link href="/login" className="font-medium text-primary hover:underline">Log in</Link>
       </p>

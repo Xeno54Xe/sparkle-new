@@ -32,7 +32,7 @@ function grade(v: number | null, good: (v: number) => boolean, ok: (v: number) =
 
 const TONE_STYLE: Record<Tone, string> = {
   good: "text-up",
-  ok: "text-primary",
+  ok: "text-warning",
   weak: "text-down",
   na: "text-faint-foreground",
 }

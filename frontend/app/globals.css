@@ -4,32 +4,37 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * SparkleAI theme — "Dalal Street after the closing bell".
- * Deep navy canvas, flat layered surfaces separated by 1px lines,
- * a marigold brand accent used sparingly (active state, primary action, focus),
- * and green/red reserved strictly for price direction.
+ * SparkleAI theme: Obsidian / Deep Forest / Electric Lime.
+ * Near-black canvas, forest-tinted layers separated by hairlines, and lime
+ * kept for the few things that matter: the primary action, the active place
+ * and the data point in focus. Mint and coral carry price direction only.
  */
 :root {
-  /* Canvas & surfaces (each step is one layer up) */
-  --background: #0d1320;
-  --surface: #141b2b;
-  --surface-2: #1b2437;
-  --line: #263149;
-  --line-strong: #34405c;
+  /* Canvas & surfaces (each step is one layer up, tinted toward forest) */
+  --obsidian: #101311;
+  --forest: #222B26;
+  --lime: #C5FF4A;
 
-  --foreground: #e6eaf2;
-  --muted-foreground: #8a95ab;
-  --faint-foreground: #5d6880;
+  --background: var(--obsidian);
+  --surface: #151A17;
+  --surface-2: #1B221E;
+  --surface-3: var(--forest);
+  --line: #242D28;
+  --line-strong: #34403A;
+
+  --foreground: #EEF2EC;
+  --muted-foreground: #8E9C93;
+  --faint-foreground: #5E6A63;
 
   /* Brand */
-  --primary: #f2a93b;           /* marigold */
-  --primary-foreground: #1a1206;
+  --primary: var(--lime);
+  --primary-foreground: #101311;
 
-  /* Price direction — never used for decoration */
-  --up: #2fb57c;
-  --down: #e35d5b;
-  --info: #6aa6f8;
-  --violet: #a48af0;
+  /* Price direction, never used for decoration */
+  --up: #3DDC97;
+  --down: #FF5F57;
+  --info: #7DB4FF;
+  --violet: #B59CFF;
 
   /* shadcn semantic aliases */
   --card: var(--surface);
@@ -39,16 +44,16 @@
   --secondary: var(--surface-2);
   --secondary-foreground: var(--foreground);
   --muted: var(--surface-2);
-  --accent: #222c42;
+  --accent: var(--forest);
   --accent-foreground: var(--foreground);
   --destructive: var(--down);
   --destructive-foreground: #ffffff;
-  --warning: var(--primary);
-  --warning-foreground: var(--primary-foreground);
+  --warning: #F5C451;
+  --warning-foreground: #1a1406;
 
   --border: var(--line);
   --input: var(--line);
-  --ring: rgba(242, 169, 59, 0.55);
+  --ring: rgba(197, 255, 74, 0.5);
 
   --chart-1: var(--primary);
   --chart-2: var(--info);
@@ -56,9 +61,9 @@
   --chart-4: var(--violet);
   --chart-5: var(--down);
 
-  --radius: 0.75rem;            /* panels: 12px; controls 8px; chips 6px */
+  --radius: 0.625rem;           /* panels: 10px; controls 6px; chips 4px */
 
-  --sidebar: var(--surface);
+  --sidebar: #0C0F0D;
   --sidebar-foreground: var(--foreground);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
@@ -67,13 +72,19 @@
   --sidebar-border: var(--line);
   --sidebar-ring: var(--primary);
 
-  --rail-width: 232px;
+  --rail-width: 236px;
   --rail-collapsed: 64px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {
-  --font-sans: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
-  --font-heading: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --color-surface-3: var(--surface-3);
+  --color-lime: var(--lime);
+  --color-forest: var(--forest);
+  --color-obsidian: var(--obsidian);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-surface: var(--surface);
@@ -108,11 +119,11 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --radius-sm: 6px;
-  --radius-md: 8px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
   --radius-lg: var(--radius);
-  --radius-xl: 14px;
-  --radius-2xl: 16px;
+  --radius-xl: 12px;
+  --radius-2xl: 14px;
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -132,23 +143,41 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "ss02";
     min-height: 100vh;
+    font-feature-settings: "ss01", "cv11";
+  }
+  /* Ambient light: one faint lime bloom top-left and forest depth top-right.
+   * Painted once on a fixed layer, so scrolling never repaints it. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(900px 520px at 8% -12%, rgba(197, 255, 74, 0.055), transparent 62%),
+      radial-gradient(1100px 640px at 100% -10%, rgba(34, 43, 38, 0.85), transparent 60%),
+      var(--background);
   }
   /* Figures line up in tables, tickers and price columns */
   table, .tabular, [class*="font-bold"], [class*="font-semibold"] {
     font-variant-numeric: tabular-nums;
   }
   h1, h2, h3 {
-    letter-spacing: -0.01em;
+    letter-spacing: -0.012em;
     text-wrap: balance;
+  }
+  h1 {
+    font-family: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+    font-variation-settings: "opsz" 48;
   }
   :focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
   }
   ::selection {
-    background: rgba(242, 169, 59, 0.3);
+    background: rgba(197, 255, 74, 0.28);
+    color: #fff;
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -164,9 +193,10 @@
  * picks up the flat panel style.
  */
 @utility panel {
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 120px), var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
 
 @utility glass {
@@ -197,11 +227,21 @@
 
 /* Condensed, heavy numerals for headline figures (prices, index levels) */
 @utility figure {
-  font-variant-numeric: tabular-nums;
-  font-stretch: 78%;
-  font-variation-settings: "wdth" 78;
+  font-family: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-stretch: 80%;
+  font-variation-settings: "wdth" 80, "opsz" 72;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+}
+
+/* Editorial display type: large, condensed, tight */
+@utility display {
+  font-family: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  font-variation-settings: "wdth" 82, "opsz" 96;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
 }
 
 @utility custom-scrollbar {
@@ -273,3 +313,127 @@
 .ask-markdown th, .ask-markdown td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
 .ask-markdown tr:last-child td { border-bottom: 0; }
 .ask-markdown hr { border-color: var(--line); }
+
+/* ── Motion ──────────────────────────────────────────────────────────────────
+ * Short, transform/opacity only. The reduced-motion rule above flattens all of it.
+ */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: translateY(-4px) scale(0.99); }
+  to { opacity: 1; transform: none; }
+}
+@utility page-enter {
+  animation: page-enter 380ms var(--ease-out) both;
+}
+@utility pop-in {
+  animation: pop-in 160ms var(--ease-out) both;
+  transform-origin: top center;
+}
+
+/* ── Landing: the Nifty 50 field ─────────────────────────────────────────────
+ * Each column is three faces of a prism whose height is the custom property
+ * --h. Registering --h lets columns rise with a plain transition.
+ */
+@property --h {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 2px;
+}
+.field-stage { perspective: 1800px; }
+.field-scene {
+  --tilt-x: 58deg;
+  --tilt-z: 45deg;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--tilt-x)) rotateZ(var(--tilt-z));
+  transition: transform 900ms var(--ease-out);
+}
+.field-floor {
+  transform: translateZ(-1px);
+  border-radius: 14px;
+  background:
+    radial-gradient(closest-side, rgba(197, 255, 74, 0.10), transparent 75%),
+    repeating-linear-gradient(0deg, rgba(238, 242, 236, 0.045) 0 1px, transparent 1px 58px),
+    repeating-linear-gradient(90deg, rgba(238, 242, 236, 0.045) 0 1px, transparent 1px 58px);
+}
+.field-col {
+  --c-top: #3a4740;
+  --c-front: #232c27;
+  --c-side: #1a201d;
+  transform-style: preserve-3d;
+  transition: --h 1100ms var(--ease-out);
+}
+.field-col.is-up { --c-top: #3ddc97; --c-front: #1f7a55; --c-side: #155239; }
+.field-col.is-down { --c-top: #ff5f57; --c-front: #8f2f2a; --c-side: #5f201c; }
+.field-col.is-leader { --c-top: #c5ff4a; --c-front: #7fa82c; --c-side: #556f1f; }
+.field-face { position: absolute; display: block; backface-visibility: visible; }
+.field-top {
+  inset: 0;
+  transform: translateZ(var(--h));
+  background: var(--c-top);
+  border-radius: 2px;
+  transition: filter 150ms ease;
+}
+.field-front {
+  left: 0; top: 100%; width: 100%; height: var(--h);
+  transform-origin: top;
+  transform: rotateX(90deg);
+  background: linear-gradient(0deg, var(--c-front), color-mix(in oklab, var(--c-front) 55%, #101311));
+}
+.field-side {
+  left: 100%; top: 0; height: 100%; width: var(--h);
+  transform-origin: left;
+  transform: rotateY(-90deg);
+  background: linear-gradient(270deg, var(--c-side), color-mix(in oklab, var(--c-side) 55%, #101311));
+}
+.field-col.is-focus .field-top { filter: brightness(1.25); box-shadow: 0 0 0 2px #eef2ec; }
+.field-col:focus-visible .field-top { box-shadow: 0 0 0 2px var(--lime); }
+.field-col.is-leader .field-top { box-shadow: 0 0 24px rgba(197, 255, 74, 0.55); }
+
+/* Scroll reveal: added once by IntersectionObserver, never re-runs */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); }
+.reveal.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+  .field-scene { transition: none; }
+}
+
+/* Outline display type, for the oversized footer wordmark */
+.type-outline { color: transparent; -webkit-text-stroke: 1px var(--line-strong); }
+
+/* Primary action: lime, dark ink, a soft press */
+@utility btn-lime {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 6px;
+  background: var(--lime);
+  color: var(--obsidian);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  box-shadow: inset 0 -1px 0 rgba(16, 19, 17, 0.25), 0 0 0 0 rgba(197, 255, 74, 0);
+  transition: box-shadow 200ms ease, filter 150ms ease, transform 120ms ease;
+  &:hover { filter: brightness(1.06); box-shadow: inset 0 -1px 0 rgba(16, 19, 17, 0.25), 0 6px 24px -6px rgba(197, 255, 74, 0.45); }
+  &:active { transform: scale(0.98); }
+}
+
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.hero-in > * { animation: hero-in 800ms var(--ease-out) both; }
+.hero-in > *:nth-child(2) { animation-delay: 60ms; }
+.hero-in > *:nth-child(3) { animation-delay: 140ms; }
+.hero-in > *:nth-child(4) { animation-delay: 220ms; }
+
+.ask-glow {
+  background: radial-gradient(700px 360px at 80% 110%, rgba(197, 255, 74, 0.09), transparent 70%);
+}
+
+/* The field is drawn at one size and scaled to its box */
+.field-fit .field-stage { transform: scale(0.6) translateY(-14%); }
+@media (min-width: 640px) { .field-fit .field-stage { transform: scale(0.84) translateY(-8%); } }
+@media (min-width: 1024px) { .field-fit .field-stage { transform: scale(0.96) translateY(-6%); } }

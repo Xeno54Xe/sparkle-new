@@ -166,7 +166,7 @@ export function OptionsStrategiesPanel({ stock: snapshot }: OptionsStrategiesPan
                   <span className="rounded-md border border-primary/30 bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">Automated simulator</span>
                   <span className="rounded-md border border-info/30 bg-info/10 px-2.5 py-1 text-xs font-semibold text-info">Model-estimated premiums</span>
                 </div>
-                <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">Options Strategy Lab</h1>
+                <h1 className="display text-[32px] text-foreground sm:text-[40px]">Options Strategy Lab</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                   Build, compare and explain options strategies for {stock.symbol}. The lab auto-selects expiry, strikes and estimated premiums from the current stock context.
                 </p>

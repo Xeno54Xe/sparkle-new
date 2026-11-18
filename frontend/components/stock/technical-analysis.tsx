@@ -47,7 +47,7 @@ const READ_STYLE: Record<Read, string> = {
 const SIGNAL_STYLE: Record<string, string> = {
   BUY: "bg-up/15 text-up",
   SELL: "bg-down/15 text-down",
-  HOLD: "bg-primary/15 text-primary",
+  HOLD: "bg-warning/15 text-warning",
 }
 
 export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
@@ -139,7 +139,7 @@ export function TechnicalAnalysis({ symbol }: TechnicalAnalysisProps) {
               <li key={part.label} className="flex items-center gap-3 px-5 py-2.5 text-sm">
                 <span className="w-24 text-muted-foreground">{part.label}</span>
                 <div className="h-1 flex-1 overflow-hidden rounded-full bg-surface-2">
-                  <div className={cn("h-full rounded-full", part.score >= 60 ? "bg-up" : part.score <= 40 ? "bg-down" : "bg-primary")} style={{ width: `${part.score}%` }} />
+                  <div className={cn("h-full rounded-full", part.score >= 60 ? "bg-up" : part.score <= 40 ? "bg-down" : "bg-warning")} style={{ width: `${part.score}%` }} />
                 </div>
                 <span className="w-8 text-right tabular text-foreground">{part.score}</span>
                 <span className="w-9 text-right text-xs text-faint-foreground">{part.weight}</span>

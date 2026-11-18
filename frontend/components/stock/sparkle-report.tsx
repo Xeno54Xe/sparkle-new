@@ -58,7 +58,7 @@ function fmtValue(v: number | string | null | undefined, unit?: string | null, n
 }
 
 function scoreColor(v: number) {
-  return v >= 65 ? "var(--up)" : v >= 40 ? "var(--primary)" : "var(--down)"
+  return v >= 65 ? "var(--up)" : v >= 40 ? "var(--warning)" : "var(--down)"
 }
 
 /** Single-series trend of one section score across reports (oldest → newest). */

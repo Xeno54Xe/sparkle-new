@@ -64,9 +64,9 @@ export function PayoffChart({ points, spotPrice, legs, metrics }: PayoffChartPro
       <div className="p-4">
         <ChartContainer
           config={{
-            payoff: { label: "P/L", color: "#2FB57C" },
-            profit: { label: "Profit", color: "#2FB57C" },
-            loss: { label: "Loss", color: "#E35D5B" },
+            payoff: { label: "P/L", color: "#3DDC97" },
+            profit: { label: "Profit", color: "#3DDC97" },
+            loss: { label: "Loss", color: "#FF5F57" },
           }}
           className="min-h-[360px] w-full"
         >
@@ -75,22 +75,22 @@ export function PayoffChart({ points, spotPrice, legs, metrics }: PayoffChartPro
             <XAxis dataKey="price" tickFormatter={(value) => formatRs(Number(value))} />
             <YAxis tickFormatter={(value) => formatRs(Number(value))} width={78} />
             <ChartTooltip content={<ChartTooltipContent />} />
-            <Area dataKey="profit" fill="#2FB57C" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
-            <Area dataKey="loss" fill="#E35D5B" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
-            <Line type="monotone" dataKey="payoff" stroke="#2FB57C" strokeWidth={3} dot={false} isAnimationActive={false} />
-            <ReferenceLine y={0} stroke="#8A95AB" strokeDasharray="4 4" label="Zero" />
-            <ReferenceLine x={spotPrice} stroke="#6AA6F8" strokeDasharray="4 4" label="Spot" />
+            <Area dataKey="profit" fill="#3DDC97" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
+            <Area dataKey="loss" fill="#FF5F57" fillOpacity={0.18} stroke="transparent" isAnimationActive={false} />
+            <Line type="monotone" dataKey="payoff" stroke="#3DDC97" strokeWidth={3} dot={false} isAnimationActive={false} />
+            <ReferenceLine y={0} stroke="#8E9C93" strokeDasharray="4 4" label="Zero" />
+            <ReferenceLine x={spotPrice} stroke="#7DB4FF" strokeDasharray="4 4" label="Spot" />
             {legs.map((leg) => (
-              <ReferenceLine key={leg.id} x={leg.strike} stroke="#F2A93B" strokeDasharray="3 3" label={`K ${leg.strike}`} />
+              <ReferenceLine key={leg.id} x={leg.strike} stroke="#C5FF4A" strokeDasharray="3 3" label={`K ${leg.strike}`} />
             ))}
             {metrics?.breakevens.map((breakeven) => (
-              <ReferenceLine key={breakeven} x={breakeven} stroke="#A48AF0" strokeDasharray="2 4" label="BE" />
+              <ReferenceLine key={breakeven} x={breakeven} stroke="#B59CFF" strokeDasharray="2 4" label="BE" />
             ))}
             {metrics?.maxProfit !== null && metrics?.maxProfit !== undefined && (
-              <ReferenceLine y={metrics.maxProfit} stroke="#2FB57C" strokeDasharray="2 2" label="Max profit" />
+              <ReferenceLine y={metrics.maxProfit} stroke="#3DDC97" strokeDasharray="2 2" label="Max profit" />
             )}
             {metrics?.maxLoss !== null && metrics?.maxLoss !== undefined && (
-              <ReferenceLine y={metrics.maxLoss} stroke="#E35D5B" strokeDasharray="2 2" label="Max loss" />
+              <ReferenceLine y={metrics.maxLoss} stroke="#FF5F57" strokeDasharray="2 2" label="Max loss" />
             )}
           </ComposedChart>
         </ChartContainer>

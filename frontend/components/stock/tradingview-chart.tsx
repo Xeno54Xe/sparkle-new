@@ -48,8 +48,8 @@ export function TradingViewChart({ symbol, height, studies, title, description }
       hide_top_toolbar: false,
       hide_legend: false,
       save_image: false,
-      backgroundColor: "rgba(20, 27, 43, 1)",
-      gridColor: "rgba(38, 49, 73, 0.6)",
+      backgroundColor: "rgba(21, 26, 23, 1)",
+      gridColor: "rgba(42, 53, 47, 0.6)",
       studies: studiesKey ? studiesKey.split(",") : [],
     })
 

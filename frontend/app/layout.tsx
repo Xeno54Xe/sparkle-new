@@ -1,12 +1,18 @@
 import type { Metadata } from 'next'
-import { IBM_Plex_Sans } from 'next/font/google'
+import { Bricolage_Grotesque, Geist } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const plex = IBM_Plex_Sans({
+const display = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-plex",
-  axes: ["wdth"],
+  variable: "--font-bricolage",
+  axes: ["wdth", "opsz"],
+  display: "swap",
+})
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
   display: "swap",
 })
 
@@ -38,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`dark ${plex.variable}`}>
+    <html lang="en" className={`dark ${display.variable} ${geist.variable}`}>
       <body className="font-sans antialiased min-h-screen overflow-x-hidden custom-scrollbar">
         {children}
         {/* Needs Web Analytics switched on for the Vercel project, else its script 404s */}

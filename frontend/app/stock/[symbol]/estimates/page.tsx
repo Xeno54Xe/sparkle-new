@@ -32,7 +32,7 @@ export default function EstimatesPage({params}:Props) {
   const c=data?.consensus
   const total=c?c.strong_buy+c.buy+c.hold+c.sell+c.strong_sell:0
   const pct=(n:number)=>total?Math.round((n/total)*100):0
-  const consensus=c?[{l:"Strong Buy",c:c.strong_buy,cl:"#2FB57C"},{l:"Buy",c:c.buy,cl:"#2FB57C"},{l:"Hold",c:c.hold,cl:"#F2A93B"},{l:"Sell",c:c.sell,cl:"#E35D5B"},{l:"Strong Sell",c:c.strong_sell,cl:"#E35D5B"}].map(x=>({...x,p:pct(x.c)})):[]
+  const consensus=c?[{l:"Strong Buy",c:c.strong_buy,cl:"#3DDC97"},{l:"Buy",c:c.buy,cl:"#3DDC97"},{l:"Hold",c:c.hold,cl:"#C5FF4A"},{l:"Sell",c:c.sell,cl:"#FF5F57"},{l:"Strong Sell",c:c.strong_sell,cl:"#FF5F57"}].map(x=>({...x,p:pct(x.c)})):[]
   const pt=data?.price_targets
   const price=pt?.current||0
   const targets=[{l:"Highest",v:pt?.high},{l:"Median",v:pt?.median},{l:"Average",v:pt?.mean},{l:"Lowest",v:pt?.low}]

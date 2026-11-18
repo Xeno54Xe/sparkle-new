@@ -17,9 +17,9 @@ export function PanelHeader({ title, description, actions, className }: {
   className?: string
 }) {
   return (
-    <div className={cn("flex items-center justify-between gap-3 border-b border-line px-5 py-3", className)}>
+    <div className={cn("flex min-h-[52px] items-center justify-between gap-3 border-b border-line px-5 py-3", className)}>
       <div className="min-w-0">
-        <h2 className="text-sm font-medium text-foreground">{title}</h2>
+        <h2 className="text-[13.5px] font-medium tracking-[-0.005em] text-foreground">{title}</h2>
         {description && <p className="mt-0.5 text-xs text-muted-foreground">{description}</p>}
       </div>
       {actions && <div className="flex shrink-0 items-center gap-2 text-xs text-muted-foreground">{actions}</div>}
@@ -31,7 +31,7 @@ export function PanelHeader({ title, description, actions, className }: {
 export function PanelAction({ className, ...props }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
-      className={cn("flex items-center gap-1.5 rounded-md px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-surface-2 hover:text-foreground disabled:opacity-40", className)}
+      className={cn("flex items-center gap-1.5 rounded-md px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-forest hover:text-foreground disabled:opacity-40", className)}
       {...props}
     />
   )
@@ -39,8 +39,11 @@ export function PanelAction({ className, ...props }: React.ButtonHTMLAttributes<
 
 export function EmptyState({ title, children, action }: { title: string; children?: ReactNode; action?: ReactNode }) {
   return (
-    <div className="flex flex-col items-center justify-center px-6 py-10 text-center">
-      <p className="text-sm font-medium text-foreground">{title}</p>
+    <div className="flex flex-col items-center justify-center px-6 py-12 text-center">
+      <span className="mb-4 grid h-10 w-10 place-items-center rounded-lg border border-line bg-surface-2" aria-hidden="true">
+        <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_10px_rgba(197,255,74,0.7)]" />
+      </span>
+      <p className="font-display text-base font-semibold text-foreground">{title}</p>
       {children && <p className="mt-1 max-w-sm text-sm text-muted-foreground">{children}</p>}
       {action && <div className="mt-4">{action}</div>}
     </div>

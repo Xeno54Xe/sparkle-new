@@ -99,11 +99,11 @@ export function MarketOverview() {
         ) : (
         <div className="grid grid-cols-1 divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {indices.map((index, i) => (
-            <div key={index?.name ?? i} className="px-5 py-4">
+            <div key={index?.name ?? i} className="px-5 py-5 sm:px-6">
               {index ? (
                 <>
                   <p className="text-sm text-muted-foreground">{titleCase(index.name)}</p>
-                  <p className="figure mt-1 text-[32px] leading-none text-foreground">{formatValue(index.value)}</p>
+                  <p className="figure mt-2 text-[40px] leading-none text-foreground">{formatValue(index.value)}</p>
                   <p className={cn("mt-2 text-sm font-medium tabular", index.is_positive ? "text-up" : "text-down")}>
                     {index.is_positive ? "▲" : "▼"} {index.is_positive ? "+" : ""}{formatValue(index.change_abs)}
                     <span className="ml-1.5">({index.is_positive ? "+" : ""}{index.change_pct.toFixed(2)}%)</span>
@@ -127,7 +127,7 @@ export function MarketOverview() {
               <span className="ml-3 hidden text-faint-foreground group-hover:text-muted-foreground sm:inline">View heatmap</span>
             </span>
           </div>
-          <div className="flex h-1.5 overflow-hidden rounded-full bg-surface-2" role="img" aria-label={`${breadth.up} of ${total} stocks advancing`}>
+          <div className="flex h-1.5 gap-0.5 overflow-hidden rounded-full bg-surface-2" role="img" aria-label={`${breadth.up} of ${total} stocks advancing`}>
             <div className="bg-up" style={{ width: `${(breadth.up / total) * 100}%` }} />
             <div className="bg-faint-foreground" style={{ width: `${(breadth.flat / total) * 100}%` }} />
             <div className="bg-down" style={{ width: `${(breadth.down / total) * 100}%` }} />

@@ -49,7 +49,7 @@ export default function LoginPage() {
 
   return (
     <AuthLayout>
-      <h1 className="text-2xl font-semibold text-foreground">Log in</h1>
+      <h1 className="display text-[40px] text-foreground">Log in</h1>
       <p className="mt-1.5 text-sm text-muted-foreground">
         New to SparkleAI? <Link href="/signup" className="font-medium text-primary hover:underline">Create an account</Link>
       </p>

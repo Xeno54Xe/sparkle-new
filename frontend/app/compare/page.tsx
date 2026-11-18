@@ -71,7 +71,7 @@ function signalColor(s: string) {
 
 function rsiColor(v: number | null) {
   if (v == null) return "text-muted-foreground"
-  if (v < 30) return "text-primary"
+  if (v < 30) return "text-warning"
   if (v > 70) return "text-destructive"
   return "text-foreground"
 }
@@ -91,9 +91,9 @@ function adxLabel(v: number | null) {
 }
 
 function scoreColor(s: number) {
-  if (s >= 65) return "#2FB57C"
-  if (s >= 45) return "#F2A93B"
-  return "#E35D5B"
+  if (s >= 65) return "#3DDC97"
+  if (s >= 45) return "#C5FF4A"
+  return "#FF5F57"
 }
 
 function fmt(v: number | null, decimals = 2) {
@@ -657,7 +657,7 @@ function CompareContent() {
               return (
                 <div className="space-y-0.5">
                   <span className={cn("text-xs font-semibold",
-                    candle.type === "bullish" ? "text-primary" :
+                    candle.type === "bullish" ? "text-up" :
                     candle.type === "bearish" ? "text-destructive" :
                     "text-muted-foreground"
                   )}>

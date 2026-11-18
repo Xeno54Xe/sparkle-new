@@ -20,16 +20,16 @@ interface StockTile {
 // Diverging scale built from the theme's up/down colours. Intensity steps at
 // 0.5%, 1.5% and 3% so a quiet day still shows shape.
 const UP_STEPS = [
-  { min: 3, bg: "rgba(47,181,124,0.85)", fg: "#06140d" },
-  { min: 1.5, bg: "rgba(47,181,124,0.60)", fg: "#e6f6ee" },
-  { min: 0.5, bg: "rgba(47,181,124,0.38)", fg: "#e6f6ee" },
-  { min: 0, bg: "rgba(47,181,124,0.18)", fg: "#9adfbf" },
+  { min: 3, bg: "rgba(61,220,151,0.85)", fg: "#06140d" },
+  { min: 1.5, bg: "rgba(61,220,151,0.60)", fg: "#e6f6ee" },
+  { min: 0.5, bg: "rgba(61,220,151,0.38)", fg: "#e6f6ee" },
+  { min: 0, bg: "rgba(61,220,151,0.18)", fg: "#9adfbf" },
 ]
 const DOWN_STEPS = [
-  { max: -3, bg: "rgba(227,93,91,0.85)", fg: "#1a0707" },
-  { max: -1.5, bg: "rgba(227,93,91,0.60)", fg: "#fbeaea" },
-  { max: -0.5, bg: "rgba(227,93,91,0.38)", fg: "#fbeaea" },
-  { max: 0, bg: "rgba(227,93,91,0.18)", fg: "#f0a9a8" },
+  { max: -3, bg: "rgba(255,95,87,0.85)", fg: "#1a0707" },
+  { max: -1.5, bg: "rgba(255,95,87,0.60)", fg: "#fbeaea" },
+  { max: -0.5, bg: "rgba(255,95,87,0.38)", fg: "#fbeaea" },
+  { max: 0, bg: "rgba(255,95,87,0.18)", fg: "#f0a9a8" },
 ]
 
 function tileStyle(pct: number) {
