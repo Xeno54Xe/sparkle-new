@@ -6,6 +6,8 @@ export type ToolCall = {
   id: string
   type: "function"
   function: { name: string; arguments: string }
+  /** Provider data that must be sent back unchanged, e.g. Gemini's thought_signature. */
+  extra_content?: Record<string, unknown>
 }
 
 export type ChatMessage =
@@ -44,7 +46,7 @@ export function llmConfig(env: NodeJS.ProcessEnv = process.env): LlmConfig | nul
   if (env.GEMINI_API_KEY) {
     return {
       provider: "gemini",
-      model: env.GEMINI_MODEL || "gemini-2.5-flash",
+      model: env.GEMINI_MODEL || "gemini-3.5-flash-lite",
       baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai",
       apiKey: env.GEMINI_API_KEY,
     }
@@ -113,7 +115,7 @@ export async function* streamChat(opts: StreamOptions): AsyncGenerator<StreamEve
       if (!line.startsWith("data:")) continue
       const data = line.slice(5).trim()
       if (data === "[DONE]") continue
-      let chunk: { choices?: Array<{ delta?: { content?: string | null; tool_calls?: Array<{ index?: number; id?: string; function?: { name?: string; arguments?: string } }> }; finish_reason?: string | null }> }
+      let chunk: { choices?: Array<{ delta?: { content?: string | null; tool_calls?: Array<{ index?: number; id?: string; function?: { name?: string; arguments?: string }; extra_content?: Record<string, unknown> }> }; finish_reason?: string | null }> }
       try {
         chunk = JSON.parse(data)
       } catch {
@@ -129,6 +131,8 @@ export async function* streamChat(opts: StreamOptions): AsyncGenerator<StreamEve
         if (tc.id) current.id = tc.id
         if (tc.function?.name) current.function.name += tc.function.name
         if (tc.function?.arguments) current.function.arguments += tc.function.arguments
+        // Gemini 3 rejects the follow-up turn unless each call's signature comes back.
+        if (tc.extra_content) current.extra_content = { ...current.extra_content, ...tc.extra_content }
         calls.set(index, current)
       }
       if (choice.finish_reason) finish = choice.finish_reason
