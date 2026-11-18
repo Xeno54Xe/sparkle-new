@@ -100,6 +100,7 @@ export async function* streamChat(opts: StreamOptions): AsyncGenerator<StreamEve
   }
 
   const calls = new Map<number, ToolCall>()
+  const slots = new Map<number, number>()
   let finish: string | null = null
   const decoder = new TextDecoder()
   const reader = response.body.getReader()
@@ -126,7 +127,14 @@ export async function* streamChat(opts: StreamOptions): AsyncGenerator<StreamEve
       const delta = choice.delta || {}
       if (delta.content) yield { type: "text", text: delta.content }
       for (const [n, tc] of (delta.tool_calls || []).entries()) {
-        const index = tc.index ?? n
+        // Gemini streams parallel calls each as index 0, so a new id means a new call.
+        const reported = tc.index ?? n
+        let index = slots.get(reported) ?? reported
+        const existing = calls.get(index)
+        if (tc.id && existing?.id && existing.id !== tc.id) {
+          index = Math.max(...calls.keys(), ...slots.values()) + 1
+          slots.set(reported, index)
+        }
         const current = calls.get(index) ?? { id: "", type: "function" as const, function: { name: "", arguments: "" } }
         if (tc.id) current.id = tc.id
         if (tc.function?.name) current.function.name += tc.function.name
