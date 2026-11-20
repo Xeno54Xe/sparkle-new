@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit -p .",
-    "test": "node --test features/ask/tests/run-ask-tests.cjs lib/tests/run-stock-list-tests.cjs features/portfolio-intelligence/tests/run-portfolio-tests.cjs features/options-strategies/tests/run-payoff-tests.cjs"
+    "test": "node --test features/ask/tests/run-ask-tests.cjs lib/tests/run-stock-list-tests.cjs features/portfolio-intelligence/tests/run-portfolio-tests.cjs features/portfolio-intelligence/tests/run-optimizer-tests.cjs features/options-strategies/tests/run-payoff-tests.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

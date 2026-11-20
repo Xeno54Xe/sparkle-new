@@ -86,3 +86,12 @@ def test_snapshot_answers_even_when_a_source_stalls(client, monkeypatch):
     assert _time.time() - started < 2
     assert "error" in snap["fundamentals"]
     assert snap["price"]["price"] == 101.0 and snap["technical"]["signal"]
+
+
+def test_portfolio_views(client):
+    data = client.get("/portfolio/views").json()
+    views = data["views"]
+    assert len(views) >= 40
+    infy = views["INFY"]
+    assert 0 <= infy["score"] <= 100 and len(infy["sources"]) == 4 and infy["coverage"] == 1.0
+    assert all(0 < v["coverage"] <= 1 for v in views.values())

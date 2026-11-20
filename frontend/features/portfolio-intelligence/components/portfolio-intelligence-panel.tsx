@@ -41,6 +41,7 @@ import {
   type HoldingInput,
   type MarketAnalytics,
 } from "../domain/portfolio-model"
+import { PortfolioOptimizer } from "./portfolio-optimizer"
 
 const factorLabels: Record<FactorKey, string> = {
   momentum: "Momentum",
@@ -342,6 +343,13 @@ export function PortfolioIntelligencePanel() {
           )}
         </div>
       </section>
+
+      <PortfolioOptimizer
+        summary={summary}
+        analytics={analytics}
+        universe={universe}
+        onApply={(next) => { holdingsEdited.current = true; setHoldings(next) }}
+      />
 
       <section className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
         <div className="min-w-0 panel p-4 sm:p-5">

@@ -423,6 +423,34 @@ def get_portfolio_analytics():
     return precomputer.serve("portfolio")[0]
 
 
+# Report scores that say something about future value, rather than about the
+# past price (which the market-implied returns already reflect).
+VIEW_SOURCES = (
+    ("EC", "Investment Synthesis", "Latest earnings call"),
+    ("AR", "Investment Synthesis", "Latest annual report"),
+    ("SR", "Valuation", "Sparkle Report valuation"),
+    ("SR", "Analyst views", "Sparkle Report analyst views"),
+)
+
+
+@app.get("/portfolio/views")
+def get_portfolio_views():
+    """One Sparkle conviction score (0-100, 50 = neutral) per stock, for Black-Litterman views."""
+    views = {}
+    for symbol in HEATMAP_TICKERS:
+        scores = knowledge.scores(symbol)
+        parts = []
+        for doc_type, section, label in VIEW_SOURCES:
+            entry = ((scores.get(doc_type) or {}).get("scores") or {}).get(section)
+            if entry and isinstance(entry.get("score"), (int, float)):
+                parts.append({"source": label, "period": scores[doc_type]["period"],
+                              "score": round(float(entry["score"]), 1), "label": entry.get("label")})
+        if parts:
+            views[symbol] = {"score": round(sum(p["score"] for p in parts) / len(parts), 1),
+                             "sources": parts, "coverage": round(len(parts) / len(VIEW_SOURCES), 2)}
+    return {"views": views, "neutral": 50, "sources": [s[2] for s in VIEW_SOURCES]}
+
+
 @app.get("/market/heatmap")
 def get_market_heatmap():
     return precomputer.serve("heatmap")[0]
